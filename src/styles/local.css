@@ -36,16 +36,122 @@
   50%{transform:scale(1.25);opacity:.75}
 }
 
-.hero-copy h1{
+/* Hero Headline: 3-Pillar Trinity Stepped Typography */
+.hero-headline{
   margin:0;
-  max-width:760px;
-  color:var(--color-civic-navy);
-  font-size:clamp(56px,6.1vw,82px);
-  line-height:1.08;
-  letter-spacing:-.058em;
-  font-weight:560;
+  max-width:780px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
 }
-.hero-copy h1 span{display:block}
+
+.headline-layer{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+}
+
+.layer-text{
+  flex:1;
+  min-width:0;
+  display:block;
+}
+
+/* Layer 1 & 2: Steps (Discovery & Trust Foundation) */
+.headline-step{
+  font-size:clamp(22px,2.5vw,32px);
+  line-height:1.28;
+  letter-spacing:-.032em;
+  font-weight:500;
+  color:var(--color-soft-slate);
+}
+
+.headline-step .layer-lead{
+  color:var(--color-soft-slate);
+  font-weight:480;
+}
+
+.headline-step .target-google{
+  color:var(--color-civic-navy);
+  font-weight:650;
+  letter-spacing:-.035em;
+}
+
+.headline-step .target-review{
+  color:var(--color-civic-navy);
+  font-weight:650;
+  letter-spacing:-.035em;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+
+.micro-stars{
+  display:inline-block;
+  color:var(--color-amber);
+  font-size:12px;
+  letter-spacing:1px;
+  vertical-align:middle;
+  transform:translateY(-1px);
+}
+
+/* Layer Badges: Micro-pills in Geist Mono */
+.layer-badge{
+  flex-shrink:0;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-family:var(--font-mono);
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.05em;
+  line-height:1;
+  height:22px;
+  width:28px;
+  border-radius:6px;
+  background:rgba(16,42,67,.05);
+  color:var(--color-civic-navy);
+  border:1px solid rgba(16,42,67,.12);
+  margin-top:.24em;
+}
+
+.badge-review{
+  background:var(--color-amber-soft);
+  color:#9a3412;
+  border-color:rgba(244,166,42,.35);
+}
+
+.badge-climax{
+  background:var(--color-lumi-blue-soft);
+  color:var(--color-lumi-blue);
+  border-color:rgba(0,96,147,.25);
+  height:26px;
+  width:32px;
+  font-size:12px;
+  margin-top:.24em;
+}
+
+/* Layer 3: Climax (The Ultimate Conversion Headline) */
+.headline-climax{
+  margin-top:6px;
+  font-size:clamp(38px,4.5vw,58px);
+  line-height:1.12;
+  letter-spacing:-.048em;
+  font-weight:700;
+  color:var(--color-civic-navy);
+}
+
+.headline-climax .climax-lead{
+  color:var(--color-civic-navy);
+}
+
+.headline-climax .target-website{
+  color:var(--color-lumi-blue);
+  font-weight:750;
+  position:relative;
+  display:inline-block;
+  white-space:nowrap;
+}
 
 .hero-description{
   max-width:620px;
@@ -967,7 +1073,6 @@
   object-fit:cover;
   margin:0 auto;
 }
-.photo-disclosure{font-size:12px;line-height:1.5;color:var(--color-soft-slate);margin:10px 0 0}
 
 .example-content{padding:22px}
 
@@ -2416,7 +2521,12 @@
 
 @media(max-width:768px){
   .hero{padding-top:48px;padding-bottom:36px}
-  .hero-copy h1{font-size:clamp(44px,11vw,62px);line-height:1.1;letter-spacing:-.045em}
+  .hero-headline{gap:10px}
+  .headline-layer{gap:10px}
+  .headline-step{font-size:clamp(19px,3.4vw,24px);line-height:1.26}
+  .headline-climax{font-size:clamp(32px,6.8vw,46px);margin-top:6px;line-height:1.12}
+  .layer-badge{height:20px;width:25px;font-size:10.5px;margin-top:.24em}
+  .badge-climax{height:24px;width:28px;font-size:11px;margin-top:.24em}
   .hero-description{font-size:17px}
 
   .product-stage{min-height:536px}
@@ -2449,7 +2559,13 @@
 }
 
 @media(max-width:540px){
-  .hero-copy h1{font-size:clamp(26px,7.5vw,34px);line-height:1.16;letter-spacing:-.03em}
+  .hero-headline{gap:10px}
+  .headline-layer{gap:9px}
+  .headline-step{font-size:clamp(16px,4.5vw,19px);line-height:1.32}
+  .headline-climax{font-size:clamp(26px,7.8vw,34px);line-height:1.15;margin-top:6px}
+  .layer-badge{height:19px;width:24px;font-size:10px;margin-top:.24em}
+  .badge-climax{height:22px;width:26px;font-size:10.5px;margin-top:.24em}
+  .micro-stars{font-size:11px;letter-spacing:.5px}
   .hero-actions .button{width:100%}
   .header-actions{gap:8px}
   .stage-topline{grid-template-columns:auto 1fr;padding:0 12px}
@@ -2495,7 +2611,8 @@
 }
 
 @media(max-width:380px){
-  .hero-copy h1{font-size:40px}
+  .headline-step{font-size:15.5px}
+  .headline-climax{font-size:25px}
   .phone-preview{width:104px;right:0}
   .site-preview{left:6px;width:82%}
   .site-preview-main{padding-left:14px}
