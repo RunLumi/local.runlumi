@@ -2495,7 +2495,7 @@
 }
 
 @media(max-width:380px){
-  .hero-copy h1{font-size:40px}
+  .hero-copy h1{font-size:24px;line-height:1.18}
   .phone-preview{width:104px;right:0}
   .site-preview{left:6px;width:82%}
   .site-preview-main{padding-left:14px}

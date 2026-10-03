@@ -10,9 +10,11 @@ Do not sell “AI website building”.
 
 Core copy:
 
-> **Được tìm thấy. Được tin tưởng. Được liên hệ dễ hơn.**
+> **Được tìm thấy trên Google.**
+> **Được tin tưởng nhờ Review.**
+> **Chốt khách ngay trên Website.**
 >
-> Lumi Local làm trọn website, QR review, Call/Zalo và phần hiện diện online cho business của bạn. Không cần tự setup, không cần biết kỹ thuật.
+> Lumi Local làm trọn gói từ Google Maps, standee QR review đặt quầy đến website di động kết nối Gọi/Zalo. Bạn tập trung làm nghề, kỹ thuật để bên em.
 
 Website is a component of Lumi Local, not the product name.
 
