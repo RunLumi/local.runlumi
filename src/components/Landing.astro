@@ -22,6 +22,16 @@ const copy = {
       ['Không cần tự lo hosting / SSL','Phần kỹ thuật nằm trong gói phù hợp.'],
       ['Không cần biết kỹ thuật','Bạn duyệt; Lumi lo phần setup và publish.']
     ],
+    examples: {
+      eyebrow:'Đừng tưởng tượng. Hãy nhìn thử.',
+      title:'Một Lumi Local có thể trông đúng ngành của bạn.',
+      intro:'Các mẫu dưới đây chỉ là concept minh họa, không phải khách hàng hay kết quả thật.',
+      items:[
+        ['Salon / Spa','Mộc Beauty','Dịch vụ · Đặt lịch · Zalo','Khách xem dịch vụ và liên hệ ngay trên điện thoại.'],
+        ['Garage','Minh Phát Auto','Sửa chữa · Cứu hộ · Gọi ngay','Số điện thoại, chỉ đường và dịch vụ nằm đúng chỗ.'],
+        ['Điện lạnh','An Tâm Cooling','Lắp đặt · Bảo trì · Báo giá','Một trang gọn để khách hiểu việc bạn làm trước khi gọi.']
+      ]
+    },
     packages: {
       eyebrow: 'Một sản phẩm, hai mức vào',
       title: 'Bắt đầu nhỏ nếu muốn. Chọn trọn gói nếu đã thấy đủ rõ.',
@@ -115,7 +125,7 @@ const copy = {
     form: {
       eyebrow:'Bước tiếp theo',
       title:'Cho Lumi xem business của bạn trước.',
-      text:'Tên business và số điện thoại/Zalo là đủ để bắt đầu. Lumi có thể xem bối cảnh public trước khi trao đổi.',
+      text:'Tên của bạn, tên business và số điện thoại/Zalo là đủ để bắt đầu. Lumi có thể xem bối cảnh public trước khi trao đổi.',
       name:'Tên của bạn',
       business:'Tên business',
       phone:'Số điện thoại / Zalo',
@@ -146,6 +156,16 @@ const copy = {
       ['No hosting / SSL chores','The technical layer is included in the appropriate package.'],
       ['No technical expertise needed','You review; Lumi handles setup and publishing.']
     ],
+    examples:{
+      eyebrow:'Do not imagine it. See it.',
+      title:'A Lumi Local page can feel native to your kind of business.',
+      intro:'These are illustrative concepts, not real customers or performance claims.',
+      items:[
+        ['Salon / Spa','Mộc Beauty','Services · Booking · Zalo','Customers can understand services and contact you from their phone.'],
+        ['Garage','Minh Phát Auto','Repairs · Roadside · Call now','Phone, directions and services stay immediately accessible.'],
+        ['HVAC','An Tâm Cooling','Install · Maintain · Quote','A compact page helps customers understand the job before calling.']
+      ]
+    },
     packages:{
       eyebrow:'One product, two entry points',
       title:'Start small if you want. Choose the full package when it is already clear.',
@@ -162,7 +182,7 @@ const copy = {
     fit:{eyebrow:'Built for',title:'Local businesses with real customers and a need for a respectable online presence.',items:['Salon / Spa','Garage / auto repair','HVAC / air conditioning','Dental / clinic','Pet services','Interior / home repair','Cleaning / pest control','Studio / education']},
     trust:{eyebrow:'Clear from day one',title:'Fewer promises. Clearer scope.',items:[['You keep Google control','Your Google account stays yours. Lumi does not need edit access for this offer.'],['No bought reviews','No discounts, gifts or five-star requests in exchange for reviews.'],['No ranking promise','No guarantee of ranking, traffic, leads, customers or revenue.'],['No unlimited custom work','Clear scope protects quality, speed and price. Extra work is quoted separately.']]},
     faq:{title:'Frequently asked questions',items:[['What is included in the 399k Trust Kit?','A Google Review QR, standee artwork, short public-presence audit, checklist and appropriate contact assets. Upgrade within 30 days and the full 399k is credited.'],['Do you need Google Maps edit access?','No. Lumi does not need your Google login or edit access for the current offer.'],['Can I make a website with AI myself?','Yes. Lumi is not priced because coding is hard. You pay for done-for-you content, setup, publishing, contact actions, domain/hosting and in-scope maintenance.'],['Do you guarantee ranking or customers?','No. Lumi does not guarantee ranking, traffic, leads, customers or revenue.'],['What is renewal?','599,000 VND/year with a RunLumi Address; 999,000 VND/year with one standard custom domain.'],['Must I buy Trust Kit first?','No. If the preview is clear enough, you can buy Lumi Local Starter directly.']]},
-    form:{eyebrow:'Next step',title:'Show Lumi your business first.',text:'A business name and phone/Zalo are enough to start. Lumi can review public context before the conversation.',name:'Your name',business:'Business name',phone:'Phone / Zalo',email:'Email (optional)',note:'What would you like help with? (optional)',consent:'I agree that Lumi may contact me about this request.',submit:'Send my business',privacy:'Do not send payment information, customer data or confidential documents.',success:'We received your request. No payment was taken and no account was created.',error:'We could not send the request. Please try again later.'},
+    form:{eyebrow:'Next step',title:'Show Lumi your business first.',text:'Your name, business name and phone/Zalo are enough to start. Lumi can review public context before the conversation.',name:'Your name',business:'Business name',phone:'Phone / Zalo',email:'Email (optional)',note:'What would you like help with? (optional)',consent:'I agree that Lumi may contact me about this request.',submit:'Send my business',privacy:'Do not send payment information, customer data or confidential documents.',success:'We received your request. No payment was taken and no account was created.',error:'We could not send the request. Please try again later.'},
     footer:'The website is one part. Lumi Local handles the practical rest within the agreed scope.'
   }
 };
@@ -184,6 +204,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
       <div class="header-actions">
         <a class="lang" href={otherHref}>{otherLocale}</a>
         <a class="button button-primary header-cta" href="#bat-dau">{c.cta}</a>
+        <a class="button button-primary mobile-header-cta" href="#bat-dau">{locale === 'vi' ? 'Xem thử' : 'See demo'}</a>
       </div>
     </div>
   </header>
@@ -202,14 +223,45 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <p class="meta">{c.hero.note}</p>
       </div>
       <div class="hero-visual">
-        <figure class="showcase sheet">
-          <figcaption><span>{labels.illustrative}</span><span>Lumi Local</span></figcaption>
-          <img src="/illustrations/local-hero.svg" width="640" height="520" alt="Lumi Local website, review QR stand and contact actions" fetchpriority="high" />
-        </figure>
+        <div class="product-stage sheet" aria-label={labels.illustrative}>
+          <div class="stage-topline">
+            <span class="stage-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="stage-domain">annhien.runlumi.app</span>
+            <span class="stage-label">{labels.illustrative}</span>
+          </div>
+          <div class="stage-canvas">
+            <article class="site-preview">
+              <div class="site-preview-nav">
+                <strong>AN NHIÊN</strong>
+                <span>{locale === 'vi' ? 'Dịch vụ   ·   Về chúng tôi   ·   Liên hệ' : 'Services   ·   About   ·   Contact'}</span>
+              </div>
+              <div class="site-preview-main">
+                <p class="mini-kicker">{locale === 'vi' ? 'Tiệm cà phê địa phương' : 'Local coffee shop'}</p>
+                <h3>{locale === 'vi' ? 'Một nơi nhỏ, được giới thiệu thật chỉn chu.' : 'A small place, presented with care.'}</h3>
+                <p>{locale === 'vi' ? 'Menu, địa chỉ, giờ mở cửa và đường liên hệ nằm ngay nơi khách cần.' : 'Menu, location, opening hours and contact paths sit where customers need them.'}</p>
+                <div class="mini-actions"><span>☎ {locale === 'vi' ? 'Gọi ngay' : 'Call'}</span><span>Zalo</span><span>⌖ {locale === 'vi' ? 'Chỉ đường' : 'Directions'}</span></div>
+              </div>
+              <div class="site-preview-bottom"><span>{locale === 'vi' ? 'Cà phê' : 'Coffee'}</span><span>{locale === 'vi' ? 'Bánh ngọt' : 'Pastry'}</span><span>{locale === 'vi' ? 'Đặt bàn' : 'Book'}</span></div>
+            </article>
+            <aside class="phone-preview" aria-label={locale === 'vi' ? 'Minh họa mobile' : 'Mobile illustration'}>
+              <div class="phone-notch"></div>
+              <div class="phone-brand">AN NHIÊN</div>
+              <div class="phone-photo" aria-hidden="true"><span></span><span></span><span></span></div>
+              <strong>{locale === 'vi' ? 'Cà phê ngon. Dễ tìm. Dễ gọi.' : 'Good coffee. Easy to find. Easy to call.'}</strong>
+              <div class="phone-actions"><span>☎</span><span>Zalo</span><span>⌖</span></div>
+            </aside>
+            <aside class="qr-stand" aria-label={locale === 'vi' ? 'Minh họa QR review' : 'Review QR illustration'}>
+              <span class="qr-brand">Lumi Local</span>
+              <strong>{locale === 'vi' ? 'Chia sẻ trải nghiệm' : 'Share your experience'}</strong>
+              <div class="qr-pattern" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <small>{locale === 'vi' ? 'Quét để mở Google Review' : 'Scan to open Google Review'}</small>
+            </aside>
+          </div>
+        </div>
         <nav class="workflow-dock glass-control" aria-label="Quick links">
-          <a href="#trust-kit">399k</a>
-          <a href="#starter">1.99m</a>
-          <a href="#gia-duy-tri">599k / 999k</a>
+          <a href="#trust-kit"><span>01</span>399k</a>
+          <a href="#starter"><span>02</span>1.99m</a>
+          <a href="#gia-duy-tri"><span>03</span>599k / 999k</a>
         </nav>
       </div>
     </section>
@@ -218,36 +270,64 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
       {c.proof.map(([title,text]) => <article><span class="proof-mark">✓</span><div><strong>{title}</strong><p>{text}</p></div></article>)}
     </section>
 
+    <section class="examples wrap" aria-labelledby="examples-title">
+      <div class="examples-heading">
+        <div><p class="eyebrow">{c.examples.eyebrow}</p><h2 id="examples-title">{c.examples.title}</h2></div>
+        <p>{c.examples.intro}</p>
+      </div>
+      <div class="example-rail">
+        {c.examples.items.map(([type,name,meta,text],i) => <article class="example-card">
+          <div class="example-browser">
+            <span class="example-index">0{i+1}</span>
+            <span class="example-url">{name.toLowerCase().replaceAll(' ','-')}.runlumi.app</span>
+          </div>
+          <div class="example-body">
+            <p class="example-type">{type}</p>
+            <h3>{name}</h3>
+            <p class="example-meta">{meta}</p>
+            <p>{text}</p>
+            <div class="example-actions"><span>☎</span><span>Zalo</span><span>⌖</span></div>
+          </div>
+        </article>)}
+      </div>
+    </section>
+
     <section class="section wrap" id="goi-dich-vu">
       <div class="section-heading">
         <div><p class="eyebrow">{c.packages.eyebrow}</p><h2>{c.packages.title}</h2></div>
         <p class="section-intro">{c.packages.intro}</p>
       </div>
-      <div class="package-grid">
-        <article class="package sheet" id="trust-kit">
-          <p class="index">01</p><h3>{c.packages.trust.name}</h3>
-          <div class="price"><strong>{c.packages.trust.price}</strong><span>{c.packages.trust.unit}</span></div>
-          <p>{c.packages.trust.text}</p>
-          <ul>{c.packages.trust.bullets.map(item => <li>✓ {item}</li>)}</ul>
-          <a class="text-link" href="#bat-dau">{locale === 'vi' ? 'Bắt đầu nhỏ →' : 'Start small →'}</a>
-        </article>
-        <article class="package sheet featured" id="starter">
-          <span class="package-label">{labels.core}</span>
-          <p class="index">02</p><h3>{c.packages.starter.name}</h3>
-          <div class="price"><strong>{c.packages.starter.price}</strong><span>{c.packages.starter.unit}</span></div>
-          <p>{c.packages.starter.text}</p>
-          <ul>{c.packages.starter.bullets.map(item => <li>✓ {item}</li>)}</ul>
+      <div class="offer-layout">
+        <article class="starter-offer sheet" id="starter">
+          <div class="offer-header"><div><p class="index">02 / {labels.core}</p><h3>{c.packages.starter.name}</h3></div><span class="package-label">{labels.core}</span></div>
+          <div class="starter-price"><strong>{c.packages.starter.price}</strong><span>{c.packages.starter.unit}</span></div>
+          <p class="starter-summary">{c.packages.starter.text}</p>
+          <div class="starter-content">
+            <ul>{c.packages.starter.bullets.map(item => <li>✓ {item}</li>)}</ul>
+            <div class="starter-receipt">
+              <span>{locale === 'vi' ? 'Năm đầu' : 'Year one'}</span><strong>{c.packages.starter.price}</strong>
+              <span>{locale === 'vi' ? 'Nếu đã mua Trust Kit' : 'If Trust Kit is already paid'}</span><strong>+1.591.000đ</strong>
+            </div>
+          </div>
           <a class="button button-primary" href="#bat-dau">{c.cta}</a>
         </article>
-        <article class="package sheet">
-          <p class="index">03</p><h3>{c.packages.renewal.name}</h3>
-          <div class="price"><strong>{c.packages.renewal.price}</strong><span>{c.packages.renewal.unit}</span></div>
-          <p>{c.packages.renewal.text}</p>
-          <ul>{c.packages.renewal.bullets.map(item => <li>✓ {item}</li>)}</ul>
-          <a class="text-link" href="#gia-duy-tri">{locale === 'vi' ? 'Xem chi tiết →' : 'See details →'}</a>
-        </article>
+        <div class="offer-side">
+          <article class="mini-offer sheet" id="trust-kit">
+            <div><p class="index">01</p><h3>{c.packages.trust.name}</h3></div>
+            <div class="price"><strong>{c.packages.trust.price}</strong><span>{c.packages.trust.unit}</span></div>
+            <p>{c.packages.trust.text}</p>
+            <ul>{c.packages.trust.bullets.map(item => <li>✓ {item}</li>)}</ul>
+            <a class="text-link" href="#bat-dau">{locale === 'vi' ? 'Bắt đầu nhỏ →' : 'Start small →'}</a>
+          </article>
+          <article class="mini-offer renewal-side sheet">
+            <div><p class="index">03</p><h3>{c.packages.renewal.name}</h3></div>
+            <div class="price"><strong>{c.packages.renewal.price}</strong><span>{c.packages.renewal.unit}</span></div>
+            <p>{c.packages.renewal.text}</p>
+            <a class="text-link" href="#gia-duy-tri">{locale === 'vi' ? 'Chi tiết renewal →' : 'Renewal details →'}</a>
+          </article>
+        </div>
       </div>
-      <p class="credit-callout">↗ {c.packages.credit}</p>
+      <div class="credit-rail"><span>↗</span><strong>{c.packages.credit}</strong><a href="#bat-dau">{locale === 'vi' ? 'Cho Lumi xem business của tôi' : 'Show Lumi my business'} →</a></div>
     </section>
 
     <section class="navy-section">
@@ -268,7 +348,12 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <p class="section-intro">{c.included.intro}</p>
       </div>
       <div class="feature-grid">
-        {c.included.items.map(([title,text],i) => <article class="sheet"><span class="feature-number">{String(i+1).padStart(2,'0')}</span><h3>{title}</h3><p>{text}</p></article>)}
+        {c.included.items.map(([title,text],i) => <article class={`sheet feature-card ${i === 0 ? 'feature-primary' : ''}`}>
+          <span class="feature-number">{String(i+1).padStart(2,'0')}</span>
+          <h3>{title}</h3>
+          <p>{text}</p>
+          {i === 0 && <div class="feature-site-proof" aria-hidden="true"><span>annhien.vn</span><strong>{locale === 'vi' ? 'Dịch vụ rõ ràng trên mobile' : 'Clear services on mobile'}</strong><div><i></i><i></i><i></i></div></div>}
+        </article>)}
       </div>
     </section>
 
@@ -298,11 +383,6 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     </section>
 
     <section class="section wrap">
-      <div class="section-heading"><div><p class="eyebrow">{c.fit.eyebrow}</p><h2>{c.fit.title}</h2></div></div>
-      <ul class="fit-list">{c.fit.items.map(item => <li>{item}</li>)}</ul>
-    </section>
-
-    <section class="section wrap">
       <div class="section-heading"><div><p class="eyebrow">{c.trust.eyebrow}</p><h2>{c.trust.title}</h2></div></div>
       <div class="trust-grid">{c.trust.items.map(([title,text]) => <article><span class="proof-mark">✓</span><h3>{title}</h3><p>{text}</p></article>)}</div>
     </section>
@@ -322,11 +402,16 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
       <form id="enquiry-form" class="sheet enquiry-form" method="post" action="/api/enquiries">
         <input type="hidden" name="locale" value={locale} />
         <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off" /></div>
+        <label class="full">{c.form.business}<input name="business" type="text" maxlength="160" autocomplete="organization" required /></label>
         <label>{c.form.name}<input name="name" type="text" maxlength="80" autocomplete="name" required /></label>
-        <label>{c.form.business}<input name="business" type="text" maxlength="160" autocomplete="organization" required /></label>
-        <label>{c.form.phone}<input name="phone" type="tel" maxlength="40" autocomplete="tel" required /></label>
-        <label>{c.form.email}<input name="email" type="email" maxlength="254" autocomplete="email" /></label>
-        <label class="full">{c.form.note}<textarea name="note" rows="3" maxlength="1000"></textarea></label>
+        <label>{c.form.phone}<input name="phone" type="tel" maxlength="40" autocomplete="tel" inputmode="tel" required /></label>
+        <details class="optional-fields full">
+          <summary>{locale === 'vi' ? 'Thêm email hoặc ghi chú (không bắt buộc)' : 'Add email or a note (optional)'}</summary>
+          <div class="optional-grid">
+            <label>{c.form.email}<input name="email" type="email" maxlength="254" autocomplete="email" /></label>
+            <label>{c.form.note}<textarea name="note" rows="3" maxlength="1000"></textarea></label>
+          </div>
+        </details>
         <label class="consent full"><input name="consent" type="checkbox" value="yes" required /><span>{c.form.consent}</span></label>
         <p class="form-status full" id="form-status" role="status" aria-live="polite" data-success={c.form.success} data-error={c.form.error}></p>
         <button class="button button-primary full" type="submit">{c.form.submit}</button>
