@@ -81,7 +81,7 @@ p{text-wrap:pretty}
 .button-secondary{background:white;border-color:var(--color-border-strong);color:var(--color-civic-navy);box-shadow:var(--shadow-sheet)}
 .button-secondary:hover{background:#faf8f4;border-color:#b4becd}
 .sheet{background:white;border:1px solid var(--color-border);border-radius:14px;box-shadow:var(--specular),var(--shadow-sheet)}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;margin:0 0 16px;color:var(--color-lumi-blue);font-family:var(--font-mono);font-size:12px;font-weight:650;letter-spacing:.06em;text-transform:uppercase}
+.eyebrow{display:inline-flex;align-items:center;flex-wrap:wrap;line-height:1.4;gap:8px;margin:0 0 16px;color:var(--color-lumi-blue);font-family:var(--font-mono);font-size:12px;font-weight:650;letter-spacing:.06em;text-transform:uppercase}
 .meta{color:var(--color-soft-slate);font-size:13px;line-height:1.55}
 .section-heading{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:56px;align-items:end;margin-bottom:40px}
 .section-heading h2,.faq h2,.contact h2{margin:0;color:var(--color-civic-navy);font-size:clamp(32px,3.8vw,50px);line-height:1.06;letter-spacing:-.045em;font-weight:570}

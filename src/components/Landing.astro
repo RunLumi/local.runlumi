@@ -397,7 +397,34 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     <section class="hero wrap">
       <div class="hero-copy">
         <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span>{c.hero.eyebrow}</p>
-        <h1>{c.hero.title.map(line => <span>{line}</span>)}</h1>
+        <h1 class="hero-headline" aria-label={c.hero.title.join(' ')}>
+          <span class="headline-layer headline-step headline-step-maps">
+            <span class="layer-badge" aria-hidden="true">01</span>
+            <span class="layer-text">
+              <span class="layer-lead">{locale === 'vi' ? 'Được tìm thấy trên' : 'Found on'}</span>{' '}
+              <strong class="layer-target target-google">{locale === 'vi' ? 'Google.' : 'Google Maps.'}</strong>
+            </span>
+          </span>
+
+          <span class="headline-layer headline-step headline-step-review">
+            <span class="layer-badge badge-review" aria-hidden="true">02</span>
+            <span class="layer-text">
+              <span class="layer-lead">{locale === 'vi' ? 'Được tin tưởng nhờ' : 'Trusted with'}</span>{' '}
+              <strong class="layer-target target-review">
+                <span>{locale === 'vi' ? 'Review.' : 'Real Reviews.'}</span>
+                <span class="micro-stars" aria-hidden="true">★★★★★</span>
+              </strong>
+            </span>
+          </span>
+
+          <span class="headline-layer headline-climax headline-step-web">
+            <span class="layer-badge badge-climax" aria-hidden="true">03</span>
+            <span class="layer-text">
+              <span class="climax-lead">{locale === 'vi' ? 'Chốt khách ngay trên' : 'Booked on'}</span>{' '}
+              <strong class="climax-target target-website">{locale === 'vi' ? 'Website.' : 'Your Website.'}</strong>
+            </span>
+          </span>
+        </h1>
         <p class="hero-description">{c.hero.text}</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#bat-dau">
