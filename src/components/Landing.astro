@@ -12,7 +12,7 @@ const copy = {
     cta: 'Xem thử Lumi Local cho business của tôi',
     hero: {
       eyebrow: 'Lumi Local · Setup trọn gói cho cơ sở kinh doanh địa phương',
-      title: ['Được tìm thấy.','Được tin tưởng.','Được liên\u00A0hệ dễ\u00A0hơn.'],
+      title: ['Được tìm thấy.','Được tin tưởng.','Được liên hệ dễ hơn.'],
       text: 'Lumi Local làm trọn website, QR review, Call/Zalo và phần hiện diện online cho business của bạn. Không cần tự setup, không cần biết kỹ thuật.',
       secondary: 'Xem bảng giá & gói',
       note: 'Minh bạch từ đầu: Lumi không hứa hẹn thứ hạng Google hay doanh số ảo. Chúng tôi làm chuẩn phần hiện diện, kết nối khách hàng và vận hành kỹ thuật.'
@@ -71,7 +71,7 @@ const copy = {
         ['Website chuẩn di động','Giao diện tải nhanh, bố cục rõ ràng, tối ưu trải nghiệm xem trên điện thoại thông minh.'],
         ['Nút Gọi ngay & Nhắn Zalo','Khách xem dịch vụ là bấm gọi hotline hoặc chat Zalo tư vấn ngay chỉ sau 1 chạm.'],
         ['Chỉ đường Google Maps','Khách tìm thấy địa chỉ và đường đi dễ dàng mà bạn không phải giao quyền quản lý tài khoản.'],
-        ['Standee & QR Review','File in ấn chuẩn chỉnh đặt tại quầy thu ngân, mời khách thật quét mã chia sẻ trải nghiệm trung thực trên Google.'],
+        ['Standee & QR Review','File in ấn chuẩn chỉnh đặt tại quầy thu ngân, mời khách thật quét mã chia sẻ trải nghiệm 5 sao.'],
         ['Hosting tốc độ cao + SSL','Máy chủ ổn định, khóa bảo mật xanh, tự động sao lưu mà bạn không cần bận tâm kỹ thuật.'],
         ['Cảnh báo hiện diện công khai','Nhận thông báo khi phát hiện thay đổi dữ liệu công khai trên Google để kịp thời cập nhật.']
       ]
@@ -187,111 +187,12 @@ const copy = {
   }
 };
 const c = copy[locale];
-
-/* Hero Operating Desk Stage 2.0 — illustrative industry concepts.
-   All three render server-side; the switcher crossfades between them
-   and no-JS visitors simply see the first concept. */
-const industries = {
-  vi: [
-    {
-      key:'cafe', tab:'Cà phê / F&B', short:'Cà phê', icon:'cup',
-      accent:'', accentPhoto:'',
-      biz:'AN NHIÊN', initials:'AN', domain:'annhien.runlumi.app',
-      navLinks:['Menu & Giá','Về quán','Liên hệ'],
-      kicker:'Tiệm cà phê địa phương', live:'Đang mở cửa',
-      headline:'Một góc nhỏ thân quen, giới\u00A0thiệu thật chỉn chu.',
-      sub:'Thực đơn món, địa chỉ, giờ đón khách và nút liên hệ đặt ngay nơi khách cần tìm.',
-      phone:'0908 123 456',
-      phoneTitle:'Cà phê ngon. Dễ tìm. Dễ gọi.',
-      features:[['☕','Cà phê pha mộc','Pha phin & Pha máy'],['🥐','Bánh nướng trong ngày','Làm mới mỗi sáng'],['🪑','Không gian yên tĩnh','Wifi mạnh & Bàn làm việc']]
-    },
-    {
-      key:'spa', tab:'Spa & Thẩm mỹ', short:'Spa', icon:'lotus',
-      accent:'accent-fresh', accentPhoto:'accent-fresh',
-      biz:'MỘC BEAUTY', initials:'MB', domain:'mocbeauty.runlumi.app',
-      navLinks:['Dịch vụ & Giá','Không gian','Đặt lịch'],
-      kicker:'Spa & chăm sóc da', live:'Còn lịch hôm nay',
-      headline:'Thư giãn đúng chất spa. Đặt lịch chỉ một chạm.',
-      sub:'Bảng dịch vụ, mức giá tham khảo và nút đặt lịch qua Zalo đặt ngay nơi khách đang lướt.',
-      phone:'0917 246 810',
-      phoneTitle:'Nghỉ ngơi xứng đáng. Đặt lịch nhẹ nhàng.',
-      features:[['💆','Massage & Chăm sóc da','Liệu trình 60–90 phút'],['🌿','Mỹ phẩm thiên nhiên','Thương hiệu chọn lọc'],['📅','Đặt lịch qua Zalo','Xác nhận trong vài phút']]
-    },
-    {
-      key:'auto', tab:'Kỹ thuật & Gara', short:'Gara', icon:'wrench',
-      accent:'accent-warm', accentPhoto:'accent-warm',
-      biz:'MINH PHÁT AUTO', initials:'MP', domain:'minhphat.runlumi.app',
-      navLinks:['Dịch vụ','Bảng giá','Gọi cứu hộ'],
-      kicker:'Gara ô tô & Cứu hộ', live:'Cứu hộ 24/7',
-      headline:'Cứu hộ 24/7, báo giá trước\u00A0khi\u00A0sửa.',
-      sub:'Hotline khẩn cấp, chỉ đường tới xưởng và bảng hạng mục bảo dưỡng hiện ngay đầu trang.',
-      phone:'0938 555 247',
-      phoneTitle:'Gần đây. Uy tín. Gọi là có.',
-      features:[['🔧','Sửa chữa & Bảo dưỡng','Đầy đủ hạng mục'],['🚗','Cứu hộ 24/7','Hotline luôn trực'],['🧾','Bảng giá minh bạch','Thống nhất trước khi sửa']]
-    }
-  ],
-  en: [
-    {
-      key:'cafe', tab:'Café / F&B', short:'Café', icon:'cup',
-      accent:'', accentPhoto:'',
-      biz:'AN NHIÊN', initials:'AN', domain:'annhien.runlumi.app',
-      navLinks:['Menu & Pricing','About','Contact'],
-      kicker:'Local coffee shop', live:'Open now',
-      headline:'A small place, presented with craft and care.',
-      sub:'Menu, location, opening hours, and direct contact sit right where customers look.',
-      phone:'0908 123 456',
-      phoneTitle:'Good coffee. Easy to find. Easy to call.',
-      features:[['☕','Roasted Coffee','Phin & Espresso'],['🥐','Fresh Pastry','Baked daily'],['🪑','Quiet Workspace','High-speed Wi-Fi']]
-    },
-    {
-      key:'spa', tab:'Spa & Beauty', short:'Spa', icon:'lotus',
-      accent:'accent-fresh', accentPhoto:'accent-fresh',
-      biz:'MỘC BEAUTY', initials:'MB', domain:'mocbeauty.runlumi.app',
-      navLinks:['Services & Pricing','The space','Book now'],
-      kicker:'Spa & skincare studio', live:'Slots today',
-      headline:'Real spa calm, booked in one tap.',
-      sub:'Service menu, reference pricing, and a Zalo booking button right where customers scroll.',
-      phone:'0917 246 810',
-      phoneTitle:'Deserved rest. Effortless booking.',
-      features:[['💆','Massage & Facials','60–90 min rituals'],['🌿','Natural skincare','Curated brands'],['📅','Zalo booking','Confirmed in minutes']]
-    },
-    {
-      key:'auto', tab:'Auto & Technical', short:'Auto', icon:'wrench',
-      accent:'accent-warm', accentPhoto:'accent-warm',
-      biz:'MINH PHÁT AUTO', initials:'MP', domain:'minhphat.runlumi.app',
-      navLinks:['Services','Price list','Rescue line'],
-      kicker:'Auto garage & rescue', live:'24/7 rescue',
-      headline:'24/7 rescue. Quotes before repairs.',
-      sub:'Emergency hotline, directions to the shop, and a clear maintenance menu right up front.',
-      phone:'0938 555 247',
-      phoneTitle:'Close by. Trusted. One call away.',
-      features:[['🔧','Repair & Maintenance','Full service menu'],['🚗','24/7 roadside','Hotline always on'],['🧾','Transparent pricing','Agreed before work']]
-    }
-  ]
-};
-const inds = industries[locale];
-
-const tabIcons = {
-  cup: '<svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 5.5h8v4a4 4 0 0 1-8 0v-4z"/><path d="M10.5 6.5h1.2a2 2 0 0 1 0 4h-1.4"/><path d="M5 1.8v1.5M8 1.8v1.5"/></svg>',
-  lotus: '<svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M8 1.9C6.5 3.9 6.5 6.5 8 8.6c1.5-2.1 1.5-4.7 0-6.7z"/><path d="M2.8 4.9c.6 3.6 2.5 5.4 5.2 5.6-.5-3.1-2.3-5-5.2-5.6z"/><path d="M13.2 4.9c-.6 3.6-2.5 5.4-5.2 5.6.5-3.1 2.3-5 5.2-5.6z"/></svg>',
-  wrench: '<svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M14.9 3.4a4.1 4.1 0 0 1-5.4 5L3.6 14.3a1.5 1.5 0 0 1-2.1-2.1L7.5 6.3a4.1 4.1 0 0 1 5-5.4L10 3.4l.4 2.2 2.2.4 2.3-2.6z"/></svg>'
-};
-
-const phoneArt = {
-  cafe: '<svg viewBox="0 0 120 70" width="100%" height="100%" fill="none" aria-hidden="true"><path d="M30 46h48c0 14-10 20-24 20s-24-6-24-20z" fill="#102a43"/><path d="M78 48h8a6 6 0 0 1 0 12h-8" stroke="#102a43" stroke-width="3"/><ellipse cx="54" cy="46" rx="24" ry="4" fill="#006093"/><path d="M46 36c-2-5 2-8 0-12m8 12c-2-5 2-8 0-12m8 12c-2-5 2-8 0-12" stroke="#f4a62a" stroke-width="2.5" stroke-linecap="round"/><circle cx="96" cy="22" r="12" fill="#fff4dc"/></svg>',
-  spa: '<svg viewBox="0 0 120 70" width="100%" height="100%" fill="none" aria-hidden="true"><path d="M60 10c-7 8.5-7 19.5 0 28 7-8.5 7-19.5 0-28z" fill="#1f7a4d"/><path d="M39 21c.5 11 7.2 18.3 19.5 18.5C55.8 29.5 49 23 39 21z" fill="#e9f7ef" stroke="#102a43" stroke-width="2.5" stroke-linejoin="round"/><path d="M81 21c-.5 11-7.2 18.3-19.5 18.5C64.2 29.5 71 23 81 21z" fill="#e9f7ef" stroke="#102a43" stroke-width="2.5" stroke-linejoin="round"/><path d="M28 58c12 5 52 5 64 0" stroke="#006093" stroke-width="3" stroke-linecap="round"/></svg>',
-  auto: '<svg viewBox="0 0 120 70" width="100%" height="100%" fill="none" aria-hidden="true"><path d="M31 37l5.4-11c1.3-2.6 3.5-4 6.5-4h34.2c3 0 5.2 1.4 6.5 4L89 37" stroke="#102a43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 50c0-4 3.2-7 8-7h60c4.8 0 8 3 8 7v4a3 3 0 0 1-3 3H25a3 3 0 0 1-3-3v-4z" fill="#006093"/><circle cx="38" cy="57" r="6" fill="#102a43"/><circle cx="82" cy="57" r="6" fill="#102a43"/><rect x="84" y="21" width="12" height="6" rx="2" fill="#f4a62a"/></svg>'
-};
-
-const starPath = 'M6 .6l1.55 3.14 3.47.5-2.51 2.45.59 3.45L6 8.53 2.9 10.14l.59-3.45L.98 4.24l3.47-.5z';
-const starsSvg = `<svg viewBox="0 0 75 12" width="68" height="11" fill="#f4a62a" aria-hidden="true">${[0,1,2,3,4].map(i => `<path transform="translate(${(i * 15.75).toFixed(2)} 0)" d="${starPath}"/>`).join('')}</svg>`;
-
 const industryArt = ['salon', 'garage', 'hvac'];
 const featureArt = ['website', 'contact', 'map', 'review', 'hosting', 'alerts'];
 const workflowArt = ['brief', 'approve', 'publish'];
 const otherLocale = locale === 'vi' ? 'EN' : 'VI';
 const otherHref = locale === 'vi' ? '/en/' : '/';
-const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướng chính', illustrative:'Minh họa, không phải khách hàng thật', recommended:'Khuyên dùng', core:'Gói chính', switcher:'Xem trước theo ngành', receipt:'Nếu đã mua Trust Kit trong 30 ngày: được trừ 399.000đ, còn lại 1.591.000đ' } : { main:'Main content', nav:'Primary navigation', illustrative:'Illustrative, not a real customer', recommended:'Recommended', core:'Core package', switcher:'Preview by industry', receipt:'If Trust Kit was paid within 30 days: 399,000 VND credited, 1,591,000 VND remaining' };
+const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướng chính', illustrative:'Minh họa, không phải khách hàng thật', recommended:'Khuyên dùng', core:'Gói chính' } : { main:'Main content', nav:'Primary navigation', illustrative:'Illustrative, not a real customer', recommended:'Recommended', core:'Core package' };
 ---
 <Page locale={locale} title={c.title} description={c.description}>
   <header class="site-header glass-control">
@@ -343,129 +244,128 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <p class="meta">{c.hero.note}</p>
       </div>
       <div class="hero-visual">
-        <div class="product-stage sheet" data-industry="cafe" aria-label={labels.illustrative}>
+        <div class="product-stage sheet" aria-label={labels.illustrative}>
           <div class="stage-topline">
             <span class="stage-dots" aria-hidden="true"><i></i><i></i><i></i></span>
             <span class="stage-domain">
-              {inds.map(ind => (
-                <span class="stage-domain-opt" data-domain={ind.key}>
-                  <svg class="stage-lock-icon" viewBox="0 0 16 16" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M4 6V4a4 4 0 0 1 8 0v2h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1zm2-2a2 2 0 1 1 4 0v2H6V4zm-2 4v5h8V8H4z"/></svg>
-                  <span>{ind.domain}</span>
-                </span>
-              ))}
+              <svg class="stage-lock-icon" viewBox="0 0 16 16" width="11" height="11" fill="currentColor"><path d="M4 6V4a4 4 0 0 1 8 0v2h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1zm2-2a2 2 0 1 1 4 0v2H6V4zm-2 4v5h8V8H4z"/></svg>
+              <span>annhien.runlumi.app</span>
             </span>
             <span class="stage-label">
               <span class="status-live-dot" aria-hidden="true"></span>
               {labels.illustrative}
             </span>
           </div>
-          <div class="industry-switch" role="tablist" aria-label={labels.switcher}>
-            {inds.map((ind, i) => (
-              <button type="button" class={`industry-tab${i === 0 ? ' is-active' : ''}`} role="tab" id={`tab-${ind.key}`} data-industry={ind.key} aria-selected={i === 0 ? 'true' : 'false'} aria-controls="stage-panel" tabindex={i === 0 ? 0 : -1}>
-                <Fragment set:html={tabIcons[ind.icon]} />
-                <span class="tab-label-full">{ind.tab}</span>
-                <span class="tab-label-short">{ind.short}</span>
-              </button>
-            ))}
-          </div>
-          <div class="stage-canvas" id="stage-panel" role="tabpanel" aria-labelledby="tab-cafe">
-            {inds.map(ind => (
-              <article class="site-preview" data-variant={ind.key}>
-                <div class="site-preview-nav">
-                  <div class="site-preview-brand">
-                    <span class={`brand-avatar ${ind.accent}`}>{ind.initials}</span>
-                    <strong>{ind.biz}</strong>
-                  </div>
-                  <div class="site-preview-links">
-                    {ind.navLinks.map(link => <span>{link}</span>)}
-                  </div>
-                  <div class="site-preview-cta">
-                    <span>☎ {ind.phone}</span>
-                  </div>
+          <div class="stage-canvas">
+            <article class="site-preview">
+              <div class="site-preview-nav">
+                <div class="site-preview-brand">
+                  <span class="brand-avatar">AN</span>
+                  <strong>AN NHIÊN</strong>
                 </div>
-                <div class="site-preview-main">
-                  <div class="mini-kicker-wrap">
-                    <span class="mini-kicker">{ind.kicker}</span>
-                    <span class="mini-live-tag">{ind.live}</span>
-                  </div>
-                  <h3>{ind.headline}</h3>
-                  <p>{ind.sub}</p>
-                  <div class="mini-actions">
-                    <span class="action-btn-primary">
-                      <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.47 8.53a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
-                      {locale === 'vi' ? 'Gọi ngay' : 'Call'}
-                    </span>
-                    <span class="action-btn-soft">Zalo</span>
-                    <span class="action-btn-soft">
-                      <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
-                      {locale === 'vi' ? 'Chỉ đường' : 'Directions'}
-                    </span>
-                  </div>
+                <div class="site-preview-links">
+                  <span>{locale === 'vi' ? 'Menu & Giá' : 'Menu & Pricing'}</span>
+                  <span>{locale === 'vi' ? 'Về quán' : 'About'}</span>
+                  <span>{locale === 'vi' ? 'Liên hệ' : 'Contact'}</span>
                 </div>
-                <div class="site-preview-bottom">
-                  {ind.features.map(([icon,title,small]) => (
-                    <div class="preview-feature-item">
-                      <span class="feature-icon">{icon}</span>
-                      <div><strong>{title}</strong><small>{small}</small></div>
-                    </div>
-                  ))}
+                <div class="site-preview-cta">
+                  <span>☎ {locale === 'vi' ? '0908 123 456' : '0908 123 456'}</span>
                 </div>
-              </article>
-            ))}
-            {inds.map(ind => (
-              <aside class="phone-preview" data-variant={ind.key} aria-label={locale === 'vi' ? 'Minh họa mobile' : 'Mobile illustration'}>
-                <div class="phone-notch"></div>
-                <div class="phone-status-bar">
-                  <span>9:41</span>
-                  <span class="phone-icons"><svg viewBox="0 0 16 12" width="12" height="9" fill="currentColor" aria-hidden="true"><path d="M1 10h2V8H1v2zm4 0h2V6H5v4zm4 0h2V4H9v6zm4 0h2V1h-2v9z"/></svg></span>
+              </div>
+              <div class="site-preview-main">
+                <div class="mini-kicker-wrap">
+                  <span class="mini-kicker">{locale === 'vi' ? 'Tiệm cà phê địa phương' : 'Local coffee shop'}</span>
+                  <span class="mini-live-tag">{locale === 'vi' ? 'Đang mở cửa' : 'Open now'}</span>
                 </div>
-                <div class="phone-brand-bar">
-                  <span class="phone-brand">{ind.biz}</span>
-                  <span class="phone-live-dot"></span>
+                <h3>{locale === 'vi' ? 'Một góc nhỏ thân quen, giới thiệu thật chỉn chu.' : 'A small place, presented with craft and care.'}</h3>
+                <p>{locale === 'vi' ? 'Thực đơn món, địa chỉ, giờ đón khách và nút liên hệ đặt ngay nơi khách cần tìm.' : 'Menu, location, opening hours, and direct contact sit right where customers look.'}</p>
+                <div class="mini-actions">
+                  <span class="action-btn-primary">
+                    <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.47 8.53a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+                    {locale === 'vi' ? 'Gọi ngay' : 'Call'}
+                  </span>
+                  <span class="action-btn-soft">
+                    <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor"><path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414L1.707 13.707A1 1 0 0 1 0 13V2a1 1 0 0 1 1-1h13z"/></svg>
+                    Zalo
+                  </span>
+                  <span class="action-btn-soft">
+                    <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor"><path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                    {locale === 'vi' ? 'Chỉ đường' : 'Directions'}
+                  </span>
                 </div>
-                <div class={`phone-photo ${ind.accentPhoto}`} aria-hidden="true" set:html={phoneArt[ind.key]} />
-                <strong class="phone-title">{ind.phoneTitle}</strong>
-                <div class="phone-actions">
-                  <span><svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.47 8.53a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>{locale === 'vi' ? 'Gọi' : 'Call'}</span>
-                  <span>Zalo</span>
-                  <span><svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor" aria-hidden="true"><path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>{locale === 'vi' ? 'Đường' : 'Map'}</span>
+              </div>
+              <div class="site-preview-bottom">
+                <div class="preview-feature-item">
+                  <span class="feature-icon">☕</span>
+                  <div><strong>{locale === 'vi' ? 'Cà phê pha mộc' : 'Roasted Coffee'}</strong><small>{locale === 'vi' ? 'Pha phin & Pha máy' : 'Phin & Espresso'}</small></div>
                 </div>
-              </aside>
-            ))}
-            {inds.map(ind => (
-              <aside class="qr-stand" data-variant={ind.key} aria-label={locale === 'vi' ? 'Minh họa standee QR review' : 'Review QR standee illustration'}>
-                <div class="qr-stand-header">
-                  <span class="qr-brand">Lumi Local</span>
-                  <span class="qr-tag">{locale === 'vi' ? 'Đặt quầy' : 'Counter'}</span>
+                <div class="preview-feature-item">
+                  <span class="feature-icon">🥐</span>
+                  <div><strong>{locale === 'vi' ? 'Bánh nướng trong ngày' : 'Fresh Pastry'}</strong><small>{locale === 'vi' ? 'Làm mới mỗi sáng' : 'Baked daily'}</small></div>
                 </div>
-                <span class="qr-biz-chip">{ind.biz}</span>
-                <div class="qr-google-bar" aria-hidden="true">
-                  <span class="google-badge">G</span>
-                  <Fragment set:html={starsSvg} />
+                <div class="preview-feature-item">
+                  <span class="feature-icon">🪑</span>
+                  <div><strong>{locale === 'vi' ? 'Không gian yên tĩnh' : 'Quiet Workspace'}</strong><small>{locale === 'vi' ? 'Wifi mạnh & Bàn làm việc' : 'High-speed Wi-Fi'}</small></div>
                 </div>
-                <strong class="qr-title">{locale === 'vi' ? 'Chia sẻ trải nghiệm' : 'Share your experience'}</strong>
-                <div class="qr-pattern-box" aria-hidden="true">
-                  <svg viewBox="0 0 80 80" width="70" height="70" fill="#102a43">
-                    <rect x="6" y="6" width="22" height="22" rx="2" fill="none" stroke="#102a43" stroke-width="4"/>
-                    <rect x="12" y="12" width="10" height="10" rx="1"/>
-                    <rect x="52" y="6" width="22" height="22" rx="2" fill="none" stroke="#102a43" stroke-width="4"/>
-                    <rect x="58" y="12" width="10" height="10" rx="1"/>
-                    <rect x="6" y="52" width="22" height="22" rx="2" fill="none" stroke="#102a43" stroke-width="4"/>
-                    <rect x="12" y="58" width="10" height="10" rx="1"/>
-                    <rect x="34" y="8" width="4" height="4"/><rect x="42" y="8" width="4" height="4"/>
-                    <rect x="34" y="16" width="4" height="4"/><rect x="42" y="20" width="4" height="4"/>
-                    <rect x="10" y="34" width="4" height="4"/><rect x="18" y="38" width="4" height="4"/><rect x="26" y="34" width="4" height="4"/>
-                    <rect x="34" y="34" width="6" height="6" fill="#006093"/>
-                    <rect x="44" y="34" width="4" height="4"/><rect x="52" y="38" width="4" height="4"/><rect x="64" y="34" width="4" height="4"/>
-                    <rect x="34" y="46" width="4" height="4"/><rect x="42" y="46" width="4" height="4"/><rect x="50" y="50" width="4" height="4"/>
-                    <rect x="34" y="58" width="4" height="4"/><rect x="44" y="62" width="4" height="4"/><rect x="56" y="58" width="4" height="4"/><rect x="64" y="62" width="4" height="4"/>
-                    <rect x="38" y="68" width="4" height="4"/><rect x="52" y="68" width="4" height="4"/><rect x="68" y="68" width="4" height="4"/>
-                  </svg>
-                </div>
-                <small>{locale === 'vi' ? 'Quét để mở Google Review' : 'Scan to open Google Review'}</small>
-                <div class="qr-stand-foot"></div>
-              </aside>
-            ))}
+              </div>
+            </article>
+            <aside class="phone-preview" aria-label={locale === 'vi' ? 'Minh họa mobile' : 'Mobile illustration'}>
+              <div class="phone-notch"></div>
+              <div class="phone-status-bar">
+                <span>9:41</span>
+                <span class="phone-icons"><svg viewBox="0 0 16 12" width="12" height="9" fill="currentColor"><path d="M1 10h2V8H1v2zm4 0h2V6H5v4zm4 0h2V4H9v6zm4 0h2V1h-2v9z"/></svg></span>
+              </div>
+              <div class="phone-brand-bar">
+                <span class="phone-brand">AN NHIÊN</span>
+                <span class="phone-live-dot"></span>
+              </div>
+              <div class="phone-photo" aria-hidden="true">
+                <svg viewBox="0 0 120 70" width="100%" height="100%" fill="none">
+                  <path d="M30 46h48c0 14-10 20-24 20s-24-6-24-20z" fill="#102a43"/>
+                  <path d="M78 48h8a6 6 0 0 1 0 12h-8" stroke="#102a43" stroke-width="3"/>
+                  <ellipse cx="54" cy="46" rx="24" ry="4" fill="#006093"/>
+                  <path d="M46 36c-2-5 2-8 0-12m8 12c-2-5 2-8 0-12m8 12c-2-5 2-8 0-12" stroke="#f4a62a" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="96" cy="22" r="12" fill="#fff4dc"/>
+                </svg>
+              </div>
+              <strong class="phone-title">{locale === 'vi' ? 'Cà phê ngon. Dễ tìm. Dễ gọi.' : 'Good coffee. Easy to find. Easy to call.'}</strong>
+              <div class="phone-actions">
+                <span><svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.47 8.53a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>{locale === 'vi' ? 'Gọi' : 'Call'}</span>
+                <span>Zalo</span>
+                <span><svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor"><path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>{locale === 'vi' ? 'Đường' : 'Map'}</span>
+              </div>
+            </aside>
+            <aside class="qr-stand" aria-label={locale === 'vi' ? 'Minh họa QR review' : 'Review QR illustration'}>
+              <div class="qr-stand-header">
+                <span class="qr-brand">Lumi Local</span>
+                <span class="qr-tag">{locale === 'vi' ? 'Đặt quầy' : 'Counter'}</span>
+              </div>
+              <div class="qr-google-bar">
+                <span class="google-badge">G</span>
+                <span class="google-stars">★★★★★</span>
+              </div>
+              <strong class="qr-title">{locale === 'vi' ? 'Chia sẻ trải nghiệm' : 'Share your experience'}</strong>
+              <div class="qr-pattern-box" aria-hidden="true">
+                <svg viewBox="0 0 80 80" width="70" height="70" fill="#102a43">
+                  <rect x="6" y="6" width="22" height="22" rx="2" fill="none" stroke="#102a43" stroke-width="4"/>
+                  <rect x="12" y="12" width="10" height="10" rx="1"/>
+                  <rect x="52" y="6" width="22" height="22" rx="2" fill="none" stroke="#102a43" stroke-width="4"/>
+                  <rect x="58" y="12" width="10" height="10" rx="1"/>
+                  <rect x="6" y="52" width="22" height="22" rx="2" fill="none" stroke="#102a43" stroke-width="4"/>
+                  <rect x="12" y="58" width="10" height="10" rx="1"/>
+                  <rect x="34" y="8" width="4" height="4"/><rect x="42" y="8" width="4" height="4"/>
+                  <rect x="34" y="16" width="4" height="4"/><rect x="42" y="20" width="4" height="4"/>
+                  <rect x="10" y="34" width="4" height="4"/><rect x="18" y="38" width="4" height="4"/><rect x="26" y="34" width="4" height="4"/>
+                  <rect x="34" y="34" width="6" height="6" fill="#006093"/>
+                  <rect x="44" y="34" width="4" height="4"/><rect x="52" y="38" width="4" height="4"/><rect x="64" y="34" width="4" height="4"/>
+                  <rect x="34" y="46" width="4" height="4"/><rect x="42" y="46" width="4" height="4"/><rect x="50" y="50" width="4" height="4"/>
+                  <rect x="34" y="58" width="4" height="4"/><rect x="44" y="62" width="4" height="4"/><rect x="56" y="58" width="4" height="4"/><rect x="64" y="62" width="4" height="4"/>
+                  <rect x="38" y="68" width="4" height="4"/><rect x="52" y="68" width="4" height="4"/><rect x="68" y="68" width="4" height="4"/>
+                </svg>
+              </div>
+              <small>{locale === 'vi' ? 'Quét để mở Google Review' : 'Scan to open Google Review'}</small>
+              <div class="qr-stand-foot"></div>
+            </aside>
           </div>
         </div>
         <nav class="workflow-dock glass-control" aria-label="Quick links">
@@ -489,21 +389,21 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
       </div>
     </section>
 
-    <section class="wrap proof-row" aria-label="Reassurance" data-reveal-group>
-      {c.proof.map(([title,text]) => <article class="proof-card" data-reveal><span class="proof-mark"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><strong>{title}</strong><p>{text}</p></div></article>)}
+    <section class="wrap proof-row" aria-label="Reassurance">
+      {c.proof.map(([title,text]) => <article class="proof-card"><span class="proof-mark"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><strong>{title}</strong><p>{text}</p></div></article>)}
     </section>
 
     <section class="examples wrap" aria-labelledby="examples-title">
-      <div class="examples-heading" data-reveal>
+      <div class="examples-heading">
         <div><p class="eyebrow">{c.examples.eyebrow}</p><h2 id="examples-title">{c.examples.title}</h2></div>
         <p class="section-intro">{c.examples.intro}</p>
       </div>
-      <div class="example-rail" data-reveal-group>
-        {c.examples.items.map(([type,name,meta,text],i) => <article class="example-card sheet spotlight" data-reveal>
+      <div class="example-rail">
+        {c.examples.items.map(([type,name,meta,text],i) => <article class="example-card sheet">
           <div class="example-browser">
             <span class="example-dots"><i></i><i></i><i></i></span>
             <span class="example-url">
-              <svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor" aria-hidden="true"><path d="M4 6V4a4 4 0 0 1 8 0v2h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1zm2-2a2 2 0 1 1 4 0v2H6V4zm-2 4v5h8V8H4z"/></svg>
+              <svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor"><path d="M4 6V4a4 4 0 0 1 8 0v2h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1zm2-2a2 2 0 1 1 4 0v2H6V4zm-2 4v5h8V8H4z"/></svg>
               {`demo-${i+1}.runlumi.app`}
             </span>
             <span class="example-index">0{i+1}</span>
@@ -518,9 +418,9 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
               <p class="example-meta">{meta}</p>
               <p class="example-text">{text}</p>
               <div class="example-actions">
-                <span class="example-action-btn"><svg viewBox="0 0 16 16" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.47 8.53a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>{locale === 'vi' ? 'Gọi' : 'Call'}</span>
+                <span class="example-action-btn"><svg viewBox="0 0 16 16" width="11" height="11" fill="currentColor"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.47 8.53a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>{locale === 'vi' ? 'Gọi' : 'Call'}</span>
                 <span class="example-action-btn example-action-zalo">Zalo</span>
-                <span class="example-action-btn"><svg viewBox="0 0 16 16" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>{locale === 'vi' ? 'Bản đồ' : 'Map'}</span>
+                <span class="example-action-btn"><svg viewBox="0 0 16 16" width="11" height="11" fill="currentColor"><path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>{locale === 'vi' ? 'Bản đồ' : 'Map'}</span>
               </div>
             </div>
           </div>
@@ -529,12 +429,12 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     </section>
 
     <section class="section wrap" id="goi-dich-vu">
-      <div class="section-heading" data-reveal>
+      <div class="section-heading">
         <div><p class="eyebrow">{c.packages.eyebrow}</p><h2>{c.packages.title}</h2></div>
         <p class="section-intro">{c.packages.intro}</p>
       </div>
-      <div class="offer-layout" data-reveal-group>
-        <article class="starter-offer sheet" id="starter" data-reveal>
+      <div class="offer-layout">
+        <article class="starter-offer sheet" id="starter">
           <div class="offer-header">
             <div>
               <p class="index">02 / {labels.core}</p>
@@ -550,11 +450,11 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <div class="starter-content">
             <ul class="starter-bullets">
               {c.packages.starter.bullets.map(item => <li>
-                <span class="bullet-check"><svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span>
+                <span class="bullet-check"><svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>
                 <span>{item}</span>
               </li>)}
             </ul>
-            <div class="starter-receipt" tabindex="0" role="group" aria-label={labels.receipt}>
+            <div class="starter-receipt">
               <div class="receipt-header">
                 <span class="receipt-badge">{locale === 'vi' ? 'Chi phí trọn gói' : 'All-inclusive cost'}</span>
               </div>
@@ -562,17 +462,9 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
                 <span>{locale === 'vi' ? 'Năm đầu' : 'Year one'}</span>
                 <strong>{c.packages.starter.price}</strong>
               </div>
-              <div class="credit-bar" aria-hidden="true"><span class="credit-bar-credited"></span></div>
-              <div class="credit-bar-legend" aria-hidden="true">
-                <span class="legend-credited"><i></i>{locale === 'vi' ? 'Trust Kit đã trừ 399.000đ' : 'Trust Kit credit 399,000 VND'}</span>
-                <span class="legend-remainder"><i></i>{locale === 'vi' ? 'Còn lại 1.591.000đ' : 'Remaining 1,591,000 VND'}</span>
-              </div>
               <div class="receipt-row receipt-credit-note">
-                <span>{locale === 'vi' ? 'Đã có Trust Kit (−399k)' : 'If Trust Kit already paid'}</span>
-                <strong class="credit-highlight">
-                  <span>{locale === 'vi' ? 'Chỉ trả +' : 'Pay only +'}</span>
-                  <span class="receipt-price" data-full="1990000" data-net="1591000">{locale === 'vi' ? '1.591.000đ' : '1,591,000 VND'}</span>
-                </strong>
+                <span>{locale === 'vi' ? 'Đã có Trust Kit (-399k)' : 'If Trust Kit already paid'}</span>
+                <strong class="credit-highlight">{locale === 'vi' ? 'Chỉ trả +1.591.000đ' : 'Pay only +1,591,000 VND'}</strong>
               </div>
               <div class="receipt-footer">
                 <span>{locale === 'vi' ? 'Duy trì từ năm 2: chỉ từ 599.000đ/năm' : 'Renewal from year 2: from 599k/year'}</span>
@@ -581,11 +473,11 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           </div>
           <a class="button button-primary starter-cta" href="#bat-dau">
             <span>{c.cta}</span>
-            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
           </a>
         </article>
-        <div class="offer-side" data-reveal-group>
-          <article class="mini-offer sheet spotlight" id="trust-kit" data-reveal>
+        <div class="offer-side">
+          <article class="mini-offer sheet" id="trust-kit">
             <div class="mini-offer-head">
               <p class="index">01</p>
               <h3>{c.packages.trust.name}</h3>
@@ -594,13 +486,13 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
             <p class="mini-offer-desc">{c.packages.trust.text}</p>
             <ul class="mini-bullets">
               {c.packages.trust.bullets.map(item => <li>
-                <span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span>
+                <span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span>
                 <span>{item}</span>
               </li>)}
             </ul>
             <a class="text-link" href="#bat-dau"><span>{locale === 'vi' ? 'Bắt đầu nhỏ' : 'Start small'}</span> →</a>
           </article>
-          <article class="mini-offer renewal-side sheet spotlight" data-reveal>
+          <article class="mini-offer renewal-side sheet">
             <div class="mini-offer-head">
               <p class="index">03</p>
               <h3>{c.packages.renewal.name}</h3>
@@ -611,7 +503,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           </article>
         </div>
       </div>
-      <div class="credit-rail" data-reveal>
+      <div class="credit-rail">
         <span class="credit-rail-icon">✦</span>
         <div class="credit-rail-text">
           <strong>{c.packages.credit}</strong>
@@ -625,14 +517,13 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
 
     <section class="navy-section">
       <div class="wrap">
-        <div class="section-heading inverted" data-reveal>
+        <div class="section-heading inverted">
           <div><p class="eyebrow">{c.convenience.eyebrow}</p><h2>{c.convenience.title}</h2></div>
           <p class="section-intro">{c.convenience.text}</p>
         </div>
-        <div class="convenience-grid" data-reveal-group data-draw>
-          {c.convenience.items.map(([i,title,text]) => <article class="convenience-card" data-reveal>
+        <div class="convenience-grid">
+          {c.convenience.items.map(([i,title,text]) => <article class="convenience-card">
             <div class="convenience-header">
-              <span class="rail-node" aria-hidden="true"></span>
               <span class="index">{i}</span>
               <span class="convenience-line"></span>
             </div>
@@ -644,12 +535,12 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     </section>
 
     <section class="section wrap">
-      <div class="section-heading" data-reveal>
+      <div class="section-heading">
         <div><p class="eyebrow">{c.included.eyebrow}</p><h2>{c.included.title}</h2></div>
         <p class="section-intro">{c.included.intro}</p>
       </div>
-      <div class="feature-grid" data-reveal-group>
-        {c.included.items.map(([title,text],i) => <article class={`sheet feature-card spotlight ${i === 0 ? 'feature-primary' : ''}`} data-reveal>
+      <div class="feature-grid">
+        {c.included.items.map(([title,text],i) => <article class={`sheet feature-card ${i === 0 ? 'feature-primary' : ''}`}>
           <div class="feature-card-header">
             <span class="feature-number">{String(i+1).padStart(2,'0')}</span>
             {i === 0 && <span class="feature-tag">{locale === 'vi' ? 'Nền tảng chính' : 'Core platform'}</span>}
@@ -664,12 +555,12 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     </section>
 
     <section class="section wrap" id="cach-hoat-dong">
-      <div class="section-heading" data-reveal>
+      <div class="section-heading">
         <div><p class="eyebrow">{c.workflow.eyebrow}</p><h2>{c.workflow.title}</h2></div>
         <p class="section-intro">{c.workflow.intro}</p>
       </div>
-      <ol class="step-grid" data-reveal-group>
-        {c.workflow.steps.map(([i,title,text],index) => <li class="step-card sheet" data-reveal>
+      <ol class="step-grid">
+        {c.workflow.steps.map(([i,title,text],index) => <li class="step-card sheet">
           <div class="workflow-art-box">
             <img class="workflow-art" src={`/illustrations/${workflowArt[index]}.svg`} width="320" height="190" alt="" loading="lazy" decoding="async" />
           </div>
@@ -683,12 +574,12 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     </section>
 
     <section class="section wrap" id="gia-duy-tri">
-      <div class="section-heading" data-reveal>
+      <div class="section-heading">
         <div><p class="eyebrow">{c.renewal.eyebrow}</p><h2>{c.renewal.title}</h2></div>
         <p class="section-intro">{c.renewal.intro}</p>
       </div>
-      <div class="renewal-grid" data-reveal-group>
-        {c.renewal.plans.map(([name,price,text],i) => <article class={`sheet renewal-card spotlight ${i === 1 ? 'renewal-card-featured' : ''}`} data-reveal>
+      <div class="renewal-grid">
+        {c.renewal.plans.map(([name,price,text],i) => <article class={`sheet renewal-card ${i === 1 ? 'renewal-card-featured' : ''}`}>
           <div class="renewal-card-head">
             <span class="index">0{i+1}</span>
             {i === 1 && <span class="recommended">{labels.recommended}</span>}
@@ -697,42 +588,42 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <strong class="renewal-price">{price}</strong>
           <p>{text}</p>
           <ul class="renewal-checklist">
-            <li><span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span>{locale === 'vi' ? 'Hosting tốc độ cao + Chứng chỉ SSL' : 'High-speed hosting + SSL certificate'}</span></li>
-            <li><span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span>{locale === 'vi' ? 'Duy trì kỹ thuật & Giám sát uptime' : 'Technical maintenance & uptime monitoring'}</span></li>
-            {i === 1 && <li><span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span>{locale === 'vi' ? 'Gồm 1 tên miền tiêu chuẩn riêng (.vn / .com)' : 'Includes 1 standard custom domain (.vn / .com)'}</span></li>}
+            <li><span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span>{locale === 'vi' ? 'Hosting tốc độ cao + Chứng chỉ SSL' : 'High-speed hosting + SSL certificate'}</span></li>
+            <li><span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span>{locale === 'vi' ? 'Duy trì kỹ thuật & Giám sát uptime' : 'Technical maintenance & uptime monitoring'}</span></li>
+            {i === 1 && <li><span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span>{locale === 'vi' ? 'Gồm 1 tên miền tiêu chuẩn riêng (.vn / .com)' : 'Includes 1 standard custom domain (.vn / .com)'}</span></li>}
           </ul>
         </article>)}
       </div>
-      <p class="renewal-note" data-reveal>{c.renewal.recommendation}</p>
+      <p class="renewal-note">{c.renewal.recommendation}</p>
     </section>
 
     <section class="section wrap trust-section">
-      <div class="section-heading" data-reveal><div><p class="eyebrow">{c.trust.eyebrow}</p><h2>{c.trust.title}</h2></div></div>
-      <div class="trust-grid" data-reveal-group>{c.trust.items.map(([title,text]) => <article class="trust-card sheet" data-reveal><span class="proof-mark"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
+      <div class="section-heading"><div><p class="eyebrow">{c.trust.eyebrow}</p><h2>{c.trust.title}</h2></div></div>
+      <div class="trust-grid">{c.trust.items.map(([title,text]) => <article class="trust-card sheet"><span class="proof-mark"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
     </section>
 
     <section class="section wrap faq" id="cau-hoi">
-      <div class="faq-head" data-reveal>
+      <div class="faq-head">
         <p class="eyebrow">{locale === 'vi' ? 'MINH BẠCH' : 'TRANSPARENCY'}</p>
         <h2>{c.faq.title}</h2>
       </div>
-      <div class="faq-list" data-reveal>{c.faq.items.map(([q,a]) => <details class="faq-item"><summary class="faq-question"><span>{q}</span><span class="faq-toggle" aria-hidden="true">+</span></summary><p class="faq-answer">{a}</p></details>)}</div>
+      <div class="faq-list">{c.faq.items.map(([q,a]) => <details class="faq-item"><summary class="faq-question"><span>{q}</span><span class="faq-toggle" aria-hidden="true">+</span></summary><p class="faq-answer">{a}</p></details>)}</div>
     </section>
 
     <section class="section wrap contact" id="bat-dau">
-      <div class="contact-copy" data-reveal>
+      <div class="contact-copy">
         <p class="eyebrow">{c.form.eyebrow}</p>
         <h2>{c.form.title}</h2>
         <p class="contact-intro">{c.form.text}</p>
         <div class="privacy-notice">
-          <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.464 9.99 1.565 2.044 3.567 3.01 4.395 3.318.066.024.13.04.184.053.054-.013.118-.03.184-.053.828-.308 2.83-1.274 4.395-3.318 1.677-2.195 3.06-5.513 2.464-9.99a1.54 1.54 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 1.25c.606 0 1.696.25 2.766.541.97.262 1.95.57 2.53.76a.54.54 0 0 1 .37.443c.52 3.92-.68 6.84-2.15 8.76-1.39 1.81-3.15 2.68-3.516 2.85-.366-.17-2.126-1.04-3.516-2.85-1.47-1.92-2.67-4.84-2.15-8.76a.54.54 0 0 1 .37-.443c.58-.19 1.56-.498 2.53-.76C6.304 1.5 7.394 1.25 8 1.25z"/></svg>
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.464 9.99 1.565 2.044 3.567 3.01 4.395 3.318.066.024.13.04.184.053.054-.013.118-.03.184-.053.828-.308 2.83-1.274 4.395-3.318 1.677-2.195 3.06-5.513 2.464-9.99a1.54 1.54 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 1.25c.606 0 1.696.25 2.766.541.97.262 1.95.57 2.53.76a.54.54 0 0 1 .37.443c.52 3.92-.68 6.84-2.15 8.76-1.39 1.81-3.15 2.68-3.516 2.85-.366-.17-2.126-1.04-3.516-2.85-1.47-1.92-2.67-4.84-2.15-8.76a.54.54 0 0 1 .37-.443c.58-.19 1.56-.498 2.53-.76C6.304 1.5 7.394 1.25 8 1.25z"/></svg>
           <p class="meta">{c.form.privacy}</p>
         </div>
         <div class="welcome-art-box">
           <img class="welcome-art" src="/illustrations/welcome.svg" width="440" height="240" alt="" loading="lazy" decoding="async" />
         </div>
       </div>
-      <form id="enquiry-form" class="sheet enquiry-form" method="post" action="/api/enquiries" data-reveal>
+      <form id="enquiry-form" class="sheet enquiry-form" method="post" action="/api/enquiries">
         <input type="hidden" name="locale" value={locale} />
         <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off" /></div>
         <label class="full field-label">
@@ -769,9 +660,8 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         </label>
         <p class="form-status full" id="form-status" role="status" aria-live="polite" data-success={c.form.success} data-error={c.form.error}></p>
         <button class="button button-primary full submit-btn" type="submit">
-          <span class="submit-label">{c.form.submit}</span>
-          <svg class="submit-arrow" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-          <span class="btn-spinner" aria-hidden="true"></span>
+          <span>{c.form.submit}</span>
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
         </button>
       </form>
     </section>
@@ -786,11 +676,10 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
       <p>{c.footer}</p>
       <a class="back-to-top" href="#main">
         <span>{locale === 'vi' ? 'Về đầu trang' : 'Back to top'}</span>
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M4 7l4-4 4 4"/></svg>
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13V3M4 7l4-4 4 4"/></svg>
       </a>
     </div>
   </footer>
 
-  <script is:inline type="module" src="/interactions.js"></script>
   <script is:inline type="module" src="/enquiry.js"></script>
 </Page>
