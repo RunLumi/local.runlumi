@@ -11,7 +11,7 @@ Production origin: **https://local.runlumi.app**
 - output directory: `dist`
 - Node: >=22.12
 
-## Release deployment
+## Automatic production deployment
 
 Cloudflare Pages project: `lumi-local` in the RunLumi account.
 The Pages origin is `https://lumi-local.pages.dev`.
@@ -20,10 +20,12 @@ The production custom domain is `https://local.runlumi.app`, attached on
 CNAME pointing to `lumi-local.pages.dev`. HTTPS and both `/` and `/en/` were
 verified on the custom domain. Future DNS changes require explicit authorization.
 
-`.github/workflows/release.yml` builds and deploys the exact tag when a stable
-GitHub release is published. Drafts, prereleases, and ordinary pushes do not
-deploy. A manual run accepts an existing tag for redeployment or rollback.
+`.github/workflows/release.yml` builds and deploys the pushed commit whenever
+`main` changes. Pull requests and pushes to other branches do not deploy.
+The workflow can also be run manually on `main` to redeploy the current commit.
 The workflow verifies both languages on the production custom domain after upload.
+Production runs are serialized to avoid simultaneous uploads.
+Automatic deployment requires the GitHub production credential below.
 
 Required GitHub configuration:
 
