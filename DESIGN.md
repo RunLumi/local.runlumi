@@ -52,6 +52,16 @@ Vietnamese must use natural wrapping and enough line-height to protect diacritic
 
 Do not introduce decorative serif fonts.
 
+## Iconography
+
+Use the original local `ServiceIcon.astro` set: a 24px grid, 1.7px rounded
+strokes, and `currentColor`. Use 12–16px for compact preview controls, 20px
+for supporting rows, and 25px inside flat 52px service emblems. No emoji or
+mixed solid/outline interface icons. Keep labels alongside icons and mark
+decorative SVGs `aria-hidden` and non-focusable. The folded-L logo and
+illustrative QR patterns remain separate assets.
+
+
 ## Grid and materials
 
 - desktop max width: 1200px;
@@ -127,6 +137,11 @@ images for industry cards and the hero's website/phone previews. Keep the
 product interfaces as inspectable HTML. Label generated imagery explicitly as
 AI illustration, never as real customers, premises, or business results.
 Prompts and provenance are recorded in `docs/PHOTO_ASSETS.md`.
+
+User-approved extension, 2026-10-03: use the supplied ImageGen concepts for
+all six service illustrations and the enquiry section. Keep visible AI
+disclosures; generated people are not presented as Lumi staff or customers,
+and generated devices, QR codes, and infrastructure are illustrative only.
 
 ## Motion and interaction
 
