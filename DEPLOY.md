@@ -15,12 +15,15 @@ Production origin: **https://local.runlumi.app**
 
 Cloudflare Pages project: `lumi-local` in the RunLumi account.
 The Pages origin is `https://lumi-local.pages.dev`.
-The intended custom domain remains `https://local.runlumi.app`; attaching it and
-changing DNS require explicit authorization.
+The production custom domain is `https://local.runlumi.app`, attached on
+2026-10-03 with explicit user authorization. Cloudflare created the `local`
+CNAME pointing to `lumi-local.pages.dev`. HTTPS and both `/` and `/en/` were
+verified on the custom domain. Future DNS changes require explicit authorization.
 
 `.github/workflows/release.yml` builds and deploys the exact tag when a stable
 GitHub release is published. Drafts, prereleases, and ordinary pushes do not
 deploy. A manual run accepts an existing tag for redeployment or rollback.
+The workflow verifies both languages on the production custom domain after upload.
 
 Required GitHub configuration:
 

@@ -43,7 +43,7 @@ jobs:
           npx --no-install wrangler pages deploy dist --project-name lumi-local --branch main --commit-hash "$(git rev-parse HEAD)" --commit-dirty=false
       - name: Verify live pages
         run: |
-          curl --fail --retry 5 --retry-delay 3 https://lumi-local.pages.dev/ -o /tmp/lumi-vi.html
-          curl --fail --retry 5 --retry-delay 3 https://lumi-local.pages.dev/en/ -o /tmp/lumi-en.html
+          curl --fail --retry 5 --retry-delay 3 https://local.runlumi.app/ -o /tmp/lumi-vi.html
+          curl --fail --retry 5 --retry-delay 3 https://local.runlumi.app/en/ -o /tmp/lumi-en.html
           grep -q 'Lumi Local' /tmp/lumi-vi.html
           grep -q 'Lumi Local' /tmp/lumi-en.html
