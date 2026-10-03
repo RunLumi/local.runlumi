@@ -122,15 +122,64 @@ Allowed:
 
 If photography is added later, it must show real operating work in natural light, have verified licensing, and be credited.
 
+User-approved update, 2026-10-03: use original ImageGen photorealistic concept
+images for industry cards and the hero's website/phone previews. Keep the
+product interfaces as inspectable HTML. Label generated imagery explicitly as
+AI illustration, never as real customers, premises, or business results.
+Prompts and provenance are recorded in `docs/PHOTO_ASSETS.md`.
+
 ## Motion and interaction
 
-No typing theatre, autoplay video dependency, or decorative animation.
+Motion should make the package tangible, explain a relationship, or confirm an action. Create memorable moments through purposeful choreography; avoid typing theatre, autoplay video dependency, and animation with no explanatory or interaction value.
 
 - hover/focus transitions 120–180ms;
 - lift <=1px;
 - honor reduced motion;
 - preserve keyboard focus;
 - no first-load modal.
+
+### Parallax and alternatives
+
+**Design decision:** prefer micro-interactions and a small scroll-driven HTML/SVG sequence. Traditional parallax is optional, not the visual foundation. Keep the existing palette, Geist typography, folded-L logo, opaque sheets, and exactly two glass controls.
+
+**Evidence boundary:** scroll-driven animation describes what controls progress, not a guarantee of speed or comfort; parallax can itself be scroll-driven. Performance depends on animated properties, rendering work, assets, and device capability. Immersive 3D/WebGL is not inherently faster than simple parallax. Large movement can also be uncomfortable regardless of technique. See the technical references below.
+
+The following limits are Lumi Local design choices, not universal research thresholds:
+
+| Technique | Appropriate Lumi Local use | Constraints and fallback |
+| --- | --- | --- |
+| Subtle parallax | A small depth cue between the hero's site, contact, and QR artifacts. | At most one composition; relative travel <=12px. Keep copy and CTA stationary. Disable on small screens, coarse pointers, and reduced motion. Avoid fixed-background tricks and full-screen camera movement. |
+| Scroll-driven animations | Connect the website, contact surface, and honest-review QR as their section enters view. | Prefer opacity and transforms: translation <=16px, scale 0.98–1.02. Keep information available without animation. Rotation or SVG morphing must explain something and pass profiling; they are not defaults. |
+| Immersive 3D / WebGL | An optional, explorable view of a real package object when depth materially helps understanding. | Prefer inspectable HTML, local SVG, and modest CSS perspective first. Three.js/WebGL is an exception requiring measured benefit and mobile profiling; provide a static HTML/SVG equivalent. No essential text or controls solely in canvas. |
+| Kinetic / variable typography | A brief emphasis on one short supporting phrase. | Geist only; use only axes supported by the shipped font. Keep hero headline, prices, body copy, and CTA labels stable. Avoid per-letter motion, moving line breaks, clipped Vietnamese diacritics, and continuous weight animation. Static text is the default. |
+| Sticky reveal / pinning | Keep one package illustration beside the three delivery steps while the text scrolls naturally. | Prefer native CSS sticky, with at most one such section. Release at its container boundary; use normal document flow on short or narrow viewports. No forced wheel/touch handling, artificial scroll runway, or overlapping cards that cover readable content. |
+| Micro-interactions | Button press, visible focus, FAQ disclosure, selected industry, and enquiry status. | Use 120–180ms feedback and <=1px control lift. Touch and keyboard must receive equivalent state feedback. Never make essential information hover-only; avoid cursor chasing and attention-seeking ripples. |
+
+### Suggested choreography
+
+The hero opens fully readable with its artifacts already present. As the owner reaches the package explanation, one short sequence connects site → contact → review QR. The delivery section may hold a stationary illustration beside its steps. Buttons, FAQ, and form states provide the remaining motion. This is a direction for future implementation, not a claim that these effects are already shipped.
+
+Choose one principal scroll moment per page; do not stack every option above. Impression should come from composition, timing, and clarity, while the owner can immediately read the offer and act.
+
+### Implementation and acceptance rules
+
+- Start with visible, static HTML. Add CSS scroll/view timelines behind feature detection; unsupported browsers retain the complete static layout. A time-triggered entrance is not the same as progress tied to scroll position. Do not install a motion library solely for a reveal.
+- Prefer `transform` and `opacity`; avoid animating layout dimensions, large blurs, or shadows during scrolling. Profile exceptions. Avoid repeated layout reads/writes in scroll handlers and blanket `will-change` promotion.
+- With `prefers-reduced-motion: reduce`, remove parallax, scrubbed transforms, tilt, kinetic text, and animated pinning. Show the complete static state, preserve ordinary state feedback, and respond if the preference changes during the visit.
+- Cursor tilt is optional only for fine pointers with hover. Never intercept touch scrolling or require dragging to understand the offer. Preserve keyboard navigation, visible focus, selection, browser find, and anchor destinations.
+- If WebGL is justified, lazy-load it after essential content, cap render resolution, stop rendering offscreen or in hidden tabs, release resources, and recover to the static equivalent after context loss. No idle animation loop or canvas dependency for the enquiry path.
+- Before shipping motion, compare the static and enhanced versions on the same device and network. Record asset cost, loading, interaction responsiveness, layout shifts, and a scroll performance trace. Simplify or remove effects that introduce visible stutter, delay content/CTA access, or shift layout. Desktop smoothness alone is insufficient evidence.
+- Inspect VI/EN at 320/375/768/1440px, including long labels and diacritics; test touch, keyboard, reduced motion, no JS, unsupported timelines, and short viewports. Verify CTA anchors and form success/failure remain usable throughout. These checks apply when motion is implemented.
+
+### Motion references
+
+Reviewed 2026-10-03. Technical guidance supports implementation choices; trend articles are inspiration, not comparative performance evidence.
+
+- [MDN: CSS scroll-driven animations](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scroll-driven_animations) — scroll and view progress timelines.
+- [web.dev: High-performance CSS animations](https://web.dev/articles/animations-guide) — rendering costs, transform/opacity, and profiling.
+- [MDN: prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/prefers-reduced-motion) — user motion preferences and vestibular considerations.
+- [MDN: WebGL best practices](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices) — device limits, resource costs, and rendering tradeoffs.
+- [Figma: Web design trends](https://www.figma.com/resource-library/web-design-trends/) — visual inspiration for immersive elements, typography, and motion; not a mandate to adopt every trend.
 
 ## Mobile
 
