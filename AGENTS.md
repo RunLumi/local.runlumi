@@ -1,6 +1,6 @@
 # Lumi Local repository instructions
 
-Read `DESIGN.md`, `COPY.md`, `POSITIONING.md`, `PRICING.md`, and the relevant docs before changing customer-facing claims.
+Read [`DESIGN.md`](file:///Volumes/SSD/local.runlumi/DESIGN.md), [`COPY.md`](file:///Volumes/SSD/local.runlumi/COPY.md), [`POSITIONING.md`](file:///Volumes/SSD/local.runlumi/POSITIONING.md), [`PRICING.md`](file:///Volumes/SSD/local.runlumi/PRICING.md), and the relevant docs before changing customer-facing claims or copy.
 
 ## Product identity
 
@@ -16,13 +16,22 @@ Current ladder:
 - Renewal from year two: **599.000đ/year** with a RunLumi subdomain or **999.000đ/year** with one standard custom domain.
 - Lumi Ops is an expansion path only after real operational pain appears.
 
-## Durable narrative
+## Durable narrative & presence trinity
 
 **Distribution → Trust → Ownership → Workflow**
+
+Always consult [`COPY.md`](file:///Volumes/SSD/local.runlumi/COPY.md) for the canonical bilingual copy contract.
+
+The customer-facing value proposition centers on the **3-pillar local presence trinity**:
+1. **Google Maps presence:** Local buyers find your place with accurate location and directions. The owner retains 100% Google account ownership.
+2. **Real Counter Review QR:** Print-ready acrylic standees placed at checkout invite genuine happy customers to leave permanent 5-star Google reviews (compound trust).
+3. **Decision-closing mobile website:** Sub-second mobile loading with transparent service menus, hours, and 1-tap Call/Zalo booking actions.
 
 Website is a component of Lumi Local. The durable value is done-for-you setup, distribution, publishing, domain/hosting, maintenance, and the customer relationship.
 
 ## Claims and Google guardrails
+
+All customer-facing text must strictly follow [`COPY.md`](file:///Volumes/SSD/local.runlumi/COPY.md).
 
 Never:
 
@@ -33,11 +42,11 @@ Never:
 - buy, incentivize, gate, or fabricate Google reviews;
 - say Free Local Presence Alerts are a managed service.
 
-Review QR copy must invite genuine customers to share an honest experience.
+Review QR copy must invite genuine customers to share an honest experience (see exact phrasing in [`COPY.md`](file:///Volumes/SSD/local.runlumi/COPY.md)).
 
 ## Visual system
 
-Follow `DESIGN.md`.
+Follow [`DESIGN.md`](file:///Volumes/SSD/local.runlumi/DESIGN.md).
 
 Preserve:
 
@@ -58,6 +67,7 @@ Use inspectable HTML and original local SVG illustrations.
 - VI homepage: `/`.
 - EN homepage: `/en/`.
 - `src/components/Landing.astro` is the primary customer-facing implementation.
+- All customer copy strings must match [`COPY.md`](file:///Volumes/SSD/local.runlumi/COPY.md).
 - `src/styles/global.css` contains canonical tokens.
 - `src/styles/local.css` contains Lumi Local layout.
 - Primary CTA: **Xem thử Lumi Local cho business của tôi** / **Show me Lumi Local for my business**.
