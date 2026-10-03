@@ -157,7 +157,9 @@ The following limits are Lumi Local design choices, not universal research thres
 
 ### Suggested choreography
 
-The hero opens fully readable with its artifacts already present. As the owner reaches the package explanation, one short sequence connects site → contact → review QR. The delivery section may hold a stationary illustration beside its steps. Buttons, FAQ, and form states provide the remaining motion. This is a direction for future implementation, not a claim that these effects are already shipped.
+The hero opens fully readable with its artifacts already present. As the owner reaches the package explanation, one short sequence connects site → contact → review QR. The delivery section may hold a stationary illustration beside its steps. Buttons, FAQ, and form states provide the remaining motion.
+
+Shipped 2026-10-03: hero exit parallax gives the three desk artifacts a small depth cue (site 0 / contact −6px / review QR −12px, scrubbed only while the stage exits, ≥1024px + fine pointer + motion allowed); the delivery section holds a sticky package composition (website → contact → review QR) whose connector rail draws in view and whose artifacts receive step-synced emphasis while the three steps scroll beside it; micro-interactions cover buttons, FAQ, industry switcher, and enquiry states. Kinetic typography and WebGL stay unshipped by choice.
 
 Choose one principal scroll moment per page; do not stack every option above. Impression should come from composition, timing, and clarity, while the owner can immediately read the offer and act.
 
