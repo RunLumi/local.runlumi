@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220">
+  <title>A local salon, illustrated</title>
+  <path d="M36 192h330" stroke="#c8d0de" stroke-width="2"/>
+  <path d="M69 188V82a57 57 0 0 1 114 0v106" fill="#f4f0e8" stroke="#102a43" stroke-width="3"/>
+  <path d="M83 146V82a43 43 0 0 1 86 0v64Z" fill="#e4f3fc"/>
+  <path d="m108 74 34-25m-36 43 48-36" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <rect x="91" y="137" width="70" height="38" rx="12" fill="#006093"/>
+  <path d="M104 137v-14m45 14v-14m-23 53v15m-26 0h52" stroke="#102a43" stroke-width="3" stroke-linecap="round"/>
+  <path d="M215 188v-40h128v40" fill="#fff" stroke="#102a43" stroke-width="3"/>
+  <path d="M210 148h139m-77 0v40" stroke="#102a43" stroke-width="3"/>
+  <rect x="231" y="108" width="24" height="39" rx="5" fill="#e4f3fc" stroke="#006093" stroke-width="2"/>
+  <path d="M243 108V99h12" fill="none" stroke="#006093" stroke-width="3" stroke-linecap="round"/>
+  <rect x="271" y="122" width="29" height="25" rx="4" fill="#f4a62a"/>
+  <path d="M269 122h33m-33 7h33" stroke="#102a43" stroke-width="2"/>
+  <circle cx="264" cy="61" r="10" fill="#fff" stroke="#006093" stroke-width="3"/>
+  <circle cx="285" cy="72" r="10" fill="#fff" stroke="#006093" stroke-width="3"/>
+  <path d="m269 53 24-31m-10 41-5-43" stroke="#006093" stroke-width="3" stroke-linecap="round"/>
+  <path d="M338 110V72m0 17c-22 0-27-19-27-19 22-1 27 19 27 19m0-5c22 0 27-22 27-22-23 0-27 22-27 22" fill="#e4f3fc" stroke="#006093" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m321 110 5 36h24l5-36Z" fill="#f4f0e8" stroke="#102a43" stroke-width="2"/>
+  <circle cx="209" cy="44" r="4" fill="#f4a62a"/>
+</svg>

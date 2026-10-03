@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 240">
+  <title>A conversation with a local business owner</title>
+  <path d="M39 213h361" stroke="#c8d0de" stroke-width="2"/>
+  <path d="M88 210v-90h112v90" fill="#fff" stroke="#102a43" stroke-width="3"/>
+  <path d="m78 120 14-35h104l14 35Z" fill="#006093"/>
+  <path d="m115 85-4 35m32-35v35m32-35 4 35" stroke="#e4f3fc" stroke-width="12"/>
+  <path d="M77 120c0 13 27 13 27 0 0 13 27 13 27 0 0 13 27 13 27 0 0 13 27 13 27 0 0 13 26 13 26 0" fill="#006093"/>
+  <rect x="102" y="148" width="45" height="35" rx="2" fill="#e4f3fc" stroke="#102a43" stroke-width="2"/>
+  <path d="M161 210v-62h26v62m-10-28h1" fill="#f4f0e8" stroke="#102a43" stroke-width="2"/>
+  <circle cx="293" cy="103" r="23" fill="#f4f0e8" stroke="#102a43" stroke-width="3"/>
+  <path d="M271 96c0-34 48-25 44 8-8-3-18-11-21-19-4 10-11 13-23 11Z" fill="#102a43"/>
+  <path d="M251 208v-57c0-27 82-27 82 0v57" fill="#e4f3fc" stroke="#102a43" stroke-width="3"/>
+  <path d="m266 154-13 24-34-13m98-11 18 27 28-20" fill="none" stroke="#102a43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m219 165-8-6m151 2 7-6" stroke="#102a43" stroke-width="3" stroke-linecap="round"/>
+  <path d="M221 26h109v40h-29l-13 12V66h-67Z" fill="#fff" stroke="#006093" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M237 40h75m-75 12h52" stroke="#006093" stroke-width="3" stroke-linecap="round"/>
+  <path d="M367 96v21m-10-11h20" stroke="#f4a62a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M52 188v-34m0 15c-20 0-23-19-23-19 19 0 23 19 23 19m0-7c18 0 23-20 23-20-20 0-23 20-23 20" fill="#e4f3fc" stroke="#006093" stroke-width="2"/>
+  <path d="m37 187 5 24h20l5-24Z" fill="#f4a62a"/>
+</svg>

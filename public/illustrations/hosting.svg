@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 150">
+  <title>Hosting and encrypted connection, illustrated</title>
+  <path d="M39 129h188" stroke="#c8d0de" stroke-width="2"/>
+  <path d="M75 67c-25 0-28-36-4-41 2-23 38-26 46-5 25-12 42 5 42 23 24 2 23 23 7 23Z" fill="#e4f3fc" stroke="#006093" stroke-width="2.5"/>
+  <path d="M116 67v24m-21-1h42" fill="none" stroke="#006093" stroke-width="2.5" stroke-dasharray="4 5"/>
+  <rect x="60" y="85" width="113" height="43" rx="7" fill="#fff" stroke="#102a43" stroke-width="2.5"/>
+  <path d="M73 99h47m-47 13h47" stroke="#c8d0de" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="153" cy="105" r="5" fill="#006093"/>
+  <rect x="164" y="78" width="50" height="47" rx="8" fill="#f4f0e8" stroke="#102a43" stroke-width="2.5"/>
+  <path d="M175 78V67a14 14 0 0 1 28 0v11" fill="none" stroke="#102a43" stroke-width="3"/>
+  <circle cx="189" cy="98" r="4" fill="#006093"/>
+  <path d="M189 102v8" stroke="#006093" stroke-width="3"/>
+  <circle cx="201" cy="30" r="4" fill="#f4a62a"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 150">
+  <title>An honest customer review invitation on a QR stand</title>
+  <path d="M42 135h174" stroke="#c8d0de" stroke-width="2"/>
+  <path d="m83 126 31-98h55l18 98Z" fill="#f4f0e8" stroke="#102a43" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="72" y="16" width="102" height="115" rx="6" fill="#fff" stroke="#102a43" stroke-width="2.5"/>
+  <path d="M85 30h51m-51 9h32" stroke="#006093" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#102a43"><path d="M88 54h20v20H88Zm50 0h20v20h-20ZM88 96h20v20H88Z"/><path d="M117 55h8v8h-8Zm0 18h8v12h-8Zm23 10h8v8h-8Zm10 19h8v14h-8Zm-33-7h8v21h-8Zm17 11h8v8h-8Zm-46-23h12v6H88Z"/></g>
+  <path d="M187 25h35v28h-16l-11 9v-9h-8Z" fill="#e4f3fc" stroke="#006093" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M196 36h17m-17 7h10" stroke="#006093" stroke-width="2" stroke-linecap="round"/>
+  <path d="M38 66h18m-9-9v18" stroke="#f4a62a" stroke-width="3" stroke-linecap="round"/>
+</svg>

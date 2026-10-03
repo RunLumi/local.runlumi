@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 150">
+  <title>Phone and direct conversation</title>
+  <path d="M37 130h191" stroke="#c8d0de" stroke-width="2"/>
+  <rect x="70" y="17" width="74" height="116" rx="12" fill="#102a43" transform="rotate(-8 107 75)"/>
+  <g transform="rotate(-8 107 75)"><rect x="76" y="23" width="62" height="102" rx="8" fill="#fff"/><path d="M98 30h18" stroke="#102a43" stroke-width="2" stroke-linecap="round"/><circle cx="106" cy="116" r="3" fill="#c8d0de"/></g>
+  <path d="M126 41h81v49h-28l-17 14V90h-36Z" fill="#e4f3fc" stroke="#006093" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M142 56h48m-48 12h32" stroke="#006093" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="86" cy="76" r="23" fill="#006093"/>
+  <path d="m78 64 7 7-4 5c3 5 5 7 10 9l5-4 6 7c-3 9-10 8-20 0-10-8-13-18-4-24Z" fill="#fff"/>
+  <path d="M48 52c-9 11-11 20-9 31m10-11c-1 7 0 13 4 19" fill="none" stroke="#f4a62a" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="218" cy="112" r="4" fill="#f4a62a"/>
+</svg>

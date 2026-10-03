@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300">
+  <title>A local storefront connected to a website and phone</title>
+  <ellipse cx="258" cy="270" rx="209" ry="12" fill="#e7eaf0"/>
+  <rect x="50" y="35" width="341" height="224" rx="12" fill="#fff" stroke="#102a43" stroke-width="3"/>
+  <path d="M50 65h341" stroke="#d9dee8" stroke-width="2"/>
+  <circle cx="68" cy="50" r="3" fill="#f4a62a"/>
+  <circle cx="80" cy="50" r="3" fill="#c8d0de"/>
+  <circle cx="92" cy="50" r="3" fill="#c8d0de"/>
+  <path d="M143 50h126" stroke="#c8d0de" stroke-width="4" stroke-linecap="round"/>
+  <rect x="72" y="83" width="297" height="142" rx="6" fill="#f4f0e8"/>
+  <path d="M188 205V134h114v71" fill="#fff" stroke="#102a43" stroke-width="3"/>
+  <path d="m182 134 11-31h104l11 31Z" fill="#006093"/>
+  <path d="m214 103-4 31m32-31v31m28-31 4 31" stroke="#e4f3fc" stroke-width="12"/>
+  <path d="M181 134c0 13 25 13 25 0 0 13 25 13 25 0 0 13 25 13 25 0 0 13 25 13 25 0 0 13 26 13 26 0" fill="#006093"/>
+  <rect x="205" y="158" width="38" height="30" rx="2" fill="#e4f3fc" stroke="#102a43" stroke-width="2"/>
+  <path d="M258 205v-47h25v47m-8-24h1" fill="#e4f3fc" stroke="#102a43" stroke-width="2"/>
+  <path d="M97 178v24m0-11c-20-3-16-23-16-23 18 0 16 23 16 23m0-7c19-1 16-20 16-20-17 1-16 20-16 20" fill="#e4f3fc" stroke="#006093" stroke-width="2"/>
+  <path d="m83 202 4 17h20l4-17" fill="#f4a62a"/>
+  <path d="M85 242h85m14 0h43" stroke="#c8d0de" stroke-width="5" stroke-linecap="round"/>
+  <rect x="346" y="103" width="107" height="164" rx="16" fill="#102a43" transform="rotate(5 399 185)"/>
+  <g transform="rotate(5 399 185)">
+    <rect x="353" y="111" width="93" height="149" rx="10" fill="#fff"/>
+    <path d="M386 118h28" stroke="#102a43" stroke-width="3" stroke-linecap="round"/>
+    <rect x="365" y="135" width="69" height="55" rx="4" fill="#e4f3fc"/>
+    <path d="M377 176v-21h45v21m-48-25 7-9h36l7 9Z" fill="#006093"/>
+    <path d="M366 204h63m-63 10h43" stroke="#c8d0de" stroke-width="4" stroke-linecap="round"/>
+    <rect x="365" y="230" width="69" height="16" rx="4" fill="#006093"/>
+  </g>
+  <path d="m424 53 8 8 16-20" fill="none" stroke="#006093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

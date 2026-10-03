@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220">
+  <title>Air conditioning installation and maintenance, illustrated</title>
+  <path d="M34 192h335M55 192V34h195" stroke="#c8d0de" stroke-width="2" fill="none"/>
+  <rect x="78" y="45" width="158" height="55" rx="10" fill="#fff" stroke="#102a43" stroke-width="3"/>
+  <path d="M91 80h130m-124 9h118" stroke="#006093" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="216" cy="58" r="3" fill="#f4a62a"/>
+  <path d="M109 111c-16 21 17 27 0 47m36-47c-16 21 17 27 0 47m36-47c-16 21 17 27 0 47" stroke="#006093" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M272 64V45h60v55" fill="none" stroke="#c8d0de" stroke-width="4"/>
+  <rect x="260" y="105" width="99" height="82" rx="9" fill="#e4f3fc" stroke="#102a43" stroke-width="3"/>
+  <circle cx="300" cy="146" r="28" fill="#fff" stroke="#006093" stroke-width="2"/>
+  <path d="M300 144c-15-26 13-31 13-13Zm1 4c30 0 20 26 4 16Zm-5 0c-15 26-34 4-18-5Z" fill="#006093"/>
+  <path d="M341 121v49m7-49v49m-76 19v4m71-4v4" stroke="#102a43" stroke-width="2"/>
+  <path d="M209 189v-69h30v69m-30-17h30m-30-18h30m-30-18h30" stroke="#102a43" stroke-width="3" fill="none" stroke-linejoin="round"/>
+  <path d="M201 114h46" stroke="#f4a62a" stroke-width="6" stroke-linecap="round"/>
+  <path d="m94 177 10-6 10 6v11H94Z" fill="#f4f0e8" stroke="#102a43" stroke-width="2"/>
+  <path d="M302 51v21m-10-16 20 11m-20 0 20-11" stroke="#006093" stroke-width="2" stroke-linecap="round"/>
+</svg>

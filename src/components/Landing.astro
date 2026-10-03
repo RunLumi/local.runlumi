@@ -187,6 +187,9 @@ const copy = {
   }
 };
 const c = copy[locale];
+const industryArt = ['salon', 'garage', 'hvac'];
+const featureArt = ['website', 'contact', 'map', 'review', 'hosting', 'alerts'];
+const workflowArt = ['brief', 'approve', 'publish'];
 const otherLocale = locale === 'vi' ? 'EN' : 'VI';
 const otherHref = locale === 'vi' ? '/en/' : '/';
 const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướng chính', illustrative:'Minh họa, không phải khách hàng thật', recommended:'Khuyên dùng', core:'Gói chính' } : { main:'Main content', nav:'Primary navigation', illustrative:'Illustrative, not a real customer', recommended:'Recommended', core:'Core package' };
@@ -282,6 +285,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
             <span class="example-url">{`demo-${i+1}.runlumi.app`}</span>
           </div>
           <div class="example-body">
+            <img class="industry-art" src={`/illustrations/${industryArt[i]}.svg`} width="400" height="220" alt="" loading="lazy" decoding="async" />
             <p class="example-type">{type}</p>
             <h3>{name}</h3>
             <p class="example-meta">{meta}</p>
@@ -352,7 +356,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <span class="feature-number">{String(i+1).padStart(2,'0')}</span>
           <h3>{title}</h3>
           <p>{text}</p>
-          {i === 0 && <div class="feature-site-proof" aria-hidden="true"><span>annhien.vn</span><strong>{locale === 'vi' ? 'Dịch vụ rõ ràng trên mobile' : 'Clear services on mobile'}</strong><div><i></i><i></i><i></i></div></div>}
+          <img class={`feature-art ${i === 0 ? 'feature-art-primary' : ''}`} src={`/illustrations/${featureArt[i]}.svg`} width={i === 0 ? 520 : 260} height={i === 0 ? 300 : 150} alt="" loading="lazy" decoding="async" />
         </article>)}
       </div>
     </section>
@@ -363,7 +367,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <p class="section-intro">{c.workflow.intro}</p>
       </div>
       <ol class="step-grid">
-        {c.workflow.steps.map(([i,title,text]) => <li><span class="step-index">{i}</span><h3>{title}</h3><p>{text}</p></li>)}
+        {c.workflow.steps.map(([i,title,text],index) => <li><img class="workflow-art" src={`/illustrations/${workflowArt[index]}.svg`} width="320" height="190" alt="" loading="lazy" decoding="async" /><span class="step-index">{i}</span><h3>{title}</h3><p>{text}</p></li>)}
       </ol>
     </section>
 
@@ -398,6 +402,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <h2>{c.form.title}</h2>
         <p>{c.form.text}</p>
         <p class="meta">{c.form.privacy}</p>
+        <img class="welcome-art" src="/illustrations/welcome.svg" width="440" height="240" alt="" loading="lazy" decoding="async" />
       </div>
       <form id="enquiry-form" class="sheet enquiry-form" method="post" action="/api/enquiries">
         <input type="hidden" name="locale" value={locale} />

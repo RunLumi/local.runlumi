@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220">
+  <title>A neighborhood auto workshop, illustrated</title>
+  <path d="M26 192h348M52 191V56h295v135" fill="none" stroke="#c8d0de" stroke-width="2"/>
+  <path d="M52 55h295v24H52Z" fill="#e4f3fc"/>
+  <path d="M67 89h96m90 0h79M67 98h69" stroke="#c8d0de" stroke-width="2"/>
+  <path d="m83 142 29-41h104l34 41" fill="#fff" stroke="#102a43" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m119 110-20 30h65v-30Zm55 0v30h60l-23-30Z" fill="#e4f3fc"/>
+  <path d="M78 140h176c13 0 20 10 20 22v15H65v-21c0-9 4-16 13-16Z" fill="#006093" stroke="#102a43" stroke-width="3"/>
+  <path d="m251 140 22-36 34 21-31 30" fill="#f4f0e8" stroke="#102a43" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="105" cy="175" r="19" fill="#102a43"/>
+  <circle cx="105" cy="175" r="9" fill="#fff"/>
+  <circle cx="230" cy="175" r="19" fill="#102a43"/>
+  <circle cx="230" cy="175" r="9" fill="#fff"/>
+  <path d="M66 154h22m166 0h18" stroke="#fff4dc" stroke-width="5"/>
+  <path d="M169 151h11" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M316 191v-43h34v43m-30-28h26" fill="#fff" stroke="#102a43" stroke-width="3"/>
+  <path d="m325 108-12-26c-13 4-21-9-18-19l10 12 11-4 3-11c11 6 16 19 5 27l10 21" fill="#f4a62a" stroke="#102a43" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M193 59V43h39v16" fill="none" stroke="#006093" stroke-width="3"/>
+  <rect x="184" y="55" width="57" height="23" rx="3" fill="#006093"/>
+  <path d="M191 66h42" stroke="#fff" stroke-width="2"/>
+</svg>

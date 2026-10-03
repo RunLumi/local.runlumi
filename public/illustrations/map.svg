@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 150">
+  <title>A clear route to a local business</title>
+  <path d="m35 46 58-15 64 16 58-15v94l-58 15-64-16-58 15Z" fill="#f4f0e8" stroke="#c8d0de" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m93 31 0 94m64-78v94" stroke="#c8d0de" stroke-width="2"/>
+  <path d="m37 91 61-12 37 20 76-22m-79-36-12 93" stroke="#fff" stroke-width="12" fill="none"/>
+  <path d="M65 110V84h60v-8h32" stroke="#006093" stroke-width="3" stroke-dasharray="5 6" fill="none" stroke-linecap="round"/>
+  <circle cx="65" cy="110" r="7" fill="#fff" stroke="#006093" stroke-width="3"/>
+  <path d="M178 69c0 17-25 38-25 38s-25-21-25-38a25 25 0 0 1 50 0Z" fill="#006093" stroke="#102a43" stroke-width="2.5"/>
+  <circle cx="153" cy="68" r="9" fill="#fff"/>
+  <path d="m191 45 7-7 7 7v12h-14Z" fill="#f4a62a"/>
+</svg>

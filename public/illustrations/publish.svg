@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 190">
+  <title>A business page published at its own online address</title>
+  <ellipse cx="160" cy="170" rx="117" ry="8" fill="#e7eaf0"/>
+  <path d="M84 162V85h122v77" fill="#fff" stroke="#102a43" stroke-width="2.5"/>
+  <path d="m75 85 14-34h112l14 34Z" fill="#006093"/>
+  <path d="m114 51-5 34m36-34v34m32-34 5 34" stroke="#e4f3fc" stroke-width="13"/>
+  <path d="M75 85c0 13 28 13 28 0 0 13 28 13 28 0 0 13 28 13 28 0 0 13 28 13 28 0 0 13 28 13 28 0" fill="#006093"/>
+  <rect x="99" y="113" width="47" height="31" rx="2" fill="#e4f3fc" stroke="#102a43" stroke-width="2"/>
+  <path d="M164 162v-48h27v48m-10-23h1" fill="#f4f0e8" stroke="#102a43" stroke-width="2"/>
+  <path d="M211 120h50V78h-29" fill="none" stroke="#006093" stroke-width="2" stroke-dasharray="4 5"/>
+  <circle cx="261" cy="53" r="24" fill="#f4f0e8" stroke="#102a43" stroke-width="2.5"/>
+  <ellipse cx="261" cy="53" rx="10" ry="24" stroke="#006093" stroke-width="2" fill="none"/>
+  <path d="M238 53h46m-42-10h38m-38 20h38" stroke="#006093" stroke-width="2"/>
+  <path d="m42 127 7 7 15-19" fill="none" stroke="#f4a62a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
