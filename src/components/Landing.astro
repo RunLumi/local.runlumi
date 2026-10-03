@@ -1,0 +1,346 @@
+---
+import Page from '../layouts/Page.astro';
+
+interface Props { locale: 'vi' | 'en' }
+const { locale } = Astro.props;
+
+const copy = {
+  vi: {
+    title: 'Lumi Local | Hiện diện online trọn gói cho business địa phương',
+    description: 'Lumi Local làm trọn website, QR review, Call/Zalo, hosting và duy trì kỹ thuật cho business địa phương. Trust Kit 399k; Starter 1,99 triệu năm đầu.',
+    nav: [['#goi-dich-vu','Gói dịch vụ'],['#cach-hoat-dong','Cách hoạt động'],['#gia-duy-tri','Chi phí duy trì'],['#cau-hoi','Câu hỏi']],
+    cta: 'Xem thử Lumi Local cho business của tôi',
+    hero: {
+      eyebrow: 'Lumi Local / done-for-you cho business địa phương',
+      title: ['Được tìm thấy.','Được tin tưởng.','Được liên hệ dễ hơn.'],
+      text: 'Lumi Local làm trọn website, QR review, Call/Zalo và phần hiện diện online cho business của bạn. Không cần tự setup, không cần biết kỹ thuật.',
+      secondary: 'Xem các gói',
+      note: 'Không cam kết thứ hạng Google, số lead hay doanh thu. Lumi tập trung vào phần hiện diện, liên hệ và kỹ thuật trong phạm vi đã nêu.'
+    },
+    proof: [
+      ['Không cần quyền Google Maps','Lumi không đăng nhập hay chỉnh Google Business Profile thay bạn.'],
+      ['Không cần tự lo hosting / SSL','Phần kỹ thuật nằm trong gói phù hợp.'],
+      ['Không cần biết kỹ thuật','Bạn duyệt; Lumi lo phần setup và publish.']
+    ],
+    packages: {
+      eyebrow: 'Một sản phẩm, hai mức vào',
+      title: 'Bắt đầu nhỏ nếu muốn. Chọn trọn gói nếu đã thấy đủ rõ.',
+      intro: 'Trust Kit giảm rủi ro cho quyết định đầu tiên. Lumi Local Starter là gói đầy đủ, trong đó website là phần hữu hình nhất.',
+      trust: {
+        name:'Lumi Trust Kit', price:'399.000đ', unit:'một lần',
+        text:'QR Google Review, file standee, audit public presence ngắn, checklist và cảnh báo public khi khả dụng.',
+        bullets:['Không cần quyền chỉnh Google Maps','Review từ khách thật, không incentive','399k được credit khi nâng cấp trong 30 ngày']
+      },
+      starter: {
+        name:'Lumi Local Starter', price:'1.990.000đ', unit:'năm đầu',
+        text:'Website mobile-first, QR review, Call/Zalo, Maps, form liên hệ, hosting + SSL và một vòng chỉnh sửa cơ bản.',
+        bullets:['Website + hiện diện online trọn gói','Lumi setup, publish và duy trì kỹ thuật','RunLumi Address hoặc tên miền riêng']
+      },
+      renewal: {
+        name:'Duy trì từ năm 2', price:'599k / 999k', unit:'mỗi năm',
+        text:'599k với địa chỉ RunLumi. 999k với một tên miền tiêu chuẩn riêng, kèm hosting, SSL và maintenance kỹ thuật.',
+        bullets:['599k: RunLumi Address','999k: tên miền riêng tiêu chuẩn','Premium domain báo riêng trước']
+      },
+      credit:'Đã mua Trust Kit? Nâng cấp trong 30 ngày chỉ cần thêm 1.591.000đ.'
+    },
+    convenience: {
+      eyebrow:'Không bán code',
+      title:'Bạn trả tiền để khỏi phải tự làm.',
+      text:'AI làm website ngày càng nhanh. Giá trị của Lumi Local là chuẩn bị đúng context, đưa mọi thứ lên online, giữ phần kỹ thuật hoạt động và để bạn có một nơi rõ ràng cho khách xem dịch vụ và liên hệ.',
+      items:[
+        ['01','Lumi chuẩn bị','Dùng thông tin business thật để dựng bản phù hợp, không bắt bạn bắt đầu từ trang trắng.'],
+        ['02','Bạn duyệt','Bạn xem nội dung và hình ảnh, góp ý trong phạm vi đã thống nhất.'],
+        ['03','Lumi đưa lên online','Publish, domain/subdomain, hosting, SSL, Call/Zalo, QR và form được setup theo gói.']
+      ]
+    },
+    included: {
+      eyebrow:'Lumi Local Starter',
+      title:'Một bộ hiện diện online gọn, rõ và dùng được ngay.',
+      intro:'Không ghép mười dịch vụ rời rạc. Các phần chính được gom thành một gói để chủ business không phải tự phối hợp nhiều nhà cung cấp.',
+      items:[
+        ['Website mobile-first','Trang giới thiệu và dịch vụ rõ ràng, ưu tiên điện thoại.'],
+        ['Call / Zalo','Khách có thể gọi hoặc nhắn ngay từ trang.'],
+        ['Google Maps','Hiển thị địa chỉ và đường đi mà không cần Lumi giữ quyền quản lý profile.'],
+        ['QR review','QR dẫn khách thật tới luồng review Google phù hợp.'],
+        ['Hosting + SSL','Lumi lo phần hạ tầng trong phạm vi gói.'],
+        ['Local Presence Alerts','Cảnh báo public-data khi tính năng tương ứng đã được triển khai.']
+      ]
+    },
+    workflow: {
+      eyebrow:'3 bước',
+      title:'Lên online mà không biến bạn thành webmaster.',
+      intro:'Bạn cung cấp thông tin thật. Lumi làm phần kỹ thuật.',
+      steps:[
+        ['01','Chia sẻ thông tin','Tên business, dịch vụ, địa chỉ, contact, hình ảnh và thông tin cần thiết.'],
+        ['02','Xem và duyệt','Lumi chuẩn bị bản phù hợp; bạn kiểm tra nội dung và góp ý trong scope.'],
+        ['03','Đưa lên online','Lumi publish, kết nối domain/subdomain và duy trì phần kỹ thuật đã cam kết.']
+      ]
+    },
+    renewal: {
+      eyebrow:'Từ năm 2',
+      title:'Chi phí duy trì nhỏ, rõ từ đầu.',
+      intro:'Không giấu renewal trong chữ nhỏ.',
+      plans:[
+        ['RunLumi Address','599.000đ/năm','Subdomain RunLumi + hosting + SSL + technical maintenance.'],
+        ['Tên miền riêng','999.000đ/năm','Một tên miền tiêu chuẩn + hosting + SSL + technical maintenance.']
+      ],
+      recommendation:'Với business đang hoạt động nghiêm túc, tên miền riêng là lựa chọn khuyên dùng. Premium/special domain báo riêng.'
+    },
+    fit: {
+      eyebrow:'Phù hợp với',
+      title:'Business địa phương có khách thật và muốn hiện diện online tử tế.',
+      items:['Salon / Spa','Garage / sửa xe','Điện lạnh / HVAC','Nha khoa / phòng khám','Thú y / pet services','Nội thất / sửa nhà','Vệ sinh / pest control','Studio / trung tâm']
+    },
+    trust: {
+      eyebrow:'Rõ từ ngày đầu',
+      title:'Ít lời hứa hơn. Phạm vi rõ hơn.',
+      items:[
+        ['Bạn giữ quyền Google Maps','Tài khoản Google vẫn thuộc về bạn. Lumi không cần quyền edit cho offer này.'],
+        ['Không mua review','Không discount, quà tặng hoặc yêu cầu 5 sao để đổi review.'],
+        ['Không hứa top Google','Không cam kết thứ hạng, traffic, lead, khách hoặc doanh thu.'],
+        ['Không custom vô hạn','Scope rõ giúp giữ chất lượng, tốc độ và giá. Phần ngoài scope được báo riêng.']
+      ]
+    },
+    faq: {
+      title:'Câu hỏi thường gặp',
+      items:[
+        ['399k Trust Kit gồm những gì?','QR Google Review, file standee, audit public presence ngắn, checklist và các asset liên hệ phù hợp. Nếu nâng cấp Starter trong 30 ngày, 399k được credit toàn bộ.'],
+        ['Lumi có cần quyền chỉnh Google Maps không?','Không. Lumi không cần Google login hoặc edit access để cung cấp offer hiện tại.'],
+        ['Tôi tự làm website bằng AI được mà?','Đúng. Lumi không tính tiền vì code khó. Bạn trả cho phần done-for-you: nội dung, setup, publish, Call/Zalo, domain/hosting và maintenance trong scope.'],
+        ['Có đảm bảo lên top Google hoặc có khách không?','Không. Lumi không cam kết ranking, traffic, lead, khách hoặc doanh thu.'],
+        ['Từ năm 2 bao nhiêu?','599.000đ/năm với RunLumi Address; 999.000đ/năm với một tên miền tiêu chuẩn riêng. Premium domain báo riêng.'],
+        ['Có phải mua Trust Kit trước không?','Không. Nếu preview đủ rõ và bạn muốn gói đầy đủ, có thể mua Lumi Local Starter trực tiếp.']
+      ]
+    },
+    form: {
+      eyebrow:'Bước tiếp theo',
+      title:'Cho Lumi xem business của bạn trước.',
+      text:'Tên business và số điện thoại/Zalo là đủ để bắt đầu. Lumi có thể xem bối cảnh public trước khi trao đổi.',
+      name:'Tên của bạn',
+      business:'Tên business',
+      phone:'Số điện thoại / Zalo',
+      email:'Email (không bắt buộc)',
+      note:'Bạn muốn Lumi Local hỗ trợ phần nào? (không bắt buộc)',
+      consent:'Tôi đồng ý để Lumi liên hệ về yêu cầu này.',
+      submit:'Gửi business của tôi',
+      privacy:'Không gửi thông tin thanh toán, dữ liệu khách hàng hoặc tài liệu mật.',
+      success:'Lumi đã nhận yêu cầu. Bước này chưa thu phí hoặc tạo tài khoản.',
+      error:'Chưa gửi được yêu cầu. Vui lòng thử lại sau.'
+    },
+    footer:'Website chỉ là một phần. Lumi Local lo phần còn lại trong phạm vi đã cam kết.'
+  },
+  en: {
+    title: 'Lumi Local | Done-for-you online presence for local businesses',
+    description: 'Lumi Local handles website, review QR, Call/Zalo, hosting and technical maintenance for local businesses. Trust Kit 399k; Starter 1.99m VND in year one.',
+    nav: [['#goi-dich-vu','Packages'],['#cach-hoat-dong','How it works'],['#gia-duy-tri','Renewal'],['#cau-hoi','FAQ']],
+    cta: 'Show me Lumi Local for my business',
+    hero: {
+      eyebrow:'Lumi Local / done-for-you for local business',
+      title:['Be found.','Be trusted.','Be easier to contact.'],
+      text:'Lumi Local handles your website, review QR, Call/Zalo and practical online presence. No website builder or technical setup required.',
+      secondary:'See packages',
+      note:'No promise of Google ranking, leads or revenue. Lumi focuses on the online presence, contact paths and technical scope stated here.'
+    },
+    proof:[
+      ['No Google Maps edit access','Your Google account stays yours.'],
+      ['No hosting / SSL chores','The technical layer is included in the appropriate package.'],
+      ['No technical expertise needed','You review; Lumi handles setup and publishing.']
+    ],
+    packages:{
+      eyebrow:'One product, two entry points',
+      title:'Start small if you want. Choose the full package when it is already clear.',
+      intro:'Trust Kit reduces first-purchase risk. Lumi Local Starter is the full package; the website is its most visible component.',
+      trust:{name:'Lumi Trust Kit',price:'399,000 VND',unit:'one-time',text:'Google Review QR, standee artwork, short public-presence audit, checklist and public-data alerts where available.',bullets:['No Google edit access','Real customer reviews, no incentives','399k credited when upgrading within 30 days']},
+      starter:{name:'Lumi Local Starter',price:'1,990,000 VND',unit:'year one',text:'Mobile-first website, review QR, contact actions, Maps, form, hosting + SSL and one basic content revision.',bullets:['Done-for-you online presence','Lumi sets up, publishes and maintains the technical layer','RunLumi Address or custom domain']},
+      renewal:{name:'From year two',price:'599k / 999k',unit:'per year',text:'599k with a RunLumi address. 999k with one standard custom domain, hosting, SSL and maintenance.',bullets:['599k: RunLumi Address','999k: standard custom domain','Premium domains quoted separately']},
+      credit:'Bought Trust Kit? Upgrade within 30 days and pay only 1,591,000 VND more.'
+    },
+    convenience:{eyebrow:'We do not sell code',title:'You pay so you do not have to do it yourself.',text:'AI makes websites faster. Lumi Local adds the context, setup, publishing, technical ownership and a clear place for customers to understand and contact your business.',items:[['01','Lumi prepares','We use verified business context instead of asking you to start from a blank page.'],['02','You review','You check content and imagery and give bounded feedback.'],['03','Lumi publishes','Domain/subdomain, hosting, SSL, contact actions, QR and form are set up within scope.']]},
+    included:{eyebrow:'Lumi Local Starter',title:'A practical online presence that is ready to use.',intro:'The essential pieces are bundled so the owner does not have to coordinate multiple vendors.',items:[['Mobile-first website','Clear services and contact information on phones.'],['Call / Zalo','Direct contact actions from the page.'],['Google Maps','Show location without giving Lumi profile control.'],['Review QR','Help real customers reach the appropriate Google review flow.'],['Hosting + SSL','Lumi handles the infrastructure within scope.'],['Local Presence Alerts','Public-data alerts where the corresponding feature is implemented.']]},
+    workflow:{eyebrow:'3 steps',title:'Get online without becoming a webmaster.',intro:'You provide real information. Lumi handles the technical work.',steps:[['01','Share the basics','Business name, services, address, contact, images and required information.'],['02','Review','Lumi prepares the page; you check content and give in-scope feedback.'],['03','Go online','Lumi publishes, connects domain/subdomain and maintains the agreed technical layer.']]},
+    renewal:{eyebrow:'From year two',title:'Small, transparent annual maintenance.',intro:'Renewal is visible from day one.',plans:[['RunLumi Address','599,000 VND/year','RunLumi subdomain + hosting + SSL + technical maintenance.'],['Custom domain','999,000 VND/year','One standard custom domain + hosting + SSL + technical maintenance.']],recommendation:'For an established business, a custom domain is the recommended option. Premium/special domains are quoted separately.'},
+    fit:{eyebrow:'Built for',title:'Local businesses with real customers and a need for a respectable online presence.',items:['Salon / Spa','Garage / auto repair','HVAC / air conditioning','Dental / clinic','Pet services','Interior / home repair','Cleaning / pest control','Studio / education']},
+    trust:{eyebrow:'Clear from day one',title:'Fewer promises. Clearer scope.',items:[['You keep Google control','Your Google account stays yours. Lumi does not need edit access for this offer.'],['No bought reviews','No discounts, gifts or five-star requests in exchange for reviews.'],['No ranking promise','No guarantee of ranking, traffic, leads, customers or revenue.'],['No unlimited custom work','Clear scope protects quality, speed and price. Extra work is quoted separately.']]},
+    faq:{title:'Frequently asked questions',items:[['What is included in the 399k Trust Kit?','A Google Review QR, standee artwork, short public-presence audit, checklist and appropriate contact assets. Upgrade within 30 days and the full 399k is credited.'],['Do you need Google Maps edit access?','No. Lumi does not need your Google login or edit access for the current offer.'],['Can I make a website with AI myself?','Yes. Lumi is not priced because coding is hard. You pay for done-for-you content, setup, publishing, contact actions, domain/hosting and in-scope maintenance.'],['Do you guarantee ranking or customers?','No. Lumi does not guarantee ranking, traffic, leads, customers or revenue.'],['What is renewal?','599,000 VND/year with a RunLumi Address; 999,000 VND/year with one standard custom domain.'],['Must I buy Trust Kit first?','No. If the preview is clear enough, you can buy Lumi Local Starter directly.']]},
+    form:{eyebrow:'Next step',title:'Show Lumi your business first.',text:'A business name and phone/Zalo are enough to start. Lumi can review public context before the conversation.',name:'Your name',business:'Business name',phone:'Phone / Zalo',email:'Email (optional)',note:'What would you like help with? (optional)',consent:'I agree that Lumi may contact me about this request.',submit:'Send my business',privacy:'Do not send payment information, customer data or confidential documents.',success:'We received your request. No payment was taken and no account was created.',error:'We could not send the request. Please try again later.'},
+    footer:'The website is one part. Lumi Local handles the practical rest within the agreed scope.'
+  }
+};
+const c = copy[locale];
+const otherLocale = locale === 'vi' ? 'EN' : 'VI';
+const otherHref = locale === 'vi' ? '/en/' : '/';
+const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướng chính', illustrative:'Minh họa, không phải khách hàng thật', recommended:'Khuyên dùng', core:'Gói chính' } : { main:'Main content', nav:'Primary navigation', illustrative:'Illustrative, not a real customer', recommended:'Recommended', core:'Core package' };
+---
+<Page locale={locale} title={c.title} description={c.description}>
+  <header class="site-header glass-control">
+    <div class="wrap header-inner">
+      <a class="brand" href={locale === 'vi' ? '/' : '/en/'} aria-label="Lumi Local">
+        <img src="/brand/lumi-logo.svg" width="34" height="34" alt="" />
+        <span>Lumi <strong>Local</strong></span>
+      </a>
+      <nav class="desktop-nav" aria-label={labels.nav}>
+        {c.nav.map(([href,label]) => <a href={href}>{label}</a>)}
+      </nav>
+      <div class="header-actions">
+        <a class="lang" href={otherHref}>{otherLocale}</a>
+        <a class="button button-primary header-cta" href="#bat-dau">{c.cta}</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" aria-label={labels.main}>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">{c.hero.eyebrow}</p>
+        <h1>{c.hero.title.map(line => <span>{line}</span>)}</h1>
+        <p class="hero-description">{c.hero.text}</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#bat-dau">{c.cta}</a>
+          <a class="button button-secondary" href="#goi-dich-vu">{c.hero.secondary}</a>
+        </div>
+        <div class="hero-price"><strong>{c.packages.starter.price}</strong><span>{c.packages.starter.unit}</span></div>
+        <p class="meta">{c.hero.note}</p>
+      </div>
+      <div class="hero-visual">
+        <figure class="showcase sheet">
+          <figcaption><span>{labels.illustrative}</span><span>Lumi Local</span></figcaption>
+          <img src="/illustrations/local-hero.svg" width="640" height="520" alt="Lumi Local website, review QR stand and contact actions" fetchpriority="high" />
+        </figure>
+        <nav class="workflow-dock glass-control" aria-label="Quick links">
+          <a href="#trust-kit">399k</a>
+          <a href="#starter">1.99m</a>
+          <a href="#gia-duy-tri">599k / 999k</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="wrap proof-row" aria-label="Reassurance">
+      {c.proof.map(([title,text]) => <article><span class="proof-mark">✓</span><div><strong>{title}</strong><p>{text}</p></div></article>)}
+    </section>
+
+    <section class="section wrap" id="goi-dich-vu">
+      <div class="section-heading">
+        <div><p class="eyebrow">{c.packages.eyebrow}</p><h2>{c.packages.title}</h2></div>
+        <p class="section-intro">{c.packages.intro}</p>
+      </div>
+      <div class="package-grid">
+        <article class="package sheet" id="trust-kit">
+          <p class="index">01</p><h3>{c.packages.trust.name}</h3>
+          <div class="price"><strong>{c.packages.trust.price}</strong><span>{c.packages.trust.unit}</span></div>
+          <p>{c.packages.trust.text}</p>
+          <ul>{c.packages.trust.bullets.map(item => <li>✓ {item}</li>)}</ul>
+          <a class="text-link" href="#bat-dau">{locale === 'vi' ? 'Bắt đầu nhỏ →' : 'Start small →'}</a>
+        </article>
+        <article class="package sheet featured" id="starter">
+          <span class="package-label">{labels.core}</span>
+          <p class="index">02</p><h3>{c.packages.starter.name}</h3>
+          <div class="price"><strong>{c.packages.starter.price}</strong><span>{c.packages.starter.unit}</span></div>
+          <p>{c.packages.starter.text}</p>
+          <ul>{c.packages.starter.bullets.map(item => <li>✓ {item}</li>)}</ul>
+          <a class="button button-primary" href="#bat-dau">{c.cta}</a>
+        </article>
+        <article class="package sheet">
+          <p class="index">03</p><h3>{c.packages.renewal.name}</h3>
+          <div class="price"><strong>{c.packages.renewal.price}</strong><span>{c.packages.renewal.unit}</span></div>
+          <p>{c.packages.renewal.text}</p>
+          <ul>{c.packages.renewal.bullets.map(item => <li>✓ {item}</li>)}</ul>
+          <a class="text-link" href="#gia-duy-tri">{locale === 'vi' ? 'Xem chi tiết →' : 'See details →'}</a>
+        </article>
+      </div>
+      <p class="credit-callout">↗ {c.packages.credit}</p>
+    </section>
+
+    <section class="navy-section">
+      <div class="wrap">
+        <div class="section-heading inverted">
+          <div><p class="eyebrow">{c.convenience.eyebrow}</p><h2>{c.convenience.title}</h2></div>
+          <p class="section-intro">{c.convenience.text}</p>
+        </div>
+        <div class="convenience-grid">
+          {c.convenience.items.map(([i,title,text]) => <article><span class="index">{i}</span><h3>{title}</h3><p>{text}</p></article>)}
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">{c.included.eyebrow}</p><h2>{c.included.title}</h2></div>
+        <p class="section-intro">{c.included.intro}</p>
+      </div>
+      <div class="feature-grid">
+        {c.included.items.map(([title,text],i) => <article class="sheet"><span class="feature-number">{String(i+1).padStart(2,'0')}</span><h3>{title}</h3><p>{text}</p></article>)}
+      </div>
+    </section>
+
+    <section class="section wrap" id="cach-hoat-dong">
+      <div class="section-heading">
+        <div><p class="eyebrow">{c.workflow.eyebrow}</p><h2>{c.workflow.title}</h2></div>
+        <p class="section-intro">{c.workflow.intro}</p>
+      </div>
+      <ol class="step-grid">
+        {c.workflow.steps.map(([i,title,text]) => <li><span class="step-index">{i}</span><h3>{title}</h3><p>{text}</p></li>)}
+      </ol>
+    </section>
+
+    <section class="section wrap" id="gia-duy-tri">
+      <div class="section-heading">
+        <div><p class="eyebrow">{c.renewal.eyebrow}</p><h2>{c.renewal.title}</h2></div>
+        <p class="section-intro">{c.renewal.intro}</p>
+      </div>
+      <div class="renewal-grid">
+        {c.renewal.plans.map(([name,price,text],i) => <article class="sheet">
+          <span class="index">0{i+1}</span>
+          {i === 1 && <span class="recommended">{labels.recommended}</span>}
+          <h3>{name}</h3><strong class="renewal-price">{price}</strong><p>{text}</p>
+        </article>)}
+      </div>
+      <p class="renewal-note">{c.renewal.recommendation}</p>
+    </section>
+
+    <section class="section wrap">
+      <div class="section-heading"><div><p class="eyebrow">{c.fit.eyebrow}</p><h2>{c.fit.title}</h2></div></div>
+      <ul class="fit-list">{c.fit.items.map(item => <li>{item}</li>)}</ul>
+    </section>
+
+    <section class="section wrap">
+      <div class="section-heading"><div><p class="eyebrow">{c.trust.eyebrow}</p><h2>{c.trust.title}</h2></div></div>
+      <div class="trust-grid">{c.trust.items.map(([title,text]) => <article><span class="proof-mark">✓</span><h3>{title}</h3><p>{text}</p></article>)}</div>
+    </section>
+
+    <section class="section wrap faq" id="cau-hoi">
+      <h2>{c.faq.title}</h2>
+      <div>{c.faq.items.map(([q,a]) => <details><summary>{q}<span>+</span></summary><p>{a}</p></details>)}</div>
+    </section>
+
+    <section class="section wrap contact" id="bat-dau">
+      <div class="contact-copy">
+        <p class="eyebrow">{c.form.eyebrow}</p>
+        <h2>{c.form.title}</h2>
+        <p>{c.form.text}</p>
+        <p class="meta">{c.form.privacy}</p>
+      </div>
+      <form id="enquiry-form" class="sheet enquiry-form" method="post" action="/api/enquiries">
+        <input type="hidden" name="locale" value={locale} />
+        <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off" /></div>
+        <label>{c.form.name}<input name="name" type="text" maxlength="80" autocomplete="name" required /></label>
+        <label>{c.form.business}<input name="business" type="text" maxlength="160" autocomplete="organization" required /></label>
+        <label>{c.form.phone}<input name="phone" type="tel" maxlength="40" autocomplete="tel" required /></label>
+        <label>{c.form.email}<input name="email" type="email" maxlength="254" autocomplete="email" /></label>
+        <label class="full">{c.form.note}<textarea name="note" rows="3" maxlength="1000"></textarea></label>
+        <label class="consent full"><input name="consent" type="checkbox" value="yes" required /><span>{c.form.consent}</span></label>
+        <p class="form-status full" id="form-status" role="status" aria-live="polite" data-success={c.form.success} data-error={c.form.error}></p>
+        <button class="button button-primary full" type="submit">{c.form.submit}</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href={locale === 'vi' ? '/' : '/en/'}><img src="/brand/lumi-logo.svg" width="32" height="32" alt="" /><span>Lumi <strong>Local</strong></span></a>
+      <p>{c.footer}</p>
+      <a href="#main">{locale === 'vi' ? 'Về đầu trang ↑' : 'Back to top ↑'}</a>
+    </div>
+  </footer>
+
+  <script is:inline type="module" src="/enquiry.js"></script>
+</Page>

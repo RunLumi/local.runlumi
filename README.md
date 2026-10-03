@@ -4,28 +4,46 @@ Lumi Local is RunLumi's done-for-you online presence product for Vietnamese loca
 
 > **Được tìm thấy. Được tin tưởng. Được liên hệ dễ hơn.**
 
-This repository contains the customer-facing website, product copy, design contract, pricing, GTM snapshot, and field-sales playbook for Lumi Local.
+This repository is the implementation source of truth for the Lumi Local website and contains the product, pricing, design, GTM, field-sales, security, and deployment context needed to operate it without guessing.
 
-## Current commercial ladder
+## Current product ladder
 
-- **Lumi Trust Kit:** 399.000đ one-time.
-- **Lumi Local Starter:** 1.990.000đ for year one.
-- Trust Kit is credited 100% if the customer upgrades to Starter within 30 days.
-- **Renewal:** 599.000đ/year with a RunLumi subdomain or 999.000đ/year with one standard custom domain.
-- **Lumi Ops:** only after a real lead/follow-up/operations pain is observed.
+| Step | Offer | Price |
+|---|---|---:|
+| 1 | **Lumi Trust Kit** | **399.000đ one-time** |
+| 2 | **Lumi Local Starter** | **1.990.000đ year one** |
+| 3A | **RunLumi Address renewal** | **599.000đ/year** |
+| 3B | **Custom-domain renewal** | **999.000đ/year** |
+| 4 | **Lumi Ops** | Only after a real workflow pain is observed |
+
+If a Trust Kit customer upgrades to Lumi Local Starter within 30 days, the full **399.000đ is credited**, so the remaining amount is **1.591.000đ**.
 
 Website is a core component of Lumi Local, not the product identity. The durable operating idea is:
 
 **Distribution → Trust → Ownership → Workflow**
 
-## Product guardrails
+## What Lumi Local is
 
-- Do not position Lumi Local as an “AI website builder”.
-- Do not require Google Business Profile edit access.
-- Do not manually manage Google Maps as part of this offer.
-- Do not buy, incentivize, gate, or fabricate Google reviews.
-- Do not promise Google ranking, leads, customers, or revenue.
-- Free Local Presence Alerts are public-data alerts where implemented, not a managed Maps service.
+Lumi Local gives a local business a practical online presence without asking the owner to become a website builder:
+
+- mobile-first website / landing page;
+- Google Review QR and standee artwork;
+- Call / Zalo / Maps actions;
+- contact form;
+- hosting + SSL;
+- basic local-search structure;
+- one basic content revision round;
+- technical maintenance within the chosen renewal scope;
+- public-data Local Presence Alerts where implemented.
+
+## What it is not
+
+- not an “AI website builder”;
+- not a managed Google Maps service;
+- no need for Google Business Profile edit access;
+- no bought, gated, incentivized, or fabricated reviews;
+- no promise of Google ranking, leads, customers, or revenue;
+- no unlimited custom design or integrations.
 
 ## Local development
 
@@ -40,24 +58,26 @@ Build:
 npm run build
 ```
 
-The intended production origin is `https://local.runlumi.app`.
+The intended production origin is **https://local.runlumi.app**.
 
 ## Repository map
 
-- `src/` — Astro landing page and content.
-- `public/` — original Lumi SVG assets and static security files.
-- `functions/` + `server/` — same-origin lead enquiry endpoint for Cloudflare Pages.
+- `src/` — Astro pages, layout, and Lumi Local content.
+- `public/` — original Lumi SVG assets, CSS/JS, headers, robots, sitemap, llms.
+- `functions/api/enquiries.js` — same-origin Cloudflare Pages enquiry endpoint.
 - `DESIGN.md` — visual contract.
 - `COPY.md` — customer-facing copy rules.
 - `POSITIONING.md` — product positioning.
 - `PRICING.md` — current commercial offer.
-- `docs/GTM.md` — GTM snapshot from Lumi HQ.
-- `docs/FIELD_PLAYBOOK.md` — field-sales execution snapshot.
+- `docs/GTM.md` — GTM model and falsification gates.
+- `docs/FIELD_PLAYBOOK.md` — field execution for student/part-time GTM reps.
+- `docs/GOAL_LANDING_PAGE.md` — implementation goal for future agents.
 - `SECURITY.md` — enquiry-form and secret-handling rules.
-- `AGENTS.md` — instructions for agents working in this repo.
+- `DEPLOY.md` — Cloudflare Pages deployment notes.
+- `AGENTS.md` — repo operating instructions.
 
 ## Source of truth
 
-This repo is the implementation source of truth for the Lumi Local website. Company-level GTM and operating decisions remain in `RunLumi/lumi-hq`; when the two intentionally diverge, update this repo explicitly rather than silently guessing.
+This repo is authoritative for the Lumi Local site implementation and the commercial claims rendered by it. Company-level operating decisions remain in `RunLumi/lumi-hq`. If HQ changes pricing or GTM, update this repo explicitly and verify all rendered claims.
 
 Private repository. © 2026 RunLumi.

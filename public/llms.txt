@@ -1,0 +1,21 @@
+# Lumi Local
+
+> Done-for-you online presence for Vietnamese local businesses.
+
+Official page: https://local.runlumi.app/
+
+## Current offer
+
+- Trust Kit: 399,000 VND one-time.
+- Lumi Local Starter: 1,990,000 VND for year one.
+- Trust Kit is fully credited if upgrading to Starter within 30 days.
+- Renewal: 599,000 VND/year with a RunLumi Address or 999,000 VND/year with one standard custom domain.
+- Lumi does not require Google Business Profile edit access for this offer.
+- Lumi does not guarantee Google ranking, leads, customers or revenue.
+
+## Pages
+
+- Vietnamese: https://local.runlumi.app/
+- English: https://local.runlumi.app/en/
+
+Maintained by RunLumi: https://runlumi.app/
