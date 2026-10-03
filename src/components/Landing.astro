@@ -1,6 +1,7 @@
 ---
 import Page from '../layouts/Page.astro';
 import ScenePhoto from './ScenePhoto.astro';
+import ServiceIcon from './ServiceIcon.astro';
 
 interface Props { locale: 'vi' | 'en' }
 const { locale } = Astro.props;
@@ -685,16 +686,16 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
       <div class="renewal-grid" data-reveal-group>
         {c.renewal.plans.map(([name,price,text],i) => <article class={`sheet renewal-card spotlight ${i === 1 ? 'renewal-card-featured' : ''}`} data-reveal>
           <div class="renewal-card-head">
-            <span class="index">0{i+1}</span>
+            <span class="service-emblem"><ServiceIcon name={i === 0 ? 'address' : 'domain'} /></span>
             {i === 1 && <span class="recommended">{labels.recommended}</span>}
           </div>
           <h3>{name}</h3>
           <strong class="renewal-price">{price}</strong>
           <p>{text}</p>
           <ul class="renewal-checklist">
-            <li><span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span>{locale === 'vi' ? 'Hosting tốc độ cao + Chứng chỉ SSL' : 'High-speed hosting + SSL certificate'}</span></li>
-            <li><span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span>{locale === 'vi' ? 'Duy trì kỹ thuật & Giám sát uptime' : 'Technical maintenance & uptime monitoring'}</span></li>
-            {i === 1 && <li><span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span>{locale === 'vi' ? 'Gồm 1 tên miền tiêu chuẩn riêng (.vn / .com)' : 'Includes 1 standard custom domain (.vn / .com)'}</span></li>}
+            <li><span class="service-bullet"><ServiceIcon name="hosting" /></span><span>{locale === 'vi' ? 'Hosting tốc độ cao + Chứng chỉ SSL' : 'High-speed hosting + SSL certificate'}</span></li>
+            <li><span class="service-bullet"><ServiceIcon name="maintenance" /></span><span>{locale === 'vi' ? 'Duy trì kỹ thuật & Giám sát uptime' : 'Technical maintenance & uptime monitoring'}</span></li>
+            {i === 1 && <li><span class="service-bullet"><ServiceIcon name="domain" /></span><span>{locale === 'vi' ? 'Gồm 1 tên miền tiêu chuẩn riêng (.vn / .com)' : 'Includes 1 standard custom domain (.vn / .com)'}</span></li>}
           </ul>
         </article>)}
       </div>
@@ -703,7 +704,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
 
     <section class="section wrap trust-section">
       <div class="section-heading" data-reveal><div><p class="eyebrow">{c.trust.eyebrow}</p><h2>{c.trust.title}</h2></div></div>
-      <div class="trust-grid" data-reveal-group>{c.trust.items.map(([title,text]) => <article class="trust-card sheet" data-reveal><span class="proof-mark"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
+      <div class="trust-grid" data-reveal-group>{c.trust.items.map(([title,text],i) => <article class="trust-card sheet" data-reveal><span class="service-emblem"><ServiceIcon name={['ownership','honest','clarity','scope'][i]} /></span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
     </section>
 
     <section class="section wrap faq" id="cau-hoi">
