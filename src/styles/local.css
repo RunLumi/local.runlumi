@@ -735,6 +735,7 @@
   .footer-inner p{text-align:left}
 }
 @media(max-width:540px){
+  .hero-actions .button{width:100%}
   .stage-topline{grid-template-columns:auto 1fr}
   .stage-label{display:none}
   .product-stage{min-height:450px}
@@ -759,6 +760,7 @@
   .examples{padding-top:18px}
 }
 @media(max-width:390px){
+  .hero-copy h1{font-size:44px}
   .phone-preview{width:120px;right:2px}
   .site-preview{left:10px;width:90%}
   .site-preview-main{padding-left:16px}
