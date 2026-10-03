@@ -367,7 +367,7 @@ const industryArt = ['salon', 'garage', 'hvac'];
 const featureArt = ['website', 'contact', 'map', 'review', 'hosting', 'alerts'];
 const otherLocale = locale === 'vi' ? 'EN' : 'VI';
 const otherHref = locale === 'vi' ? '/en/' : '/';
-const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướng chính', illustrative:'Mẫu minh họa · Ảnh AI', recommended:'Khuyên dùng', core:'Gói chính', switcher:'Xem trước theo ngành', receipt:'Nếu đã mua Trust Kit trong 30 ngày: được trừ 399.000đ, còn lại 1.591.000đ' } : { main:'Main content', nav:'Primary navigation', illustrative:'Illustrative · AI imagery', recommended:'Recommended', core:'Core package', switcher:'Preview by industry', receipt:'If Trust Kit was paid within 30 days: 399,000 VND credited, 1,591,000 VND remaining' };
+const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướng chính', illustrative:'Giao diện mẫu', recommended:'Khuyên dùng', core:'Gói chính', switcher:'Xem trước theo ngành', receipt:'Nếu đã mua Trust Kit trong 30 ngày: được trừ 399.000đ, còn lại 1.591.000đ' } : { main:'Main content', nav:'Primary navigation', illustrative:'Live preview', recommended:'Recommended', core:'Core package', switcher:'Preview by industry', receipt:'If Trust Kit was paid within 30 days: 399,000 VND credited, 1,591,000 VND remaining' };
 ---
 <Page locale={locale} title={c.title} description={c.description}>
   <header class="site-header glass-control">
@@ -573,7 +573,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     <section class="examples wrap" aria-labelledby="examples-title">
       <div class="examples-heading" data-reveal>
         <div><p class="eyebrow">{c.examples.eyebrow}</p><h2 id="examples-title">{c.examples.title}</h2></div>
-        <div><p class="section-intro">{c.examples.intro}</p><p class="photo-disclosure">{locale === 'vi' ? 'Ảnh tạo bằng AI để minh họa, không phải cơ sở hay khách hàng thật.' : 'AI-generated concept images, not real businesses or customers.'}</p></div>
+        <p class="section-intro">{c.examples.intro}</p>
       </div>
       <div class="example-rail" data-reveal-group>
         {c.examples.items.map(([type,name,meta,text],i) => <article class="example-card sheet spotlight" data-reveal>
@@ -725,7 +725,6 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <div><p class="eyebrow">{c.included.eyebrow}</p><h2>{c.included.title}</h2></div>
         <p class="section-intro">{c.included.intro}</p>
       </div>
-      <p class="photo-disclosure">{locale === 'vi' ? 'Ảnh minh họa AI cho từng hạng mục; không phải sản phẩm bàn giao hay cơ sở thực tế.' : 'AI concept imagery for each service; not actual deliverables or premises.'}</p>
       <div class="feature-grid" data-reveal-group>
         {c.included.items.map(([title,text],i) => <article class={`sheet feature-card spotlight ${i === 0 ? 'feature-primary' : ''}`} data-reveal>
           <div class="feature-card-header">
@@ -747,7 +746,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <p class="section-intro">{c.workflow.intro}</p>
       </div>
       <div class="delivery-layout" data-reveal-group>
-        <aside class="delivery-rail" aria-label={locale === 'vi' ? 'Gói bàn giao minh họa' : 'Illustrated handoff package'}>
+        <aside class="delivery-rail" aria-label={locale === 'vi' ? 'Bộ bàn giao trọn gói' : 'Complete handoff package'}>
           <div class="delivery-panel sheet" data-delivery-panel data-reveal>
             <div class="delivery-panel-head">
               <p class="index">{locale === 'vi' ? 'Gói bàn giao' : 'Handoff package'}</p>
@@ -879,7 +878,6 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         </div>
         <div class="welcome-art-box">
           <ScenePhoto class="welcome-photo" name="welcome" sizes="(max-width: 767px) 90vw, 440px" />
-          <p class="photo-disclosure">{locale === 'vi' ? 'Ảnh minh họa AI, không phải khách hàng hay nhân sự Lumi.' : 'AI illustration, not Lumi customers or staff.'}</p>
         </div>
       </div>
       <form id="enquiry-form" class="sheet enquiry-form" method="post" action="/api/enquiries" data-reveal>
