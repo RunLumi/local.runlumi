@@ -8,13 +8,19 @@ if (form && status) {
     if (pending || !form.reportValidity()) return;
 
     const button = form.querySelector('button[type="submit"]');
-    const original = button.textContent;
+    const labelSpan = button?.querySelector('span');
+    const originalText = labelSpan ? labelSpan.textContent : (button ? button.textContent : '');
     const payload = Object.fromEntries(new FormData(form));
     payload.consent = form.elements.namedItem('consent')?.checked === true;
 
     pending = true;
-    button.disabled = true;
-    button.textContent = form.elements.namedItem('locale')?.value === 'en' ? 'Sending…' : 'Đang gửi…';
+    if (button) button.disabled = true;
+    const pendingText = form.elements.namedItem('locale')?.value === 'en' ? 'Sending…' : 'Đang gửi…';
+    if (labelSpan) {
+      labelSpan.textContent = pendingText;
+    } else if (button) {
+      button.textContent = pendingText;
+    }
     status.textContent = '';
     status.removeAttribute('data-state');
 
@@ -36,8 +42,12 @@ if (form && status) {
       status.dataset.state = 'error';
     } finally {
       pending = false;
-      button.disabled = false;
-      button.textContent = original;
+      if (button) button.disabled = false;
+      if (labelSpan) {
+        labelSpan.textContent = originalText;
+      } else if (button) {
+        button.textContent = originalText;
+      }
     }
   });
 }

@@ -29,6 +29,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;background:var(--color-paper)}
 body{margin:0;background:var(--color-paper);color:var(--color-ink);font-family:var(--font-sans);font-size:16px;line-height:1.62;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+[id]{scroll-margin-top:88px}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button,input,textarea{font:inherit}
@@ -80,6 +81,7 @@ button{cursor:pointer}
   .section-heading{grid-template-columns:1fr;gap:16px}
 }
 @media(max-width:540px){
+  [id]{scroll-margin-top:72px}
   .wrap{width:min(100% - 32px,1200px)}
   .site-header{width:calc(100% - 20px);top:8px;margin-top:8px;border-radius:14px}
   .header-inner{min-height:58px;padding:0 4px}
