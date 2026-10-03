@@ -23,3 +23,27 @@ Use case: photorealistic-natural. Asset type: wide website industry concept phot
 
 Use case: photorealistic-natural. Asset type: website cafe preview photograph, landscape 3:2 with a center composition that also crops beautifully into a phone banner. A real Vietnamese iced milk coffee in a clear condensation-covered glass on a small warm oak cafe table, a polished stainless Vietnamese phin set just behind it, and one freshly baked croissant on a simple ivory ceramic plate. In the softly out-of-focus background a refined neighborhood cafe with warm timber and sunlit linen, beautiful natural window light grazing the glass and pastry. Premium food editorial photography, 50mm lens, exquisite realistic coffee layers, glass refraction, buttery pastry flakes and wood grain. Warm, luminous, inviting, authentic full-size objects. No people, no lettering, no logos, no watermark, no cartoon, no toy-like forms, no CGI, no exaggerated steam. Single photograph.
 
+
+## Service and enquiry concepts — integrated 2026-10-03
+
+User supplied directory:
+`/Volumes/SSD/symlinks/james-home/codex/generated_images/01a0ff40-deff-7831-9a39-64d01e2ddcc8`.
+These seven existing ImageGen outputs replace the service and welcome SVGs.
+Original generation prompts for these seven were not supplied in this task.
+
+| Web asset | Original PNG | Scene |
+| --- | --- | --- |
+| website | exec-f6a4e68e-46c9-468c-8316-6bdfe7b8dd72.png | Laptop and phone website concept |
+| contact | exec-3611ae70-b7d6-4b1d-8c50-b9148a635182.png | Phone messaging at a cafe |
+| map | exec-b10b792d-d678-4d21-aa0f-7d7e9bf13f71.png | Phone directions outside a cafe |
+| review | exec-4539db20-c963-4b1b-80dc-0be17ee239b3.png | Counter QR stand concept |
+| hosting | exec-b92c7622-9942-4517-bbc5-bd7a37faf1a7.png | Illustrative server equipment |
+| alerts | exec-9245b43e-27f8-4dbf-8934-28ac60f923a3.png | Phone notification concept |
+| welcome | exec-eb2b9b9e-591a-45e1-8fd8-1db5f3c393ed.png | Illustrative consultation |
+
+Delivery: Sharp WebP quality 80 at 480/960/1440px, responsive srcset,
+explicit dimensions, lazy loading. Visible VI/EN disclosures distinguish
+concepts from actual deliverables, premises, customers, and staff. Generated
+QR imagery is decorative, not a functional review destination. No claim of
+owning the pictured infrastructure is made. Existing brand and interface
+SVG icons remain; interactive product previews remain HTML.

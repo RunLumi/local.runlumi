@@ -205,7 +205,7 @@ const industries = {
       sub:'Thực đơn món, địa chỉ, giờ đón khách và nút liên hệ đặt ngay nơi khách cần tìm.',
       phone:'0908 123 456',
       phoneTitle:'Cà phê ngon. Dễ tìm. Dễ gọi.',
-      features:[['☕','Cà phê pha mộc','Pha phin & Pha máy'],['🥐','Bánh nướng trong ngày','Làm mới mỗi sáng'],['🪑','Không gian yên tĩnh','Wifi mạnh & Bàn làm việc']]
+      features:[['cup','Cà phê pha mộc','Pha phin & Pha máy'],['pastry','Bánh nướng trong ngày','Làm mới mỗi sáng'],['chair','Không gian yên tĩnh','Wifi mạnh & Bàn làm việc']]
     },
     {
       key:'spa', tab:'Spa & Thẩm mỹ', short:'Spa', icon:'lotus',
@@ -217,7 +217,7 @@ const industries = {
       sub:'Bảng dịch vụ, mức giá tham khảo và nút đặt lịch qua Zalo đặt ngay nơi khách đang lướt.',
       phone:'0917 246 810',
       phoneTitle:'Nghỉ ngơi xứng đáng. Đặt lịch nhẹ nhàng.',
-      features:[['💆','Massage & Chăm sóc da','Liệu trình 60–90 phút'],['🌿','Mỹ phẩm thiên nhiên','Thương hiệu chọn lọc'],['📅','Đặt lịch qua Zalo','Xác nhận trong vài phút']]
+      features:[['lotus','Massage & Chăm sóc da','Liệu trình 60–90 phút'],['leaf','Mỹ phẩm thiên nhiên','Thương hiệu chọn lọc'],['calendar','Đặt lịch qua Zalo','Xác nhận trong vài phút']]
     },
     {
       key:'auto', tab:'Kỹ thuật & Gara', short:'Gara', icon:'wrench',
@@ -229,7 +229,7 @@ const industries = {
       sub:'Hotline khẩn cấp, chỉ đường tới xưởng và bảng hạng mục bảo dưỡng hiện ngay đầu trang.',
       phone:'0938 555 247',
       phoneTitle:'Gần đây. Uy tín. Gọi là có.',
-      features:[['🔧','Sửa chữa & Bảo dưỡng','Đầy đủ hạng mục'],['🚗','Cứu hộ 24/7','Hotline luôn trực'],['🧾','Bảng giá minh bạch','Thống nhất trước khi sửa']]
+      features:[['wrench','Sửa chữa & Bảo dưỡng','Đầy đủ hạng mục'],['car','Cứu hộ 24/7','Hotline luôn trực'],['receipt','Bảng giá minh bạch','Thống nhất trước khi sửa']]
     }
   ],
   en: [
@@ -243,7 +243,7 @@ const industries = {
       sub:'Menu, location, opening hours, and direct contact sit right where customers look.',
       phone:'0908 123 456',
       phoneTitle:'Good coffee. Easy to find. Easy to call.',
-      features:[['☕','Roasted Coffee','Phin & Espresso'],['🥐','Fresh Pastry','Baked daily'],['🪑','Quiet Workspace','High-speed Wi-Fi']]
+      features:[['cup','Roasted Coffee','Phin & Espresso'],['pastry','Fresh Pastry','Baked daily'],['chair','Quiet Workspace','High-speed Wi-Fi']]
     },
     {
       key:'spa', tab:'Spa & Beauty', short:'Spa', icon:'lotus',
@@ -255,7 +255,7 @@ const industries = {
       sub:'Service menu, reference pricing, and a Zalo booking button right where customers scroll.',
       phone:'0917 246 810',
       phoneTitle:'Deserved rest. Effortless booking.',
-      features:[['💆','Massage & Facials','60–90 min rituals'],['🌿','Natural skincare','Curated brands'],['📅','Zalo booking','Confirmed in minutes']]
+      features:[['lotus','Massage & Facials','60–90 min rituals'],['leaf','Natural skincare','Curated brands'],['calendar','Zalo booking','Confirmed in minutes']]
     },
     {
       key:'auto', tab:'Auto & Technical', short:'Auto', icon:'wrench',
@@ -267,17 +267,11 @@ const industries = {
       sub:'Emergency hotline, directions to the shop, and a clear maintenance menu right up front.',
       phone:'0938 555 247',
       phoneTitle:'Close by. Trusted. One call away.',
-      features:[['🔧','Repair & Maintenance','Full service menu'],['🚗','24/7 roadside','Hotline always on'],['🧾','Transparent pricing','Agreed before work']]
+      features:[['wrench','Repair & Maintenance','Full service menu'],['car','24/7 roadside','Hotline always on'],['receipt','Transparent pricing','Agreed before work']]
     }
   ]
 };
 const inds = industries[locale];
-
-const tabIcons = {
-  cup: '<svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 5.5h8v4a4 4 0 0 1-8 0v-4z"/><path d="M10.5 6.5h1.2a2 2 0 0 1 0 4h-1.4"/><path d="M5 1.8v1.5M8 1.8v1.5"/></svg>',
-  lotus: '<svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M8 1.9C6.5 3.9 6.5 6.5 8 8.6c1.5-2.1 1.5-4.7 0-6.7z"/><path d="M2.8 4.9c.6 3.6 2.5 5.4 5.2 5.6-.5-3.1-2.3-5-5.2-5.6z"/><path d="M13.2 4.9c-.6 3.6-2.5 5.4-5.2 5.6.5-3.1 2.3-5 5.2-5.6z"/></svg>',
-  wrench: '<svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M14.9 3.4a4.1 4.1 0 0 1-5.4 5L3.6 14.3a1.5 1.5 0 0 1-2.1-2.1L7.5 6.3a4.1 4.1 0 0 1 5-5.4L10 3.4l.4 2.2 2.2.4 2.3-2.6z"/></svg>'
-};
 
 const scenePhotos = { cafe: 'cafe', spa: 'salon', auto: 'garage' };
 
@@ -304,7 +298,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         </div>
         <a class="button button-primary header-cta" href="#bat-dau">
           <span>{c.cta}</span>
-          <svg class="cta-arrow" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          <ServiceIcon name="arrow" size={14} class="cta-arrow" />
         </a>
         <a class="button button-primary mobile-header-cta" href="#bat-dau">{locale === 'vi' ? 'Xem thử' : 'See demo'}</a>
       </div>
@@ -320,11 +314,11 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <div class="hero-actions">
           <a class="button button-primary" href="#bat-dau">
             <span>{c.cta}</span>
-            <svg class="cta-arrow" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            <ServiceIcon name="arrow" size={16} class="cta-arrow" />
           </a>
           <a class="button button-secondary" href="#goi-dich-vu">
             <span>{c.hero.secondary}</span>
-            <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M4 9l4 4 4-4"/></svg>
+            <ServiceIcon name="down" size={14} />
           </a>
         </div>
         <div class="hero-price">
@@ -343,7 +337,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
             <span class="stage-domain">
               {inds.map(ind => (
                 <span class="stage-domain-opt" data-domain={ind.key}>
-                  <svg class="stage-lock-icon" viewBox="0 0 16 16" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M4 6V4a4 4 0 0 1 8 0v2h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1zm2-2a2 2 0 1 1 4 0v2H6V4zm-2 4v5h8V8H4z"/></svg>
+                  <ServiceIcon name="lock" size={12} class="stage-lock-icon" />
                   <span>{ind.domain}</span>
                 </span>
               ))}
@@ -356,7 +350,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <div class="industry-switch" role="tablist" aria-label={labels.switcher}>
             {inds.map((ind, i) => (
               <button type="button" class={`industry-tab${i === 0 ? ' is-active' : ''}`} role="tab" id={`tab-${ind.key}`} data-industry={ind.key} aria-selected={i === 0 ? 'true' : 'false'} aria-controls="stage-panel" tabindex={i === 0 ? 0 : -1}>
-                <Fragment set:html={tabIcons[ind.icon]} />
+                <ServiceIcon name={ind.icon} size={16} />
                 <span class="tab-label-full">{ind.tab}</span>
                 <span class="tab-label-short">{ind.short}</span>
               </button>
@@ -374,7 +368,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
                     {ind.navLinks.map(link => <span>{link}</span>)}
                   </div>
                   <div class="site-preview-cta">
-                    <span>☎ {ind.phone}</span>
+                    <span><ServiceIcon name="phone" size={12} /> {ind.phone}</span>
                   </div>
                 </div>
                 <div class="site-preview-main">
@@ -387,12 +381,12 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
                   <p>{ind.sub}</p>
                   <div class="mini-actions">
                     <span class="action-btn-primary">
-                      <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.47 8.53a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+                      <ServiceIcon name="phone" size={12} />
                       {locale === 'vi' ? 'Gọi ngay' : 'Call'}
                     </span>
                     <span class="action-btn-soft">Zalo</span>
                     <span class="action-btn-soft">
-                      <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                      <ServiceIcon name="pin" size={12} />
                       {locale === 'vi' ? 'Chỉ đường' : 'Directions'}
                     </span>
                   </div>
@@ -400,7 +394,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
                 <div class="site-preview-bottom">
                   {ind.features.map(([icon,title,small]) => (
                     <div class="preview-feature-item">
-                      <span class="feature-icon">{icon}</span>
+                      <span class="feature-icon"><ServiceIcon name={icon} size={20} /></span>
                       <div><strong>{title}</strong><small>{small}</small></div>
                     </div>
                   ))}
@@ -412,7 +406,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
                 <div class="phone-notch"></div>
                 <div class="phone-status-bar">
                   <span>9:41</span>
-                  <span class="phone-icons"><svg viewBox="0 0 16 12" width="12" height="9" fill="currentColor" aria-hidden="true"><path d="M1 10h2V8H1v2zm4 0h2V6H5v4zm4 0h2V4H9v6zm4 0h2V1h-2v9z"/></svg></span>
+                  <span class="phone-icons"><ServiceIcon name="signal" size={12} /></span>
                 </div>
                 <div class="phone-brand-bar">
                   <span class="phone-brand">{ind.biz}</span>
@@ -421,9 +415,9 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
                 <div class="phone-photo" aria-hidden="true"><ScenePhoto name={scenePhotos[ind.key]} sizes="180px" eager={ind.key === 'cafe'} /></div>
                 <strong class="phone-title">{ind.phoneTitle}</strong>
                 <div class="phone-actions">
-                  <span><svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.47 8.53a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>{locale === 'vi' ? 'Gọi' : 'Call'}</span>
+                  <span><ServiceIcon name="phone" size={12} />{locale === 'vi' ? 'Gọi' : 'Call'}</span>
                   <span>Zalo</span>
-                  <span><svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor" aria-hidden="true"><path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>{locale === 'vi' ? 'Đường' : 'Map'}</span>
+                  <span><ServiceIcon name="pin" size={12} />{locale === 'vi' ? 'Đường' : 'Map'}</span>
                 </div>
               </aside>
             ))}
@@ -485,7 +479,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     </section>
 
     <section class="wrap proof-row" aria-label="Reassurance" data-reveal-group>
-      {c.proof.map(([title,text]) => <article class="proof-card" data-reveal><span class="proof-mark"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><strong>{title}</strong><p>{text}</p></div></article>)}
+      {c.proof.map(([title,text]) => <article class="proof-card" data-reveal><span class="proof-mark"><ServiceIcon name="check" size={14} /></span><div><strong>{title}</strong><p>{text}</p></div></article>)}
     </section>
 
     <section class="examples wrap" aria-labelledby="examples-title">
@@ -498,7 +492,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <div class="example-browser">
             <span class="example-dots"><i></i><i></i><i></i></span>
             <span class="example-url">
-              <svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor" aria-hidden="true"><path d="M4 6V4a4 4 0 0 1 8 0v2h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1zm2-2a2 2 0 1 1 4 0v2H6V4zm-2 4v5h8V8H4z"/></svg>
+              <ServiceIcon name="lock" size={12} />
               {`demo-${i+1}.runlumi.app`}
             </span>
             <span class="example-index">0{i+1}</span>
@@ -513,9 +507,9 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
               <p class="example-meta">{meta}</p>
               <p class="example-text">{text}</p>
               <div class="example-actions">
-                <span class="example-action-btn"><svg viewBox="0 0 16 16" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.47 8.53a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>{locale === 'vi' ? 'Gọi' : 'Call'}</span>
+                <span class="example-action-btn"><ServiceIcon name="phone" size={12} />{locale === 'vi' ? 'Gọi' : 'Call'}</span>
                 <span class="example-action-btn example-action-zalo">Zalo</span>
-                <span class="example-action-btn"><svg viewBox="0 0 16 16" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>{locale === 'vi' ? 'Bản đồ' : 'Map'}</span>
+                <span class="example-action-btn"><ServiceIcon name="pin" size={12} />{locale === 'vi' ? 'Bản đồ' : 'Map'}</span>
               </div>
             </div>
           </div>
@@ -545,7 +539,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <div class="starter-content">
             <ul class="starter-bullets">
               {c.packages.starter.bullets.map(item => <li>
-                <span class="bullet-check"><svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span>
+                <span class="bullet-check"><ServiceIcon name="check" size={12} /></span>
                 <span>{item}</span>
               </li>)}
             </ul>
@@ -576,7 +570,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           </div>
           <a class="button button-primary starter-cta" href="#bat-dau">
             <span>{c.cta}</span>
-            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            <ServiceIcon name="arrow" size={16} />
           </a>
         </article>
         <div class="offer-side" data-reveal-group>
@@ -589,11 +583,11 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
             <p class="mini-offer-desc">{c.packages.trust.text}</p>
             <ul class="mini-bullets">
               {c.packages.trust.bullets.map(item => <li>
-                <span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span>
+                <span class="bullet-check"><ServiceIcon name="check" size={12} /></span>
                 <span>{item}</span>
               </li>)}
             </ul>
-            <a class="text-link" href="#bat-dau"><span>{locale === 'vi' ? 'Bắt đầu nhỏ' : 'Start small'}</span> →</a>
+            <a class="text-link" href="#bat-dau"><span>{locale === 'vi' ? 'Bắt đầu nhỏ' : 'Start small'}</span><ServiceIcon name="arrow" size={16} /></a>
           </article>
           <article class="mini-offer renewal-side sheet spotlight" data-reveal>
             <div class="mini-offer-head">
@@ -602,18 +596,18 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
             </div>
             <div class="price"><strong>{c.packages.renewal.price}</strong><span>/{c.packages.renewal.unit}</span></div>
             <p class="mini-offer-desc">{c.packages.renewal.text}</p>
-            <a class="text-link" href="#gia-duy-tri"><span>{locale === 'vi' ? 'Chi tiết renewal' : 'Renewal details'}</span> →</a>
+            <a class="text-link" href="#gia-duy-tri"><span>{locale === 'vi' ? 'Chi tiết renewal' : 'Renewal details'}</span><ServiceIcon name="arrow" size={16} /></a>
           </article>
         </div>
       </div>
       <div class="credit-rail" data-reveal>
-        <span class="credit-rail-icon">✦</span>
+        <span class="credit-rail-icon"><ServiceIcon name="credit" size={24} /></span>
         <div class="credit-rail-text">
           <strong>{c.packages.credit}</strong>
         </div>
         <a class="credit-rail-action" href="#bat-dau">
           <span>{locale === 'vi' ? 'Cho Lumi xem business của tôi' : 'Show Lumi my business'}</span>
-          <span>→</span>
+          <ServiceIcon name="arrow" size={16} />
         </a>
       </div>
     </section>
@@ -643,6 +637,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <div><p class="eyebrow">{c.included.eyebrow}</p><h2>{c.included.title}</h2></div>
         <p class="section-intro">{c.included.intro}</p>
       </div>
+      <p class="photo-disclosure">{locale === 'vi' ? 'Ảnh minh họa AI cho từng hạng mục; không phải sản phẩm bàn giao hay cơ sở thực tế.' : 'AI concept imagery for each service; not actual deliverables or premises.'}</p>
       <div class="feature-grid" data-reveal-group>
         {c.included.items.map(([title,text],i) => <article class={`sheet feature-card spotlight ${i === 0 ? 'feature-primary' : ''}`} data-reveal>
           <div class="feature-card-header">
@@ -652,7 +647,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <h3>{title}</h3>
           <p>{text}</p>
           <div class="feature-art-box">
-            <img class={`feature-art ${i === 0 ? 'feature-art-primary' : ''}`} src={`/illustrations/${featureArt[i]}.svg`} width={i === 0 ? 520 : 260} height={i === 0 ? 300 : 150} alt="" loading="lazy" decoding="async" />
+            <ScenePhoto class="feature-photo" name={featureArt[i]} sizes={i === 0 ? "(max-width: 767px) 90vw, (max-width: 1024px) 80vw, 540px" : "(max-width: 767px) 90vw, 360px"} />
           </div>
         </article>)}
       </div>
@@ -678,7 +673,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
                   <div class="delivery-browser">
                     <span class="delivery-dots" aria-hidden="true"><i></i><i></i><i></i></span>
                     <span class="delivery-domain">
-                      <svg viewBox="0 0 16 16" width="9" height="9" fill="currentColor" aria-hidden="true"><path d="M4 6V4a4 4 0 0 1 8 0v2h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1zm2-2a2 2 0 1 1 4 0v2H6V4zm-2 4v5h8V8H4z"/></svg>
+                      <ServiceIcon name="lock" size={12} />
                       annhien.runlumi.app
                     </span>
                   </div>
@@ -697,12 +692,12 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
                   <strong class="delivery-artifact-title">{locale === 'vi' ? 'Khách bấm là liên hệ được' : 'One tap and customers reach you'}</strong>
                   <div class="delivery-contact-row">
                     <span class="delivery-chip delivery-chip-call">
-                      <svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.47 8.53a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+                      <ServiceIcon name="phone" size={12} />
                       {locale === 'vi' ? 'Gọi ngay' : 'Call'}
                     </span>
                     <span class="delivery-chip delivery-chip-zalo">Zalo</span>
                     <span class="delivery-chip">
-                      <svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor" aria-hidden="true"><path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                      <ServiceIcon name="pin" size={12} />
                       {locale === 'vi' ? 'Chỉ đường' : 'Directions'}
                     </span>
                   </div>
@@ -791,11 +786,12 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <h2>{c.form.title}</h2>
         <p class="contact-intro">{c.form.text}</p>
         <div class="privacy-notice">
-          <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.464 9.99 1.565 2.044 3.567 3.01 4.395 3.318.066.024.13.04.184.053.054-.013.118-.03.184-.053.828-.308 2.83-1.274 4.395-3.318 1.677-2.195 3.06-5.513 2.464-9.99a1.54 1.54 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 1.25c.606 0 1.696.25 2.766.541.97.262 1.95.57 2.53.76a.54.54 0 0 1 .37.443c.52 3.92-.68 6.84-2.15 8.76-1.39 1.81-3.15 2.68-3.516 2.85-.366-.17-2.126-1.04-3.516-2.85-1.47-1.92-2.67-4.84-2.15-8.76a.54.54 0 0 1 .37-.443c.58-.19 1.56-.498 2.53-.76C6.304 1.5 7.394 1.25 8 1.25z"/></svg>
+          <ServiceIcon name="shield" size={14} />
           <p class="meta">{c.form.privacy}</p>
         </div>
         <div class="welcome-art-box">
-          <img class="welcome-art" src="/illustrations/welcome.svg" width="440" height="240" alt="" loading="lazy" decoding="async" />
+          <ScenePhoto class="welcome-photo" name="welcome" sizes="(max-width: 767px) 90vw, 440px" />
+          <p class="photo-disclosure">{locale === 'vi' ? 'Ảnh minh họa AI, không phải khách hàng hay nhân sự Lumi.' : 'AI illustration, not Lumi customers or staff.'}</p>
         </div>
       </div>
       <form id="enquiry-form" class="sheet enquiry-form" method="post" action="/api/enquiries" data-reveal>
@@ -836,7 +832,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <p class="form-status full" id="form-status" role="status" aria-live="polite" data-success={c.form.success} data-error={c.form.error}></p>
         <button class="button button-primary full submit-btn" type="submit">
           <span class="submit-label">{c.form.submit}</span>
-          <svg class="submit-arrow" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          <ServiceIcon name="arrow" size={16} class="submit-arrow" />
           <span class="btn-spinner" aria-hidden="true"></span>
         </button>
       </form>
@@ -852,7 +848,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
       <p>{c.footer}</p>
       <a class="back-to-top" href="#main">
         <span>{locale === 'vi' ? 'Về đầu trang' : 'Back to top'}</span>
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M4 7l4-4 4 4"/></svg>
+        <ServiceIcon name="up" size={14} />
       </a>
     </div>
   </footer>
