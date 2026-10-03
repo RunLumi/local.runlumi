@@ -379,7 +379,7 @@
   gap:20px;
   align-items:stretch
 }
-.starter-offer,.mini-offer{position:relative}
+.starter-offer,.mini-offer{position:relative;min-width:0}
 .starter-offer{
   display:flex;
   flex-direction:column;
@@ -412,6 +412,7 @@
 }
 .starter-price{
   display:flex;
+  flex-wrap:wrap;
   align-items:baseline;
   gap:10px;
   margin:34px 0 18px
@@ -447,7 +448,7 @@
 .starter-receipt span{color:var(--color-soft-slate);font-size:11px}
 .starter-receipt strong{color:var(--color-civic-navy);font-family:var(--font-mono);font-size:13px}
 .starter-offer>.button{margin-top:auto;align-self:flex-start}
-.offer-side{display:grid;gap:20px}
+.offer-side{display:grid;gap:20px;min-width:0}
 .mini-offer{padding:25px;display:flex;flex-direction:column}
 .mini-offer .price{
   display:flex;
@@ -698,7 +699,7 @@
   .hero{grid-template-columns:1fr;gap:36px;padding-top:60px}
   .hero-visual{max-width:780px}
   .examples-heading{grid-template-columns:1fr;gap:12px}
-  .offer-layout{grid-template-columns:1fr}
+  .offer-layout{grid-template-columns:minmax(0,1fr)}
   .offer-side{grid-template-columns:1fr 1fr}
   .feature-grid{grid-template-columns:1fr 1fr}
   .feature-primary{grid-column:span 2}
