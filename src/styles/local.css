@@ -1418,13 +1418,15 @@
   gap:24px;
 }
 
-/* connecting rail: draws once the section enters the viewport */
+/* Connecting rail runs ABOVE the cards between the three node dots,
+   so it can never strike through the index numbers. Draws when the
+   section enters the viewport. */
 .convenience-grid::before{
   content:"";
   position:absolute;
-  top:40px;
-  left:3%;
-  right:3%;
+  top:7px;
+  left:16.666%;
+  right:16.666%;
   height:1px;
   background:rgba(125,199,239,.3);
   transform:scaleX(0);
@@ -1444,6 +1446,19 @@
 .convenience-card:hover{
   background:rgba(255,255,255,.05);
   border-color:rgba(255,255,255,.22);
+}
+
+/* Desktop: nodes sit on the rail above each card, centered column-width;
+   the in-card header is just index + hairline. */
+@media(min-width:769px){
+  .convenience-grid{padding-top:16px}
+  .convenience-card{position:relative}
+  .rail-node{
+    position:absolute;
+    top:-14px;
+    left:50%;
+    margin-left:-4.5px;
+  }
 }
 
 .convenience-header{
