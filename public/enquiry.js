@@ -8,13 +8,16 @@ if (form && status) {
     if (pending || !form.reportValidity()) return;
 
     const button = form.querySelector('button[type="submit"]');
-    const labelSpan = button?.querySelector('span');
+    const labelSpan = button ? (button.querySelector('.submit-label') || button.querySelector('span')) : null;
     const originalText = labelSpan ? labelSpan.textContent : (button ? button.textContent : '');
     const payload = Object.fromEntries(new FormData(form));
     payload.consent = form.elements.namedItem('consent')?.checked === true;
 
     pending = true;
-    if (button) button.disabled = true;
+    if (button) {
+      button.disabled = true;
+      button.classList.add('is-loading');
+    }
     const pendingText = form.elements.namedItem('locale')?.value === 'en' ? 'Sending…' : 'Đang gửi…';
     if (labelSpan) {
       labelSpan.textContent = pendingText;
@@ -42,7 +45,10 @@ if (form && status) {
       status.dataset.state = 'error';
     } finally {
       pending = false;
-      if (button) button.disabled = false;
+      if (button) {
+        button.disabled = false;
+        button.classList.remove('is-loading');
+      }
       if (labelSpan) {
         labelSpan.textContent = originalText;
       } else if (button) {
