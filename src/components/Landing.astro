@@ -279,7 +279,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         {c.examples.items.map(([type,name,meta,text],i) => <article class="example-card">
           <div class="example-browser">
             <span class="example-index">0{i+1}</span>
-            <span class="example-url">{name.toLowerCase().replaceAll(' ','-')}.runlumi.app</span>
+            <span class="example-url">{`demo-${i+1}.runlumi.app`}</span>
           </div>
           <div class="example-body">
             <p class="example-type">{type}</p>
@@ -306,7 +306,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
             <ul>{c.packages.starter.bullets.map(item => <li>✓ {item}</li>)}</ul>
             <div class="starter-receipt">
               <span>{locale === 'vi' ? 'Năm đầu' : 'Year one'}</span><strong>{c.packages.starter.price}</strong>
-              <span>{locale === 'vi' ? 'Nếu đã mua Trust Kit' : 'If Trust Kit is already paid'}</span><strong>+1.591.000đ</strong>
+              <span>{locale === 'vi' ? 'Nếu đã mua Trust Kit' : 'If Trust Kit is already paid'}</span><strong>{locale === 'vi' ? '+1.591.000đ' : '+1,591,000 VND'}</strong>
             </div>
           </div>
           <a class="button button-primary" href="#bat-dau">{c.cta}</a>
