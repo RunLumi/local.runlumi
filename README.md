@@ -72,6 +72,7 @@ The intended production origin is **https://local.runlumi.app**.
 - `docs/GTM.md` — GTM model and falsification gates.
 - `docs/FIELD_PLAYBOOK.md` — field execution for student/part-time GTM reps.
 - `docs/GOAL_LANDING_PAGE.md` — implementation goal for future agents.
+- `docs/UI_UX_RESEARCH_2026-10.md` — external design references and the principles adopted from them.
 - `SECURITY.md` — enquiry-form and secret-handling rules.
 - `DEPLOY.md` — Cloudflare Pages deployment notes.
 - `AGENTS.md` — repo operating instructions.
