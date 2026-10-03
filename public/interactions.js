@@ -186,6 +186,23 @@
   });
 
   /* ------------------------------------------------------------------
+     Delivery panel: step-synced emphasis. Scroll position sets a state
+     attribute (ordinary state feedback, not motion); without JS the
+     panel simply shows all three artifacts at rest.
+     ------------------------------------------------------------------ */
+  var deliveryPanel = document.querySelector('[data-delivery-panel]');
+  var deliverySteps = Array.prototype.slice.call(document.querySelectorAll('.delivery-step'));
+  if (deliveryPanel && deliverySteps.length && 'IntersectionObserver' in window) {
+    var stepObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        deliveryPanel.setAttribute('data-active', entry.target.getAttribute('data-step'));
+      });
+    }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+    deliverySteps.forEach(function (el) { stepObserver.observe(el); });
+  }
+
+  /* ------------------------------------------------------------------
      FAQ: smooth height on toggle (details/summary stays native)
      ------------------------------------------------------------------ */
   Array.prototype.forEach.call(document.querySelectorAll('details.faq-item'), function (item) {

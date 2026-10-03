@@ -1,6 +1,7 @@
 ---
 import Page from '../layouts/Page.astro';
 import ScenePhoto from './ScenePhoto.astro';
+import ServiceIcon from './ServiceIcon.astro';
 
 interface Props { locale: 'vi' | 'en' }
 const { locale } = Astro.props;
@@ -282,7 +283,6 @@ const scenePhotos = { cafe: 'cafe', spa: 'salon', auto: 'garage' };
 
 const industryArt = ['salon', 'garage', 'hvac'];
 const featureArt = ['website', 'contact', 'map', 'review', 'hosting', 'alerts'];
-const workflowArt = ['brief', 'approve', 'publish'];
 const otherLocale = locale === 'vi' ? 'EN' : 'VI';
 const otherHref = locale === 'vi' ? '/en/' : '/';
 const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướng chính', illustrative:'Mẫu minh họa · Ảnh AI', recommended:'Khuyên dùng', core:'Gói chính', switcher:'Xem trước theo ngành', receipt:'Nếu đã mua Trust Kit trong 30 ngày: được trừ 399.000đ, còn lại 1.591.000đ' } : { main:'Main content', nav:'Primary navigation', illustrative:'Illustrative · AI imagery', recommended:'Recommended', core:'Core package', switcher:'Preview by industry', receipt:'If Trust Kit was paid within 30 days: 399,000 VND credited, 1,591,000 VND remaining' };
@@ -663,18 +663,89 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <div><p class="eyebrow">{c.workflow.eyebrow}</p><h2>{c.workflow.title}</h2></div>
         <p class="section-intro">{c.workflow.intro}</p>
       </div>
-      <ol class="step-grid" data-reveal-group>
-        {c.workflow.steps.map(([i,title,text],index) => <li class="step-card sheet" data-reveal>
-          <div class="workflow-art-box">
-            <img class="workflow-art" src={`/illustrations/${workflowArt[index]}.svg`} width="320" height="190" alt="" loading="lazy" decoding="async" />
+      <div class="delivery-layout" data-reveal-group>
+        <aside class="delivery-rail" aria-label={locale === 'vi' ? 'Gói bàn giao minh họa' : 'Illustrated handoff package'}>
+          <div class="delivery-panel sheet" data-delivery-panel data-reveal>
+            <div class="delivery-panel-head">
+              <p class="index">{locale === 'vi' ? 'Gói bàn giao' : 'Handoff package'}</p>
+              <h3>{locale === 'vi' ? 'Một gói trọn vẹn' : 'One complete package'}</h3>
+              <p>{locale === 'vi' ? 'Website, nút liên hệ và QR review — hoàn chỉnh, sẵn sàng đón khách.' : 'Website, contact actions, and review QR — complete and ready for customers.'}</p>
+            </div>
+            <ol class="delivery-artifacts">
+              <li class="delivery-artifact" data-artifact="site">
+                <span class="delivery-node" aria-hidden="true"></span>
+                <div class="delivery-artifact-card">
+                  <div class="delivery-browser">
+                    <span class="delivery-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="delivery-domain">
+                      <svg viewBox="0 0 16 16" width="9" height="9" fill="currentColor" aria-hidden="true"><path d="M4 6V4a4 4 0 0 1 8 0v2h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1zm2-2a2 2 0 1 1 4 0v2H6V4zm-2 4v5h8V8H4z"/></svg>
+                      annhien.runlumi.app
+                    </span>
+                  </div>
+                  <div class="delivery-site-body">
+                    <ScenePhoto name="cafe" class="delivery-scene" sizes="(max-width: 960px) 72vw, 340px" />
+                    <div class="delivery-site-info">
+                      <strong>{locale === 'vi' ? 'Website riêng chuẩn di động' : 'Dedicated mobile-first website'}</strong>
+                      <span>Hosting · SSL · {locale === 'vi' ? 'Tên miền' : 'Domain'}</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="delivery-artifact" data-artifact="contact">
+                <span class="delivery-node" aria-hidden="true"></span>
+                <div class="delivery-artifact-card">
+                  <strong class="delivery-artifact-title">{locale === 'vi' ? 'Khách bấm là liên hệ được' : 'One tap and customers reach you'}</strong>
+                  <div class="delivery-contact-row">
+                    <span class="delivery-chip delivery-chip-call">
+                      <svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.47 8.53a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/></svg>
+                      {locale === 'vi' ? 'Gọi ngay' : 'Call'}
+                    </span>
+                    <span class="delivery-chip delivery-chip-zalo">Zalo</span>
+                    <span class="delivery-chip">
+                      <svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor" aria-hidden="true"><path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                      {locale === 'vi' ? 'Chỉ đường' : 'Directions'}
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="delivery-artifact" data-artifact="review">
+                <span class="delivery-node" aria-hidden="true"></span>
+                <div class="delivery-artifact-card">
+                  <div class="delivery-qr-box" aria-hidden="true">
+                    <svg viewBox="0 0 80 80" width="44" height="44" fill="#102a43">
+                      <rect x="6" y="6" width="22" height="22" rx="2" fill="none" stroke="#102a43" stroke-width="5"/>
+                      <rect x="12" y="12" width="10" height="10" rx="1"/>
+                      <rect x="52" y="6" width="22" height="22" rx="2" fill="none" stroke="#102a43" stroke-width="5"/>
+                      <rect x="58" y="12" width="10" height="10" rx="1"/>
+                      <rect x="6" y="52" width="22" height="22" rx="2" fill="none" stroke="#102a43" stroke-width="5"/>
+                      <rect x="12" y="58" width="10" height="10" rx="1"/>
+                      <rect x="36" y="8" width="5" height="5"/><rect x="46" y="14" width="5" height="5"/>
+                      <rect x="36" y="20" width="5" height="5"/><rect x="14" y="36" width="5" height="5"/>
+                      <rect x="26" y="42" width="5" height="5"/><rect x="38" y="38" width="6" height="6" fill="#006093"/>
+                      <rect x="50" y="34" width="5" height="5"/><rect x="62" y="40" width="5" height="5"/>
+                      <rect x="36" y="50" width="5" height="5"/><rect x="48" y="56" width="5" height="5"/>
+                      <rect x="60" y="62" width="5" height="5"/><rect x="38" y="66" width="5" height="5"/>
+                    </svg>
+                  </div>
+                  <div class="delivery-site-info">
+                    <strong>Google Review</strong>
+                    <span>{locale === 'vi' ? 'QR đặt quầy · mời khách thật' : 'Counter QR · genuine customers only'}</span>
+                  </div>
+                </div>
+              </li>
+            </ol>
           </div>
-          <div class="step-content">
+        </aside>
+        <ol class="delivery-steps">
+          {c.workflow.steps.map(([i,title,text]) => <li class="delivery-step sheet" data-step={i.replace('0','')} data-reveal>
             <span class="step-index">{i}</span>
-            <h3>{title}</h3>
-            <p>{text}</p>
-          </div>
-        </li>)}
-      </ol>
+            <div class="delivery-step-body">
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </div>
+          </li>)}
+        </ol>
+      </div>
     </section>
 
     <section class="section wrap" id="gia-duy-tri">
@@ -685,16 +756,16 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
       <div class="renewal-grid" data-reveal-group>
         {c.renewal.plans.map(([name,price,text],i) => <article class={`sheet renewal-card spotlight ${i === 1 ? 'renewal-card-featured' : ''}`} data-reveal>
           <div class="renewal-card-head">
-            <span class="index">0{i+1}</span>
+            <span class="service-emblem"><ServiceIcon name={i === 0 ? 'address' : 'domain'} /></span>
             {i === 1 && <span class="recommended">{labels.recommended}</span>}
           </div>
           <h3>{name}</h3>
           <strong class="renewal-price">{price}</strong>
           <p>{text}</p>
           <ul class="renewal-checklist">
-            <li><span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span>{locale === 'vi' ? 'Hosting tốc độ cao + Chứng chỉ SSL' : 'High-speed hosting + SSL certificate'}</span></li>
-            <li><span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span>{locale === 'vi' ? 'Duy trì kỹ thuật & Giám sát uptime' : 'Technical maintenance & uptime monitoring'}</span></li>
-            {i === 1 && <li><span class="bullet-check"><svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span>{locale === 'vi' ? 'Gồm 1 tên miền tiêu chuẩn riêng (.vn / .com)' : 'Includes 1 standard custom domain (.vn / .com)'}</span></li>}
+            <li><span class="service-bullet"><ServiceIcon name="hosting" /></span><span>{locale === 'vi' ? 'Hosting tốc độ cao + Chứng chỉ SSL' : 'High-speed hosting + SSL certificate'}</span></li>
+            <li><span class="service-bullet"><ServiceIcon name="maintenance" /></span><span>{locale === 'vi' ? 'Duy trì kỹ thuật & Giám sát uptime' : 'Technical maintenance & uptime monitoring'}</span></li>
+            {i === 1 && <li><span class="service-bullet"><ServiceIcon name="domain" /></span><span>{locale === 'vi' ? 'Gồm 1 tên miền tiêu chuẩn riêng (.vn / .com)' : 'Includes 1 standard custom domain (.vn / .com)'}</span></li>}
           </ul>
         </article>)}
       </div>
@@ -703,7 +774,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
 
     <section class="section wrap trust-section">
       <div class="section-heading" data-reveal><div><p class="eyebrow">{c.trust.eyebrow}</p><h2>{c.trust.title}</h2></div></div>
-      <div class="trust-grid" data-reveal-group>{c.trust.items.map(([title,text]) => <article class="trust-card sheet" data-reveal><span class="proof-mark"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg></span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
+      <div class="trust-grid" data-reveal-group>{c.trust.items.map(([title,text],i) => <article class="trust-card sheet" data-reveal><span class="service-emblem"><ServiceIcon name={['ownership','honest','clarity','scope'][i]} /></span><div><h3>{title}</h3><p>{text}</p></div></article>)}</div>
     </section>
 
     <section class="section wrap faq" id="cau-hoi">
