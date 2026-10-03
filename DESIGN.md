@@ -74,16 +74,19 @@ Use exactly one major Civic Navy inversion to explain the done-for-you value. Ev
 
 ## Lumi Local content order
 
-1. product hero;
-2. 399k → 1.99m → 599k/999k ladder;
-3. one navy “done-for-you” section;
-4. inspectable feature sheets;
-5. three-step delivery;
-6. annual renewal;
-7. local-business fit;
-8. claim/review guardrails;
-9. FAQ;
-10. enquiry CTA.
+1. product hero with an inspectable business artifact;
+2. compact trust strip;
+3. illustrative industry relevance rail;
+4. asymmetric 399k → 1.99m → 599k/999k offer ladder;
+5. one navy “done-for-you” section;
+6. bento-like feature hierarchy with website visually dominant;
+7. three-step delivery;
+8. annual renewal;
+9. claim/review guardrails;
+10. FAQ;
+11. low-friction enquiry CTA.
+
+The customer should never have to compare three equally loud pricing cards. Lumi Local Starter is the primary commercial object; Trust Kit is a risk-reduction sidecar and renewal is a future-cost receipt.
 
 ## Hero
 
@@ -106,7 +109,9 @@ Show the full package price clearly. Trust Kit should feel like a low-risk entry
 
 ## Visuals
 
-Use original local SVGs and inspectable UI artifacts, not generated screenshots pretending to be customer work.
+Use inspectable HTML product artifacts and original local SVGs, not generated screenshots pretending to be customer work.
+
+The hero should make the product tangible with a browser/site surface, mobile contact surface, and review-QR object. Industry examples must be clearly illustrative and should reduce the owner's imagination cost without pretending to be customer proof.
 
 Allowed:
 
@@ -137,6 +142,18 @@ Most prospects will open the page from Zalo on a phone. Mobile is primary.
 - no tiny comparison tables;
 - pricing should be instantly readable;
 - no sticky element that hides content.
+
+## Research-informed refinement
+
+The October 2026 refinement borrows principles, not visual assets, from world-class product/service sites reviewed in `docs/UI_UX_RESEARCH_2026-10.md`:
+
+- central content earns the strongest visual weight;
+- navigation and supporting structure recede;
+- tangible product surfaces beat abstract feature claims;
+- "built for you" is more persuasive for busy operators than another builder UI;
+- relevant industry examples reduce imagination cost;
+- responsive/mobile proof matters because the product itself is consumed on phones;
+- progressive disclosure keeps the lead form light.
 
 ## Trust
 
