@@ -2621,3 +2621,15 @@
   .mini-live-tag{display:none}
   .mini-actions span{padding:0 8px;font-size:10px}
 }
+
+/* Pricing remains readable without horizontal scrolling on narrow phones. */
+@media(max-width:380px){
+  .workflow-dock{width:100%;grid-template-columns:repeat(3,minmax(0,1fr))}
+  .dock-link{min-width:0;gap:4px;padding-inline:3px;flex-wrap:wrap}
+  .dock-badge{display:none}
+  .price-val{flex-wrap:wrap}
+  .price-val strong{font-size:30px;white-space:nowrap}
+  .price-val span{white-space:nowrap}
+  .starter-price{flex-wrap:wrap}
+  .starter-price strong{font-size:32px}
+}

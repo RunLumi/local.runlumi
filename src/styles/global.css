@@ -120,3 +120,13 @@ p{text-wrap:pretty}
 @media(forced-colors:active){
   .button,.sheet,.glass-control{border:1px solid CanvasText;box-shadow:none}
 }
+
+/* Keep the full product name and language controls separate at 320px. */
+@media(max-width:360px){
+  .site-header .header-inner{width:100%;padding:0 8px;gap:6px}
+  .site-header .brand{gap:4px;flex-shrink:0}
+  .site-header .brand img{width:24px;height:24px}
+  .site-header .brand span{font-size:14px}
+  .header-actions{gap:6px}
+  .header-actions .button{padding-inline:10px}
+}

@@ -23,9 +23,9 @@ Current ladder:
 Always consult [`COPY.md`](COPY.md) for the canonical bilingual copy contract.
 
 The customer-facing value proposition centers on the **3-pillar local presence trinity**:
-1. **Google Maps presence:** Local buyers find your place with accurate location and directions. The owner retains 100% Google account ownership.
-2. **Real Counter Review QR:** Print-ready acrylic standees placed at checkout invite genuine happy customers to leave permanent 5-star Google reviews (compound trust).
-3. **Decision-closing mobile website:** Sub-second mobile loading with transparent service menus, hours, and 1-tap Call/Zalo booking actions.
+1. **Google Maps directions:** Links help visitors navigate to an owner-confirmed location; Lumi does not manage the profile. The owner retains 100% Google account ownership.
+2. **Real Counter Review QR:** Print-ready QR artwork invites all genuine customers to share an honest experience, without incentives or a requested rating. Printing and physical stands are not included.
+3. **Decision-closing mobile website:** Mobile-first service menus, hours, and Call/Zalo contact actions. No unmeasured speed or conversion guarantees.
 
 Website is a component of Lumi Local. The durable value is done-for-you setup, distribution, publishing, domain/hosting, maintenance, and the customer relationship.
 

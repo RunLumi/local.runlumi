@@ -48,7 +48,7 @@ Lumi Local gives a local business a practical online presence without asking the
 ## Local development
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -56,9 +56,14 @@ Build:
 
 ```bash
 npm run build
+npm test
 ```
 
 The intended production origin is **https://local.runlumi.app**.
+
+## Strategy and readiness
+
+Start with [STRATEGY.md](STRATEGY.md) and [the pilot ledger](docs/PILOT.md). Technical checks do not prove market demand. Starter is the primary offer; Trust Kit is optional.
 
 ## Repository map
 
