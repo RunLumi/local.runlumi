@@ -1,282 +1,15 @@
 ---
 import Page from '../layouts/Page.astro';
+import { copy } from '../content/copy.js';
 import ScenePhoto from './ScenePhoto.astro';
 import ServiceIcon from './ServiceIcon.astro';
 
 interface Props { locale: 'vi' | 'en' }
 const { locale } = Astro.props;
 
-const copy = {
-  vi: {
-    title: 'Lumi Local | Google Maps, QR Review & Website trọn gói cho business địa phương',
-    description: 'Lumi Local lo trọn gói Google Maps, standee QR Review và website di động chốt đơn. Không tự setup, không bận tâm kỹ thuật.',
-    nav: [['#goi-dich-vu','Gói dịch vụ'],['#cach-hoat-dong','Cách hoạt động'],['#gia-duy-tri','Chi phí duy trì'],['#cau-hoi','Câu hỏi']],
-    cta: 'Xem thử Lumi Local cho business của tôi',
-    hero: {
-      eyebrow: 'Lumi Local · Bộ 3 hiện diện cho kinh doanh địa phương',
-      title: ['Được tìm thấy trên Google.','Được tin tưởng nhờ Review.','Chốt khách ngay trên Website.'],
-      text: 'Trọn gói từ Google Maps, standee QR review đặt quầy đến website di động Gọi/Zalo. Bạn an tâm làm nghề, kỹ thuật để Lumi lo.',
-      secondary: 'Xem bảng giá & gói',
-      note: 'Minh bạch: Không bán review ảo hay hứa hẹn top 1. Lumi tạo uy tín thật từ khách ghé quán và bảo trì kỹ thuật trọn năm.'
-    },
-    proof: [
-      ['Đón khách từ Google Maps','Định vị chuẩn xác, chỉ đường tận nơi. Bạn giữ trọn 100% quyền sở hữu hồ sơ.'],
-      ['Tích lũy Review thật tại quầy','Standee QR in sẵn. Mời khách hài lòng để lại đánh giá 5 sao vĩnh viễn trên Google.'],
-      ['Website chốt khách 1 chạm','Tải tức thì trên di động. Xem menu, bảng giá và bấm Gọi/Zalo đặt lịch ngay.']
-    ],
-    examples: {
-      eyebrow:'Thực tế & Trực quan',
-      title:'Xem trước giao diện theo từng ngành nghề',
-      intro:'Bố cục chuẩn di động với bảng giá minh bạch và nút liên hệ đúng thói quen của khách.',
-      items:[
-        ['Salon & Spa','Mộc Beauty','Bảng giá · Đặt lịch · Nhắn Zalo','Khách xem menu dịch vụ, giá từng gói và bấm đặt lịch qua Zalo trong vài giây.'],
-        ['Garage ô tô','Minh Phát Auto','Sửa chữa · Cứu hộ 24/7 · Gọi ngay','Hotline cứu hộ khẩn cấp, chỉ đường vào xưởng và các gói bảo dưỡng hiện ngay đầu trang.'],
-        ['Điện lạnh & HVAC','An Tâm Cooling','Lắp đặt · Bảo trì · Báo giá tận nơi','Bảng giá và quy trình minh bạch giúp khách yên tâm trước khi nhấc máy gọi thợ.']
-      ]
-    },
-    packages: {
-      eyebrow: 'Bảng giá minh bạch',
-      title: 'Bắt đầu nhỏ với Trust Kit, hoặc lên trọn gói Starter.',
-      intro: 'Trust Kit tạo uy tín tức thì tại quầy. Starter lo trọn gói hiện diện và vận hành suốt cả năm.',
-      trust: {
-        name:'Lumi Trust Kit', price:'399.000đ', unit:'một lần',
-        text:'Bộ tạo uy tín tại quầy: Standee QR Google Review để bàn, file in chuẩn và checklist tối ưu thông tin Google.',
-        bullets:['Tích lũy review thật từ khách ghé quán, không chiêu trò','Bạn giữ 100% tài khoản, không cần cấp quyền quản trị Google','Khấu trừ đủ 399.000đ khi nâng cấp lên Starter trong 30 ngày']
-      },
-      starter: {
-        name:'Lumi Local Starter', price:'1.990.000đ', unit:'năm đầu',
-        text:'Trọn gói hiện diện: Website riêng chuẩn di động, standee QR review, nút Gọi/Zalo, hosting, SSL và bảo trì cả năm.',
-        bullets:['Website riêng chuẩn di động, bảng giá & nút Gọi/Zalo 1 chạm','Standee QR để bàn dẫn thẳng vào trang đánh giá Google','Đã gồm hosting tốc độ cao, chứng chỉ SSL và bảo trì cả năm','Lumi dựng trọn vẹn nội dung & kỹ thuật, bạn duyệt là online']
-      },
-      renewal: {
-        name:'Duy trì từ năm 2', price:'599k / 999k', unit:'mỗi năm',
-        text:'599.000đ/năm với địa chỉ RunLumi hoặc 999.000đ/năm với tên miền riêng tiêu chuẩn (.vn/.com). Đã gồm hosting, SSL và bảo trì.',
-        bullets:['599k/năm: Địa chỉ RunLumi, hosting & bảo trì','999k/năm: Tên miền riêng tiêu chuẩn, hosting & bảo trì','Thông báo trước minh bạch, không tự động trừ tiền']
-      },
-      credit:'Đã mua Trust Kit? Nâng cấp lên Starter trong 30 ngày chỉ cần thanh toán thêm 1.591.000đ.'
-    },
-    convenience: {
-      eyebrow:'Giá trị cốt lõi',
-      title:'Bạn là chuyên gia làm nghề, không phải thợ làm web.',
-      text:'Không mất hàng tuần tự mày mò viết bài, chỉnh ảnh hay sửa lỗi kỹ thuật. Lumi Local chuẩn bị trọn gói để quán sẵn sàng đón khách.',
-      items:[
-        ['01','Lumi chuẩn bị','Dựng sẵn toàn bộ nội dung, hình ảnh và mã QR từ thông tin thực tế của quán.'],
-        ['02','Bạn duyệt trên điện thoại','Trải nghiệm thử như khách thật. Yêu cầu chỉnh sửa câu chữ, hình ảnh đến khi hài lòng.'],
-        ['03','Bàn giao & Đón khách','Kích hoạt tên miền, máy chủ, nút Gọi/Zalo và bàn giao standee QR đặt quầy đón khách.']
-      ]
-    },
-    included: {
-      eyebrow:'Trọn gói trong Starter',
-      title:'6 thành phần cốt lõi để khách tìm là ghé.',
-      intro:'Trọn gói trong một lần thanh toán. Đầy đủ mọi công cụ để khách tìm thấy, tin tưởng và bấm gọi.',
-      items:[
-        ['Website chuẩn di động','Tải dưới 1 giây. Khách lướt nhanh menu, bảng giá và địa chỉ ngay trên điện thoại.'],
-        ['Nút Gọi ngay & Nhắn Zalo','Bấm 1 chạm để gọi hotline hoặc nhắn Zalo tư vấn ngay, không để rơi rớt khách.'],
-        ['Chỉ đường Google Maps','Dẫn đường chuẩn xác tới quán. Bạn giữ trọn quyền quản trị Google Maps.'],
-        ['Standee QR Google Review','Đặt quầy thu ngân để mời khách hài lòng để lại đánh giá 5 sao thật trên Google.'],
-        ['Hosting tốc độ cao + SSL','Máy chủ đám mây ổn định, bảo mật an toàn, duy trì hoạt động 24/7.'],
-        ['Cảnh báo hiện diện công khai','Thông báo ngay khi số hotline, giờ mở cửa hay địa chỉ trên Google bị thay đổi bất thường.']
-      ]
-    },
-    workflow: {
-      eyebrow:'3 bước đơn giản',
-      title:'Lên online mà không tốn công mày mò.',
-      intro:'Bạn gửi thông tin cơ bản. Toàn bộ phần việc kỹ thuật Lumi đảm nhận.',
-      steps:[
-        ['01','Gửi thông tin cơ bản','Tên cơ sở, dịch vụ, bảng giá, hotline và vài bức ảnh chụp thực tế.'],
-        ['02','Xem trước trên điện thoại','Duyệt bản chạy thử trên điện thoại như khách hàng và yêu cầu chỉnh sửa nếu cần.'],
-        ['03','Kích hoạt & Đón khách','Kết nối tên miền, bàn giao standee QR và duy trì vận hành ổn định trọn năm.']
-      ]
-    },
-    renewal: {
-      eyebrow:'Từ năm thứ hai',
-      title:'Chi phí duy trì rõ ràng từ năm thứ 2.',
-      intro:'Minh bạch chi phí từ đầu. Không phụ phí ẩn, không tự động trừ tiền.',
-      plans:[
-        ['Địa chỉ RunLumi','599.000đ/năm','Địa chỉ tenquan.runlumi.app, bao gồm hosting tốc độ cao, chứng chỉ SSL và bảo trì định kỳ.'],
-        ['Tên miền riêng tiêu chuẩn','999.000đ/năm','Tên miền riêng (.vn hoặc .com), đã gồm phí duy trì tên miền, hosting và bảo trì trọn gói.']
-      ],
-      recommendation:'Khuyên dùng: Tên miền riêng giúp tăng độ nhận diện và sự tin cậy lâu dài cho cơ sở kinh doanh.'
-    },
-    fit: {
-      eyebrow:'Phù hợp nhất với',
-      title:'Dành cho các cơ sở kinh doanh có khách thật và dịch vụ thật.',
-      items:['Spa & Thẩm mỹ viện','Garage & Sửa xe','Điện lạnh & Điện nước','Phòng khám & Nha khoa','Thú cưng & Pet services','Nội thất & Sửa nhà','Vệ sinh công nghiệp','Studio & Đào tạo']
-    },
-    trust: {
-      eyebrow:'Nguyên tắc làm việc',
-      title:'4 nguyên tắc giữ trọn sự tin cậy.',
-      items:[
-        ['Giữ 100% quyền Google Maps','Tài khoản Google luôn là của bạn. Lumi không bao giờ hỏi mật khẩu hay quyền quản trị.'],
-        ['Nói không với review ảo','Chỉ tạo công cụ xin review từ khách thật tại quầy. Tuyệt đối không mua bán đánh giá ảo.'],
-        ['Không cam kết viển vông','Không hứa hẹn lên top 1 hay doanh số ảo. Lumi tập trung làm chuẩn hiện diện và trải nghiệm khách.'],
-        ['Rõ ràng, không phát sinh','Chi phí trọn gói thống nhất từ đầu. Không có phụ phí mập mờ sau khi bàn giao.']
-      ]
-    },
-    faq: {
-      title:'Những câu hỏi bạn thường băn khoăn',
-      items:[
-        ['Gói 399k Trust Kit gồm những gì?','Gồm file in standee QR Review đặt quầy, mã QR dẫn thẳng trang đánh giá Google và checklist tối ưu thông tin. Khi nâng cấp lên Starter trong 30 ngày, 399.000đ được trừ thẳng (chỉ trả thêm 1.591.000đ).'],
-        ['Lumi có cần quyền chỉnh Google Maps không?','Hoàn toàn không. Tài khoản Google luôn là của bạn. Lumi chỉ dùng thông tin công khai để tạo mã QR và nhúng bản đồ chỉ đường, tuyệt đối không hỏi mật khẩu hay quyền admin.'],
-        ['Tôi tự làm website bằng AI được mà?','Được chứ. Nhưng với Lumi, bạn không phải mất hàng tuần viết bài, chỉnh ảnh, nối tên miền hay sửa lỗi máy chủ. Bạn tập trung làm nghề, kỹ thuật đã có bên em lo.'],
-        ['Làm web này có cam kết lên top Google hay ra khách không?','Thẳng thắn là không. Bất kỳ ai hứa hẹn lên top hay doanh số ở mức giá này đều nói quá. Lumi cam kết website chuẩn chỉn, tải tức thì để khi khách tìm thấy quán, họ tin tưởng và bấm gọi ngay.'],
-        ['Chi phí duy trì từ năm thứ 2 là bao nhiêu?','Rất nhẹ nhàng: 599.000đ/năm với địa chỉ RunLumi, hoặc 999.000đ/năm với tên miền riêng tiêu chuẩn (.vn/.com). Đã gồm trọn gói hosting, SSL và bảo trì kỹ thuật.'],
-        ['Có bắt buộc phải mua Trust Kit trước không?','Không bắt buộc. Nếu cần trọn bộ website và standee review ngay, bạn có thể đăng ký gói Starter (1.990.000đ) từ đầu.']
-      ]
-    },
-    form: {
-      eyebrow:'Bước tiếp theo',
-      title:'Gửi thông tin để nhận bản xem thử.',
-      text:'Chỉ cần tên quán và số Zalo. Lumi dựng sẵn bản chạy thử trên điện thoại để bạn xem trước khi quyết định.',
-      name:'Tên của bạn',
-      business:'Tên cơ sở kinh doanh',
-      phone:'Số điện thoại / Zalo',
-      email:'Email (không bắt buộc)',
-      note:'Bạn đang cần hỗ trợ phần nào? (không bắt buộc)',
-      consent:'Tôi đồng ý để Lumi liên hệ tư vấn về yêu cầu này.',
-      submit:'Xem thử Lumi Local cho business của tôi',
-      privacy:'Chưa thu phí hay tạo tài khoản. Không cần gửi thông tin thẻ hay tài liệu mật.',
-      success:'Lumi đã nhận thông tin và sẽ gửi bản xem thử qua Zalo trong vòng 24h.',
-      error:'Chưa gửi được yêu cầu. Vui lòng bấm thử lại hoặc nhắn tin trực tiếp cho Lumi.'
-    },
-    footer:'Website chỉ là một phần. Lumi Local lo trọn gói hiện diện và vận hành kỹ thuật cho bạn.'
-  },
-  en: {
-    title: 'Lumi Local | Google Maps, Review QR & Mobile Website for Local Businesses',
-    description: 'Lumi Local handles Google Maps presence, counter review standee, and high-converting mobile website. Zero technical chores.',
-    nav: [['#goi-dich-vu','Packages'],['#cach-hoat-dong','How it works'],['#gia-duy-tri','Renewal'],['#cau-hoi','FAQ']],
-    cta: 'Show me Lumi Local for my business',
-    hero: {
-      eyebrow:'Lumi Local · The Local Business Presence Trinity',
-      title:['Found on Google Maps.','Trusted with Real Reviews.','Booked on Your Website.'],
-      text:'All-in-one setup from Google Maps and counter review standee to your mobile website with Call/Zalo. You run your craft, we run the tech.',
-      secondary:'View packages & pricing',
-      note:'Transparent: Zero fake reviews or fantasy top rankings. We build real trust from visiting customers and handle your tech all year.'
-    },
-    proof:[
-      ['Captured via Google Maps','Precise GPS directions while keeping 100% Google account ownership.'],
-      ['Real Counter Review QR','Print-ready standee. Invite happy visitors to leave permanent 5-star reviews.'],
-      ['1-Tap Mobile Conversion','Sub-second loading. Browse menus, check prices, and call or book instantly.']
-    ],
-    examples:{
-      eyebrow:'Real-world context',
-      title:'Preview Lumi Local by industry',
-      intro:'Mobile-first layouts with clear pricing and contact actions tuned to how local customers buy.',
-      items:[
-        ['Salon & Spa','Mộc Beauty','Services · Booking · Direct Zalo','Customers browse treatment menus and book via Zalo in seconds.'],
-        ['Garage & Auto','Minh Phát Auto','Repairs · Roadside 24/7 · Call now','Emergency hotline, GPS directions, and service packages stay front and center.'],
-        ['HVAC & Cooling','An Tâm Cooling','Install · Maintain · On-site quotes','Clear scopes and pricing help homeowners trust you before calling.']
-      ]
-    },
-    packages:{
-      eyebrow:'Transparent pricing',
-      title:'Start small with Trust Kit, or go all-in with Starter.',
-      intro:'Trust Kit builds instant counter trust. Starter handles your full online presence all year.',
-      trust:{
-        name:'Lumi Trust Kit',price:'399,000 VND',unit:'one-time',
-        text:'Counter reputation kit: Print-ready Google Review QR standee, setup guide, and place checklist.',
-        bullets:['Real reviews from visiting customers—no fake incentives','100% account ownership—zero Google passwords requested','399,000 VND fully credited when upgrading to Starter in 30 days']
-      },
-      starter:{
-        name:'Lumi Local Starter',price:'1,990,000 VND',unit:'year one',
-        text:'Complete presence: Dedicated mobile website, counter review QR, Call/Zalo buttons, hosting, SSL, and full-year maintenance.',
-        bullets:['Mobile website with transparent pricing & 1-tap Call/Zalo','Counter standee leading directly to your Google review page','Includes high-speed hosting, SSL certificate, and full-year maintenance','Lumi handles all copy & tech setup—you approve and go live']
-      },
-      renewal:{
-        name:'From year two',price:'599k / 999k',unit:'per year',
-        text:'599,000 VND/year with a RunLumi address or 999,000 VND/year with a standard custom domain. Includes hosting, SSL, and maintenance.',
-        bullets:['599k/year: RunLumi address, hosting & maintenance','999k/year: Standard custom domain (.vn/.com), hosting & maintenance','Advance notice with zero surprise billings']
-      },
-      credit:'Bought Trust Kit? Upgrade within 30 days and pay only 1,591,000 VND more.'
-    },
-    convenience:{
-      eyebrow:'Done-for-you execution',
-      title:'You master your craft, not web maintenance.',
-      text:'Stop wasting weekends fighting site builders or fixing tech errors. Lumi Local delivers your Maps presence, counter standee, and ready-to-book website.',
-      items:[
-        ['01','Lumi prepares it all','Complete mobile draft, photos, and review assets crafted from your real business details.'],
-        ['02','You review on mobile','Test the live draft on your phone just like a customer. Request edits until satisfied.'],
-        ['03','Launch & Welcome clients','We connect your domain, wire direct Call/Zalo buttons, and hand over counter QR files.']
-      ]
-    },
-    included:{
-      eyebrow:'Included in Starter',
-      title:'6 core assets to turn searchers into paying clients.',
-      intro:'Everything included in one payment. Every link to help customers find, trust, and call you.',
-      items:[
-        ['Mobile-first website','Sub-second load times. Customers check menus, pricing, and hours on their phone.'],
-        ['Direct Call & Zalo actions','One tap to call or message Zalo immediately without bouncing.'],
-        ['Google Maps directions','Accurate directions straight to your door without sharing passwords.'],
-        ['Counter QR Review standee','Placed at checkout to invite happy visitors to leave genuine 5-star Google reviews.'],
-        ['Fast hosting + SSL certificate','Reliable cloud infrastructure keeping your site fast and secure 24/7.'],
-        ['Public-presence alerts','Alerts if your public Google hours, hotline, or address change unexpectedly.']
-      ]
-    },
-    workflow:{
-      eyebrow:'3 simple steps',
-      title:'Get online without technical stress.',
-      intro:'You share the basics. Lumi takes care of all the technical setup.',
-      steps:[
-        ['01','Share your basics','Business name, services, pricing, hotline, and a few real photos.'],
-        ['02','Review on mobile','Test the live draft on your phone and request any edits.'],
-        ['03','Launch & Welcome clients','We connect your domain, deliver your counter review QR, and maintain the stack.']
-      ]
-    },
-    renewal:{
-      eyebrow:'From year two',
-      title:'Predictable renewal from year two.',
-      intro:'Know your renewal cost upfront. Zero surprise fees, zero automatic billing traps.',
-      plans:[
-        ['RunLumi Address','599,000 VND/year','RunLumi subdomain, fast hosting, SSL, and technical maintenance.'],
-        ['Standard custom domain','999,000 VND/year','One standard custom domain (.vn/.com), hosting, SSL, and technical maintenance.']
-      ],
-      recommendation:'Recommended: A custom domain builds stronger customer trust and long-term brand equity.'
-    },
-    fit:{
-      eyebrow:'Built for',
-      title:'Local businesses with real customers that need a respectable online presence.',
-      items:['Salon & Spa','Garage & Auto repair','HVAC & Plumbing','Dental & Clinics','Pet care services','Interior & Home repair','Cleaning & Pest control','Studio & Education']
-    },
-    trust:{
-      eyebrow:'Clear boundaries',
-      title:'4 honest rules we never break.',
-      items:[
-        ['100% Google account ownership','Your Google account stays entirely yours. Lumi never asks for your password or admin access.'],
-        ['No fake or bought reviews','We build tools to collect real customer reviews at checkout. Zero bought ratings.'],
-        ['No fantasy ranking claims','Zero false ranking or revenue promises. Lumi focuses on solid presence and direct contact.'],
-        ['Transparent, fixed scope','All costs agreed upfront. Zero unexpected fees after handover.']
-      ]
-    },
-    faq:{
-      title:'Frequently asked questions',
-      items:[
-        ['What is included in the 399k Trust Kit?','Print-ready counter review QR standee, direct Google review link, and place checklist. Upgrading to Starter within 30 days credits the full 399,000 VND (pay only 1,591,000 VND more).'],
-        ['Do you need Google Maps edit access?','No. Your Google account stays 100% yours. Lumi uses public place info to build your QR and embed directions—no passwords or admin rights needed.'],
-        ['Can I make a website with AI myself?','Sure. But with Lumi, you avoid wasting weekends writing copy, formatting photos, wiring DNS, and fixing tech glitches. You run your craft, we run the tech.'],
-        ['Do you guarantee Google ranking or customers?','No. Anyone promising top rankings or revenue at this price is exaggerating. Lumi delivers a fast, polished mobile site so finding customers trust you and call immediately.'],
-        ['What does renewal cost from year two?','Very reasonable: 599,000 VND/year with a RunLumi address, or 999,000 VND/year with a standard custom domain (.vn/.com). Both include hosting, SSL, and maintenance.'],
-        ['Do I have to buy Trust Kit first?','No. If you want the full website and review standee right away, you can get Lumi Local Starter directly.']
-      ]
-    },
-    form:{
-      eyebrow:'Next step',
-      title:'Send your info to receive a live preview.',
-      text:'Just your business name and phone/Zalo. We prepare a live mobile preview for you to experience before deciding.',
-      name:'Your name',
-      business:'Business name',
-      phone:'Phone / Zalo',
-      email:'Email (optional)',
-      note:'What would you like help with? (optional)',
-      consent:'I agree that Lumi may contact me regarding this request.',
-      submit:'Show me Lumi Local for my business',
-      privacy:'No payment or account creation required. Never send banking data or confidential files.',
-      success:'We received your info and will share your preview via Zalo/Phone within 24 hours.',
-      error:'Could not send the request. Please try again or reach out directly.'
-    },
-    footer:'A website is just one component. Lumi Local handles the practical setup, trust assets, and technical maintenance.'
-  }
-};
+
 const c = copy[locale];
+const illustrationNote = locale === 'vi' ? 'Giao diện và hình ảnh minh họa bằng AI; không phải khách hàng hay kết quả thực tế.' : 'Concept interfaces and AI-generated imagery; not real customers or business results.';
 
 /* Hero Operating Desk Stage 2.0 — illustrative industry concepts.
    All three render server-side; the switcher crossfades between them
@@ -364,10 +97,10 @@ const inds = industries[locale];
 const scenePhotos = { cafe: 'cafe', spa: 'salon', auto: 'garage' };
 
 const industryArt = ['salon', 'garage', 'hvac'];
-const featureArt = ['website', 'contact', 'map', 'review', 'hosting', 'alerts'];
+const featureArt = ['website', 'contact', 'map', 'review', 'hosting', 'website'];
 const otherLocale = locale === 'vi' ? 'EN' : 'VI';
 const otherHref = locale === 'vi' ? '/en/' : '/';
-const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướng chính', illustrative:'Giao diện mẫu', recommended:'Khuyên dùng', core:'Gói chính', switcher:'Xem trước theo ngành', receipt:'Nếu đã mua Trust Kit trong 30 ngày: được trừ 399.000đ, còn lại 1.591.000đ' } : { main:'Main content', nav:'Primary navigation', illustrative:'Live preview', recommended:'Recommended', core:'Core package', switcher:'Preview by industry', receipt:'If Trust Kit was paid within 30 days: 399,000 VND credited, 1,591,000 VND remaining' };
+const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướng chính', illustrative:'Giao diện mẫu', recommended:'Khuyên dùng', core:'Gói chính', switcher:'Xem trước theo ngành', receipt:'Nếu đã mua Trust Kit trong 30 ngày: được trừ 399.000đ, còn lại 1.591.000đ' } : { main:'Main content', nav:'Primary navigation', illustrative:'Illustrative concept', recommended:'Recommended', core:'Core package', switcher:'Preview by industry', receipt:'If Trust Kit was paid within 30 days: 399,000 VND credited, 1,591,000 VND remaining' };
 ---
 <Page locale={locale} title={c.title} description={c.description}>
   <header class="site-header glass-control">
@@ -412,7 +145,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
               <span class="layer-lead">{locale === 'vi' ? 'Được tin tưởng nhờ' : 'Trusted with'}</span>{' '}
               <strong class="layer-target target-review">
                 <span>{locale === 'vi' ? 'Review.' : 'Real Reviews.'}</span>
-                <span class="micro-stars" aria-hidden="true">★★★★★</span>
+
               </strong>
             </span>
           </span>
@@ -420,7 +153,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <span class="headline-layer headline-climax headline-step-web">
             <span class="layer-badge badge-climax" aria-hidden="true">03</span>
             <span class="layer-text">
-              <span class="climax-lead">{locale === 'vi' ? 'Chốt khách ngay trên' : 'Booked on'}</span>{' '}
+              <span class="climax-lead">{locale === 'vi' ? 'Dễ liên hệ qua' : 'Easy to contact on'}</span>{' '}
               <strong class="climax-target target-website">{locale === 'vi' ? 'Website.' : 'Your Website.'}</strong>
             </span>
           </span>
@@ -593,6 +326,8 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
       </div>
     </section>
 
+    <p class="wrap meta">{illustrationNote}</p>
+
     <section class="wrap proof-row" aria-label="Reassurance" data-reveal-group>
       {c.proof.map(([title,text]) => <article class="proof-card" data-reveal><span class="proof-mark"><ServiceIcon name="check" size={14} /></span><div><strong>{title}</strong><p>{text}</p></div></article>)}
     </section>
@@ -600,7 +335,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     <section class="examples wrap" aria-labelledby="examples-title">
       <div class="examples-heading" data-reveal>
         <div><p class="eyebrow">{c.examples.eyebrow}</p><h2 id="examples-title">{c.examples.title}</h2></div>
-        <p class="section-intro">{c.examples.intro}</p>
+        <p class="section-intro">{c.examples.intro}<br /><small>{illustrationNote}</small></p>
       </div>
       <div class="example-rail" data-reveal-group>
         {c.examples.items.map(([type,name,meta,text],i) => <article class="example-card sheet spotlight" data-reveal>
@@ -711,7 +446,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
             </div>
             <div class="price"><strong>{c.packages.renewal.price}</strong><span>/{c.packages.renewal.unit}</span></div>
             <p class="mini-offer-desc">{c.packages.renewal.text}</p>
-            <a class="text-link" href="#gia-duy-tri"><span>{locale === 'vi' ? 'Chi tiết renewal' : 'Renewal details'}</span><ServiceIcon name="arrow" size={16} /></a>
+            <a class="text-link" href="#gia-duy-tri"><span>{locale === 'vi' ? 'Chi tiết gia hạn' : 'Renewal details'}</span><ServiceIcon name="arrow" size={16} /></a>
           </article>
         </div>
       </div>
@@ -750,7 +485,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     <section class="section wrap">
       <div class="section-heading" data-reveal>
         <div><p class="eyebrow">{c.included.eyebrow}</p><h2>{c.included.title}</h2></div>
-        <p class="section-intro">{c.included.intro}</p>
+        <p class="section-intro">{c.included.intro}<br /><small>{illustrationNote}</small></p>
       </div>
       <div class="feature-grid" data-reveal-group>
         {c.included.items.map(([title,text],i) => <article class={`sheet feature-card spotlight ${i === 0 ? 'feature-primary' : ''}`} data-reveal>
@@ -873,8 +608,8 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <p>{text}</p>
           <ul class="renewal-checklist">
             <li><span class="service-bullet"><ServiceIcon name="hosting" /></span><span>{locale === 'vi' ? 'Hosting tốc độ cao + Chứng chỉ SSL' : 'High-speed hosting + SSL certificate'}</span></li>
-            <li><span class="service-bullet"><ServiceIcon name="maintenance" /></span><span>{locale === 'vi' ? 'Duy trì kỹ thuật & Giám sát uptime' : 'Technical maintenance & uptime monitoring'}</span></li>
-            {i === 1 && <li><span class="service-bullet"><ServiceIcon name="domain" /></span><span>{locale === 'vi' ? 'Gồm 1 tên miền tiêu chuẩn riêng (.vn / .com)' : 'Includes 1 standard custom domain (.vn / .com)'}</span></li>}
+            <li><span class="service-bullet"><ServiceIcon name="maintenance" /></span><span>{locale === 'vi' ? 'Bảo trì kỹ thuật trong phạm vi gói' : 'Technical maintenance within agreed scope'}</span></li>
+            {i === 1 && <li><span class="service-bullet"><ServiceIcon name="domain" /></span><span>{locale === 'vi' ? 'Gồm 1 tên miền tiêu chuẩn đã xác nhận' : 'Includes 1 agreed standard custom domain'}</span></li>}
           </ul>
         </article>)}
       </div>
@@ -903,6 +638,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <ServiceIcon name="shield" size={14} />
           <p class="meta">{c.form.privacy}</p>
         </div>
+        <p class="meta">{illustrationNote}</p>
         <div class="welcome-art-box">
           <ScenePhoto class="welcome-photo" name="welcome" sizes="(max-width: 767px) 90vw, 440px" />
         </div>

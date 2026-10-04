@@ -1,5 +1,8 @@
 # Lumi Local positioning
 
+Current pilot decisions and scale gates: [STRATEGY.md](STRATEGY.md). Physical stands/printing are excluded; alerts are conditional on verified implementation.
+
+
 ## Product
 
 **Lumi Local** is the customer-facing product.

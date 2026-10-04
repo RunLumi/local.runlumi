@@ -32,10 +32,12 @@ if (form && status) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         credentials: 'same-origin',
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
+        signal: AbortSignal.timeout(12000)
       });
 
-      if (!response.ok) throw new Error('request failed');
+      const result = await response.json();
+      if (!response.ok || result?.ok !== true) throw new Error('request failed');
 
       form.reset();
       status.textContent = status.dataset.success || 'Sent.';

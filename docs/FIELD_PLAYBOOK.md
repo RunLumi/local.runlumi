@@ -1,5 +1,8 @@
 # Field playbook: Google Maps → AI preview → visit → Lumi Local paid
 
+Current pilot decisions and scale gates: [STRATEGY.md](../STRATEGY.md). Physical stands/printing are excluded; alerts are conditional on verified implementation.
+
+
 **For:** student / part-time GTM rep  
 **Goal:** someone without sales experience can find a local business, prepare context, meet the owner, show value, and create a paid signal without improvising promises.
 
@@ -144,7 +147,7 @@ Close Starter directly.
 
 ### Owner is hesitant
 
-> **Nếu anh/chị muốn thử nhỏ trước, bên em có Trust Kit 399 nghìn: QR review, standee và audit public presence. Bên em không cần quyền chỉnh Google Maps. Nếu nâng cấp Starter trong 30 ngày thì 399k được trừ toàn bộ.**
+> **Nếu anh/chị muốn thử nhỏ trước, bên em có Trust Kit 399 nghìn: file QR sẵn để in và checklist thông tin công khai. Bên em không cần quyền chỉnh Google Maps. Nếu nâng cấp Starter trong 30 ngày thì 399k được trừ toàn bộ.**
 
 Trust Kit is a fallback, not a required first step.
 

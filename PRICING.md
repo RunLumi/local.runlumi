@@ -114,3 +114,11 @@ Continue only if:
 - manual Google work remains near zero.
 
 Do not scale field headcount just because Trust Kit sells.
+
+## Scope clarification — 2026-10-04
+
+Both packages supply print-ready QR artwork, not physical stands, printing or shipping. Starter includes this artwork and one basic content revision round before publication. Confirm the chosen first-year address/domain, eligibility, ownership, cost and transfer terms in the written scope before collecting payment. The listed renewal does not cover every possible .vn/.com registration.
+
+No verified alert implementation is established by this marketing repository. Do not include alerts in an unconditional customer promise. Technical maintenance covers the agreed site, hosting and SSL, not ongoing content, marketing or Google profile management.
+
+The 30-business gate is permission for another bounded learning cohort, not evidence of product-market fit. Use the contribution and delivery gates in STRATEGY.md before expanding headcount.

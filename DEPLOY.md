@@ -56,8 +56,9 @@ Do not commit its value.
 
 ## Pre-deploy checklist
 
-- `npm install`
+- `npm ci`
 - `npm run build`
+- `npm test`
 - inspect `/` and `/en/`
 - verify 320/375/768/1440 widths
 - verify CTA and enquiry form

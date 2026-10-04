@@ -1,5 +1,8 @@
 # GTM: Lumi Local → Annual Renewal → Lumi Ops
 
+Current pilot decisions and scale gates: [STRATEGY.md](../STRATEGY.md). Physical stands/printing are excluded; alerts are conditional on verified implementation.
+
+
 **Status:** Active experiment  
 **Updated:** 2026-10-03
 

@@ -23,7 +23,7 @@ function wantsHtml(request) {
   return (request.headers.get('accept') || '').includes('text/html');
 }
 
-function respond(request, status, body) {
+function respond(request, status, body, locale = 'vi') {
   const baseHeaders = {
     'Cache-Control': 'no-store',
     'X-Content-Type-Options': 'nosniff'
@@ -31,18 +31,21 @@ function respond(request, status, body) {
 
   if (wantsHtml(request)) {
     const ok = status >= 200 && status < 300;
-    const title = ok ? 'Lumi Local — Đã nhận' : 'Lumi Local — Chưa gửi được';
-    const message = ok
-      ? 'Lumi đã nhận yêu cầu. Bước này chưa thu phí hoặc tạo tài khoản.'
-      : 'Chưa gửi được yêu cầu. Vui lòng quay lại và thử lại sau.';
+    const english = locale === 'en';
+    const title = english
+      ? (ok ? 'Lumi Local — Request received' : 'Lumi Local — Request not confirmed')
+      : (ok ? 'Lumi Local — Đã nhận' : 'Lumi Local — Chưa gửi được');
+    const message = english
+      ? (ok ? 'Your request was received. No payment or account has been created.' : 'Your request could not be confirmed. Please return and try again later.')
+      : (ok ? 'Lumi đã nhận yêu cầu. Bước này chưa thu phí hoặc tạo tài khoản.' : 'Chưa xác nhận được yêu cầu. Vui lòng quay lại và thử lại sau.');
     const html =
-      '<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' +
+      '<!doctype html><html lang="' + (english ? 'en' : 'vi') + '"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' +
       title +
       '</title><body style="font-family:system-ui;padding:40px;max-width:680px;margin:auto"><h1>' +
       title +
       '</h1><p>' +
       message +
-      '</p><p><a href="/">Về Lumi Local</a></p></body></html>';
+      '</p><p><a href="' + (english ? '/en/' : '/') + '">' + (english ? 'Back to Lumi Local' : 'Về Lumi Local') + '</a></p></body></html>';
 
     return new Response(html, {
       status,
@@ -60,12 +63,36 @@ async function parseBody(request) {
   const length = Number(request.headers.get('content-length') || 0);
   if (length && length > MAX_BODY) throw new Error('too_large');
 
-  const type = request.headers.get('content-type') || '';
-  if (type.includes('application/json')) return await request.json();
-
-  if (type.includes('application/x-www-form-urlencoded') || type.includes('multipart/form-data')) {
-    return Object.fromEntries(await request.formData());
+  const type = (request.headers.get('content-type') || '').split(';')[0].trim().toLowerCase();
+  if (!['application/json', 'application/x-www-form-urlencoded'].includes(type)) {
+    throw new Error('unsupported');
   }
+  // Count actual bytes; Content-Length is optional and cannot enforce this bound.
+  const reader = request.body?.getReader();
+  const chunks = [];
+  let size = 0;
+  if (reader) {
+    try {
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        size += value.byteLength;
+        if (size > MAX_BODY) {
+          await reader.cancel();
+          throw new Error('too_large');
+        }
+        chunks.push(value);
+      }
+    } finally {
+      reader.releaseLock();
+    }
+  }
+  const bytes = new Uint8Array(size);
+  let offset = 0;
+  for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
+  const body = new TextDecoder().decode(bytes);
+  if (type === 'application/json') return JSON.parse(body);
+  if (type === 'application/x-www-form-urlencoded') return Object.fromEntries(new URLSearchParams(body));
 
   throw new Error('unsupported');
 }
@@ -87,13 +114,16 @@ export async function onRequestPost({ request, env }) {
   const data = {};
   for (const [key, max] of Object.entries(limits)) data[key] = clean(raw?.[key], max);
 
-  if (data.website) return respond(request, 202, { ok: true });
+  if (data.website) return respond(request, 202, { ok: true }, data.locale);
 
   const consent = raw?.consent === true || raw?.consent === 'yes' || raw?.consent === 'on';
   const validEmail = !data.email || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email);
 
-  if (!data.name || !data.business || !data.phone || !consent || !validEmail) {
-    return respond(request, 400, { ok: false, error: 'invalid_fields' });
+  const digits = data.phone.replace(/\D/g, '');
+  const validPhone = /^[+\d\s().-]+$/.test(data.phone) && digits.length >= 8 && digits.length <= 15;
+
+  if (!data.name || !data.business || !validPhone || !consent || !validEmail) {
+    return respond(request, 400, { ok: false, error: 'invalid_fields' }, data.locale);
   }
 
   const webhook = env?.DISCORD_TRIAL_WEBHOOK_URL || '';
@@ -102,7 +132,7 @@ export async function onRequestPost({ request, env }) {
     webhook.startsWith('https://discordapp.com/api/webhooks/');
 
   if (!validWebhook) {
-    return respond(request, 503, { ok: false, error: 'unavailable' });
+    return respond(request, 503, { ok: false, error: 'unavailable' }, data.locale);
   }
 
   const lines = [
@@ -120,20 +150,22 @@ export async function onRequestPost({ request, env }) {
     upstream = await fetch(webhook + (webhook.includes('?') ? '&' : '?') + 'wait=true', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      redirect: 'error',
+      signal: AbortSignal.timeout(8000),
       body: JSON.stringify({
         content: lines.join('\n').slice(0, 1900),
         allowed_mentions: { parse: [] }
       })
     });
   } catch {
-    return respond(request, 502, { ok: false, error: 'delivery_failed' });
+    return respond(request, 502, { ok: false, error: 'delivery_failed' }, data.locale);
   }
 
   if (!upstream.ok) {
-    return respond(request, 502, { ok: false, error: 'delivery_failed' });
+    return respond(request, 502, { ok: false, error: 'delivery_failed' }, data.locale);
   }
 
-  return respond(request, 200, { ok: true });
+  return respond(request, 200, { ok: true }, data.locale);
 }
 
 export function onRequestGet({ request }) {
