@@ -1,5 +1,13 @@
 # Pilot ledger and delivery checklist
 
+## Confirmed geography — 2026-10-04
+
+The user selected **Bình Thạnh and Quận 4** as pilot areas. These are operational area labels supplied by the user, not a claim about current administrative boundaries. Keep the initial cohort at **30 qualified businesses total across the two areas**, not 30 per area. Record area per prospect and group visits geographically to avoid unnecessary travel. The split between areas and first route remain to be chosen based on owner access; do not infer comparative demand from a small uneven sample.
+
+Cash budget and available hours are **not yet specified**. Location selection does not authorize spending, hiring or contacting prospects. Confirm those limits before field execution.
+
+## Ledger
+
 Use anonymous business IDs in repository records. Keep contact details and consent in approved private operational storage, not Git. Start with an empty ledger; never seed results with invented customers.
 
 For each of the 30 qualified businesses record: cohort, business ID, category, qualification date, owner reached, preview shown, preview human minutes, sales/travel minutes, direct Starter paid date/amount, Trust paid date/amount, credit expiry, upgrade date/additional cash, refund, delivery minutes, revision rounds, infrastructure cost, support minutes, live date, accepted deliverables and next consented follow-up. Separate cash collection from verbal interest.

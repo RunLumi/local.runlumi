@@ -4,7 +4,7 @@ Decision record, 2026-10-04. Status: acquisition hypothesis; market demand and r
 
 ## Decision and strongest objection
 
-Sell a mobile presence package built for the owner: show a relevant private preview, offer Starter directly, use Trust Kit only when the owner needs the smaller deliverable. Prove this with 30 qualified businesses in one nearby service category before increasing sales headcount.
+Sell a mobile presence package built for the owner: show a relevant private preview, offer Starter directly, use Trust Kit only when the owner needs the smaller deliverable. Prove this with 30 qualified businesses in one service category across the user-selected Bình Thạnh and Quận 4 areas before increasing sales headcount.
 
 The strongest objection: an owner may already get enough business through Maps, Facebook and Zalo. A better-looking website may solve no urgent problem. A polite reaction to a free preview is not willingness to pay. Cheap generation can also make unsolicited previews feel generic and expendable. We choose a bounded paid pilot because it tests this objection cheaply; the website alone cannot answer it.
 
@@ -22,7 +22,7 @@ The [original comparison research](docs/archive/STRATEGY-RESEARCH-2026-10.md) is
 
 ## One wedge and one offer
 
-Pilot recommendation, not a claimed market fact: independent garages in one nearby district where the founder can reach the owner. Qualify active businesses with recent customer activity, a weak/missing mobile service page, meaningful service jobs, and a reachable decision-maker. If founder access is stronger in another service category, choose that category once and record why before the cohort begins. Do not spread 30 prospects across ten industries.
+Pilot recommendation, not a claimed market fact: independent garages in Bình Thạnh and Quận 4 where the founder can reach the owner. These pilot areas were confirmed by the user on 2026-10-04; cash and time budgets remain unspecified. Qualify active businesses with recent customer activity, a weak/missing mobile service page, meaningful service jobs, and a reachable decision-maker. If founder access is stronger in another service category, choose that category once and record why before the cohort begins. Do not spread 30 prospects across ten industries.
 
 The buyer must identify a concrete friction: people cannot find service scope, prices, directions, or a reliable contact route. Ask about the last actual enquiry that ran into this friction. Do not lead with “would a prettier site help?” Keep Facebook, Maps and Zalo; the website connects them.
 
