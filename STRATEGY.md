@@ -28,6 +28,12 @@ The buyer must identify a concrete friction: people cannot find service scope, p
 
 Starter first. Trust Kit is a useful standalone QR/checklist purchase, not evidence that the customer wants Starter. Keep current prices and full credit constant. Do not split this tiny pilot into simultaneous price, preview, credit and alert tests.
 
+## Standardize sales as well as delivery
+
+The [user-supplied research synthesis](docs/RESEARCH-DISTRIBUTION-MODEL.md) adds a useful operating hypothesis: make the private personalized preview a repeatable sales artifact, with a structured handoff from seller to fulfillment. The seller owns discovery, explanation and accurate information collection; the delivery team owns verification, scoped revisions, owner approval and publication. Reps must not become ad hoc designers or promise extra services. This is a process to validate, not evidence that an automated factory already exists.
+
+Track **paid Starter customers per 100 unique owner conversations** alongside **year-one contribution per owner conversation**. Count direct purchases and upgrades once per business, report raw denominators and observation windows, and distinguish realised contribution from forecasts. Do not optimize for generated websites, positive reactions or Trust Kit volume alone. Recurring service and eventual workflow support must earn retention through value, not domain lock-in.
+
 ## Deliverable and ownership boundary
 
 Use COPY.md and PRICING.md. QR artwork is print-ready; physical production is not included. One basic revision is included. Alerts are not guaranteed until implemented and verified. No Google credentials, edit access, review gating, five-star requests, ranking or sales guarantees.
