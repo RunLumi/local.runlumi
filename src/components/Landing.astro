@@ -97,7 +97,6 @@ const inds = industries[locale];
 const scenePhotos = { cafe: 'cafe', spa: 'salon', auto: 'garage' };
 
 const industryArt = ['salon', 'garage', 'hvac'];
-const featureArt = ['website', 'contact', 'map', 'review', 'hosting', 'website'];
 const otherLocale = locale === 'vi' ? 'EN' : 'VI';
 const otherHref = locale === 'vi' ? '/en/' : '/';
 const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướng chính', illustrative:'Giao diện mẫu', recommended:'Khuyên dùng', core:'Gói chính', switcher:'Xem trước theo ngành', receipt:'Nếu đã mua Trust Kit trong 30 ngày: được trừ 399.000đ, còn lại 1.591.000đ' } : { main:'Main content', nav:'Primary navigation', illustrative:'Illustrative concept', recommended:'Recommended', core:'Core package', switcher:'Preview by industry', receipt:'If Trust Kit was paid within 30 days: 399,000 VND credited, 1,591,000 VND remaining' };
@@ -130,33 +129,9 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     <section class="hero wrap">
       <div class="hero-copy">
         <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span>{c.hero.eyebrow}</p>
-        <h1 class="hero-headline" aria-label={c.hero.title.join(' ')}>
-          <span class="headline-layer headline-step headline-step-maps">
-            <span class="layer-badge" aria-hidden="true">01</span>
-            <span class="layer-text">
-              <span class="layer-lead">{locale === 'vi' ? 'Được tìm thấy trên' : 'Found on'}</span>{' '}
-              <strong class="layer-target target-google">{locale === 'vi' ? 'Google.' : 'Google Maps.'}</strong>
-            </span>
-          </span>
-
-          <span class="headline-layer headline-step headline-step-review">
-            <span class="layer-badge badge-review" aria-hidden="true">02</span>
-            <span class="layer-text">
-              <span class="layer-lead">{locale === 'vi' ? 'Được tin tưởng nhờ' : 'Trusted with'}</span>{' '}
-              <strong class="layer-target target-review">
-                <span>{locale === 'vi' ? 'Review.' : 'Real Reviews.'}</span>
-
-              </strong>
-            </span>
-          </span>
-
-          <span class="headline-layer headline-climax headline-step-web">
-            <span class="layer-badge badge-climax" aria-hidden="true">03</span>
-            <span class="layer-text">
-              <span class="climax-lead">{locale === 'vi' ? 'Dễ liên hệ qua' : 'Easy to contact on'}</span>{' '}
-              <strong class="climax-target target-website">{locale === 'vi' ? 'Website.' : 'Your Website.'}</strong>
-            </span>
-          </span>
+        <h1 class="local-headline">
+          <span>{c.hero.title[0]}</span>
+          <strong>{c.hero.title[1]}</strong>
         </h1>
         <p class="hero-description">{c.hero.text}</p>
         <div class="hero-actions">
@@ -485,7 +460,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     <section class="section wrap">
       <div class="section-heading" data-reveal>
         <div><p class="eyebrow">{c.included.eyebrow}</p><h2>{c.included.title}</h2></div>
-        <p class="section-intro">{c.included.intro}<br /><small>{illustrationNote}</small></p>
+        <p class="section-intro">{c.included.intro}</p>
       </div>
       <div class="feature-grid" data-reveal-group>
         {c.included.items.map(([title,text],i) => <article class={`sheet feature-card spotlight ${i === 0 ? 'feature-primary' : ''}`} data-reveal>
@@ -495,9 +470,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           </div>
           <h3>{title}</h3>
           <p>{text}</p>
-          <div class="feature-art-box">
-            <ScenePhoto class="feature-photo" name={featureArt[i]} sizes={i === 0 ? "(max-width: 767px) 90vw, (max-width: 1024px) 80vw, 540px" : "(max-width: 767px) 90vw, 360px"} />
-          </div>
+          <span class="deliverable-symbol" aria-hidden="true"><ServiceIcon name={['address','phone','pin','honest','hosting','check'][i]} size={32} /></span>
         </article>)}
       </div>
     </section>
@@ -638,9 +611,13 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <ServiceIcon name="shield" size={14} />
           <p class="meta">{c.form.privacy}</p>
         </div>
-        <p class="meta">{illustrationNote}</p>
-        <div class="welcome-art-box">
-          <ScenePhoto class="welcome-photo" name="welcome" sizes="(max-width: 767px) 90vw, 440px" />
+        <div class="enquiry-next">
+          <p class="index">{locale === 'vi' ? 'Sau khi gửi yêu cầu' : 'After your enquiry'}</p>
+          <ol>
+            <li>{locale === 'vi' ? 'Lumi xác nhận cơ sở và nhu cầu của bạn.' : 'Lumi confirms your business details and needs.'}</li>
+            <li>{locale === 'vi' ? 'Bạn xem bản nháp và phạm vi đề xuất.' : 'You review a draft and the proposed scope.'}</li>
+            <li>{locale === 'vi' ? 'Bạn quyết định có làm tiếp hay không.' : 'You decide whether to go ahead.'}</li>
+          </ol>
         </div>
       </div>
       <form id="enquiry-form" class="sheet enquiry-form" method="post" action="/api/enquiries" data-reveal>
