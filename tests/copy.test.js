@@ -8,7 +8,7 @@ test('both locales preserve prices, full credit, and safe claims',()=>{
   assert.doesNotMatch(text,/5.star|5 sao|vĩnh viễn|sub.second|dưới 1 giây|until satisfied|24 hours|24h/i);
   assert.equal(c.packages.starter.price,locale==='vi'?'1.990.000đ':'1,990,000 VND');
   assert.match(c.packages.credit,/30/);assert.match(c.packages.credit,/1[.,]591[.,]000/);
-  assert.equal(c.included.items.length,6);assert.equal(c.faq.items.length,7);
+  assert.equal(c.included.items.length,6);assert.equal(c.faq.items.length,8);
  }
 });
 test('built pages include local form and all anchor targets',()=>{

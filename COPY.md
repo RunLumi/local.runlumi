@@ -1,6 +1,6 @@
 # Lumi Local copy contract
 
-Updated 2026-10-04. This contract supersedes earlier copy that asked for five stars, promised sub-second loading, physical standees, immediate Google alerts, unlimited revisions, or a 24-hour response.
+Updated 2026-10-05. This contract supersedes earlier copy that asked for five stars, promised sub-second loading, physical standees, immediate Google alerts, unlimited revisions, or a 24-hour response.
 
 ## Source and voice
 
@@ -40,3 +40,10 @@ Exact review invitation:
 No fabricated customers, ratings, testimonials or results. Illustrations are not customer proof. Contact buttons do not constitute a booking system. Do not promise ranking, traffic, leads, customers, revenue, security guarantees, 24/7 availability, or numeric speed without applicable measured evidence and clear limits.
 
 Public information is not permission to republish customer photos or create an official site. Use authorized assets, keep prospect previews private, label them as drafts, disable real enquiry capture, and obtain owner approval before publication.
+
+
+## Persuasive copy direction — 2026-10-05
+
+Lead with the visitor’s reason to choose the business, then show the concrete details that support that choice: services, prices, real photos and direct contact. Explain why the owner would hire Lumi: content, setup, publication and agreed upkeep handled for them. The preview is the next step for judging fit; an enquiry is not a purchase.
+
+VI hero: “Trước khi khách ghé, cho họ lý do chọn bạn.” EN: “Before they visit, give them a reason to choose you.” These are invitations to present the business well, not claims of conversion gains. Make price inclusions visible at the first price. Explain how a website complements Facebook/Zalo; acknowledge when existing channels may be sufficient. Put scope limitations where the buyer compares the offer, while keeping the first message focused on value. Do not create false urgency, fake social proof or unmeasured savings.
