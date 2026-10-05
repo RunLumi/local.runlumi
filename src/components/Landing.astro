@@ -148,7 +148,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <div class="price-val"><strong>{c.packages.starter.price}</strong><span>/{c.packages.starter.unit}</span></div>
           <div class="price-badge-row">
             <span class="price-pill-tag">{labels.core}</span>
-            <span class="price-caption">{locale === 'vi' ? 'Website + QR Review + Call/Zalo trọn gói' : 'Website + Review QR + Call/Zalo bundle'}</span>
+            <span class="price-caption">{locale === 'vi' ? 'Dựng website + file QR + hosting & bảo trì năm đầu' : 'Website setup + QR artwork + year-one hosting & maintenance'}</span>
           </div>
         </div>
         <p class="meta">{c.hero.note}</p>
@@ -612,12 +612,8 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <p class="meta">{c.form.privacy}</p>
         </div>
         <div class="enquiry-next">
-          <p class="index">{locale === 'vi' ? 'Sau khi gửi yêu cầu' : 'After your enquiry'}</p>
-          <ol>
-            <li>{locale === 'vi' ? 'Lumi xác nhận cơ sở và nhu cầu của bạn.' : 'Lumi confirms your business details and needs.'}</li>
-            <li>{locale === 'vi' ? 'Bạn xem bản nháp và phạm vi đề xuất.' : 'You review a draft and the proposed scope.'}</li>
-            <li>{locale === 'vi' ? 'Bạn quyết định có làm tiếp hay không.' : 'You decide whether to go ahead.'}</li>
-          </ol>
+          <p class="index">{c.form.afterTitle}</p>
+          <ol>{c.form.afterSteps.map(step => <li>{step}</li>)}</ol>
         </div>
       </div>
       <form id="enquiry-form" class="sheet enquiry-form" method="post" action="/api/enquiries" data-reveal>

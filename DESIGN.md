@@ -43,7 +43,7 @@ Geist is the only display/body family. Geist Mono is for indexes, numbers, and t
 
 Hero:
 
-- `clamp(56px, 6.1vw, 82px)`
+- Main hero: `clamp(38px, 4.2vw, 60px)`; narrow screens: `clamp(36px, 9vw, 50px)`
 - weight ~560
 - line-height 1.08
 - tracking around -0.06em
@@ -109,7 +109,7 @@ Within about five seconds the owner should understand:
 
 Core headline:
 
-> **Được tìm thấy. Được tin tưởng. Được liên hệ dễ hơn.**
+> **Trước khi khách ghé, cho họ lý do chọn bạn.**
 
 Primary CTA:
 
