@@ -252,3 +252,7 @@ Check:
 - real production URL before claiming deployment.
 
 A preview or passing source test is not a deployment.
+
+## Content-led refinement — 2026-10-04
+
+Use one plain-language customer question in the hero instead of three numbered slogan layers. Keep price and primary enquiry action adjacent. Retain inspectable industry previews with explicit concept/AI disclosure. The included scope is a flat, numbered two-column list (one column on phones), using original local icons rather than generated infrastructure photos. The enquiry area explains what happens after submission instead of showing generated people. Preserve the one navy section, two glass navigation controls, palette, Geist, and folded-L mark. No fabricated proof is introduced.

@@ -6,11 +6,11 @@ export const copy = {
     nav: [['#goi-dich-vu','Gói dịch vụ'],['#cach-hoat-dong','Cách hoạt động'],['#gia-duy-tri','Chi phí duy trì'],['#cau-hoi','Câu hỏi']],
     cta: 'Xem thử Lumi Local cho business của tôi',
     hero: {
-      eyebrow: 'Lumi Local · Bộ 3 hiện diện cho kinh doanh địa phương',
-      title: ['Được tìm thấy trên Google.','Được tin tưởng nhờ Review.','Dễ liên hệ qua Website.'],
+      eyebrow: 'Lumi Local · Làm sẵn cho cơ sở của bạn',
+      title: ['Khách muốn biết.','Bạn có sẵn câu trả lời.'],
       text: 'Lumi dựng website giới thiệu dịch vụ, nối Gọi/Zalo, chỉ đường Google Maps và chuẩn bị file QR đánh giá đặt quầy. Bạn duyệt nội dung, Lumi lo phần kỹ thuật.',
       secondary: 'Xem bảng giá & gói',
-      note: 'Minh bạch: Không bán review ảo hay hứa hẹn top 1. Lumi tạo uy tín thật từ khách ghé quán và bảo trì kỹ thuật trọn năm.'
+      note: 'Xem bản nháp trước khi quyết định. Không cần đưa mật khẩu hay quyền quản trị Google.'
     },
     proof: [
       ['Đường dẫn Google Maps','Nối đường dẫn tới vị trí bạn xác nhận. Bạn giữ quyền quản lý hồ sơ Google.'],
@@ -18,7 +18,7 @@ export const copy = {
       ['Website dễ xem, dễ liên hệ','Xem dịch vụ, bảng giá và bấm Gọi/Zalo để hỏi hoặc đặt lịch với cơ sở.']
     ],
     examples: {
-      eyebrow:'Thực tế & Trực quan',
+      eyebrow:'Giao diện minh họa',
       title:'Xem trước giao diện theo từng ngành nghề',
       intro:'Bố cục chuẩn di động với bảng giá minh bạch và nút liên hệ đúng thói quen của khách.',
       items:[
@@ -49,9 +49,9 @@ export const copy = {
       credit:'Đã mua Trust Kit? Nâng cấp lên Starter trong 30 ngày chỉ cần thanh toán thêm 1.591.000đ.'
     },
     convenience: {
-      eyebrow:'Giá trị cốt lõi',
-      title:'Bạn là chuyên gia làm nghề, không phải thợ làm web.',
-      text:'Không mất hàng tuần tự mày mò viết bài, chỉnh ảnh hay sửa lỗi kỹ thuật. Lumi Local chuẩn bị trọn gói để quán sẵn sàng đón khách.',
+      eyebrow:'Phần việc của mỗi bên',
+      title:'Bạn hiểu việc của mình. Lumi lo phần đưa lên web.',
+      text:'Bạn gửi thông tin dịch vụ và ảnh được phép sử dụng. Lumi sắp xếp nội dung, dựng trang và gửi bạn kiểm tra trước khi đăng.',
       items:[
         ['01','Lumi chuẩn bị','Dựng sẵn toàn bộ nội dung, hình ảnh và mã QR từ thông tin thực tế của quán.'],
         ['02','Bạn duyệt trên điện thoại','Xem bản nháp trên điện thoại. Gửi góp ý trong một vòng chỉnh sửa nội dung cơ bản trước khi đăng.'],
@@ -61,10 +61,10 @@ export const copy = {
     included: {
       eyebrow:'Trọn gói trong Starter',
       title:'Khách cần biết gì, website có thông tin đó.',
-      intro:'Trọn gói trong một lần thanh toán. Đầy đủ mọi công cụ để khách tìm thấy, tin tưởng và bấm gọi.',
+      intro:'Đây là những phần được bàn giao trong Starter. Nội dung, địa chỉ và đường liên hệ đều cần bạn xác nhận.',
       items:[
         ['Website chuẩn di động','Bố cục gọn, dễ đọc menu, bảng giá và địa chỉ trên điện thoại.'],
-        ['Nút Gọi ngay & Nhắn Zalo','Bấm 1 chạm để gọi hotline hoặc nhắn Zalo tư vấn ngay, không để rơi rớt khách.'],
+        ['Nút Gọi ngay & Nhắn Zalo','Khách bấm gọi hoặc mở Zalo từ trang dịch vụ. Bạn tiếp nhận và xác nhận lịch như hiện tại.'],
         ['Chỉ đường Google Maps','Dẫn đường chuẩn xác tới quán. Bạn giữ trọn quyền quản trị Google Maps.'],
         ['File QR đánh giá Google','File QR sẵn để in, mời mọi khách đã dùng dịch vụ chia sẻ trải nghiệm thật trên Google.'],
         ['Hosting tốc độ cao + SSL','Hosting và SSL năm đầu; Lumi duy trì phần kỹ thuật trong phạm vi đã thống nhất.'],
@@ -98,11 +98,11 @@ export const copy = {
     },
     trust: {
       eyebrow:'Nguyên tắc làm việc',
-      title:'4 nguyên tắc giữ trọn sự tin cậy.',
+      title:'Thống nhất rõ trước khi bắt đầu.',
       items:[
         ['Giữ 100% quyền Google Maps','Tài khoản Google luôn là của bạn. Lumi không bao giờ hỏi mật khẩu hay quyền quản trị.'],
         ['Nói không với review ảo','Chỉ tạo công cụ xin review từ khách thật tại quầy. Tuyệt đối không mua bán đánh giá ảo.'],
-        ['Không cam kết viển vông','Không hứa hẹn lên top 1 hay doanh số ảo. Lumi tập trung làm chuẩn hiện diện và trải nghiệm khách.'],
+        ['Không cam kết thứ hạng','Không hứa hẹn lên top 1 hay doanh số ảo. Lumi tập trung làm chuẩn hiện diện và trải nghiệm khách.'],
         ['Rõ ràng, không phát sinh','Chi phí trọn gói thống nhất từ đầu. Không có phụ phí mập mờ sau khi bàn giao.']
       ]
     },
@@ -113,7 +113,7 @@ export const copy = {
         ['Lumi có cần quyền chỉnh Google Maps không?','Hoàn toàn không. Tài khoản Google luôn là của bạn. Lumi chỉ dùng thông tin công khai để tạo mã QR và nhúng bản đồ chỉ đường, tuyệt đối không hỏi mật khẩu hay quyền admin.'],
         ['Tôi tự làm website bằng AI được mà?','Được chứ. Nhưng với Lumi, bạn không phải mất hàng tuần viết bài, chỉnh ảnh, nối tên miền hay sửa lỗi máy chủ. Bạn tập trung làm nghề, kỹ thuật đã có bên em lo.'],
         ['Làm web này có cam kết lên top Google hay ra khách không?','Không. Lumi làm website rõ thông tin và thuận tiện liên hệ. Thứ hạng, lượng khách và doanh thu còn phụ thuộc nhu cầu, nguồn truy cập và dịch vụ của cơ sở.'],
-        ['Chi phí duy trì từ năm thứ 2 là bao nhiêu?','Rất nhẹ nhàng: 599.000đ/năm với địa chỉ RunLumi, hoặc 999.000đ/năm với tên miền riêng tiêu chuẩn (.vn/.com). Đã gồm trọn gói hosting, SSL và bảo trì kỹ thuật.'],
+        ['Chi phí duy trì từ năm thứ 2 là bao nhiêu?','599.000đ/năm với địa chỉ RunLumi, hoặc 999.000đ/năm với tên miền riêng tiêu chuẩn (.vn/.com). Đã gồm trọn gói hosting, SSL và bảo trì kỹ thuật.'],
         ['Gói có gồm in standee và sửa nội dung không?','Gồm file QR sẵn để in, chưa gồm in ấn, chân đế hay giao hàng. Starter gồm một vòng chỉnh sửa nội dung cơ bản; việc ngoài phạm vi được báo giá trước.'],
         ['Có bắt buộc phải mua Trust Kit trước không?','Không bắt buộc. Nếu cần website và file QR đánh giá, bạn có thể đăng ký gói Starter (1.990.000đ) từ đầu.']
       ]
@@ -141,11 +141,11 @@ export const copy = {
     nav: [['#goi-dich-vu','Packages'],['#cach-hoat-dong','How it works'],['#gia-duy-tri','Renewal'],['#cau-hoi','FAQ']],
     cta: 'Show me Lumi Local for my business',
     hero: {
-      eyebrow:'Lumi Local · The Local Business Presence Trinity',
-      title:['Found on Google Maps.','Trusted with Real Reviews.','Easy to contact on Your Website.'],
+      eyebrow:'Lumi Local · Built for your business',
+      title:['Before they call,','give them a clear picture.'],
       text:'Lumi builds your service website, connects Call/Zalo and Google Maps directions, and prepares print-ready review QR artwork. You approve the content; we handle the technical setup.',
       secondary:'View packages & pricing',
-      note:'Transparent: Zero fake reviews or fantasy top rankings. We build real trust from visiting customers and handle your tech all year.'
+      note:'See a draft before you decide. Your Google password and profile access stay with you.'
     },
     proof:[
       ['Google Maps directions','Link to the location you confirm. Your Google account and profile remain yours.'],
@@ -153,7 +153,7 @@ export const copy = {
       ['Easy mobile contact','Browse services and prices, then call or message the business to arrange a booking.']
     ],
     examples:{
-      eyebrow:'Real-world context',
+      eyebrow:'Illustrative layouts',
       title:'Preview Lumi Local by industry',
       intro:'Mobile-first layouts with clear pricing and contact actions tuned to how local customers buy.',
       items:[
@@ -184,9 +184,9 @@ export const copy = {
       credit:'Bought Trust Kit? Upgrade within 30 days and pay only 1,591,000 VND more.'
     },
     convenience:{
-      eyebrow:'Done-for-you execution',
-      title:'You master your craft, not web maintenance.',
-      text:'Stop wasting weekends fighting site builders or fixing tech errors. Lumi Local prepares your website, Maps links, and print-ready review QR.',
+      eyebrow:'Who does what',
+      title:'You know your business. We put it on the page.',
+      text:'Share your service details and photos you have permission to use. Lumi prepares the content and website, then sends you a draft to check.',
       items:[
         ['01','Lumi prepares it all','Complete mobile draft, photos, and review assets crafted from your real business details.'],
         ['02','You review on mobile','Test the live draft on your phone just like a customer. One basic content revision round is included before publication.'],
@@ -196,10 +196,10 @@ export const copy = {
     included:{
       eyebrow:'Included in Starter',
       title:'The details customers need before contacting you.',
-      intro:'Everything included in one payment. Every link to help customers find, trust, and call you.',
+      intro:'These are the Starter deliverables. You confirm the content, location and contact details before publication.',
       items:[
         ['Mobile-first website','A clear mobile layout for services, pricing, opening hours, and contact details.'],
-        ['Direct Call & Zalo actions','One tap to call or message Zalo immediately without bouncing.'],
+        ['Direct Call & Zalo actions','Customers can call or open Zalo from the service page. You handle the enquiry and confirm appointments as usual.'],
         ['Google Maps directions','Accurate directions straight to your door without sharing passwords.'],
         ['Print-ready Google review QR','Print-ready artwork inviting all customers to share genuine experiences on Google.'],
         ['Fast hosting + SSL certificate','Year-one hosting and SSL, with technical maintenance within the agreed scope.'],
@@ -233,11 +233,11 @@ export const copy = {
     },
     trust:{
       eyebrow:'Clear boundaries',
-      title:'4 honest rules we never break.',
+      title:'What you can expect from Lumi.',
       items:[
         ['100% Google account ownership','Your Google account stays entirely yours. Lumi never asks for your password or admin access.'],
         ['No fake or bought reviews','We build tools to collect real customer reviews at checkout. Zero bought ratings.'],
-        ['No fantasy ranking claims','Zero false ranking or revenue promises. Lumi focuses on solid presence and direct contact.'],
+        ['No ranking guarantees','Zero false ranking or revenue promises. Lumi focuses on solid presence and direct contact.'],
         ['Transparent, fixed scope','All costs agreed upfront. Zero unexpected fees after handover.']
       ]
     },
@@ -248,7 +248,7 @@ export const copy = {
         ['Do you need Google Maps edit access?','No. Your Google account stays 100% yours. Lumi uses public place info to build your QR and embed directions—no passwords or admin rights needed.'],
         ['Can I make a website with AI myself?','Sure. But with Lumi, you avoid wasting weekends writing copy, formatting photos, wiring DNS, and fixing tech glitches. You run your craft, we run the tech.'],
         ['Do you guarantee Google ranking or customers?','No. Lumi provides a clear mobile website and contact routes. Rankings, enquiries, and revenue also depend on demand, traffic, and your service.'],
-        ['What does renewal cost from year two?','Very reasonable: 599,000 VND/year with a RunLumi address, or 999,000 VND/year with a standard custom domain (.vn/.com). Both include hosting, SSL, and maintenance.'],
+        ['What does renewal cost from year two?','599,000 VND/year with a RunLumi address, or 999,000 VND/year with a standard custom domain (.vn/.com). Both include hosting, SSL, and maintenance.'],
         ['Are printing and content changes included?','We supply print-ready QR artwork; printing, stands, and shipping are excluded. Starter includes one basic content revision round. Extra work is quoted before it begins.'],
         ['Do I have to buy Trust Kit first?','No. If you want the website and print-ready review QR artwork, you can get Lumi Local Starter directly.']
       ]
