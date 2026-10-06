@@ -1,12 +1,16 @@
 name: build
 
 on:
-  push:
-    branches: [main]
   pull_request:
 
 permissions:
   contents: read
+
+# The release workflow repeats these checks before deploying every main commit.
+# Keep this workflow focused on PR validation to avoid rebuilding after merge.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
 
 jobs:
   build:
