@@ -10,6 +10,8 @@ Mục tiêu là tìm cửa hàng đang hoạt động, chưa tìm thấy website
 
 | Tài liệu | Dùng lúc nào |
 |---|---|
+| [Goal prompt dùng ngay](GOAL_PROMPT.md) | Khởi chạy pilot bằng `/goal`; worklog và chống trùng là cổng bắt buộc |
+| [Worklog append-only](WORKLOG.md) | Đọc trước run/resume; ghi checkpoint PII-free trong quá trình làm |
 | [Nghiên cứu và giới hạn bằng chứng](RESEARCH-2026-10-07.md) | Trước khi chọn cách truy cập và gửi tin |
 | [Playbook tìm và chọn cửa hàng](FACEBOOK_PLAYBOOK.md) | Tìm ứng viên, kiểm tra website, chọn 5 lead đầu |
 | [Tin nhắn và kịch bản meeting](MESSAGES_AND_MEETINGS.md) | Soạn offer, trả lời, hẹn giờ, demo, bàn giao |
@@ -18,6 +20,8 @@ Mục tiêu là tìm cửa hàng đang hoạt động, chưa tìm thấy website
 | [Prospects](templates/prospects.csv), [actions](templates/actions.csv), [meetings](templates/meetings.csv) | Sao chép vào kho vận hành riêng trước khi điền dữ liệu thật |
 
 Đọc [COPY.md](../../COPY.md), [PRICING.md](../../PRICING.md), [STRATEGY.md](../../STRATEGY.md), [PILOT.md](../PILOT.md) và [SECURITY.md](../../SECURITY.md). Giá và phạm vi trong các tài liệu này là nguồn chuẩn; mẫu tin nhắn phải được cập nhật nếu nguồn chuẩn đổi. Các hướng dẫn cũ ở GTM/field playbook không được dùng để mở rộng lời hứa về Maps, ảnh công khai hay alerts.
+
+**Trước mỗi run/resume:** đọc [worklog](WORKLOG.md) và pipeline/action journal trong private ledger. Ghi `in_progress` trước discovery; append checkpoint sau mỗi batch tối đa 5 ứng viên/actions và trước pause/handoff; ghi kết quả cuối. Worklog ngăn lặp thao tác nhưng không thay ledger riêng, thread readback hoặc dedupe business identity. Chỉ ghi aggregate không có PII vào Git.
 
 ## Phạm vi tự làm của agent
 
