@@ -19,9 +19,8 @@ export function photographFor(post) {
   if(!Object.hasOwn(scenes,key)) return undefined;
   const src = `/blog-images/${key}-1536.webp`;
   const en = post.locale === 'en';
-  const caption = en ? 'AI-generated editorial illustration; not a Lumi customer or premises.' : 'Ảnh minh họa tạo bằng AI, không phải cơ sở hay khách hàng của Lumi.';
+  const caption = en ? 'Illustration' : 'Ảnh minh hoạ';
   return {key,src,width:1536,height:1024,alt:scenes[key],
     srcset:[480,960,1536].map(w=>`/blog-images/${key}-${w}.webp ${w}w`).join(', '),
-    label:en?'AI-generated illustration':'Ảnh minh họa tạo bằng AI',
-    caption:caption+(post.slug==='qr-review-google' ? (en ? ' The pictured stand is not included in Lumi’s offer.' : ' Giá đỡ trong ảnh không nằm trong gói dịch vụ.') : '')};
+    label:caption, caption};
 }
