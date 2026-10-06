@@ -7,7 +7,8 @@ Updated 2026-10-06 · Asia/Saigon · active, day 1. Full contract: [goal](../GOA
 - Activated by human `/goal` on 2026-10-06. Reviews: 2026-11-04 / 2026-12-04 / 2027-01-04.
 - CA-001 was skipped as redundant. CA-002 was approved, posted once by u/suoinguon in the designated r/smallbusiness Q4 promotion thread, and publicly verified at [its permalink](https://www.reddit.com/r/smallbusiness/comments/1wwpjlw/comment/pe8nwi9/). That exact one-comment authorization is consumed. Next read-only check: 2026-10-13 09:00 +07:00; no reply/repost authorization.
 - Weekly heartbeat creation was rejected by automatic approval review; explicit scheduling authorization remains unanswered. No scheduler is configured.
-- GSC Wizard is available but not connected. A connection suggestion was made. No Google account/property data has been accessed. GSC/organic/referral metrics, qualified enquiries, paid outcomes and broader AI citation coverage remain unknown. No trackers or live test enquiries.
+- GSC Wizard is available but not connected. A connection suggestion was made; no Google account/property data has been accessed. GSC/organic/referral metrics, qualified enquiries, paid outcomes and broader AI citation coverage remain unknown. No trackers or live test enquiries.
+- Chrome DevTools MCP is not available in this session. The web-perf workflow requires it and directs us to stop when its tools are unavailable. No CWV/lab trace was measured; see [measurement access note](research/2026-10-06-measurement-access.md).
 
 ## Verified releases
 
@@ -28,8 +29,9 @@ Updated 2026-10-06 · Asia/Saigon · active, day 1. Full contract: [goal](../GOA
 ## Next actions
 
 1. On 2026-10-13, inspect CA-002 for replies/removal; prepare any reply for approval unless standing reply scope is explicitly granted.
-2. If the user connects GSC Wizard or authorizes a Search Console property, record a dated page/query baseline. Until then, leave organic/indexed/citation outcomes unknown.
-3. Continue the 90-day cadence with new owner context and measured outcomes; avoid same-day repetitive SERPs or generic content volume. Revisit the day-30/60/90 decisions on their dates.
+2. Connect GSC Wizard or authorize the Search Console property before reading its private query/page data. Until then, leave organic/indexed/citation outcomes unknown.
+3. Add the Chrome DevTools MCP configuration from the web-perf skill before attempting lab CWV traces.
+4. Continue the 90-day cadence with new owner context and measured outcomes; avoid same-day repetitive SERPs or generic content volume. Revisit the day-30/60/90 decisions on their dates.
 
 ## Recovery
 

@@ -212,3 +212,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Manual Cloudflare Pages deployment completed at https://25f31f3b.lumi-local.pages.dev under the activated campaign release contract. Production release verifier passed; live HTTP readback returned 200 and new VI/EN FAQ text on the custom domain and deployment host. Signed-in browser expanded both answers. No CMS edits, live enquiry or analytics tracker.
 - The Search Console connector catalog lists GSC Wizard as available but unconnected. A suggestion to connect was issued. No Google OAuth or private property data accessed. Receipt: research/2026-10-06-gsc-connector-availability.md.
 - Campaign remains incomplete; actual GSC, indexing, referral, enquiry and paid outcome data are unknown. CA-002 one-comment scope remains consumed, with follow-up check due 2026-10-13; no new post or reply permission inferred. Scheduler remains unconfigured.
+
+
+## 2026-10-06 — RUN-019 — Measurement tool access checked
+
+- Revalidated latest main at fff7f6d and current campaign checkpoint. CA-002 remains verified_live, exact one-comment scope consumed; due follow-up remains 2026-10-13.
+- GSC Wizard was suggested earlier but remains unconnected; no Google property data was accessed. No Search Console metrics inferred.
+- Checked current tool inventory for Chrome DevTools MCP; required trace/navigation/network tools are absent. Read web-perf skill; its first gate requires stopping if those tools are unavailable. No LCP/INP/CLS/TBT/SI measurement claimed and no alternate fake proxy substituted.
+- Receipt: research/2026-10-06-measurement-access.md. No external account/config mutation. Next step depends on user connecting GSC/property and adding the documented DevTools MCP configuration.
