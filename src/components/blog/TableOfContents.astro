@@ -1,0 +1,12 @@
+---
+// Adapted from Reef: collapsed mobile details and a separate sticky desktop rail.
+// Copyright (c) 2026 Aloha Pixel; MIT, licenses/reef-MIT.txt.
+import { headingId, plainText } from '../../blog/site.js';
+const { content, locale } = Astro.props;
+const items = content.filter(b => ['h2','h3'].includes(b.style));
+const label = locale === 'vi' ? 'Trong bài này' : 'On this page';
+---
+{items.length >= 3 && <aside class="blog-toc">
+  <details class="toc-mobile"><summary>{label}</summary><nav aria-label={label}><ol>{items.map(item => <li><a href={`#${headingId(item)}`}>{plainText([item])}</a></li>)}</ol></nav></details>
+  <nav class="toc-desktop" aria-label={label}><p class="eyebrow">{label}</p><ol>{items.map(item => <li><a href={`#${headingId(item)}`}>{plainText([item])}</a></li>)}</ol></nav>
+</aside>}

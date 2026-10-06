@@ -54,6 +54,25 @@ Required production secret:
 
 Do not commit its value.
 
+Research access also requires encrypted `DATA_PASSWORD` in each deployed Pages
+environment. The login username is `owner`. Configure the secret through Pages
+Variables and secrets or the Wrangler Pages secret prompt; never put its value
+in `wrangler.jsonc`, build variables, commands, Git or docs. Without it, research
+requests return 503. Browser users enter the password at `/data/login`;
+programmatic clients can use Basic Auth. See [SECURITY.md](SECURITY.md#research-workspace-access).
+
+Use `npm run build`: its post-build step removes research HTML/CSV from public
+`dist` assets and generates the private `.data-build/research.js` Function module.
+Deploy from the repository root so Wrangler can compile `functions/data/*` and
+the private module. A raw `astro build` is not a safe deploy artifact.
+
+Before claiming research protection live, check unauthenticated `/data`,
+`/data/`, `/data/index.html`, and `/data/keywords.csv` return a sign-in form or
+401 without any dataset (or 503 if not configured); valid credentials/session
+return the page/CSV with no-store headers; incorrect passwords do not issue a
+session; logout removes access; and homepages remain public. Check both the
+custom domain and Pages deployment hostname. Do not upload credentials to logs.
+
 ## Pre-deploy checklist
 
 - `npm ci`
@@ -70,3 +89,7 @@ Do not commit its value.
 - verify real production URL before claiming live
 
 DNS changes are outside normal code work and require explicit authorization.
+
+## Optional EmDash blog — 2026-10-06
+
+The public blog can use the static reviewed snapshot or an EmDash Worker via Pages service binding `BLOG`. See [docs/blog/README.md](docs/blog/README.md) for supported Node versions, seed/setup, runtime resource names, private-data exclusion, same-origin admin CSP and release/rollback gates. `npm run build` remains the Pages build. `npm run build:blog` prepares the separate Worker; it does not deploy. No DNS or billing change is part of the implementation. Do not expose an uninitialized admin setup wizard or deploy CMS output as the primary Pages site.

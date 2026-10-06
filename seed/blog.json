@@ -1,0 +1,3066 @@
+{
+  "version": "1",
+  "defaultLocale": "vi",
+  "meta": {
+    "name": "Lumi Local blog",
+    "description": "Owner-first local presence guides"
+  },
+  "settings": {
+    "title": "Lumi Local",
+    "tagline": "Hiểu rõ trước khi thuê."
+  },
+  "collections": [
+    {
+      "slug": "posts",
+      "label": "Articles",
+      "labelSingular": "Article",
+      "urlPattern": "/blog/{slug}",
+      "supports": [
+        "drafts",
+        "revisions",
+        "search",
+        "seo"
+      ],
+      "fields": [
+        {
+          "slug": "title",
+          "label": "Title",
+          "type": "string",
+          "required": true,
+          "searchable": true
+        },
+        {
+          "slug": "description",
+          "label": "Search description",
+          "type": "text",
+          "required": true,
+          "searchable": true
+        },
+        {
+          "slug": "answer",
+          "label": "Short answer",
+          "type": "text",
+          "required": true
+        },
+        {
+          "slug": "content",
+          "label": "Article",
+          "type": "portableText",
+          "required": true,
+          "searchable": true
+        },
+        {
+          "slug": "topic",
+          "label": "Topic slug",
+          "type": "string",
+          "required": true
+        },
+        {
+          "slug": "keyword",
+          "label": "Primary query (editorial only)",
+          "type": "string",
+          "required": false
+        },
+        {
+          "slug": "author",
+          "label": "Publisher slug",
+          "type": "string",
+          "required": true
+        },
+        {
+          "slug": "pub_date",
+          "label": "Publication date",
+          "type": "datetime",
+          "required": true
+        },
+        {
+          "slug": "reviewed_date",
+          "label": "Sources checked on",
+          "type": "string",
+          "required": true
+        },
+        {
+          "slug": "featured",
+          "label": "Featured",
+          "type": "boolean",
+          "required": false
+        },
+        {
+          "slug": "sources",
+          "label": "Primary sources: label and url",
+          "type": "json",
+          "required": true
+        },
+        {
+          "slug": "related",
+          "label": "Related article slugs",
+          "type": "json",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "content": {
+    "posts": [
+      {
+        "id": "vi-dich-vu-google-maps",
+        "slug": "dich-vu-google-maps",
+        "locale": "vi",
+        "status": "published",
+        "data": {
+          "title": "Dịch vụ Google Maps: cần thuê gì, tự làm gì?",
+          "description": "Phân biệt tạo hồ sơ, xác minh, SEO và QR đánh giá; kiểm tra quyền sở hữu, phạm vi và chi phí trước khi thuê dịch vụ Google Maps.",
+          "answer": "Google Business Profile là công cụ miễn phí. Khi thuê dịch vụ Google Maps, hãy xác định việc cần làm, quyền sở hữu và sản phẩm bàn giao. Lumi Local cung cấp website, liên kết chỉ đường và file QR; không tạo, xác minh hay quản lý hồ sơ Google.",
+          "topic": "lua-chon-dich-vu",
+          "keyword": "dịch vụ google map",
+          "author": "lumi-local",
+          "pub_date": "2026-10-06T09:00:00+07:00",
+          "reviewed_date": "2026-10-06",
+          "featured": true,
+          "content": [
+            {
+              "_type": "block",
+              "_key": "b1",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Bắt đầu từ việc đang cần giải quyết",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b2",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Một cửa hàng chưa có hồ sơ, một chủ quán mất quyền truy cập và một doanh nghiệp cần giới thiệu dịch vụ trên điện thoại đang gặp ba vấn đề khác nhau. Cùng tìm “dịch vụ Google Maps” không có nghĩa là cần cùng một gói. Trước khi hỏi giá, viết một câu cụ thể: thông tin nào đang sai, ai đang giữ tài khoản, hoặc khách chưa tìm được điều gì.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b3",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Nếu khách đã tìm thấy cửa hàng nhưng vẫn hỏi menu, giá và cách liên hệ, việc cần làm có thể là bổ sung một trang thông tin rõ ràng. Nếu hồ sơ bị hạn chế hoặc chưa xác minh, website không thay thế quy trình của Google. Hãy xử lý đúng vấn đề trước khi mua thêm một công cụ.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b4",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Phân biệt bốn loại công việc",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b5",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Tạo hoặc xác nhận quyền sở hữu hồ sơ là công việc với Google Business Profile. Xác minh là quy trình Google dùng để kiểm tra người đại diện doanh nghiệp. SEO địa phương là một phạm vi rộng hơn, gồm thông tin, website và các tín hiệu khác; đó không phải quyền mua thứ hạng. QR đánh giá chỉ mở đường dẫn để khách thật chia sẻ trải nghiệm.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b6",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Một báo giá nên gọi đúng tên từng việc. “Làm Google Maps trọn gói” không đủ rõ để biết có nhận website, nội dung, file QR, quản lý hồ sơ hay quảng cáo. Yêu cầu danh sách bàn giao và những việc loại trừ bằng văn bản.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b7",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Bảy câu hỏi trước khi trả tiền",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b8",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Ai giữ quyền sở hữu tài khoản? Nhà cung cấp cần quyền gì và vì sao? Google cung cấp phần nào miễn phí? Phí dịch vụ mua công việc cụ thể nào? Có khoản duy trì nào từ năm sau? Khi dừng hợp tác, nhận lại những gì? Nếu quy trình của Google không thành công, điều khoản thanh toán xử lý thế nào?",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b9",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Đừng gửi mật khẩu, mã OTP hay mã khôi phục. Nếu thuê một đơn vị quản lý hồ sơ ngoài Lumi, tìm hiểu cơ chế quyền của Google và chỉ cấp quyền phù hợp sau khi thống nhất phạm vi. Những câu trả lời mơ hồ là lý do để chưa ký, không phải lý do để trả thêm.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b10",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Đọc cam kết bằng sản phẩm bàn giao",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b11",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_type": "link",
+                  "_key": "primary-source",
+                  "href": "https://support.google.com/business/answer/7091"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Cam kết bàn giao file QR, trang dịch vụ hoặc cấu hình tên miền có thể kiểm tra được. Cam kết số khách, doanh thu hoặc thứ hạng cần bằng chứng khác. Google nói không thể yêu cầu hay trả tiền để có thứ hạng địa phương tốt hơn; việc mua quảng cáo cũng không đồng nghĩa với mua thứ hạng tự nhiên.",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-gap",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-link",
+                  "text": "Hướng dẫn chính thức của Google.",
+                  "marks": [
+                    "primary-source"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b12",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Ví dụ giả định: quán đã có hồ sơ chính xác và chủ đang giữ tài khoản, nhưng menu chỉ nằm trong vài bài Facebook cũ. Một website menu và nút Call/Zalo có thể phù hợp hơn việc thuê người chỉnh hồ sơ mỗi tháng. Đây là cách lựa chọn phạm vi, không phải kết quả khách hàng của Lumi.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b13",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Lumi Local phù hợp khi nào?",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b14",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Lumi Local phù hợp khi chủ cơ sở cần một nơi giới thiệu dịch vụ trên điện thoại, liên kết chỉ đường tới vị trí do chủ xác nhận và file QR mời đánh giá trung thực. Starter là 1.990.000đ năm đầu; Trust Kit là 399.000đ một lần. Trust Kit không bắt buộc trước Starter và được khấu trừ đủ khi nâng cấp trong 30 ngày, còn 1.591.000đ.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b15",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Từ năm hai, duy trì là 599.000đ/năm với địa chỉ RunLumi hoặc 999.000đ/năm với một tên miền riêng tiêu chuẩn. Cần xác nhận tên miền, chi phí và phạm vi trước thanh toán. In ấn, giá đỡ, quảng cáo và quản lý hồ sơ Google không nằm trong gói. Nếu cần xác minh hoặc khôi phục hồ sơ, đọc hướng dẫn Google và đánh giá một dịch vụ chuyên biệt; Lumi không nhận quyền chỉnh sửa Google của bạn.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b16",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Việc nên làm trước buổi tư vấn",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b17",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Mở hồ sơ bằng tài khoản của chủ, xem website trên điện thoại và ghi lại một thiếu sót khách thường hỏi. Tách việc chủ cần làm trên Google khỏi phần nội dung, website và QR có thể giao cho nhà cung cấp. Mang danh sách đó vào buổi tư vấn để so cùng một phạm vi, thay vì chỉ so hai con số giá.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google Business Profile: bắt đầu / Get started",
+              "url": "https://support.google.com/business/answer/7039811"
+            },
+            {
+              "label": "Google: yếu tố xếp hạng địa phương / Local ranking",
+              "url": "https://support.google.com/business/answer/7091"
+            },
+            {
+              "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
+              "url": "https://support.google.com/business/answer/2911778"
+            }
+          ],
+          "related": [
+            "seo-google-maps",
+            "xac-minh-google-maps",
+            "qr-review-google"
+          ]
+        }
+      },
+      {
+        "id": "vi-qr-review-google",
+        "slug": "qr-review-google",
+        "locale": "vi",
+        "status": "published",
+        "data": {
+          "title": "QR review Google: mời khách thật đánh giá đúng cách",
+          "description": "Cách dùng link và mã QR để mời đánh giá Google trung thực, không quà tặng, không yêu cầu số sao và không chọn lọc khách.",
+          "answer": "Google cho phép mời khách chia sẻ trải nghiệm bằng link hoặc QR. Hãy mời tất cả khách thật, không đổi quà lấy đánh giá và không yêu cầu một mức sao. QR không bảo đảm số lượng hay việc đánh giá được hiển thị.",
+          "topic": "danh-gia-trung-thuc",
+          "keyword": "review google maps",
+          "author": "lumi-local",
+          "pub_date": "2026-10-06T09:00:00+07:00",
+          "reviewed_date": "2026-10-06",
+          "featured": false,
+          "content": [
+            {
+              "_type": "block",
+              "_key": "b1",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "QR làm gì và không làm gì?",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b2",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "QR mở một đường dẫn. Với đánh giá Google, mục đích là để khách đã sử dụng dịch vụ tiếp cận nơi chia sẻ trải nghiệm. Mã không tạo phản hồi, không thay khách viết nội dung và không bảo đảm Google sẽ giữ mọi đánh giá.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b3",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_type": "link",
+                  "_key": "primary-source",
+                  "href": "https://support.google.com/business/answer/3474122"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Chủ có thể lấy link hoặc QR theo hướng dẫn chính thức trong hồ sơ đang quản lý. Nếu giao diện khác với bài hướng dẫn cũ, xem tài liệu Google được dẫn ở cuối bài. Lumi không cần mật khẩu hay quyền chỉnh sửa để làm artwork từ link do chủ cung cấp.",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-gap",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-link",
+                  "text": "Hướng dẫn chính thức của Google.",
+                  "marks": [
+                    "primary-source"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b4",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Lấy link đúng rồi thử trước khi in",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b5",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Chủ xác nhận link thuộc đúng cơ sở, sau đó mở thử bằng điện thoại. Kiểm tra tên doanh nghiệp ở trang đến; nếu có nhiều chi nhánh, đừng lấy nhầm link của một chi nhánh khác. Nhờ một người quét thử bản in mẫu trong điều kiện tại quầy trước khi in số lượng lớn.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b6",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Giữ mã đủ rõ và chừa khoảng trống quanh mã. Đây là kiểm tra sử dụng thông thường, không phải cam kết quét được trên mọi thiết bị. Không dùng mã minh họa trong thiết kế như một QR đã hoạt động.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b7",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Dùng lời mời trung thực",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b8",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Bạn đã sử dụng dịch vụ của chúng tôi? Quét QR để chia sẻ trải nghiệm trên Google. Mọi phản hồi đều được trân trọng.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b9",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Đặt cùng lời mời cho tất cả khách thật ở một điểm phù hợp trong quy trình. Nhân viên có thể chỉ chỗ quét mà không đọc hộ hay quyết định khách phải viết gì. Việc để lại đánh giá là lựa chọn của khách.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b10",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Bốn việc cần tránh",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b11",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Không tặng quà hoặc giảm giá để đổi lấy đánh giá. Không yêu cầu năm sao. Không chỉ mời người đã trả lời rằng họ hài lòng. Không mua phản hồi từ người chưa sử dụng dịch vụ. Chính sách của Google yêu cầu nội dung dựa trên trải nghiệm thật và cấm hành vi thao túng.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b12",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Một form hỏi mức độ hài lòng rồi chỉ chuyển khách vui sang Google tạo ra chọn lọc. Nếu dùng khảo sát riêng để học về dịch vụ, đừng biến câu trả lời thành điều kiện được nhận link đánh giá.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b13",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Đọc phản hồi như thông tin để cải thiện",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b14",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Khi có phản hồi tiêu cực, trả lời vào vấn đề và bảo vệ thông tin riêng của khách. Chỉ báo cáo nội dung theo lý do vi phạm chính sách phù hợp; không hứa xóa một đánh giá chỉ vì doanh nghiệp không thích nó.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b15",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Theo dõi xem khách có mở đúng trang và lời mời có dễ hiểu không. Số lượt quét, nếu được đo, không đồng nghĩa với số đánh giá đã gửi; số đánh giá cũng không tự chứng minh doanh thu tăng.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b16",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Phạm vi file QR của Lumi",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b17",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Trust Kit 399.000đ một lần và Starter 1.990.000đ năm đầu có file QR sẵn để in trong phạm vi đã thống nhất. In ấn, giá đỡ vật lý và vận chuyển không bao gồm. Chủ cung cấp, xác nhận link; Lumi chuẩn bị artwork và lời mời, không quản lý phản hồi Google.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b18",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Trước khi đặt in, chốt nội dung, link và một bản quét thử. Nếu chỉ cần lấy QR cơ bản, hãy thử tính năng miễn phí của Google; phí của Lumi mua công việc chuẩn bị artwork và phạm vi bàn giao, không mua quyền truy cập đánh giá.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google: mời khách đánh giá / Review invitations",
+              "url": "https://support.google.com/business/answer/3474122"
+            },
+            {
+              "label": "Google Maps: nội dung bị cấm / Content policy",
+              "url": "https://support.google.com/contributionpolicy/answer/7400114"
+            }
+          ],
+          "related": [
+            "dich-vu-google-maps",
+            "seo-google-maps"
+          ]
+        }
+      },
+      {
+        "id": "vi-seo-google-maps",
+        "slug": "seo-google-maps",
+        "locale": "vi",
+        "status": "published",
+        "data": {
+          "title": "SEO Google Maps: checklist trước khi thuê dịch vụ",
+          "description": "SEO Google Maps phụ thuộc những gì? Checklist cho chủ cơ sở, cách đọc lời hứa thứ hạng và phần website có thể tự kiểm tra.",
+          "answer": "Google nêu ba nhóm yếu tố chính cho kết quả địa phương: mức độ phù hợp, khoảng cách và mức độ nổi bật. SEO Google Maps không cho phép mua thứ hạng tự nhiên. Chủ cơ sở nên kiểm tra thông tin và quyền sở hữu trước khi thuê.",
+          "topic": "hien-dien-dia-phuong",
+          "keyword": "seo google maps",
+          "author": "lumi-local",
+          "pub_date": "2026-10-06T09:00:00+07:00",
+          "reviewed_date": "2026-10-06",
+          "featured": false,
+          "content": [
+            {
+              "_type": "block",
+              "_key": "b1",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "SEO Google Maps đang nói tới điều gì?",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b2",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_type": "link",
+                  "_key": "primary-source",
+                  "href": "https://support.google.com/business/answer/7091"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Trong bài này, SEO Google Maps là cách gọi thường dùng cho việc cải thiện sự hiện diện trong kết quả tìm kiếm địa phương. Google mô tả mức độ phù hợp, khoảng cách và mức độ nổi bật là các nhóm yếu tố chính. Vị trí người tìm cũng ảnh hưởng kết quả; hai người ở hai nơi không nhất thiết thấy cùng một danh sách.",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-gap",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-link",
+                  "text": "Hướng dẫn chính thức của Google.",
+                  "marks": [
+                    "primary-source"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b3",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Vì vậy, ảnh chụp một lần tìm kiếm không đủ chứng minh doanh nghiệp luôn ở vị trí đó. Khi so dịch vụ, hỏi họ đo truy vấn nào, ở khu vực nào và trong khoảng thời gian nào. Không suy từ một ảnh “top” ra số khách hay doanh thu.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b4",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Kiểm tra thông tin trước khi mua thêm",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b5",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Chủ cơ sở có thể rà tên thực tế, danh mục phù hợp, địa chỉ hoặc vùng phục vụ, giờ thường và giờ đặc biệt, số liên hệ và trạng thái xác minh. Tìm các chỗ thông tin mâu thuẫn giữa bảng hiệu, hồ sơ, website và kênh đang dùng. Chủ tự thực hiện thay đổi trên Google bằng quyền của mình.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b6",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Đây là checklist kiểm tra tính nhất quán, không phải công thức bảo đảm lên hạng. Đừng thêm từ khóa vào tên doanh nghiệp chỉ để thử chiếm vị trí tìm kiếm. Thông tin cần mô tả đúng cơ sở và hoạt động thực tế.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b7",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Khách nhìn thấy gì sau khi bấm vào website?",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b8",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Mở website bằng điện thoại: dịch vụ có dễ hiểu không, giờ có đúng không, nút gọi và Zalo có đi đúng nơi không, liên kết chỉ đường có đưa tới vị trí chủ đã xác nhận không? Nếu có giá, ghi rõ đơn vị, điều kiện áp dụng và thời điểm cập nhật.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b9",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Ví dụ giả định: khách đang hỏi giá một dịch vụ cụ thể nhưng website chỉ có câu “chất lượng hàng đầu”. Thay bằng tên dịch vụ, phạm vi và cách hỏi giá là một cải thiện có thể kiểm tra. Không cần gắn cho việc đó một mức tăng chuyển đổi chưa được đo.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b10",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Đánh giá thật và phản hồi có trách nhiệm",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b11",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Một quy trình mời tất cả khách thật chia sẻ trải nghiệm giúp tránh chọn lọc người được mời. Không yêu cầu số sao, không đổi quà lấy đánh giá. Khi phản hồi, tránh tiết lộ thông tin riêng của khách và trả lời vào vấn đề họ đã nêu.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b12",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "QR là lối vào thuận tiện, không phải công cụ sinh đánh giá. Việc khách có gửi phản hồi và Google có hiển thị phản hồi đó vẫn nằm ngoài quyền kiểm soát của nhà cung cấp.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b13",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Đọc báo cáo thay vì đọc lời hứa",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b14",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Trước khi thuê, yêu cầu phạm vi cụ thể, cách đo, thời hạn và điều khoản dừng. Tách số lượt nhìn thấy, số lượt bấm liên hệ và số giao dịch thực tế. Một lượt bấm Call có thể là tín hiệu quan tâm; nó chưa chứng minh đã có cuộc gọi thành công hay một đơn hàng.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b15",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Lumi Local làm phần website, liên kết chỉ đường và file QR trong phạm vi đã thỏa thuận. Lumi không bán dịch vụ SEO Google Maps được quản lý và không hứa thứ hạng. Nếu vấn đề hiện tại là hồ sơ chưa xác minh, hãy giải quyết quy trình đó trước.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b16",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Một thử nghiệm nhỏ trong tuần này",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b17",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Ghi lại ba câu khách thường hỏi, sửa một chỗ thiếu thông tin trên kênh mình sở hữu và kiểm tra lại trên điện thoại. Theo dõi câu hỏi có còn xuất hiện không. Đó là một vòng phản hồi về chất lượng thông tin; chưa đủ để kết luận nguyên nhân thay đổi thứ hạng Google.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google: yếu tố xếp hạng địa phương / Local ranking",
+              "url": "https://support.google.com/business/answer/7091"
+            },
+            {
+              "label": "Google: mời khách đánh giá / Review invitations",
+              "url": "https://support.google.com/business/answer/3474122"
+            },
+            {
+              "label": "Google Maps: nội dung bị cấm / Content policy",
+              "url": "https://support.google.com/contributionpolicy/answer/7400114"
+            }
+          ],
+          "related": [
+            "dich-vu-google-maps",
+            "qr-review-google",
+            "tao-dia-diem-google-maps"
+          ]
+        }
+      },
+      {
+        "id": "vi-tao-dia-diem-google-maps",
+        "slug": "tao-dia-diem-google-maps",
+        "locale": "vi",
+        "status": "published",
+        "data": {
+          "title": "Cách tạo địa điểm trên Google Maps cho doanh nghiệp",
+          "description": "Kiểm tra hồ sơ đã tồn tại, chuẩn bị thông tin và đi đúng luồng Google Business Profile khi đưa địa chỉ cửa hàng lên Google Maps.",
+          "answer": "Doanh nghiệp đủ điều kiện có thể thêm hoặc xác nhận Google Business Profile qua luồng chính thức. Hãy kiểm tra địa điểm đã tồn tại trước, cung cấp thông tin đúng và hoàn tất yêu cầu Google đưa ra. Lumi không thao tác hồ sơ thay chủ.",
+          "topic": "quyen-so-huu",
+          "keyword": "cách tạo địa chỉ trên google map",
+          "author": "lumi-local",
+          "pub_date": "2026-10-06T09:00:00+07:00",
+          "reviewed_date": "2026-10-06",
+          "featured": false,
+          "content": [
+            {
+              "_type": "block",
+              "_key": "b1",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Một địa điểm và một hồ sơ doanh nghiệp khác nhau",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b2",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "“Thêm địa điểm” là nhu cầu rộng; chủ doanh nghiệp cần xem luồng Google Business Profile để đại diện cơ sở của mình. Một điểm được thấy trên bản đồ không tự chứng minh người đang đọc có quyền quản lý thông tin doanh nghiệp đó.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b3",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_type": "link",
+                  "_key": "primary-source",
+                  "href": "https://support.google.com/business/answer/2911778"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Google Business Profile dành cho doanh nghiệp đủ điều kiện. Trước khi nhập một địa chỉ, đọc điều kiện trong tài liệu bắt đầu của Google, nhất là khi hoạt động theo vùng phục vụ thay vì đón khách tại một mặt bằng.",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-gap",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-link",
+                  "text": "Hướng dẫn chính thức của Google.",
+                  "marks": [
+                    "primary-source"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b4",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Bước 1: tìm hồ sơ hiện có",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b5",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Tìm tên và vị trí thực tế của doanh nghiệp trên Google. Nếu đã có hồ sơ, dùng hướng dẫn thêm hoặc xác nhận quyền của Google; đừng tạo thêm một bản chỉ vì chưa đăng nhập được. Hồ sơ trùng có thể khiến việc kiểm tra thông tin khó hơn.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b6",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Nếu hồ sơ đang do người khác quản lý, đi theo luồng yêu cầu quyền. Nếu không thấy hồ sơ, bắt đầu tại trang quản lý Business Profile chính thức. Các nút có thể khác giữa thiết bị và thời điểm; bài này mô tả thứ tự quyết định, không giả định một giao diện cố định.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b7",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Bước 2: chuẩn bị thông tin thật",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b8",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Dùng tên đang hiện trên biển hiệu và trong hoạt động thực tế, mô tả đúng loại hình, số điện thoại do doanh nghiệp kiểm soát và giờ mở cửa. Kiểm tra địa chỉ hoặc vùng phục vụ theo cách cơ sở thực sự phục vụ khách.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b9",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Không dùng vị trí trung tâm thành phố chỉ để trông “gần khách hơn”. Không thêm từ khóa quảng cáo vào tên để thử lợi dụng tìm kiếm. Nếu còn chưa chắc thông tin, xác nhận với chủ trước khi gửi.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b10",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Bước 3: hoàn tất yêu cầu trong tài khoản",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b11",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Làm theo các bước Google hiển thị và thực hiện xác minh nếu được yêu cầu. Việc gửi thông tin không phải bảo đảm được hiển thị ngay, cũng không phải bảo đảm có thứ hạng cao. Giữ bản ghi công việc đã làm để dễ xử lý nếu có thông báo tiếp theo.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b12",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Dùng tài khoản mà chủ kiểm soát và bảo vệ phương án khôi phục. Khi có nhiều người làm việc, phân công rõ ai chịu trách nhiệm thông tin. Tránh dùng tài khoản cá nhân của nhà cung cấp như nơi giữ tài sản số của doanh nghiệp.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b13",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Sau khi có thông tin đúng: kiểm tra đường đi của khách",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b14",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Mở liên kết chỉ đường từ điện thoại và đối chiếu điểm đến với cửa vào thực tế. Xem khách có đọc được dịch vụ, giờ và cách liên hệ trên website không. Đây là kiểm tra trải nghiệm tiếp cận cơ sở, không phải một thủ thuật để xác minh hay tăng hạng.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b15",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Lumi có thể làm website, Call/Zalo và liên kết chỉ đường bằng thông tin do chủ xác nhận. Chủ vẫn giữ toàn bộ quyền với tài khoản Google; Lumi không tạo, xác minh, chỉnh sửa hoặc quản lý hồ sơ.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b16",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Khi nào chưa nên thuê Lumi?",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b17",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Nếu việc duy nhất cần làm là thêm hoặc xác minh một hồ sơ, hãy thử luồng miễn phí của Google trước. Chỉ đánh giá Lumi Local khi bạn còn cần website dịch vụ, file QR hoặc phần xuất bản trong phạm vi gói. Mua đúng công việc giúp tránh trả phí cho một giải pháp không xử lý vấn đề ban đầu.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
+              "url": "https://support.google.com/business/answer/2911778"
+            },
+            {
+              "label": "Google Business Profile: bắt đầu / Get started",
+              "url": "https://support.google.com/business/answer/7039811"
+            },
+            {
+              "label": "Google: xác minh doanh nghiệp / Verify your business",
+              "url": "https://support.google.com/business/answer/7107242"
+            }
+          ],
+          "related": [
+            "xac-minh-google-maps",
+            "dich-vu-google-maps",
+            "seo-google-maps"
+          ]
+        }
+      },
+      {
+        "id": "vi-xac-minh-google-maps",
+        "slug": "xac-minh-google-maps",
+        "locale": "vi",
+        "status": "published",
+        "data": {
+          "title": "Xác minh Google Maps: chủ doanh nghiệp cần chuẩn bị gì?",
+          "description": "Hướng dẫn chuẩn bị cho xác minh Google Business Profile; phân biệt lời hứa “nhanh nhất”, dịch vụ hỗ trợ và quyền tài khoản của chủ.",
+          "answer": "Google quyết định phương thức xác minh được cung cấp cho từng hồ sơ. Chủ doanh nghiệp cần làm theo hướng dẫn hiển thị trong tài khoản; không có một phương thức hay thời hạn chung mà Lumi có thể cam kết.",
+          "topic": "quyen-so-huu",
+          "keyword": "dịch vụ xác minh google map",
+          "author": "lumi-local",
+          "pub_date": "2026-10-06T09:00:00+07:00",
+          "reviewed_date": "2026-10-06",
+          "featured": false,
+          "content": [
+            {
+              "_type": "block",
+              "_key": "b1",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Kiểm tra hồ sơ và quyền trước",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b2",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Trước khi tìm “dịch vụ xác minh Google Map”, kiểm tra doanh nghiệp đã có hồ sơ chưa và tài khoản nào đang quản lý. Việc thêm một hồ sơ mới không tự giải quyết một hồ sơ đã tồn tại hoặc bị người khác quản lý. Nếu thấy hồ sơ hiện có, đọc quy trình xác nhận hoặc yêu cầu quyền phù hợp của Google.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b3",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Chủ cơ sở cần giữ quyền với tài khoản đại diện doanh nghiệp. Không gửi mật khẩu, OTP hoặc mã khôi phục cho người chào dịch vụ. Lumi không yêu cầu các thông tin này và không nhận việc xác minh thay chủ.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b4",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Làm theo phương thức Google cung cấp",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b5",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_type": "link",
+                  "_key": "primary-source",
+                  "href": "https://support.google.com/business/answer/7107242"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Mở hồ sơ bằng tài khoản của chủ và xem lựa chọn xác minh đang được Google hiển thị. Không suy từ hướng dẫn của một doanh nghiệp khác rằng hồ sơ của mình cũng có cùng lựa chọn. Google kiểm soát quy trình, có thể xem xét thông tin hoặc yêu cầu xác minh lại.",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-gap",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-link",
+                  "text": "Hướng dẫn chính thức của Google.",
+                  "marks": [
+                    "primary-source"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b6",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Hãy đọc toàn bộ yêu cầu trước khi bắt đầu. Nếu giao diện thay đổi, dùng tài liệu trợ giúp chính thức được dẫn ở cuối bài thay vì một ảnh chụp cũ. Đừng trả tiền cho lời hứa cung cấp một phương thức mà tài khoản của bạn chưa được Google cho dùng.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b7",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Chuẩn bị thông tin có thể đối chiếu",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b8",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Chuẩn bị tên doanh nghiệp đang sử dụng, vị trí hoặc vùng phục vụ đúng thực tế và bằng chứng thể hiện hoạt động tại đó khi Google yêu cầu. Đối chiếu thông tin với biển hiệu và giấy tờ hiện có; không dựng địa chỉ, thuê bảng hiệu tạm hoặc sửa bằng chứng để qua bước kiểm tra.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b9",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Nếu được yêu cầu xác minh bằng video, đọc hướng dẫn tương ứng trước khi ghi hình. Chỉ chia sẻ nội dung cần thiết qua luồng chính thức. Các tài liệu này có thể chứa thông tin riêng, không nên đăng vào một nhóm công khai để nhờ người lạ xử lý.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b10",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Khi chưa hoàn tất xác minh",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b11",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Xem trạng thái và hướng dẫn trong tài khoản. Ghi lại bước đã thực hiện và thông báo lỗi, tránh thử nhiều cách mâu thuẫn rồi không biết việc nào đã thay đổi. Không tạo hồ sơ trùng để né một vấn đề chưa rõ.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b12",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Nếu không còn phương án phù hợp, đi từ kênh hỗ trợ được Google chỉ dẫn. Nếu hồ sơ bị đình chỉ hoặc vô hiệu hóa, đó là luồng xử lý riêng; việc xác minh lại không mặc nhiên thay thế quy trình kháng nghị.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b13",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Nếu vẫn thuê người hỗ trợ",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b14",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Hỏi rõ họ chỉ hướng dẫn hay sẽ thao tác quản lý, cần quyền gì, giữ lại dữ liệu nào và xử lý phí ra sao nếu Google không chấp thuận. Yêu cầu cam kết về công việc họ kiểm soát, không về quyết định của Google. Đừng coi lời hứa “nhanh nhất” là bằng chứng năng lực.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b15",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Lumi Local cung cấp checklist cho chủ và phần hiện diện trên website; không cung cấp dịch vụ tạo hoặc xác minh Google Business Profile. Nếu xác minh là nhu cầu duy nhất, chưa cần mua Lumi Local chỉ để giải quyết việc đó.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b16",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Việc tiếp theo",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b17",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Đăng nhập bằng tài khoản của chủ, ghi lại trạng thái hiện tại và đọc đúng hướng dẫn xác minh Google đưa ra. Chỉ sau đó mới quyết định tự làm hay cần một dịch vụ chuyên biệt. Giữ hồ sơ, bằng chứng và quyền tài khoản dưới sự kiểm soát của doanh nghiệp.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google: xác minh doanh nghiệp / Verify your business",
+              "url": "https://support.google.com/business/answer/7107242"
+            },
+            {
+              "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
+              "url": "https://support.google.com/business/answer/2911778"
+            }
+          ],
+          "related": [
+            "tao-dia-diem-google-maps",
+            "dich-vu-google-maps"
+          ]
+        }
+      },
+      {
+        "id": "en-dich-vu-google-maps",
+        "slug": "dich-vu-google-maps",
+        "locale": "en",
+        "status": "published",
+        "translationOf": "vi-dich-vu-google-maps",
+        "data": {
+          "title": "Google Maps services: what should you pay for?",
+          "description": "Separate profile setup, verification, local SEO and review QR artwork. Check ownership, deliverables and renewal costs before hiring.",
+          "answer": "Google Business Profile is free. A paid service should name the work, ownership terms and deliverables. Lumi Local supplies a website, directions links and QR artwork; it does not create, verify or manage Google profiles.",
+          "topic": "lua-chon-dich-vu",
+          "keyword": "dịch vụ google map",
+          "author": "lumi-local",
+          "pub_date": "2026-10-06T09:00:00+07:00",
+          "reviewed_date": "2026-10-06",
+          "featured": true,
+          "content": [
+            {
+              "_type": "block",
+              "_key": "b1",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Name the problem before buying a package",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b2",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "A shop without a profile, an owner without account access and a business without a readable service menu have different needs. Write one sentence describing the missing information or access before asking for a quote. A website cannot replace Google’s verification or recovery process.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b3",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "If visitors already find the shop but keep asking for prices, hours and a contact number, clearer information may be the useful next step. Check the existing customer path on a phone before adding another service.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b4",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Separate four types of work",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b5",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Creating or claiming a profile concerns Google Business Profile. Verification is Google’s process for checking the business representative. Local SEO covers a broader set of information and signals. A review QR opens a link where genuine customers can share their experience.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b6",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Ask a provider to identify each deliverable. A phrase such as “complete Google Maps package” does not tell you whether the quote includes a website, content, QR artwork, advertising or ongoing profile management.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b7",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Ask seven questions before paying",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b8",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Who owns the account? Which permissions does the provider need, and why? Which part is free from Google? What work does the service fee buy? What renews next year? What do you receive when the agreement ends? What happens to payment if Google’s process does not succeed?",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b9",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Do not share passwords, one-time codes or recovery codes. If you hire a separate profile manager, understand Google’s permission system and agree the scope first. Lumi does not need Google edit access for its offer.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b10",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Compare deliverables with outcome promises",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b11",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_type": "link",
+                  "_key": "primary-source",
+                  "href": "https://support.google.com/business/answer/7091"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "A QR file, service page and configured domain are deliverables you can inspect. Customer counts, revenue and rankings require separate evidence. Google says a business cannot request or pay for better organic local ranking.",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-gap",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-link",
+                  "text": "Google’s official guidance.",
+                  "marks": [
+                    "primary-source"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b12",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Consider a hypothetical café with an accurate profile and an owner-controlled account, but an outdated menu scattered across Facebook posts. A mobile menu and Call/Zalo links may fit its need better than monthly profile edits. This is a scope example, not a Lumi customer result.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b13",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Where Lumi Local fits",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b14",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Starter costs 1,990,000 VND for year one. Trust Kit costs 399,000 VND once and is optional. Upgrading within 30 days credits the full Trust Kit fee, leaving 1,591,000 VND. Renewal starts in year two: 599,000 VND/year with a RunLumi address or 999,000 VND/year with one standard custom domain. Confirm domain eligibility and costs before payment.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b15",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "The offer combines a mobile service website, owner-confirmed directions and print-ready review QR artwork. Printing, physical stands, ads and Google profile management are excluded. If your immediate need is verification or recovery, follow Google’s instructions and evaluate a specialist for that task.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b16",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Prepare one useful question for a consultation",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b17",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Open the owner’s profile, view the current website on a phone and note one question customers repeatedly ask. Separate owner actions on Google from website, content and QR work. Use that list to compare quotes with matching scopes.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google Business Profile: bắt đầu / Get started",
+              "url": "https://support.google.com/business/answer/7039811"
+            },
+            {
+              "label": "Google: yếu tố xếp hạng địa phương / Local ranking",
+              "url": "https://support.google.com/business/answer/7091"
+            },
+            {
+              "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
+              "url": "https://support.google.com/business/answer/2911778"
+            }
+          ],
+          "related": [
+            "seo-google-maps",
+            "xac-minh-google-maps",
+            "qr-review-google"
+          ]
+        }
+      },
+      {
+        "id": "en-qr-review-google",
+        "slug": "qr-review-google",
+        "locale": "en",
+        "status": "published",
+        "translationOf": "vi-qr-review-google",
+        "data": {
+          "title": "Google review QR: invite honest customer feedback",
+          "description": "Use a Google review link or QR without incentives, requested ratings or selective invitations. Understand artwork and printing scope.",
+          "answer": "Google allows review invitations through a link or QR. Invite all genuine customers without rewards or a requested star rating. A QR does not guarantee review volume or visibility.",
+          "topic": "danh-gia-trung-thuc",
+          "keyword": "review google maps",
+          "author": "lumi-local",
+          "pub_date": "2026-10-06T09:00:00+07:00",
+          "reviewed_date": "2026-10-06",
+          "featured": false,
+          "content": [
+            {
+              "_type": "block",
+              "_key": "b1",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "A QR opens a link",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b2",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "The purpose is to help customers who have used the service reach the place where they can share their experience. A QR does not generate feedback, write it for a customer or guarantee that Google will display it.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b3",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_type": "link",
+                  "_key": "primary-source",
+                  "href": "https://support.google.com/business/answer/3474122"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "The owner can obtain a link or QR through Google’s official instructions. Lumi can prepare artwork from an owner-confirmed link without a password or profile edit access.",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-gap",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-link",
+                  "text": "Google’s official guidance.",
+                  "marks": [
+                    "primary-source"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b4",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Test the destination before printing",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b5",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Open the link on a phone and check the business name. For multiple branches, confirm the correct location. Have someone scan a printed sample in the actual counter setting before ordering a large batch.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b6",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Keep the code clear with space around it. This is a practical check, not a guarantee for every device. A decorative code in a design is not a working review QR.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b7",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Use an honest invitation",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b8",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Have you used our service? Scan the QR to share your experience on Google. All feedback is welcome.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b9",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Offer the same invitation to all genuine customers at an appropriate point. Staff can show where to scan while leaving the wording and decision to the customer.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b10",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Avoid four practices",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b11",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Do not offer gifts or discounts in return for reviews. Do not ask for five stars. Do not invite only customers who say they are happy. Do not buy feedback from people who have not used the service.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b12",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "A satisfaction form that sends only happy customers to Google creates selective invitations. Keep a private service survey separate from access to the review link.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b13",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Treat feedback as useful information",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b14",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Respond to the issue in a negative review while protecting customer privacy. Report content for a relevant policy violation; do not promise deletion simply because the business dislikes a review.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b15",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "If scans are measured, they are not the same as submitted reviews. Review counts alone do not establish a revenue increase.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b16",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Understand Lumi’s artwork scope",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b17",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Trust Kit is 399,000 VND once; Starter is 1,990,000 VND for year one. Both include print-ready QR artwork within agreed scope. Printing, physical stands and shipping are excluded. The owner supplies and confirms the link; Lumi prepares artwork and invitation text, not Google review management.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b18",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Confirm the destination, text and printed scan before printing. If a basic QR is all you need, try Google’s free feature first. Lumi’s fee buys preparation and agreed deliverables, not access to reviews.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google: mời khách đánh giá / Review invitations",
+              "url": "https://support.google.com/business/answer/3474122"
+            },
+            {
+              "label": "Google Maps: nội dung bị cấm / Content policy",
+              "url": "https://support.google.com/contributionpolicy/answer/7400114"
+            }
+          ],
+          "related": [
+            "dich-vu-google-maps",
+            "seo-google-maps"
+          ]
+        }
+      },
+      {
+        "id": "en-seo-google-maps",
+        "slug": "seo-google-maps",
+        "locale": "en",
+        "status": "published",
+        "translationOf": "vi-seo-google-maps",
+        "data": {
+          "title": "Google Maps SEO: a checklist before hiring",
+          "description": "Check local information, website clarity and review practices before buying Google Maps SEO. Learn the limits of ranking promises.",
+          "answer": "Google identifies relevance, distance and prominence as the main local ranking factors. Organic local ranking cannot be bought. Start by checking accurate information and account ownership.",
+          "topic": "hien-dien-dia-phuong",
+          "keyword": "seo google maps",
+          "author": "lumi-local",
+          "pub_date": "2026-10-06T09:00:00+07:00",
+          "reviewed_date": "2026-10-06",
+          "featured": false,
+          "content": [
+            {
+              "_type": "block",
+              "_key": "b1",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Understand what local SEO can describe",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b2",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_type": "link",
+                  "_key": "primary-source",
+                  "href": "https://support.google.com/business/answer/7091"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Google Maps SEO is a common name for work on local search presence. Google identifies relevance, distance and prominence as the main factors. The searcher’s location affects results, so one screenshot does not establish a stable position for every customer.",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-gap",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-link",
+                  "text": "Google’s official guidance.",
+                  "marks": [
+                    "primary-source"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b3",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Ask which queries, locations and dates a provider measures. A rank screenshot alone does not show customer acquisition or revenue.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b4",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Check the information you control",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b5",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Review the real business name, relevant category, address or service area, regular and special hours, phone number and verification status. Look for conflicting information across the sign, profile, website and current channels. The owner makes Google changes through their own account.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b6",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "This is a consistency checklist, not a ranking formula. Describe the actual business rather than adding keywords to its name to chase search positions.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b7",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Follow the visit through to your website",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b8",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "On a phone, check whether services make sense, hours are current and Call/Zalo links reach the correct destination. Test the directions link against the owner-confirmed location. Where prices appear, include the unit, conditions and update date.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b9",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "A hypothetical business that replaces “leading quality” with a clear service description gives the visitor more useful information. That change is inspectable; a claimed conversion increase would require measurement.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b10",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Invite genuine feedback responsibly",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b11",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Invite all genuine customers to share their experience, without a requested rating or reward. Reply to the issue raised and protect customer privacy. A QR makes the review link easier to reach; it does not create reviews or control Google’s moderation.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b12",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Ask for reporting that separates outcomes",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b13",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Agree the scope, measurement approach and exit terms before hiring. Distinguish visibility, contact clicks and completed transactions. A Call click is not proof of a connected call or sale.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b14",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Lumi Local supplies a website, directions links and QR artwork within agreed scope. It does not sell managed Google Maps SEO or guarantee ranking. Verification problems need the owner’s Google process first.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b15",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Run a small information test",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b16",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Write down three recurring customer questions, correct one gap on an owned channel and check it on a phone. Observe whether the question still comes up. This tests information quality; it does not establish why Google rankings changed.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google: yếu tố xếp hạng địa phương / Local ranking",
+              "url": "https://support.google.com/business/answer/7091"
+            },
+            {
+              "label": "Google: mời khách đánh giá / Review invitations",
+              "url": "https://support.google.com/business/answer/3474122"
+            },
+            {
+              "label": "Google Maps: nội dung bị cấm / Content policy",
+              "url": "https://support.google.com/contributionpolicy/answer/7400114"
+            }
+          ],
+          "related": [
+            "dich-vu-google-maps",
+            "qr-review-google",
+            "tao-dia-diem-google-maps"
+          ]
+        }
+      },
+      {
+        "id": "en-tao-dia-diem-google-maps",
+        "slug": "tao-dia-diem-google-maps",
+        "locale": "en",
+        "status": "published",
+        "translationOf": "vi-tao-dia-diem-google-maps",
+        "data": {
+          "title": "How to add a business location on Google Maps",
+          "description": "Check existing profiles, prepare accurate business information and follow the official Google Business Profile process.",
+          "answer": "Eligible businesses can add or claim a Google Business Profile through Google’s official process. Check for an existing profile first and follow the requests shown in the owner’s account. Lumi does not operate the profile for you.",
+          "topic": "quyen-so-huu",
+          "keyword": "cách tạo địa chỉ trên google map",
+          "author": "lumi-local",
+          "pub_date": "2026-10-06T09:00:00+07:00",
+          "reviewed_date": "2026-10-06",
+          "featured": false,
+          "content": [
+            {
+              "_type": "block",
+              "_key": "b1",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "A map place is not the same as management access",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b2",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "A visible map location does not establish who can manage the business information. Owners should use the Google Business Profile process for representing an eligible business.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b3",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_type": "link",
+                  "_key": "primary-source",
+                  "href": "https://support.google.com/business/answer/2911778"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Read Google’s eligibility guidance before adding an address, particularly if the business serves an area rather than receiving customers at a storefront.",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-gap",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-link",
+                  "text": "Google’s official guidance.",
+                  "marks": [
+                    "primary-source"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b4",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Step 1: find an existing profile",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b5",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Search for the business name and actual location. If a profile exists, use Google’s add or claim guidance. Do not create another copy simply because you cannot sign in. An ownership request may be the appropriate path.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b6",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "If there is no profile, start through Google’s official Business Profile page. Buttons differ across devices and dates; the important decision is whether to add a new business or claim an existing one.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b7",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Step 2: prepare accurate details",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b8",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Use the real trading name, relevant business category, owner-controlled phone number and opening hours. Choose the address or service area according to how the business actually serves customers.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b9",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Do not place the business in a convenient city centre to look closer to searchers. Do not add advertising keywords to the name. Confirm uncertain details with the owner before submitting them.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b10",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Step 3: follow the account instructions",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b11",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Complete the steps Google displays, including verification when requested. Submission does not guarantee immediate visibility or a high ranking. Keep a record of the work and any further notices.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b12",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Use an owner-controlled account with recovery options protected. Assign responsibility for information updates rather than leaving the business’s digital asset in a supplier’s personal account.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b13",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Check the customer’s path afterwards",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b14",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Test the directions link on a phone against the real entrance. Check whether the website explains services, hours and contact options. This checks the visitor’s path; it is not a verification shortcut or ranking technique.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b15",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Lumi can prepare a website, Call/Zalo actions and directions links using owner-confirmed information. The owner retains Google account control. Lumi does not create, verify, edit or manage the profile.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b16",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Decide whether Lumi is needed",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b17",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "If adding or verifying a profile is your only task, try Google’s free process first. Evaluate Lumi when you also need a service website, QR artwork or the agreed publishing work. Buy the scope that addresses your actual problem.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
+              "url": "https://support.google.com/business/answer/2911778"
+            },
+            {
+              "label": "Google Business Profile: bắt đầu / Get started",
+              "url": "https://support.google.com/business/answer/7039811"
+            },
+            {
+              "label": "Google: xác minh doanh nghiệp / Verify your business",
+              "url": "https://support.google.com/business/answer/7107242"
+            }
+          ],
+          "related": [
+            "xac-minh-google-maps",
+            "dich-vu-google-maps",
+            "seo-google-maps"
+          ]
+        }
+      },
+      {
+        "id": "en-xac-minh-google-maps",
+        "slug": "xac-minh-google-maps",
+        "locale": "en",
+        "status": "published",
+        "translationOf": "vi-xac-minh-google-maps",
+        "data": {
+          "title": "Google Maps verification: what owners should prepare",
+          "description": "Prepare for Google Business Profile verification while protecting account ownership. Check what support services can actually promise.",
+          "answer": "Google selects the verification methods available for a profile. Follow the options shown in the owner’s account. Lumi cannot promise a universal method or completion time.",
+          "topic": "quyen-so-huu",
+          "keyword": "dịch vụ xác minh google map",
+          "author": "lumi-local",
+          "pub_date": "2026-10-06T09:00:00+07:00",
+          "reviewed_date": "2026-10-06",
+          "featured": false,
+          "content": [
+            {
+              "_type": "block",
+              "_key": "b1",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Check the existing profile first",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b2",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Before buying verification support, check whether the business already has a profile and which account manages it. Adding another profile does not resolve an existing ownership problem. Follow Google’s claim or ownership process when a profile already exists.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b3",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Keep control of the business account. Do not share passwords, one-time codes or recovery codes. Lumi does not request these details or verify a profile on the owner’s behalf.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b4",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Use the method Google offers",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b5",
+              "style": "normal",
+              "markDefs": [
+                {
+                  "_type": "link",
+                  "_key": "primary-source",
+                  "href": "https://support.google.com/business/answer/7107242"
+                }
+              ],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Open the profile from the owner’s account and read the available verification options. Another business’s tutorial does not establish which method your profile can use. Google controls the process and may review information or require verification again.",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-gap",
+                  "text": " ",
+                  "marks": []
+                },
+                {
+                  "_type": "span",
+                  "_key": "source-link",
+                  "text": "Google’s official guidance.",
+                  "marks": [
+                    "primary-source"
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b6",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Read the complete instructions before starting. If the interface changes, use the current official help page rather than an old screenshot. Do not pay for a promised method that Google has not offered to your account.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b7",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Prepare truthful business information",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b8",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Have the real business name, location or service area and evidence of operation ready when requested. Compare the details with existing signs and documents. Do not invent an address or alter evidence to pass a check.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b9",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "If Google requests video verification, read that specific guide before recording. Submit only what the official process needs. Documents and footage can contain private information; avoid posting them in public groups.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b10",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "When the process is not complete",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b11",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Check the status and instructions in the account. Record the steps tried and the error shown. Avoid conflicting attempts or duplicate profiles to bypass an unresolved problem.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b12",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Use the support path Google provides when needed. Suspension or disabling has a separate process; verification does not automatically replace an appeal.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b13",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Evaluate outside help by its scope",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b14",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Ask whether the provider gives instructions or manages the profile, what permissions they need, what data they retain and how payment works if Google does not approve. Their promise should cover work they control, not Google’s decision.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b15",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Lumi Local offers an owner checklist and website presence. It does not create or verify Google Business Profiles. If verification is your only need, buying Lumi solely for that task is not a fit.",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b16",
+              "style": "h2",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Take the next owner action",
+                  "marks": []
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "_key": "b17",
+              "style": "normal",
+              "markDefs": [],
+              "children": [
+                {
+                  "_type": "span",
+                  "_key": "s1",
+                  "text": "Sign in, record the current status and read the verification instructions actually offered. Then decide whether you need specialist help. Keep the account and evidence under the business’s control.",
+                  "marks": []
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google: xác minh doanh nghiệp / Verify your business",
+              "url": "https://support.google.com/business/answer/7107242"
+            },
+            {
+              "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
+              "url": "https://support.google.com/business/answer/2911778"
+            }
+          ],
+          "related": [
+            "tao-dia-diem-google-maps",
+            "dich-vu-google-maps"
+          ]
+        }
+      }
+    ]
+  }
+}

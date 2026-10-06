@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "include": [
+    "/api/enquiries",
+    "/api/enquiries/",
+    "/data",
+    "/data/*",
+    "/blog",
+    "/blog/*",
+    "/en/blog",
+    "/en/blog/*",
+    "/_emdash",
+    "/_emdash/*",
+    "/_blog-assets/*",
+    "/sitemap.xml"
+  ],
+  "exclude": []
+}
