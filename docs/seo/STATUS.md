@@ -28,3 +28,7 @@ None. On resume, always inspect the CSV for submitting, unknown or pending_moder
 ## Checkpoint update template
 
 Record current phase/window, checkout/HEAD/WIP, actual completed work/evidence, authorized channel/account scopes, unresolved action IDs, open PR/deployment/CMS states, owned temporary resources, next three concrete actions, next check time, and any human decision needed. No PII or session material.
+
+## Documentation delivery reference
+
+Goal/ledger preparation: bd710bd and [PR #24](https://github.com/RunLumi/local.runlumi/pull/24). Documentation checks and required pre-push regression/build checks passed; see DOC-002 in WORKLOG.md. Revalidate the actual PR/main state on resume. Campaign remains planned, with zero external actions and no scheduler configured.

@@ -27,3 +27,11 @@ Append-only history. Current summary: [STATUS.md](STATUS.md). Goal: [campaign co
 - Recovery/resume conditions; duplicate-prevention check:
 
 Use literal statuses and facts; do not fill fields with hypothetical successes. Keep third-party personal data, credentials and session material out of this log.
+
+## 2026-10-06 — DOC-002 — Documentation verified and submitted for review
+
+- Source receipt: goal/ledger preparation commit bd710bd; [PR #24](https://github.com/RunLumi/local.runlumi/pull/24).
+- Checks actually completed: relative Markdown links resolve; CSV registries contain only unique headers and no fabricated activity; diff whitespace check passes. Required pre-push hook also ran the existing 48 tests and static build successfully. No new implementation-mirroring test was introduced for this documentation task.
+- Scope: six documentation/agent-routing files; no application code, CMS records, credentials, account sessions, scheduler or community postings changed.
+- Outcome: goal and resume artifacts are reviewable in Git. Read the PR's actual state on resume; this receipt does not claim a hosted Linux CI pass or campaign execution.
+- Next: after activation, validate current site/data, choose legitimate channels and establish the real account/channel scope before the first external batch.
