@@ -1,1 +1,3 @@
 DISCORD_TRIAL_WEBHOOK_URL=
+# Local /data preview only, after a local CMS administrator exists:
+BLOG_ADMIN_READY=

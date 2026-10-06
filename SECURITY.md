@@ -60,27 +60,33 @@ Do not hold a customer's domain hostage. If Lumi registers a domain for a custom
 
 ## Research workspace access
 
-`/data`, `/data/`, `/data/index.html` and `/data/keywords.csv` require a password
-sign-in. Programmatic HTTP Basic access is also supported with username `owner`.
-The password is the server-only
-`DATA_PASSWORD` secret (at least 16 characters). Missing or weak configuration
-returns 503. Anonymous HTML navigation receives a public sign-in form (200),
-never the dataset. Unauthenticated CSV/programmatic requests return 401.
-Incorrect form submission renders an error without issuing a session; enhanced
-JSON login returns 401. HTTPS is required outside loopback development. No
-credential values are embedded in browser code, source, build artifacts, logs
-or documentation.
+`/data`, `/data/`, `/data/index.html` and `/data/keywords.csv` are readable only by
+a signed-in Lumi Local editor **administrator** (EmDash role ADMIN, level 50).
+There is no separate research password, Basic Auth or research-only session:
+the editor passkey sign-in is the only way in. `DATA_PASSWORD` is retired and
+ignored; delete it from any environment where it still exists.
 
-Authenticated and denied responses use browser/CDN `no-store` directives and
-vary on Authorization and Cookie. Credentials and session signatures are checked
-with Web Crypto HMAC verification. Sessions expire after 8 hours and use a
-host-only HttpOnly, SameSite=Strict cookie scoped to `/data`, with Secure on HTTPS.
-Login and logout POSTs require a matching Origin; form bodies are byte-capped.
-The shared password is suitable for this bounded owner-only research page;
-it does not provide individual accounts, MFA or audit trails. Sign out clears the
-current browser cookie. Rotate the secret to invalidate all prior sessions and
-Basic credentials. Basic clients authenticate each request with the shared
-password; signing out a browser cookie does not revoke those clients.
+How the check works (`server/data-auth.js`): the Pages Function forwards the
+visitor's own `Cookie` header, and nothing else, over the `BLOG` service binding
+to `GET /_emdash/api/auth/me` on the CMS Worker, then reads the returned role.
+
+| Situation | Response |
+|---|---|
+| Administrator session | 200 page/CSV, `private, no-store`, `Vary: Cookie` |
+| No or expired session, browser page request | 302 to `/_emdash/admin/login?redirect=/data/` |
+| No or expired session, CSV or programmatic request | 401, no dataset |
+| Signed in below ADMIN (editor, author, …) | 403, no dataset |
+| `BLOG` binding missing, `BLOG_ADMIN_READY` not `true`, CMS unreachable or malformed reply | 503, fails closed |
+| Non-HTTPS outside loopback | 403 |
+
+`BLOG_ADMIN_READY` must be `true`, so an unclaimed editor whose first-admin setup
+is still open can never authorize anyone. Pages previews deliberately have no
+production `BLOG` binding (`wrangler.jsonc` `env.preview.services: []`), so
+`/data` returns 503 there. “Sign out” on the research page POSTs to
+`/data/logout`. That requires a matching Origin, ends the EmDash session (the
+editor is signed out too) and returns to the editor sign-in. To remove someone's
+research access, remove or demote their EmDash account; their next request is
+refused because every request is re-checked against the CMS.
 
 The build moves the research HTML and CSV into ignored `.data-build/research.js`,
 which is bundled into the Pages Function. They are absent from `dist`, so static
@@ -88,17 +94,10 @@ fallback, direct asset requests and Function quota failure cannot serve them.
 Do not copy `.data-build`, source CSVs or a raw Astro build into public assets.
 Always run `npm run build`, not `astro build` alone, for deployment.
 
-Use ignored `.dev.vars` for the local secret and `npm run dev:data` for the
-authenticated preview. The ordinary Astro dev server blocks `/data`; raw-source
-and private-build HTTP access are denied by its filesystem rules. A static-only
-preview does not implement authentication and has no research content to serve.
-
-Production and Pages preview environments must each configure `DATA_PASSWORD`
-as an encrypted Pages secret before access can succeed. Never pass a password
-as a command argument or commit `.dev.vars`. [Cloudflare Basic Auth guidance](https://developers.cloudflare.com/workers/examples/basic-auth/)
-and [Pages fallback behavior](https://developers.cloudflare.com/pages/functions/routing/#fail-open--closed)
-were checked 2026-10-06. This local implementation does not prove a production
-secret is configured or a deployment has occurred.
+Local preview: run the CMS Worker locally (see [docs/blog/README.md](docs/blog/README.md)),
+then `npm run dev:data` with `BLOG_ADMIN_READY=true` in ignored `.dev.vars`; Wrangler
+binds `BLOG` from `wrangler.jsonc`. The ordinary Astro dev server blocks `/data`;
+raw-source and private-build HTTP access are denied by its filesystem rules.
 
 ## EmDash blog boundary — 2026-10-06
 

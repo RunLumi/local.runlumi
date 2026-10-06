@@ -54,23 +54,24 @@ Required production secret:
 
 Do not commit its value.
 
-Research access also requires encrypted `DATA_PASSWORD` in each deployed Pages
-environment. The login username is `owner`. Configure the secret through Pages
-Variables and secrets or the Wrangler Pages secret prompt; never put its value
-in `wrangler.jsonc`, build variables, commands, Git or docs. Without it, research
-requests return 503. Browser users enter the password at `/data/login`;
-programmatic clients can use Basic Auth. See [SECURITY.md](SECURITY.md#research-workspace-access).
+Research access (`/data`) uses the Lumi Local editor sign-in: only an EmDash
+ADMIN can open it. It needs the production `BLOG` service binding (declared in
+`wrangler.jsonc`) and the encrypted Pages marker `BLOG_ADMIN_READY=true`, set only
+after the owner has registered a passkey. There is no research password;
+`DATA_PASSWORD` is retired and should not exist in any environment. See
+[SECURITY.md](SECURITY.md#research-workspace-access).
 
 Use `npm run build`: its post-build step removes research HTML/CSV from public
 `dist` assets and generates the private `.data-build/research.js` Function module.
 Deploy from the repository root so Wrangler can compile `functions/data/*` and
 the private module. A raw `astro build` is not a safe deploy artifact.
 
-Before claiming research protection live, check unauthenticated `/data`,
-`/data/`, `/data/index.html`, and `/data/keywords.csv` return a sign-in form or
-401 without any dataset (or 503 if not configured); valid credentials/session
-return the page/CSV with no-store headers; incorrect passwords do not issue a
-session; logout removes access; and homepages remain public. Check both the
+Before claiming research protection live, check that anonymous browser requests
+to `/data`, `/data/` and `/data/index.html` redirect to
+`/_emdash/admin/login?redirect=/data/`, and that anonymous `/data/keywords.csv`
+returns 401 without any dataset. A signed-in administrator must get the
+page/CSV with no-store headers; “Sign out” must end the editor session; and
+homepages must remain public. Check both the
 custom domain and Pages deployment hostname. Do not upload credentials to logs.
 
 ## Pre-deploy checklist
