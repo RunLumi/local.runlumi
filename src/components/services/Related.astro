@@ -1,0 +1,6 @@
+---
+import {pages} from '../../services/content';
+import {serviceRoutes} from '../../services/routes.js';
+const {locale,keys}=Astro.props;
+---
+<section class="service-related"><h2>{locale==='vi'?'Phần liên quan tới nhu cầu này.':'Related to this need.'}</h2><div>{keys.map(k=><a class="text-link" href={serviceRoutes[k][locale]}>{pages.find(p=>p.key===k)?.[locale].label} ↗</a>)}</div></section>

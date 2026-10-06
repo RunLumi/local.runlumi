@@ -55,3 +55,7 @@ Removed drift from this contract: unmeasured “fast/high-speed hosting”, rene
 ## Blog extension — 2026-10-06
 
 The VI `/blog/` and EN `/en/blog/` use the same offer and exact CTA, imported from `src/content/copy.js`. Blog-specific educational text is maintained in `src/blog/content/` for the reviewed release snapshot and in EmDash after activation. It must follow [content-guideline.md](content-guideline.md), retain Google ownership/review boundaries, and distinguish owner DIY from Lumi's commercial scope. Canonical homepage section strings remain single-source; the blog does not duplicate the homepage implementation.
+
+## Service and industry pages
+
+Localized service/industry content is maintained in src/services/content.ts with the route map in src/services/routes.js. Page-intent CTAs follow docs/GOAL_BILINGUAL_SERVICE_PAGES.md: Check my business / Kiểm tra business của tôi for public checks, Show me the Trust Kit for my business / Xem Trust Kit cho business của tôi for QR, and the canonical preview CTA for websites/industries. All use EnquiryForm.astro and /api/enquiries. Only allowlisted source, locale, intent and offer context is forwarded to intake; no third-party analytics is added. These pages preserve the offer and Google/review boundaries above.

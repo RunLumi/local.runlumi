@@ -9,7 +9,7 @@ Production origin: **https://local.runlumi.app**
 - output: static
 - build command: `npm run build`
 - output directory: `dist`
-- Node: >=22.12
+- Node: 24.19.0 (see `.node-version`)
 
 ## Automatic production deployment
 

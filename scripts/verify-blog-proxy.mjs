@@ -17,6 +17,7 @@ for(const path of ['/blog/','/en/blog/','/blog/dich-vu-google-maps/','/en/blog/d
   assert.doesNotMatch(body,/@vite\/client|\/@fs\/|\/node_modules\//,'Release check requires compiled CMS output, not the Astro dev server.');
  }
 }
+// The local release verifier requires BLOG_ADMIN_READY=true in the secret-free fixture.
 const first=await read('/_emdash/admin/login');assert.equal(first.response.status,200);
 const policy=first.response.headers.get('Content-Security-Policy');
 const nonce=policy.match(/'nonce-([^']+)'/)?.[1];assert.ok(nonce);
@@ -27,7 +28,7 @@ for(const path of assets){const {response}=await read(path);assert.equal(respons
 const second=await read('/_emdash/admin/login');assert.notEqual(second.response.headers.get('Content-Security-Policy'),policy);
 for(const path of ['/_emdash/api/auth/dev-bypass','/_emdash/api/setup/dev-bypass'])assert.ok([403,404].includes((await read(path)).response.status),'Development bypass must be disabled in the compiled Worker.');
 assert.ok([401,403].includes((await read('/_emdash/api/content/posts')).response.status),'Anonymous visitor must not read the admin content API.');
-for(const path of ['/data/','/data/keywords.csv'])assert.equal((await read(path)).response.status,503,'Private research must fail closed with no auth secret.');
+for(const path of ['/data/','/data/keywords.csv'])assert.ok([404,503].includes((await read(path)).response.status),'Private research must be absent or fail closed with no auth secret.');
 const enquiry=await fetch(new URL('/api/enquiries',root),{method:'POST',headers:{'Content-Type':'application/json',Origin:root.origin},body:JSON.stringify({name:'Synthetic Test',business:'Synthetic integration check',phone:'0908123456',consent:true,locale:'en'})});
 assert.equal(enquiry.status,503,'This verifier requires the secret-free preview; no external delivery.');assert.equal((await enquiry.json()).ok,false);
 console.log(`PASS: compiled CMS through real Pages service binding; ${assets.size} admin assets, nonce policy, disabled dev bypass, anonymous API denial, private-data denial and secret-free enquiry failure.`);

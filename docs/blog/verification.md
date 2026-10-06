@@ -43,3 +43,9 @@ Revalidated 2026-10-06. The original local CMS at port 4324 remained live. Two t
 - **Checks:** 38 regression tests passed, including the build-credential exclusion; CMS build and post-build cleanup passed. Artifact inspection confirms no credential files or private data HTML/CSV remain in dist-blog.
 
 Production deployment, first-admin custody, hosted CI and search/business outcomes remain separate, unperformed release steps.
+
+## Isolated release PR — 2026-10-06
+
+Prepared from GitHub main dae9e74a072dacb83e1af3ee1a82f81f90db961e in /private/tmp/lumi-local-release-20261006, branch codex/emdash-local-blog. The source research/CSV are included as internal docs in the private repository; the unfinished /data dashboard/auth implementation is excluded and preserved in the original checkout. The isolated slice has 23 passing tests (the previous 38 included unrelated dashboard tests). Static build, seed validation and CMS build passed. Added default-deny first-admin setup locking and regression checks. Hosted CI and production evidence are recorded in the release entry when available.
+
+Concurrent upstream integration: PR #15 merged during release preparation, bringing the earlier journal/private research changes to main at 1c410361d5c728d7b19e2c7dcb99e876bf734ab5. PR #16 now preserves that entire implementation and adds only service pages, first-admin/release guards and final release configuration. Earlier isolated-slice counts are historical; final combined checks supersede them below.

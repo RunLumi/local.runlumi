@@ -9,8 +9,10 @@ interface Props {
   title: string;
   description: string;
   noindex?: boolean;
+  routePair?: {vi:string;en:string};
+  schema?: object;
 }
-const { locale, title, description, noindex = false } = Astro.props;
+const { locale, title, description, noindex = false, routePair = {vi:"/",en:"/en/"}, schema } = Astro.props;
 const origin = 'https://local.runlumi.app';
 const canonical = new URL(Astro.url.pathname, origin).href;
 // PNG, not SVG: Facebook and Zalo link previews do not render SVG images.
@@ -19,7 +21,7 @@ const socialAlt = locale === 'vi'
   ? 'Lumi Local — Trước khi khách ghé, cho họ lý do chọn bạn. Starter 1.990.000đ năm đầu.'
   : 'Lumi Local — Before they visit, give them a reason to choose you. Starter 1,990,000 VND for year one.';
 // Mirrors PRICING.md. Describes the offer only: no ratings, reviews or results.
-const structuredData = {
+const defaultStructuredData = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Lumi Local',
@@ -45,9 +47,9 @@ const structuredData = {
     <script is:inline src="/boot.js"></script>
     {!noindex && <>
       <link rel="canonical" href={canonical} />
-      <link rel="alternate" hreflang="vi" href={origin + '/'} />
-      <link rel="alternate" hreflang="en" href={origin + '/en/'} />
-      <link rel="alternate" hreflang="x-default" href={origin + '/'} />
+      <link rel="alternate" hreflang="vi-VN" href={origin + routePair.vi} />
+      <link rel="alternate" hreflang="en-VN" href={origin + routePair.en} />
+      <link rel="alternate" hreflang="x-default" href={origin + routePair.vi} />
     </>}
     <link rel="icon" href="/brand/lumi-logo.svg" type="image/svg+xml" />
     <meta property="og:type" content="website" />
@@ -67,7 +69,7 @@ const structuredData = {
     <meta name="twitter:image" content={socialImage} />
     <meta name="twitter:image:alt" content={socialAlt} />
     <title>{title}</title>
-    {!noindex && <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />}
+    {!noindex && <script is:inline type="application/ld+json" set:html={JSON.stringify(schema ?? defaultStructuredData).replace(/</g, "\\u003c")} />}
   </head>
   <body>
     <a class="skip-link" href="#main">{locale === 'vi' ? 'Bỏ qua đến nội dung' : 'Skip to content'}</a>

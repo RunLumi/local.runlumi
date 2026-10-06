@@ -1,0 +1,50 @@
+---
+import { copy } from '../content/copy.js';
+import ServiceIcon from './ServiceIcon.astro';
+const { locale, context } = Astro.props;
+const c = copy[locale];
+---
+      <form id="enquiry-form" class="sheet enquiry-form" method="post" action="/api/enquiries">
+        <input type="hidden" name="locale" value={locale} />
+        {context && <><input type="hidden" name="source" value={context.source}/><input type="hidden" name="page_slug" value={context.page_slug}/><input type="hidden" name="cta_intent" value={context.cta_intent}/><input type="hidden" name="offer_interest" value={context.offer_interest}/></>}
+        <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off" /></div>
+        <label class="full field-label">
+          <span class="label-title">{c.form.business} <span class="required-mark">*</span></span>
+          <input name="business" type="text" maxlength="160" autocomplete="organization" required placeholder={locale === 'vi' ? 'Ví dụ: Mộc Beauty Spa' : 'e.g., Downtown Auto Repair'} />
+        </label>
+        <label class="field-label">
+          <span class="label-title">{c.form.name} <span class="required-mark">*</span></span>
+          <input name="name" type="text" maxlength="80" autocomplete="name" required placeholder={locale === 'vi' ? 'Tên bạn' : 'Your name'} />
+        </label>
+        <label class="field-label">
+          <span class="label-title">{c.form.phone} <span class="required-mark">*</span></span>
+          <input name="phone" type="tel" maxlength="40" autocomplete="tel" inputmode="tel" required pattern="(?=(?:\D*\d){8,15}\D*$)[0-9+.\s\(\)\-]{8,40}" title={c.form.phoneFormat} placeholder="0908 xxx xxx" />
+          <small class="field-hint">{c.form.phoneHint}</small>
+        </label>
+        <details class="optional-fields full">
+          <summary class="optional-summary">
+            <span>{locale === 'vi' ? 'Thêm email hoặc ghi chú (không bắt buộc)' : 'Add email or a note (optional)'}</span>
+            <span class="toggle-icon">+</span>
+          </summary>
+          <div class="optional-grid">
+            <label class="field-label full">
+              <span class="label-title">{c.form.email}</span>
+              <input name="email" type="email" maxlength="254" autocomplete="email" placeholder="email@example.com" />
+            </label>
+            <label class="field-label full">
+              <span class="label-title">{c.form.note}</span>
+              <textarea name="note" rows="3" maxlength="1000" placeholder={locale === 'vi' ? 'Ví dụ: chưa có website, muốn có bảng giá và QR đặt quầy' : 'e.g., no website yet; want a price list and a counter QR'}></textarea>
+            </label>
+          </div>
+        </details>
+        <label class="consent full">
+          <input name="consent" type="checkbox" value="yes" required />
+          <span>{c.form.consent}</span>
+        </label>
+        <p class="form-status full" id="form-status" role="status" aria-live="polite" data-success={c.form.success} data-error={c.form.error} data-invalid={c.form.invalid}></p>
+        <button class="button button-primary full submit-btn" type="submit">
+          <span class="submit-label">{c.form.submit}</span>
+          <ServiceIcon name="arrow" size={16} class="submit-arrow" />
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+      </form>

@@ -1,3 +1,4 @@
+import { validatedContext } from '../../src/services/routes.js';
 const MAX_BODY = 24 * 1024;
 
 const limits = {
@@ -135,6 +136,7 @@ export async function onRequestPost({ request, env }) {
     return respond(request, 503, { ok: false, error: 'unavailable' }, data.locale);
   }
 
+  const context = validatedContext(raw);
   const lines = [
     '**Lumi Local enquiry**',
     'Name: ' + escapeDiscord(data.name),
@@ -142,6 +144,7 @@ export async function onRequestPost({ request, env }) {
     'Phone/Zalo: ' + escapeDiscord(data.phone),
     data.email ? 'Email: ' + escapeDiscord(data.email) : null,
     'Locale: ' + escapeDiscord(data.locale || 'vi'),
+    context ? 'Source: ' + context.source + ' | Intent: ' + context.cta_intent + ' | Offer: ' + context.offer_interest : null,
     data.note ? 'Note: ' + escapeDiscord(data.note) : null
   ].filter(Boolean);
 

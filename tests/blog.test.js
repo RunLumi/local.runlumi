@@ -34,7 +34,7 @@ test('optional CMS proxy preserves static mode, forwards auth unchanged and fail
  assert.equal(await (await proxyBlog({request,env:{},next:()=>new Response('static')})).text(),'static');
  assert.equal((await proxyBlog({request:new Request('https://local.runlumi.app/_emdash/admin'),env:{},next:()=>new Response('bad')})).status,404);
  let seen;
- const r=await proxyBlog({request:new Request('https://local.runlumi.app/_emdash/api/content/posts',{method:'POST',body:'synthetic',headers:{Origin:'https://local.runlumi.app'}}),env:{BLOG:{fetch:async req=>{seen=req;return new Response('saved',{headers:{'Set-Cookie':'synthetic=value; HttpOnly'}});}}}});
+ const r=await proxyBlog({request:new Request('https://local.runlumi.app/_emdash/api/content/posts',{method:'POST',body:'synthetic',headers:{Origin:'https://local.runlumi.app'}}),env:{BLOG_ADMIN_READY:'true',BLOG:{fetch:async req=>{seen=req;return new Response('saved',{headers:{'Set-Cookie':'synthetic=value; HttpOnly'}});}}}});
  assert.equal(seen.headers.get('Origin'),'https://local.runlumi.app');assert.equal(seen.method,'POST');assert.equal(await seen.text(),'synthetic');
  assert.equal(r.headers.get('Cache-Control'),'no-store');assert.equal(r.headers.get('X-Robots-Tag'),'noindex, nofollow');assert.match(r.headers.get('Set-Cookie'),/HttpOnly/);
  const fail=await proxyBlog({request,env:{BLOG:{fetch:async()=>{throw new Error('unavailable');}}}});

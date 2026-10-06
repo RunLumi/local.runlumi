@@ -3,10 +3,34 @@
   "name": "lumi-local-blog",
   "main": "@astrojs/cloudflare/entrypoints/server",
   "compatibility_date": "2026-09-30",
-  "compatibility_flags": ["nodejs_compat"],
-  "assets": { "binding": "ASSETS", "directory": "./dist-blog/client" },
-  "d1_databases": [{ "binding": "BLOG_DB", "database_name": "lumi-local-blog" }],
-  "r2_buckets": [{ "binding": "BLOG_MEDIA", "bucket_name": "lumi-local-blog-media" }],
-  "observability": { "enabled": false },
-  "workers_dev": false
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist-blog/client"
+  },
+  "d1_databases": [
+    {
+      "binding": "BLOG_DB",
+      "database_name": "lumi-local-blog",
+      "database_id": "651785e4-6d66-42f7-8e8b-5e93d79d20a1"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "BLOG_MEDIA",
+      "bucket_name": "lumi-local-blog-media"
+    }
+  ],
+  "observability": {
+    "enabled": false
+  },
+  "workers_dev": false,
+  "kv_namespaces": [
+    {
+      "binding": "SESSION",
+      "id": "5c4b76a293fd48e1aa366df84069b438"
+    }
+  ]
 }

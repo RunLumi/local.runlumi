@@ -1,6 +1,6 @@
 # Lumi Local blog operations
 
-Built 2026-10-06. No production deployment performed by this task. Editorial contract: [content-guideline.md](../../content-guideline.md); prioritization: [keyword-plan.md](keyword-plan.md); adaptation: [REEF.md](REEF.md); verification: [verification.md](verification.md).
+Built 2026-10-06. Release PR preparation; live activation is recorded below when verified. Editorial contract: [content-guideline.md](../../content-guideline.md); prioritization: [keyword-plan.md](keyword-plan.md); adaptation: [REEF.md](REEF.md); verification: [verification.md](verification.md).
 
 ## Shape
 
@@ -15,7 +15,7 @@ Built 2026-10-06. No production deployment performed by this task. Editorial con
 | /sitemap.xml | src/pages/sitemap.xml.js | Indexable landing/blog pages only |
 | /_emdash/admin | EmDash | Drafts, revisions, explicit publication |
 
-EN mirrors blog routes under /en/. The keyword CSV and authenticated /data dashboard stay private. No Pages Function is replaced for enquiries or data authentication.
+EN mirrors blog routes under /en/. The keyword CSV and authenticated /data dashboard are now upstream on main from PR #15; all password/session/build-extraction guards are preserved. No Pages Function is replaced for enquiries or data authentication.
 
 ## Runtime and local start
 
@@ -53,7 +53,7 @@ The title/description fields drive public metadata. Built-in SEO-panel overrides
 ## Production topology — preparation, not deployment
 
 1. Keep the existing Pages site for landing, enquiries and protected research. Build it with npm run build. The added Functions proxy blog/admin/CMS asset/sitemap routes through optional service binding **BLOG**.
-2. Build the CMS Worker with npm run build:blog. Output: dist-blog/server/wrangler.json and dist-blog/client/. Private data HTML/CSV and adapter-generated `.dev.vars`/`.env` copies are removed by the post-build guard before the output is ready for deployment. Deploy only the generated Worker config; the source config is for adapter/dev generation. Do not deploy dist-blog as the primary Pages site: it does not run the Pages enquiry/data Functions.
+2. Build the CMS Worker with npm run build:blog. Output: dist-blog/server/wrangler.json and dist-blog/client/. Any private data HTML/CSV in a shared development build and adapter-generated `.dev.vars`/`.env` copies are removed by the post-build guard before the output is ready for deployment. Deploy only the generated Worker config; the source config is for adapter/dev generation. Do not deploy dist-blog as the primary Pages site: it does not run the Pages enquiry/data Functions.
 3. Worker resources: BLOG_DB (D1), BLOG_MEDIA (R2), adapter-generated SESSION (KV). Names/config are in wrangler.blog.jsonc. workers_dev is disabled; publishing resources/bindings is an explicit release action and can affect hosting costs. No resources were created remotely here.
 4. For a new production CMS, use an owner-controlled passkey and the official setup flow at the final public origin. Keep the initial uninitialized Worker inaccessible to the public while claiming the first admin: use an authorized staging/Access boundary or a private preview, complete setup, then enable the public service binding. Do not expose an unclaimed setup wizard. Never copy a local dev-admin database to production.
 5. After the Worker is initialized, add the Pages service binding BLOG pointing to lumi-local-blog in the appropriate production/preview environment. No DNS change is needed. Deploy Pages with the route manifest. All CMS assets use /_blog-assets/ to avoid collisions with the static landing's /_astro/ files. Preserve Origin, cookies and request body through the binding.
@@ -79,3 +79,15 @@ Search visibility, AI citations and paid sales are unmeasured. Keyword estimates
 For compiled runtime testing, use an isolated consistent SQLite backup of local development D1/KV metadata and a copied build under a private temporary directory; do not read or copy production data. Run its generated config with `wrangler dev --local`, a distinct name and local persistence directory, then point the temporary Pages service binding to that name. Never copy a local dev admin database to a real deployment. Stop both task-owned previews after checking; the owner's original Astro CMS preview remains separate.
 
 Build safety: Astro's adapter can create local credential copies in the server output. `scripts/protect-blog-build.mjs` removes credential filenames recursively **before** extracting private research. The guard removes only generated output; the source `.dev.vars` is untouched. Deploy only after `npm run build:blog` exits successfully, never a raw or interrupted `astro build` directory.
+
+## Production first-admin lock
+
+`server/blog-setup-lock.js` protects all `/_emdash/` routes whenever a BLOG service binding exists and `BLOG_ADMIN_READY` is not the string `true`. With no strong `BLOG_SETUP_TOKEN`, editor routes return 503. With a temporary encrypted setup token, they require HTTP Basic username `owner` and that token; incorrect/malformed requests return 401 before any CMS request. Public blog routes stay readable.
+
+Bootstrap a newly created D1 from a fresh seed-only database with zero users, sessions, API tokens or passkeys; never copy the local development admin. Keep `workers_dev` disabled. Save a generated setup token only to an encrypted Pages secret and a private temporary owner handoff file; never into Git, build output or terminal arguments. Preserve existing Pages secrets when changing service bindings. After the owner registers a passkey, verify one real administrator and completed setup in D1, set `BLOG_ADMIN_READY=true` for production, delete the temporary secret and deploy the Pages update. The owner must perform passkey registration. Check the setup lock on both the custom domain and Pages alias.
+
+CMS Worker deploy uses `wrangler deploy --config dist-blog/server/wrangler.json` after a successful CMS build. D1, R2 and SESSION IDs are explicit in wrangler.blog.jsonc. The existing GitHub Pages token has Pages scope; it is not assumed to authorize CMS Worker deployment. Future CMS code releases require an authorized Worker deployment before/alongside the normal Pages release.
+
+The CMS post-build guard also clears only its generated `.wrangler/deploy/config.json` redirect. This prevents a subsequent Pages deployment from reading the CMS Worker config. Worker releases still use the explicit dist-blog/server/wrangler.json. Other generated redirects are preserved.
+
+Final release evidence: [RELEASE-2026-10-06.md](../RELEASE-2026-10-06.md). `node scripts/verify-release.mjs` performs only read-only production checks; it sends no enquiries or credentials.

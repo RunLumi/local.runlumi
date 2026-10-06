@@ -24,7 +24,7 @@ try {
  const current=await client.get('posts',id);
  await client.update('posts',id,{_rev:current._rev,data:{title:'Synthetic CMS updated without rebuilding'},locale:'vi'});
  await client.publish('posts',id);
- assert.ok((await fetchPage('/blog/'+slug+'/')).body.includes('Synthetic CMS updated without rebuilding')); 
+ assert.ok((await fetchPage('/blog/'+slug+'/')).body.includes('Synthetic CMS updated without rebuilding'));
  await client.unpublish('posts',id);
  assert.equal((await fetchPage('/blog/'+slug+'/')).status,404);
  for(const path of ['/blog/','/blog/rss.xml','/sitemap.xml'])assert.ok(!(await fetchPage(path)).body.includes(slug));

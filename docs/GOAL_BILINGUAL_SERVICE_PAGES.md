@@ -1,6 +1,6 @@
 # /goal - Lumi Local bilingual service-page expansion
 
-**Status:** implementation goal  
+**Status:** implemented; production proof is recorded in the release log
 **Primary market:** Vietnam  
 **Languages:** Vietnamese + English  
 **Production origin:** https://local.runlumi.app  
@@ -1083,3 +1083,10 @@ The desired reaction is:
 And in English:
 
 > **"This matches the problem I searched for. The scope is clear, the price is clear, and I keep control of Google. Show me what Lumi would do for my business."**
+
+
+## Implementation evidence — 2026-10-06
+
+All seven VI/EN pairs are implemented from src/services/content.ts and src/services/routes.js through shared templates, form, scope, pricing, FAQs and related links. The homepage links to every route. Locale metadata uses reciprocal vi-VN/en-VN/x-default and self-canonicals. The sitemap reads the same route map. Source/intent/offer context is allowlisted at /api/enquiries and sent only to the existing intake; no analytics provider was added.
+
+Pre-copy search review is recorded in SERVICE-PAGE-RESEARCH-2026-10-06.md. Local rendered QA covered all 14 routes at exact CSS widths 320/375/768/1440 (56 cases), with no horizontal overflow or missing anchors. Screenshots and measurements: /private/tmp/lumi-service-visual-qa. Service/industry heroes at each width and full website/auto layouts were visually reviewed; local form submission to a missing-secret endpoint reports failure and retains fields. Automated metadata/link/pricing/source-context tests run with the build. Live production verification follows the authorized release; no search/business outcome is assumed.

@@ -1,9 +1,15 @@
+import { checkBlogSetupAccess } from './blog-setup-lock.js';
+
 // Optional same-origin CMS service binding. Static snapshots remain the default.
 export async function proxyBlog(context) {
   const path = new URL(context.request.url).pathname;
   if (!context.env.BLOG) {
     if (path.startsWith('/_emdash/') || path.startsWith('/_blog-assets/')) return new Response('Not found',{status:404});
     return context.next();
+  }
+  if(path.startsWith('/_emdash/') || path==='/_emdash') {
+    const denied=await checkBlogSetupAccess(context.request,context.env);
+    if(denied) return denied;
   }
   try {
     const response = await context.env.BLOG.fetch(context.request);

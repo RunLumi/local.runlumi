@@ -29,3 +29,5 @@ The largest raw estimates include google google maps / map gg (110,000), báº£n Ä
 ## Decision gates
 
 See [content-guideline.md](../../content-guideline.md) for measurement, paid-signal thresholds and stop rules. Initial work is a bounded five-intent test; not authorization to mass-generate every row in this CSV. Re-export with documented Vietnam/location/language/match settings before treating the estimates as current. Use actual page-level Search Console data after authorized publication to revise priorities.
+
+Release custody: this CSV and the source memo are internal documentation in the private GitHub repository; neither is copied into public assets. The authenticated keyword dashboard was merged separately in PR #15 and its privacy guards are preserved.

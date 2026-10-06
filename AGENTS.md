@@ -103,3 +103,7 @@ Before long-task interruption/compaction, record a redacted checkpoint and reval
 ## Lumi Local blog
 
 Before editing guides, read [content-guideline.md](content-guideline.md), [docs/blog/README.md](docs/blog/README.md) and [the keyword plan](docs/blog/keyword-plan.md). Reef adaptation provenance is in docs/blog/REEF.md. Static release snapshots live in src/blog/content/; after CMS activation EmDash is the editorial source. Never replace live database edits with a seed fallback. Keep Google DIY guides distinct from Lumi's offer; no managed Maps, ranking, verification or review promises. Run both static and CMS builds, preserve private /data isolation, and distinguish local publishing proof from a production deployment.
+
+## Service/industry expansion
+
+Use docs/GOAL_BILINGUAL_SERVICE_PAGES.md, docs/SERVICE-PAGE-RESEARCH-2026-10-06.md and src/services/routes.js. Keep localized equivalent routes, reciprocal vi-VN/en-VN alternates and a shared EnquiryForm. Only allowlisted non-PII source context reaches intake. Do not add trackers, indexed recovery/verification offers or city doorway pages.
