@@ -1,0 +1,59 @@
+---
+import Blog from '../../layouts/Blog.astro';
+import PostCard from './PostCard.astro';
+import RichText from './RichText.astro';
+import TableOfContents from './TableOfContents.astro';
+import { getPosts } from '@blog/source';
+import { articleUrl, base, origin, topics, topicFor, readingMinutes, dateLabel } from '../../blog/site.js';
+const { locale } = Astro.props;
+const en = locale === 'en';
+const path = Astro.params.path ?? '';
+const posts = await getPosts(locale);
+const translations = await getPosts(en ? 'vi' : 'en');
+const article = posts.find(p => p.slug === path);
+const topic = path.startsWith('topics/') ? topicFor(path.slice(7)) : undefined;
+const search = path === 'search';
+const about = path === 'about';
+const index = !path;
+const found = index || search || about || (topic && posts.some(p=>p.topic===topic.slug)) || article;
+if (!found) Astro.response.status = 404;
+const list = topic ? posts.filter(p=>p.topic===topic.slug) : posts;
+const featured = index ? list.find(p=>p.featured) ?? list[0] : undefined;
+const title = article?.title ?? (topic ? topic[locale] : search ? (en ? 'Find a guide' : 'Tìm bài hướng dẫn') : about ? (en ? 'How we publish' : 'Cẩm nang này được viết như thế nào?') : found ? (en ? 'Local presence, explained.' : 'Hiểu rõ trước khi thuê.') : (en ? 'Guide not found' : 'Không tìm thấy bài'));
+const description = article?.description ?? (topic ? topic.description[locale] : en ? 'Practical guides for local owners: Google Maps, ownership, websites and honest customer reviews.' : 'Hướng dẫn cho chủ cơ sở: Google Maps, quyền sở hữu, website và đánh giá trung thực.');
+const alternatePath = article ? (translations.some(p=>p.slug===article.slug) ? path : undefined) : found ? path : undefined;
+const schema = article ? [
+  {'@type':'Article','@id':origin+articleUrl(article)+'#article',mainEntityOfPage:origin+articleUrl(article),headline:article.title,description:article.description,datePublished:article.pub_date,dateModified:article.reviewed_date,inLanguage:locale,author:{'@type':'Organization',name:'Lumi Local',url:origin+base(locale)+'about/'},publisher:{'@id':origin+'/#organization'},image:origin+`/social-card-${locale}.png`,articleSection:topicFor(article.topic)?.[locale],citation:(article.sources ?? []).map(s=>s.url)},
+  {'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:en ? 'Journal' : 'Cẩm nang',item:origin+base(locale)},{'@type':'ListItem',position:2,name:article.title,item:origin+articleUrl(article)}]}
+] : {'@type':'CollectionPage',name:title,url:origin+base(locale)+(path?path+'/':''),inLanguage:locale};
+const related = article ? posts.filter(p=>(article.related ?? []).includes(p.slug)).slice(0,3) : [];
+---
+<Blog locale={locale} title={title} description={description} path={path} alternatePath={alternatePath} article={article} schema={schema} noindex={search || !found}>
+  <main id="main" class="wrap journal-main">
+    <nav class="topic-nav" aria-label={en ? 'Topics' : 'Chủ đề'}><a href={base(locale)} aria-current={index ? 'page' : undefined}>{en ? 'All guides' : 'Tất cả bài'}</a>{topics.filter(t=>posts.some(p=>p.topic===t.slug)).map(t=><a href={`${base(locale)}topics/${t.slug}/`} aria-current={topic?.slug===t.slug ? 'page' : undefined}>{t[locale]}</a>)}</nav>
+    {article ? <>
+      <header class="article-heading"><a class="eyebrow" href={`${base(locale)}topics/${article.topic}/`}>{topicFor(article.topic)?.[locale]}</a><h1>{article.title}</h1><p class="article-lede">{article.description}</p><div class="article-meta"><a href={base(locale)+'about/'}>Lumi Local</a><span>{readingMinutes(article)} {en ? 'min read' : 'phút đọc'}</span><time datetime={article.pub_date}>{dateLabel(article.pub_date,locale)}</time><span>{en ? 'Sources checked: ' : 'Kiểm tra nguồn: '}{dateLabel(article.reviewed_date,locale)}</span></div></header>
+      <div class="article-grid"><TableOfContents content={article.content} locale={locale}/><article class="article-body"><div class="short-answer"><p class="eyebrow">{en ? 'The short answer' : 'Trả lời ngắn'}</p><p>{article.answer}</p></div><RichText value={article.content}/><section class="article-sources" id="sources"><h2>{en ? 'Sources & scope' : 'Nguồn & phạm vi'}</h2><p>{en ? 'Official documentation, checked on the date above. Screens and policies may change. Lumi sells the offer described here; these guides do not establish ranking or customer results.' : 'Tài liệu chính thức, được kiểm tra vào ngày ghi trên bài. Giao diện và chính sách có thể thay đổi. Lumi bán gói dịch vụ được mô tả ở đây; bài hướng dẫn không chứng minh thứ hạng hay kết quả khách hàng.'}</p><ol>{(article.sources ?? []).map(s=><li><a href={s.url} rel="noopener">{s.label}</a></li>)}</ol><a class="text-link" href={base(locale)+'about/'}>{en ? 'Our editorial policy' : 'Cách chúng tôi kiểm tra và sửa bài'} →</a></section></article></div>
+      {related.length>0 && <section class="related-guides"><h2>{en ? 'Read next' : 'Đọc tiếp'}</h2><div class="post-grid">{related.map(post=><PostCard post={post}/>)}</div></section>}
+    </> : about ? <article class="editorial-policy article-body"><p class="eyebrow">Lumi Local Journal</p><h1>{title}</h1><p>{en ? 'This journal is published by Lumi Local for local business owners in Vietnam. Lumi sells websites, owner-confirmed directions links and print-ready QR artwork. That commercial relationship matters when reading our service comparisons.' : 'Lumi Local xuất bản cẩm nang dành cho chủ cơ sở kinh doanh tại Việt Nam. Lumi bán website, liên kết chỉ đường do chủ xác nhận và file QR sẵn để in. Quan hệ thương mại này cần được hiểu khi đọc bài lựa chọn dịch vụ.'}</p><h2>{en ? 'What counts as evidence' : 'Bằng chứng được dùng ra sao'}</h2><p>{en ? 'Google documentation supports platform claims. Our offer follows the published scope. Hypothetical examples are labelled and are not customer results. We do not invent authors, qualifications, testimonials or rankings.' : 'Thông tin về nền tảng dựa trên tài liệu Google. Gói Lumi theo phạm vi được công bố. Ví dụ giả định có nhãn và không phải kết quả khách hàng. Chúng tôi không dựng tác giả, bằng cấp, lời chứng thực hay thứ hạng.'}</p><h2>{en ? 'AI assistance and corrections' : 'AI hỗ trợ và việc sửa bài'}</h2><p>{en ? 'These initial guides were prepared with AI assistance from repository research and checked against the primary sources linked on each page. They are not field-tested case studies. Source-check dates are shown separately from publication dates. Material corrections require a new check date and an editorial record.' : 'Các bài đầu tiên được soạn với AI hỗ trợ từ nghiên cứu trong repository và đối chiếu nguồn chính thức được dẫn ở từng bài. Chúng chưa phải case study từ triển khai thực tế. Ngày kiểm tra nguồn được ghi riêng với ngày xuất bản. Sửa đổi quan trọng cần ngày kiểm tra mới và ghi nhận biên tập.'}</p><h2>{en ? 'Ownership and review boundaries' : 'Quyền sở hữu và đánh giá'}</h2><p>{en ? 'Owners keep their Google accounts. Lumi does not create, verify or manage Business Profiles. Review invitations welcome all genuine customers without rewards or a requested rating. We make no ranking, traffic, lead or revenue guarantees.' : 'Chủ giữ tài khoản Google. Lumi không tạo, xác minh hoặc quản lý Business Profile. Lời mời đánh giá dành cho tất cả khách thật, không quà tặng hay yêu cầu mức sao. Không bảo đảm thứ hạng, traffic, lead hoặc doanh thu.'}</p><p>{en ? 'For a correction, use the Lumi enquiry form and include the article link, claim and source.' : 'Để báo lỗi, dùng form liên hệ Lumi, kèm link bài, thông tin cần sửa và nguồn đối chiếu.'}</p><a class="text-link" href={(en?'/en/':'/')+'#bat-dau'}>{en ? 'Contact Lumi' : 'Liên hệ Lumi'} →</a></article> : !found ? <header class="journal-heading"><h1>{title}</h1><p>{en ? 'This page may be unpublished or unavailable in this language.' : 'Bài có thể chưa xuất bản hoặc chưa có bản dịch ở ngôn ngữ này.'}</p><a class="text-link" href={base(locale)}>{en ? 'Browse guides' : 'Xem cẩm nang'} →</a></header> : <>
+      <header class="journal-heading"><p class="eyebrow">Lumi Local Journal</p><h1>{title}</h1><p>{topic ? topic.description[locale] : en ? 'Google Maps, honest reviews and the information customers need. Practical notes for the owner who wants to know what they are paying for.' : 'Google Maps, đánh giá trung thực và thông tin khách cần. Những hướng dẫn để chủ cơ sở biết việc nào tự làm, việc nào đáng thuê.'}</p></header>
+      {search && <form class="blog-search" role="search"><label for="guide-query">{en ? 'Search titles and summaries' : 'Tìm trong tiêu đề và tóm tắt'}</label><div><input id="guide-query" name="q" type="search" placeholder={en ? 'Try verification or QR…' : 'Thử “xác minh”, “QR”…'} autocomplete="off"/><button class="button button-primary" type="submit">{en ? 'Search' : 'Tìm bài'}</button></div><p class="meta" data-search-status aria-live="polite">{en ? 'All published guides are listed below. Search stays in your browser.' : 'Tất cả bài đã xuất bản ở bên dưới. Tìm kiếm chạy trong trình duyệt.'}</p></form>}
+      {featured && <PostCard post={featured} featured/>}
+      <section class="archive-section" aria-label={en ? 'Guides' : 'Bài hướng dẫn'}>{index && <div class="archive-heading"><h2>{en ? 'Start with your question.' : 'Bắt đầu từ việc bạn cần.'}</h2><a class="text-link" href={base(locale)+'search/'}>{en ? 'Find a guide' : 'Tìm bài hướng dẫn'} →</a></div>}<div class="post-grid" data-search-results>{list.filter(p=>p!==featured).map(post=><div data-search-text={`${post.title} ${post.description} ${topicFor(post.topic)?.[locale]}`}><PostCard post={post}/></div>)}</div></section>
+    </>}
+  </main>
+</Blog>
+<script>
+  const form = document.querySelector<HTMLFormElement>('.blog-search');
+  if (form) {
+    const input = form.querySelector<HTMLInputElement>('input')!;
+    const entries = Array.from(document.querySelectorAll<HTMLElement>('[data-search-text]'));
+    const status = form.querySelector<HTMLElement>('[data-search-status]')!;
+    const normalize = (s:string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/Đ/g,'D').toLowerCase();
+    const filter = () => { const words=normalize(input.value.trim()).split(/\s+/).filter(Boolean);let count=0;
+      entries.forEach(el=>{const text=normalize(el.dataset.searchText!);el.hidden=!words.every(w=>text.includes(w));if(!el.hidden)count++;});
+      status.textContent=document.documentElement.lang==='vi' ? `${count} bài phù hợp. Tìm kiếm chạy trong trình duyệt.` : `${count} matching guides. Search stays in your browser.`;
+    };
+    form.addEventListener('submit',e=>{e.preventDefault();filter();});input.addEventListener('input',filter);
+  }
+</script>

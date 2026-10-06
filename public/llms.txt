@@ -1,21 +1,16 @@
 # Lumi Local
 
-> Done-for-you online presence for Vietnamese local businesses.
+> Practical owner-first guides about local presence in Vietnam. Lumi supplies websites, owner-confirmed directions links and print-ready honest-review QR artwork. It does not create, verify or manage Google Business Profiles, and makes no ranking, lead or revenue guarantees.
 
-Official page: https://local.runlumi.app/
+## Publication
+- [Vietnamese journal](https://local.runlumi.app/blog/)
+- [English journal](https://local.runlumi.app/en/blog/)
+- [Editorial policy](https://local.runlumi.app/blog/about/)
+- [Vietnamese RSS](https://local.runlumi.app/blog/rss.xml)
+- [English RSS](https://local.runlumi.app/en/blog/rss.xml)
 
-## Current offer
+## Scope and pricing
+- [Lumi Local offer](https://local.runlumi.app/): Starter 1,990,000 VND year one. Optional Trust Kit 399,000 VND once, fully credited for upgrade within 30 days. Renewal from year two: 599,000 VND/year with RunLumi address or 999,000 VND/year with one standard custom domain. Confirm eligibility and cost before payment. Printing and physical stands excluded.
 
-- Trust Kit: 399,000 VND one-time.
-- Lumi Local Starter: 1,990,000 VND for year one.
-- Trust Kit is fully credited if upgrading to Starter within 30 days.
-- Renewal: 599,000 VND/year with a RunLumi Address or 999,000 VND/year with one standard custom domain.
-- Lumi does not require Google Business Profile edit access for this offer.
-- Lumi does not guarantee Google ranking, leads, customers or revenue.
-
-## Pages
-
-- Vietnamese: https://local.runlumi.app/
-- English: https://local.runlumi.app/en/
-
-Maintained by RunLumi: https://runlumi.app/
+## Operator
+- [RunLumi](https://runlumi.app/): Maintains Lumi Local.

@@ -264,3 +264,7 @@ Use one plain-language customer question in the hero instead of three numbered s
 - No status dot without status semantics: the hero eyebrow carries no “live” indicator.
 - Phones: illustrative examples are a horizontal snap rail with the next card peeking; principle cards are compact rows; deliverable icons sit beside their titles.
 - 861–1180px uses the short header CTA so the nav and action never wrap.
+
+## Editorial blog extension — 2026-10-06
+
+The Reef-adapted blog keeps the same tokens and folded-L mark: warm paper reading surface, Geist, opaque featured sheet, quiet divided archive rows, original local SVG, and one Civic Navy offer section. The shared header is the permitted glass navigation control; no new glass content or dock is introduced. Article text stays in a readable column with an opaque collapsed mobile contents control and a sticky desktop contents rail. Public UI is light-only. The vendor EmDash admin is a separate editing surface, with locally bundled Geist and Lumi branding. See docs/blog/REEF.md for attribution and content-guideline.md for truthful editorial scope.

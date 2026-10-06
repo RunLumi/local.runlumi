@@ -87,3 +87,14 @@ Start with [STRATEGY.md](STRATEGY.md) and [the pilot ledger](docs/PILOT.md). Tec
 This repo is authoritative for the Lumi Local site implementation and the commercial claims rendered by it. Company-level operating decisions remain in `RunLumi/lumi-hq`. If HQ changes pricing or GTM, update this repo explicitly and verify all rendered claims.
 
 Private repository. © 2026 RunLumi.
+
+## Lumi Local Journal
+
+VI: `/blog/`. EN: `/en/blog/`. Five owner-focused guides have paired translations, topic archives, search, RSS and source-linked article pages. The public layout adapts Reef to the Lumi design contract.
+
+- [Editorial contract](content-guideline.md)
+- [Keyword priorities](docs/blog/keyword-plan.md)
+- [EmDash runbook and release topology](docs/blog/README.md)
+- [Verification evidence](docs/blog/verification.md)
+
+Use the supported Node version in `package.json` (verified with Node 24.19.0). `npm run dev:blog` opens the local EmDash runtime at port 4324; `npm run build:blog` builds its separate Worker. The default build remains the static Pages site. Production activation and measured search outcomes are separate steps.

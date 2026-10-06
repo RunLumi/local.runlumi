@@ -1,0 +1,301 @@
+{
+  "slug": "qr-review-google",
+  "locale": "en",
+  "title": "Google review QR: invite honest customer feedback",
+  "description": "Use a Google review link or QR without incentives, requested ratings or selective invitations. Understand artwork and printing scope.",
+  "answer": "Google allows review invitations through a link or QR. Invite all genuine customers without rewards or a requested star rating. A QR does not guarantee review volume or visibility.",
+  "topic": "danh-gia-trung-thuc",
+  "keyword": "review google maps",
+  "author": "lumi-local",
+  "pub_date": "2026-10-06T09:00:00+07:00",
+  "reviewed_date": "2026-10-06",
+  "featured": false,
+  "content": [
+    {
+      "_type": "block",
+      "_key": "b1",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "A QR opens a link",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b2",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "The purpose is to help customers who have used the service reach the place where they can share their experience. A QR does not generate feedback, write it for a customer or guarantee that Google will display it.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b3",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "primary-source",
+          "href": "https://support.google.com/business/answer/3474122"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "The owner can obtain a link or QR through Google’s official instructions. Lumi can prepare artwork from an owner-confirmed link without a password or profile edit access.",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-gap",
+          "text": " ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-link",
+          "text": "Google’s official guidance.",
+          "marks": [
+            "primary-source"
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b4",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Test the destination before printing",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b5",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Open the link on a phone and check the business name. For multiple branches, confirm the correct location. Have someone scan a printed sample in the actual counter setting before ordering a large batch.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b6",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Keep the code clear with space around it. This is a practical check, not a guarantee for every device. A decorative code in a design is not a working review QR.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b7",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Use an honest invitation",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b8",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Have you used our service? Scan the QR to share your experience on Google. All feedback is welcome.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b9",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Offer the same invitation to all genuine customers at an appropriate point. Staff can show where to scan while leaving the wording and decision to the customer.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b10",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Avoid four practices",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b11",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Do not offer gifts or discounts in return for reviews. Do not ask for five stars. Do not invite only customers who say they are happy. Do not buy feedback from people who have not used the service.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b12",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "A satisfaction form that sends only happy customers to Google creates selective invitations. Keep a private service survey separate from access to the review link.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b13",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Treat feedback as useful information",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b14",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Respond to the issue in a negative review while protecting customer privacy. Report content for a relevant policy violation; do not promise deletion simply because the business dislikes a review.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b15",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "If scans are measured, they are not the same as submitted reviews. Review counts alone do not establish a revenue increase.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b16",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Understand Lumi’s artwork scope",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b17",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Trust Kit is 399,000 VND once; Starter is 1,990,000 VND for year one. Both include print-ready QR artwork within agreed scope. Printing, physical stands and shipping are excluded. The owner supplies and confirms the link; Lumi prepares artwork and invitation text, not Google review management.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b18",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Confirm the destination, text and printed scan before printing. If a basic QR is all you need, try Google’s free feature first. Lumi’s fee buys preparation and agreed deliverables, not access to reviews.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google: mời khách đánh giá / Review invitations",
+      "url": "https://support.google.com/business/answer/3474122"
+    },
+    {
+      "label": "Google Maps: nội dung bị cấm / Content policy",
+      "url": "https://support.google.com/contributionpolicy/answer/7400114"
+    }
+  ],
+  "related": [
+    "dich-vu-google-maps",
+    "seo-google-maps"
+  ]
+}

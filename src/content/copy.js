@@ -3,7 +3,7 @@ export const copy = {
   vi: {
     title: 'Lumi Local | Website, Gọi/Zalo & QR đánh giá — Lumi làm giúp bạn',
     description: 'Giới thiệu dịch vụ, bảng giá và hình ảnh trên website riêng. Có Gọi/Zalo, chỉ đường và file QR đánh giá. Lumi làm giúp bạn. Starter: 1.990.000đ năm đầu.',
-    nav: [['#goi-dich-vu','Gói dịch vụ'],['#cach-hoat-dong','Cách hoạt động'],['#gia-duy-tri','Chi phí duy trì'],['#cau-hoi','Câu hỏi']],
+    nav: [['#goi-dich-vu','Gói dịch vụ'],['#cach-hoat-dong','Cách hoạt động'],['#gia-duy-tri','Chi phí duy trì'],['#cau-hoi','Câu hỏi'],['/blog/','Cẩm nang']],
     cta: 'Xem thử Lumi Local cho business của tôi',
     hero: {
       eyebrow: 'Website · Gọi/Zalo · QR đánh giá — Lumi làm giúp bạn',
@@ -147,7 +147,7 @@ export const copy = {
   en: {
     title: 'Lumi Local | Website, Call/Zalo & Review QR — built for local businesses',
     description: 'A mobile website, Google Maps directions and print-ready review QR. Built for you and published after approval. Starter: 1,990,000 VND for year one.',
-    nav: [['#goi-dich-vu','Packages'],['#cach-hoat-dong','How it works'],['#gia-duy-tri','Renewal'],['#cau-hoi','FAQ']],
+    nav: [['#goi-dich-vu','Packages'],['#cach-hoat-dong','How it works'],['#gia-duy-tri','Renewal'],['#cau-hoi','FAQ'],['/en/blog/','Journal']],
     cta: 'Show me Lumi Local for my business',
     hero: {
       eyebrow:'Website · Call/Zalo · Review QR — built for you',

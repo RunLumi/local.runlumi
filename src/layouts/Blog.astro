@@ -1,0 +1,40 @@
+---
+import '@fontsource-variable/geist';
+import '@fontsource-variable/geist-mono';
+import '../styles/global.css';
+import '../styles/blog.css';
+import { copy } from '../content/copy.js';
+import { base, home, origin, safeJson } from '../blog/site.js';
+const { locale, title, description, path = '', alternatePath, article, noindex = false, schema = {} } = Astro.props;
+const canonical = origin + base(locale) + (path ? path + '/' : '');
+const en = locale === 'en';
+const other = en ? 'vi' : 'en';
+const otherUrl = alternatePath === undefined ? undefined : base(other) + (alternatePath ? alternatePath + '/' : '');
+const social = `${origin}/social-card-${locale}.png`;
+const schemaData = { '@context':'https://schema.org', '@graph':[
+  {'@type':'Organization','@id':origin+'/#organization',name:'Lumi Local',url:origin+'/',logo:origin+'/brand/lumi-logo.svg'},
+  {'@type':'Blog','@id':origin+base(locale)+'#blog',url:origin+base(locale),name:'Lumi Local Journal',inLanguage:locale,publisher:{'@id':origin+'/#organization'}},
+  ...([].concat(schema).filter(s=>s['@type']))
+]};
+---
+<!doctype html><html lang={locale}><head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>{title} | Lumi Local</title><meta name="description" content={description}/><meta name="theme-color" content="#f4f0e8"/><meta name="color-scheme" content="light"/>
+  <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'}/><link rel="canonical" href={canonical}/>
+  <link rel="icon" href="/brand/lumi-logo.svg" type="image/svg+xml"/>
+  <link rel="alternate" type="application/rss+xml" title={en ? 'Lumi Local — English' : 'Lumi Local — Tiếng Việt'} href={base(locale)+'rss.xml'}/>
+  {otherUrl && <><link rel="alternate" hreflang={locale} href={canonical}/><link rel="alternate" hreflang={other} href={origin+otherUrl}/><link rel="alternate" hreflang="x-default" href={en ? origin+otherUrl : canonical}/></>}
+  <meta property="og:type" content={article ? 'article' : 'website'}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:site_name" content="Lumi Local"/><meta property="og:locale" content={en ? 'en_US' : 'vi_VN'}/><meta property="og:image" content={social}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={title}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={social}/>
+  {article && <><meta property="article:published_time" content={article.pub_date}/><meta property="article:modified_time" content={article.reviewed_date}/></>}
+  {!noindex && <script is:inline type="application/ld+json" set:html={safeJson(schemaData)}/>}
+</head><body class="blog-body">
+  <a class="skip-link" href="#main">{en ? 'Skip to content' : 'Bỏ qua đến nội dung'}</a>
+  <header class="site-header glass-control"><div class="wrap header-inner">
+    <a class="brand" href={home(locale)} aria-label="Lumi Local"><img src="/brand/lumi-logo.svg" width="34" height="34" alt=""/><span><strong>Lumi</strong> Local</span></a>
+    <nav class="blog-nav" aria-label={en ? 'Journal navigation' : 'Điều hướng chuyên mục'}><a href={base(locale)}>{en ? 'Journal' : 'Cẩm nang'}</a><a class="blog-search-nav" href={base(locale)+'search/'}>{en ? 'Search' : 'Tìm bài'}</a></nav>
+    <div class="header-actions">{otherUrl && <a class="blog-language" href={otherUrl} lang={other} aria-label={en ? 'Đọc bằng tiếng Việt' : 'Read in English'}>{other.toUpperCase()}</a>}<a class="blog-offer-nav" href={home(locale)+'#goi-dich-vu'}>{en ? 'Our offer' : 'Gói dịch vụ'} <span aria-hidden="true">↗</span></a></div>
+  </div></header>
+  <slot />
+  <section class="blog-cta wrap" aria-labelledby="blog-cta-title"><div><p class="eyebrow">Lumi Local</p><h2 id="blog-cta-title">{en ? 'Make your business easier to understand.' : 'Cho khách đủ thông tin để chọn.'}</h2><p>{en ? 'A mobile service website, owner-confirmed directions and print-ready review QR artwork. Starter: 1,990,000 VND for year one.' : 'Website dịch vụ trên điện thoại, liên kết chỉ đường do chủ xác nhận và file QR đánh giá sẵn để in. Starter: 1.990.000đ năm đầu.'}</p><p class="cta-scope">{en ? 'You keep Google account ownership. Lumi does not create, verify or manage the profile. Printing and physical stands are excluded.' : 'Chủ giữ quyền tài khoản Google. Lumi không tạo, xác minh hay quản lý hồ sơ. Không bao gồm in ấn và giá đỡ.'}</p></div><div class="blog-cta-action"><a class="button button-secondary" href={home(locale)+'#bat-dau'}>{copy[locale].cta}</a><p>{en ? 'An enquiry, not payment or a reserved slot.' : 'Gửi nhu cầu; chưa thanh toán hay giữ chỗ.'}</p></div></section>
+  <footer class="blog-footer wrap"><p>© {new Date().getFullYear()} Lumi Local</p><nav aria-label={en ? 'Footer' : 'Cuối trang'}><a href={base(locale)+'about/'}>{en ? 'Editorial policy' : 'Về cẩm nang'}</a><a href={base(locale)+'rss.xml'}>RSS</a><a href="https://runlumi.app/">Powered by Lumi</a></nav></footer>
+</body></html>
