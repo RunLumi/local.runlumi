@@ -181,3 +181,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Browser readback confirmed VI/EN FAQ answers; all four widths (320/375/768/1440) show one h1 and no horizontal overflow. Narrow VI FAQ screenshot inspected. This does not prove reduced support burden or improved conversion.
 - Updated current checkpoint to reflect CA-002 verified_live and next follow-up date. No additional community action; one-comment permission consumed.
 - Next: focused PR, normal merge/release, verify both live locales. Hosted Actions may remain blocked before steps by budget; retain local Linux/macOS distinction.
+
+## 2026-10-06 23:00 +07:00 — RUN-016 release verified
+
+- PR #28 merged at ae0478b735fc74203c17e51d0a1f0b17ab238f38; remote main matched exact head. GitHub Actions build/deploy failed before steps due Actions budget; annotations confirmed no runner steps.
+- Exact merged head local release sequence passed: protected Pages build, 48 tests, EmDash seed validation, CMS Worker build. `scripts/verify-release.mjs` passed production route/canonical/sitemap/private-data checks.
+- Manual Pages deploy completed at https://de3ec339.lumi-local.pages.dev. Readback of VI/EN website-service routes returned 200 with the explicit inventory/checkout FAQ on both the custom domain and deployment hostname. Browser opened and expanded the live VI and EN FAQ answers; no live enquiry or CMS mutation.
+- Deployment was allowed by the activated campaign contract and the repository’s documented manual release path; Actions budget was the confirmed hosted blocker. No DNS/secret/billing/CMS Worker mutation.
+- Campaign remains incomplete. No real GSC or acquisition outcomes, no scheduled heartbeat; CA-002 is one verified live comment with exact scope consumed. Next read-only follow-up 2026-10-13.
