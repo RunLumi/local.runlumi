@@ -18,6 +18,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - PR #28 / Pages deployment `de3ec339`: VI/EN website FAQ clarifies no inventory, carts, checkout or order management.
 - PR #30 / Pages deployment `25f31f3b`: VI/EN FAQ clarifies no CRM or automated follow-up; agree enquiry destination and response owner.
 - PR #35 / Pages deployment `7e191180`: VI/EN homepage and website-service FAQ explain when Facebook/Zalo may be sufficient and distinguish Starter from an online store. Production checks passed on both custom and Pages hosts.
+- PR #41 / Pages deployment `1f99c9d0`: corrected homepage mockup heading hierarchy after one Lighthouse accessibility finding; live VI/EN H2 readback and the targeted post-deploy PSI finding check passed. No field CWV data.
 - Exact merged heads passed local static/CMS builds, 48 tests, seed validation and release verifier. Hosted workflows failed before steps due Actions budget; no hosted Linux pass. CMS Worker/editorial data were not changed.
 - PR #31 and PR #32 record release/access state; PR #33 records the bounded Vietnam scan.
 
@@ -41,7 +42,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 
 ## Recovery
 
-Read this checkpoint, goal, worklog and both CSVs before external actions. Inspect uncertain outcomes before retrying. Shared checkout has unrelated `docs/blog/checkpoint.md` WIP; preserve it. Latest SEO/GEO change is verified live at deployment `7e191180`; no temporary dev server is active.
+Read this checkpoint, goal, worklog and both CSVs before external actions. Inspect uncertain outcomes before retrying. Shared checkout has unrelated `docs/blog/checkpoint.md` WIP; preserve it. Latest SEO/GEO change is verified live at deployment `1f99c9d0`; no temporary dev server is active.
 
 
 ## RUN-023 — direct Facebook/Zalo answer refinement
