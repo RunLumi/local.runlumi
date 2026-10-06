@@ -8,8 +8,8 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - CA-001 was skipped as redundant. CA-002 was approved and publicly verified once by u/suoinguon in the designated r/smallbusiness Q4 promotion thread: [permalink](https://www.reddit.com/r/smallbusiness/comments/1wwpjlw/comment/pe8nwi9/). That one-comment authorization is consumed. No follow-up reply/repost scope.
 - Next read-only check: 2026-10-13 09:00 +07:00 for replies/removal.
 - Weekly heartbeat creation was rejected by automatic approval review; explicit scheduling authorization remains unanswered. No automation configured.
-- GSC Wizard is available but unconnected; no Google property data accessed. GSC/organic/referral/enquiry/paid outcomes remain unknown.
-- `/data/` currently redirects anonymous visitors to EmDash ADMIN passkey sign-in. This browser session is not signed in as ADMIN; the current local CSV fingerprint remains `b03aa2d8` and covers Sep 2025–Aug 2026, so fresh demand data remain unavailable.
+- GSC Wizard remains unconnected. See [RUN-026 Search Console snapshot](research/2026-10-07-search-console-snapshot.md): read-only evidence on `sc-domain:local.runlumi.app`: its sitemap list is empty; homepage and core service URLs are unknown to Google despite passing live fetch tests. The parent property host-filtered 7-day report showed 0 clicks/0 impressions through 2026-10-04, only about two days after custom-domain attachment. No sitemap or URL-indexing write was submitted; broad index coverage, referrals, enquiries and paid outcomes remain unknown.
+- `/data/` requires EmDash ADMIN passkey authentication. The current in-app browser now shows the private dashboard in an authenticated session; the local source CSV is unchanged and covers Sep 2025–Aug 2026, so fresh demand data remain unavailable.
 - Chrome DevTools MCP is absent. No CWV or lab trace has been measured; see [measurement access note](research/2026-10-06-measurement-access.md). No trackers or live enquiries used.
 
 ## Verified releases
@@ -35,8 +35,8 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 ## Next actions
 
 1. On 2026-10-13, read-only check CA-002 for replies/removal; do not reply without new authorization.
-2. Connect GSC Wizard/select the Search Console property before collecting query/page or indexing data. Until then, keep those measures unknown.
-3. Add Chrome DevTools MCP before trying laboratory performance traces. Continue the 90-day cadence without repetitive searches or quota-driven posts.
+2. RUN-026 found no sitemap submitted in the dedicated GSC property. Submit `https://local.runlumi.app/sitemap.xml` only after explicit human authorization; until then, leave Google-side indexing untouched.
+3. Keep Search Console measurement read-only and scoped to `local.runlumi.app`; GSC Wizard remains unconnected. Add Chrome DevTools MCP before trying laboratory performance traces. Continue without repetitive searches or quota-driven posts.
 
 ## Recovery
 
