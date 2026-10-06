@@ -97,3 +97,5 @@ Final release evidence: [RELEASE-2026-10-06.md](../RELEASE-2026-10-06.md). `node
 wrangler.jsonc is the Pages source configuration; wrangler.blog.jsonc is the separate Astro CMS configuration. Pages production declares BLOG to lumi-local-blog; preview explicitly has no production service binding. Local Pages QA that needs the CMS may pass `--service BLOG=lumi-local-blog`. No credentials are stored in either config. Existing encrypted Pages secrets remain server-side.
 
 The production verifier requires no-store on live blog HTML and a protected CMS editor response rather than static 404. Deployment metadata alone does not prove that requests reach the binding. The release workflow runs this live check. Keep readiness as a server-side encrypted environment marker if it must survive config-managed deployments; only mark ready after verified owner registration.
+
+Owner registration and temporary-access closure: [OWNER-HANDOFF.md](OWNER-HANDOFF.md). Public release verification does not establish editor readiness.
