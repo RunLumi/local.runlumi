@@ -112,7 +112,7 @@ export const copy = {
     faq: {
       title:'Trước khi quyết định',
       items:[
-        ['Đã có Facebook và Zalo, tôi cần thêm gì?','Bạn vẫn dùng Facebook và Zalo như hiện tại. Website là một địa chỉ riêng để tập hợp dịch vụ, mức giá, giờ mở cửa và cách liên hệ, thuận tiện gửi cho khách. Nếu các kênh hiện có đã làm tốt việc này và bạn tự duy trì được, chưa nhất thiết phải làm thêm.'],
+        ['Đã có Facebook và Zalo, tôi cần thêm gì?','Không nhất thiết. Nếu Facebook/Zalo đã giúp khách xem rõ dịch vụ, giá hoặc cách hỏi báo giá, giờ mở cửa và cách liên hệ, đồng thời bạn dễ cập nhật, chưa cần website. Starter phù hợp khi thông tin nằm rải rác hoặc khách thường phải hỏi lại. Trang gom dịch vụ, giá chủ duyệt, giờ, chỉ đường tới vị trí chủ xác nhận và nút Gọi/Zalo vào một link dễ gửi. Đây là trang thông tin và nhận yêu cầu, không phải cửa hàng trực tuyến.'],
         ['Gói 399k Trust Kit gồm những gì?','Gồm file thiết kế QR đặt quầy dẫn tới trang đánh giá Google của cơ sở và checklist kiểm tra thông tin công khai. Chưa gồm in ấn hay chân đế. Nâng cấp lên Starter trong 30 ngày được trừ đủ 399.000đ, chỉ trả thêm 1.591.000đ.'],
         ['Lumi có cần quyền chỉnh Google Maps không?','Không. Tài khoản Google vẫn là của bạn. Lumi dùng đường dẫn công khai và vị trí bạn xác nhận để tạo QR và nút chỉ đường; không bao giờ hỏi mật khẩu hay quyền quản trị.'],
         ['Tôi tự làm website bằng AI được mà?','Bạn hoàn toàn có thể tự làm. Lumi phù hợp khi bạn muốn giao phần viết nội dung, dựng trang, đưa lên mạng và bảo trì cho một bên phụ trách. Bạn trả cho phần việc được làm giúp, với phạm vi và chi phí rõ ràng.'],
@@ -256,7 +256,7 @@ export const copy = {
     faq:{
       title:'Before you decide',
       items:[
-        ['I already use Facebook and Zalo. Why add a website?','Keep using both. A website gives you one address for services, prices, opening hours and contact options that you can share with customers. If your current channels already do this well and you are comfortable maintaining them, you may not need another site yet.'],
+        ['I already use Facebook and Zalo. Why add a website?','Not automatically. If Facebook/Zalo already show your services, approved prices or how to request a quote, opening hours and contact options—and you can keep that information current—you may not need a website. Starter fits when details are scattered or customers keep asking for the same basics. It puts owner-approved services and prices, hours, directions to an owner-confirmed location and Call/Zalo in one shareable link. It is an information and enquiry page, not an online store.'],
         ['What is included in the 399k Trust Kit?','Print-ready counter QR artwork linking to your Google review page, plus a checklist for your public business details. Printing and stands are excluded. Upgrade to Starter within 30 days and the full 399,000 VND is credited, so you pay 1,591,000 VND more.'],
         ['Do you need Google Maps edit access?','No. Your Google account stays yours. Lumi uses public links and the location you confirm to create your QR and directions button. We never ask for passwords or admin rights.'],
         ['Can I make a website with AI myself?','Yes. Lumi is for owners who want someone to take care of the content, website, publishing and technical upkeep. You pay for that work to be done for you, with a clear scope and price.'],

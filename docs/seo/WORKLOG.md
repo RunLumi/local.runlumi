@@ -236,3 +236,12 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - No contribution, account/session action or new scope inference. CA-002 remains verified_live and its one-comment permission consumed; 2026-10-13 check is read-only.
 - Consolidated current STATUS.md against merged PRs #25–33 and today’s verified releases/permissions. Historical details are preserved in this append-only log and individual receipts.
 - GSC connector remains unconnected; Chrome DevTools MCP unavailable. Organic/CWV metrics remain unknown. No new code or tracker/deploy change.
+
+
+## 2026-10-07 — RUN-023 — Direct channel-fit answer for Facebook/Zalo query
+
+- Prior turn was progress: checkpoint PR #34 merged and Vietnam community scan receipt preserved. Revalidated current main at c17d529 and current Docs/CA-002 authorization state in prior tool results; no post scope beyond CA-002.
+- One focused Google search was loaded through browser for “có Facebook Zalo rồi có cần website cho cửa hàng không”. AI Overview gave a categorical answer and blended own-site control with inventory/online-store arguments, citing vendor-authored content. This does not establish unbiased demand or that all businesses need a website.
+- Updated existing VI/EN homepage FAQ (`src/content/copy.js`) and service FAQ (`src/services/content.ts`) with concrete “not automatically” fit criteria and an information/enquiry versus storefront distinction. `COPY.md` records the editorial rule. No new page/feature/schema/citation claim.
+- GEO skill’s entity-profile requirement checked; referenced profile file is absent. Recorded as a constraint in research/2026-10-07-facebook-zalo-ai-overview.md. No fabricated entity credentials added.
+- Rendered VI/EN homepage and website-service pages in the local browser; the revised answers and existing CTA/form anchors are present. A temporary same-origin iframe probe exercised all four routes at exact 320/375/768/1440 CSS-pixel widths; all 16 checks reported no horizontal overflow and the expected preview CTA. The Vietnamese service page was visually inspected at 320px. Build, tests, seed validation and CMS Worker build completed successfully on this candidate; `git diff --check` passes. GSC/CWV blockers remain.
