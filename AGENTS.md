@@ -107,3 +107,7 @@ Before editing guides, read [content-guideline.md](content-guideline.md), [docs/
 ## Service/industry expansion
 
 Use docs/GOAL_BILINGUAL_SERVICE_PAGES.md, docs/SERVICE-PAGE-RESEARCH-2026-10-06.md and src/services/routes.js. Keep localized equivalent routes, reciprocal vi-VN/en-VN alternates and a shared EnquiryForm. Only allowlisted non-PII source context reaches intake. Do not add trackers, indexed recovery/verification offers or city doorway pages.
+
+## SEO/GEO community campaign
+
+For campaign work, read [the goal](docs/GOAL_SEO_GEO_90_DAYS.md), [current checkpoint](docs/seo/STATUS.md), [append-only worklog](docs/seo/WORKLOG.md) and the channel/action CSV ledgers. Browser use includes real, helpful participation within human-authorized account/channel scope. No sockpuppets, fake customer endorsements or spam. Check submitting/unknown/pending outcomes before retrying any external action; verify actual post/link URLs and preserve privacy. Saving a goal or finding a logged-in account does not grant new external access or prove an action was completed.
