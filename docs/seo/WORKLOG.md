@@ -220,3 +220,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - GSC Wizard was suggested earlier but remains unconnected; no Google property data was accessed. No Search Console metrics inferred.
 - Checked current tool inventory for Chrome DevTools MCP; required trace/navigation/network tools are absent. Read web-perf skill; its first gate requires stopping if those tools are unavailable. No LCP/INP/CLS/TBT/SI measurement claimed and no alternate fake proxy substituted.
 - Receipt: research/2026-10-06-measurement-access.md. No external account/config mutation. Next step depends on user connecting GSC/property and adding the documented DevTools MCP configuration.
+
+
+## 2026-10-06 — RUN-020 — Vietnam community discovery scan
+
+- Previous turn progress: measurement access was reconciled and merged in PR #32; GSC Wizard remains unconnected and Chrome DevTools MCP absent. Revalidated CA-002 verified_live; one-comment scope consumed.
+- Two bounded searches surfaced a stale Nov 2024 VOZ marketplace discussion and a recent seller-marked e-commerce website thread; no fresh local-service owner question with clear rules. Facebook results did not surface an inspectable public thread. No account/group join or external action.
+- Receipt: research/2026-10-06-vietnam-community-scan.md. Vendor copy was not used as independent price/demand evidence. Existing shipped e-commerce boundary is sufficient; no extra copy change warranted.
+- Next: wait for the scheduled read-only CA-002 check on 2026-10-13, pursue GSC data after connection, and search only when a likely owner-context result is genuinely fresh/relevant. No quota-driven post.
