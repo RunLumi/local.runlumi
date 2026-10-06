@@ -25,6 +25,7 @@ Updated 2026-10-06 · Asia/Saigon · active, day 1. Full contract: [goal](../GOA
 - [Technical and internal-link checks](research/2026-10-06-technical-baseline.md), [guide checks](research/2026-10-06-links-and-article-audit.md), and [remaining guides](research/2026-10-06-remaining-guides.md): 38 sitemap URLs passed bounded metadata checks; zero graph orphans within that set. Not proof of indexing or demand.
 - [Browser SERP sample](research/2026-10-06-browser-serp-sample.md): three contextual queries with third-party AI Overview citations; not universal visibility.
 - [Gift-shop scope signal](research/2026-10-06-giftshop-scope-signal.md): one international discussion informs exclusions only, not Vietnam demand or willingness to pay.
+- [Vietnam community scan](research/2026-10-06-vietnam-community-scan.md): indexed seller post and stale marketplace thread; no fresh owner discussion/rules suitable for another candidate. No new action proposed.
 
 ## Next actions
 
