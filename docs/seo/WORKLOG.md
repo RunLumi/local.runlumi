@@ -228,3 +228,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Two bounded searches surfaced a stale Nov 2024 VOZ marketplace discussion and a recent seller-marked e-commerce website thread; no fresh local-service owner question with clear rules. Facebook results did not surface an inspectable public thread. No account/group join or external action.
 - Receipt: research/2026-10-06-vietnam-community-scan.md. Vendor copy was not used as independent price/demand evidence. Existing shipped e-commerce boundary is sufficient; no extra copy change warranted.
 - Next: wait for the scheduled read-only CA-002 check on 2026-10-13, pursue GSC data after connection, and search only when a likely owner-context result is genuinely fresh/relevant. No quota-driven post.
+
+## 2026-10-07 00:51 +07:00 — RUN-021 — Bounded Vietnam community recheck
+
+- Previous continuation did not yield new evidence. Revalidated current authoritative remote release state in the clean isolated checkout at d8665ca; shared checkout remains dirty with unrelated blog WIP, preserved.
+- Two focused Vietnamese searches returned a November 2024 retail channel thread and vendor-authored e-commerce content. Neither is a fresh local-service owner signal. Full notes: research/2026-10-07-community-recheck.md.
+- No contribution, account/session action or new scope inference. CA-002 remains verified_live and its one-comment permission consumed; 2026-10-13 check is read-only.
+- Consolidated current STATUS.md against merged PRs #25–33 and today’s verified releases/permissions. Historical details are preserved in this append-only log and individual receipts.
+- GSC connector remains unconnected; Chrome DevTools MCP unavailable. Organic/CWV metrics remain unknown. No new code or tracker/deploy change.
