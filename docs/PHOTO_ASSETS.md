@@ -48,6 +48,25 @@ QR imagery is decorative, not a functional review destination. No claim of
 owning the pictured infrastructure is made. Existing brand and interface
 SVG icons remain; interactive product previews remain HTML.
 
+## Google Review QR counter artwork — 2026-10-06
+
+At the user's request, the built-in ImageGen tool produced a natural-light
+folded paper-card mockup and localized VI/EN invitation edits. The selected
+outputs were visually inspected for physical geometry, exact invitation text
+and Vietnamese diacritics. No customer, rating, logo or review result is invented.
+
+The QR service-page artifact now uses `public/photos/qr-counter-vi-{480,960,1440}.webp`
+and the corresponding `qr-counter-en` variants. The image has explicit dimensions,
+responsive sources and eager loading because it appears in the service hero.
+The invitation remains readable/selectable HTML, with visible AI disclosure,
+an illustrative-code warning and printing/stand exclusions. Other artifacts
+retain their existing inspectable HTML/SVG implementation.
+
+Full generation and edit prompts, source hashes, derivative dimensions,
+sizes and SHA-256 hashes are recorded in [QR_COUNTER_ASSETS.json](QR_COUNTER_ASSETS.json).
+Original PNGs remain in the ImageGen output directory; project-consumed WebP
+files are committed locally. Generation adds no runtime image-service dependency.
+
 ## Social preview cards — 2026-10-06
 
 `public/social-card-vi.png` and `public/social-card-en.png` (1200×630) are typographic cards rendered from HTML with the shipped Geist files via headless Chrome, then palette-compressed with Sharp. They contain only the hero line, the canonical Starter price and the four included surfaces; no imagery, customers or results. PNG is required because Facebook and Zalo link previews do not render SVG `og:image`. Regenerate both when the hero line or Starter price changes.

@@ -1,0 +1,66 @@
+{
+  "description": "AI-generated counter mockups, not real customers or installations. Illustrative QR codes are not for scanning. Exact invitation copy is also HTML. Printing and stands are excluded.",
+  "generator": "built-in image_gen",
+  "generatedDate": "2026-10-06",
+  "basePrompt": "Use case: product-mockup\nAsset type: Lumi Local Google Review QR service-page illustration, one landscape 3:2 image.\nPrimary request: A photorealistic editorial product photograph of a simple printed review QR card on the counter of a small Vietnamese local business. Realistic and quiet, with no generic AI gloss.\nScene/backdrop: Warm pale oak counter, softly defocused off-white reception wall, natural side-window daylight. One object only, no people or decorative props.\nSubject: A small upright folded tent card made of thick uncoated white paper, full card and folded foot visible. The front carries a centered navy QR-like illustrative geometric pattern in its lower half; three large square finder marks, deliberately sparse disconnected blocks, clearly a non-functional illustrative code. Upper half mostly blank paper with a single small thin Lumi Blue horizontal rule. No logo or lettering; the website renders the exact neutral invitation as accessible text beside this photo.\nStyle/medium: Believable close-up product photography, 50mm lens, restrained contrast, realistic paper fibers, slight paper-edge wear, honest folds, oak grain and contact shadow. No hyper-polished 3D rendering.\nComposition/framing: Landscape 3:2, portrait paper card centered, almost front-on with a slight view of the fold to establish physical depth. Card occupies roughly 65 percent of image height. Comfortable margin, entire object inside frame, straight geometry, no dramatic wide-angle distortion.\nColor palette: Warm ivory and pale oak, Civic Navy #102a43 printed pattern, tiny Lumi Blue #006093 rule.\nLighting/mood: Soft ordinary daylight, subtle asymmetrical natural shadow, neutral white paper.\nConstraints: This is a clearly disclosed AI mockup, never customer proof. No readable text, logos, stars, ratings, review counts, people, phones, extra cards, or promotional claims. No real QR destination. No acrylic or included physical-stand implication. No dramatic spotlight, luxury marble, plants, floating objects, surreal shapes, glow, gradients, collage, glossy CGI or watermarks.",
+  "images": [
+    {
+      "locale": "vi",
+      "sourceFile": "exec-ffb163aa-dd0d-4aef-86b1-ffab27e50e9a.png",
+      "originalSha256": "83801879bdaa8f0f69d8c38ba42d089da12f4c67980228c9dd81f043c6ecff61",
+      "editPrompt": "Use case: precise-object-edit\nAsset type: VI Google Review QR counter mockup for Lumi Local.\nInput image: edit target, the existing photorealistic folded paper QR card.\nPrimary request: Change only the blank upper face of the paper card: print this exact neutral invitation in dark navy Geist sans-serif, centered and clearly readable above the thin blue rule, with generous margin. Five or six short lines, no additional heading. Text (verbatim): \"Bạn đã sử dụng dịch vụ của chúng tôi? Quét QR để chia sẻ trải nghiệm trên Google. Mọi phản hồi đều được trân trọng.\"\nConstraints: Keep the same photo, paper card, blue rule, non-functional illustrative QR pattern, fold, lighting, perspective, countertop, framing and background unchanged. Typography should look physically printed on paper with the card's perspective. Correct every Vietnamese diacritic if present. No logo, rating, star, incentive, review count, watermark, or extra text. This is an AI product mockup, not a customer installation.",
+      "assets": [
+        {
+          "path": "public/photos/qr-counter-vi-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 13682,
+          "sha256": "59a14cf6439c0b58ef1d7306915168f1559b8338e74da61137c5fa0a3c9d1bd1"
+        },
+        {
+          "path": "public/photos/qr-counter-vi-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 35220,
+          "sha256": "16b5490ecf326bd6acfce2fc1c0858610f171ec0914891629f758bde388b9226"
+        },
+        {
+          "path": "public/photos/qr-counter-vi-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 61716,
+          "sha256": "cf80b88a116f83245bd56f65f1e4f0ec6084a37c80f6bd9dd7ed29ea2d63c7bd"
+        }
+      ]
+    },
+    {
+      "locale": "en",
+      "sourceFile": "exec-1d9fd98a-df46-47e1-9586-6e5656cee579.png",
+      "originalSha256": "3a594724c34ca28c1ff519fd933dc3992abcc662a9646042da08eb64bd2b8b35",
+      "editPrompt": "Use case: precise-object-edit\nAsset type: EN Google Review QR counter mockup for Lumi Local.\nInput image: edit target, the existing photorealistic folded paper QR card.\nPrimary request: Change only the blank upper face of the paper card: print this exact neutral invitation in dark navy Geist sans-serif, centered and clearly readable above the thin blue rule, with generous margin. Five or six short lines, no additional heading. Text (verbatim): \"Have you used our service? Scan the QR to share your experience on Google. All feedback is welcome.\"\nConstraints: Keep the same photo, paper card, blue rule, non-functional illustrative QR pattern, fold, lighting, perspective, countertop, framing and background unchanged. Typography should look physically printed on paper with the card's perspective. Correct every Vietnamese diacritic if present. No logo, rating, star, incentive, review count, watermark, or extra text. This is an AI product mockup, not a customer installation.",
+      "assets": [
+        {
+          "path": "public/photos/qr-counter-en-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 13858,
+          "sha256": "cc2ae9bc133a17532f2472d339936dda21ff0b2e675f0fb44f84372408d8018a"
+        },
+        {
+          "path": "public/photos/qr-counter-en-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 34996,
+          "sha256": "82c3c7ba84a5efcf8cbaedf6dcc5163c2d5edb69c97a62183b18c7fbc19c64d3"
+        },
+        {
+          "path": "public/photos/qr-counter-en-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 60582,
+          "sha256": "84bae0245a42a284d2ec9296138d5ea525eaa0159ac9a9c9e71cbc6c09e48829"
+        }
+      ]
+    }
+  ]
+}
