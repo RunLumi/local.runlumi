@@ -19,3 +19,12 @@ Stop/acceptance: continue only if the bilingual page and canonical docs agree. A
 The bilingual website-service page now states Starter excludes inventory, carts, online checkout/payment and order management. Canonical COPY.md and PRICING.md agree. Local static and CMS builds, existing tests and seed validation passed; VI/EN service pages rendered at 320/375/768/1440 with no overflow and the FAQ answer was read back. No CMS records changed; no production deploy yet. This is one qualitative international scope signal, not Vietnam demand or willingness-to-pay evidence.
 
 Repository custody: GitHub API verified `RunLumi/local.runlumi` is private, owned by `RunLumi`; the only Reddit account field retained is the public alias used on the publicly viewable comment, required by the campaign action/channel ledger. No email, login secret, cookie, or credential is stored.
+
+
+## Follow-up clarity — RUN-017
+
+The same one-thread signal also asked who handles leads and updates. Existing copy described a simple enquiry path, one basic pre-publication content revision and limited technical maintenance, but did not name CRM/automated follow-up exclusions. The bilingual FAQ now distinguishes contact from lead-nurture workflow and says to agree intake destination/response owner before launch. This does not claim the form is a managed CRM or that a response SLA exists. No claim about the commenter’s location, purchase intent or willingness to pay.
+
+## RUN-017 validation receipt
+
+The new CRM/follow-up FAQ is present in the VI and EN build. It says there is no CRM, reminders, automatic messaging or lead-nurture workflow and that intake destination/response owner must be agreed before publishing. Browser interaction expanded both answers successfully. Both service pages retained one h1 and no horizontal overflow at 320/375/768/1440 after the final copy edit. Local validation of this final edit is recorded in RUN-017 worklog. No new enquiry plumbing or automatic follow-up was implemented.

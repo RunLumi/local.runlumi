@@ -72,6 +72,7 @@ For an established business, custom domain is the recommended option, but 599k r
 Not included by default:
 
 - product inventory, shopping carts, online checkout/payment, or order management;
+- CRM, automated enquiry follow-up, reminders, or lead-nurture workflows;
 
 - branding/logo strategy;
 - ads;
