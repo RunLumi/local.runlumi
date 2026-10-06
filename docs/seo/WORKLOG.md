@@ -66,9 +66,43 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 
 - RUN-003 follow-up: session 39470 exited 0; protected static build completed, 42 pages, research HTML/CSV extracted from public assets. Browser/mobile, regression, CMS build and release remain unverified.
 
-## 2026-10-06 — RUN-004 — QR link validation
+## 2026-10-06 — RUN-005 — PR #25 merged and Pages release
 
-- Isolated source still has only the bilingual QR self-service link change. Static build, all 48 regression tests, EmDash seed validation and CMS build passed with Node 24.20.0.
-- Supported browser inspected the built VI/EN QR pages at 320/375/768/1440 CSS pixels: no document overflow, correct localized Google link in section 3 and no missing local anchor targets. Desktop screenshot inspected. These checks do not prove a complete homepage/mobile visual audit or live intake delivery.
-- Existing tests cover missing-webhook failure, intake boundaries and all seven locale pairs. No live enquiry was submitted and no CMS article was edited.
-- Next: finish visual inspection of the changed mobile section, commit/create PR and follow hosted checks/release; broader campaign audit and community permission remain open.
+- PR https://github.com/RunLumi/local.runlumi/pull/25 merged normally to f3fa8ae0da48d4b5b0ad710c91cd3626b6931dac. No admin override or CI/billing modification.
+- Exact merged-head static build, 48 regression tests, seed validation and CMS build passed in the isolated checkout. Mobile VI self-service link wrapping and keyboard focus visually inspected at 320px.
+- Hosted build/release jobs completed failure with zero steps; release annotation explicitly states Actions budget prevented the job from starting. This is not a hosted Linux pass.
+- Manual Pages deploy exited 0: https://13b45206.lumi-local.pages.dev. CMS Worker and editorial database were not deployed or seeded.
+- Production release verifier passed service/industry metadata, CMS journal/feed/sitemap and anonymous private-data protection. Supported browser confirmed the new VI DIY link on the actual custom-domain QR page. Separate Python readback received 403; use completed Node readback evidence rather than claiming that client succeeded.
+- Shared blog WIP preserved. Campaign/community permissions and broader site audit still outstanding. No external contribution, analytics result or acquisition improvement claimed.
+
+- RUN-005 final readback: Node client confirmed HTTP 200 and correct locale-specific new links on both custom domain and 13b45206 deployment host. Static preview session 79424 stopped.
+
+## 2026-10-06 — RUN-006 — Production homepage checks and skipped community candidate
+
+- Revalidated shared Git/checkpoint/ledgers: main behind merged PR #25; blog and campaign WIP preserved. No pending external submission.
+- Supported browser tested actual VI/EN homepages at 320/375/768/1440: one h1, expected canonical, no overflow/missing local anchors and same-origin POST intake. Discarded initial pre-load EN observations and verified again after visible content.
+- Web tooling read the actual candidate review thread/moderator notice. Full rules extraction unavailable. Existing helpful replies already answer the proposed contribution; CA-001 skipped without draft, account use or submission. Channel row remains explicitly unauthorized.
+- Receipt: research/2026-10-06-home-and-channel-audit.md. No conversion, performance uplift or complete visual audit claim.
+- Next: full-site technical inventory and a fresh unresolved owner discussion; scheduling/account scope still pending. No quota-driven repeat reply.
+
+## 2026-10-06 — RUN-007 — Live sitemap technical audit
+
+- Previous turn classified progress: production homepage evidence and skipped channel ledger state were added. Revalidated Git/checkpoint/ledgers; no uncertain submission.
+- Read all 38 URLs from actual production sitemap. Each returned 200 with exact self canonical, one h1 and no noindex directive; no duplicate titles. Audited alternate destinations and reciprocal links; no issues.
+- Receipt: research/2026-10-06-live-sitemap-audit.json and research/2026-10-06-technical-baseline.md. Read-only session 43079 completed exit 0; no remaining process.
+- No code/CMS change warranted by these checks. Actual indexing, GSC results and acquisition impact remain unknown. Broader visual/accessibility/internal-link audit and authorized community execution remain open.
+- Historical checkpoint headings clarified; no append-only history rewritten. Next: close rendered article/keyboard and internal-link/image evidence gaps, without quota-driven edits or unauthorized posting.
+
+## 2026-10-06 — RUN-008 — Live internal graph and published guide checks
+
+- Read live HTML of all 38 sitemap pages; zero orphan destinations in the non-self incoming graph. Only expected bilingual search/feed paths outside sitemap. Read-only session 73067 exited 0.
+- Supported browser inspected published VI/EN QR guide at required widths for anchors, image completeness/dimensions and document overflow. Initial EN resize race discarded; fresh settled DOM observations fit all widths. No CSS change warranted.
+- Safe receipts: research/2026-10-06-live-link-graph.json and research/2026-10-06-links-and-article-audit.md. No indexing/traffic/backlink/complete-accessibility claim.
+- Shared WIP preserved; no CMS/credential/community action. Channel and scheduling authorization still unanswered. Next: guide keyboard/contents/visual checks and scoped documentation publication of accumulated receipts.
+
+## 2026-10-06 — RUN-009 — Mobile contents keyboard check and checkpoint consolidation
+
+- Revalidated shared Git/current records. Prior turn was progress: live link graph and published guide evidence added. No pending external outcome.
+- Supported browser at 375px opened actual VI guide contents via Enter, advanced via Tab to first contents link, and activated via Enter; hash #section-b1 and matching heading verified. Screenshot visually inspected for mobile contents and illustration label. No full accessibility claim.
+- Replaced accumulated chronological STATUS sections with a concise current checkpoint pointing to immutable receipts and append-only history. Preserved ongoing goal, missing permissions, exact release/validation limits, shared WIP and next actions.
+- No code/CMS/external mutation or new scheduler. Next: publish accumulated campaign evidence in a scoped documentation PR, then close remaining bounded visual/SERP/community-scope gaps.
