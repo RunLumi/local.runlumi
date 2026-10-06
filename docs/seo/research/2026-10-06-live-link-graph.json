@@ -1,0 +1,1233 @@
+{
+  "observedAt": "2026-10-06T15:11:16.879Z",
+  "method": "Live HTML anchor extraction, same-origin pathname graph; self links excluded from incoming counts; no traffic or discovery guarantee",
+  "orphans": [],
+  "rows": [
+    {
+      "url": "https://local.runlumi.app/",
+      "destinations": [
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/nganh/spa/",
+        "https://local.runlumi.app/nganh/garage/",
+        "https://local.runlumi.app/nganh/dien-lanh/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/en/",
+      "destinations": [
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/en/services/google-review-qr/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/en/services/google-presence-check/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/en/industries/spa/",
+        "https://local.runlumi.app/en/industries/auto-repair/",
+        "https://local.runlumi.app/en/industries/hvac/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/blog/",
+      "destinations": [
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/",
+      "destinations": [
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/about/",
+      "destinations": [
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/about/",
+      "destinations": [
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/dich-vu/google-maps/",
+      "destinations": [
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+        "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/en/services/google-maps/",
+      "destinations": [
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/en/services/google-presence-check/",
+        "https://local.runlumi.app/en/services/google-review-qr/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/en/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+      "destinations": [
+        "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/en/services/google-review-qr/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/en/services/google-review-qr/",
+      "destinations": [
+        "https://local.runlumi.app/en/services/google-review-qr/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/en/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+      "destinations": [
+        "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/en/services/google-presence-check/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/en/services/google-presence-check/",
+      "destinations": [
+        "https://local.runlumi.app/en/services/google-presence-check/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/en/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+      "destinations": [
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/nganh/spa/",
+        "https://local.runlumi.app/nganh/garage/",
+        "https://local.runlumi.app/nganh/dien-lanh/",
+        "https://local.runlumi.app/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/en/services/local-business-website/",
+      "destinations": [
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/en/industries/spa/",
+        "https://local.runlumi.app/en/industries/auto-repair/",
+        "https://local.runlumi.app/en/industries/hvac/",
+        "https://local.runlumi.app/en/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/nganh/spa/",
+      "destinations": [
+        "https://local.runlumi.app/nganh/spa/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/en/industries/spa/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/en/industries/spa/",
+      "destinations": [
+        "https://local.runlumi.app/en/industries/spa/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/nganh/spa/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/en/services/google-review-qr/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/en/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/nganh/garage/",
+      "destinations": [
+        "https://local.runlumi.app/nganh/garage/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/en/industries/auto-repair/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/en/industries/auto-repair/",
+      "destinations": [
+        "https://local.runlumi.app/en/industries/auto-repair/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/nganh/garage/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/en/services/google-review-qr/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/en/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/nganh/dien-lanh/",
+      "destinations": [
+        "https://local.runlumi.app/nganh/dien-lanh/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/en/industries/hvac/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/en/industries/hvac/",
+      "destinations": [
+        "https://local.runlumi.app/en/industries/hvac/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/nganh/dien-lanh/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/en/services/google-review-qr/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/en/blog/"
+      ],
+      "outsideSitemap": []
+    },
+    {
+      "url": "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+      "destinations": [
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+      "destinations": [
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+      "destinations": [
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+      "destinations": [
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+      "destinations": [
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+      "destinations": [
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+      "destinations": [
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+      "destinations": [
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/dich-vu-google-maps/",
+      "destinations": [
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/qr-review-google/",
+      "destinations": [
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/seo-google-maps/",
+      "destinations": [
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+      "destinations": [
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/xac-minh-google-maps/",
+      "destinations": [
+        "https://local.runlumi.app/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/blog/search/",
+        "https://local.runlumi.app/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+      "destinations": [
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/qr-review-google/",
+      "destinations": [
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/seo-google-maps/",
+      "destinations": [
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+      "destinations": [
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/xac-minh-google-maps/",
+      "destinations": [
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ],
+      "outsideSitemap": [
+        "https://local.runlumi.app/en/blog/search/",
+        "https://local.runlumi.app/en/blog/rss.xml"
+      ]
+    }
+  ],
+  "incoming": [
+    {
+      "url": "https://local.runlumi.app/",
+      "count": 19,
+      "from": [
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+        "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/nganh/spa/",
+        "https://local.runlumi.app/nganh/garage/",
+        "https://local.runlumi.app/nganh/dien-lanh/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/",
+      "count": 19,
+      "from": [
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/en/services/google-review-qr/",
+        "https://local.runlumi.app/en/services/google-presence-check/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/en/industries/spa/",
+        "https://local.runlumi.app/en/industries/auto-repair/",
+        "https://local.runlumi.app/en/industries/hvac/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/",
+      "count": 19,
+      "from": [
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+        "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/nganh/spa/",
+        "https://local.runlumi.app/nganh/garage/",
+        "https://local.runlumi.app/nganh/dien-lanh/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/",
+      "count": 19,
+      "from": [
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/en/services/google-review-qr/",
+        "https://local.runlumi.app/en/services/google-presence-check/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/en/industries/spa/",
+        "https://local.runlumi.app/en/industries/auto-repair/",
+        "https://local.runlumi.app/en/industries/hvac/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/about/",
+      "count": 11,
+      "from": [
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/about/",
+      "count": 11,
+      "from": [
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/dich-vu/google-maps/",
+      "count": 8,
+      "from": [
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+        "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/nganh/spa/",
+        "https://local.runlumi.app/nganh/garage/",
+        "https://local.runlumi.app/nganh/dien-lanh/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/services/google-maps/",
+      "count": 8,
+      "from": [
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/en/services/google-review-qr/",
+        "https://local.runlumi.app/en/services/google-presence-check/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/en/industries/spa/",
+        "https://local.runlumi.app/en/industries/auto-repair/",
+        "https://local.runlumi.app/en/industries/hvac/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+      "count": 6,
+      "from": [
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/en/services/google-review-qr/",
+        "https://local.runlumi.app/nganh/spa/",
+        "https://local.runlumi.app/nganh/garage/",
+        "https://local.runlumi.app/nganh/dien-lanh/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/services/google-review-qr/",
+      "count": 6,
+      "from": [
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+        "https://local.runlumi.app/en/industries/spa/",
+        "https://local.runlumi.app/en/industries/auto-repair/",
+        "https://local.runlumi.app/en/industries/hvac/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+      "count": 3,
+      "from": [
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/en/services/google-presence-check/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/services/google-presence-check/",
+      "count": 3,
+      "from": [
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+      "count": 8,
+      "from": [
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/dich-vu/google-maps/",
+        "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+        "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/nganh/spa/",
+        "https://local.runlumi.app/nganh/garage/",
+        "https://local.runlumi.app/nganh/dien-lanh/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/services/local-business-website/",
+      "count": 8,
+      "from": [
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/services/google-maps/",
+        "https://local.runlumi.app/en/services/google-review-qr/",
+        "https://local.runlumi.app/en/services/google-presence-check/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/en/industries/spa/",
+        "https://local.runlumi.app/en/industries/auto-repair/",
+        "https://local.runlumi.app/en/industries/hvac/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/nganh/spa/",
+      "count": 3,
+      "from": [
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/en/industries/spa/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/industries/spa/",
+      "count": 3,
+      "from": [
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/nganh/spa/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/nganh/garage/",
+      "count": 3,
+      "from": [
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/en/industries/auto-repair/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/industries/auto-repair/",
+      "count": 3,
+      "from": [
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/nganh/garage/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/nganh/dien-lanh/",
+      "count": 3,
+      "from": [
+        "https://local.runlumi.app/",
+        "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+        "https://local.runlumi.app/en/industries/hvac/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/industries/hvac/",
+      "count": 3,
+      "from": [
+        "https://local.runlumi.app/en/",
+        "https://local.runlumi.app/en/services/local-business-website/",
+        "https://local.runlumi.app/nganh/dien-lanh/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+      "count": 11,
+      "from": [
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+      "count": 11,
+      "from": [
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+      "count": 11,
+      "from": [
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+      "count": 11,
+      "from": [
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/about/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+      "count": 11,
+      "from": [
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+      "count": 11,
+      "from": [
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+      "count": 11,
+      "from": [
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+      "count": 11,
+      "from": [
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/about/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/dich-vu-google-maps/",
+      "count": 7,
+      "from": [
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/qr-review-google/",
+      "count": 5,
+      "from": [
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/qr-review-google/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/seo-google-maps/",
+      "count": 6,
+      "from": [
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+      "count": 5,
+      "from": [
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/xac-minh-google-maps/",
+      "count": 5,
+      "from": [
+        "https://local.runlumi.app/blog/",
+        "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+      "count": 7,
+      "from": [
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+        "https://local.runlumi.app/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/qr-review-google/",
+      "count": 5,
+      "from": [
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+        "https://local.runlumi.app/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/seo-google-maps/",
+      "count": 6,
+      "from": [
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+        "https://local.runlumi.app/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/qr-review-google/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+      "count": 5,
+      "from": [
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+        "https://local.runlumi.app/en/blog/seo-google-maps/",
+        "https://local.runlumi.app/en/blog/xac-minh-google-maps/"
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/xac-minh-google-maps/",
+      "count": 5,
+      "from": [
+        "https://local.runlumi.app/en/blog/",
+        "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+        "https://local.runlumi.app/blog/xac-minh-google-maps/",
+        "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+        "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/"
+      ]
+    }
+  ]
+}

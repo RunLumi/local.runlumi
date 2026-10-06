@@ -1,0 +1,920 @@
+{
+  "observedAt": "2026-10-06T15:10:04.854Z",
+  "method": "Bounded read-only HTTP audit of current sitemap destinations; no indexing or traffic claim",
+  "sitemapStatus": 200,
+  "count": 38,
+  "rows": [
+    {
+      "url": "https://local.runlumi.app/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/",
+      "canonical": "https://local.runlumi.app/",
+      "title": "Lumi Local | Website, Gọi/Zalo &amp; QR đánh giá — Lumi làm giúp bạn",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/",
+      "canonical": "https://local.runlumi.app/en/",
+      "title": "Lumi Local | Website, Call/Zalo &amp; Review QR — built for local businesses",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/blog/",
+      "canonical": "https://local.runlumi.app/blog/",
+      "title": "Hiểu rõ trước khi thuê. | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/"
+        },
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/blog/",
+      "canonical": "https://local.runlumi.app/en/blog/",
+      "title": "Local presence, explained. | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/"
+        },
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/about/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/blog/about/",
+      "canonical": "https://local.runlumi.app/blog/about/",
+      "title": "Cẩm nang này được viết như thế nào? | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/about/"
+        },
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/about/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/about/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/about/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/blog/about/",
+      "canonical": "https://local.runlumi.app/en/blog/about/",
+      "title": "How we publish | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/about/"
+        },
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/about/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/about/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/dich-vu/google-maps/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/dich-vu/google-maps/",
+      "canonical": "https://local.runlumi.app/dich-vu/google-maps/",
+      "title": "Dịch vụ Google Maps cho doanh nghiệp địa phương | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/dich-vu/google-maps/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/services/google-maps/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/dich-vu/google-maps/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/services/google-maps/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/services/google-maps/",
+      "canonical": "https://local.runlumi.app/en/services/google-maps/",
+      "title": "Google Maps Support for Local Businesses in Vietnam | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/dich-vu/google-maps/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/services/google-maps/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/dich-vu/google-maps/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+      "canonical": "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/",
+      "title": "Mã QR đánh giá Google cho cửa hàng | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/services/google-review-qr/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/services/google-review-qr/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/services/google-review-qr/",
+      "canonical": "https://local.runlumi.app/en/services/google-review-qr/",
+      "title": "Google Review QR for Local Businesses in Vietnam | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/services/google-review-qr/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/dich-vu/ma-qr-danh-gia-google/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+      "canonical": "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/",
+      "title": "Kiểm tra hiện diện Google của doanh nghiệp | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/services/google-presence-check/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/services/google-presence-check/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/services/google-presence-check/",
+      "canonical": "https://local.runlumi.app/en/services/google-presence-check/",
+      "title": "Google Presence Check for Local Businesses | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/services/google-presence-check/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/dich-vu/kiem-tra-hien-dien-google/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+      "canonical": "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/",
+      "title": "Website cho doanh nghiệp địa phương từ 1.990.000đ | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/services/local-business-website/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/services/local-business-website/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/services/local-business-website/",
+      "canonical": "https://local.runlumi.app/en/services/local-business-website/",
+      "title": "Local Business Website in Vietnam from 1,990,000 VND | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/services/local-business-website/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/dich-vu/website-doanh-nghiep-dia-phuong/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/nganh/spa/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/nganh/spa/",
+      "canonical": "https://local.runlumi.app/nganh/spa/",
+      "title": "Website và QR đánh giá cho spa địa phương | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/nganh/spa/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/industries/spa/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/nganh/spa/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/industries/spa/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/industries/spa/",
+      "canonical": "https://local.runlumi.app/en/industries/spa/",
+      "title": "Websites and Honest Review QR for Local Spas | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/nganh/spa/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/industries/spa/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/nganh/spa/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/nganh/garage/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/nganh/garage/",
+      "canonical": "https://local.runlumi.app/nganh/garage/",
+      "title": "Website dịch vụ cho garage và sửa ô tô | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/nganh/garage/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/industries/auto-repair/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/nganh/garage/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/industries/auto-repair/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/industries/auto-repair/",
+      "canonical": "https://local.runlumi.app/en/industries/auto-repair/",
+      "title": "Service Websites for Local Auto Repair Shops | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/nganh/garage/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/industries/auto-repair/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/nganh/garage/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/nganh/dien-lanh/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/nganh/dien-lanh/",
+      "canonical": "https://local.runlumi.app/nganh/dien-lanh/",
+      "title": "Website cho dịch vụ điện lạnh, lắp đặt và bảo trì | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/nganh/dien-lanh/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/industries/hvac/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/nganh/dien-lanh/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/industries/hvac/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/industries/hvac/",
+      "canonical": "https://local.runlumi.app/en/industries/hvac/",
+      "title": "HVAC Installation, Repair and Maintenance Websites | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi-VN",
+          "url": "https://local.runlumi.app/nganh/dien-lanh/"
+        },
+        {
+          "language": "en-VN",
+          "url": "https://local.runlumi.app/en/industries/hvac/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/nganh/dien-lanh/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+      "canonical": "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/",
+      "title": "Chọn đúng dịch vụ | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/"
+        },
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+      "canonical": "https://local.runlumi.app/blog/topics/quyen-so-huu/",
+      "title": "Hồ sơ &amp; quyền sở hữu | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/topics/quyen-so-huu/"
+        },
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/topics/quyen-so-huu/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/topics/quyen-so-huu/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+      "canonical": "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/",
+      "title": "Hiện diện địa phương | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/"
+        },
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+      "canonical": "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/",
+      "title": "Đánh giá trung thực | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/"
+        },
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+      "canonical": "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/",
+      "title": "Choosing a service | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/topics/lua-chon-dich-vu/"
+        },
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/topics/lua-chon-dich-vu/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+      "canonical": "https://local.runlumi.app/en/blog/topics/quyen-so-huu/",
+      "title": "Profiles &amp; ownership | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/topics/quyen-so-huu/"
+        },
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/topics/quyen-so-huu/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/topics/quyen-so-huu/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+      "canonical": "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/",
+      "title": "Local presence | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/topics/hien-dien-dia-phuong/"
+        },
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/topics/hien-dien-dia-phuong/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+      "canonical": "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/",
+      "title": "Honest reviews | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/topics/danh-gia-trung-thuc/"
+        },
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/topics/danh-gia-trung-thuc/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/dich-vu-google-maps/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/blog/dich-vu-google-maps/",
+      "canonical": "https://local.runlumi.app/blog/dich-vu-google-maps/",
+      "title": "Dịch vụ Google Maps: cần thuê gì, tự làm gì? | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/dich-vu-google-maps/"
+        },
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/dich-vu-google-maps/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/dich-vu-google-maps/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/qr-review-google/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/blog/qr-review-google/",
+      "canonical": "https://local.runlumi.app/blog/qr-review-google/",
+      "title": "QR review Google: mời khách thật đánh giá đúng cách | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/qr-review-google/"
+        },
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/qr-review-google/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/qr-review-google/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/seo-google-maps/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/blog/seo-google-maps/",
+      "canonical": "https://local.runlumi.app/blog/seo-google-maps/",
+      "title": "SEO Google Maps: checklist trước khi thuê dịch vụ | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/seo-google-maps/"
+        },
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/seo-google-maps/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/seo-google-maps/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+      "canonical": "https://local.runlumi.app/blog/tao-dia-diem-google-maps/",
+      "title": "Cách tạo địa điểm trên Google Maps cho doanh nghiệp | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/tao-dia-diem-google-maps/"
+        },
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/tao-dia-diem-google-maps/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/blog/xac-minh-google-maps/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/blog/xac-minh-google-maps/",
+      "canonical": "https://local.runlumi.app/blog/xac-minh-google-maps/",
+      "title": "Xác minh Google Maps: chủ doanh nghiệp cần chuẩn bị gì? | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/xac-minh-google-maps/"
+        },
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/xac-minh-google-maps/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/xac-minh-google-maps/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+      "canonical": "https://local.runlumi.app/en/blog/dich-vu-google-maps/",
+      "title": "Google Maps services: what should you pay for? | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/dich-vu-google-maps/"
+        },
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/dich-vu-google-maps/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/dich-vu-google-maps/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/qr-review-google/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/blog/qr-review-google/",
+      "canonical": "https://local.runlumi.app/en/blog/qr-review-google/",
+      "title": "Google review QR: invite honest customer feedback | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/qr-review-google/"
+        },
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/qr-review-google/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/qr-review-google/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/seo-google-maps/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/blog/seo-google-maps/",
+      "canonical": "https://local.runlumi.app/en/blog/seo-google-maps/",
+      "title": "Google Maps SEO: a checklist before hiring | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/seo-google-maps/"
+        },
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/seo-google-maps/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/seo-google-maps/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+      "canonical": "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/",
+      "title": "How to add a business location on Google Maps | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/tao-dia-diem-google-maps/"
+        },
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/tao-dia-diem-google-maps/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/tao-dia-diem-google-maps/"
+        }
+      ]
+    },
+    {
+      "url": "https://local.runlumi.app/en/blog/xac-minh-google-maps/",
+      "status": 200,
+      "finalUrl": "https://local.runlumi.app/en/blog/xac-minh-google-maps/",
+      "canonical": "https://local.runlumi.app/en/blog/xac-minh-google-maps/",
+      "title": "Google Maps verification: what owners should prepare | Lumi Local",
+      "h1": 1,
+      "robots": "index, follow",
+      "headerRobots": null,
+      "alternates": [
+        {
+          "language": "en",
+          "url": "https://local.runlumi.app/en/blog/xac-minh-google-maps/"
+        },
+        {
+          "language": "vi",
+          "url": "https://local.runlumi.app/blog/xac-minh-google-maps/"
+        },
+        {
+          "language": "x-default",
+          "url": "https://local.runlumi.app/blog/xac-minh-google-maps/"
+        }
+      ]
+    }
+  ]
+}
