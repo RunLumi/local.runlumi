@@ -91,3 +91,9 @@ CMS Worker deploy uses `wrangler deploy --config dist-blog/server/wrangler.json`
 The CMS post-build guard also clears only its generated `.wrangler/deploy/config.json` redirect. This prevents a subsequent Pages deployment from reading the CMS Worker config. Worker releases still use the explicit dist-blog/server/wrangler.json. Other generated redirects are preserved.
 
 Final release evidence: [RELEASE-2026-10-06.md](../RELEASE-2026-10-06.md). `node scripts/verify-release.mjs` performs only read-only production checks; it sends no enquiries or credentials.
+
+## Explicit Pages binding configuration
+
+wrangler.jsonc is the Pages source configuration; wrangler.blog.jsonc is the separate Astro CMS configuration. Pages production declares BLOG to lumi-local-blog; preview explicitly has no production service binding. Local Pages QA that needs the CMS may pass `--service BLOG=lumi-local-blog`. No credentials are stored in either config. Existing encrypted Pages secrets remain server-side.
+
+The production verifier requires no-store on live blog HTML and a protected CMS editor response rather than static 404. Deployment metadata alone does not prove that requests reach the binding. The release workflow runs this live check. Keep readiness as a server-side encrypted environment marker if it must survive config-managed deployments; only mark ready after verified owner registration.

@@ -46,3 +46,4 @@ jobs:
           curl --fail --retry 5 --retry-delay 3 https://local.runlumi.app/en/ -o /tmp/lumi-en.html
           grep -q 'Lumi Local' /tmp/lumi-vi.html
           grep -q 'Lumi Local' /tmp/lumi-en.html
+          node scripts/verify-release.mjs
