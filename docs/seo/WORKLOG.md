@@ -204,3 +204,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Local browser expanded both locale answers. Final VI/EN pages measured at 320/375/768/1440: one h1 and no overflow in all eight observations.
 - The source thread is a single international qualitative signal; no additional Reddit comment or DM. CA-002's one-comment permission is consumed. Follow-up check remains 2026-10-13.
 - Next: run exact-head existing release gates, PR and normal merge. Production deployment remains under standing campaign release path if Actions budget blocks jobs; verify both domains after release.
+
+
+## 2026-10-06 — RUN-017 release verified; RUN-018 Search Console path found
+
+- PR #30 merged at 5c18b9768702726cc628398a0622f975dba9c590. Hosted build/deploy jobs again did not start because of Actions budget; exact merged head passed protected static build, all 48 tests, seed validation and CMS Worker build locally.
+- Manual Cloudflare Pages deployment completed at https://25f31f3b.lumi-local.pages.dev under the activated campaign release contract. Production release verifier passed; live HTTP readback returned 200 and new VI/EN FAQ text on the custom domain and deployment host. Signed-in browser expanded both answers. No CMS edits, live enquiry or analytics tracker.
+- The Search Console connector catalog lists GSC Wizard as available but unconnected. A suggestion to connect was issued. No Google OAuth or private property data accessed. Receipt: research/2026-10-06-gsc-connector-availability.md.
+- Campaign remains incomplete; actual GSC, indexing, referral, enquiry and paid outcome data are unknown. CA-002 one-comment scope remains consumed, with follow-up check due 2026-10-13; no new post or reply permission inferred. Scheduler remains unconfigured.
