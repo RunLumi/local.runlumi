@@ -2,14 +2,14 @@
 
 Updated: 2026-10-06 · Asia/Saigon.
 
-- Phase: **planned / goal saved**, not activated.
-- Campaign start/end: not set; set on actual activation, 90-day horizon.
+- Phase: **active — day 1 baseline and scope preparation**.
+- Campaign activated: 2026-10-06 via the human `/goal` request. Day 90: 2027-01-04 (activation is day 1). Reviews: day 30 2026-11-04; day 60 2026-12-04.
 - Goal: [GOAL_SEO_GEO_90_DAYS.md](../GOAL_SEO_GEO_90_DAYS.md).
 - History: [WORKLOG.md](WORKLOG.md).
 - Channel scope: [channels.csv](channels.csv); currently no confirmed account/channel entries.
 - External actions: [community-actions.csv](community-actions.csv); currently no posts/submissions/contact attempts.
-- Scheduler: not configured by this documentation task.
-- Organic/GSC/referral/AI-citation baseline: unknown; no campaign baseline collected yet.
+- Scheduler: not configured. Automatic approval review rejected heartbeat creation; explicit scheduling approval requested. Next manual check: 2026-10-12 09:00 Asia/Saigon.
+- Organic/GSC/referral/AI-citation baseline: unknown. Dataset and anonymous production-access baseline verified; see [day-one receipt](research/2026-10-06-baseline.md).
 
 ## Repository receipt
 
@@ -31,4 +31,22 @@ Record current phase/window, checkout/HEAD/WIP, actual completed work/evidence, 
 
 ## Documentation delivery reference
 
-Goal/ledger preparation: bd710bd and [PR #24](https://github.com/RunLumi/local.runlumi/pull/24). Documentation checks and required pre-push regression/build checks passed; see DOC-002 in WORKLOG.md. Revalidate the actual PR/main state on resume. Campaign remains planned, with zero external actions and no scheduler configured.
+Goal/ledger preparation: bd710bd and [PR #24](https://github.com/RunLumi/local.runlumi/pull/24). Documentation checks and required pre-push regression/build checks passed; see DOC-002 in WORKLOG.md. Revalidate the actual PR/main state on resume. That documentation task left the campaign planned. Activation is recorded in RUN-001; external actions remain zero and no scheduler is configured.
+
+## RUN-001 — current execution checkpoint
+
+Remote main and local HEAD verified at c14a81574d1598ec87b4628132c0cedacdd3ec54; PR #24 is merged. Existing docs/blog/checkpoint.md WIP preserved. No CMS edits or external submissions. Reddit browser connection was refused; search discovery is not thread/rules inspection. Browser /data/ redirected to editor sign-in; authenticated access unavailable. No live enquiry submitted.
+
+Next: inspect 15–30 representative queries across website/contact, honest-review QR and owner-controlled directions; complete public technical/mobile audit; select a useful improvement from observed defects. Inspect actual community rules and prepare concrete drafts before requesting channel/account authorization. No account identity has been selected or authorized.
+
+## RUN-002 — query discovery
+
+[15-query discovery receipt](research/2026-10-06-query-discovery.md) completed through bounded web tooling. This is not per-query Google ranking evidence. Next owned-site increment: QR service page should expose Google’s specific free DIY QR workflow and existing guide; verify live/source parity and ship bilingually without touching CMS articles. Community and scheduling scope remain pending.
+
+## RUN-003 — owned-site increment in progress
+
+Managed isolated worktree: /Users/james/.codex/worktrees/seo-qr-self-service/local.runlumi, base c14a815. Live QR page inspection confirmed the free DIY section lacked its specific official link. Added a locale-specific Google QR-instructions link to that section in ServicePage.astro. Existing source scope already explains the free option, so no claim expansion or CMS content change. Static protected build PASSED (exec session 39470 exited 0), using Node 24.20.0 and existing locked dependencies. No PR, merge or deployment yet. Next: verify rendered VI/EN and required checks, then create the scoped PR/release.
+
+## RUN-004 — validation receipt
+
+Static build, 48 tests, seed validation and CMS build passed in the isolated worktree. QR locale pages have correct links, resolved local anchors and no document overflow at all four required widths. Changed-section mobile visual/keyboard check and PR/release next; no production claim.
