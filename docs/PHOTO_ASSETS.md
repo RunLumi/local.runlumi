@@ -47,3 +47,7 @@ concepts from actual deliverables, premises, customers, and staff. Generated
 QR imagery is decorative, not a functional review destination. No claim of
 owning the pictured infrastructure is made. Existing brand and interface
 SVG icons remain; interactive product previews remain HTML.
+
+## Social preview cards — 2026-10-06
+
+`public/social-card-vi.png` and `public/social-card-en.png` (1200×630) are typographic cards rendered from HTML with the shipped Geist files via headless Chrome, then palette-compressed with Sharp. They contain only the hero line, the canonical Starter price and the four included surfaces; no imagery, customers or results. PNG is required because Facebook and Zalo link previews do not render SVG `og:image`. Regenerate both when the hero line or Starter price changes.

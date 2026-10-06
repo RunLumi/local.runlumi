@@ -64,7 +64,7 @@ const industries = {
       sub:'Menu, location, opening hours, and direct contact sit right where customers look.',
       phone:'0908 123 456',
       phoneTitle:'Good coffee. Easy to find. Easy to call.',
-      features:[['cup','Roasted Coffee','Phin & Espresso'],['pastry','Fresh Pastry','Baked daily'],['chair','Quiet Workspace','High-speed Wi-Fi']]
+      features:[['cup','Roasted Coffee','Phin & Espresso'],['pastry','Fresh Pastry','Baked daily'],['chair','Quiet Workspace','Wi-Fi & work tables']]
     },
     {
       key:'spa', tab:'Spa & Beauty', short:'Spa', icon:'lotus',
@@ -120,7 +120,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <span>{c.cta}</span>
           <ServiceIcon name="arrow" size={14} class="cta-arrow" />
         </a>
-        <a class="button button-primary mobile-header-cta" href="#bat-dau">{locale === 'vi' ? 'Xem thử' : 'See demo'}</a>
+        <a class="button button-primary mobile-header-cta" href="#bat-dau">{locale === 'vi' ? 'Xem thử' : 'See a preview'}</a>
       </div>
     </div>
   </header>
@@ -128,7 +128,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
   <main id="main" aria-label={labels.main}>
     <section class="hero wrap">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span>{c.hero.eyebrow}</p>
+        <p class="eyebrow">{c.hero.eyebrow}</p>
         <h1 class="local-headline">
           <span>{c.hero.title[0]}</span>
           <strong>{c.hero.title[1]}</strong>
@@ -245,7 +245,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
               </aside>
             ))}
             {inds.map(ind => (
-              <aside class="qr-stand" data-variant={ind.key} aria-label={locale === 'vi' ? 'Minh họa standee QR review' : 'Review QR standee illustration'}>
+              <aside class="qr-stand" data-variant={ind.key} aria-label={locale === 'vi' ? 'Minh họa QR đánh giá đặt quầy' : 'Counter review QR illustration'}>
                 <div class="qr-stand-header">
                   <span class="qr-brand">Lumi Local</span>
                   <span class="qr-tag">{locale === 'vi' ? 'Đặt quầy' : 'Counter'}</span>
@@ -280,7 +280,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
             ))}
           </div>
         </div>
-        <nav class="workflow-dock glass-control" aria-label="Quick links">
+        <nav class="workflow-dock glass-control" aria-label={locale === 'vi' ? 'Lối tắt bảng giá' : 'Pricing shortcuts'}>
           <a href="#trust-kit" class="dock-link">
             <span class="dock-step">01</span>
             <span class="dock-title">Trust Kit</span>
@@ -303,7 +303,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
 
     <p class="wrap meta">{illustrationNote}</p>
 
-    <section class="wrap proof-row" aria-label="Reassurance" data-reveal-group>
+    <section class="wrap proof-row" aria-label={locale === 'vi' ? 'Ba điều khách cần' : 'What visitors need'} data-reveal-group>
       {c.proof.map(([title,text]) => <article class="proof-card" data-reveal><span class="proof-mark"><ServiceIcon name="check" size={14} /></span><div><strong>{title}</strong><p>{text}</p></div></article>)}
     </section>
 
@@ -312,7 +312,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <div><p class="eyebrow">{c.examples.eyebrow}</p><h2 id="examples-title">{c.examples.title}</h2></div>
         <p class="section-intro">{c.examples.intro}<br /><small>{illustrationNote}</small></p>
       </div>
-      <div class="example-rail" data-reveal-group>
+      <div class="example-rail" role="region" tabindex="0" aria-labelledby="examples-title" data-reveal-group>
         {c.examples.items.map(([type,name,meta,text],i) => <article class="example-card sheet spotlight" data-reveal>
           <div class="example-browser">
             <span class="example-dots"><i></i><i></i><i></i></span>
@@ -351,7 +351,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         <article class="starter-offer sheet" id="starter" data-reveal>
           <div class="offer-header">
             <div>
-              <p class="index">02 / {labels.core}</p>
+              <p class="index">02</p>
               <h3>{c.packages.starter.name}</h3>
             </div>
             <span class="package-label">{labels.core}</span>
@@ -370,7 +370,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
             </ul>
             <div class="starter-receipt" tabindex="0" role="group" aria-label={labels.receipt}>
               <div class="receipt-header">
-                <span class="receipt-badge">{locale === 'vi' ? 'Chi phí trọn gói' : 'All-inclusive cost'}</span>
+                <span class="receipt-badge">{locale === 'vi' ? 'Chi phí năm đầu' : 'Year-one cost'}</span>
               </div>
               <div class="receipt-row">
                 <span>{locale === 'vi' ? 'Năm đầu' : 'Year one'}</span>
@@ -443,16 +443,18 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <div><p class="eyebrow">{c.convenience.eyebrow}</p><h2>{c.convenience.title}</h2></div>
           <p class="section-intro">{c.convenience.text}</p>
         </div>
-        <div class="convenience-grid" data-reveal-group data-draw>
-          {c.convenience.items.map(([i,title,text]) => <article class="convenience-card" data-reveal>
-            <div class="convenience-header">
-              <span class="rail-node" aria-hidden="true"></span>
-              <span class="index">{i}</span>
-              <span class="convenience-line"></span>
-            </div>
-            <h3>{title}</h3>
-            <p>{text}</p>
-          </article>)}
+        <div class="handoff" data-reveal-group>
+          {[['you', c.convenience.you], ['lumi', c.convenience.lumi]].map(([side, part]) => (
+            <article class={`handoff-card handoff-${side}`} aria-labelledby={`handoff-${side}`} data-reveal>
+              <header class="handoff-head">
+                <h3 class="index" id={`handoff-${side}`}>{part.label}</h3>
+                <span class="handoff-count" aria-hidden="true">{part.items.length}</span>
+              </header>
+              {side === 'you'
+                ? <ol class="handoff-list">{part.items.map((item, i) => <li><span class="handoff-num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span><span>{item}</span></li>)}</ol>
+                : <ul class="handoff-list handoff-grid">{part.items.map(item => <li><span class="handoff-check"><ServiceIcon name="check" size={14} /></span><span>{item}</span></li>)}</ul>}
+            </article>
+          ))}
         </div>
       </div>
     </section>
@@ -546,7 +548,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
                   </div>
                   <div class="delivery-site-info">
                     <strong>Google Review</strong>
-                    <span>{locale === 'vi' ? 'QR đặt quầy · mời khách thật' : 'Counter QR · genuine customers only'}</span>
+                    <span>{locale === 'vi' ? 'QR đặt quầy · mời mọi khách đã ghé' : 'Counter QR · for every customer'}</span>
                   </div>
                 </div>
               </li>
@@ -580,7 +582,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <strong class="renewal-price">{price}</strong>
           <p>{text}</p>
           <ul class="renewal-checklist">
-            <li><span class="service-bullet"><ServiceIcon name="hosting" /></span><span>{locale === 'vi' ? 'Hosting tốc độ cao + Chứng chỉ SSL' : 'High-speed hosting + SSL certificate'}</span></li>
+            <li><span class="service-bullet"><ServiceIcon name="hosting" /></span><span>{locale === 'vi' ? 'Hosting + chứng chỉ SSL' : 'Hosting + SSL certificate'}</span></li>
             <li><span class="service-bullet"><ServiceIcon name="maintenance" /></span><span>{locale === 'vi' ? 'Bảo trì kỹ thuật trong phạm vi gói' : 'Technical maintenance within agreed scope'}</span></li>
             {i === 1 && <li><span class="service-bullet"><ServiceIcon name="domain" /></span><span>{locale === 'vi' ? 'Gồm 1 tên miền tiêu chuẩn đã xác nhận' : 'Includes 1 agreed standard custom domain'}</span></li>}
           </ul>
@@ -629,7 +631,8 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
         </label>
         <label class="field-label">
           <span class="label-title">{c.form.phone} <span class="required-mark">*</span></span>
-          <input name="phone" type="tel" maxlength="40" autocomplete="tel" inputmode="tel" required placeholder="0908 xxx xxx" />
+          <input name="phone" type="tel" maxlength="40" autocomplete="tel" inputmode="tel" required pattern="(?=(?:\D*\d){8,15}\D*$)[0-9+.\s\(\)\-]{8,40}" title={c.form.phoneFormat} placeholder="0908 xxx xxx" />
+          <small class="field-hint">{c.form.phoneHint}</small>
         </label>
         <details class="optional-fields full">
           <summary class="optional-summary">
@@ -643,7 +646,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
             </label>
             <label class="field-label full">
               <span class="label-title">{c.form.note}</span>
-              <textarea name="note" rows="3" maxlength="1000" placeholder={locale === 'vi' ? 'Bạn đang cần website mới, chỉnh QR review hay nâng cấp hiện diện online?' : 'Tell us about your business goals...'}></textarea>
+              <textarea name="note" rows="3" maxlength="1000" placeholder={locale === 'vi' ? 'Ví dụ: chưa có website, muốn có bảng giá và QR đặt quầy' : 'e.g., no website yet; want a price list and a counter QR'}></textarea>
             </label>
           </div>
         </details>
@@ -651,7 +654,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <input name="consent" type="checkbox" value="yes" required />
           <span>{c.form.consent}</span>
         </label>
-        <p class="form-status full" id="form-status" role="status" aria-live="polite" data-success={c.form.success} data-error={c.form.error}></p>
+        <p class="form-status full" id="form-status" role="status" aria-live="polite" data-success={c.form.success} data-error={c.form.error} data-invalid={c.form.invalid}></p>
         <button class="button button-primary full submit-btn" type="submit">
           <span class="submit-label">{c.form.submit}</span>
           <ServiceIcon name="arrow" size={16} class="submit-arrow" />

@@ -1520,101 +1520,79 @@
 .section-heading.inverted .eyebrow{color:var(--color-lumi-cyan)}
 .section-heading.inverted .section-intro{color:#c8d0de}
 
-.convenience-grid{
-  position:relative;
+/* Division of labour: a short owner list beside the longer Lumi list.
+   The asymmetry is the message — the owner's part is visibly small. */
+.handoff{
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:24px;
+  grid-template-columns:minmax(0,.82fr) minmax(0,1.48fr);
+  gap:20px;
+  align-items:stretch;
 }
-
-/* Connecting rail runs ABOVE the cards between the three node dots,
-   so it can never strike through the index numbers. Draws when the
-   section enters the viewport. */
-.convenience-grid::before{
-  content:"";
-  position:absolute;
-  top:7px;
-  left:16.666%;
-  right:16.666%;
-  height:1px;
-  background:rgba(125,199,239,.3);
-  transform:scaleX(0);
-  transform-origin:left center;
-  transition:transform 1.2s var(--ease-spring) .1s;
-}
-.convenience-grid.in-view::before{transform:scaleX(1)}
-
-.convenience-card{
-  padding:30px;
-  background:rgba(255,255,255,.03);
+.handoff-card{
+  padding:28px;
   border:1px solid rgba(255,255,255,.1);
   border-radius:14px;
-  transition:border-color .25s var(--ease-spring),background .25s var(--ease-spring);
+  background:rgba(255,255,255,.03);
 }
-
-.convenience-card:hover{
-  background:rgba(255,255,255,.05);
-  border-color:rgba(255,255,255,.22);
+.handoff-lumi{
+  background:rgba(255,255,255,.065);
+  border-color:rgba(125,199,239,.28);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
 }
-
-/* Desktop: nodes sit on the rail above each card, centered column-width;
-   the in-card header is just index + hairline. */
-@media(min-width:769px){
-  .convenience-grid{padding-top:16px}
-  .convenience-card{position:relative}
-  .rail-node{
-    position:absolute;
-    top:-14px;
-    left:50%;
-    margin-left:-4.5px;
-  }
-}
-
-.convenience-header{
+.handoff-head{
   display:flex;
-  align-items:center;
+  align-items:baseline;
+  justify-content:space-between;
   gap:12px;
-  margin-bottom:14px;
+  padding-bottom:16px;
+  margin-bottom:18px;
+  border-bottom:1px solid rgba(255,255,255,.1);
 }
-
-.rail-node{
-  width:9px;
-  height:9px;
-  border-radius:50%;
-  background:var(--color-lumi-cyan);
-  box-shadow:0 0 0 3px rgba(125,199,239,.18);
-  flex-shrink:0;
-  transform:scale(0);
-  transition:transform .5s var(--ease-spring);
-}
-.convenience-grid.in-view .rail-node{transform:scale(1)}
-.convenience-card:nth-child(2) .rail-node{transition-delay:.18s}
-.convenience-card:nth-child(3) .rail-node{transition-delay:.36s}
-
-.convenience-header .index{
-  color:var(--color-lumi-cyan);
-  font-size:14px;
-}
-
-.convenience-line{
-  height:1px;
-  flex:1;
-  background:rgba(255,255,255,.1);
-}
-
-.convenience-card h3{
-  margin:0 0 10px;
+.handoff-head .index{margin:0;color:var(--color-lumi-cyan);font-size:13px}
+.handoff-count{
   color:white;
-  font-size:22px;
-  font-weight:600;
-  letter-spacing:-.02em;
+  font-family:var(--font-mono);
+  font-size:30px;
+  font-weight:560;
+  line-height:1;
+  letter-spacing:-.04em;
 }
-
-.convenience-card p{
+.handoff-you .handoff-count{color:#8fa3b8}
+.handoff-list{
+  display:grid;
+  gap:14px;
   margin:0;
-  color:#c8d0de;
-  font-size:15px;
-  line-height:1.6;
+  padding:0;
+  list-style:none;
+}
+.handoff-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}
+.handoff-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  color:#e6ebf2;
+  font-size:16px;
+  line-height:1.5;
+}
+.handoff-you li{color:#c8d0de}
+.handoff-num{
+  flex-shrink:0;
+  min-width:22px;
+  padding-top:2px;
+  color:#8fa3b8;
+  font-family:var(--font-mono);
+  font-size:12px;
+}
+.handoff-check{
+  display:inline-grid;
+  place-items:center;
+  flex-shrink:0;
+  width:22px;
+  height:22px;
+  margin-top:1px;
+  border-radius:6px;
+  background:rgba(125,199,239,.14);
+  color:var(--color-lumi-cyan);
 }
 
 /* --------------------------------------------------------------------------
@@ -2314,6 +2292,7 @@
 
 .field-label{
   display:grid;
+  align-content:start;
   gap:8px;
   color:var(--color-civic-navy);
   font-weight:600;
@@ -2423,8 +2402,13 @@
   color:var(--color-soft-slate);
 }
 
-.form-status[data-state="success"]{color:var(--color-success);font-weight:600}
-.form-status[data-state="error"]{color:var(--color-risk);font-weight:600}
+.form-status:empty{min-height:0}
+.form-status:focus{outline:none}
+.form-status[data-state]{padding:12px 14px;border-radius:10px;border:1px solid;font-weight:600;line-height:1.5}
+.form-status[data-state="success"]{color:var(--color-success);background:var(--color-success-soft);border-color:rgba(31,122,77,.24)}
+.form-status[data-state="error"]{color:var(--color-risk);background:var(--color-risk-soft);border-color:rgba(194,65,12,.22)}
+
+.field-hint{color:var(--color-soft-slate);font-size:12.5px;font-weight:450;line-height:1.45}
 
 .submit-btn{
   min-height:48px;
@@ -2539,10 +2523,10 @@
   .qr-pattern-box{width:62px;height:62px;margin:6px auto}
   .qr-pattern-box svg{width:54px;height:54px}
 
-  .convenience-grid::before{display:none}
-  .rail-node{transform:scale(1);transition:none}
+  .handoff,.handoff-grid{grid-template-columns:1fr}
+  .handoff-card{padding:22px}
 
-  .proof-row,.convenience-grid,.renewal-grid,.trust-grid{grid-template-columns:1fr}
+  .proof-row,.renewal-grid,.trust-grid{grid-template-columns:1fr}
   .example-rail{grid-template-columns:1fr}
   .offer-side{grid-template-columns:1fr}
   .starter-content{grid-template-columns:1fr}
@@ -2652,4 +2636,52 @@
  .local-headline{font-size:clamp(36px,9vw,50px);max-width:13ch}
  .feature-grid{grid-template-columns:1fr}
  .feature-grid .feature-card,.feature-grid .feature-card:nth-child(even){padding:24px 0;border-left:0}
+}
+
+/* Phones: the illustrative examples become a swipeable rail (the next card
+   peeks in as the affordance) and principle cards lay out as compact rows.
+   Together these remove roughly two screens of scrolling at 375px. */
+@media(max-width:760px){
+  .example-rail{
+    grid-template-columns:none;
+    grid-auto-flow:column;
+    grid-auto-columns:min(84%,340px);
+    gap:12px;
+    margin-inline:-24px;
+    padding:4px 24px 14px;
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+    scroll-snap-type:x mandatory;
+    scroll-padding-inline:24px;
+    scrollbar-width:none;
+  }
+  .example-rail::-webkit-scrollbar{display:none}
+  .example-card{scroll-snap-align:start}
+  /* Off-screen rail cards never intersect the viewport; keep them visible so the peek works. */
+  .js .example-rail [data-reveal]{opacity:1;transform:none}
+  .trust-card{flex-direction:row;align-items:flex-start;gap:14px;padding:20px}
+  .trust-card .service-emblem{flex-shrink:0}
+}
+@media(max-width:540px){
+  .example-rail{margin-inline:-16px;padding-inline:16px;scroll-padding-inline:16px}
+}
+@media(max-width:600px){
+  /* Deliverable icon moves beside its title instead of trailing below it. */
+  .feature-grid .feature-card{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:16px}
+  .feature-grid .feature-card-header{grid-column:1/-1}
+  .feature-grid .feature-card h3,.feature-grid .feature-card p{grid-column:1}
+  .feature-grid .deliverable-symbol{grid-column:2;grid-row:2/span 2;align-self:start;margin:2px 0 0}
+  .feature-grid .deliverable-symbol svg{width:24px;height:24px}
+}
+.package-label{white-space:nowrap}
+/* Tablet-landscape hero (~1024px): the dock column is narrow, so cells may
+   shrink below their nowrap content and the decorative badge steps aside. */
+.workflow-dock{grid-template-columns:repeat(3,minmax(0,1fr))}
+.dock-link{min-width:0}
+@media(min-width:761px) and (max-width:1200px){.dock-badge{display:none}}
+/* Mid widths: the full-sentence CTA no longer fits beside the nav; use the short label. */
+.desktop-nav a{white-space:nowrap}
+@media(min-width:861px) and (max-width:1180px){
+  .site-header .header-cta{display:none}
+  .site-header .mobile-header-cta{display:inline-flex;min-height:40px;padding:0 16px;font-size:14px;white-space:nowrap}
 }

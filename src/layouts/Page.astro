@@ -8,10 +8,30 @@ interface Props {
   locale: 'vi' | 'en';
   title: string;
   description: string;
+  noindex?: boolean;
 }
-const { locale, title, description } = Astro.props;
+const { locale, title, description, noindex = false } = Astro.props;
 const origin = 'https://local.runlumi.app';
 const canonical = new URL(Astro.url.pathname, origin).href;
+// PNG, not SVG: Facebook and Zalo link previews do not render SVG images.
+const socialImage = `${origin}/social-card-${locale}.png`;
+const socialAlt = locale === 'vi'
+  ? 'Lumi Local — Trước khi khách ghé, cho họ lý do chọn bạn. Starter 1.990.000đ năm đầu.'
+  : 'Lumi Local — Before they visit, give them a reason to choose you. Starter 1,990,000 VND for year one.';
+// Mirrors PRICING.md. Describes the offer only: no ratings, reviews or results.
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Lumi Local',
+  serviceType: locale === 'vi' ? 'Website và hiện diện online cho cơ sở kinh doanh địa phương' : 'Website and online presence for local businesses',
+  areaServed: { '@type': 'Country', name: 'Vietnam' },
+  url: canonical,
+  provider: { '@type': 'Organization', name: 'RunLumi', url: 'https://runlumi.app/' },
+  offers: [
+    { '@type': 'Offer', name: 'Lumi Local Starter', price: '1990000', priceCurrency: 'VND', description: locale === 'vi' ? 'Năm đầu. Duy trì từ năm 2: 599.000đ/năm (địa chỉ RunLumi) hoặc 999.000đ/năm (tên miền riêng tiêu chuẩn).' : 'Year one. Renewal from year two: 599,000 VND/year (RunLumi address) or 999,000 VND/year (standard custom domain).' },
+    { '@type': 'Offer', name: 'Lumi Trust Kit', price: '399000', priceCurrency: 'VND', description: locale === 'vi' ? 'Một lần; khấu trừ đủ khi nâng cấp lên Starter trong 30 ngày.' : 'One-time; fully credited when upgrading to Starter within 30 days.' }
+  ]
+};
 ---
 <!doctype html>
 <html lang={locale}>
@@ -21,25 +41,33 @@ const canonical = new URL(Astro.url.pathname, origin).href;
     <meta name="theme-color" content="#F4F0E8" />
     <meta name="color-scheme" content="light" />
     <meta name="description" content={description} />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
     <script is:inline src="/boot.js"></script>
-    <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="vi" href={origin + '/'} />
-    <link rel="alternate" hreflang="en" href={origin + '/en/'} />
-    <link rel="alternate" hreflang="x-default" href={origin + '/'} />
+    {!noindex && <>
+      <link rel="canonical" href={canonical} />
+      <link rel="alternate" hreflang="vi" href={origin + '/'} />
+      <link rel="alternate" hreflang="en" href={origin + '/en/'} />
+      <link rel="alternate" hreflang="x-default" href={origin + '/'} />
+    </>}
     <link rel="icon" href="/brand/lumi-logo.svg" type="image/svg+xml" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Lumi Local" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={origin + '/social-card.svg'} />
-    <meta property="og:image:alt" content="Lumi Local — done-for-you online presence for local businesses" />
+    <meta property="og:locale" content={locale === 'vi' ? 'vi_VN' : 'en_US'} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={socialAlt} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={origin + '/social-card.svg'} />
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:image:alt" content={socialAlt} />
     <title>{title}</title>
+    {!noindex && <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />}
   </head>
   <body>
     <a class="skip-link" href="#main">{locale === 'vi' ? 'Bỏ qua đến nội dung' : 'Skip to content'}</a>

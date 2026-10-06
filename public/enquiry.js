@@ -26,6 +26,7 @@ if (form && status) {
     }
     status.textContent = '';
     status.removeAttribute('data-state');
+    let rejectedFields = false;
 
     try {
       const response = await fetch(form.action, {
@@ -37,13 +38,17 @@ if (form && status) {
       });
 
       const result = await response.json();
-      if (!response.ok || result?.ok !== true) throw new Error('request failed');
+      if (!response.ok || result?.ok !== true) {
+        // Only a field rejection is the visitor's to fix; everything else is ours.
+        rejectedFields = response.status === 400 && result?.error === 'invalid_fields';
+        throw new Error('request failed');
+      }
 
       form.reset();
       status.textContent = status.dataset.success || 'Sent.';
       status.dataset.state = 'success';
     } catch {
-      status.textContent = status.dataset.error || 'Could not send.';
+      status.textContent = (rejectedFields && status.dataset.invalid) || status.dataset.error || 'Could not send.';
       status.dataset.state = 'error';
     } finally {
       pending = false;
@@ -56,6 +61,9 @@ if (form && status) {
       } else if (button) {
         button.textContent = originalText;
       }
+      // Bring the outcome into view (on phones it can sit under the keyboard);
+      // the live region announces it, so focus stays where it was.
+      if (typeof status.scrollIntoView === 'function') status.scrollIntoView({ block: 'center', behavior: globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
   });
 }
