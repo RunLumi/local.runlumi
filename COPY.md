@@ -46,7 +46,7 @@ Public information is not permission to republish customer photos or create an o
 
 Lead with the visitor’s reason to choose the business, then show the concrete details that support that choice: services, prices, real photos and direct contact. Explain why the owner would hire Lumi: content, setup, publication and agreed upkeep handled for them. The preview is the next step for judging fit; an enquiry is not a purchase.
 
-VI hero: “Trước khi khách ghé, cho họ lý do chọn bạn.” EN: “Before they visit, give them a reason to choose you.” These are invitations to present the business well, not claims of conversion gains. Make price inclusions visible at the first price. Explain how a website complements Facebook/Zalo; acknowledge when existing channels may be sufficient. Put scope limitations where the buyer compares the offer, while keeping the first message focused on value. Do not create false urgency, fake social proof or unmeasured savings.
+VI hero: “Trước khi khách ghé, cho họ lý do chọn bạn.” EN: “Before they visit, give them a reason to choose you.” These are invitations to present the business well, not claims of conversion gains. Make price inclusions visible at the first price. Explain how a website complements Facebook/Zalo; acknowledge when existing channels may be sufficient. Answer the decision directly: if current channels keep services, prices/quote conditions, hours, directions and contact clear and maintainable, a separate site may not be needed; define Starter as an information/enquiry page, not a storefront. Put scope limitations where the buyer compares the offer, while keeping the first message focused on value. Do not create false urgency, fake social proof or unmeasured savings.
 
 ## Review pass — 2026-10-06
 
