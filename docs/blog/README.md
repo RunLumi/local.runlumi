@@ -102,7 +102,7 @@ Owner registration and temporary-access closure: [OWNER-HANDOFF.md](OWNER-HANDOF
 
 ## Photographic assets
 
-Each of the ten initial VI/EN guides has a distinct generated photographic illustration. src/blog/photographs.js maps exact locale/slug pairs; src/components/blog/Photograph.astro renders the responsive cover and visible AI disclosure. EmDash text and publication state are not replaced by the image library. Unknown future slugs receive no unrelated photo. Prompt provenance and output hashes live in photography.json; final WebP derivatives live in public/blog-images/.
+Each of the ten initial VI/EN guides has a distinct generated photographic illustration. src/blog/photographs.js maps exact locale/slug pairs; src/components/blog/Photograph.astro renders the responsive cover and short illustration label; the editorial policy explains AI generation. EmDash text and publication state are not replaced by the image library. Unknown future slugs receive no unrelated photo. Prompt provenance and output hashes live in photography.json; final WebP derivatives live in public/blog-images/.
 
 To regenerate distribution files from selected built-in outputs, pass a private JSON manifest of `{key,path,prompt}` entries to `node scripts/prepare-blog-photographs.mjs <manifest-path>`. Inspect each selected output before accepting it. The script uses Astro's existing Sharp dependency; it resizes and encodes only, without inventing or altering visual content.
 
