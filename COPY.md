@@ -60,6 +60,17 @@ The VI `/blog/` and EN `/en/blog/` use the same offer and exact CTA, imported fr
 
 Localized service/industry content is maintained in src/services/content.ts with the route map in src/services/routes.js. Page-intent CTAs follow docs/GOAL_BILINGUAL_SERVICE_PAGES.md: Check my business / Kiểm tra business của tôi for public checks, Show me the Trust Kit for my business / Xem Trust Kit cho business của tôi for QR, and the canonical preview CTA for websites/industries. All use EnquiryForm.astro and /api/enquiries. Only allowlisted source, locale, intent and offer context is forwarded to intake; no third-party analytics is added. These pages preserve the offer and Google/review boundaries above.
 
+## QR service-page imagery — 2026-10-06
+
+The counter-artwork preview uses a disclosed AI mockup, with localized imagery
+and the exact neutral review invitation retained as HTML. Labels:
+
+- VI: “Ảnh minh họa bằng AI · không phải quầy khách hàng” and “Mã minh họa, không dùng để quét. Không bao gồm in ấn và giá đỡ.”
+- EN: “AI-generated mockup · not a customer installation” and “Illustrative QR, not for scanning. Printing and physical stands are excluded.”
+
+The pictured folded card illustrates a possible print application, not an
+included physical deliverable or an actual customer's counter.
+
 ## Mobile homepage navigation
 
 Mobile menu controls: “Mở menu” / “Đóng menu” in VI; “Open menu” / “Close menu” in EN. Reuse canonical `copy[locale].nav` links and the primary CTA. Language selection remains available inside the mobile menu. Keep the disclosure usable without JavaScript; expose expanded state and support keyboard navigation.

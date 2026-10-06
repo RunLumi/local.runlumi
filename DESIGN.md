@@ -138,6 +138,12 @@ product interfaces as inspectable HTML. Label generated imagery explicitly as
 AI illustration, never as real customers, premises, or business results.
 Prompts and provenance are recorded in `docs/PHOTO_ASSETS.md`.
 
+User-approved extension, 2026-10-06: the Google Review QR service pages use
+localized ImageGen counter-card mockups in place of the flat QR diagram.
+Keep the neutral invitation as readable HTML, an explicit AI-mockup label,
+and the notice that the illustrative code is not for scanning and printing
+and physical stands are excluded. These images are not customer installations.
+
 User-approved extension, 2026-10-03: use the supplied ImageGen concepts for
 all six service illustrations and the enquiry section. Keep visible AI
 disclosures; generated people are not presented as Lumi staff or customers,
