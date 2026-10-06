@@ -9,8 +9,9 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - Next read-only check: 2026-10-13 09:00 +07:00 for replies/removal.
 - Weekly heartbeat creation was rejected by automatic approval review; explicit scheduling authorization remains unanswered. No automation configured.
 - GSC Wizard remains unconnected. See [RUN-026 Search Console snapshot](research/2026-10-07-search-console-snapshot.md): read-only evidence on `sc-domain:local.runlumi.app`: its sitemap list is empty; homepage and core service URLs are unknown to Google despite passing live fetch tests. The parent property host-filtered 7-day report showed 0 clicks/0 impressions through 2026-10-04, only about two days after custom-domain attachment. No sitemap or URL-indexing write was submitted; broad index coverage, referrals, enquiries and paid outcomes remain unknown.
+- RUN-029 rechecked the exact-host Pages and Links reports at 2026-10-07 06:42 +07:00; both still show “Processing data.” The parent property Links report's Reddit entry points to `https://runlumi.app/`, not the Lumi Local subdomain, so it does not confirm CA-002 as a backlink to this site. See [RUN-029 report note](research/2026-10-07-search-console-links-follow-up.md).
 - `/data/` requires EmDash ADMIN passkey authentication. The current in-app browser now shows the private dashboard in an authenticated session; the local source CSV is unchanged and covers Sep 2025–Aug 2026, so fresh demand data remain unavailable.
-- Chrome DevTools MCP is absent. No CWV or lab trace has been measured; see [measurement access note](research/2026-10-06-measurement-access.md). No trackers or live enquiries used.
+- Chrome DevTools MCP is absent. CrUX has no field CWV data, and no Chrome DevTools lab trace is available; the separate PSI Lighthouse reports are recorded below. See [measurement access note](research/2026-10-06-measurement-access.md). No trackers or live enquiries used.
 
 ## Verified releases
 
@@ -28,11 +29,12 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - [15-query discovery](research/2026-10-06-query-discovery.md): three intent clusters are hypotheses, not rankings.
 - [Production baseline](research/2026-10-06-technical-baseline.md): 38 live sitemap URLs passed bounded response/canonical/h1/alternate checks; not proof of indexing.
 - [RUN-024 technical follow-up](research/2026-10-07-technical-audit.md): current 38-URL sitemap crawl found no canonical/title/h1/hreflang/image-attribute defect; index coverage and CWV remain unknown.
-- [RUN-028 PSI/Lighthouse snapshot](research/2026-10-07-pagespeed-heading-order.md): one mobile lab report identified a homepage H1→H3 jump; the candidate changes the three illustrative hero titles to H2, preserving visual styles. Local VI/EN heading sequences and all four widths pass; post-deploy lab readback pending. No CrUX field CWV data.
+- [RUN-028 PSI/Lighthouse snapshot](research/2026-10-07-pagespeed-heading-order.md): the deployed VI/EN heading correction removed the targeted heading-order finding on one post-deploy mobile run (Accessibility 100); Performance varied across single runs, and CrUX still has no field CWV data.
 - [Internal graph and guide checks](research/2026-10-06-links-and-article-audit.md) plus [remaining guides](research/2026-10-06-remaining-guides.md): no orphan sitemap pages or settled-width overflow in checked guides; not a full accessibility/performance audit.
 - [Browser SERPs](research/2026-10-06-browser-serp-sample.md): three contextual desktop queries; third-party AI Overview citations observed, none for Lumi in portions reviewed. Not universal visibility.
 - [Gift-shop scope signal](research/2026-10-06-giftshop-scope-signal.md): one international thread led to useful exclusions, not Vietnam demand.
 - [Vietnam community scan](research/2026-10-06-vietnam-community-scan.md) and [fresh recheck](research/2026-10-07-community-recheck.md): no suitable recent Vietnamese owner discussion found; vendor/stale retail content not treated as demand.
+- [RUN-029 Search Console follow-up](research/2026-10-07-search-console-links-follow-up.md): exact-host Pages and Links remain processing; parent-property Reddit link data point to the apex domain and cannot validate CA-002.
 
 ## Next actions
 
