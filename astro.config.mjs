@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import { dataDevGuard } from './server/data-dev-guard.js';
 import { blogRuntime, sourceAlias, liveAlias, cmsEnabled } from './blog.config.mjs';
 const blog = await blogRuntime();
 
@@ -13,6 +14,7 @@ export default defineConfig({
   vite: {
     resolve: { alias: { '@blog/source': sourceAlias, '@blog/live':liveAlias } },
     build: { assetsInlineLimit: 0 },
+    plugins: [dataDevGuard()],
     server: { fs: { deny: ['.env', '.env.*', '*.pem', '*.crt', '**/.git/**', '**/.dev.vars', '**/.data-build/**', '**/docs/LumiLocalKeywords.csv'] } },
   },
   devToolbar: { enabled: false },

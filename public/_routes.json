@@ -3,6 +3,8 @@
   "include": [
     "/api/enquiries",
     "/api/enquiries/",
+    "/data",
+    "/data/*",
     "/blog",
     "/blog/*",
     "/en/blog",

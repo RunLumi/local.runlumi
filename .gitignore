@@ -3,12 +3,13 @@ dist/
 .astro/
 .wrangler/
 .dev.vars
+.data-build/
 .env
 .env.*
 !.env.example
 .DS_Store
 
-# EmDash runtime and generated artifacts
+# EmDash blog runtime; never publish databases or build output.
 dist-blog/
 .emdash/
 emdash-env.d.ts

@@ -15,7 +15,7 @@ Built 2026-10-06. Release PR preparation; live activation is recorded below when
 | /sitemap.xml | src/pages/sitemap.xml.js | Indexable landing/blog pages only |
 | /_emdash/admin | EmDash | Drafts, revisions, explicit publication |
 
-EN mirrors blog routes under /en/. The keyword CSV and unfinished authenticated /data dashboard stay in the original working checkout, outside this release PR. No Pages Function is replaced for enquiries or data authentication.
+EN mirrors blog routes under /en/. The keyword CSV and authenticated /data dashboard are now upstream on main from PR #15; all password/session/build-extraction guards are preserved. No Pages Function is replaced for enquiries or data authentication.
 
 ## Runtime and local start
 
