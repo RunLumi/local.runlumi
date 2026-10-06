@@ -59,3 +59,7 @@ The VI `/blog/` and EN `/en/blog/` use the same offer and exact CTA, imported fr
 ## Service and industry pages
 
 Localized service/industry content is maintained in src/services/content.ts with the route map in src/services/routes.js. Page-intent CTAs follow docs/GOAL_BILINGUAL_SERVICE_PAGES.md: Check my business / Kiểm tra business của tôi for public checks, Show me the Trust Kit for my business / Xem Trust Kit cho business của tôi for QR, and the canonical preview CTA for websites/industries. All use EnquiryForm.astro and /api/enquiries. Only allowlisted source, locale, intent and offer context is forwarded to intake; no third-party analytics is added. These pages preserve the offer and Google/review boundaries above.
+
+## Mobile homepage navigation
+
+Mobile menu controls: “Mở menu” / “Đóng menu” in VI; “Open menu” / “Close menu” in EN. Reuse canonical `copy[locale].nav` links and the primary CTA. Language selection remains available inside the mobile menu. Keep the disclosure usable without JavaScript; expose expanded state and support keyboard navigation.

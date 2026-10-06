@@ -104,7 +104,7 @@ const otherHref = locale === 'vi' ? '/en/' : '/';
 const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướng chính', illustrative:'Giao diện mẫu', recommended:'Khuyên dùng', core:'Gói chính', switcher:'Xem trước theo ngành', receipt:'Nếu đã mua Trust Kit trong 30 ngày: được trừ 399.000đ, còn lại 1.591.000đ' } : { main:'Main content', nav:'Primary navigation', illustrative:'Illustrative concept', recommended:'Recommended', core:'Core package', switcher:'Preview by industry', receipt:'If Trust Kit was paid within 30 days: 399,000 VND credited, 1,591,000 VND remaining' };
 ---
 <Page locale={locale} title={c.title} description={c.description}>
-  <header class="site-header glass-control">
+  <header class="site-header glass-control home-header">
     <div class="wrap header-inner">
       <a class="brand" href={locale === 'vi' ? '/' : '/en/'} aria-label="Lumi Local">
         <img src="/brand/lumi-logo.svg" width="34" height="34" alt="" />
@@ -123,6 +123,23 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
           <ServiceIcon name="arrow" size={14} class="cta-arrow" />
         </a>
         <a class="button button-primary mobile-header-cta" href="#bat-dau">{locale === 'vi' ? 'Xem thử' : 'See a preview'}</a>
+        <details class="mobile-menu">
+          <summary aria-label={labels.nav} aria-controls="mobile-navigation" data-open-label={locale === 'vi' ? 'Mở menu' : 'Open menu'} data-close-label={locale === 'vi' ? 'Đóng menu' : 'Close menu'}>
+            <ServiceIcon name="menu" size={24} class="menu-icon-open" />
+            <ServiceIcon name="close" size={24} class="menu-icon-close" />
+          </summary>
+          <nav id="mobile-navigation" class="mobile-navigation" aria-label={labels.nav}>
+            <div class="mobile-navigation-links">{c.nav.map(([href,label]) => <a href={href}>{label}</a>)}</div>
+            <a class="button button-primary mobile-menu-cta" href="#bat-dau">{c.cta}</a>
+            <div class="mobile-menu-language">
+              <span>{locale === 'vi' ? 'Ngôn ngữ' : 'Language'}</span>
+              <div class="lang-switch" role="group" aria-label={locale === 'vi' ? 'Chọn ngôn ngữ' : 'Language selector'}>
+                <a class={`lang-opt ${locale === 'vi' ? 'active' : ''}`} href="/" aria-current={locale === 'vi' ? 'true' : undefined}>VI</a>
+                <a class={`lang-opt ${locale === 'en' ? 'active' : ''}`} href="/en/" aria-current={locale === 'en' ? 'true' : undefined}>EN</a>
+              </div>
+            </div>
+          </nav>
+        </details>
       </div>
     </div>
   </header>
@@ -639,6 +656,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     </div>
   </footer>
 
+  <script is:inline type="module" src="/mobile-navigation.js"></script>
   <script is:inline type="module" src="/interactions.js"></script>
   <script is:inline type="module" src="/enquiry.js"></script>
 </Page>
