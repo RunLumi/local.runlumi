@@ -108,6 +108,10 @@ Before editing guides, read [content-guideline.md](content-guideline.md), [docs/
 
 Use docs/GOAL_BILINGUAL_SERVICE_PAGES.md, docs/SERVICE-PAGE-RESEARCH-2026-10-06.md and src/services/routes.js. Keep localized equivalent routes, reciprocal vi-VN/en-VN alternates and a shared EnquiryForm. Only allowlisted non-PII source context reaches intake. Do not add trackers, indexed recovery/verification offers or city doorway pages.
 
+## Facebook prospecting and meeting campaign
+
+For Facebook GTM work, read [docs/gtm/README.md](docs/gtm/README.md), [the browser-agent runbook](docs/gtm/BROWSER_AGENT.md) and [the research](docs/gtm/RESEARCH-2026-10-07.md). Default to research and drafts. Actual contact/calendar execution requires a valid human-authorized scope; Facebook automation additionally requires verified platform permission for the method used. Preserve authorization already granted without asking again within scope. Keep real lead/contact/consent/action/meeting records in approved private operational storage, not Git. Check prior actions and suppression before sending; record submitting before mutation, verify actual thread/event evidence and never retry unknown outcomes. No fabricated lead, send, meeting or paid result.
+
 ## SEO/GEO community campaign
 
 For campaign work, read [the goal](docs/GOAL_SEO_GEO_90_DAYS.md), [current checkpoint](docs/seo/STATUS.md), [append-only worklog](docs/seo/WORKLOG.md) and the channel/action CSV ledgers. Browser use includes real, helpful participation within human-authorized account/channel scope. No sockpuppets, fake customer endorsements or spam. Check submitting/unknown/pending outcomes before retrying any external action; verify actual post/link URLs and preserve privacy. Saving a goal or finding a logged-in account does not grant new external access or prove an action was completed.

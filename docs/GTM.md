@@ -6,6 +6,10 @@ Current pilot decisions and scale gates: [STRATEGY.md](../STRATEGY.md). Physical
 **Status:** Active experiment  
 **Updated:** 2026-10-03
 
+## Facebook channel playbook — 2026-10-07
+
+Use [docs/gtm/README.md](gtm/README.md) for the Facebook Fanpage prospecting → offer → meeting experiment, qualification checks, Vietnamese scripts and browser-agent instructions. This is a bounded branch of the existing pilot, not a second cohort or permission for automated outreach. COPY.md and STRATEGY.md supersede older claims and execution assumptions below. Real lead/contact/action data stays in approved private operational storage; Git contains empty templates and anonymous aggregates only.
+
 ## Objective
 
 Use AI to make website production cheap while selling a **done-for-you** service that a local-business owner does not need to learn, publish, or operate.
