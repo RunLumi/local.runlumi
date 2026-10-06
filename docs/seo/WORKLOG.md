@@ -277,3 +277,26 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - In Search Console, verified exact property `sc-domain:local.runlumi.app` is selectable. The dedicated property is still processing its performance/indexing reports, with zero submitted sitemaps. URL Inspection on the homepage found “URL unknown to Google”; its live test said available/indexable. The core website-service page was unknown to Google on the parent property; its live test also passed with one Breadcrumbs item. No request-indexing control was used.
 - The parent property `sc-domain:runlumi.app` was filtered to URLs containing `https://local.runlumi.app/`, Search type Web, 2026-09-28 to 2026-10-04. It showed 0 clicks, 0 impressions and no query rows; last update was 9h earlier. This covers at most two days after the custom domain was attached and is a launch observation, not a stable baseline. Parent-property aggregate data were not attributed to Lumi Local.
 - Dedicated property Sitemaps report showed 0 entries although the public sitemap remains valid and advertised in robots.txt. Per [RUN-018 Search Console boundary](research/2026-10-06-gsc-connector-availability.md), sitemap submission is a write and was not authorized by read access. Proposed exact action for human authorization: submit `https://local.runlumi.app/sitemap.xml` to `sc-domain:local.runlumi.app`. No write was made. Evidence: [RUN-026 snapshot](research/2026-10-07-search-console-snapshot.md).
+
+
+## 2026-10-07 06:27 +07:00 — RUN-028 — Fix homepage heading order from Lighthouse finding
+
+- Ran Google PageSpeed Insights once for the public VI homepage, mobile, report captured 2026-10-07 06:22 GMT+7. Lab: Performance 94, Accessibility 99, Best Practices 92, SEO 100; FCP 2.1s, LCP 2.7s, TBT 0ms, CLS 0. Mobile field data: “No Data.” This is one throttled Lighthouse run, not field CWV.
+- Specific confirmed accessibility finding: hero H1 was followed by three H3 headings in illustrative industry previews, skipping H2. Changed only those three semantic levels to H2 and retargeted their component selectors/media rules; visual style and text are unchanged.
+- Fresh local VI and EN renders report hero title as H2 beneath H1. Responsive harness passed no-overflow at 320/375/768/1440 CSS px for both locales (8 combinations); the VI 320px check was repeated after an initial stale report. Static build, 48 tests and `git diff --check` pass; CMS Worker build/private-output gate passes.
+- Lighthouse also flagged image-delivery potential (229 KiB mobile estimate), render-blocking requests (900ms estimated savings), and Best Practices/HSTS. These are recorded for prioritization; one run may overstate variant waste on high-DPR screens. No image or security-header change bundled into this semantic fix. PSI link: https://pagespeed.web.dev/analysis/https-local-runlumi-app/e6gb0oc7is?form_factor=mobile .
+- Production Search Console still has insufficient CWV usage data. Re-run PageSpeed on production after the semantic correction is released; do not claim lab scores as field gains.
+
+
+## 2026-10-07 06:27 +07:00 — RUN-028 — Correct hero heading hierarchy from Lighthouse
+
+- Captured one Google PageSpeed Insights mobile Lighthouse report for the VI homepage (report 06:22 GMT+7, Moto G Power emulation, slow-4G; report ID `e6gb0oc7is`). Lab result: Performance 94, Accessibility 99, Best Practices 92, SEO 100; FCP 2.1s, LCP 2.7s, TBT 0ms, CLS 0. CrUX field data: No Data.
+- Lighthouse identified a real heading-level skip: H1 → three H3 titles in illustrative industry previews before any H2. Changed those three titles to H2 and updated only their matching responsive CSS selectors. No copy or layout values changed.
+- Local static build passed (42 routes), `npm test` passed (48 tests), CMS Worker build/private-output gate passed, and `git diff --check` passed. Generated HTML heading sequence is continuous in both `/` and `/en/`. Local rendered VI/EN homepages passed 320/375/768/1440 CSS px without horizontal overflow; the local 320px VI result was repeated after one stale harness read. Visually inspected the existing hero at desktop dimensions; styles remain materially unchanged.
+- A single desktop PSI view from the same report: Performance 98, FCP 0.5s, LCP 0.6s, TBT 0ms, CLS 0.099. Treat both device scores as single-run lab observations only; no field/user outcome. PSI also lists 229KiB potential image-delivery savings and 900ms render-blocking estimate; image variants are responsive and lazy-loaded, and require DPR/resource-level review before changing. HSTS/COOP/Trusted Types suggestions remain separate security decisions.
+- Next: merge/deploy the small semantic fix under the active campaign release scope after normal PR/local gates, then rerun PSI once to see whether the heading-order finding disappears. Search Console field CWV remains insufficient data.
+
+
+## 2026-10-07 06:29 +07:00 — RUN-028 reconciliation
+
+- This reconciliation clarifies the two RUN-028 draft entries immediately above: both refer to the same PSI run (`e6gb0oc7is`) and the same H1→H3 correction; there was no second test or second code change. The dated report is the consolidated evidence source and records both mobile and desktop views, test environment, fix, responsive results, and limitations.
