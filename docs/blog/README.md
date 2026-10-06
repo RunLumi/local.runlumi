@@ -89,3 +89,5 @@ Bootstrap a newly created D1 from a fresh seed-only database with zero users, se
 CMS Worker deploy uses `wrangler deploy --config dist-blog/server/wrangler.json` after a successful CMS build. D1, R2 and SESSION IDs are explicit in wrangler.blog.jsonc. The existing GitHub Pages token has Pages scope; it is not assumed to authorize CMS Worker deployment. Future CMS code releases require an authorized Worker deployment before/alongside the normal Pages release.
 
 The CMS post-build guard also clears only its generated `.wrangler/deploy/config.json` redirect. This prevents a subsequent Pages deployment from reading the CMS Worker config. Worker releases still use the explicit dist-blog/server/wrangler.json. Other generated redirects are preserved.
+
+Final release evidence: [RELEASE-2026-10-06.md](../RELEASE-2026-10-06.md). `node scripts/verify-release.mjs` performs only read-only production checks; it sends no enquiries or credentials.
