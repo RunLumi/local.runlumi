@@ -9,6 +9,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - Next read-only check: 2026-10-13 09:00 +07:00 for replies/removal.
 - Weekly heartbeat creation was rejected by automatic approval review; explicit scheduling authorization remains unanswered. No automation configured.
 - GSC Wizard is available but unconnected; no Google property data accessed. GSC/organic/referral/enquiry/paid outcomes remain unknown.
+- `/data/` currently redirects anonymous visitors to EmDash ADMIN passkey sign-in. This browser session is not signed in as ADMIN; the current local CSV fingerprint remains `b03aa2d8` and covers Sep 2025–Aug 2026, so fresh demand data remain unavailable.
 - Chrome DevTools MCP is absent. No CWV or lab trace has been measured; see [measurement access note](research/2026-10-06-measurement-access.md). No trackers or live enquiries used.
 
 ## Verified releases

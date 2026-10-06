@@ -261,3 +261,10 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - HTTPS homepage headers include CSP, Referrer-Policy, X-Content-Type-Options, X-Frame-Options and Permissions-Policy. Plain HTTP redirects 301 to HTTPS. No HSTS response was observed; recorded as optional security hardening, not an SEO/indexability defect, and did not change security policy.
 - Keyboard-only spot check on production: first Tab exposes the skip link; Enter moves to main. Space activates FAQs on VI/EN homepage and EN website-service page. This is not a full accessibility audit and no enquiry was submitted.
 - Field/lab CWV, Search Console indexing and organic/citation/referral outcomes remain unknown. DevTools MCP is absent and GSC Wizard remains unconnected. No ranking or citation improvement claimed.
+
+
+## 2026-10-07 01:24 +07:00 — RUN-025 — @data access recheck
+
+- Read-only navigation to the live `/data/` route redirected to `/_emdash/admin/login?redirect=%2Fdata%2F` and showed the EmDash passkey sign-in. No authentication prompt was accepted or bypassed; the browser tab is left for a human passkey sign-in if desired.
+- Recomputed the local CSV fingerprint and analytics with the repository parser: SHA-256 `b03aa2d8e53fa856e214fb988b448c6c88f07e6cca9832d06fc43f4b94c51fa4`, 2,740 raw rows, 2,070 exact unique terms, 670 duplicate rows, no conflicting duplicate metrics, 43 normalized variant groups, Sep 2025–Aug 2026. These match the documented snapshot and provide no newer demand evidence.
+- Corrected the current implementation summary in `docs/KEYWORD-ANALYTICS.md`; historical password-protection details remain marked superseded. Search Console stays unconnected; no property data accessed.
