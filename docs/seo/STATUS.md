@@ -25,6 +25,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - [Baseline](research/2026-10-06-baseline.md): 2,740 raw rows, 2,070 exact terms, 670 repeats; historical export, no organic observations.
 - [15-query discovery](research/2026-10-06-query-discovery.md): three intent clusters are hypotheses, not rankings.
 - [Production baseline](research/2026-10-06-technical-baseline.md): 38 live sitemap URLs passed bounded response/canonical/h1/alternate checks; not proof of indexing.
+- [RUN-024 technical follow-up](research/2026-10-07-technical-audit.md): current 38-URL sitemap crawl found no canonical/title/h1/hreflang/image-attribute defect; index coverage and CWV remain unknown.
 - [Internal graph and guide checks](research/2026-10-06-links-and-article-audit.md) plus [remaining guides](research/2026-10-06-remaining-guides.md): no orphan sitemap pages or settled-width overflow in checked guides; not a full accessibility/performance audit.
 - [Browser SERPs](research/2026-10-06-browser-serp-sample.md): three contextual desktop queries; third-party AI Overview citations observed, none for Lumi in portions reviewed. Not universal visibility.
 - [Gift-shop scope signal](research/2026-10-06-giftshop-scope-signal.md): one international thread led to useful exclusions, not Vietnam demand.
