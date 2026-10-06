@@ -16,6 +16,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - PR #25 / Pages deployment `13b45206`: localized free Google QR instructions, VI/EN, verified on custom domain and Pages host.
 - PR #28 / Pages deployment `de3ec339`: VI/EN website FAQ clarifies no inventory, carts, checkout or order management.
 - PR #30 / Pages deployment `25f31f3b`: VI/EN FAQ clarifies no CRM or automated follow-up; agree enquiry destination and response owner.
+- PR #35 / Pages deployment `7e191180`: VI/EN homepage and website-service FAQ explain when Facebook/Zalo may be sufficient and distinguish Starter from an online store. Production checks passed on both custom and Pages hosts.
 - Exact merged heads passed local static/CMS builds, 48 tests, seed validation and release verifier. Hosted workflows failed before steps due Actions budget; no hosted Linux pass. CMS Worker/editorial data were not changed.
 - PR #31 and PR #32 record release/access state; PR #33 records the bounded Vietnam scan.
 
@@ -37,9 +38,9 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 
 ## Recovery
 
-Read this checkpoint, goal, worklog and both CSVs before external actions. Inspect uncertain outcomes before retrying. Shared checkout has unrelated `docs/blog/checkpoint.md` WIP; preserve it. Latest published scope clarification is verified live at deployment `25f31f3b`; no temporary dev server is active.
+Read this checkpoint, goal, worklog and both CSVs before external actions. Inspect uncertain outcomes before retrying. Shared checkout has unrelated `docs/blog/checkpoint.md` WIP; preserve it. Latest SEO/GEO change is verified live at deployment `7e191180`; no temporary dev server is active.
 
 
 ## RUN-023 — direct Facebook/Zalo answer refinement
 
-One Google AI Overview answered a broad owner query categorically and conflated a website with an online store. The homepage and website-service FAQ now directly say a site is optional when existing channels suffice and define Starter’s actual information/enquiry role. See [RUN-023 sample](research/2026-10-07-facebook-zalo-ai-overview.md). It is a one-query signed-in SERP observation; no ranking/citation improvement claimed. Candidate implementation branch `codex/website-need-answer`; VI/EN homepage and website-service routes pass rendered checks at 320/375/768/1440 CSS px with no horizontal overflow and the expected preview CTA; the Vietnamese service page was visually inspected at 320px.
+One Google AI Overview answered a broad owner query categorically and conflated a website with an online store. Merged PR #35 updates the bilingual homepage and website-service FAQ with an honest channel-fit answer. See [RUN-023 sample](research/2026-10-07-facebook-zalo-ai-overview.md). It is a one-query signed-in SERP observation; no ranking/citation improvement claimed. VI/EN routes passed rendered checks at 320/375/768/1440 CSS px with no horizontal overflow; the Vietnamese service page was visually inspected at 320px. Live custom and Pages-host verifiers pass at deployment `7e191180`.
