@@ -256,3 +256,11 @@ A preview or passing source test is not a deployment.
 ## Content-led refinement — 2026-10-04
 
 Use one plain-language customer question in the hero instead of three numbered slogan layers. Keep price and primary enquiry action adjacent. Retain inspectable industry previews with explicit concept/AI disclosure. The included scope is a flat, numbered two-column list (one column on phones), using original local icons rather than generated infrastructure photos. The enquiry area explains what happens after submission instead of showing generated people. Preserve the one navy section, two glass navigation controls, palette, Geist, and folded-L mark. No fabricated proof is introduced.
+
+### Review pass — 2026-10-06
+
+- The navy section is a division of labour, not a second copy of the delivery steps: a short “your part” list (3 items) beside a visibly longer “Lumi’s part” list (6 items). The asymmetry carries the done-for-you message; keep the owner list shorter than Lumi’s.
+- Vietnamese text must render in Geist. `@fontsource-variable/geist` ≥5.3.0 ships the Vietnamese subset (U+1EA0–1EF9); older versions silently fall back to a system font for letters such as ạ, ọ, ế.
+- No status dot without status semantics: the hero eyebrow carries no “live” indicator.
+- Phones: illustrative examples are a horizontal snap rail with the next card peeking; principle cards are compact rows; deliverable icons sit beside their titles.
+- 861–1180px uses the short header CTA so the nav and action never wrap.

@@ -35,11 +35,15 @@
     var switchBar = stage.querySelector('.industry-switch');
     if (switchBar) {
       switchBar.addEventListener('keydown', function (event) {
-        var dir = event.key === 'ArrowRight' ? 1 : event.key === 'ArrowLeft' ? -1 : 0;
-        if (!dir) return;
-        event.preventDefault();
         var current = tabs.findIndex(function (t) { return t.classList.contains('is-active'); });
-        var next = tabs[(current + dir + tabs.length) % tabs.length];
+        var index = event.key === 'ArrowRight' ? current + 1
+          : event.key === 'ArrowLeft' ? current - 1
+          : event.key === 'Home' ? 0
+          : event.key === 'End' ? tabs.length - 1
+          : null;
+        if (index === null) return;
+        event.preventDefault();
+        var next = tabs[(index + tabs.length) % tabs.length];
         selectIndustry(next.getAttribute('data-industry'), true);
       });
     }
@@ -209,26 +213,34 @@
     var summary = item.querySelector('summary');
     var answer = item.querySelector('.faq-answer');
     if (!summary || !answer) return;
+    var running = null;
+    var closing = false;
     summary.addEventListener('click', function (event) {
       event.preventDefault();
       if (reducedMotion.matches || typeof answer.animate !== 'function') {
         item.open = !item.open;
         return;
       }
-      if (item.open) {
-        var height = answer.offsetHeight;
-        var closing = answer.animate(
-          [{ height: height + 'px' }, { height: '0px' }],
+      // A second click mid-animation reverses from the current height
+      // instead of letting a stale 'finish' handler close the item.
+      var from = answer.offsetHeight;
+      if (running) { running.cancel(); running = null; }
+      if (item.open && !closing) {
+        closing = true;
+        running = answer.animate(
+          [{ height: from + 'px' }, { height: '0px' }],
           { duration: 260, easing: 'cubic-bezier(.16,1,.3,1)' }
         );
-        closing.addEventListener('finish', function () { item.open = false; });
+        running.addEventListener('finish', function () { item.open = false; closing = false; running = null; });
       } else {
+        closing = false;
         item.open = true;
-        var openHeight = answer.offsetHeight;
-        answer.animate(
-          [{ height: '0px' }, { height: openHeight + 'px' }],
+        var openHeight = answer.scrollHeight;
+        running = answer.animate(
+          [{ height: (from && from < openHeight ? from : 0) + 'px' }, { height: openHeight + 'px' }],
           { duration: 340, easing: 'cubic-bezier(.16,1,.3,1)' }
         );
+        running.addEventListener('finish', function () { running = null; });
       }
     });
   });

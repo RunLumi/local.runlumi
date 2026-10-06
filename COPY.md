@@ -47,3 +47,7 @@ Public information is not permission to republish customer photos or create an o
 Lead with the visitor’s reason to choose the business, then show the concrete details that support that choice: services, prices, real photos and direct contact. Explain why the owner would hire Lumi: content, setup, publication and agreed upkeep handled for them. The preview is the next step for judging fit; an enquiry is not a purchase.
 
 VI hero: “Trước khi khách ghé, cho họ lý do chọn bạn.” EN: “Before they visit, give them a reason to choose you.” These are invitations to present the business well, not claims of conversion gains. Make price inclusions visible at the first price. Explain how a website complements Facebook/Zalo; acknowledge when existing channels may be sufficient. Put scope limitations where the buyer compares the offer, while keeping the first message focused on value. Do not create false urgency, fake social proof or unmeasured savings.
+
+## Review pass — 2026-10-06
+
+Removed drift from this contract: unmeasured “fast/high-speed hosting”, renewal text implying any .vn/.com is included, “standee” wording that implied a physical stand, “all-inclusive” on the year-one receipt, a “live draft” that is not live, and an EN Trust Kit line promising “real reviews”. `tests/copy.test.js` now rejects these phrases. The enquiry form distinguishes a field rejection (visitor can fix it) from a delivery failure (retry later); neither claims delivery.
