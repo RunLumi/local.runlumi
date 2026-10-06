@@ -9,7 +9,7 @@ Production origin: **https://local.runlumi.app**
 - output: static
 - build command: `npm run build`
 - output directory: `dist`
-- Node: >=22.12
+- Node: 24.19.0 (see `.node-version`)
 
 ## Automatic production deployment
 
@@ -70,3 +70,7 @@ Do not commit its value.
 - verify real production URL before claiming live
 
 DNS changes are outside normal code work and require explicit authorization.
+
+## Optional EmDash blog — 2026-10-06
+
+The public blog can use the static reviewed snapshot or an EmDash Worker via Pages service binding `BLOG`. See [docs/blog/README.md](docs/blog/README.md) for supported Node versions, seed/setup, runtime resource names, private-data exclusion, same-origin admin CSP and release/rollback gates. `npm run build` remains the Pages build. `npm run build:blog` prepares the separate Worker; it does not deploy. No DNS or billing change is part of the implementation. Do not expose an uninitialized admin setup wizard or deploy CMS output as the primary Pages site.

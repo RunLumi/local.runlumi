@@ -1,0 +1,7 @@
+---
+import {pages} from '../../services/content';
+import {serviceRoutes} from '../../services/routes.js';
+const {locale} = Astro.props;
+---
+<section class="section wrap service-directory" id="dich-vu"><p class="eyebrow">Lumi Local</p><h2>{locale==='vi'?'Chọn phần business đang cần.':'Start with what your business needs.'}</h2><div>{pages.map(p=><a class="text-link" href={serviceRoutes[p.key][locale]}>{p[locale].label} <span aria-hidden="true">↗</span></a>)}</div></section>
+<style>.service-directory h2{font-size:clamp(28px,3vw,40px);font-weight:560;line-height:1.3;letter-spacing:-.04em;color:var(--color-civic-navy)}.service-directory>div{display:flex;flex-wrap:wrap;gap:16px 32px}.service-directory a{min-height:44px;max-width:100%}</style>

@@ -1,0 +1,8 @@
+---
+import ServicePage from '../../components/services/ServicePage.astro';
+import {pages} from '../../services/content';
+import {serviceRoutes} from '../../services/routes.js';
+export function getStaticPaths(){return pages.filter(p=>serviceRoutes[p.key].type==='industry').map(page=>({params:{slug:serviceRoutes[page.key].vi.split('/')[2]},props:{page}}));}
+const {page}=Astro.props;
+---
+<ServicePage page={page} locale="vi"/>

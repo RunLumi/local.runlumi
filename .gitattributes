@@ -1,0 +1,3 @@
+# Preserve source keyword export bytes (CRLF) and intentional Markdown line breaks.
+docs/LumiLocalKeywords.csv whitespace=cr-at-eol
+docs/google-maps-service-research.md whitespace=-blank-at-eol

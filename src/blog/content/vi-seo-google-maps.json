@@ -1,0 +1,292 @@
+{
+  "slug": "seo-google-maps",
+  "locale": "vi",
+  "title": "SEO Google Maps: checklist trước khi thuê dịch vụ",
+  "description": "SEO Google Maps phụ thuộc những gì? Checklist cho chủ cơ sở, cách đọc lời hứa thứ hạng và phần website có thể tự kiểm tra.",
+  "answer": "Google nêu ba nhóm yếu tố chính cho kết quả địa phương: mức độ phù hợp, khoảng cách và mức độ nổi bật. SEO Google Maps không cho phép mua thứ hạng tự nhiên. Chủ cơ sở nên kiểm tra thông tin và quyền sở hữu trước khi thuê.",
+  "topic": "hien-dien-dia-phuong",
+  "keyword": "seo google maps",
+  "author": "lumi-local",
+  "pub_date": "2026-10-06T09:00:00+07:00",
+  "reviewed_date": "2026-10-06",
+  "featured": false,
+  "content": [
+    {
+      "_type": "block",
+      "_key": "b1",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "SEO Google Maps đang nói tới điều gì?",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b2",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "primary-source",
+          "href": "https://support.google.com/business/answer/7091"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Trong bài này, SEO Google Maps là cách gọi thường dùng cho việc cải thiện sự hiện diện trong kết quả tìm kiếm địa phương. Google mô tả mức độ phù hợp, khoảng cách và mức độ nổi bật là các nhóm yếu tố chính. Vị trí người tìm cũng ảnh hưởng kết quả; hai người ở hai nơi không nhất thiết thấy cùng một danh sách.",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-gap",
+          "text": " ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-link",
+          "text": "Hướng dẫn chính thức của Google.",
+          "marks": [
+            "primary-source"
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b3",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Vì vậy, ảnh chụp một lần tìm kiếm không đủ chứng minh doanh nghiệp luôn ở vị trí đó. Khi so dịch vụ, hỏi họ đo truy vấn nào, ở khu vực nào và trong khoảng thời gian nào. Không suy từ một ảnh “top” ra số khách hay doanh thu.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b4",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Kiểm tra thông tin trước khi mua thêm",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b5",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Chủ cơ sở có thể rà tên thực tế, danh mục phù hợp, địa chỉ hoặc vùng phục vụ, giờ thường và giờ đặc biệt, số liên hệ và trạng thái xác minh. Tìm các chỗ thông tin mâu thuẫn giữa bảng hiệu, hồ sơ, website và kênh đang dùng. Chủ tự thực hiện thay đổi trên Google bằng quyền của mình.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b6",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Đây là checklist kiểm tra tính nhất quán, không phải công thức bảo đảm lên hạng. Đừng thêm từ khóa vào tên doanh nghiệp chỉ để thử chiếm vị trí tìm kiếm. Thông tin cần mô tả đúng cơ sở và hoạt động thực tế.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b7",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Khách nhìn thấy gì sau khi bấm vào website?",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b8",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Mở website bằng điện thoại: dịch vụ có dễ hiểu không, giờ có đúng không, nút gọi và Zalo có đi đúng nơi không, liên kết chỉ đường có đưa tới vị trí chủ đã xác nhận không? Nếu có giá, ghi rõ đơn vị, điều kiện áp dụng và thời điểm cập nhật.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b9",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Ví dụ giả định: khách đang hỏi giá một dịch vụ cụ thể nhưng website chỉ có câu “chất lượng hàng đầu”. Thay bằng tên dịch vụ, phạm vi và cách hỏi giá là một cải thiện có thể kiểm tra. Không cần gắn cho việc đó một mức tăng chuyển đổi chưa được đo.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b10",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Đánh giá thật và phản hồi có trách nhiệm",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b11",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Một quy trình mời tất cả khách thật chia sẻ trải nghiệm giúp tránh chọn lọc người được mời. Không yêu cầu số sao, không đổi quà lấy đánh giá. Khi phản hồi, tránh tiết lộ thông tin riêng của khách và trả lời vào vấn đề họ đã nêu.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b12",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "QR là lối vào thuận tiện, không phải công cụ sinh đánh giá. Việc khách có gửi phản hồi và Google có hiển thị phản hồi đó vẫn nằm ngoài quyền kiểm soát của nhà cung cấp.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b13",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Đọc báo cáo thay vì đọc lời hứa",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b14",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Trước khi thuê, yêu cầu phạm vi cụ thể, cách đo, thời hạn và điều khoản dừng. Tách số lượt nhìn thấy, số lượt bấm liên hệ và số giao dịch thực tế. Một lượt bấm Call có thể là tín hiệu quan tâm; nó chưa chứng minh đã có cuộc gọi thành công hay một đơn hàng.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b15",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Lumi Local làm phần website, liên kết chỉ đường và file QR trong phạm vi đã thỏa thuận. Lumi không bán dịch vụ SEO Google Maps được quản lý và không hứa thứ hạng. Nếu vấn đề hiện tại là hồ sơ chưa xác minh, hãy giải quyết quy trình đó trước.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b16",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Một thử nghiệm nhỏ trong tuần này",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b17",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Ghi lại ba câu khách thường hỏi, sửa một chỗ thiếu thông tin trên kênh mình sở hữu và kiểm tra lại trên điện thoại. Theo dõi câu hỏi có còn xuất hiện không. Đó là một vòng phản hồi về chất lượng thông tin; chưa đủ để kết luận nguyên nhân thay đổi thứ hạng Google.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google: yếu tố xếp hạng địa phương / Local ranking",
+      "url": "https://support.google.com/business/answer/7091"
+    },
+    {
+      "label": "Google: mời khách đánh giá / Review invitations",
+      "url": "https://support.google.com/business/answer/3474122"
+    },
+    {
+      "label": "Google Maps: nội dung bị cấm / Content policy",
+      "url": "https://support.google.com/contributionpolicy/answer/7400114"
+    }
+  ],
+  "related": [
+    "dich-vu-google-maps",
+    "qr-review-google",
+    "tao-dia-diem-google-maps"
+  ]
+}

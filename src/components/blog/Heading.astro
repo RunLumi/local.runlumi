@@ -1,0 +1,6 @@
+---
+import { headingId } from '../../blog/site.js';
+const { node } = Astro.props;
+const Tag = ['h2','h3','h4'].includes(node.style) ? node.style : 'h2';
+---
+<Tag id={headingId(node)}><slot /></Tag>

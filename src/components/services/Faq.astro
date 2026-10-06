@@ -1,0 +1,4 @@
+---
+const {locale,items}=Astro.props;
+---
+<section class="service-faq" id="cau-hoi"><h2>{locale==='vi'?'Câu hỏi trước khi quyết định.':'Questions before deciding.'}</h2>{items.map(([q,a])=><details><summary>{q}</summary><p>{a}</p></details>)}</section>

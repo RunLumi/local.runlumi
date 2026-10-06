@@ -1,0 +1,292 @@
+{
+  "slug": "dich-vu-google-maps",
+  "locale": "en",
+  "title": "Google Maps services: what should you pay for?",
+  "description": "Separate profile setup, verification, local SEO and review QR artwork. Check ownership, deliverables and renewal costs before hiring.",
+  "answer": "Google Business Profile is free. A paid service should name the work, ownership terms and deliverables. Lumi Local supplies a website, directions links and QR artwork; it does not create, verify or manage Google profiles.",
+  "topic": "lua-chon-dich-vu",
+  "keyword": "dịch vụ google map",
+  "author": "lumi-local",
+  "pub_date": "2026-10-06T09:00:00+07:00",
+  "reviewed_date": "2026-10-06",
+  "featured": true,
+  "content": [
+    {
+      "_type": "block",
+      "_key": "b1",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Name the problem before buying a package",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b2",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "A shop without a profile, an owner without account access and a business without a readable service menu have different needs. Write one sentence describing the missing information or access before asking for a quote. A website cannot replace Google’s verification or recovery process.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b3",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "If visitors already find the shop but keep asking for prices, hours and a contact number, clearer information may be the useful next step. Check the existing customer path on a phone before adding another service.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b4",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Separate four types of work",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b5",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Creating or claiming a profile concerns Google Business Profile. Verification is Google’s process for checking the business representative. Local SEO covers a broader set of information and signals. A review QR opens a link where genuine customers can share their experience.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b6",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Ask a provider to identify each deliverable. A phrase such as “complete Google Maps package” does not tell you whether the quote includes a website, content, QR artwork, advertising or ongoing profile management.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b7",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Ask seven questions before paying",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b8",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Who owns the account? Which permissions does the provider need, and why? Which part is free from Google? What work does the service fee buy? What renews next year? What do you receive when the agreement ends? What happens to payment if Google’s process does not succeed?",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b9",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Do not share passwords, one-time codes or recovery codes. If you hire a separate profile manager, understand Google’s permission system and agree the scope first. Lumi does not need Google edit access for its offer.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b10",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Compare deliverables with outcome promises",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b11",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "primary-source",
+          "href": "https://support.google.com/business/answer/7091"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "A QR file, service page and configured domain are deliverables you can inspect. Customer counts, revenue and rankings require separate evidence. Google says a business cannot request or pay for better organic local ranking.",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-gap",
+          "text": " ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-link",
+          "text": "Google’s official guidance.",
+          "marks": [
+            "primary-source"
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b12",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Consider a hypothetical café with an accurate profile and an owner-controlled account, but an outdated menu scattered across Facebook posts. A mobile menu and Call/Zalo links may fit its need better than monthly profile edits. This is a scope example, not a Lumi customer result.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b13",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Where Lumi Local fits",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b14",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Starter costs 1,990,000 VND for year one. Trust Kit costs 399,000 VND once and is optional. Upgrading within 30 days credits the full Trust Kit fee, leaving 1,591,000 VND. Renewal starts in year two: 599,000 VND/year with a RunLumi address or 999,000 VND/year with one standard custom domain. Confirm domain eligibility and costs before payment.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b15",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "The offer combines a mobile service website, owner-confirmed directions and print-ready review QR artwork. Printing, physical stands, ads and Google profile management are excluded. If your immediate need is verification or recovery, follow Google’s instructions and evaluate a specialist for that task.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b16",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Prepare one useful question for a consultation",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b17",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Open the owner’s profile, view the current website on a phone and note one question customers repeatedly ask. Separate owner actions on Google from website, content and QR work. Use that list to compare quotes with matching scopes.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google Business Profile: bắt đầu / Get started",
+      "url": "https://support.google.com/business/answer/7039811"
+    },
+    {
+      "label": "Google: yếu tố xếp hạng địa phương / Local ranking",
+      "url": "https://support.google.com/business/answer/7091"
+    },
+    {
+      "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
+      "url": "https://support.google.com/business/answer/2911778"
+    }
+  ],
+  "related": [
+    "seo-google-maps",
+    "xac-minh-google-maps",
+    "qr-review-google"
+  ]
+}

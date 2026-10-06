@@ -1,0 +1,292 @@
+{
+  "slug": "dich-vu-google-maps",
+  "locale": "vi",
+  "title": "Dịch vụ Google Maps: cần thuê gì, tự làm gì?",
+  "description": "Phân biệt tạo hồ sơ, xác minh, SEO và QR đánh giá; kiểm tra quyền sở hữu, phạm vi và chi phí trước khi thuê dịch vụ Google Maps.",
+  "answer": "Google Business Profile là công cụ miễn phí. Khi thuê dịch vụ Google Maps, hãy xác định việc cần làm, quyền sở hữu và sản phẩm bàn giao. Lumi Local cung cấp website, liên kết chỉ đường và file QR; không tạo, xác minh hay quản lý hồ sơ Google.",
+  "topic": "lua-chon-dich-vu",
+  "keyword": "dịch vụ google map",
+  "author": "lumi-local",
+  "pub_date": "2026-10-06T09:00:00+07:00",
+  "reviewed_date": "2026-10-06",
+  "featured": true,
+  "content": [
+    {
+      "_type": "block",
+      "_key": "b1",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Bắt đầu từ việc đang cần giải quyết",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b2",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Một cửa hàng chưa có hồ sơ, một chủ quán mất quyền truy cập và một doanh nghiệp cần giới thiệu dịch vụ trên điện thoại đang gặp ba vấn đề khác nhau. Cùng tìm “dịch vụ Google Maps” không có nghĩa là cần cùng một gói. Trước khi hỏi giá, viết một câu cụ thể: thông tin nào đang sai, ai đang giữ tài khoản, hoặc khách chưa tìm được điều gì.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b3",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Nếu khách đã tìm thấy cửa hàng nhưng vẫn hỏi menu, giá và cách liên hệ, việc cần làm có thể là bổ sung một trang thông tin rõ ràng. Nếu hồ sơ bị hạn chế hoặc chưa xác minh, website không thay thế quy trình của Google. Hãy xử lý đúng vấn đề trước khi mua thêm một công cụ.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b4",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Phân biệt bốn loại công việc",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b5",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Tạo hoặc xác nhận quyền sở hữu hồ sơ là công việc với Google Business Profile. Xác minh là quy trình Google dùng để kiểm tra người đại diện doanh nghiệp. SEO địa phương là một phạm vi rộng hơn, gồm thông tin, website và các tín hiệu khác; đó không phải quyền mua thứ hạng. QR đánh giá chỉ mở đường dẫn để khách thật chia sẻ trải nghiệm.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b6",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Một báo giá nên gọi đúng tên từng việc. “Làm Google Maps trọn gói” không đủ rõ để biết có nhận website, nội dung, file QR, quản lý hồ sơ hay quảng cáo. Yêu cầu danh sách bàn giao và những việc loại trừ bằng văn bản.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b7",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Bảy câu hỏi trước khi trả tiền",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b8",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Ai giữ quyền sở hữu tài khoản? Nhà cung cấp cần quyền gì và vì sao? Google cung cấp phần nào miễn phí? Phí dịch vụ mua công việc cụ thể nào? Có khoản duy trì nào từ năm sau? Khi dừng hợp tác, nhận lại những gì? Nếu quy trình của Google không thành công, điều khoản thanh toán xử lý thế nào?",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b9",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Đừng gửi mật khẩu, mã OTP hay mã khôi phục. Nếu thuê một đơn vị quản lý hồ sơ ngoài Lumi, tìm hiểu cơ chế quyền của Google và chỉ cấp quyền phù hợp sau khi thống nhất phạm vi. Những câu trả lời mơ hồ là lý do để chưa ký, không phải lý do để trả thêm.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b10",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Đọc cam kết bằng sản phẩm bàn giao",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b11",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "primary-source",
+          "href": "https://support.google.com/business/answer/7091"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Cam kết bàn giao file QR, trang dịch vụ hoặc cấu hình tên miền có thể kiểm tra được. Cam kết số khách, doanh thu hoặc thứ hạng cần bằng chứng khác. Google nói không thể yêu cầu hay trả tiền để có thứ hạng địa phương tốt hơn; việc mua quảng cáo cũng không đồng nghĩa với mua thứ hạng tự nhiên.",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-gap",
+          "text": " ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-link",
+          "text": "Hướng dẫn chính thức của Google.",
+          "marks": [
+            "primary-source"
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b12",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Ví dụ giả định: quán đã có hồ sơ chính xác và chủ đang giữ tài khoản, nhưng menu chỉ nằm trong vài bài Facebook cũ. Một website menu và nút Call/Zalo có thể phù hợp hơn việc thuê người chỉnh hồ sơ mỗi tháng. Đây là cách lựa chọn phạm vi, không phải kết quả khách hàng của Lumi.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b13",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Lumi Local phù hợp khi nào?",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b14",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Lumi Local phù hợp khi chủ cơ sở cần một nơi giới thiệu dịch vụ trên điện thoại, liên kết chỉ đường tới vị trí do chủ xác nhận và file QR mời đánh giá trung thực. Starter là 1.990.000đ năm đầu; Trust Kit là 399.000đ một lần. Trust Kit không bắt buộc trước Starter và được khấu trừ đủ khi nâng cấp trong 30 ngày, còn 1.591.000đ.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b15",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Từ năm hai, duy trì là 599.000đ/năm với địa chỉ RunLumi hoặc 999.000đ/năm với một tên miền riêng tiêu chuẩn. Cần xác nhận tên miền, chi phí và phạm vi trước thanh toán. In ấn, giá đỡ, quảng cáo và quản lý hồ sơ Google không nằm trong gói. Nếu cần xác minh hoặc khôi phục hồ sơ, đọc hướng dẫn Google và đánh giá một dịch vụ chuyên biệt; Lumi không nhận quyền chỉnh sửa Google của bạn.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b16",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Việc nên làm trước buổi tư vấn",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b17",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Mở hồ sơ bằng tài khoản của chủ, xem website trên điện thoại và ghi lại một thiếu sót khách thường hỏi. Tách việc chủ cần làm trên Google khỏi phần nội dung, website và QR có thể giao cho nhà cung cấp. Mang danh sách đó vào buổi tư vấn để so cùng một phạm vi, thay vì chỉ so hai con số giá.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google Business Profile: bắt đầu / Get started",
+      "url": "https://support.google.com/business/answer/7039811"
+    },
+    {
+      "label": "Google: yếu tố xếp hạng địa phương / Local ranking",
+      "url": "https://support.google.com/business/answer/7091"
+    },
+    {
+      "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
+      "url": "https://support.google.com/business/answer/2911778"
+    }
+  ],
+  "related": [
+    "seo-google-maps",
+    "xac-minh-google-maps",
+    "qr-review-google"
+  ]
+}

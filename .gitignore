@@ -7,3 +7,8 @@ dist/
 .env.*
 !.env.example
 .DS_Store
+
+# EmDash runtime and generated artifacts
+dist-blog/
+.emdash/
+emdash-env.d.ts

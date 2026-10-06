@@ -1,0 +1,37 @@
+import { readdir, unlink, rmdir, access, readFile } from 'node:fs/promises';
+import { pathToFileURL } from 'node:url';
+
+// Astro's adapter may copy local dotenv files into server output for preview.
+// These are local credentials, never part of the CMS deployment artifact.
+export async function removeBuildSecrets(directory) {
+  for (const entry of await readdir(directory,{withFileTypes:true})) {
+    const target = new URL(entry.name + (entry.isDirectory() ? '/' : ''), directory);
+    if (entry.isDirectory()) await removeBuildSecrets(target);
+    else if (/^(?:\.dev\.vars(?:\..+)?|\.env(?:\..+)?)$/.test(entry.name)) await unlink(target);
+  }
+}
+
+export async function protectBlogBuild(directory) {
+  // Remove credentials before any later check can stop the build.
+  await removeBuildSecrets(directory);
+  // Private research, when present in a shared development checkout, stays on Pages.
+  try { await access(new URL('client/data/',directory)); } catch(error) { if(error.code === 'ENOENT') return; throw error; }
+  // Unexpected files stop the build.
+  for (const file of ['data/index.html','data/keywords.csv']) await unlink(new URL(`client/${file}`, directory));
+  await rmdir(new URL('client/data/', directory));
+}
+
+export async function clearCmsConfigRedirect(projectRoot) {
+  const redirect = new URL('.wrangler/deploy/config.json',projectRoot);
+  try {
+    const data=JSON.parse(await readFile(redirect,'utf8'));
+    const target=new URL(data.configPath,redirect);
+    if(target.href === new URL('dist-blog/server/wrangler.json',projectRoot).href) await unlink(redirect);
+  } catch(error) { if(error.code !== 'ENOENT') throw error; }
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  await clearCmsConfigRedirect(new URL('../',import.meta.url));
+  await protectBlogBuild(new URL('../dist-blog/',import.meta.url));
+  console.log('CMS deployment output excludes private research and local credential files.');
+}
