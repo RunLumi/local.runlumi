@@ -1,6 +1,8 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "lumi-local",
-  "compatibility_date": "2026-09-30",
-  "pages_build_output_dir": "./dist"
+  "$schema":"node_modules/wrangler/config-schema.json",
+  "name":"lumi-local",
+  "pages_build_output_dir":"./dist",
+  "compatibility_date":"2026-09-30",
+  "services":[{"binding":"BLOG","service":"lumi-local-blog"}],
+  "env":{"preview":{"services":[]}}
 }
