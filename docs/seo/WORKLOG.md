@@ -300,3 +300,10 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 ## 2026-10-07 06:29 +07:00 — RUN-028 reconciliation
 
 - This reconciliation clarifies the two RUN-028 draft entries immediately above: both refer to the same PSI run (`e6gb0oc7is`) and the same H1→H3 correction; there was no second test or second code change. The dated report is the consolidated evidence source and records both mobile and desktop views, test environment, fix, responsive results, and limitations.
+
+
+## 2026-10-07 06:32 +07:00 — RUN-028 release receipt — PR #41
+
+- PR #41 merged to main as `8e3c19ba366a406c415d3ea62bf3f28fce939018`; merged tree hash matched the local candidate tree. Its hosted `build` job failed with zero steps; no hosted Linux pass is claimed. Pre-push exact-head checks ran 48 tests and static build; local static build, tests, seed validation and CMS Worker artifact privacy check all passed.
+- Deployed merged commit to Cloudflare Pages Production, branch `main`, deployment `1f99c9d0-edc9-4ab3-bf4d-20a62df9bec3` (`https://1f99c9d0.lumi-local.pages.dev`). Live browser readback shows hero title level 2 in VI and EN. `scripts/verify-release.mjs` passes on the custom domain and Pages host.
+- Post-deploy PSI mobile report `78yzu4zu82` removed the heading-order audit finding; Accessibility score 100. Performance was 92 in this run vs 94 before; FCP 2.1s, LCP 2.7s, TBT 0, CLS 0 and Speed Index 4.1s, varying from 2.7s in the prior single run. CrUX still has no data. This is a targeted lab-finding confirmation, not a field or performance-uplift claim.
