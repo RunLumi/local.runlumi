@@ -1,0 +1,7 @@
+---
+import { PortableText } from 'astro-portabletext';
+import Heading from './Heading.astro';
+import Link from './Link.astro';
+const { value } = Astro.props;
+---
+<PortableText value={value} components={{ block:{ h2:Heading, h3:Heading, h4:Heading }, mark:{link:Link} }} />

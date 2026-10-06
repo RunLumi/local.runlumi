@@ -1,0 +1,287 @@
+{
+  "slug": "xac-minh-google-maps",
+  "locale": "en",
+  "title": "Google Maps verification: what owners should prepare",
+  "description": "Prepare for Google Business Profile verification while protecting account ownership. Check what support services can actually promise.",
+  "answer": "Google selects the verification methods available for a profile. Follow the options shown in the owner’s account. Lumi cannot promise a universal method or completion time.",
+  "topic": "quyen-so-huu",
+  "keyword": "dịch vụ xác minh google map",
+  "author": "lumi-local",
+  "pub_date": "2026-10-06T09:00:00+07:00",
+  "reviewed_date": "2026-10-06",
+  "featured": false,
+  "content": [
+    {
+      "_type": "block",
+      "_key": "b1",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Check the existing profile first",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b2",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Before buying verification support, check whether the business already has a profile and which account manages it. Adding another profile does not resolve an existing ownership problem. Follow Google’s claim or ownership process when a profile already exists.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b3",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Keep control of the business account. Do not share passwords, one-time codes or recovery codes. Lumi does not request these details or verify a profile on the owner’s behalf.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b4",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Use the method Google offers",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b5",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "primary-source",
+          "href": "https://support.google.com/business/answer/7107242"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Open the profile from the owner’s account and read the available verification options. Another business’s tutorial does not establish which method your profile can use. Google controls the process and may review information or require verification again.",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-gap",
+          "text": " ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-link",
+          "text": "Google’s official guidance.",
+          "marks": [
+            "primary-source"
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b6",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Read the complete instructions before starting. If the interface changes, use the current official help page rather than an old screenshot. Do not pay for a promised method that Google has not offered to your account.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b7",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Prepare truthful business information",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b8",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Have the real business name, location or service area and evidence of operation ready when requested. Compare the details with existing signs and documents. Do not invent an address or alter evidence to pass a check.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b9",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "If Google requests video verification, read that specific guide before recording. Submit only what the official process needs. Documents and footage can contain private information; avoid posting them in public groups.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b10",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "When the process is not complete",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b11",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Check the status and instructions in the account. Record the steps tried and the error shown. Avoid conflicting attempts or duplicate profiles to bypass an unresolved problem.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b12",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Use the support path Google provides when needed. Suspension or disabling has a separate process; verification does not automatically replace an appeal.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b13",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Evaluate outside help by its scope",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b14",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Ask whether the provider gives instructions or manages the profile, what permissions they need, what data they retain and how payment works if Google does not approve. Their promise should cover work they control, not Google’s decision.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b15",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Lumi Local offers an owner checklist and website presence. It does not create or verify Google Business Profiles. If verification is your only need, buying Lumi solely for that task is not a fit.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b16",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Take the next owner action",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b17",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Sign in, record the current status and read the verification instructions actually offered. Then decide whether you need specialist help. Keep the account and evidence under the business’s control.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google: xác minh doanh nghiệp / Verify your business",
+      "url": "https://support.google.com/business/answer/7107242"
+    },
+    {
+      "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
+      "url": "https://support.google.com/business/answer/2911778"
+    }
+  ],
+  "related": [
+    "tao-dia-diem-google-maps",
+    "dich-vu-google-maps"
+  ]
+}

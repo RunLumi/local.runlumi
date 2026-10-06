@@ -1,0 +1,301 @@
+{
+  "slug": "qr-review-google",
+  "locale": "vi",
+  "title": "QR review Google: mời khách thật đánh giá đúng cách",
+  "description": "Cách dùng link và mã QR để mời đánh giá Google trung thực, không quà tặng, không yêu cầu số sao và không chọn lọc khách.",
+  "answer": "Google cho phép mời khách chia sẻ trải nghiệm bằng link hoặc QR. Hãy mời tất cả khách thật, không đổi quà lấy đánh giá và không yêu cầu một mức sao. QR không bảo đảm số lượng hay việc đánh giá được hiển thị.",
+  "topic": "danh-gia-trung-thuc",
+  "keyword": "review google maps",
+  "author": "lumi-local",
+  "pub_date": "2026-10-06T09:00:00+07:00",
+  "reviewed_date": "2026-10-06",
+  "featured": false,
+  "content": [
+    {
+      "_type": "block",
+      "_key": "b1",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "QR làm gì và không làm gì?",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b2",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "QR mở một đường dẫn. Với đánh giá Google, mục đích là để khách đã sử dụng dịch vụ tiếp cận nơi chia sẻ trải nghiệm. Mã không tạo phản hồi, không thay khách viết nội dung và không bảo đảm Google sẽ giữ mọi đánh giá.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b3",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "primary-source",
+          "href": "https://support.google.com/business/answer/3474122"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Chủ có thể lấy link hoặc QR theo hướng dẫn chính thức trong hồ sơ đang quản lý. Nếu giao diện khác với bài hướng dẫn cũ, xem tài liệu Google được dẫn ở cuối bài. Lumi không cần mật khẩu hay quyền chỉnh sửa để làm artwork từ link do chủ cung cấp.",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-gap",
+          "text": " ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-link",
+          "text": "Hướng dẫn chính thức của Google.",
+          "marks": [
+            "primary-source"
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b4",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Lấy link đúng rồi thử trước khi in",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b5",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Chủ xác nhận link thuộc đúng cơ sở, sau đó mở thử bằng điện thoại. Kiểm tra tên doanh nghiệp ở trang đến; nếu có nhiều chi nhánh, đừng lấy nhầm link của một chi nhánh khác. Nhờ một người quét thử bản in mẫu trong điều kiện tại quầy trước khi in số lượng lớn.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b6",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Giữ mã đủ rõ và chừa khoảng trống quanh mã. Đây là kiểm tra sử dụng thông thường, không phải cam kết quét được trên mọi thiết bị. Không dùng mã minh họa trong thiết kế như một QR đã hoạt động.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b7",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Dùng lời mời trung thực",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b8",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Bạn đã sử dụng dịch vụ của chúng tôi? Quét QR để chia sẻ trải nghiệm trên Google. Mọi phản hồi đều được trân trọng.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b9",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Đặt cùng lời mời cho tất cả khách thật ở một điểm phù hợp trong quy trình. Nhân viên có thể chỉ chỗ quét mà không đọc hộ hay quyết định khách phải viết gì. Việc để lại đánh giá là lựa chọn của khách.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b10",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Bốn việc cần tránh",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b11",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Không tặng quà hoặc giảm giá để đổi lấy đánh giá. Không yêu cầu năm sao. Không chỉ mời người đã trả lời rằng họ hài lòng. Không mua phản hồi từ người chưa sử dụng dịch vụ. Chính sách của Google yêu cầu nội dung dựa trên trải nghiệm thật và cấm hành vi thao túng.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b12",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Một form hỏi mức độ hài lòng rồi chỉ chuyển khách vui sang Google tạo ra chọn lọc. Nếu dùng khảo sát riêng để học về dịch vụ, đừng biến câu trả lời thành điều kiện được nhận link đánh giá.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b13",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Đọc phản hồi như thông tin để cải thiện",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b14",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Khi có phản hồi tiêu cực, trả lời vào vấn đề và bảo vệ thông tin riêng của khách. Chỉ báo cáo nội dung theo lý do vi phạm chính sách phù hợp; không hứa xóa một đánh giá chỉ vì doanh nghiệp không thích nó.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b15",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Theo dõi xem khách có mở đúng trang và lời mời có dễ hiểu không. Số lượt quét, nếu được đo, không đồng nghĩa với số đánh giá đã gửi; số đánh giá cũng không tự chứng minh doanh thu tăng.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b16",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Phạm vi file QR của Lumi",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b17",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Trust Kit 399.000đ một lần và Starter 1.990.000đ năm đầu có file QR sẵn để in trong phạm vi đã thống nhất. In ấn, giá đỡ vật lý và vận chuyển không bao gồm. Chủ cung cấp, xác nhận link; Lumi chuẩn bị artwork và lời mời, không quản lý phản hồi Google.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b18",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Trước khi đặt in, chốt nội dung, link và một bản quét thử. Nếu chỉ cần lấy QR cơ bản, hãy thử tính năng miễn phí của Google; phí của Lumi mua công việc chuẩn bị artwork và phạm vi bàn giao, không mua quyền truy cập đánh giá.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google: mời khách đánh giá / Review invitations",
+      "url": "https://support.google.com/business/answer/3474122"
+    },
+    {
+      "label": "Google Maps: nội dung bị cấm / Content policy",
+      "url": "https://support.google.com/contributionpolicy/answer/7400114"
+    }
+  ],
+  "related": [
+    "dich-vu-google-maps",
+    "seo-google-maps"
+  ]
+}

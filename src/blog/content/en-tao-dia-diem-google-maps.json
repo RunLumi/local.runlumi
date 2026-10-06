@@ -1,0 +1,292 @@
+{
+  "slug": "tao-dia-diem-google-maps",
+  "locale": "en",
+  "title": "How to add a business location on Google Maps",
+  "description": "Check existing profiles, prepare accurate business information and follow the official Google Business Profile process.",
+  "answer": "Eligible businesses can add or claim a Google Business Profile through Google’s official process. Check for an existing profile first and follow the requests shown in the owner’s account. Lumi does not operate the profile for you.",
+  "topic": "quyen-so-huu",
+  "keyword": "cách tạo địa chỉ trên google map",
+  "author": "lumi-local",
+  "pub_date": "2026-10-06T09:00:00+07:00",
+  "reviewed_date": "2026-10-06",
+  "featured": false,
+  "content": [
+    {
+      "_type": "block",
+      "_key": "b1",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "A map place is not the same as management access",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b2",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "A visible map location does not establish who can manage the business information. Owners should use the Google Business Profile process for representing an eligible business.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b3",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "primary-source",
+          "href": "https://support.google.com/business/answer/2911778"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Read Google’s eligibility guidance before adding an address, particularly if the business serves an area rather than receiving customers at a storefront.",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-gap",
+          "text": " ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-link",
+          "text": "Google’s official guidance.",
+          "marks": [
+            "primary-source"
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b4",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Step 1: find an existing profile",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b5",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Search for the business name and actual location. If a profile exists, use Google’s add or claim guidance. Do not create another copy simply because you cannot sign in. An ownership request may be the appropriate path.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b6",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "If there is no profile, start through Google’s official Business Profile page. Buttons differ across devices and dates; the important decision is whether to add a new business or claim an existing one.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b7",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Step 2: prepare accurate details",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b8",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Use the real trading name, relevant business category, owner-controlled phone number and opening hours. Choose the address or service area according to how the business actually serves customers.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b9",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Do not place the business in a convenient city centre to look closer to searchers. Do not add advertising keywords to the name. Confirm uncertain details with the owner before submitting them.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b10",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Step 3: follow the account instructions",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b11",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Complete the steps Google displays, including verification when requested. Submission does not guarantee immediate visibility or a high ranking. Keep a record of the work and any further notices.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b12",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Use an owner-controlled account with recovery options protected. Assign responsibility for information updates rather than leaving the business’s digital asset in a supplier’s personal account.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b13",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Check the customer’s path afterwards",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b14",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Test the directions link on a phone against the real entrance. Check whether the website explains services, hours and contact options. This checks the visitor’s path; it is not a verification shortcut or ranking technique.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b15",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Lumi can prepare a website, Call/Zalo actions and directions links using owner-confirmed information. The owner retains Google account control. Lumi does not create, verify, edit or manage the profile.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b16",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Decide whether Lumi is needed",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b17",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "If adding or verifying a profile is your only task, try Google’s free process first. Evaluate Lumi when you also need a service website, QR artwork or the agreed publishing work. Buy the scope that addresses your actual problem.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
+      "url": "https://support.google.com/business/answer/2911778"
+    },
+    {
+      "label": "Google Business Profile: bắt đầu / Get started",
+      "url": "https://support.google.com/business/answer/7039811"
+    },
+    {
+      "label": "Google: xác minh doanh nghiệp / Verify your business",
+      "url": "https://support.google.com/business/answer/7107242"
+    }
+  ],
+  "related": [
+    "xac-minh-google-maps",
+    "dich-vu-google-maps",
+    "seo-google-maps"
+  ]
+}

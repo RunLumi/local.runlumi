@@ -1,0 +1,6 @@
+---
+const { node } = Astro.props;
+const value = typeof node.markDef?.href === 'string' ? node.markDef.href : '';
+const allowed = /^https?:\/\//i.test(value) || /^\/(?!\/)/.test(value) || /^#[\w-]+$/.test(value);
+---
+{allowed ? <a href={value} rel="noopener"><slot /></a> : <span><slot /></span>}

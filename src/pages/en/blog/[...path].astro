@@ -1,0 +1,9 @@
+---
+import Journal from '../../../components/blog/Journal.astro';
+import { blogPaths } from '../../../blog/routes.js';
+import { getPosts } from '@blog/source';
+import { isPublishedPath } from '../../../blog/site.js';
+if (!isPublishedPath(await getPosts('en'), Astro.params.path ?? '')) Astro.response.status = 404;
+export async function getStaticPaths() { return blogPaths('en'); }
+---
+<Journal locale="en"/>

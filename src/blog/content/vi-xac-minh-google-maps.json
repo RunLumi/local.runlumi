@@ -1,0 +1,287 @@
+{
+  "slug": "xac-minh-google-maps",
+  "locale": "vi",
+  "title": "Xác minh Google Maps: chủ doanh nghiệp cần chuẩn bị gì?",
+  "description": "Hướng dẫn chuẩn bị cho xác minh Google Business Profile; phân biệt lời hứa “nhanh nhất”, dịch vụ hỗ trợ và quyền tài khoản của chủ.",
+  "answer": "Google quyết định phương thức xác minh được cung cấp cho từng hồ sơ. Chủ doanh nghiệp cần làm theo hướng dẫn hiển thị trong tài khoản; không có một phương thức hay thời hạn chung mà Lumi có thể cam kết.",
+  "topic": "quyen-so-huu",
+  "keyword": "dịch vụ xác minh google map",
+  "author": "lumi-local",
+  "pub_date": "2026-10-06T09:00:00+07:00",
+  "reviewed_date": "2026-10-06",
+  "featured": false,
+  "content": [
+    {
+      "_type": "block",
+      "_key": "b1",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Kiểm tra hồ sơ và quyền trước",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b2",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Trước khi tìm “dịch vụ xác minh Google Map”, kiểm tra doanh nghiệp đã có hồ sơ chưa và tài khoản nào đang quản lý. Việc thêm một hồ sơ mới không tự giải quyết một hồ sơ đã tồn tại hoặc bị người khác quản lý. Nếu thấy hồ sơ hiện có, đọc quy trình xác nhận hoặc yêu cầu quyền phù hợp của Google.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b3",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Chủ cơ sở cần giữ quyền với tài khoản đại diện doanh nghiệp. Không gửi mật khẩu, OTP hoặc mã khôi phục cho người chào dịch vụ. Lumi không yêu cầu các thông tin này và không nhận việc xác minh thay chủ.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b4",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Làm theo phương thức Google cung cấp",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b5",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "primary-source",
+          "href": "https://support.google.com/business/answer/7107242"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Mở hồ sơ bằng tài khoản của chủ và xem lựa chọn xác minh đang được Google hiển thị. Không suy từ hướng dẫn của một doanh nghiệp khác rằng hồ sơ của mình cũng có cùng lựa chọn. Google kiểm soát quy trình, có thể xem xét thông tin hoặc yêu cầu xác minh lại.",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-gap",
+          "text": " ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-link",
+          "text": "Hướng dẫn chính thức của Google.",
+          "marks": [
+            "primary-source"
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b6",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Hãy đọc toàn bộ yêu cầu trước khi bắt đầu. Nếu giao diện thay đổi, dùng tài liệu trợ giúp chính thức được dẫn ở cuối bài thay vì một ảnh chụp cũ. Đừng trả tiền cho lời hứa cung cấp một phương thức mà tài khoản của bạn chưa được Google cho dùng.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b7",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Chuẩn bị thông tin có thể đối chiếu",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b8",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Chuẩn bị tên doanh nghiệp đang sử dụng, vị trí hoặc vùng phục vụ đúng thực tế và bằng chứng thể hiện hoạt động tại đó khi Google yêu cầu. Đối chiếu thông tin với biển hiệu và giấy tờ hiện có; không dựng địa chỉ, thuê bảng hiệu tạm hoặc sửa bằng chứng để qua bước kiểm tra.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b9",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Nếu được yêu cầu xác minh bằng video, đọc hướng dẫn tương ứng trước khi ghi hình. Chỉ chia sẻ nội dung cần thiết qua luồng chính thức. Các tài liệu này có thể chứa thông tin riêng, không nên đăng vào một nhóm công khai để nhờ người lạ xử lý.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b10",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Khi chưa hoàn tất xác minh",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b11",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Xem trạng thái và hướng dẫn trong tài khoản. Ghi lại bước đã thực hiện và thông báo lỗi, tránh thử nhiều cách mâu thuẫn rồi không biết việc nào đã thay đổi. Không tạo hồ sơ trùng để né một vấn đề chưa rõ.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b12",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Nếu không còn phương án phù hợp, đi từ kênh hỗ trợ được Google chỉ dẫn. Nếu hồ sơ bị đình chỉ hoặc vô hiệu hóa, đó là luồng xử lý riêng; việc xác minh lại không mặc nhiên thay thế quy trình kháng nghị.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b13",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Nếu vẫn thuê người hỗ trợ",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b14",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Hỏi rõ họ chỉ hướng dẫn hay sẽ thao tác quản lý, cần quyền gì, giữ lại dữ liệu nào và xử lý phí ra sao nếu Google không chấp thuận. Yêu cầu cam kết về công việc họ kiểm soát, không về quyết định của Google. Đừng coi lời hứa “nhanh nhất” là bằng chứng năng lực.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b15",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Lumi Local cung cấp checklist cho chủ và phần hiện diện trên website; không cung cấp dịch vụ tạo hoặc xác minh Google Business Profile. Nếu xác minh là nhu cầu duy nhất, chưa cần mua Lumi Local chỉ để giải quyết việc đó.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b16",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Việc tiếp theo",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b17",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Đăng nhập bằng tài khoản của chủ, ghi lại trạng thái hiện tại và đọc đúng hướng dẫn xác minh Google đưa ra. Chỉ sau đó mới quyết định tự làm hay cần một dịch vụ chuyên biệt. Giữ hồ sơ, bằng chứng và quyền tài khoản dưới sự kiểm soát của doanh nghiệp.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google: xác minh doanh nghiệp / Verify your business",
+      "url": "https://support.google.com/business/answer/7107242"
+    },
+    {
+      "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
+      "url": "https://support.google.com/business/answer/2911778"
+    }
+  ],
+  "related": [
+    "tao-dia-diem-google-maps",
+    "dich-vu-google-maps"
+  ]
+}

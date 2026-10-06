@@ -1,0 +1,278 @@
+{
+  "slug": "seo-google-maps",
+  "locale": "en",
+  "title": "Google Maps SEO: a checklist before hiring",
+  "description": "Check local information, website clarity and review practices before buying Google Maps SEO. Learn the limits of ranking promises.",
+  "answer": "Google identifies relevance, distance and prominence as the main local ranking factors. Organic local ranking cannot be bought. Start by checking accurate information and account ownership.",
+  "topic": "hien-dien-dia-phuong",
+  "keyword": "seo google maps",
+  "author": "lumi-local",
+  "pub_date": "2026-10-06T09:00:00+07:00",
+  "reviewed_date": "2026-10-06",
+  "featured": false,
+  "content": [
+    {
+      "_type": "block",
+      "_key": "b1",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Understand what local SEO can describe",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b2",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "primary-source",
+          "href": "https://support.google.com/business/answer/7091"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Google Maps SEO is a common name for work on local search presence. Google identifies relevance, distance and prominence as the main factors. The searcher’s location affects results, so one screenshot does not establish a stable position for every customer.",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-gap",
+          "text": " ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-link",
+          "text": "Google’s official guidance.",
+          "marks": [
+            "primary-source"
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b3",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Ask which queries, locations and dates a provider measures. A rank screenshot alone does not show customer acquisition or revenue.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b4",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Check the information you control",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b5",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Review the real business name, relevant category, address or service area, regular and special hours, phone number and verification status. Look for conflicting information across the sign, profile, website and current channels. The owner makes Google changes through their own account.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b6",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "This is a consistency checklist, not a ranking formula. Describe the actual business rather than adding keywords to its name to chase search positions.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b7",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Follow the visit through to your website",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b8",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "On a phone, check whether services make sense, hours are current and Call/Zalo links reach the correct destination. Test the directions link against the owner-confirmed location. Where prices appear, include the unit, conditions and update date.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b9",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "A hypothetical business that replaces “leading quality” with a clear service description gives the visitor more useful information. That change is inspectable; a claimed conversion increase would require measurement.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b10",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Invite genuine feedback responsibly",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b11",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Invite all genuine customers to share their experience, without a requested rating or reward. Reply to the issue raised and protect customer privacy. A QR makes the review link easier to reach; it does not create reviews or control Google’s moderation.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b12",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Ask for reporting that separates outcomes",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b13",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Agree the scope, measurement approach and exit terms before hiring. Distinguish visibility, contact clicks and completed transactions. A Call click is not proof of a connected call or sale.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b14",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Lumi Local supplies a website, directions links and QR artwork within agreed scope. It does not sell managed Google Maps SEO or guarantee ranking. Verification problems need the owner’s Google process first.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b15",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Run a small information test",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b16",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Write down three recurring customer questions, correct one gap on an owned channel and check it on a phone. Observe whether the question still comes up. This tests information quality; it does not establish why Google rankings changed.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google: yếu tố xếp hạng địa phương / Local ranking",
+      "url": "https://support.google.com/business/answer/7091"
+    },
+    {
+      "label": "Google: mời khách đánh giá / Review invitations",
+      "url": "https://support.google.com/business/answer/3474122"
+    },
+    {
+      "label": "Google Maps: nội dung bị cấm / Content policy",
+      "url": "https://support.google.com/contributionpolicy/answer/7400114"
+    }
+  ],
+  "related": [
+    "dich-vu-google-maps",
+    "qr-review-google",
+    "tao-dia-diem-google-maps"
+  ]
+}

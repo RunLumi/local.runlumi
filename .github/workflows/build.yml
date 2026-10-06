@@ -15,8 +15,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version-file: '.node-version'
           cache: npm
       - run: npm ci
       - run: npm run build
       - run: npm test
+      - name: Validate EmDash content seed
+        run: node node_modules/emdash/dist/cli/index.mjs seed seed/blog.json --validate
+      - name: Build EmDash Worker
+        run: npm run build:blog

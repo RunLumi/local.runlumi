@@ -1,0 +1,292 @@
+{
+  "slug": "tao-dia-diem-google-maps",
+  "locale": "vi",
+  "title": "Cách tạo địa điểm trên Google Maps cho doanh nghiệp",
+  "description": "Kiểm tra hồ sơ đã tồn tại, chuẩn bị thông tin và đi đúng luồng Google Business Profile khi đưa địa chỉ cửa hàng lên Google Maps.",
+  "answer": "Doanh nghiệp đủ điều kiện có thể thêm hoặc xác nhận Google Business Profile qua luồng chính thức. Hãy kiểm tra địa điểm đã tồn tại trước, cung cấp thông tin đúng và hoàn tất yêu cầu Google đưa ra. Lumi không thao tác hồ sơ thay chủ.",
+  "topic": "quyen-so-huu",
+  "keyword": "cách tạo địa chỉ trên google map",
+  "author": "lumi-local",
+  "pub_date": "2026-10-06T09:00:00+07:00",
+  "reviewed_date": "2026-10-06",
+  "featured": false,
+  "content": [
+    {
+      "_type": "block",
+      "_key": "b1",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Một địa điểm và một hồ sơ doanh nghiệp khác nhau",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b2",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "“Thêm địa điểm” là nhu cầu rộng; chủ doanh nghiệp cần xem luồng Google Business Profile để đại diện cơ sở của mình. Một điểm được thấy trên bản đồ không tự chứng minh người đang đọc có quyền quản lý thông tin doanh nghiệp đó.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b3",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "primary-source",
+          "href": "https://support.google.com/business/answer/2911778"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Google Business Profile dành cho doanh nghiệp đủ điều kiện. Trước khi nhập một địa chỉ, đọc điều kiện trong tài liệu bắt đầu của Google, nhất là khi hoạt động theo vùng phục vụ thay vì đón khách tại một mặt bằng.",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-gap",
+          "text": " ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "source-link",
+          "text": "Hướng dẫn chính thức của Google.",
+          "marks": [
+            "primary-source"
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b4",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Bước 1: tìm hồ sơ hiện có",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b5",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Tìm tên và vị trí thực tế của doanh nghiệp trên Google. Nếu đã có hồ sơ, dùng hướng dẫn thêm hoặc xác nhận quyền của Google; đừng tạo thêm một bản chỉ vì chưa đăng nhập được. Hồ sơ trùng có thể khiến việc kiểm tra thông tin khó hơn.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b6",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Nếu hồ sơ đang do người khác quản lý, đi theo luồng yêu cầu quyền. Nếu không thấy hồ sơ, bắt đầu tại trang quản lý Business Profile chính thức. Các nút có thể khác giữa thiết bị và thời điểm; bài này mô tả thứ tự quyết định, không giả định một giao diện cố định.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b7",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Bước 2: chuẩn bị thông tin thật",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b8",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Dùng tên đang hiện trên biển hiệu và trong hoạt động thực tế, mô tả đúng loại hình, số điện thoại do doanh nghiệp kiểm soát và giờ mở cửa. Kiểm tra địa chỉ hoặc vùng phục vụ theo cách cơ sở thực sự phục vụ khách.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b9",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Không dùng vị trí trung tâm thành phố chỉ để trông “gần khách hơn”. Không thêm từ khóa quảng cáo vào tên để thử lợi dụng tìm kiếm. Nếu còn chưa chắc thông tin, xác nhận với chủ trước khi gửi.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b10",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Bước 3: hoàn tất yêu cầu trong tài khoản",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b11",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Làm theo các bước Google hiển thị và thực hiện xác minh nếu được yêu cầu. Việc gửi thông tin không phải bảo đảm được hiển thị ngay, cũng không phải bảo đảm có thứ hạng cao. Giữ bản ghi công việc đã làm để dễ xử lý nếu có thông báo tiếp theo.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b12",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Dùng tài khoản mà chủ kiểm soát và bảo vệ phương án khôi phục. Khi có nhiều người làm việc, phân công rõ ai chịu trách nhiệm thông tin. Tránh dùng tài khoản cá nhân của nhà cung cấp như nơi giữ tài sản số của doanh nghiệp.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b13",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Sau khi có thông tin đúng: kiểm tra đường đi của khách",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b14",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Mở liên kết chỉ đường từ điện thoại và đối chiếu điểm đến với cửa vào thực tế. Xem khách có đọc được dịch vụ, giờ và cách liên hệ trên website không. Đây là kiểm tra trải nghiệm tiếp cận cơ sở, không phải một thủ thuật để xác minh hay tăng hạng.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b15",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Lumi có thể làm website, Call/Zalo và liên kết chỉ đường bằng thông tin do chủ xác nhận. Chủ vẫn giữ toàn bộ quyền với tài khoản Google; Lumi không tạo, xác minh, chỉnh sửa hoặc quản lý hồ sơ.",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b16",
+      "style": "h2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Khi nào chưa nên thuê Lumi?",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b17",
+      "style": "normal",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Nếu việc duy nhất cần làm là thêm hoặc xác minh một hồ sơ, hãy thử luồng miễn phí của Google trước. Chỉ đánh giá Lumi Local khi bạn còn cần website dịch vụ, file QR hoặc phần xuất bản trong phạm vi gói. Mua đúng công việc giúp tránh trả phí cho một giải pháp không xử lý vấn đề ban đầu.",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
+      "url": "https://support.google.com/business/answer/2911778"
+    },
+    {
+      "label": "Google Business Profile: bắt đầu / Get started",
+      "url": "https://support.google.com/business/answer/7039811"
+    },
+    {
+      "label": "Google: xác minh doanh nghiệp / Verify your business",
+      "url": "https://support.google.com/business/answer/7107242"
+    }
+  ],
+  "related": [
+    "xac-minh-google-maps",
+    "dich-vu-google-maps",
+    "seo-google-maps"
+  ]
+}
