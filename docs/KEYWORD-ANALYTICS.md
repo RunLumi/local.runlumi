@@ -86,12 +86,13 @@ snapshot assertions in `tests/keyword-analysis.test.js`. Counts/charts and the
 fingerprint rebuild from the source; recommendations and review dates require
 human review. Run `npm run build` followed by `npm test`.
 
-Use `npm run dev:data` for the protected local preview on port 4323, with the
-ignored `.dev.vars` `DATA_PASSWORD` value. Ordinary Astro dev blocks `/data`.
-Production requires an encrypted Pages `DATA_PASSWORD` secret. See
+Use `npm run dev:data` for the protected local preview on port 4323, with a
+local CMS Worker running and `BLOG_ADMIN_READY=true` in ignored `.dev.vars`.
+Ordinary Astro dev blocks `/data`. In production, sign in to the Lumi Local
+editor as an administrator; there is no research password. See
 [SECURITY.md](../SECURITY.md#research-workspace-access) and [DEPLOY.md](../DEPLOY.md).
 
-Browser acceptance: password login/rejection/logout; anonymous page and CSV
+Browser acceptance: editor sign-in redirect and return, non-admin refusal, sign-out; anonymous page and CSV
 denial; default candidates; accent-insensitive search; combined
 fit/topic/intent/minimum-volume filters; zero matches; reset; null-last sorts;
 25/50/100 pagination; keyboard keyword selection; all 12 monthly values; filter
@@ -104,7 +105,15 @@ browser: verify generated CSV through the visible export fallback as well.
 No production deployment, outreach, ad spend, SERP audit, independent score
 calibration or conversion experiment is established by this implementation.
 
-### Password protection addition, 2026-10-06
+### Access control, 2026-10-06
+
+Superseded the same day: the shared password, Basic Auth and research-only
+session below were removed. Access now requires a Lumi Local editor (EmDash)
+administrator session, checked on every request over the `BLOG` service binding
+(see [SECURITY.md](../SECURITY.md#research-workspace-access)). The record below is
+kept for history.
+
+#### Original password protection, 2026-10-06
 
 The generated page and original CSV are now Function-only content, absent from
 the static asset directory. `scripts/protect-data-build.mjs` enforces this during

@@ -21,3 +21,7 @@ After deployment, verify anonymous editor navigation reaches normal EmDash sign-
 For a different, unclaimed production database, keep first-admin setup inaccessible until the human explicitly authorizes the temporary credential's access and storage scope. The initial attempt in this release was rejected by automatic approval review; it made no credential change. The owner subsequently approved the precise scope. Do not infer permission for a future installation from this historical approval.
 
 Bootstrap a fresh seed-only database with no development identities. Save any approved temporary setup credential only as an encrypted Pages secret and a private owner-readable handoff file. Verify the protected wizard on both production hostnames. The human registers a passkey at the final custom-domain origin. Only after the intended enabled administrator, registered credential, completed setup and human sign-in are verified should the operator set readiness, remove temporary access and redeploy. Keep the editor locked if these checks fail.
+
+## Research workspace uses the same sign-in — 2026-10-06
+
+The private keyword research at [/data/](https://local.runlumi.app/data/) no longer has its own password. Open it while signed in to the editor as an administrator; if you are signed out, it sends you to the editor's passkey sign-in and returns you to `/data/`. Editors below administrator are refused. “Sign out” on the research page also signs you out of the editor. To grant or remove research access, change the person's EmDash role.
