@@ -189,3 +189,18 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Manual Pages deploy completed at https://de3ec339.lumi-local.pages.dev. Readback of VI/EN website-service routes returned 200 with the explicit inventory/checkout FAQ on both the custom domain and deployment hostname. Browser opened and expanded the live VI and EN FAQ answers; no live enquiry or CMS mutation.
 - Deployment was allowed by the activated campaign contract and the repository’s documented manual release path; Actions budget was the confirmed hosted blocker. No DNS/secret/billing/CMS Worker mutation.
 - Campaign remains incomplete. No real GSC or acquisition outcomes, no scheduled heartbeat; CA-002 is one verified live comment with exact scope consumed. Next read-only follow-up 2026-10-13.
+
+
+## 2026-10-06 — RUN-017 — Lead-follow-up boundary added to existing FAQ
+
+- The same public gift-shop thread raised whether website enquiries include CRM/nurture and who responds. Existing copy covers the enquiry path, one pre-publication revision and technical maintenance, but did not explicitly name automated follow-up exclusions.
+- Added a separate VI/EN FAQ: no CRM, reminders, automated messages or lead nurture; agree the enquiry destination and response owner before publication. Updated COPY.md and PRICING.md as canonical scope. No SLA or implementation capability added.
+- This remains one qualitative international discussion; not local buyer demand or willingness-to-pay evidence. The deployed inventory/checkout clarification is already released in RUN-016; this follow-up copy is a new candidate and is not yet deployed.
+
+
+## 2026-10-06 — RUN-017 validation — automated follow-up boundary
+
+- Added one FAQ for CRM/automated lead-follow-up expectations to the existing bilingual local-business website page; canonical COPY/PRICING clarify the same exclusion. No new product capability, integration, SLA or customer-routing claim.
+- Local browser expanded both locale answers. Final VI/EN pages measured at 320/375/768/1440: one h1 and no overflow in all eight observations.
+- The source thread is a single international qualitative signal; no additional Reddit comment or DM. CA-002's one-comment permission is consumed. Follow-up check remains 2026-10-13.
+- Next: run exact-head existing release gates, PR and normal merge. Production deployment remains under standing campaign release path if Actions budget blocks jobs; verify both domains after release.

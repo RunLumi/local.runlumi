@@ -34,3 +34,12 @@ Updated 2026-10-06 · Asia/Saigon · active, day 1. Full contract: [goal](../GOA
 ## Recovery
 
 Read this checkpoint, goal, worklog and both CSV ledgers before external actions. Inspect submitting/unknown/pending outcomes before retrying. Preserve the shared checkout’s unrelated `docs/blog/checkpoint.md` edit. The current worktree is isolated and detached at the latest merged serving head; no temporary dev server remains.
+
+## RUN-017 — follow-up workflow boundary candidate
+
+The live inventory/checkout boundary is already released. A second buyer question from the same international discussion asked about CRM/nurture and ongoing updates. RUN-017 adds a candidate VI/EN FAQ and canonical scope clarification for CRM/automated follow-up; local gates and PR are pending. This remains qualitative scope evidence, not Vietnam demand. No community reply authorized or sent.
+
+
+## RUN-017 — lead-follow-up boundary candidate
+
+The released RUN-016 inventory/checkout FAQ stays live. RUN-017 adds a second bilingual FAQ: contact form/actions are not CRM or automated follow-up; agree enquiry destination and response owner before publishing. COPY/PRICING updated. Final VI/EN build readback and four-width checks passed locally. Candidate branch `codex/seo-lead-follow-up-boundary`; local gates/PR/deployment pending. The same international thread is one qualitative signal only. CA-002 authorization remains consumed; no new community post.
