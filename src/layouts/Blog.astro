@@ -3,6 +3,7 @@ import '@fontsource-variable/geist';
 import '@fontsource-variable/geist-mono';
 import '../styles/global.css';
 import '../styles/blog.css';
+import { photographFor } from '../blog/photographs.js';
 import { copy } from '../content/copy.js';
 import { base, home, origin, safeJson } from '../blog/site.js';
 const { locale, title, description, path = '', alternatePath, article, noindex = false, schema = {} } = Astro.props;
@@ -10,7 +11,8 @@ const canonical = origin + base(locale) + (path ? path + '/' : '');
 const en = locale === 'en';
 const other = en ? 'vi' : 'en';
 const otherUrl = alternatePath === undefined ? undefined : base(other) + (alternatePath ? alternatePath + '/' : '');
-const social = `${origin}/social-card-${locale}.png`;
+const photograph = photographFor(article);
+const social = photograph ? origin + photograph.src : `${origin}/social-card-${locale}.png`;
 const schemaData = { '@context':'https://schema.org', '@graph':[
   {'@type':'Organization','@id':origin+'/#organization',name:'Lumi Local',url:origin+'/',logo:origin+'/brand/lumi-logo.svg'},
   {'@type':'Blog','@id':origin+base(locale)+'#blog',url:origin+base(locale),name:'Lumi Local Journal',inLanguage:locale,publisher:{'@id':origin+'/#organization'}},
@@ -24,7 +26,7 @@ const schemaData = { '@context':'https://schema.org', '@graph':[
   <link rel="icon" href="/brand/lumi-logo.svg" type="image/svg+xml"/>
   <link rel="alternate" type="application/rss+xml" title={en ? 'Lumi Local — English' : 'Lumi Local — Tiếng Việt'} href={base(locale)+'rss.xml'}/>
   {otherUrl && <><link rel="alternate" hreflang={locale} href={canonical}/><link rel="alternate" hreflang={other} href={origin+otherUrl}/><link rel="alternate" hreflang="x-default" href={en ? origin+otherUrl : canonical}/></>}
-  <meta property="og:type" content={article ? 'article' : 'website'}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:site_name" content="Lumi Local"/><meta property="og:locale" content={en ? 'en_US' : 'vi_VN'}/><meta property="og:image" content={social}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={title}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={social}/>
+  <meta property="og:type" content={article ? 'article' : 'website'}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:site_name" content="Lumi Local"/><meta property="og:locale" content={en ? 'en_US' : 'vi_VN'}/><meta property="og:image" content={social}/>{photograph && <><meta property="og:image:alt" content={photograph.alt}/><meta property="og:image:width" content={photograph.width}/><meta property="og:image:height" content={photograph.height}/></>}<meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={title}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={social}/>{photograph && <meta name="twitter:image:alt" content={photograph.alt}/>}
   {article && <><meta property="article:published_time" content={article.pub_date}/><meta property="article:modified_time" content={article.reviewed_date}/></>}
   {!noindex && <script is:inline type="application/ld+json" set:html={safeJson(schemaData)}/>}
 </head><body class="blog-body">

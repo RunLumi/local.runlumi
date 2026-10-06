@@ -1,0 +1,305 @@
+{
+  "description": "Generated editorial illustrations, not photographs of real Lumi customers or premises. Selected outputs visually inspected; only distribution-size derivatives are public.",
+  "images": [
+    {
+      "key": "vi-dich-vu-google-maps",
+      "prompt": "Use case: photorealistic-natural. Asset: horizontal 3:2 editorial blog photograph for the Vietnamese guide about choosing Google Maps-related services. Image thesis: an understandable physical entrance is the starting point of local presence. Subject: a modest anonymous neighborhood repair shop entrance in Vietnam, photographed from across its threshold at an oblique angle, a partially raised metal rolling shutter, clean but naturally worn warm plaster, a muted blue wooden door frame, a terracotta plant pot and a small edge of a parked bicycle. Material family: aged painted wood, concrete, metal. Setting: ordinary believable Vietnamese side street, modest and cared for, no luxury showroom. Lighting: soft morning daylight, gentle real shadows. Camera: full-frame 35mm documentary editorial lens, eye height, quiet asymmetry, doorway dominant, no extreme wide angle, enough context around it. Palette: paper cream, civic navy and a restrained faded blue accent, natural colors. Finish: subtle film grain, real surface texture, controlled highlights, natural exposure, absolutely believable photographic optics. No people, business names, readable signage, text overlays, logos, Google icons, screens, maps UI, stars, ratings, watermarks, surreal props, floating objects, glossy CGI, glow, gradients or artificial cinematic fog. It is a generated editorial illustration, never a real customer case study. Produce ONE image, no collage.",
+      "generator": "built-in image_gen",
+      "generatedDate": "2026-10-06",
+      "originalSha256": "c191ae42e4eeff2bea3e7c68105b743189b6b214c667db0fe8cb445075b86006",
+      "assets": [
+        {
+          "path": "public/blog-images/vi-dich-vu-google-maps-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 34332,
+          "sha256": "dc6e569af4e564f1f6a391684164105c9104bc71c68acc69c8f1265f278fb12e"
+        },
+        {
+          "path": "public/blog-images/vi-dich-vu-google-maps-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 108644,
+          "sha256": "0956365b6b1fa58ecedfa9687e7f635ed8ec4e026d13e1641fca3f88db19e10d"
+        },
+        {
+          "path": "public/blog-images/vi-dich-vu-google-maps-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 216612,
+          "sha256": "8abb4b0233af86ad754abba1c365ad22947b186746a03ca7f29fc133b7cfc40e"
+        }
+      ]
+    },
+    {
+      "key": "en-dich-vu-google-maps",
+      "prompt": "Use case: photorealistic-natural. ONE horizontal 3:2 editorial photograph, no collage. Modest anonymous Vietnam local-business setting, physically plausible photography, natural surfaces and imperfections, full-frame camera, restrained warm paper/cream, civic navy and faded blue accents, realistic soft daylight, subtle grain, clean highlights. No people or hands, no recognizable business, no readable text or signage, no logo, Google branding, stars, ratings, fake dashboard or UI, no glowing effects, surreal objects, decorative symbols, glossy CGI, artificial mist, oversaturated colors or watermark. Generated editorial illustration; never presented as a real customer or real premises. Thesis: compare the work before choosing a supplier. Subject: a small local shop's scratched wooden service counter, two plain cream folders laid side by side with a closed navy notebook, a face-down smartphone, and a plain ceramic cup at the far edge. Matte wood and paper dominate. A sunlit anonymous entrance is softly blurred beyond. Composition: close editorial still life from a natural seated angle, 50mm lens, folders dominant, off-axis framing, objects grounded with correct contact shadows, no overhead flat lay.",
+      "generator": "built-in image_gen",
+      "generatedDate": "2026-10-06",
+      "originalSha256": "bb45469f68599f093950dd09413df3daae6e0f44b9ec0e6136e1be6ead03c41c",
+      "assets": [
+        {
+          "path": "public/blog-images/en-dich-vu-google-maps-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 18566,
+          "sha256": "5d357756f47b0d82b14490f80241d8fccfa2b5fea5434339b95e4866d5020720"
+        },
+        {
+          "path": "public/blog-images/en-dich-vu-google-maps-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 48982,
+          "sha256": "bb8afd3454df1fe35ed87e718a1d17614cd3589a78d0559cccbc79ba26f571b8"
+        },
+        {
+          "path": "public/blog-images/en-dich-vu-google-maps-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 89814,
+          "sha256": "7a7143c65ce70ff431e599f5c9176d3722cea20fe5005ce095d33eb95d7c6387"
+        }
+      ]
+    },
+    {
+      "key": "vi-seo-google-maps",
+      "prompt": "Use case: photorealistic-natural. ONE horizontal 3:2 editorial photograph, no collage. Modest anonymous Vietnam local-business setting, physically plausible photography, natural surfaces and imperfections, full-frame camera, restrained warm paper/cream, civic navy and faded blue accents, realistic soft daylight, subtle grain, clean highlights. No people or hands, no recognizable business, no readable text or signage, no logo, Google branding, stars, ratings, fake dashboard or UI, no glowing effects, surreal objects, decorative symbols, glossy CGI, artificial mist, oversaturated colors or watermark. Generated editorial illustration; never presented as a real customer or real premises. Thesis: being easy to find starts with a legible physical place. Subject: a quiet modest Vietnamese commercial lane with three unbranded shop entrances at different depths, faded blue shutter, warm plaster, one ordinary parked motorbike partially visible, a mature street tree casting soft shadows. Composition: 35mm eye-level view along the street with a single nearest doorway as the focal point, ordinary morning daylight, realistic architecture, no dramatic skyline or lantern clichés.",
+      "generator": "built-in image_gen",
+      "generatedDate": "2026-10-06",
+      "originalSha256": "3fe30a8ba4f7ce3f866ed95f2ea1e9912a055b15f12665526a21690ef453de1a",
+      "assets": [
+        {
+          "path": "public/blog-images/vi-seo-google-maps-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 33432,
+          "sha256": "e380e063910e4aa082ee385df4866421dc69f9bdbc18921b5f92bd14da634fa5"
+        },
+        {
+          "path": "public/blog-images/vi-seo-google-maps-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 105294,
+          "sha256": "bdb85d5dded0ba8051d1188d531157d72c4de9fe6bec92c2dad527c59ab000a9"
+        },
+        {
+          "path": "public/blog-images/vi-seo-google-maps-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 212594,
+          "sha256": "9c9b26797812f8ae8676206d0f259d8aa83136bc1ef2e1e3e2df1d91508556f9"
+        }
+      ]
+    },
+    {
+      "key": "en-seo-google-maps",
+      "prompt": "Use case: photorealistic-natural. ONE horizontal 3:2 editorial photograph, no collage. Modest anonymous Vietnam local-business setting, physically plausible photography, natural surfaces and imperfections, full-frame camera, restrained warm paper/cream, civic navy and faded blue accents, realistic soft daylight, subtle grain, clean highlights. No people or hands, no recognizable business, no readable text or signage, no logo, Google branding, stars, ratings, fake dashboard or UI, no glowing effects, surreal objects, decorative symbols, glossy CGI, artificial mist, oversaturated colors or watermark. Generated editorial illustration; never presented as a real customer or real premises. Thesis: accurate information connects the street to the counter. Subject: view outward through a modest neighborhood service shop's broad open doorway, the edge of a warm timber reception desk in the foreground and a faded blue shutter across the street. One ceramic pot on the threshold. Composition: understated architectural photograph, 40mm lens, interior and street detail balanced with soft natural exposure, generous air, late morning, no artificial stage props.",
+      "generator": "built-in image_gen",
+      "generatedDate": "2026-10-06",
+      "originalSha256": "3e2a2c6caa0d2db0ee0954c5acc9825634c82006561a2f7656e8cdcdee4ff2db",
+      "assets": [
+        {
+          "path": "public/blog-images/en-seo-google-maps-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 26528,
+          "sha256": "887688b37169188d17fa76cc60e4eed62c408b8f3b363d7d4a1a7d3ae980c448"
+        },
+        {
+          "path": "public/blog-images/en-seo-google-maps-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 76382,
+          "sha256": "6b5219339a92da73fc55bd7c8a42d643dc884ba827b02831e69cc22ecbe4be5e"
+        },
+        {
+          "path": "public/blog-images/en-seo-google-maps-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 146062,
+          "sha256": "fe4496c28551bb0152e5db3bb0ea71d549015a95601420d4bc2b26b2bc8ebcb9"
+        }
+      ]
+    },
+    {
+      "key": "vi-xac-minh-google-maps",
+      "prompt": "Use case: photorealistic-natural. ONE horizontal 3:2 editorial photograph, no collage. Modest anonymous Vietnam local-business setting, physically plausible photography, natural surfaces and imperfections, full-frame camera, restrained warm paper/cream, civic navy and faded blue accents, realistic soft daylight, subtle grain, clean highlights. No people or hands, no recognizable business, no readable text or signage, no logo, Google branding, stars, ratings, fake dashboard or UI, no glowing effects, surreal objects, decorative symbols, glossy CGI, artificial mist, oversaturated colors or watermark. Generated editorial illustration; never presented as a real customer or real premises. Thesis: the owner controls the keys to their business. Subject: an ordinary worn metal shop key and two simple brass keys resting on a closed navy-bound ledger on a wooden bench just inside an anonymous Vietnamese workshop entrance, a warm plaster wall and soft shadow of an open gate in the background. Composition: quiet 70mm close-up, shallow but believable depth of field, metal patina and paper edges sharply resolved. No shield, lock icon or verification badge.",
+      "generator": "built-in image_gen",
+      "generatedDate": "2026-10-06",
+      "originalSha256": "3232048831c2914823c4f514949d8aca58a0aa585332863ebacae6280c20d1c0",
+      "assets": [
+        {
+          "path": "public/blog-images/vi-xac-minh-google-maps-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 19866,
+          "sha256": "1c1d975efede9345442c71a7a232f34fa5ce4a4ebdccaa8caa8a932736e015a2"
+        },
+        {
+          "path": "public/blog-images/vi-xac-minh-google-maps-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 59544,
+          "sha256": "dfed8aa823aec79841a57326ff873490f41891e77147c9557a7a26a05dbe01c6"
+        },
+        {
+          "path": "public/blog-images/vi-xac-minh-google-maps-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 121856,
+          "sha256": "b696a52d105070bb121cd4f5fde6a7f89748099bbeb6986a9271816b6f5fc82f"
+        }
+      ]
+    },
+    {
+      "key": "en-xac-minh-google-maps",
+      "prompt": "Use case: photorealistic-natural. ONE horizontal 3:2 editorial photograph, no collage. Modest anonymous Vietnam local-business setting, physically plausible photography, natural surfaces and imperfections, full-frame camera, restrained warm paper/cream, civic navy and faded blue accents, realistic soft daylight, subtle grain, clean highlights. No people or hands, no recognizable business, no readable text or signage, no logo, Google branding, stars, ratings, fake dashboard or UI, no glowing effects, surreal objects, decorative symbols, glossy CGI, artificial mist, oversaturated colors or watermark. Generated editorial illustration; never presented as a real customer or real premises. Thesis: verification is grounded in a real place and owner-held records. Subject: a plain cream document envelope beside a face-down phone and a small ring of ordinary shop keys on a matte stone reception counter, an unbranded timber interior softly blurred behind. Composition: eye-level 50mm editorial still life, diagonal envelope placement, soft side daylight, objects lightly used and naturally placed, no seal, stamps, readable papers or identity documents.",
+      "generator": "built-in image_gen",
+      "generatedDate": "2026-10-06",
+      "originalSha256": "498e393d56563eeca73a6e8ed7e787fd89a36d9c2a175fa8e240fdb4ebeb7910",
+      "assets": [
+        {
+          "path": "public/blog-images/en-xac-minh-google-maps-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 18354,
+          "sha256": "de966d8575fd3696ae425d3bd20dfe511d8038b2e53dae614039d0778ad0373d"
+        },
+        {
+          "path": "public/blog-images/en-xac-minh-google-maps-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 47060,
+          "sha256": "11619c7bc4d6fd8363cbe6360ad52edcd6c08a87b143747a9888719dc13f6687"
+        },
+        {
+          "path": "public/blog-images/en-xac-minh-google-maps-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 85904,
+          "sha256": "1ea904d3fa7779f7a0980dc261b638c9f044985a087e76f0ebcb121f742e4c40"
+        }
+      ]
+    },
+    {
+      "key": "vi-tao-dia-diem-google-maps",
+      "prompt": "Use case: photorealistic-natural. ONE horizontal 3:2 editorial photograph, no collage. Modest anonymous Vietnam local-business setting, physically plausible photography, natural surfaces and imperfections, full-frame camera, restrained warm paper/cream, civic navy and faded blue accents, realistic soft daylight, subtle grain, clean highlights. No people or hands, no recognizable business, no readable text or signage, no logo, Google branding, stars, ratings, fake dashboard or UI, no glowing effects, surreal objects, decorative symbols, glossy CGI, artificial mist, oversaturated colors or watermark. Generated editorial illustration; never presented as a real customer or real premises. Thesis: confirm the entrance a visitor will actually use. Subject: the street-facing threshold of a modest Vietnamese neighborhood service shop, worn pale concrete steps meeting a narrow pavement, muted blue double door open on one side, a small green plant in an earthen pot. Composition: 35mm lens looking gently downward from standing height, entrance and sidewalk relationship clear, soft overcast daylight, tactile concrete and brushed paint, no people or readable address number.",
+      "generator": "built-in image_gen",
+      "generatedDate": "2026-10-06",
+      "originalSha256": "b88af966a2cbec24868679dfb971621994234ea8c145e50a19708e92904d70d8",
+      "assets": [
+        {
+          "path": "public/blog-images/vi-tao-dia-diem-google-maps-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 28874,
+          "sha256": "98d13154566844fba564bbb802d16f1242a66f55f169fbebb64d921817e2cb2f"
+        },
+        {
+          "path": "public/blog-images/vi-tao-dia-diem-google-maps-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 103428,
+          "sha256": "e442282e16bfea9ab1999daf455034b8c121840c33b6be7c8bdb67be440e844e"
+        },
+        {
+          "path": "public/blog-images/vi-tao-dia-diem-google-maps-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 214504,
+          "sha256": "49816412516a72c8297c765d572be332505d26642c64970e71f66f729c87e616"
+        }
+      ]
+    },
+    {
+      "key": "en-tao-dia-diem-google-maps",
+      "prompt": "Use case: photorealistic-natural. ONE horizontal 3:2 editorial photograph, no collage. Modest anonymous Vietnam local-business setting, physically plausible photography, natural surfaces and imperfections, full-frame camera, restrained warm paper/cream, civic navy and faded blue accents, realistic soft daylight, subtle grain, clean highlights. No people or hands, no recognizable business, no readable text or signage, no logo, Google branding, stars, ratings, fake dashboard or UI, no glowing effects, surreal objects, decorative symbols, glossy CGI, artificial mist, oversaturated colors or watermark. Generated editorial illustration; never presented as a real customer or real premises. Thesis: record practical location details before publishing. Subject: a quiet timber desk close to an open shop window; a plain unlined cream notebook opened to blank pages, a simple blue pencil laid across it, and a face-down smartphone. A real modest street entrance beyond the window is gently out of focus. Composition: side-on 50mm editorial crop, natural daylight on paper, believable material detail, no fake map, diagram, text or app screen.",
+      "generator": "built-in image_gen",
+      "generatedDate": "2026-10-06",
+      "originalSha256": "442a50e783c02ec5e625ae857d10db2f2a14bc2734cdb3535ad35471a3532bd1",
+      "assets": [
+        {
+          "path": "public/blog-images/en-tao-dia-diem-google-maps-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 20450,
+          "sha256": "22463f7eaaa55a3a2ef63fb1b9228a560ac65976c0f7a3dcec6f66f057484b9b"
+        },
+        {
+          "path": "public/blog-images/en-tao-dia-diem-google-maps-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 50398,
+          "sha256": "054a6f46c185b28d0aee1c4b1a48303aefb7b2bb7199f0eb1924e5365110ef40"
+        },
+        {
+          "path": "public/blog-images/en-tao-dia-diem-google-maps-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 89074,
+          "sha256": "68af610f89b82533a89859976cceb2f408061eb1f74bed1f2eb64f78d36c78e7"
+        }
+      ]
+    },
+    {
+      "key": "vi-qr-review-google",
+      "prompt": "Use case: photorealistic-natural. ONE horizontal 3:2 editorial photograph, no collage. Modest anonymous Vietnam local-business setting, physically plausible photography, natural surfaces and imperfections, full-frame camera, restrained warm paper/cream, civic navy and faded blue accents, realistic soft daylight, subtle grain, clean highlights. No people or hands, no recognizable business, no readable text or signage, no logo, Google branding, stars, ratings, fake dashboard or UI, no glowing effects, surreal objects, decorative symbols, glossy CGI, artificial mist, oversaturated colors or watermark. Generated editorial illustration; never presented as a real customer or real premises. Thesis: a calm counter is a natural place for an honest review invitation after service. Subject: a small transparent acrylic card holder seen from its rear with a plain blank cream card, resting on a lightly worn Vietnamese service shop's wooden counter; a simple ceramic cup in soft background focus, faded blue window frame. Composition: close 60mm photograph, correct transparent acrylic refraction and contact shadows, soft morning side light, imperfect real timber grain. The card is blank and seen from behind: no fabricated or nonfunctional QR, no rating, no reward language. This is illustrative context, not an included physical product.",
+      "generator": "built-in image_gen",
+      "generatedDate": "2026-10-06",
+      "originalSha256": "78bfce3636a815eab9bbfb5b5e739da7f14449a3c9a99c1c7d3ecd0d2294bde2",
+      "assets": [
+        {
+          "path": "public/blog-images/vi-qr-review-google-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 13326,
+          "sha256": "94742fc293455efb2cf0f77b2d74c641f083f9a2e7760f6673ff4577ec5e8f9d"
+        },
+        {
+          "path": "public/blog-images/vi-qr-review-google-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 37186,
+          "sha256": "207fadf1d70bc3d7815ca1ce70174d295d67999e7b7b149e193dc4153d8095d4"
+        },
+        {
+          "path": "public/blog-images/vi-qr-review-google-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 71064,
+          "sha256": "2003cb6fd02e15b1b8e82f80b9ed095e15f7f3d7855d9b0ff6bc108e573abe41"
+        }
+      ]
+    },
+    {
+      "key": "en-qr-review-google",
+      "prompt": "Use case: photorealistic-natural. ONE horizontal 3:2 editorial photograph, no collage. Modest anonymous Vietnam local-business setting, physically plausible photography, natural surfaces and imperfections, full-frame camera, restrained warm paper/cream, civic navy and faded blue accents, realistic soft daylight, subtle grain, clean highlights. No people or hands, no recognizable business, no readable text or signage, no logo, Google branding, stars, ratings, fake dashboard or UI, no glowing effects, surreal objects, decorative symbols, glossy CGI, artificial mist, oversaturated colors or watermark. Generated editorial illustration; never presented as a real customer or real premises. Thesis: an honest invitation belongs in the ordinary rhythm of a completed visit. Subject: a plain unbranded cream countertop card in a simple navy metal clip stand, viewed from the side/back so its face is not shown, on a matte pale stone reception desk; a face-down phone set casually beside it and a blurred open doorway beyond. Composition: understated 50mm horizontal editorial photograph, afternoon bounced daylight, clear material texture, one dominant card shape, correct scale and grounded shadows. No code, stars or fake invitation text. Illustrative setting only, not an included physical stand.",
+      "generator": "built-in image_gen",
+      "generatedDate": "2026-10-06",
+      "originalSha256": "460ba5a3c7691540f1f25814a219f630db79ae82a572c921cc95ce504548d8fc",
+      "assets": [
+        {
+          "path": "public/blog-images/en-qr-review-google-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 13328,
+          "sha256": "30e15a3d2f05cba3189dd4507422529bebe9eb4f84697e4e00b19c1cbbc97181"
+        },
+        {
+          "path": "public/blog-images/en-qr-review-google-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 33786,
+          "sha256": "4635690173cc45bf2669d3439900c04b06a31ed3ce0256a39919d6391a28a22f"
+        },
+        {
+          "path": "public/blog-images/en-qr-review-google-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 64142,
+          "sha256": "c5bb1deb128f98bae28283accb16f8310dcce93af6a841e0427422af408d5e45"
+        }
+      ]
+    }
+  ]
+}
