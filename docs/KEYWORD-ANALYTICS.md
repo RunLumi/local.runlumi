@@ -46,9 +46,13 @@ existing business pilot gates in [STRATEGY.md](../STRATEGY.md).
   from the marketing layout, service schema and homepage language alternates.
 - `/data/keywords.csv` provides the original source. `/data/*` has a `noindex`
   response-header rule; the page also has a robots meta tag and canonical URL.
-  It is deliberately absent from the sitemap and homepage navigation. Server
-  password authentication protects the page and CSV; noindex is an additional
-  indexing instruction, not the authentication mechanism.
+  It is deliberately absent from the sitemap and homepage navigation. Access
+  requires an EmDash ADMIN session, checked on every request by the Pages
+  Function over the `BLOG` binding. Anonymous page requests redirect to the
+  editor's passkey sign-in; anonymous CSV/API requests return 401 without data,
+  lower roles return 403, and a missing or unhealthy CMS binding fails closed.
+  See [SECURITY.md](../SECURITY.md#research-workspace-access). `noindex` is an
+  additional indexing instruction, not the authentication mechanism.
 
 Priority = rounded fit points + intent points +
 `15 × min(1, log10(1 + searches) / 4)`. Fit points: 60 offer-adjacent, 40
