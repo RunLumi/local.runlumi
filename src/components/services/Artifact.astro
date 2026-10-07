@@ -16,7 +16,7 @@ const qrIcon='honest';
 ---
 <figure class="service-artifact sheet"><figcaption class="service-artifact-heading"><ServiceIcon name={visual?.icon ?? qrIcon} class="service-icon-mark" size={24}/><div><span class="eyebrow">{page.key==='qr'?(en?'AI-generated mockup · not a customer installation':'Ảnh minh họa bằng AI · không phải quầy khách hàng'):(en?'AI illustration · not a customer site':'Ảnh minh họa bằng AI · không phải cơ sở khách hàng')}</span><h2>{c.artifactTitle}</h2></div></figcaption>
 {page.key==='qr' && <div class="qr-layout">
-  <ScenePhoto name={`qr-counter-${locale}`} class="qr-counter-photo" sizes="(max-width: 680px) calc(100vw - 82px), (max-width: 900px) 40vw, 440px" eager />
+  <ScenePhoto name={`qr-counter-${locale}`} class="qr-counter-photo" sizes="(max-width: 680px) calc(100vw - 82px), (max-width: 900px) 40vw, 440px" eager alt={en?'Illustrative counter QR card, not a customer installation.':'Thẻ QR minh họa đặt trên quầy, không phải lắp đặt cho khách hàng.'}/>
   <div class="qr-copy">
     <p>{en?'Have you used our service? Scan the QR to share your experience on Google. All feedback is welcome.':'Bạn đã sử dụng dịch vụ của chúng tôi? Quét QR để chia sẻ trải nghiệm trên Google. Mọi phản hồi đều được trân trọng.'}</p>
     <small>{en?'Illustrative QR, not for scanning. Printing and physical stands are excluded.':'Mã minh họa, không dùng để quét. Không bao gồm in ấn và giá đỡ.'}</small>
