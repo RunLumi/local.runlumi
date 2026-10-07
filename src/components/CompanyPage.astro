@@ -1,0 +1,87 @@
+---
+import Page from '../layouts/Page.astro';
+import Footer from './Footer.astro';
+import ServiceIcon from './ServiceIcon.astro';
+import { copy } from '../content/copy.js';
+import { company, companyCopy, companyRoutes } from '../content/company.js';
+import '../styles/company.css';
+interface Props { locale: 'vi' | 'en'; kind: 'about' | 'vision' }
+const { locale, kind } = Astro.props;
+const c = companyCopy[locale];
+const page = c[kind];
+const home = locale === 'vi' ? '/' : '/en/';
+const other = locale === 'vi' ? 'en' : 'vi';
+const otherKind = kind === 'about' ? 'vision' : 'about';
+const routes = companyRoutes[kind];
+const links = [
+  [companyRoutes.about[locale], c.aboutLabel],
+  [companyRoutes.vision[locale], c.visionLabel],
+  [home + '#goi-dich-vu', locale === 'vi' ? 'Gói dịch vụ' : 'Packages']
+];
+const origin = 'https://local.runlumi.app';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': kind === 'about' ? 'AboutPage' : 'WebPage',
+  name: page.h1, description: page.description, url: origin + routes[locale],
+  inLanguage: locale === 'vi' ? 'vi-VN' : 'en-VN',
+  about: { '@type': 'Service', name: 'Lumi Local' },
+  publisher: { '@type': 'Organization', name: 'Cloudjet Solutions', legalName: company.name }
+};
+---
+<Page locale={locale} title={page.title} description={page.description} routePair={routes} schema={schema}>
+  <header class="site-header glass-control home-header company-header">
+    <div class="wrap header-inner">
+      <a class="brand" href={home} aria-label="Lumi Local"><img src="/brand/lumi-logo.svg" width="34" height="34" alt="" /><span>Lumi <strong>Local</strong></span></a>
+      <nav class="desktop-nav" aria-label={c.navigation}>
+        {links.map(([href, label]) => <a href={href} aria-current={href === routes[locale] ? 'page' : undefined}>{label}</a>)}
+      </nav>
+      <div class="header-actions">
+        <a class="company-language" href={routes[other]} lang={other} aria-label={locale === 'vi' ? 'Read in English' : 'Đọc bằng tiếng Việt'}>{other.toUpperCase()}</a>
+        <a class="button button-primary company-header-preview" href={home + '#bat-dau'}>{c.preview}</a>
+        <details class="mobile-menu">
+          <summary aria-label={c.navigation} aria-controls="mobile-navigation" data-open-label={locale === 'vi' ? 'Mở menu' : 'Open menu'} data-close-label={locale === 'vi' ? 'Đóng menu' : 'Close menu'}>
+            <ServiceIcon name="menu" size={24} class="menu-icon-open" /><ServiceIcon name="close" size={24} class="menu-icon-close" />
+          </summary>
+          <nav id="mobile-navigation" class="mobile-navigation" aria-label={c.navigation}>
+            <div class="mobile-navigation-links">{links.map(([href, label]) => <a href={href} aria-current={href === routes[locale] ? 'page' : undefined}>{label}</a>)}</div>
+          </nav>
+        </details>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="company-main">
+    <div class="wrap">
+      <nav class="company-breadcrumb" aria-label={locale === 'vi' ? 'Đường dẫn' : 'Breadcrumb'}><a href={home}>{c.home}</a><span aria-hidden="true">/</span><span>{kind === 'about' ? c.aboutLabel : c.visionLabel}</span></nav>
+      <section class="company-intro" aria-labelledby="company-title">
+        <p class="eyebrow">{page.eyebrow}</p>
+        <h1 id="company-title">{page.h1}</h1>
+        <p class="company-lead">{page.lead}</p>
+        <a class="text-link" href={companyRoutes[otherKind][locale]}>{page.next}<ServiceIcon name="arrow" size={18} /></a>
+      </section>
+      <section class="company-story" aria-labelledby="company-story-heading">
+        <h2 id="company-story-heading">{page.heading}</h2>
+        <div><p>{page.body}</p><p>{page.detail}</p></div>
+      </section>
+      <section class="company-presence" aria-labelledby="company-presence-heading">
+        <h2 id="company-presence-heading">{c.presenceTitle}</h2>
+        <div class="company-presence-grid">
+          {c.presence.map(item => <div>
+            <img src={`/illustrations/${item.image}.svg`} width="420" height="260" loading="lazy" alt="" />
+            <h3>{item.title}</h3><p>{item.text}</p>
+          </div>)}
+        </div>
+      </section>
+    </div>
+    <section class="company-principles" aria-labelledby="company-principles-heading">
+      <div class="wrap"><h2 id="company-principles-heading">{page.principlesTitle}</h2>
+        <div class="company-principle-grid">{page.principles.map(item => <div><ServiceIcon name={item.icon} size={28} /><h3>{item.title}</h3><p>{item.text}</p></div>)}</div>
+      </div>
+    </section>
+    <section class="wrap company-next" aria-labelledby="company-next-heading">
+      <div><h2 id="company-next-heading">{page.ctaHeading}</h2><p>{c.enquiry}</p></div>
+      <a class="button button-primary" href={home + '#bat-dau'}>{copy[locale].cta}<ServiceIcon name="arrow" size={20} /></a>
+    </section>
+  </main>
+  <Footer locale={locale} />
+  <script is:inline type="module" src="/mobile-navigation.js"></script>
+</Page>

@@ -63,3 +63,11 @@ Localized service/industry content is maintained in src/services/content.ts with
 ## Mobile homepage navigation
 
 Mobile menu controls: “Mở menu” / “Đóng menu” in VI; “Open menu” / “Close menu” in EN. Reuse canonical `copy[locale].nav` links and the primary CTA. Language selection remains available inside the mobile menu. Keep the disclosure usable without JavaScript; expose expanded state and support keyboard navigation.
+
+## Company footer, about and vision — 2026-10-08
+
+Canonical VI/EN company copy, user-supplied company details and official social URLs live in [src/content/company.js](src/content/company.js). [Footer.astro](src/components/Footer.astro) shares these across home, service, industry, company and journal pages. Keep Singapore legal-entity/UEN details distinct from the Vietnam operations office/tax ID; D-U-N-S is an identifier, not an endorsement or quality certification. Preserve the supplied address spelling without implying independent registry verification. No company phone number is displayed.
+
+Company pages: `/about/` ↔ `/en/about/`, `/vision/` ↔ `/en/vision/`. The journal editorial policy remains separately at `/blog/about/` and `/en/blog/about/`. Reuse the canonical primary CTA and link to the homepage enquiry; do not invent another intake or attach unallowlisted source context.
+
+Reference pages read 2026-10-08: [CJS about](https://cjs.vn/about/) and [CJS vision](https://cjs.vn/vision/). Adapt the practical, clear approach to Lumi Local's actual scope. Do not import CJS's experience count, enterprise/self-hosted offer, one-time software pricing, superlatives, security guarantees or telephone number. Lumi Local's vision expresses intent, not a measured business outcome; operational expansion follows observed recurring needs. Company details and social links were supplied by the owner for this update.

@@ -1,0 +1,55 @@
+---
+import { company, companyCopy, companyRoutes } from '../content/company.js';
+import { copy } from '../content/copy.js';
+import ServiceIcon from './ServiceIcon.astro';
+import '../styles/company-footer.css';
+interface Props { locale: 'vi' | 'en'; journal?: boolean }
+const { locale, journal = false } = Astro.props;
+const c = companyCopy[locale];
+const home = locale === 'vi' ? '/' : '/en/';
+const blog = home + 'blog/';
+---
+<footer class="company-footer">
+  <div class="wrap">
+    <div class="company-footer-top">
+      <div class="company-footer-brand">
+        <a class="brand" href={home} aria-label="Lumi Local">
+          <img src="/brand/lumi-logo.svg" width="32" height="32" alt="" />
+          <span>Lumi <strong>Local</strong></span>
+        </a>
+        <p>{copy[locale].footer}</p>
+        <nav class="company-social" aria-label={c.social}>
+          {company.social.map(s => <a href={s.href} aria-label={s.name} title={s.name} target="_blank" rel="noopener noreferrer"><ServiceIcon name={s.icon} size={20} /></a>)}
+        </nav>
+      </div>
+      <nav class="company-footer-nav" aria-label={c.navigation}>
+        <a href={companyRoutes.about[locale]}>{c.aboutLabel}</a>
+        <a href={companyRoutes.vision[locale]}>{c.visionLabel}</a>
+        <a href={blog}>{locale === 'vi' ? 'Cẩm nang' : 'Journal'}</a>
+        {journal && <><a href={blog + 'about/'}>{locale === 'vi' ? 'Về cẩm nang' : 'Editorial policy'}</a><a href={blog + 'rss.xml'}>RSS</a></>}
+      </nav>
+    </div>
+    <section class="company-details" aria-labelledby="company-info-heading">
+      <h2 id="company-info-heading">{c.info}</h2>
+      <div class="company-offices">
+        <div>
+          <h3>{c.singapore}</h3>
+          <p class="company-legal-name">{company.name}</p>
+          <p class="company-office-label">{c.registered}</p>
+          <address>{company.singaporeAddress}</address>
+          <dl><div><dt>UEN</dt><dd>{company.uen}</dd></div></dl>
+        </div>
+        <div>
+          <h3>{c.vietnam}</h3>
+          <address>{company.vietnamAddress}</address>
+          <dl><div><dt>{c.tax}</dt><dd>{company.taxId}</dd></div><div><dt>D-U-N-S</dt><dd>{company.duns}</dd></div></dl>
+        </div>
+      </div>
+    </section>
+    <div class="company-footer-bottom">
+      <p>© {new Date().getFullYear()} Lumi Local</p>
+      <a href="https://runlumi.app/">Powered by Lumi</a>
+      <a href="#main">{locale === 'vi' ? 'Về đầu trang' : 'Back to top'} <ServiceIcon name="up" size={16} /></a>
+    </div>
+  </div>
+</footer>

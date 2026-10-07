@@ -1,0 +1,28 @@
+.company-footer{border-top:1px solid var(--color-border);background:var(--color-paper);padding-block:48px 24px;color:var(--color-soft-slate);font-size:14px;letter-spacing:0}
+.company-footer-top{display:flex;justify-content:space-between;gap:32px;align-items:flex-start;padding-bottom:32px}
+.company-footer-brand{max-width:440px;min-width:0}
+.company-footer-brand p{margin:16px 0;line-height:1.7}
+.company-footer .brand{letter-spacing:0}
+.company-footer-nav{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:flex-end}
+.company-footer-nav a{display:inline-flex;align-items:center;min-height:44px;color:var(--color-civic-navy);font-weight:550}
+.company-social{display:flex;gap:8px}
+.company-social a{width:44px;height:44px;display:grid;place-items:center;color:var(--color-civic-navy);border:1px solid var(--color-border-strong);border-radius:8px;transition:background 160ms,color 160ms}
+.company-social a:hover{background:var(--color-white);color:var(--color-lumi-blue)}
+.company-details{padding-block:28px 32px;border-top:1px solid var(--color-border)}
+.company-details h2{font-size:12px;font-weight:650;text-transform:uppercase;color:var(--color-soft-slate);margin:0 0 24px;letter-spacing:0}
+.company-offices{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.company-offices>div{min-width:0}
+.company-offices h3{font-size:14px;font-weight:600;line-height:1.6;color:var(--color-civic-navy);margin:0 0 12px}
+.company-legal-name{font-size:15px;line-height:1.7;font-weight:600;color:var(--color-civic-navy);margin:0 0 12px;overflow-wrap:anywhere}
+.company-office-label{font-size:13px;margin:0 0 4px}
+.company-offices address{font-style:normal;line-height:1.8;max-width:500px;text-wrap:pretty}
+.company-offices dl{display:flex;flex-wrap:wrap;gap:12px 32px;margin:16px 0 0}
+.company-offices dl>div{display:flex;flex-wrap:wrap;gap:6px 12px}
+.company-offices dt{font-size:13px}
+.company-offices dd{margin:0;color:var(--color-civic-navy);font-family:var(--font-mono);font-size:13px}
+.company-footer-bottom{border-top:1px solid var(--color-border);padding-top:16px;display:flex;align-items:center;flex-wrap:wrap;gap:8px 24px;font-size:12px}
+.company-footer-bottom p{margin:0;margin-right:auto}
+.company-footer-bottom a{display:inline-flex;gap:8px;align-items:center;min-height:44px}
+.company-footer a:hover{color:var(--color-lumi-blue)}
+@media(max-width:768px){.company-footer-top{flex-direction:column;gap:20px}.company-footer-nav{justify-content:flex-start}.company-offices{gap:32px}}
+@media(max-width:540px){.company-footer{padding-top:32px}.company-offices{grid-template-columns:1fr;gap:28px}.company-footer-nav{gap:4px 20px}.company-details{padding-block:24px}.company-footer-bottom{gap:0 20px}.company-footer-bottom p{flex-basis:100%;margin:0}.company-social{gap:12px}}

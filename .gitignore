@@ -13,3 +13,5 @@ dist/
 dist-blog/
 .emdash/
 emdash-env.d.ts
+output/playwright/
+output/

@@ -1,6 +1,7 @@
 ---
 import Page from '../layouts/Page.astro';
 import EnquiryForm from './EnquiryForm.astro';
+import Footer from './Footer.astro';
 import ServiceDirectory from './services/Directory.astro';
 import { copy } from '../content/copy.js';
 import ScenePhoto from './ScenePhoto.astro';
@@ -642,19 +643,7 @@ const labels = locale === 'vi' ? { main:'Nội dung chính', nav:'Điều hướ
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <a class="brand" href={locale === 'vi' ? '/' : '/en/'}>
-        <img src="/brand/lumi-logo.svg" width="32" height="32" alt="" />
-        <span>Lumi <strong>Local</strong></span>
-      </a>
-      <p>{c.footer}</p>
-      <a class="back-to-top" href="#main">
-        <span>{locale === 'vi' ? 'Về đầu trang' : 'Back to top'}</span>
-        <ServiceIcon name="up" size={14} />
-      </a>
-    </div>
-  </footer>
+  <Footer locale={locale} />
 
   <script is:inline type="module" src="/mobile-navigation.js"></script>
   <script is:inline type="module" src="/interactions.js"></script>

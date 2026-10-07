@@ -1,6 +1,7 @@
 ---
 import Page from '../../layouts/Page.astro';
 import EnquiryForm from '../EnquiryForm.astro';
+import Footer from '../Footer.astro';
 import Artifact from './Artifact.astro';
 import Ladder from './Ladder.astro';
 import Scope from './Scope.astro';
@@ -30,5 +31,5 @@ const schema={'@context':'https://schema.org','@graph':[
 <section class="service-process"><p class="eyebrow">{en?'Done for you, approved by you':'Lumi làm, chủ xác nhận'}</p><h2>{en?'Three steps to the agreed deliverable.':'Ba bước tới phần bàn giao.'}</h2><ol><li><strong>{en?'Share the need':'Gửi nhu cầu'}</strong><p>{en?'Business name, contact and what is missing. No Google credentials.':'Tên cơ sở, liên hệ và phần còn thiếu. Không gửi thông tin đăng nhập Google.'}</p></li><li><strong>{en?'Review the scope and preview':'Duyệt phạm vi và bản xem thử'}</strong><p>{en?'Lumi checks public context; the owner confirms facts, assets, prices and scope.':'Lumi xem bối cảnh công khai; chủ xác nhận sự thật, tài sản, giá và phạm vi.'}</p></li><li><strong>{en?'Approve and receive':'Xác nhận và nhận bàn giao'}</strong><p>{en?'Agreed revision, owner approval, then files/publication. Delivery timing is confirmed for the actual job.':'Sửa theo phạm vi, chủ duyệt rồi nhận file/xuất bản. Thời gian được chốt theo công việc thật.'}</p></li></ol></section>
 <Faq locale={locale} items={c.faq}/><Related locale={locale} keys={page.related}/>
 <section class="service-enquiry contact" id="bat-dau"><div><p class="eyebrow">{c.label}</p><h2>{en?'Show us what your business needs.':'Cho Lumi biết business đang cần gì.'}</h2><p>{copy[locale].form.text}</p><p class="meta">{copy[locale].form.privacy}</p><p class="meta">{en?'This form is for Lumi services, not an appointment with an illustrated business.':'Form dành cho dịch vụ Lumi, không phải đặt lịch với cơ sở trong ví dụ minh họa.'}</p></div><EnquiryForm locale={locale} context={context}/></section>
-</main><footer class="wrap service-footer"><a href={home}>Lumi Local</a><a href={en?'/en/blog/':'/blog/'}>{en?'Journal':'Cẩm nang'}</a><a href="https://runlumi.app/">Powered by Lumi</a></footer><script is:inline src="/enquiry.js"></script>
+</main><Footer locale={locale}/><script is:inline src="/enquiry.js"></script>
 </Page>

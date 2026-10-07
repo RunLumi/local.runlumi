@@ -6,6 +6,10 @@ The user selected **Bình Thạnh and Quận 4** as pilot areas. These are opera
 
 Cash budget and available hours are **not yet specified**. Location selection does not authorize spending, hiring or contacting prospects. Confirm those limits before field execution.
 
+## User-authorized Browser campaign scope — 2026-10-07
+
+The user later explicitly authorized use of their existing signed-in Facebook account through Browser UI, on their behalf, for the bounded Lumi Local garage pilot described in `docs/gtm/GOAL_PROMPT.md`. This supersedes the earlier no-contact-by-location rule only as user authorization. Facebook Terms §3.2.3 and Automated Data Collection Terms §§2–4, 8 were read in Browser on 2026-10-07: Meta requires express written permission before automated access/collection; acceptance of the Terms alone does not grant it. No permission for this campaign purpose is evidenced; agent prospect discovery must not run until it is evidenced. User instruction does not authorize spending, hiring, ads, API access, other accounts/channels, bulk collection or policy evasion. The private 30-business cohort/action/suppression ledger remains mandatory before any prospect search that is permitted.
+
 ## Ledger
 
 Use anonymous business IDs in repository records. Keep contact details and consent in approved private operational storage, not Git. Start with an empty ledger; never seed results with invented customers.

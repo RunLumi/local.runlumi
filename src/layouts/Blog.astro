@@ -5,6 +5,7 @@ import '../styles/global.css';
 import '../styles/blog.css';
 import { photographFor } from '../blog/photographs.js';
 import { copy } from '../content/copy.js';
+import Footer from '../components/Footer.astro';
 import { base, home, origin, safeJson } from '../blog/site.js';
 const { locale, title, description, path = '', alternatePath, article, noindex = false, schema = {} } = Astro.props;
 const canonical = origin + base(locale) + (path ? path + '/' : '');
@@ -38,5 +39,5 @@ const schemaData = { '@context':'https://schema.org', '@graph':[
   </div></header>
   <slot />
   <section class="blog-cta wrap" aria-labelledby="blog-cta-title"><div><p class="eyebrow">Lumi Local</p><h2 id="blog-cta-title">{en ? 'Make your business easier to understand.' : 'Cho khách đủ thông tin để chọn.'}</h2><p>{en ? 'A mobile service website, owner-confirmed directions and print-ready review QR artwork. Starter: 1,990,000 VND for year one.' : 'Website dịch vụ trên điện thoại, liên kết chỉ đường do chủ xác nhận và file QR đánh giá sẵn để in. Starter: 1.990.000đ năm đầu.'}</p><p class="cta-scope">{en ? 'You keep Google account ownership. Lumi does not create, verify or manage the profile. Printing and physical stands are excluded.' : 'Chủ giữ quyền tài khoản Google. Lumi không tạo, xác minh hay quản lý hồ sơ. Không bao gồm in ấn và giá đỡ.'}</p></div><div class="blog-cta-action"><a class="button button-secondary" href={home(locale)+'#bat-dau'}>{copy[locale].cta}</a><p>{en ? 'An enquiry, not payment or a reserved slot.' : 'Gửi nhu cầu; chưa thanh toán hay giữ chỗ.'}</p></div></section>
-  <footer class="blog-footer wrap"><p>© {new Date().getFullYear()} Lumi Local</p><nav aria-label={en ? 'Footer' : 'Cuối trang'}><a href={base(locale)+'about/'}>{en ? 'Editorial policy' : 'Về cẩm nang'}</a><a href={base(locale)+'rss.xml'}>RSS</a><a href="https://runlumi.app/">Powered by Lumi</a></nav></footer>
+  <Footer locale={locale} journal />
 </body></html>

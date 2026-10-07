@@ -59,7 +59,11 @@ Two Starter sales are learning evidence, not product-market fit or statistical p
 
 1. Days 1–2: founder selects one cluster, rehearses the scope, lists 30 qualified businesses, and creates three private previews within the time limit. Set an affordable cash/time cap before outreach; preserve agreed family and rest time.
 2. Days 3–5: founder conducts the first ten owner conversations; record the last real customer-contact problem, preview response, objection, paid outcome and consented next step. Revise one weak part of the pitch, with its date recorded.
-3. Days 6–7: deliver any paid work, measure labour and costs, test actual Call/Zalo/Maps/form routes, and compare promises with delivery. Finish the cohort without expanding scope. No automated outreach is authorized by this plan.
+3. Days 6–7: deliver any paid work, measure labour and costs, test actual Call/Zalo/Maps/form routes, and compare promises with delivery. Finish the cohort without expanding scope. **At the time this plan was recorded, no automated outreach was authorized; see the dated scope update below for the later Browser instruction.**
+
+## Scope update — 2026-10-07
+
+The user has authorized use of the existing signed-in Facebook account through Browser UI for the bounded Lumi Local pilot in Bình Thạnh/Quận 4. Facebook Terms §3.2.3 and Automated Data Collection Terms §§2–4, 8 were read in that Browser session; agent-controlled Browser falls within the automated-collection definition as written, Meta requires express written permission, and acceptance of the Terms alone is insufficient. No permission for this campaign purpose is evidenced; do not agent-search/open prospect Pages until it is evidenced. User authorization is not Meta permission or legal clearance. It does not grant API, bulk data collection, evasion, paid ads or other accounts/channels. Use `docs/gtm/BROWSER_AGENT.md`; retain the private cohort/action/suppression ledger gate.
 
 Use [the pilot ledger](docs/PILOT.md). The immediate physical action is to choose the first district and ten owner-accessible garages; repo polishing is no substitute for these conversations.
 

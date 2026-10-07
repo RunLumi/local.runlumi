@@ -54,12 +54,61 @@ Do not introduce decorative serif fonts.
 
 ## Iconography
 
-Use the original local `ServiceIcon.astro` set: a 24px grid, 1.7px rounded
-strokes, and `currentColor`. Use 12–16px for compact preview controls, 20px
-for supporting rows, and 25px inside flat 52px service emblems. No emoji or
-mixed solid/outline interface icons. Keep labels alongside icons and mark
-decorative SVGs `aria-hidden` and non-focusable. The folded-L logo and
-illustrative QR patterns remain separate assets.
+### Development default: distinctive, useful icons
+
+Treat icon selection as design work. Icons should make an action immediately
+recognizable or give a service a concrete visual identity. Choose the most
+specific readable metaphor available; do not fill every section with the same
+checkmark, shield, globe, or generic AI sparkle. A consistent drawing language
+should still contain varied, purposeful silhouettes. Do not add icons to every
+heading merely to fill space.
+
+Use and extend the original local [`ServiceIcon.astro`](src/components/ServiceIcon.astro)
+set as the shared interface-icon source: a `0 0 24 24` viewBox, `fill="none"`,
+1.7px rounded strokes, round caps/joins, and `currentColor`. Reuse an existing
+glyph when its meaning fits; add a carefully drawn local SVG when it does not.
+Keep new paths in this component rather than scattering duplicate inline SVGs
+through templates. No emoji, Unicode stand-ins, mixed solid/outline interface
+icons, or new icon package solely for a few glyphs.
+
+### Choose the object that explains the meaning
+
+| Context | Preferred visual direction |
+| --- | --- |
+| Call, directions, hours | Familiar phone, location pin, and clock/calendar geometry; recognition comes first. |
+| Industry examples | Distinctive objects such as a cup, pastry, salon chair, or wrench. Use actual business context rather than one storefront repeated across every industry. |
+| Website, domain, hosting | A browser surface, globe, and server respectively; make the deliverables distinguishable. |
+| Ownership and honest reviews | A key and conversation bubble. Avoid stars, ranking arrows, or badges that imply ratings, verified results, or Google management. |
+| Navigation and disclosure | Conventional arrows, chevrons, menu, and close glyphs. Keep their direction and state predictable. |
+
+These are selection examples, not a claim that every glyph already exists.
+Keep the folded-L logo and illustrative QR patterns as separate assets; use a
+real generated QR destination for anything intended to be scanned.
+
+### Give icons Lumi character
+
+Use Civic Navy ink by default, Lumi Blue for emphasis or an interactive state,
+and white on the navy section. Status colors still require actual semantics.
+For a prominent service emblem, an optional opaque paper/white frame with one
+folded corner, a short blue rail, or a bracket can connect it to Lumi's visual
+language. Choose one treatment for a group; avoid identical badge boxes around
+every icon. Keep functional glyphs familiar and give them room to breathe.
+Remove the frame when it crowds the drawing. No glass icon tiles, gradients,
+glow, decorative bounce, or continuously spinning glyphs.
+
+Use 12–16px only for compact preview controls, 20px for supporting rows, and
+25px inside flat 52px service emblems. Drawings must remain legible at their
+rendered size; simplify small glyphs rather than squeezing in illustration
+detail. Larger storytelling visuals belong in separate original local SVG
+illustrations, not oversized interface icons.
+
+### Icon acceptance during development
+
+- Review the actual glyphs together at 16/20/25px on paper, white, and navy. Check recognizable silhouettes, optical balance, stroke consistency, and clear negative space.
+- Keep visible labels alongside service/action icons. An icon-only control needs an accessible name on its button/link, visible keyboard focus, and a touch target independent of the small drawing.
+- Mark SVGs decorative with `aria-hidden="true"` and `focusable="false"` when the surrounding text or named control already carries their meaning. Essential state must also be communicated in text.
+- Inspect icons beside long VI/EN labels at 320/375/768/1440px. Prevent shrinking, collisions, and clipped strokes; check contrast and forced colors. Hover, focus, and selected states must preserve recognition and follow the motion rules below.
+- Before shipping, check whether each icon clarifies its content and whether the group has meaningful visual variety. Replace vague or repetitive metaphors; remove decoration that contributes no meaning.
 
 
 ## Grid and materials
