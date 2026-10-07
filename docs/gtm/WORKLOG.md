@@ -30,3 +30,11 @@ Append-only, PII-free campaign operations log. Read recent entries before any ne
 - **Decision:** user authorization for an account/scope does not itself prove Meta allows agent-driven browser collection. Leave `policy_gate=policy_unverified` for automated fanpage discovery/contact; do not continue Facebook UI collection or send. No account restriction is inferred from the web retrieval message.
 - **Storage/duplicate gate:** the campaign templates still state no approved private prospect/action ledger is configured. Do not put lead/page identifiers in Git. `docs/seo/GOAL_PROMPT.md` remains a planning prompt, not an activated execution ledger.
 - **Next:** continue owned-site/Search Console read-only work; revisit Facebook only after the exact automated method permission and private storage/basis gates are evidenced. No policy workaround was attempted.
+
+### RUN-037 — Direct Facebook Terms readback
+
+- **Time:** 2026-10-07 09:25 +07:00. Read-only, in the existing signed-in browser; opened the official Terms of Service and read its displayed 2025-01-01 effective date and section 3.2.
+- **Finding:** §3.2(3) says automated access to or collection of data from Meta Products requires Meta’s prior permission, whether logged in or not. §3.2(2) prohibits spam. This directly blocks agent-driven fanpage discovery/collection and automated Messenger outreach absent exact Meta permission. The user-authorized pilot scope is a separate gate and does not override this method restriction.
+- **Scope observed:** Terms page only. No fanpage/inbox opened, prospect record made, contact sent, account setting changed, or lead data stored.
+- **Correction to earlier research note:** the prior “temporarily blocked/going too fast” message came from the web lookup path. Direct browser readback succeeded; that retrieval message was not a Facebook account restriction.
+- **State:** Facebook agent execution remains stopped at `policy_unverified` until exact Meta permission is documented. Continue owned-site/SEO work and use only lawful, permitted non-Meta research or properly supplied human notes. No workaround attempted.

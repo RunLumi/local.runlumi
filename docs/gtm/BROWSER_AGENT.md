@@ -10,6 +10,8 @@
 
 Ghi căn cứ, ngày kiểm tra và phạm vi; không viết “compliant” chỉ vì đã tick checklist. Không có đủ thông tin để kết luận thì giữ `policy_unverified`/`needs_review`. Đây là giới hạn thực thi dựa trên nghiên cứu, không phải việc yêu cầu người dùng duyệt từng bước nghiên cứu.
 
+**Current Meta gate (verified 2026-10-07):** Facebook Terms of Service §3.2(3) prohibits automated access to or collection of data from Meta Products without Meta’s prior permission, including while logged in. Therefore this agent must not use browser automation to inspect or collect Facebook Page/prospect data or send Messages unless exact prior Meta permission for that automated method is documented. A user-authorized account scope does not satisfy the separate Meta gate. Continue only with permitted non-Meta research, generic drafts, or minimal context that a human operator lawfully supplies; do not route around the restriction with APIs, scripts, proxies, alternate accounts or UI timing tricks. Recheck official terms before any future change in method.
+
 ## 2. Khởi động một run
 
 - Đọc CAMPAIGN riêng đang active và kiểm tra bằng chứng quyền đi kèm; chưa có thì chạy `research_and_draft`.
