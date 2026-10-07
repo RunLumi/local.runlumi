@@ -594,3 +594,10 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - In-app Browser returned ERR_CONNECTION_REFUSED for Reddit, so the candidate was not opened for thread-level question/comments/rule review. No draft, action-ledger row, account interaction, or post was made. The snippet is discovery-only, not a reviewed prospect.
 - The signed-in Google result page displayed a personal Ads summary. Its details were not recorded or used; future prospect discovery should use a public or signed-out search surface.
 - Report: [RUN-051 community discovery recheck](research/2026-10-07-community-discovery-recheck.md). No new posting scope is inferred. Next community step: review a fresh target via supported Browser when accessible and obtain exact-action approval before posting.
+
+## 2026-10-07 13:43 +07:00 — RUN-052 — One approved Reddit comment prepared
+
+- Starting origin/main: `7a395fd705e7bd1917f7a0de188da47a7aead85d`; private shared checkout was left untouched. Read current campaign goal, STATUS, WORKLOG and both ledgers.
+- Opened the fresh r/smallbusiness question “Pressure washing company with very few leads,” posted six hours earlier. The OP asks for near-term lead advice; visible replies already cover local groups, flyers, GBP, reply speed, commercial outreach and availability. Sidebar rules prohibit links, product recommendations, unsolicited advice, SEO shaping and business promotion; because this specific post asks for advice, prepared a no-link, no-offer response focused on testing the owner's 50-hour-workweek availability constraint and measuring quote-to-booking economics.
+- Verified the signed-in Reddit identity as `u/suoinguon`. User message “approve comment” authorizes one comment in the exact open thread only; no other thread, link, offer, follow-up or standing scope is authorized.
+- Saved exact text to `drafts/CA-005-reddit-pressure-washing-leads.md`, SHA-256 `7c5e031f212a6faa6580e7c2cb1c48a4b33b76218ffa9265819bedee5e9f2206`. Added CA-005 and set it to `submitting` before using the Reddit submit control. No submission result yet.
