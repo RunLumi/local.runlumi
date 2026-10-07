@@ -475,3 +475,12 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - JSON parse, VI/EN source/phrase/date parity, static HTML output parity and `git diff --check` passed.
 - `RELEASE_ORIGIN=https://local.runlumi.app node scripts/verify-release.mjs` could not resolve the host in the process environment (`ENOTFOUND`) and stopped before the HTTP checks. The separate in-app browser and isolated headless Chromium did fetch and verify both public article pages. Do not report the release verifier as passed.
 - No CMS/database write, Pages deployment, or live sitemap/indexing action in this follow-up. The next release proof is the repository's normal Pages workflow after the static snapshot PR is merged; the current EmDash publication remains independently live.
+
+
+### RUN-040 release receipt — 2026-10-07 10:13 +07:00
+
+- GitHub Actions run #124 (PR build) and run #77 (Deploy production) both failed before steps; the annotation says Actions budget prevented the job from starting. The authenticated organization Budget page showed Actions at 100%, `$48.00 spent` of `$48.00`, and `Stop usage: Yes`. No hosted Linux checks or hosted deploy ran.
+- Validated exact merged main SHA `09f5e1f851e60baa7663a3cd980fe2549be2651b` locally: Node 24.19.0, `npm test` 48/48, `npm run build` 42 routes/private-data extraction, `npm run build:blog` passed with existing warnings; static snapshot/output parity passed.
+- Existing Wrangler OAuth identified the RunLumi account with Pages write scope; no credential value was displayed or changed. Manual `wrangler pages deploy dist --project-name lumi-local --branch main --commit-hash 09f5e1f851e60baa7663a3cd980fe2549be2651b --commit-dirty=false` completed. Deployment ID `869f296d-f6f3-483c-9fb1-bf3910a4adb4`, host https://869f296d.lumi-local.pages.dev.
+- `RELEASE_ORIGIN=https://869f296d.lumi-local.pages.dev node scripts/verify-release.mjs` and the same verifier on `https://local.runlumi.app` both passed: service/industry pairs, journal/feed/sitemap and anonymous private-data protection. Browser readback on custom and Pages hosts shows the updated VI/EN article and Google Maps source. No CMS write, DNS/secret/binding change, enquiry, sitemap submit or indexing request.
+- PR #61 merged; remote `main` read back at `09f5e1f`. This is release evidence only; Search Console/indexing, rankings, referrals and commercial outcomes remain unknown.
