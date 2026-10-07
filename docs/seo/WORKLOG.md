@@ -614,3 +614,24 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - PR #77 head `7941c553d4d91c1726fa978155f36d427931f4df` merged at 2026-10-07 06:55 UTC (13:55 +07:00) as `3de4a96`. Hosted build run `37583252215` completed successfully at 06:46 UTC. Local Node 24.19.0 build and all 56 tests passed before push.
 - GitHub API readback confirms remote `main` equals the merge SHA. The latest `Deploy production` run is `37579543784`, completed successfully at 06:04 UTC on prior serving head `437e7da`, before the merge; PR #77 changed only campaign docs/ledgers/draft, so no Pages deployment was triggered. Latest serving release remains PR #71 deployment `16798958`.
 - No additional external action, CMS change, production deployment, Search Console write, or live enquiry occurred. The next independent campaign actions remain Reddit read-only moderation/reply observation on 2026-10-13 and Search Console read-only checks on/after 2026-10-14; sitemap submission remains unauthorized.
+
+## 2026-10-07 14:10 +07:00 — RUN-054 — Zalo link versus widget intent and scope clarification
+
+- Revalidated remote `main` at `cbca6ad0f8de517331206818b9b794e927525bf5` via GitHub API. The shared SSD checkout remains dirty with unrelated user changes and was not touched. Current signed-in `/data/` browser shows the historical 2,740-row snapshot and a stale note that only two Reddit actions were logged; CA-005 makes the accurate count three.
+- Read the current live VI website-service page and confirmed its six existing FAQs mention Call/Zalo and exclude custom integrations/automation but do not distinguish the owner-confirmed contact action from an embedded Zalo Chat Widget.
+- General web-search sample on 2026-10-07 covered three seed phrases and three related variants. Results for broad “Zalo integration” language include the official Zalo Chat Widget documentation and third-party setup guides; the official page describes embedded website chat with a Zalo OA and requires `data-oaid`. The search was not a localized, device-controlled Google SERP; no rank, volume, organic difficulty or buyer demand is claimed.
+- Historical source CSV has no Zalo query match; RUN-044’s 20 owner-language seeds remain constructed and unmeasured. Kept related variants separate and did not calculate opportunity scores with missing volume/difficulty.
+- Decision: use the existing bilingual service URL, not a new article. Added one FAQ in VI/EN explaining the owner-confirmed Zalo destination versus excluded embedded widget/chatbot/OA management/automation, and clarified the same boundary in COPY.md. Added a targeted render assertion. Updated the protected dashboard action count from two to three consumed one-time Reddit scopes.
+- Internal report: [RUN-054 Zalo link versus widget intent](research/2026-10-07-zalo-link-vs-widget-gap.md). No widget, new route, structured-data type, tracking, indexing request, or production mutation has occurred. Local build and service tests are next; production evidence remains pending.
+
+### RUN-054 local validation — 2026-10-07 14:10 +07:00
+
+- Updated the durable COPY.md scope boundary, bilingual service-page FAQ, protected dashboard's consumed Reddit-action count, RUN-054 research note and focused service-page assertions in the isolated clone. No shared-checkout files were changed.
+- `npm run build` passed with Node 24.19.0 (42 static pages; private research data moved to authenticated Function output). `npm test` passed: 57 tests, including the new VI/EN Zalo boundary check. `git diff --check` passed.
+- Local Astro dev server exited before becoming ready, so responsive page inspection has not been claimed. Next: use the deployed page in a real browser at 320/375/768/1440 CSS px after the PR's production deployment, then read back both locales and release verifier evidence.
+
+### RUN-054 responsive preview follow-up — 2026-10-07 14:11 +07:00
+
+- The Astro dev server could not stay running in this checkout, so used a local static HTTP preview of the already-built `dist/` output instead; no production page or data was changed during this check.
+- A real Chromium browser via the in-app browser viewport override checked VI `/dich-vu/website-doanh-nghiep-dia-phuong/` and EN `/en/services/local-business-website/` at exactly 320, 375, 768 and 1440 CSS px. All eight had `documentElement.scrollWidth <= innerWidth`, one H1, the new FAQ present in the DOM and the canonical CTA present.
+- Opened and visually inspected the expanded FAQ at 320px in both locales. No horizontal overflow or clipped FAQ text was visible. Responsive and live-production evidence are distinct; hosted checks and post-deploy readback remain pending.
