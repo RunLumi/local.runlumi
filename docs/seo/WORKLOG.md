@@ -678,3 +678,7 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - PR #81 head `014b23ef02954dfd1a1bf5b78492de0de8f03244` passed hosted build run `37588680028` and merged as `a6e6adc0a202838993dcdb69a1454c3c460c6a2e`; GitHub API confirms remote `main` equals the merge SHA.
 - The latest `Deploy production` run remains `37587273670` on serving commit `4dd5920`, host `08a3ee8d.lumi-local.pages.dev`; PR #81 changed only Markdown, so no deployment ran.
 - No new external action occurred. The exact Search Console sitemap submission remains unapproved; see [current goal gate](../GOAL_SEO_GEO_90_DAYS.md#5-channelaccount-authorization) and the Next actions list. Next read-only index check remains on/after 2026-10-14.
+
+### RUN-057 checkpoint cleanup — 2026-10-07 15:47 +07:00
+
+- Revalidated campaign STATUS after adding the two skipped Reddit candidates. Removed a numbering gap in the “Next actions” list left by the earlier consolidation of the CA-002/CA-003/CA-005 read-only review into one item. No scheduled date, scope or authorization changed.

@@ -91,9 +91,9 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 1. On 2026-10-13 09:00 +07:00, read-only check CA-002/CA-003/CA-005 for replies/removal; no reply or repost is authorized.
 2. RUN-026 found no sitemap submitted in the dedicated GSC property. Submit `https://local.runlumi.app/sitemap.xml` only after explicit human authorization; until then, leave Google-side indexing untouched.
 3. On or after 2026-10-14, read the index/discovery state once for the garage page and the updated business-location guide; keep Search Console read-only and scoped to `local.runlumi.app`. Submit `https://local.runlumi.app/sitemap.xml` only after explicit human authorization. GSC Wizard remains unconnected. Add Chrome DevTools MCP before laboratory performance traces; avoid repetitive searches and quota-driven posts.
-5. RUN-047 found no Google Ads account matching “Lumi Local” in the current signed-in identity; do not open another account or create one based on guesswork. Export the 20 RUN-044 seeds only if the user identifies an existing project account and the data are accessible without new billing or spend.
-6. Once exact-host Search Console query/page data are available and the reporting window is useful, compare the RUN-045 website-price, Zalo-widget and review-QR intents against their existing canonical pages. Do not create a new page from the three browser snapshots alone.
-7. Community discovery remains read-only until a fresh relevant thread can be reviewed in the supported browser and a human authorizes its exact target/action. Do not use signed-in Google Ads summaries as search research.
+4. RUN-047 found no Google Ads account matching “Lumi Local” in the current signed-in identity; do not open another account or create one based on guesswork. Export the 20 RUN-044 seeds only if the user identifies an existing project account and the data are accessible without new billing or spend.
+5. Once exact-host Search Console query/page data are available and the reporting window is useful, compare the RUN-045 website-price, Zalo-widget and review-QR intents against their existing canonical pages. Do not create a new page from the three browser snapshots alone.
+6. Community discovery remains read-only until a fresh relevant thread can be reviewed in the supported browser and a human authorizes its exact target/action. Do not use signed-in Google Ads summaries as search research.
 
 ## Recovery
 
