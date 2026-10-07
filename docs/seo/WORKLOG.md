@@ -635,3 +635,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - The Astro dev server could not stay running in this checkout, so used a local static HTTP preview of the already-built `dist/` output instead; no production page or data was changed during this check.
 - A real Chromium browser via the in-app browser viewport override checked VI `/dich-vu/website-doanh-nghiep-dia-phuong/` and EN `/en/services/local-business-website/` at exactly 320, 375, 768 and 1440 CSS px. All eight had `documentElement.scrollWidth <= innerWidth`, one H1, the new FAQ present in the DOM and the canonical CTA present.
 - Opened and visually inspected the expanded FAQ at 320px in both locales. No horizontal overflow or clipped FAQ text was visible. Responsive and live-production evidence are distinct; hosted checks and post-deploy readback remain pending.
+
+### RUN-054 production follow-up — 2026-10-07 14:29 +07:00
+
+- PR #79 head `0c82cd3be922dbdba88acfe6a74440ad31a31422` passed hosted build run `37587113249` and merged at `4dd5920dfad6025e6efd965e2da4454dbc3ea15c`. Remote main matched that SHA.
+- Production run `37587273670` passed hosted npm install/build/tests, EmDash seed validation, Worker build, Cloudflare Pages deployment and the live release verifier. Deployed preview host: `https://08a3ee8d.lumi-local.pages.dev`.
+- Supported browser readback on the deployed host confirms the new FAQ answer in both VI and EN service pages. A real Chromium browser with exact viewport overrides checked both locales at 320/375/768/1440 CSS px; all eight had document/body width no greater than the viewport, one H1, the new FAQ answer visible after expansion and the canonical primary CTA. Both 320px expanded FAQ layouts were visually inspected.
+- The existing signed-in research dashboard at `https://local.runlumi.app/data/` was reloaded and now says three separately authorized one-time Reddit actions, all consumed. The historical CSV remains unchanged; organic observations stay zero/unknown.
+- No CMS editorial content, Google/Search Console state, third-party Zalo integration, enquiry, CRM record or user tracking changed. No ranking, AI citation, traffic or conversion benefit is claimed. Next Search Console check remains on/after 2026-10-14.

@@ -36,7 +36,9 @@ No separate article, route, city page, schema type, widget implementation, user 
 
 A concise Q&A is independently understandable and fits the existing service page. It separates the product's owner-confirmed link from Zalo's embedded widget, avoiding hidden text, unsupported claims, and an FAQ schema expansion. Keep the official developer source in this internal report; the service FAQ explains Lumi's own scope.
 
-**Next actions:** validate both locales at 320/375/768/1440 CSS px, run service tests/build, merge and verify the actual production page. On or after 2026-10-14, read exact-host Search Console page/index data once. Revisit the Zalo topic only if query evidence or qualified owner questions justify it.
+**Release result — 2026-10-07:** PR #79 merged as `4dd5920`; production deployment run `37587273670` published host `08a3ee8d.lumi-local.pages.dev`. The hosted pipeline passed build, 57 tests, EmDash seed validation, Worker build, deployment and live release verifier. The deployed VI/EN service FAQ was read back; all eight locale/viewport combinations (320/375/768/1440 CSS px) had no horizontal overflow, one H1 and the primary CTA. The two 320px expanded FAQs were visually inspected. The authenticated `/data/` dashboard now reports three consumed one-time Reddit actions. No search, indexing, ranking, citation or conversion result is inferred.
+
+**Next action:** on or after 2026-10-14, read exact-host Search Console page/index data once. Revisit the Zalo topic only if query evidence or qualified owner questions justify it.
 
 ## Skill handoff summary
 
