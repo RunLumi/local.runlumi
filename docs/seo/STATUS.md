@@ -21,6 +21,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - PR #35 / Pages deployment `7e191180`: VI/EN homepage and website-service FAQ explain when Facebook/Zalo may be sufficient and distinguish Starter from an online store. Production checks passed on both custom and Pages hosts.
 - PR #41 / Pages deployment `1f99c9d0`: corrected homepage mockup heading hierarchy after one Lighthouse accessibility finding; live VI/EN H2 readback and the targeted post-deploy PSI finding check passed. No field CWV data.
 - PR #46 / Pages deployment `ebdccc5f`: the auto-repair page now answers the online-booking question directly in VI/EN and states that Starter supports Call/Zalo enquiries but no online calendar/reservation. Live answer readback passed on both locales; this is an expectation clarification, not an acquisition result.
+- PR #48 / Pages deployment `9b12e201`: the homepage salon preview label now describes a Zalo availability enquiry instead of “Booking” / “Đặt lịch.” Live VI/EN readback passed; no booking feature or conversion result is implied.
 - Exact merged heads passed local static/CMS builds, 48 tests, seed validation and release verifier. Hosted workflows failed before steps due Actions budget; no hosted Linux pass. CMS Worker/editorial data were not changed.
 - PR #31 and PR #32 record release/access state; PR #33 records the bounded Vietnam scan.
 
@@ -37,7 +38,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - [Vietnam community scan](research/2026-10-06-vietnam-community-scan.md) and [fresh recheck](research/2026-10-07-community-recheck.md): no suitable recent Vietnamese owner discussion found; vendor/stale retail content not treated as demand.
 - [RUN-029 Search Console follow-up](research/2026-10-07-search-console-links-follow-up.md): exact-host Pages and Links remain processing; parent-property Reddit link data point to the apex domain and cannot validate CA-002.
 - [RUN-030 garage intent check](research/2026-10-07-garage-booking-intent.md): a tighter garage-design query showed online booking among competitor claims; PR #46 adds the VI/EN Call/Zalo enquiry and no-calendar FAQ. One personalized SERP sample; no demand or ranking inference.
-- [RUN-031 homepage booking-language check](research/2026-10-07-homepage-booking-language.md): the candidate changes the illustrative spa-card label to “ask about availability” through Zalo instead of “booking.” Static/CMS builds, tests, seed validation and eight local responsive checks pass; pending release. This is a wording correction, not a new feature or search outcome.
+- [RUN-031 homepage booking-language check](research/2026-10-07-homepage-booking-language.md): PR #48 changed the illustrative salon label to “ask about availability” through Zalo instead of “booking.” Static/CMS builds, tests, seed validation and eight local responsive checks passed; both live homepage labels were read back. This is a wording correction, not a new feature or search outcome.
 
 ## Next actions
 
@@ -47,7 +48,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 
 ## Recovery
 
-Read this checkpoint, goal, worklog and both CSVs before external actions. Inspect uncertain outcomes before retrying. Shared checkout has unrelated `docs/blog/checkpoint.md` WIP; preserve it. Latest SEO/GEO change is verified live at deployment `ebdccc5f`; no temporary dev server is active.
+Read this checkpoint, goal, worklog and both CSVs before external actions. Inspect uncertain outcomes before retrying. Shared checkout has unrelated `docs/blog/checkpoint.md` WIP; preserve it. Latest SEO/GEO change is verified live at deployment `9b12e201`; no temporary dev server is active.
 
 
 ## RUN-023 — direct Facebook/Zalo answer refinement
