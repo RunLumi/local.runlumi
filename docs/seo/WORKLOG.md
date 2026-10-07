@@ -682,3 +682,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 ### RUN-057 checkpoint cleanup — 2026-10-07 15:47 +07:00
 
 - Revalidated campaign STATUS after adding the two skipped Reddit candidates. Removed a numbering gap in the “Next actions” list left by the earlier consolidation of the CA-002/CA-003/CA-005 read-only review into one item. No scheduled date, scope or authorization changed.
+
+## 2026-10-07 15:50 +07:00 — RUN-059 — Defer optional sitemap submission after link-graph check
+
+- Revalidated remote main `a6e6adc`; the shared checkout remains dirty and untouched. Retrieved official current Google Search Console Sitemaps report and Search Central sitemap guidance.
+- Google says a site of about 500 pages or fewer whose pages are all reachable from homepage links probably does not need the Sitemaps report; submitting a sitemap is a hint, not a crawl/index guarantee. The report may still expose fetch/parse errors and only lists sitemaps submitted through the report/API.
+- Built-site audit on the unchanged serving source `4dd5920` confirmed 38 sitemap URLs, all on `local.runlumi.app`, zero `/data` URLs, all 38 reachable from the homepage by internal anchor links, and `public/robots.txt` already references the sitemap.
+- Decision: defer the optional Search Console sitemap write. No sitemap or URL Inspection request, property setting, export, analytics action or billing change occurred. Revisit only after the scheduled read-only index/discovery check on/after 2026-10-14 if a material discovery problem remains; obtain explicit authorization before any write.
+- Report: [RUN-058 sitemap utility assessment](research/2026-10-07-sitemap-submission-scope.md). This changes the recommendation; it does not establish current Google index coverage.

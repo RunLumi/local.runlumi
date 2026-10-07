@@ -1,18 +1,26 @@
-# Search Console sitemap submission scope — RUN-058
+# Search Console sitemap utility assessment — RUN-058
 
-Observed: 2026-10-07, Asia/Ho_Chi_Minh. Read-only; no Search Console submit control was used.
+Updated: 2026-10-07 · Asia/Ho_Chi_Minh. Read-only; no Search Console control was used.
 
-## Exact proposed write
+## Decision
 
-Submit `https://local.runlumi.app/sitemap.xml` once to the Search Console Domain property `sc-domain:local.runlumi.app`.
+Defer the optional sitemap submission. The current objective is to inspect Search Console's index/discovery state on or after 2026-10-14 without submitting a sitemap or requesting indexing. Reevaluate only if that later read shows a concrete discovery problem that the existing internal links and `robots.txt` reference do not address. Any Search Console write still needs explicit human authorization.
 
-## Current evidence
+## Site evidence
 
-- RUN-026 recorded zero submitted sitemap entries in this exact-host property. It also recorded that the homepage and core website-service URL were unknown to Google, while their live URL tests said they were available and indexable. RUN-032 separately found the garage URL unknown to Google and live-fetch/indexable.
-- Production deployment `08a3ee8d.lumi-local.pages.dev` came from main `4dd5920` (PR #79, deployment run `37587273670`). Its live release verifier passed service/industry routes, journal/feed/sitemap and anonymous private-data protection.
-- The fresh local static build from the same serving commit generated `dist/sitemap.xml` with 38 `<loc>` URLs. All 38 point to `https://local.runlumi.app`; zero paths contain `/data`. Prior RUN-007/RUN-024 production crawls covered the same 38 public sitemap URLs. This local count is scope corroboration, not a fresh Search Console read or a claim that Google has indexed them.
-- The sitemap content includes the site's localized public canonical pages and the approved Zalo scope clarification changed page text only; it added no URL. Submitting asks Google to process/discover these URLs. It does not guarantee crawling, indexing, ranking, traffic, citations or enquiries, and does not alter site content, account ownership or billing.
+- RUN-026 recorded zero submitted entries in `sc-domain:local.runlumi.app`; the homepage and core website-service URL were unknown to Google, while their live URL tests reported availability and indexability. RUN-032 separately found the garage URL unknown and indexable in a live test. These are dated observations, not evidence of current full-site indexing state.
+- Latest Pages deployment: `https://08a3ee8d.lumi-local.pages.dev`, serving commit `4dd5920` from PR #79. Source comparison confirms the current documentation branch has no changes to serving paths since that commit.
+- The current built sitemap has 38 URLs, all on `https://local.runlumi.app`, and none under `/data/`. A local crawlable-anchor graph from the homepage reaches all 38 sitemap URLs; zero sitemap URLs are unreachable. `robots.txt` already advertises the sitemap at its root.
+- This build and graph inspection corroborate the production source and earlier deployment verifier, but they do not prove what Google has crawled or indexed.
 
-## Authorization boundary and next step
+## Official guidance and tradeoff
 
-No Search Console sitemap submission, URL Inspection indexing request, property change, export, or analytics action has occurred. The campaign contract requires explicit human authorization for this one-time Search Console write. Until authorization is given, keep Google-side actions read-only. The separate scheduled read-only index review for the garage and business-location pages remains on or after 2026-10-14.
+Google Search Console Help says that a small site (about 500 pages or fewer) whose pages can all be reached by following links from its homepage probably does not need the Sitemaps report. It explains that the report lists sitemaps submitted through that report or API; a sitemap found through another method may not appear there. [Google Search Console Sitemaps report](https://support.google.com/webmasters/answer/7451001?hl=en-GB)
+
+Google also describes sitemap submission as a hint: it does not guarantee that Google downloads the sitemap or crawls the listed URLs. The report can show processing errors, but this 38-page site already has internal paths from its homepage and a root `robots.txt` sitemap reference. [Google Search Central: Build and Submit a Sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
+
+The strongest argument for submitting is that the domain is new to Search Console and earlier URL Inspection results said unknown; a successful submission would make a Sitemaps report row available for monitoring. The counterargument is stronger for the present moment: the site is small, all sitemap pages are reachable from the homepage, the sitemap is referenced in `robots.txt`, and there is no evidence of a sitemap parse or fetch error. The optional Search Console write has low incremental value before the scheduled read-only inspection.
+
+## Authorization and next step
+
+No sitemap submission, URL Inspection indexing request, export, property setting, analytics action or billing change occurred. The prior proposal to submit `https://local.runlumi.app/sitemap.xml` to `sc-domain:local.runlumi.app` is deferred; no approval is being relied on. On or after 2026-10-14, inspect the garage and updated business-location guide's index/discovery status once. If a material discovery issue remains, present the exact write and its evidence for approval before using Search Console controls.
