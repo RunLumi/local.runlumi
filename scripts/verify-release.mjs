@@ -1,6 +1,7 @@
 // Read-only production route/metadata/sitemap check; never sends enquiries or credentials.
 import assert from 'node:assert/strict';
 import {serviceRoutes} from '../src/services/routes.js';
+import {companyRoutes} from '../src/content/company.js';
 import { origin as canonicalOrigin } from '../src/blog/site.js';
 const origin=process.env.RELEASE_ORIGIN ?? 'https://local.runlumi.app';
 
@@ -17,6 +18,14 @@ for(const path of ['/','/en/','/blog/','/en/blog/','/blog/about/','/en/blog/abou
 }
 for(const route of Object.values(serviceRoutes))for(const locale of ['vi','en']) {
   assert.ok(sitemapSet.has(canonicalOrigin+route[locale]),`Sitemap misses ${route[locale]}`);
+}
+for(const route of Object.values(companyRoutes))for(const locale of ['vi','en']) {
+  const path=route[locale];
+  assert.ok(sitemapSet.has(canonicalOrigin+path),`Sitemap misses ${path}`);
+  const response=await fetch(origin+path);assert.equal(response.status,200,path);
+  const html=await response.text();
+  assert.ok(html.includes(`rel="canonical" href="${canonicalOrigin+path}"`),path);
+  assert.ok(html.includes('src="/illustrations/map.svg"')&&html.includes('src="/illustrations/review.svg"')&&html.includes('src="/illustrations/website.svg"'),`Required company-page illustrations missing at ${path}`);
 }
 for(const forbidden of ['/data/','/_emdash/','/search/','/rss.xml','/404']) {
   assert.ok(!sitemapLocs.some(url=>url.includes(forbidden)),`Unindexable route entered sitemap: ${forbidden}`);
