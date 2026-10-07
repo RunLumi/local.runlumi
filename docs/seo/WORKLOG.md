@@ -673,3 +673,8 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Inspected the fresh local static build's `dist/sitemap.xml` for serving source `4dd5920`: 38 `<loc>` URLs, all on `https://local.runlumi.app`, zero `/data` paths. This corroborates the prior production release verifier and historical 38-page crawl; it is not an indexing or Search Console observation.
 - Exact proposed action remains one submission of `https://local.runlumi.app/sitemap.xml` to `sc-domain:local.runlumi.app`. The write requests Google process the public URL set; it does not promise indexing/rank/traffic and does not change billing or site content.
 - No Search Console write, URL-indexing request, export or property change was performed because explicit user authorization is still pending. The on/after 2026-10-14 read-only index check remains separate. See [RUN-058 scope note](research/2026-10-07-sitemap-submission-scope.md).
+### RUN-055 follow-up — PR #81 merge and remote readback recorded — 2026-10-07 15:46 +07:00
+
+- PR #81 head `014b23ef02954dfd1a1bf5b78492de0de8f03244` passed hosted build run `37588680028` and merged as `a6e6adc0a202838993dcdb69a1454c3c460c6a2e`; GitHub API confirms remote `main` equals the merge SHA.
+- The latest `Deploy production` run remains `37587273670` on serving commit `4dd5920`, host `08a3ee8d.lumi-local.pages.dev`; PR #81 changed only Markdown, so no deployment ran.
+- No new external action occurred. The exact Search Console sitemap submission remains unapproved; see [current goal gate](../GOAL_SEO_GEO_90_DAYS.md#5-channelaccount-authorization) and the Next actions list. Next read-only index check remains on/after 2026-10-14.
