@@ -356,3 +356,12 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - On the candidate based on `e778bc3`, `npm run build` passed (42 routes), `npm test` passed (48), EmDash seed validation passed, and `npm run build:blog` passed on Node 24.19.0 with the private-output guard. `git diff --check` and exact bilingual label parity between `COPY.md` and `src/content/copy.js` pass.
 - A same-origin responsive harness rendered VI/EN homepages at 320, 375, 768 and 1440 CSS pixels. All eight combinations had no horizontal overflow, displayed the new label and excluded the old label. No enquiry was submitted.
 - The branch is a content-only candidate; production readback and the normal PR/release path remain pending. No SEO, traffic or commercial result is inferred.
+
+
+## 2026-10-07 07:50 +07:00 — RUN-031 release receipt — PR #48
+
+- PR #48 merged normally to main as `8e61f101a7eef9097a2d39953e3c24e0af5d61e7`; merged tree `5569f9e56a854ed0472957745b218d4065cd25ec` matches the locally validated candidate. No override was used.
+- The hosted pull-request build and main-branch deployment workflow failed before starting because the GitHub Actions budget prevented runner use; no hosted Linux pass is claimed. Exact merged main static build passed (42 routes), all 48 tests passed, EmDash seed validation passed, and CMS Worker build/private-output guard passed on Node 24.19.0. Pre-push tests and static build also passed.
+- Deployed exact main source `8e61f10` to Cloudflare Pages Production (`lumi-local`, branch `main`), deployment ID `9b12e201-e240-4db0-a84c-8a981fbb7f97`, host [9b12e201.lumi-local.pages.dev](https://9b12e201.lumi-local.pages.dev). No DNS, billing, CMS data, bindings or secrets changed.
+- `scripts/verify-release.mjs` passed on `https://local.runlumi.app` and the Pages host. Live VI and EN homepage readback shows the revised salon label and removes the “Booking” / “Đặt lịch” wording. No enquiry was submitted; no ranking, referral, conversion or revenue impact is claimed.
+- CA-002 remains the one authorized Reddit action, with its permission consumed; read-only reply/removal check remains due 2026-10-13 09:00 +07:00. Sitemap submission remains pending explicit human authorization.
