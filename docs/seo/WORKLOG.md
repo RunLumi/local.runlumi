@@ -343,6 +343,8 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - CA-002 remains the one authorized Reddit action, with its permission consumed; read-only reply/removal check remains due 2026-10-13 09:00 +07:00. Sitemap submission remains pending explicit human authorization.
 
 
+
+
 ## 2026-10-07 07:55 +07:00 — RUN-032 — Inspect garage URL discovery state
 
 - Previous goal turn only restated the already-verified CA-002 Reddit action; no new comment authorization or public action was inferred. The shared checkout still contains unrelated user work and remains untouched.
@@ -429,3 +431,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Deployed exact main source `8e61f10` to Cloudflare Pages Production (`lumi-local`, branch `main`), deployment ID `9b12e201-e240-4db0-a84c-8a981fbb7f97`, host [9b12e201.lumi-local.pages.dev](https://9b12e201.lumi-local.pages.dev). No DNS, billing, CMS data, bindings or secrets changed.
 - `scripts/verify-release.mjs` passed on `https://local.runlumi.app` and the Pages host. Live VI and EN homepage readback shows the revised salon label and removes the “Booking” / “Đặt lịch” wording. No enquiry was submitted; no ranking, referral, conversion or revenue impact is claimed.
 - CA-002 remains the one authorized Reddit action, with its permission consumed; read-only reply/removal check remains due 2026-10-13 09:00 +07:00. Sitemap submission remains pending explicit human authorization.
+
+
+## 2026-10-07 09:29 +07:00 — RUN-038 — Directions AI Overview baseline
+
+- Revalidated current main `ff9753d`, campaign status and the pending CA-003 approval. No Reddit comment was posted; no Facebook page or inbox was opened.
+- In Google Search (`hl=vi`, `gl=vn`, `pws=0`), sampled `cách chia sẻ link chỉ đường Google Maps cho khách`. An AI Overview appeared with Google Help plus third-party source cards; Lumi was not cited in the visible answer/source panel or visible web-results portion inspected. The footer said results were non-personalized and location unknown; exact viewport/device dimensions were not measured.
+- Receipt: [RUN-038 directions AI Overview snapshot](research/2026-10-07-directions-ai-overview.md). This is a single query snapshot, not proof of index status, rank, universal citation absence or acquisition.
+- No setting, sitemap or indexing action changed. Next stronger check remains the page-level Search Console discovery/index report on or after 2026-10-14.

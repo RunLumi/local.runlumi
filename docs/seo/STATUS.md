@@ -52,6 +52,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - [RUN-034 dashboard guidance release](research/2026-10-07-dashboard-guidance-release.md): private research recommendations now distinguish completed guide/SERP work from unvalidated demand; source CSV remains historical and protected.
 - [RUN-036 classification review](research/2026-10-07-maps-directions-serp-and-content-update.md#follow-up-classification-review--run-036): two embed/how-to terms now score as educational candidates, not offer-adjacent; this changes a heuristic, not measured intent or demand.
 - [RUN-036 classification release](research/2026-10-07-keyword-classification-release.md): PR #55 deployment and production privacy verification.
+- [RUN-038 directions AI Overview](research/2026-10-07-directions-ai-overview.md): one dated Vietnamese AI Overview sample; source list and limits recorded without inferring site-wide visibility.
 - [RUN-035 Reddit thread review](research/2026-10-07-reddit-google-profile-edits-thread.md): a fresh public question is a candidate for a source-backed, no-link reply; CA-003 remains `drafted` pending explicit approval.
 
 ## Next actions
