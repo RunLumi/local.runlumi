@@ -550,3 +550,13 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Production Deploy run #81 completed successfully. It deployed main `2a62c7d` to Pages host https://16cc6441.lumi-local.pages.dev. `scripts/verify-release.mjs` passed on the production origin, including anonymous `/data/` and CSV denial/redirect checks. The build logs also confirm private dashboard HTML/CSV are moved out of public static assets.
 - A fresh authenticated browser readback at `https://local.runlumi.app/data/` shows the RUN-044 seed settings, RUN-045 query sample summary, and the updated consumed-scope count. The source CSV remains historical; GSC and Keyword Planner exports remain unavailable. No sitemap submit, new billing, campaign spend, live enquiry or community action occurred.
 - Next: Search Console read-only checks remain scheduled on/after 2026-10-14; Reddit reply/removal checks remain read-only on 2026-10-13. Sitemap submission still requires explicit authorization.
+
+
+## 2026-10-07 12:56–12:59 +07:00 — RUN-047 — Keyword Planner account access check
+
+- Starting remote main was `bb4b60a89ba6f5cb477498df8c10672c5f890b0b`; shared checkout remained dirty and 45 commits behind, untouched. Read the goal/checkpoint/worklog and both campaign ledgers.
+- Opened the Google Ads account selector in the existing signed-in Google browser session and searched the exact project label “Lumi Local”. The selector returned zero matching accounts. Other accounts were visible but were not selected because no evidence tied them to this project.
+- GSC Wizard remains available but not installed/connected. No Search Console or Analytics data were read.
+- No Ads account, campaign or plan was opened or created; no billing details/settings/spend changed. No account names/IDs, credentials, screenshots or personal data were logged. Account search is not proof that no project account exists under a different name/identity.
+- Result: the 20 RUN-044 seeds remain unmeasured. No volume, target, trend, difficulty, or buyer signal is added. Receipt: [RUN-047 access check](research/2026-10-07-keyword-planner-access-check.md).
+- Next: only use Keyword Planner if the user identifies an existing project account with no billing/setup change; otherwise wait for exact-host Search Console read-only access on/after 2026-10-14. The sitemap write remains unauthorized; Reddit reply/removal checks are read-only on 2026-10-13.
