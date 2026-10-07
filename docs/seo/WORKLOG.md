@@ -507,3 +507,10 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Cloudflare Pages project `lumi-local`, branch `main`: deployment ID `3ab6c4b8-6cef-44a5-9f24-ad3d7ca91df9`, host https://3ab6c4b8.lumi-local.pages.dev, source `33df994`.
 - The read-only release verifier passed on the Pages deployment and `https://local.runlumi.app`; browser readback on the deployment host confirms both VI/EN paragraphs, inline policy links and source-check date 2026-10-07. Headless Chrome had already verified all eight responsive combinations and both 320px layouts.
 - No CMS seed import/direct database write, sitemap submission, URL-indexing request, live enquiry, Google-profile operation or customer contact occurred. No ranking, citation, referral, enquiry or paid outcome is inferred.
+
+
+## 2026-10-07 11:24 +07:00 — RUN-042 — Avoid redundant Pages deploys for documentation-only pushes
+
+- PR #64 changed only release/status documentation, but `release.yml` was configured for every push to main. GitHub run #80 rebuilt and deployed unchanged serving files as Pages ID `177da213-b426-45a3-a2d6-51af0ed34cdc`, source `1a99469`; the live verifier passed. This is a real extra deployment, not a content change.
+- Added `paths-ignore` to the production workflow for `docs/**`, Markdown, `tests/**`, and `.github/workflows/**`. Changes to `src/**`, `public/**`, `functions/**`, `server/**`, packages, build scripts and deployment config still trigger production builds. The PR validation workflow remains unchanged and continues to run for all pull requests.
+- This follows the observed deployment topology: one docs-only receipt needlessly redeployed a production site. No billing settings or check requirements were changed.
