@@ -41,6 +41,8 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 
 ## Current evidence
 
+- [RUN-044 owner-language seed expansion](research/2026-10-07-owner-language-seeds.md): prepared 20 Vietnamese seeds for three underrepresented clusters; none has measured volume or difficulty. One web-search discovery found a vendor-owned spa website offer emphasizing booking/ecommerce, so the existing spa pages need clear scope boundaries; this is not a Google rank or demand result.
+
 - [Baseline](research/2026-10-06-baseline.md): 2,740 raw rows, 2,070 exact terms, 670 repeats; historical export, no organic observations.
 - [15-query discovery](research/2026-10-06-query-discovery.md): three intent clusters are hypotheses, not rankings.
 - [Production baseline](research/2026-10-06-technical-baseline.md): 38 live sitemap URLs passed bounded response/canonical/h1/alternate checks; not proof of indexing.
@@ -69,6 +71,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 2. RUN-026 found no sitemap submitted in the dedicated GSC property. Submit `https://local.runlumi.app/sitemap.xml` only after explicit human authorization; until then, leave Google-side indexing untouched.
 3. On or after 2026-10-14, read the index/discovery state once for the garage page and the updated business-location guide; keep Search Console read-only and scoped to `local.runlumi.app`. Submit `https://local.runlumi.app/sitemap.xml` only after explicit human authorization. GSC Wizard remains unconnected. Add Chrome DevTools MCP before laboratory performance traces; avoid repetitive searches and quota-driven posts.
 4. On 2026-10-13, read-only check CA-003 for replies/removal alongside CA-002; do not reply or repost without separate authorization.
+5. If an already-configured Google Keyword Planner account is available, export the 20 RUN-044 seeds with Vietnam, Vietnamese, Google Search only, and the latest 12 complete months shown; record the actual dates. Do not set up billing or spend to access the tool.
 
 ## Recovery
 
