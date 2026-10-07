@@ -3,6 +3,13 @@ name: Deploy production
 on:
   push:
     branches: [main]
+    # Documentation, tests and workflow-only changes do not change serving assets.
+    # Keep PR validation in build.yml; production deploys run when any other path changes.
+    paths-ignore:
+      - 'docs/**'
+      - '**/*.md'
+      - 'tests/**'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 permissions:

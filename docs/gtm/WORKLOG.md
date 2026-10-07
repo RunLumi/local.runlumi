@@ -243,3 +243,23 @@ Append-only, PII-free campaign operations log. Read recent entries before any ne
 - **Scores:** all batch-1 leads 5/10 preliminary (web-side evidence caps activity/pain/contact-basis scoring by design; operator verification can raise them). No candidate reached the ≥8 priority line — expected for web-only evidence, recorded per playbook.
 - **Quota (all runs, all time):** 0 candidates contacted, 0 sends in any state; 0/5 used in the rolling 60-minute window.
 - **Next action (operator, human):** per-draft checklist in the private ledger — verify page identity, the About website field, and 30–90-day activity on Facebook; fill sender name; journal `prepared → authorized → submitting` before each Send; send once, read back, log outcome. Agent records operator-reported evidence (`evidence_origin=operator`) and supports replies/meeting prep. Agent-controlled Facebook access remains closed (`policy_unverified`).
+
+## Branch reconciliation — 2026-10-08
+
+The following upstream records are retained alongside the local history. Dated storage/status observations describe their individual runs.
+
+## 2026-10-07 — Facebook method-permission recheck
+
+- **Scope:** read current platform-method gate after the repository instructions explicitly authorized a bounded pilot on the existing Facebook account. This did not open a fanpage/inbox, create a prospect, or send contact.
+- **Evidence:** Meta’s Facebook Help scraping article retrieved on 2026-10-07 defines automated collection from sites/interfaces built for people as scraping and describes enforcement against unauthorized collection. The official Facebook Terms endpoint returned a temporary-block/slow-down page during the source check, so the current terms text could not be verified through that route.
+- **Decision:** user authorization for an account/scope does not itself prove Meta allows agent-driven browser collection. Leave `policy_gate=policy_unverified` for automated fanpage discovery/contact; do not continue Facebook UI collection or send. No account restriction is inferred from the web retrieval message.
+- **Storage/duplicate gate:** the campaign templates still state no approved private prospect/action ledger is configured. Do not put lead/page identifiers in Git. `docs/seo/GOAL_PROMPT.md` remains a planning prompt, not an activated execution ledger.
+- **Next:** continue owned-site/Search Console read-only work; revisit Facebook only after the exact automated method permission and private storage/basis gates are evidenced. No policy workaround was attempted.
+
+### RUN-037 — Direct Facebook Terms readback
+
+- **Time:** 2026-10-07 09:25 +07:00. Read-only, in the existing signed-in browser; opened the official Terms of Service and read its displayed 2025-01-01 effective date and section 3.2.
+- **Finding:** §3.2(3) says automated access to or collection of data from Meta Products requires Meta’s prior permission, whether logged in or not. §3.2(2) prohibits spam. This directly blocks agent-driven fanpage discovery/collection and automated Messenger outreach absent exact Meta permission. The user-authorized pilot scope is a separate gate and does not override this method restriction.
+- **Scope observed:** Terms page only. No fanpage/inbox opened, prospect record made, contact sent, account setting changed, or lead data stored.
+- **Correction to earlier research note:** the prior “temporarily blocked/going too fast” message came from the web lookup path. Direct browser readback succeeded; that retrieval message was not a Facebook account restriction.
+- **State:** Facebook agent execution remains stopped at `policy_unverified` until exact Meta permission is documented. Continue owned-site/SEO work and use only lawful, permitted non-Meta research or properly supplied human notes. No workaround attempted.

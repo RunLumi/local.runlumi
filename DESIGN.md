@@ -187,10 +187,42 @@ product interfaces as inspectable HTML. Label generated imagery explicitly as
 AI illustration, never as real customers, premises, or business results.
 Prompts and provenance are recorded in `docs/PHOTO_ASSETS.md`.
 
+User-approved extension, 2026-10-06: the Google Review QR service pages use
+localized ImageGen counter-card mockups in place of the flat QR diagram.
+Keep the neutral invitation as readable HTML, an explicit AI-mockup label,
+and the notice that the illustrative code is not for scanning and printing
+and physical stands are excluded. These images are not customer installations.
+
 User-approved extension, 2026-10-03: use the supplied ImageGen concepts for
 all six service illustrations and the enquiry section. Keep visible AI
 disclosures; generated people are not presented as Lumi staff or customers,
 and generated devices, QR codes, and infrastructure are illustrative only.
+
+### Public-page image coverage — 2026-10-08
+
+Every public customer-facing route, including service, industry, editorial,
+search/archive and not-found pages, should have a relevant local visual when
+it helps the reader understand the page. Choose imagery for the real page task;
+do not attach the same generic photo to every URL or produce a repeated SEO
+thumbnail grid. VI/EN siblings may share a language-neutral scene. Distinct
+articles and service intents need distinct, appropriate scenes. Keep one strong
+photographic focal point beside inspectable HTML/SVG artifacts and useful copy;
+do not turn every section into an image card.
+
+For each new or materially changed public page, record the final ImageGen prompt,
+original source, derivatives, hash and visual-review result in
+`docs/PHOTO_ASSETS.md` and `docs/site-visual-assets.json`. Use responsive local
+WebP images with explicit dimensions, descriptive alt text where informative,
+and a visible `Ảnh minh họa bằng AI` / `AI illustration` disclosure. Generated
+people, premises, devices, screens, QR codes and results must never imply real
+customers, client locations, live product data or business outcomes. The
+private `/data/` workspace remains evidence-first: do not add synthetic charts,
+photos or customer-like scenes there. RSS, sitemap and API responses are not
+visual pages.
+
+Use the original local `ServiceIcon.astro` family for functional icons. Pick an
+icon that clarifies the specific task; do not repeat decorative icons on every
+heading as filler.
 
 ## Motion and interaction
 
@@ -201,6 +233,12 @@ Motion should make the package tangible, explain a relationship, or confirm an a
 - honor reduced motion;
 - preserve keyboard focus;
 - no first-load modal.
+
+Service-page and editorial-image reveals use one restrained view-timeline
+arrival per page template, only on large fine-pointer screens with motion
+allowed. Static layout remains complete without support; narrow/touch layouts
+keep their images. Keep travel under 16px, use opacity/transform, and preserve
+the global reduced-motion reset. Do not add a reveal to every section.
 
 ### Parallax and alternatives
 

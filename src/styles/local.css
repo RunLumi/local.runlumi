@@ -515,7 +515,7 @@
   font-weight:650;
 }
 
-.site-preview-main h3{
+.site-preview-main h2{
   max-width:360px;
   margin:0;
   color:#fff;
@@ -2517,7 +2517,7 @@
   .stage-canvas{min-height:440px;padding:20px}
   .site-preview{left:16px;top:18px;width:82%;min-height:360px}
   .site-preview-main{padding:26px 20px 20px}
-  .site-preview-main h3{font-size:25px}
+  .site-preview-main h2{font-size:25px}
   .phone-preview{right:14px;top:28px;width:150px;min-height:300px;border-width:6px}
   .qr-stand{right:16px;bottom:10px;width:132px;min-height:180px}
   .qr-pattern-box{width:62px;height:62px;margin:6px auto}
@@ -2529,7 +2529,8 @@
   .proof-row,.renewal-grid,.trust-grid{grid-template-columns:1fr}
   .example-rail{grid-template-columns:1fr}
   .offer-side{grid-template-columns:1fr}
-  .starter-content{grid-template-columns:1fr}
+  .starter-content{grid-template-columns:minmax(0,1fr)}
+  .starter-bullets li>span:last-child,.mini-bullets li>span:last-child{min-width:0;overflow-wrap:anywhere}
   .feature-grid{grid-template-columns:1fr}
   .feature-primary,.feature-card:last-child{grid-column:auto;grid-row:auto;min-height:0}
   .faq,.contact{grid-template-columns:1fr;gap:36px}
@@ -2565,7 +2566,7 @@
   .site-preview-links{display:none}
   .site-preview-cta{display:none}
   .site-preview-main{min-height:210px;padding:20px 16px 16px}
-  .site-preview-main h3{font-size:22px;max-width:180px}
+  .site-preview-main h2{font-size:22px;max-width:180px}
   .site-preview-main>p{max-width:180px;font-size:12px}
   .action-btn-soft:last-child{display:none}
   .site-preview-bottom{grid-template-columns:1fr}
@@ -2600,7 +2601,7 @@
   .phone-preview{width:104px;right:0}
   .site-preview{left:6px;width:82%}
   .site-preview-main{padding-left:14px}
-  .site-preview-main h3{font-size:19px;max-width:150px}
+  .site-preview-main h2{font-size:19px;max-width:150px}
   .site-preview-main>p{max-width:150px}
   .mini-live-tag{display:none}
   .mini-actions span{padding:0 8px;font-size:10px}

@@ -8,7 +8,7 @@
   "keyword": "cách tạo địa chỉ trên google map",
   "author": "lumi-local",
   "pub_date": "2026-10-06T09:00:00+07:00",
-  "reviewed_date": "2026-10-06",
+  "reviewed_date": "2026-10-07",
   "featured": false,
   "content": [
     {
@@ -208,7 +208,7 @@
         {
           "_type": "span",
           "_key": "s1",
-          "text": "Check the customer’s path afterwards",
+          "text": "Share directions, then check the entrance",
           "marks": []
         }
       ]
@@ -222,7 +222,7 @@
         {
           "_type": "span",
           "_key": "s1",
-          "text": "Test the directions link on a phone against the real entrance. Check whether the website explains services, hours and contact options. This checks the visitor’s path; it is not a verification shortcut or ranking technique.",
+          "text": "On Android or iPhone, open Google Maps, tap Directions, enter the destination and choose a route. Tap More → Share directions, then choose an app. On a computer, open Google Maps, select Directions, enter the destination and choose a route. Select Share → Send a link → Copy link. Open it on a phone and check it reaches the entrance the owner confirmed.",
           "marks": []
         }
       ]
@@ -282,6 +282,10 @@
     {
       "label": "Google: xác minh doanh nghiệp / Verify your business",
       "url": "https://support.google.com/business/answer/7107242"
+    },
+    {
+      "label": "Google Maps: share directions / Chia sẻ thông tin đường đi",
+      "url": "https://support.google.com/maps/answer/7101463?hl=en"
     }
   ],
   "related": [

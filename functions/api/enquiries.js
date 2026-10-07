@@ -1,4 +1,5 @@
 import { validatedContext } from '../../src/services/routes.js';
+import { crmPayload, forwardToCrm } from '../../src/services/crm-intake.js';
 const MAX_BODY = 24 * 1024;
 
 const limits = {
@@ -132,11 +133,20 @@ export async function onRequestPost({ request, env }) {
     webhook.startsWith('https://discord.com/api/webhooks/') ||
     webhook.startsWith('https://discordapp.com/api/webhooks/');
 
+  const context = validatedContext(raw);
+  // The CRM intake is the durable record when configured; Discord stays the
+  // existing team notification. A repeated submission that the CRM already
+  // stored is acknowledged without notifying Discord twice.
+  const crm = await forwardToCrm(env, crmPayload(data, context));
+  if (crm.status === 'duplicate') return respond(request, 200, { ok: true }, data.locale);
+
   if (!validWebhook) {
-    return respond(request, 503, { ok: false, error: 'unavailable' }, data.locale);
+    return crm.status === 'stored'
+      ? respond(request, 200, { ok: true }, data.locale)
+      : respond(request, 503, { ok: false, error: 'unavailable' }, data.locale);
   }
 
-  const context = validatedContext(raw);
+  const crmLine = crm.status === 'stored' ? 'CRM: queued for assignment' : crm.status === 'failed' ? 'CRM: NOT stored — record manually' : null;
   const lines = [
     '**Lumi Local enquiry**',
     'Name: ' + escapeDiscord(data.name),
@@ -145,7 +155,8 @@ export async function onRequestPost({ request, env }) {
     data.email ? 'Email: ' + escapeDiscord(data.email) : null,
     'Locale: ' + escapeDiscord(data.locale || 'vi'),
     context ? 'Source: ' + context.source + ' | Intent: ' + context.cta_intent + ' | Offer: ' + context.offer_interest : null,
-    data.note ? 'Note: ' + escapeDiscord(data.note) : null
+    data.note ? 'Note: ' + escapeDiscord(data.note) : null,
+    crmLine
   ].filter(Boolean);
 
   let upstream;
@@ -161,10 +172,11 @@ export async function onRequestPost({ request, env }) {
       })
     });
   } catch {
-    return respond(request, 502, { ok: false, error: 'delivery_failed' }, data.locale);
+    upstream = null;
   }
 
-  if (!upstream.ok) {
+  // Success means at least one configured intake confirmed delivery.
+  if (!upstream?.ok && crm.status !== 'stored') {
     return respond(request, 502, { ok: false, error: 'delivery_failed' }, data.locale);
   }
 

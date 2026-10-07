@@ -4,8 +4,9 @@ interface Props {
   class?: string;
   sizes: string;
   eager?: boolean;
+  alt?: string;
 }
-const { name, class: className, sizes, eager = false } = Astro.props;
+const { name, class: className, sizes, eager = false, alt = '' } = Astro.props;
 ---
 <img
   class={className}
@@ -14,7 +15,7 @@ const { name, class: className, sizes, eager = false } = Astro.props;
   sizes={sizes}
   width="1536"
   height="1024"
-  alt=""
+  alt={alt}
   loading={eager ? 'eager' : 'lazy'}
   fetchpriority={eager ? 'high' : 'auto'}
   decoding="async"

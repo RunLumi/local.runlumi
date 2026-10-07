@@ -121,6 +121,12 @@ p{text-wrap:pretty}
   .button,.sheet,.glass-control{border:1px solid CanvasText;box-shadow:none}
 }
 
+.not-found-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:64px;align-items:center;padding-block:96px}
+.not-found-copy h1{max-width:680px;margin:0;color:var(--color-civic-navy);font-size:clamp(36px,5vw,60px);line-height:1.1;letter-spacing:-.05em;font-weight:560}
+.not-found-copy>p:not(.eyebrow):not(.not-found-actions){max-width:520px;margin:20px 0 32px;color:var(--color-soft-slate);font-size:17px;line-height:1.7}
+.not-found-actions{display:flex;flex-wrap:wrap;gap:12px;margin:0}.not-found-visual{margin:0}.not-found-visual img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px}.not-found-visual figcaption{padding-top:10px;color:var(--color-soft-slate);font-size:12px;line-height:1.6}
+@media(max-width:760px){.not-found-layout{grid-template-columns:1fr;gap:28px;padding-block:48px}.not-found-copy h1{font-size:clamp(36px,9vw,48px);line-height:1.2}}
+
 /* Keep the full product name and language controls separate at 320px. */
 @media(max-width:360px){
   .site-header .header-inner{width:100%;padding:0 8px;gap:6px}

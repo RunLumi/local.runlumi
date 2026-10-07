@@ -44,7 +44,11 @@ test('an EmDash administrator session serves private content without caching', a
     const response = await onRequest({ request: request(path, ADMIN), env: ready() });
     assert.equal(response.status, 200);
     assert.match(response.headers.get('content-type'), /text\/html/);
-    assert.match(await response.text(), /id="keyword-dataset"/);
+    const html = await response.text();
+    assert.match(html, /id="keyword-dataset"/);
+    assert.match(html, /Search generative AI control \(Include\/Exclude\/Inherit\)/);
+    assert.match(html, /If the report is missing, check whether the property is excluded/);
+    assert.match(html, /Generative AI performance report/);
     assert.match(response.headers.get('cache-control'), /private, no-store/);
     assert.equal(response.headers.get('cloudflare-cdn-cache-control'), 'no-store');
     assert.equal(response.headers.get('vary'), 'Cookie');

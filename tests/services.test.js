@@ -25,6 +25,11 @@ test('seven bilingual pairs have exact semantic routing, reciprocal locale metad
   assert.ok(!html.includes('discord.com/api/webhooks'));
  }
 });
+test('website service page distinguishes its owner-confirmed Zalo contact action from embedded chat integration',()=>{
+ const vi=htmlFor('/dich-vu/website-doanh-nghiep-dia-phuong/');const en=htmlFor('/en/services/local-business-website/');
+ assert.match(vi,/Starter có tích hợp Zalo Chat Widget không\?/);assert.match(vi,/mở Zalo tới kênh do chủ xác nhận/);assert.match(vi,/không bao gồm Zalo Chat Widget nhúng trên website/);
+ assert.match(en,/Does Starter include a Zalo Chat Widget\?/);assert.match(en,/opens the Zalo destination the owner confirms/);assert.match(en,/does not include an embedded Zalo Chat Widget/);
+});
 test('enquiry context is derived from route allowlist rather than arbitrary client data',()=>{
  for(const c of sourceContexts)assert.deepEqual(validatedContext({...c,offer_interest:'forged'}),c);
  for(const raw of [{source:'https://attacker.test/phone=123',locale:'vi'},{source:'/nganh/spa/?name=person',locale:'vi'},{source:'/nganh/spa/',locale:'en'},null])assert.equal(validatedContext(raw),null);

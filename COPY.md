@@ -12,7 +12,7 @@ Write for a busy local owner: specific services, clear prices, and an easy next 
 
 Starter is the primary offer: **1.990.000đ year one**. Trust Kit is an optional **399.000đ one-time** fallback, never a required first purchase. Full credit applies to upgrades within **30 days**, leaving **1.591.000đ** to pay. Renewal is **599.000đ/year** for a RunLumi subdomain or **999.000đ/year** for one standard custom domain, hosting, SSL, and technical maintenance. Confirm domain eligibility and cost before payment. Premium, aftermarket, or unusually priced domains are quoted separately. Do not guarantee every .vn/.com is eligible.
 
-Starter includes a mobile service website, verified business content, Call/Zalo, Maps directions, an enquiry form, print-ready review QR artwork, year-one hosting and SSL, and one basic content revision round. Printing, physical stands, shipping, unlimited content edits, ads, profile management, and custom integrations are excluded unless separately agreed and quoted.
+Starter includes a mobile service website, verified business content, owner-confirmed Call/Zalo contact actions, Maps directions, an enquiry form, print-ready review QR artwork, year-one hosting and SSL, and one basic content revision round. A Zalo action opens the destination the owner confirms; it is not an embedded Zalo Chat Widget, chatbot, OA management or automated messaging. Those integrations need a separate scope and quote. It is an information and enquiry site, not an online store: product inventory management, carts, online checkout/payment and order management are not included. The contact form is a contact path, not a CRM: automated follow-up, reminders and lead-nurture workflows are excluded; agree the enquiry destination and response owner before publication. Printing, physical stands, shipping, unlimited content edits, ads, profile management, and custom integrations are excluded unless separately agreed and quoted.
 
 Technical maintenance is continuity of the agreed website, hosting and SSL; it is not ongoing marketing or unlimited content work. Free automated alerts may be offered only for signals actually implemented and verified. They are not a current guaranteed package inclusion.
 
@@ -39,6 +39,13 @@ Exact review invitation:
 
 No fabricated customers, ratings, testimonials or results. Illustrations are not customer proof. Contact buttons do not constitute a booking system. Do not promise ranking, traffic, leads, customers, revenue, security guarantees, 24/7 availability, or numeric speed without applicable measured evidence and clear limits.
 
+Homepage salon-preview label:
+
+- VI: **Bảng giá · Hỏi lịch qua Zalo**
+- EN: **Services · Ask about availability**
+
+This describes a customer enquiry, not online booking. The business confirms availability through its own Zalo workflow.
+
 Public information is not permission to republish customer photos or create an official site. Use authorized assets, keep prospect previews private, label them as drafts, disable real enquiry capture, and obtain owner approval before publication.
 
 
@@ -46,7 +53,7 @@ Public information is not permission to republish customer photos or create an o
 
 Lead with the visitor’s reason to choose the business, then show the concrete details that support that choice: services, prices, real photos and direct contact. Explain why the owner would hire Lumi: content, setup, publication and agreed upkeep handled for them. The preview is the next step for judging fit; an enquiry is not a purchase.
 
-VI hero: “Trước khi khách ghé, cho họ lý do chọn bạn.” EN: “Before they visit, give them a reason to choose you.” These are invitations to present the business well, not claims of conversion gains. Make price inclusions visible at the first price. Explain how a website complements Facebook/Zalo; acknowledge when existing channels may be sufficient. Put scope limitations where the buyer compares the offer, while keeping the first message focused on value. Do not create false urgency, fake social proof or unmeasured savings.
+VI hero: “Trước khi khách ghé, cho họ lý do chọn bạn.” EN: “Before they visit, give them a reason to choose you.” These are invitations to present the business well, not claims of conversion gains. Make price inclusions visible at the first price. Explain how a website complements Facebook/Zalo; acknowledge when existing channels may be sufficient. Answer the decision directly: if current channels keep services, prices/quote conditions, hours, directions and contact clear and maintainable, a separate site may not be needed; define Starter as an information/enquiry page, not a storefront. Put scope limitations where the buyer compares the offer, while keeping the first message focused on value. Do not create false urgency, fake social proof or unmeasured savings.
 
 ## Review pass — 2026-10-06
 
@@ -58,7 +65,27 @@ The VI `/blog/` and EN `/en/blog/` use the same offer and exact CTA, imported fr
 
 ## Service and industry pages
 
+Auto-repair appointment FAQ:
+
+- VI question: **Khách có đặt lịch sửa xe trực tiếp trên website không?**
+
+  Answer: Không. Khách xem hạng mục sửa, giờ và chỉ đường, rồi bấm Gọi/Zalo để hỏi. Garage tự xác nhận khả năng nhận xe, thời gian và báo giá sau khi hiểu công việc. Starter không có lịch đặt chỗ trực tuyến hay chức năng giữ chỗ.
+- EN question: **Can customers book an auto repair appointment on the website?**
+
+  Answer: No. Visitors can review repair categories, hours and directions, then call or open Zalo to ask. The garage confirms whether it can take the vehicle, timing and pricing after understanding the job. Starter does not provide an online booking calendar or reservation feature.
+
 Localized service/industry content is maintained in src/services/content.ts with the route map in src/services/routes.js. Page-intent CTAs follow docs/GOAL_BILINGUAL_SERVICE_PAGES.md: Check my business / Kiểm tra business của tôi for public checks, Show me the Trust Kit for my business / Xem Trust Kit cho business của tôi for QR, and the canonical preview CTA for websites/industries. All use EnquiryForm.astro and /api/enquiries. Only allowlisted source, locale, intent and offer context is forwarded to intake; no third-party analytics is added. These pages preserve the offer and Google/review boundaries above.
+
+## QR service-page imagery — 2026-10-06
+
+The counter-artwork preview uses a disclosed AI mockup, with localized imagery
+and the exact neutral review invitation retained as HTML. Labels:
+
+- VI: “Ảnh minh họa bằng AI · không phải quầy khách hàng” and “Mã minh họa, không dùng để quét. Không bao gồm in ấn và giá đỡ.”
+- EN: “AI-generated mockup · not a customer installation” and “Illustrative QR, not for scanning. Printing and physical stands are excluded.”
+
+The pictured folded card illustrates a possible print application, not an
+included physical deliverable or an actual customer's counter.
 
 ## Mobile homepage navigation
 

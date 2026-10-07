@@ -20,11 +20,13 @@ The production custom domain is `https://local.runlumi.app`, attached on
 CNAME pointing to `lumi-local.pages.dev`. HTTPS and both `/` and `/en/` were
 verified on the custom domain. Future DNS changes require explicit authorization.
 
-`.github/workflows/release.yml` builds and deploys the pushed commit whenever
-`main` changes. Pull requests and pushes to other branches do not deploy.
-The workflow can also be run manually on `main` to redeploy the current commit.
-The workflow verifies both languages on the production custom domain after upload.
-Production runs are serialized to avoid simultaneous uploads.
+`.github/workflows/release.yml` builds and deploys pushes to `main` that change
+serving assets or build/configuration inputs. Pushes limited to documentation,
+Markdown, tests or workflow files skip the production deployment; the PR
+`build.yml` workflow still validates pull requests. Pull requests and pushes to
+other branches do not deploy. The workflow can also be run manually on `main` to
+redeploy the current commit. It verifies both languages on the production custom
+domain after upload. Production runs are serialized to avoid simultaneous uploads.
 Automatic deployment requires the GitHub production credential below.
 
 Required GitHub configuration:
@@ -52,7 +54,21 @@ Required production secret:
 
 `DISCORD_TRIAL_WEBHOOK_URL`
 
-Do not commit its value.
+Optional CRM intake (Pages secrets, both required to enable it):
+
+- `CRM_INTAKE_URL` — `https://runlumi.app/api/intake/local` (only runlumi.app origins are accepted)
+- `CRM_INTAKE_SECRET` — shared HMAC key, also set on the `runlumi` Worker
+
+With both set, each validated enquiry is stored in Lumi's internal CRM queue
+(`src/services/crm-intake.js`) before the Discord notification. The request is
+signed and carries an idempotency key derived from the submission and the
+Ho Chi Minh City date, so retries and repeated identical submissions create one
+CRM record and one Discord message. Success means the CRM confirmed storage or
+Discord confirmed delivery; if neither does, the form reports failure. Discord
+messages say when an enquiry was not stored in the CRM. Only enquiries to Lumi
+are forwarded; enquiries from customers' Starter sites never are.
+
+Do not commit any of these values.
 
 Research access (`/data`) uses the Lumi Local editor sign-in: only an EmDash
 ADMIN can open it. It needs the production `BLOG` service binding (declared in
