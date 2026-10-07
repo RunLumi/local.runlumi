@@ -722,3 +722,98 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Google says its dedicated Search Generative AI performance report rolled out worldwide by 2026-08-31. It reports impressions for AI Overviews/AI Mode by page/country/date/device and supports Web text/multimodal types. The report documentation does not list query or click dimensions; absence may mean too few impressions or exclusion. No report or setting was read for Lumi's property, so those states remain unknown.
 - Updated the scheduled Oct 14 read-only checklist to include the exact-host control and report while preserving the no-write boundary. Added [RUN-063 research note](research/2026-10-07-google-ai-search-measurement-update.md). No production, analytics, Search Console or community action occurred.
 - Current local volume check: system data volume reports 551 MiB available while at 100% capacity; SSD has 778 GiB available. GitHub lookup still fails on hostname resolution. This change remains local and uncommitted; shared dirty checkout was not touched.
+
+### RUN-063 follow-up — Commit and branch push — 2026-10-07 16:29 +07:00
+
+- Committed RUN-062/RUN-063 documentation and research as `dcb69cd`. The pre-push hook completed `npm test`, `npm run build` (42 pages), and its verification checks successfully; no source-code files changed.
+- `git push` returned success and advanced the remote branch `codex/seo-run056-reddit-market-research-skip` from `0b27dea` to `dcb69cd`. A subsequent `git ls-remote` failed again on DNS lookup, so a separate remote readback is pending.
+- No pull request was created in this follow-up; the last automatic review for PR creation had deferred it until the account usage limit reset. Do not use another route to create it before that window.
+
+## 2026-10-07 16:36 +07:00 — RUN-064 — Authenticated owner bridge-test gate readback
+
+- Read the current authenticated `/data/` dashboard without changing filters or exporting the CSV. It still reports the historical 2,740-row / 2,070-unique source, unknown targeting, zero organic observations and no collected owner interviews.
+- The dashboard's proposed 10-owner test for the honest-review guide has a separate threshold (at least 3 recent relevant problems and 2 package-preview requests). It is distinct from the 30-qualified-business paid gate (at least 6 paid signals including 2 Starter, average preview at most 5 minutes). These remain test rules, not outcomes.
+- No channel/contact scope for interviews is authorized. The three Reddit one-time comment approvals do not authorize interviewing or messaging commenters. No interview, invitation, contact, data export or account change occurred.
+- Report: [RUN-064 owner bridge-test gate](research/2026-10-07-owner-bridge-test-gate.md). Next campaign actions remain the read-only Reddit review on 2026-10-13 and exact-host Search Console review on/after 2026-10-14.
+
+### RUN-064 follow-up — GitHub remote state readback — 2026-10-07 16:37 +07:00
+
+- Rechecked GitHub state using read-only REST API calls after SSH and HTTPS Git DNS failed. Remote `main` is `a6e6adc0a202838993dcdb69a1454c3c460c6a2e`; remote campaign branch is `dcb69cd4822d714748e225eb0b7a02cd292eec08`; the PR list filtered to this head is empty.
+- The local branch is at `0b8b39b`, two commits ahead of the remote branch: `fdc1151` and `0b8b39b` include worklog/checkpoint follow-ups. These commits are not pushed. No PR was created or merged.
+- Reconfirmed the current local test suite separately with `TMPDIR=/Volumes/SSD/local.runlumi/node_modules/.cache`: 57 passed, 0 failed. This uses the unchanged tests and normal hook; it does not clear the DNS failure. The previously pushed `dcb69cd` pre-push hook passed both tests and the 42-page static build.
+
+## 2026-10-07 16:39 +07:00 — RUN-065 — Owner bridge-test protocol draft
+
+- Re-read `STRATEGY.md`, `docs/PILOT.md`, `docs/GTM.md`, `COPY.md`, `PRICING.md`, and `content-guideline.md`. The 30-business Garage/Starter field pilot and the dashboard's 10-owner honest-review bridge test are separate experiments; this protocol explicitly forbids double-counting participants or treating preview interest as paid demand.
+- Prepared a Vietnamese, non-leading interview script and operational definitions for the dashboard's proposed 10-owner threshold. It records anonymous aggregate signals only and does not request review text, customer identities, Google access, recordings or screenshots.
+- No recruitment channel, audience or private note store has been authorized. No owner was contacted, no invitation was sent, and no existing Reddit scope was reused. The file remains a draft pending explicit channel/contact-scope authorization.
+- Report: [RUN-065 protocol draft](drafts/RUN-065-owner-bridge-interview-protocol.md). No external, CMS, Search Console or customer state changed.
+
+## 2026-10-07 16:43 +07:00 — RUN-066 — Earned-resource channel discovery
+
+- Ran one focused search for Vietnam SME resource pages and explicit contribution rules. HCM-SME shows news/case-study and website-link areas, but a direct open timed out and no public submission policy surfaced. SMERS and BAC publish support/program information, but targeted searches found no open editorial contribution process.
+- No source established fit, eligibility, link rules or permission together. Decision: no resource pitch or contact; do not treat association directories/member listings as earned editorial links. Search snippets are not sufficient to claim no private process exists. See [RUN-066 discovery note](research/2026-10-07-earned-resource-discovery.md).
+- No account, community, CMS, Search Console, customer or production action occurred. Reddit comments remain one-time consumed scopes; next checks remain 2026-10-13 and on/after 2026-10-14.
+
+### RUN-066 follow-up — HCM-SME browser certificate check — 2026-10-07 16:49 +07:00
+
+- Opened the exact `https://hcmsme.net/` result once in the supported in-app browser. Chromium rejected the page with `net::ERR_CERT_COMMON_NAME_INVALID`; no navigation into the page occurred.
+- Did not bypass the certificate error, use an alternate hostname, contact the association, or submit a link. The site remains an unverified lead, not an eligible resource channel. This strengthens RUN-066's skip decision; it does not prove that the organization has no submission process.
+
+### RUN-066 follow-up — BAC resource page reviewed — 2026-10-07 16:56 +07:00
+
+- Read the official BAC `Dữ liệu số` page after search results suggested a possible SME directory. Its description is data about businesses and support activities; no public provider-submission process or service-provider directory was exposed.
+- Excluded it as an earned-link target. No contact, account action, listing request, or submission occurred. Updated RUN-066 only; the absence of a visible process is not proof that a private process does not exist.
+
+### RUN-065 follow-up — Interview opening transparency — 2026-10-07 16:46 +07:00
+
+- Reviewed the Vietnamese opening before any recruitment. The first draft described the discussion as research but did not say a priced Lumi Trust Kit would be shown at the end.
+- Revised the opening to disclose Lumi Local affiliation, that the exact package and price will be discussed, and that there is no purchase obligation or response incentive. No channel, sample, recruitment, or contact scope was added; no owner was contacted.
+- `git diff --check` passed. Protocol remains a draft pending the user's channel/contact-scope choice.
+
+## 2026-10-07 16:54 +07:00 — RUN-067 — Provider-authored Reddit pitch skipped
+
+- Ran one focused, read-only Reddit search for recent small-business website/contact questions in the signed-in browser. The surfaced “Google bussines profile” post was a provider offering a paid 30-day Google Business Profile management service with optional monthly renewal, not an owner asking for help.
+- Read the current r/smallbusiness sidebar rules: no links/product recommendations/SEO shaping, no business promotion, and no market-research posts for business offerings. Only AutoModerator was visible in the loaded comments.
+- Added CA-008 as `skipped` with target and evidence note. No draft, reply, vote, follow, link, profile action or contact occurred. The post is not used as owner-demand or price evidence, and no new channel scope is inferred.
+- Report: [RUN-067 skip note](research/2026-10-07-reddit-provider-pitch-skip.md). Existing CA-002/003/005 scopes remain consumed; scheduled read-only check remains 2026-10-13.
+
+## 2026-10-07 17:16 +07:00 — RUN-068 — Protected dashboard Search AI measurement guidance
+
+- Updated the existing private `/data/` strategy card so its on/after 2026-10-14 action names the exact-property Search generative AI control and report, explicitly read-only. It records Include/Exclude/Inherit without changing settings, and if the report is absent distinguishes confirmed exclusion from unknown/low impressions. It also distinguishes Google AI-feature impressions from external AI citations and business outcomes.
+- Added source links to Google's AI Search guide and Search Console report documentation, updating the dashboard's source-check date to 2026-10-07. No raw keyword data, tracking, Search Console access or production setting was changed.
+- Verification: `TMPDIR=/Volumes/SSD/local.runlumi/node_modules/.cache npm run build` passed (42 static pages; private data extracted from public assets); `TMPDIR=/Volumes/SSD/local.runlumi/node_modules/.cache npm test` passed (57/57), including private dashboard served-content assertions; `git diff --check` passed.
+- This is local implementation evidence only. No deployment or live dashboard readback is claimed. Normal push remains subject to GitHub DNS; prior API readback showed remote main `a6e6adc` and branch `dcb69cd`. Report and production release remain pending.
+
+## 2026-10-07 17:46 +07:00 — RUN-069 — Current-head static and regression verification
+
+- Verified local campaign head `dadfe88` after the dashboard guidance change. `TMPDIR=/Volumes/SSD/local.runlumi/node_modules/.cache npm run build` passed and generated 42 static pages; the post-build guard moved private research HTML/CSV out of public assets.
+- `TMPDIR=/Volumes/SSD/local.runlumi/node_modules/.cache npm test` passed all 57 tests, including the protected dashboard's Search AI control/report language assertions. `git diff --check` passed.
+- This does not establish CMS build/seed/lifecycle validation, hosted CI, deployment, production dashboard readback, Search Console state, or acquisition impact. No production, CMS, Search Console, or community state changed. GitHub DNS still prevents pushing this verified local head.
+
+## 2026-10-07 17:58 +07:00 — RUN-070 — PR #82 merge and remote readback
+
+- Created and attached [PR #82](https://github.com/RunLumi/local.runlumi/pull/82) for the exact pushed head `dcb69cd`, covering 11 documentation, research and ledger files. No application code or serving asset changed in that PR.
+- GitHub Actions run `37610466237` failed after 3 seconds with zero job steps; its annotation explicitly says the job could not start because an Actions budget prevented further use. The exact PR head had passed the normal local pre-push hook earlier: `npm test` (57 passed), `npm run build` (42 pages), and repository verification. GitHub-hosted Linux validation is a failed budget-blocked check, not a pass.
+- Merged PR #82 normally through GitHub (no admin bypass). API readback: PR state closed/merged at `2026-10-07T10:57:44Z`, merge commit `7d5e54b582089fc239e72f8e30b15f094e5c1373`; remote `main` points to that merge commit. No review was submitted.
+- Latest production deploy run readback remained run `37587273670` on serving commit `4dd5920`, created before the merge; this PR was documentation-only and did not trigger a production deployment. Serving site remains unchanged.
+- Local branch head is `5b1aa0c`, 14 commits ahead of remote branch `dcb69cd`; later owner-interview protocol, candidate-skip receipts, branch snapshots and dashboard measurement update remain local only. A normal fetch failed on GitHub DNS, so those commits have not been pushed or included in a follow-up PR.
+- No Search Console setting, sitemap, live enquiry, CMS content, customer contact or community interaction occurred. Next scheduled reads remain Reddit 2026-10-13 and Search Console on/after 2026-10-14.
+
+## 2026-10-07 18:00 +07:00 — RUN-071 — Release checkpoint corrected after PR #82
+
+- The prior STATUS recovery snapshot still listed PRs #80/#81 as the final documentation receipts and placed the PR #82 merge only in the recovery paragraph. Updated the verified-release list to record PR #82, its Actions-budget failure before any job steps, exact-head local validation, and the unchanged serving deployment.
+- Removed a stale hard-coded local branch SHA/count from recovery text. It now distinguishes the API-confirmed remote branch (`dcb69cd`) from subsequent local follow-up commits without freezing a stale local HEAD into the checkpoint.
+- `git diff --check` passed. No production deployment, GitHub write, Search Console action, or external communication occurred in this checkpoint correction.
+
+### RUN-068 follow-up — Branch snapshot refreshed — 2026-10-07 17:17 +07:00
+
+- Rechecked local Git state: clean branch head `8c15c53`; eleven commits ahead of the last API-confirmed remote campaign head `dcb69cd`. GitHub API still returned remote main `a6e6adc`, campaign branch `dcb69cd`, and no PR.
+- The normal `git push` attempt at 17:16 +07 failed before pre-push checks because `github.com` DNS resolution failed. No API-based ref update, partial PR, merge, deployment, or external action occurred.
+- Updated the checkpoint to distinguish the remote validated branch from local unpushed work. `git diff --check` passed.
+
+### RUN-067 follow-up — Campaign branch state — 2026-10-07 17:03 +07:00
+
+- Read-only GitHub API confirms remote `main` `a6e6adc`, campaign branch `dcb69cd`, and no PR. Local clean branch head is `f46978f`, nine commits ahead of the remote campaign branch; these are documentation/ledger/research changes only.
+- The latest normal `git push` attempt (16:55 +07) failed before the pre-push hook because `github.com` did not resolve. GitHub API readback works, but no API-based ref update was attempted. PR creation review window remains later at 17:53 +07.
+- No production, CMS, community, Search Console or owner-contact state changed. This is a checkpoint correction; no PR or merge is claimed.
