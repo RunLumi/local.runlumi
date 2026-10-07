@@ -75,6 +75,26 @@ Private DMs, email outreach and contact with customers need explicit destination
 
 ## 6. Content, technical SEO and GEO
 
+User refinement, 2026-10-08: apply page-specific photorealistic ImageGen
+illustrations, the original local icon family and purposeful motion to existing
+and future public pages under DESIGN.md. Each visual must support the reader's
+task, feel physically believable and be visibly disclosed as AI illustration.
+Keep inspectable product artifacts, useful original text and primary sources;
+repeated generic thumbnails and mechanically produced content are not the goal.
+Record generation provenance and check responsive delivery, reduced-motion and
+static fallbacks. Carry template changes through both Pages and the EmDash
+Worker; a Pages-only release is insufficient for live blog templates.
+
+Maintain a complete sitemap at `/sitemap.xml`: canonical home, service,
+industry, journal policy/index, populated topic archives and every currently
+published VI/EN article. Group entries clearly and add reciprocal localized
+alternates only for actually published pairs. Production reads the live EmDash
+collection; new publication and withdrawal must be reflected without a seed
+fallback. Exclude private/admin/draft/future content, noindex search, feeds and
+404 pages. Optional modification dates require a real significant-content
+update record, not a source-check date. Test sitemap completeness against built
+canonical routes and live RSS/article lists before claiming coverage.
+
 Build something worth introducing: useful guides, original checklists, scope comparisons or a small tool that actually works. Each cycle selects the highest-value improvement, not an article quota. Preserve canonical claims and real citations; use natural Vietnamese. EN translations must answer the same question accurately and receive reciprocal alternates only when genuinely published.
 
 GEO means understandable standalone answers, consistent entities, primary-source citations, accessible text and truthful visible-content/schema alignment. Do not invent an AI schema, hidden answer text, credentials or statistics. llms.txt is optional; it is not proof of citation benefit. Record actual observed citations instead of claiming that a self-assigned score measures AI visibility.
