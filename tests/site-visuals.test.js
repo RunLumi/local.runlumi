@@ -1,7 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join, relative } from 'node:path';
+import sharp from 'sharp';
 import { serviceRoutes } from '../src/services/routes.js';
 
 function allFiles(root) {
@@ -32,7 +34,12 @@ test('service and industry routes receive matching illustrated scenes and the ca
       assert.match(html,/srcset="[^"]+480w,[^"]+960w,[^"]+1440w/);
     }
   }
-  for(const route of [serviceRoutes.qr.vi,serviceRoutes.qr.en])assert.match(readFileSync(`dist${route}index.html`,'utf8'),/qr-counter-(?:vi|en)-960\.webp/);
+  for(const route of [serviceRoutes.qr.vi,serviceRoutes.qr.en]){
+    const html=readFileSync(`dist${route}index.html`,'utf8');
+    assert.match(html,/qr-counter-(?:vi|en)-960\.webp/);
+    const imageTag=html.match(/<img[^>]+src="\/photos\/qr-counter-(?:vi|en)-960\.webp"[^>]*>/)?.[0]??'';
+    assert.match(imageTag,/alt="[^"]+"/);
+  }
 });
 
 test('editorial policy and not-found pages carry disclosed, descriptive image alternatives',()=>{
@@ -55,5 +62,27 @@ test('new scroll motion stays feature-detected, low-travel and reduced-motion ga
     assert.match(css,/@supports \(animation-timeline:view\(\)\)/);
     assert.match(css,/prefers-reduced-motion:no-preference/);
     assert.match(css,/translateY\(1[0-2]px\)/);
+  }
+});
+
+test('sitewide ImageGen assets retain prompt, source and derivative hash provenance',async()=>{
+  const manifest=JSON.parse(readFileSync('docs/site-visual-assets.json','utf8'));
+  assert.equal(manifest.generator,'built-in image_gen');
+  assert.deepEqual(manifest.derivatives.widths,[480,960,1440]);
+  assert.equal(manifest.images.length,5);
+  for(const image of manifest.images){
+    assert.match(image.prompt,/Use case: photorealistic-natural/);
+    const source=readFileSync(image.source);
+    assert.equal(createHash('sha256').update(source).digest('hex'),image.originalSha256);
+    const sourceMeta=await sharp(source).metadata();
+    assert.equal(sourceMeta.width,1536);assert.equal(sourceMeta.height,1024);
+    assert.equal(image.assets.length,3);
+    for(const asset of image.assets){
+      const bytes=readFileSync(asset.path);
+      assert.equal(createHash('sha256').update(bytes).digest('hex'),asset.sha256);
+      assert.equal(bytes.length,asset.bytes);
+      const meta=await sharp(bytes).metadata();
+      assert.equal(meta.width,asset.width);assert.equal(meta.height,asset.height);
+    }
   }
 });

@@ -1,0 +1,118 @@
+{
+  "generatedDate": "2026-10-08",
+  "generator": "built-in image_gen",
+  "sourceDimensions": "1536x1024 PNG",
+  "derivatives": {
+    "format": "WebP",
+    "widths": [480, 960, 1440],
+    "quality": 78,
+    "sharpEffort": 6
+  },
+  "images": [
+    {
+      "key": "service-maps",
+      "source": "output/imagegen/service-maps-source.png",
+      "originalBytes": 2756298,
+      "originalSha256": "634cacc8c4278023c01927e80996c39c0a756ff420bab39e60a190468e53c8fd",
+      "routes": ["/dich-vu/google-maps/", "/en/services/google-maps/"],
+      "alt": {
+        "vi": "Lối vào cửa hàng nhỏ nhìn từ vỉa hè sau cơn mưa.",
+        "en": "A small neighborhood shop entrance seen from the sidewalk after rain."
+      },
+      "caption": {
+        "vi": "Ảnh minh họa bằng AI · không phải cơ sở khách hàng",
+        "en": "AI illustration · not a customer premise"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset type: service-page illustration for a local-business website in Vietnam, wide landscape 3:2. Create a single editorial photograph of a small independent Vietnamese neighborhood shop entrance viewed from the sidewalk after a light morning rain: a distinctive but unbranded deep navy-blue doorway, warm interior light, tactile stone threshold, one potted tropical plant, wet pavement catching soft daylight, neighboring storefronts gently out of focus. The exact physical entrance is the subject, suggesting why a customer needs directions to the right place without showing an app or map. Premium documentary architectural photography, eye-level 35mm lens, physically accurate perspective, real glass, metal, stone and foliage textures, calm warm-paper palette with restrained Civic Navy details, natural contrast, subtle fine-grain realism. Composition: entrance slightly right of center with clear breathing room on the left for responsive cropping. No people, no phone, no screens, no map, no signage, no legible text, no logos, no Google marks, no business name, no QR, no watermark, no fake customer result, no collage, no illustration/CGI look, no oversaturated glow. Keep the scene believable and modest rather than luxury retail.",
+      "assets": [
+        {"path":"public/photos/service-maps-480.webp","width":480,"height":320,"bytes":34244,"sha256":"77fa63594038a41c5fe4b3f7df0d755391d8db7cbd74fbf7ec04cc7eef9f4e68"},
+        {"path":"public/photos/service-maps-960.webp","width":960,"height":640,"bytes":105806,"sha256":"f2e1e2300f1ae7b70707b77fce086e5e8259a63a857a8c3b3b54d6113f533ab2"},
+        {"path":"public/photos/service-maps-1440.webp","width":1440,"height":960,"bytes":186300,"sha256":"ab6f2f33ff923ca9aa2f268181dae55c874166873746685b67ad7cfc39cf666b"}
+      ]
+    },
+    {
+      "key": "service-check",
+      "source": "output/imagegen/service-check-source.png",
+      "originalBytes": 2216914,
+      "originalSha256": "cfb6c816f57102ad85ac59b3f9bb46d616c08c678f365c4767ed287f003ea1e6",
+      "routes": ["/dich-vu/kiem-tra-hien-dien-google/", "/en/services/google-presence-check/"],
+      "alt": {
+        "vi": "Sổ trơn, giấy trắng, bút chì và chìa khóa trên quầy gỗ.",
+        "en": "A blank notebook, paper, pencil and key on a wooden counter."
+      },
+      "caption": {
+        "vi": "Ảnh minh họa bằng AI · không phải cơ sở khách hàng",
+        "en": "AI illustration · not a customer premise"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset type: local-business service-page illustration, wide landscape 3:2. A close editorial still life on the owner’s real neighborhood-shop counter: a small closed navy notebook with completely blank cover, a simple pencil, a brass key, an unbranded phone face down, and a single blank cream paper sheet; morning daylight falls across real paper fibers, oak grain and matte metal. The composition feels like a calm owner checking the facts they control before publishing, not a Google-account audit or software dashboard. Premium Vietnamese editorial photography, tactile natural materials, precise physically plausible light and shadows, warm paper with restrained Civic Navy and Lumi Blue accents, moderately shallow depth of field. Objects grouped on the right half with quiet negative space on the left; simple, believable, not staged as luxury. No people, no legible text, no handwriting, no interface, no logos, no Google marks, no ratings, no graphs, no watermark, no CGI, no collage, no invented business documents.",
+      "assets": [
+        {"path":"public/photos/service-check-480.webp","width":480,"height":320,"bytes":19092,"sha256":"97455692a0ad50013c780711ee1c148dd5b48b65449b2e551fc47f3db0dd5eae"},
+        {"path":"public/photos/service-check-960.webp","width":960,"height":640,"bytes":53264,"sha256":"1eb5e387e8852713cd6e1aeadf77ba32f20619a8bd3431065374e6c4278dfaec"},
+        {"path":"public/photos/service-check-1440.webp","width":1440,"height":960,"bytes":96196,"sha256":"cb339f33058c42e92accd260d3f4841a53bc9605c46c5a8a49da37ad223db009"}
+      ]
+    },
+    {
+      "key": "service-website",
+      "source": "output/imagegen/service-website-source.png",
+      "originalBytes": 1874800,
+      "originalSha256": "e9d87ec3225941c699d7ab97a79a02927d105f8313ea6b03833e609303dcabb4",
+      "routes": ["/dich-vu/website-doanh-nghiep-dia-phuong/", "/en/services/local-business-website/"],
+      "alt": {
+        "vi": "Laptop và điện thoại với màn hình trống trên quầy gỗ.",
+        "en": "A laptop and phone with blank screens on a wood counter."
+      },
+      "caption": {
+        "vi": "Ảnh minh họa bằng AI · không phải website hay cơ sở khách hàng",
+        "en": "AI illustration · not a customer site or premise"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset type: local-business website service-page illustration, wide landscape 3:2. A beautifully realistic small Vietnamese service business counter prepared for opening: an unbranded compact laptop and smartphone resting side by side on a warm oak counter, both screens softly lit with plain warm-white blank surfaces and no interface or text, a neat blank paper service menu held by a simple navy clip, one ceramic cup pushed to the far edge, tactile real glass and brushed metal. The physical devices are supporting props; do not make a fake website screenshot. Premium contemporary editorial product photography, close three-quarter angle, natural side-window light, restrained Civic Navy details, soft Paper-colored background, delicate but physically accurate reflections, understated high-end clarity. Compose the devices in the right half with clear calm negative space on the left. No people, no hands, no logos, no readable text, no UI, no charts, no fake customer claim, no Google marks, no QR, no watermark, no CGI, no collage, no oversaturated light.",
+      "assets": [
+        {"path":"public/photos/service-website-480.webp","width":480,"height":320,"bytes":15270,"sha256":"e740de82d4f4388b94d6edb12b8f96e85bbb1f2ef9d5b3bda5de4bdd29a121ee"},
+        {"path":"public/photos/service-website-960.webp","width":960,"height":640,"bytes":37738,"sha256":"995ca636d39f48c78c5f761197221f124a14ddf094fdc8bb32bb424404f015a3"},
+        {"path":"public/photos/service-website-1440.webp","width":1440,"height":960,"bytes":62550,"sha256":"71556dc710f072d15749ee194cefcea14f69e22c60ed6773f7cd95bd7d02ff4e"}
+      ]
+    },
+    {
+      "key": "editorial-method",
+      "source": "output/imagegen/editorial-method-source.png",
+      "originalBytes": 2168577,
+      "originalSha256": "94587f8d17f6e4c18430cec18c9115df47a730070f9c6ae214717f22906c8558",
+      "routes": ["/blog/about/", "/en/blog/about/"],
+      "alt": {
+        "vi": "Sổ trơn, giấy trắng và bút chì trên bàn biên tập có nắng.",
+        "en": "A blank notebook, paper and pencil on a sunlit editorial desk."
+      },
+      "caption": {
+        "vi": "Ảnh minh họa biên tập bằng AI · không phải tư liệu công việc thực tế",
+        "en": "AI-generated editorial illustration · not a record of actual work"
+      },
+      "prompt": "Use case: photorealistic-natural. Asset type: editorial policy-page illustration, wide landscape 3:2. A quiet, lived-in Vietnamese editor's desk in morning window light: an open blank notebook with unmarked cream pages, a sharpened graphite pencil, one folded blank sheet, a small ceramic cup and the blurred edge of a laptop with its screen completely dark. The composition should suggest careful source-checking and revision through tactile ordinary tools, not a staged agency office or proof of actual research. Premium documentary still-life photography, natural daylight, nuanced shadows, very realistic paper grain, wood, ceramic and linen textures, warm paper palette with discreet Civic Navy detail, restrained editorial framing with clear negative space. No people, no readable text, no handwriting, no printed source documents, no logos, no business identity, no fake charts, no browser UI, no watermark, no CGI, no collage, no excessive lens flare.",
+      "assets": [
+        {"path":"public/photos/editorial-method-480.webp","width":480,"height":320,"bytes":18134,"sha256":"e1579d02322252f65f8fb21eca940e7c09bf0c478cc170dca24cf6a45532ab6f"},
+        {"path":"public/photos/editorial-method-960.webp","width":960,"height":640,"bytes":46648,"sha256":"3a5cba4fb4a614f25f91a7f4a23459f49a38e60eed8e1fc92cd53ca7ce359bd2"},
+        {"path":"public/photos/editorial-method-1440.webp","width":1440,"height":960,"bytes":79428,"sha256":"3e24f0076420cb5a58f53899ee79c457d5c02c2f6f676050989d8225acc8fb5c"}
+      ]
+    },
+    {
+      "key": "missing-route",
+      "source": "output/imagegen/missing-route-source.png",
+      "originalBytes": 2908864,
+      "originalSha256": "0fb3a861b24db41a8a8b0c61354be2b88262c3aef6c1b29a53c67737a93a96e4",
+      "routes": ["/404.html"],
+      "alt": {
+        "vi": "Một con ngõ yên tĩnh rẽ khuất sau dãy nhà thấp trong ánh nắng sau mưa.",
+        "en": null
+      },
+      "caption": {
+        "vi": "Ảnh minh họa bằng AI · không phải địa chỉ doanh nghiệp cụ thể",
+        "en": null
+      },
+      "prompt": "Use case: photorealistic-natural. Asset type: 404 wayfinding illustration for a warm editorial local-business website, wide landscape 3:2. A real quiet lane in contemporary Vietnam seen at a gentle corner where the sidewalk turns out of view; a small cream wall, dark navy painted door set back on one side, potted tropical plants and wet stone pavement after rain, morning light opening around the bend. Compose as a subtle visual metaphor for a route that changed, not a specific identifiable address or lost customer. Premium architectural documentary photography with tactile masonry, foliage, reflections and natural grain; grounded perspective, understated, cinematic but believable; warm Paper, deep navy shadows and a restrained blue door. No people, no phone, no signage, no arrows, no map, no readable text, no business name, no logos, no watermark, no fantasy, no CGI, no collage, no dramatic fog or neon. Preserve quiet open space for adjacent 404 copy.",
+      "assets": [
+        {"path":"public/photos/missing-route-480.webp","width":480,"height":320,"bytes":42018,"sha256":"cea69873a71a84dc17f8240e2fc37736b5377cee3327cd95cf5f93241a4b6bcb"},
+        {"path":"public/photos/missing-route-960.webp","width":960,"height":640,"bytes":130728,"sha256":"656540baeada02b455886a29d696e54ce399eff8695b20fb753013bc3639c0ba"},
+        {"path":"public/photos/missing-route-1440.webp","width":1440,"height":960,"bytes":226284,"sha256":"a7fb2c687b245b3552d7f04094d87f2b3f4b41014423a5f62f6c4099d96144c1"}
+      ]
+    }
+  ]
+}
