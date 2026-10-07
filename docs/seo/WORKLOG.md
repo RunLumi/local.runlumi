@@ -665,3 +665,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Read the public r/smallbusiness post “Why can’t I get a review?” and current subreddit About rules. The post asks respondents why customers do not leave reviews after being asked; the thread carries the moderator reminder against market-research questions, and rule 5 prohibits using the subreddit as a focus group for offering development.
 - Skipped candidate CA-007 without drafting, replying, voting, linking, or contacting anyone. No permission was inferred or consumed. The page was not used as a Lumi customer-demand sample; no comment text or personal identity was retained.
 - Report: [RUN-057 rule-fit note](research/2026-10-07-review-friction-thread-skip.md). Reddit contribution cap is already consumed this week. Next allowed review remains read-only on 2026-10-13; the exact-host Search Console review remains scheduled on/after 2026-10-14.
+
+
+## 2026-10-07 15:44 +07:00 — RUN-058 — Confirm sitemap submission scope, no write
+
+- Revalidated remote main at `a6e6adc`, latest serving deployment `08a3ee8d` / run `37587273670`, and current campaign authorization state. The shared SSD checkout remains dirty and was left untouched.
+- Inspected the fresh local static build's `dist/sitemap.xml` for serving source `4dd5920`: 38 `<loc>` URLs, all on `https://local.runlumi.app`, zero `/data` paths. This corroborates the prior production release verifier and historical 38-page crawl; it is not an indexing or Search Console observation.
+- Exact proposed action remains one submission of `https://local.runlumi.app/sitemap.xml` to `sc-domain:local.runlumi.app`. The write requests Google process the public URL set; it does not promise indexing/rank/traffic and does not change billing or site content.
+- No Search Console write, URL-indexing request, export or property change was performed because explicit user authorization is still pending. The on/after 2026-10-14 read-only index check remains separate. See [RUN-058 scope note](research/2026-10-07-sitemap-submission-scope.md).
