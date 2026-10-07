@@ -658,3 +658,10 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Checked current r/smallbusiness About rules: Q&A only; unsolicited advice/product promotion restrictions; rule 5 excludes market research about pain points/needs for offerings. The thread also shows an AutoModerator market-research warning. No comment, vote, follow, link, profile interaction, DM or customer contact occurred. No authorization was inferred.
 - Decision: skip CA-006. The post is a weak practitioner hypothesis about post-delivery adoption, not a customer signal or proof of training demand; no Lumi service or support scope change is justified. Report: [RUN-056 skip note](research/2026-10-07-overbuilt-website-thread-skip.md).
 - Weekly public-contribution cap is already consumed by CA-002/003/005, each a separate one-time approval. No further Reddit public contribution is planned this week. Next Reddit observation is the scheduled read-only check on 2026-10-13. Search Console sitemap submission remains unapproved; its read-only review remains scheduled on/after 2026-10-14.
+
+
+## 2026-10-07 15:38 +07:00 — RUN-057 — Review-friction thread skipped under subreddit research rules
+
+- Read the public r/smallbusiness post “Why can’t I get a review?” and current subreddit About rules. The post asks respondents why customers do not leave reviews after being asked; the thread carries the moderator reminder against market-research questions, and rule 5 prohibits using the subreddit as a focus group for offering development.
+- Skipped candidate CA-007 without drafting, replying, voting, linking, or contacting anyone. No permission was inferred or consumed. The page was not used as a Lumi customer-demand sample; no comment text or personal identity was retained.
+- Report: [RUN-057 rule-fit note](research/2026-10-07-review-friction-thread-skip.md). Reddit contribution cap is already consumed this week. Next allowed review remains read-only on 2026-10-13; the exact-host Search Console review remains scheduled on/after 2026-10-14.
