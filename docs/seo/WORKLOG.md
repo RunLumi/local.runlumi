@@ -560,3 +560,12 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - No Ads account, campaign or plan was opened or created; no billing details/settings/spend changed. No account names/IDs, credentials, screenshots or personal data were logged. Account search is not proof that no project account exists under a different name/identity.
 - Result: the 20 RUN-044 seeds remain unmeasured. No volume, target, trend, difficulty, or buyer signal is added. Receipt: [RUN-047 access check](research/2026-10-07-keyword-planner-access-check.md).
 - Next: only use Keyword Planner if the user identifies an existing project account with no billing/setup change; otherwise wait for exact-host Search Console read-only access on/after 2026-10-14. The sitemap write remains unauthorized; Reddit reply/removal checks are read-only on 2026-10-13.
+
+
+## 2026-10-07 13:04–13:06 +07:00 — RUN-048 — CRM-capable enquiry handler deployment impact
+
+- Current main is 437e7da287e8a0d0bbea55ad80e1296b673a57fd, PR #71. It is a descendant of PR #72 merge 7a20b1f, so the Keyword Planner access receipt remains on main. Shared checkout is still dirty and behind; it was not modified.
+- Read PR #71 description/files and production Deploy workflow run #82. The run completed successfully, including static build, tests, seed validation, Worker build, Pages deploy and live verifier. Deployment host: https://16798958.lumi-local.pages.dev. Verifier output explicitly passed service/industry routes, journal/feed/sitemap and anonymous private-data protections.
+- PR #71 adds an optional CRM-forwarding path for validated Lumi Local enquiries. The code description says it is disabled unless both CRM_INTAKE_URL and CRM_INTAKE_SECRET exist. Secret presence was not checked; CRM activation is unknown. No values were read or changed.
+- No live enquiry was submitted. Release verification does not prove CRM storage, consent record, referral, qualified enquiry or paid outcome. The PR description reports 56 tests and a synthetic cross-repo local D1 run; that is PR-provided evidence, distinct from the hosted release verifier.
+- Receipt: [RUN-048 CRM-capable enquiry handler release impact](research/2026-10-07-crm-intake-release-impact.md). Next: maintain the existing read-only checkpoints (Reddit Oct 13; Search Console on/after Oct 14); do not submit the sitemap or a live test enquiry without authorization.
