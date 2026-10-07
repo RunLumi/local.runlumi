@@ -343,6 +343,15 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - CA-002 remains the one authorized Reddit action, with its permission consumed; read-only reply/removal check remains due 2026-10-13 09:00 +07:00. Sitemap submission remains pending explicit human authorization.
 
 
+## 2026-10-07 07:55 +07:00 — RUN-032 — Inspect garage URL discovery state
+
+- Previous goal turn only restated the already-verified CA-002 Reddit action; no new comment authorization or public action was inferred. The shared checkout still contains unrelated user work and remains untouched.
+- In the existing authenticated Search Console property `sc-domain:local.runlumi.app`, inspected `https://local.runlumi.app/nganh/garage/`. The indexed-state report says “URL is not on Google” / “URL is unknown to Google,” with no referring sitemap/page and no prior crawl shown.
+- Ran the read-only live URL test. At 07:55:22 +07:00, Google Inspection Tool smartphone fetched the page successfully; crawl allowed and indexing allowed are both Yes; user canonical matches the inspected URL; one Breadcrumbs item is valid. Google-selected canonical awaits indexing, and discovery was not checked in the live test.
+- Evidence and boundaries: [RUN-032 garage URL inspection](research/2026-10-07-garage-url-inspection.md). One URL only; no inference about site-wide index coverage, ranking, traffic, referrals or business outcomes.
+- No sitemap or request-indexing action was taken. The dedicated property has no submitted sitemap and its report identifies no referring sitemap; submitting only `https://local.runlumi.app/sitemap.xml` remains pending explicit user authorization. The separate Search Console review remains read-only.
+
+
 ## 2026-10-07 07:43 +07:00 — RUN-031 — Align homepage salon-preview label
 
 - Previous goal turn made progress: PR #47 merged the RUN-030 release receipt to main as `e778bc3`; verified the current remote `STATUS.md` and `WORKLOG.md`. Shared checkout WIP remains untouched.
