@@ -341,3 +341,18 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Deployed exact main source `c890d33` to Cloudflare Pages Production (`lumi-local`, branch `main`) with deployment ID `ebdccc5f-7b1d-478e-9058-cb805c3d91ee`, host [ebdccc5f.lumi-local.pages.dev](https://ebdccc5f.lumi-local.pages.dev). No DNS, billing, CMS data, bindings or secrets changed.
 - `scripts/verify-release.mjs` passed on both `https://local.runlumi.app` and the Pages host: all bilingual service/industry routes, canonical/hreflang/sitemap checks, journal/feed and anonymous private-data guards. Browser readback on the custom domain shows the new answer in VI and EN. No enquiry was submitted and no ranking, traffic or commercial effect is claimed.
 - CA-002 remains the one authorized Reddit action, with its permission consumed; read-only reply/removal check remains due 2026-10-13 09:00 +07:00. Sitemap submission remains pending explicit human authorization.
+
+
+## 2026-10-07 07:43 +07:00 — RUN-031 — Align homepage salon-preview label
+
+- Previous goal turn made progress: PR #47 merged the RUN-030 release receipt to main as `e778bc3`; verified the current remote `STATUS.md` and `WORKLOG.md`. Shared checkout WIP remains untouched.
+- In the live VI/EN homepage, the salon illustration used “Đặt lịch” / “Booking” while its adjacent copy described a Zalo availability enquiry. RUN-030's single garage-design SERP showed booking as a vendor feature claim; it does not establish broader demand. Receipt: [RUN-031 homepage booking-language check](research/2026-10-07-homepage-booking-language.md).
+- Changed only the mockup labels to “Bảng giá · Hỏi lịch qua Zalo” / “Services · Ask about availability”; canonical bilingual copy updated. No booking feature or product scope added.
+- Validation and release are pending: check canonical/source parity, static and CMS builds, tests/seed, the four target widths, and live VI/EN homepage after PR/merge/deploy. No performance, ranking, conversion or enquiry result inferred.
+
+
+## 2026-10-07 07:47 +07:00 — RUN-031 local validation
+
+- On the candidate based on `e778bc3`, `npm run build` passed (42 routes), `npm test` passed (48), EmDash seed validation passed, and `npm run build:blog` passed on Node 24.19.0 with the private-output guard. `git diff --check` and exact bilingual label parity between `COPY.md` and `src/content/copy.js` pass.
+- A same-origin responsive harness rendered VI/EN homepages at 320, 375, 768 and 1440 CSS pixels. All eight combinations had no horizontal overflow, displayed the new label and excluded the old label. No enquiry was submitted.
+- The branch is a content-only candidate; production readback and the normal PR/release path remain pending. No SEO, traffic or commercial result is inferred.

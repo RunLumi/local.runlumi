@@ -39,6 +39,13 @@ Exact review invitation:
 
 No fabricated customers, ratings, testimonials or results. Illustrations are not customer proof. Contact buttons do not constitute a booking system. Do not promise ranking, traffic, leads, customers, revenue, security guarantees, 24/7 availability, or numeric speed without applicable measured evidence and clear limits.
 
+Homepage salon-preview label:
+
+- VI: **Bảng giá · Hỏi lịch qua Zalo**
+- EN: **Services · Ask about availability**
+
+This describes a customer enquiry, not online booking. The business confirms availability through its own Zalo workflow.
+
 Public information is not permission to republish customer photos or create an official site. Use authorized assets, keep prospect previews private, label them as drafts, disable real enquiry capture, and obtain owner approval before publication.
 
 
