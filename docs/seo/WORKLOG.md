@@ -514,3 +514,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - PR #64 changed only release/status documentation, but `release.yml` was configured for every push to main. GitHub run #80 rebuilt and deployed unchanged serving files as Pages ID `177da213-b426-45a3-a2d6-51af0ed34cdc`, source `1a99469`; the live verifier passed. This is a real extra deployment, not a content change.
 - Added `paths-ignore` to the production workflow for `docs/**`, Markdown, `tests/**`, and `.github/workflows/**`. Changes to `src/**`, `public/**`, `functions/**`, `server/**`, packages, build scripts and deployment config still trigger production builds. The PR validation workflow remains unchanged and continues to run for all pull requests.
 - This follows the observed deployment topology: one docs-only receipt needlessly redeployed a production site. No billing settings or check requirements were changed.
+
+
+## 2026-10-07 11:39 +07:00 — RUN-043 — PR #65 release-filter merge verified
+
+- PR #65 merged normally at main commit `77e243fdcddc147662e8783d60d1e9cdb09c2596` from exact head `79821fb99d1c0282e6f38391e06042f5452b8f3a`.
+- Hosted build run #128 passed on that exact head: static build, all 48 tests, EmDash seed validation and CMS Worker build.
+- The merged diff was limited to the release workflow, deployment documentation and campaign notes. GitHub Actions readback showed no production release run after docs-only PR #64 run #80; serving assets did not change, so no Pages deployment was required.
+- The workflow filter is now authoritative on main. A later serving-path push must still run the production workflow; this has not been separately exercised yet. Campaign remains active; CA-002 and CA-003 one-time Reddit permissions are consumed, with read-only checks scheduled 2026-10-13.
