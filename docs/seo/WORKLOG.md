@@ -601,3 +601,9 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Opened the fresh r/smallbusiness question “Pressure washing company with very few leads,” posted six hours earlier. The OP asks for near-term lead advice; visible replies already cover local groups, flyers, GBP, reply speed, commercial outreach and availability. Sidebar rules prohibit links, product recommendations, unsolicited advice, SEO shaping and business promotion; because this specific post asks for advice, prepared a no-link, no-offer response focused on testing the owner's 50-hour-workweek availability constraint and measuring quote-to-booking economics.
 - Verified the signed-in Reddit identity as `u/suoinguon`. User message “approve comment” authorizes one comment in the exact open thread only; no other thread, link, offer, follow-up or standing scope is authorized.
 - Saved exact text to `drafts/CA-005-reddit-pressure-washing-leads.md`, SHA-256 `7c5e031f212a6faa6580e7c2cb1c48a4b33b76218ffa9265819bedee5e9f2206`. Added CA-005 and set it to `submitting` before using the Reddit submit control. No submission result yet.
+
+### RUN-052 follow-up — CA-005 submitted and verified live — 2026-10-07 13:43 +07:00
+
+- Reddit displayed “Comment posted successfully.” The exact approved text is visible under `u/suoinguon`; direct permalink: https://www.reddit.com/r/smallbusiness/comments/1wzilw8/comment/pedpq5b/. The signed-in page screenshot was visually inspected. No retry was needed.
+- Updated CA-005 to `verified_live`; recorded the permalink, visible-text evidence, authorization and one-time scope consumption in both ledgers. No replies, DMs, edits, link or further promotion were made.
+- Next action is read-only reply/removal review on 2026-10-13 09:00 +07:00. Do not reply or repost without fresh authorization and a specific useful reason.
