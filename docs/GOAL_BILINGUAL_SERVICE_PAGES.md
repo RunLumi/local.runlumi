@@ -4,7 +4,7 @@
 **Primary market:** Vietnam  
 **Languages:** Vietnamese + English  
 **Production origin:** https://local.runlumi.app  
-**Updated:** 2026-10-06
+**Updated:** 2026-10-07
 
 ## Mission
 
@@ -845,7 +845,7 @@ Potentially appropriate:
 - `Organization` for RunLumi/Lumi Local identity where already established;
 - `WebSite`;
 - `Service` on genuine service pages;
-- `FAQPage` only if current Google eligibility/guidance and repository policy support it, and only for visible FAQs;
+- `FAQPage` only when a real consumer requires it, it matches visible FAQs, and current policy supports it. Google Search retired the FAQ rich-result feature in May 2026; do not add FAQPage solely to seek a Google rich result. Keep useful FAQs visible as page content. See [Google Search documentation updates](https://developers.google.com/search/updates), checked 2026-10-07.
 - `BreadcrumbList`.
 
 Do not add:

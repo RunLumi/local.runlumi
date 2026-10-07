@@ -649,3 +649,76 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Revalidated `main` at `0b2acbc559ca20a6d44f76cb75000a80933705e1`, PR #80 merged with hosted build success, and the latest Pages Deploy run `37587273670` still serving PR #79 commit `4dd5920` at `08a3ee8d.lumi-local.pages.dev`.
 - Corrected the STATUS recovery section, which had still named PR #71 as the latest code deployment, and recorded that PR #80 was documentation-only and did not deploy. Current release and RUN-054 research bullets now match the production readback and deployment history.
 - No website, CMS, Search Console, Reddit, enquiry, CRM, or production state changed in this receipt. Sitemap submission remains pending explicit human authorization; read-only Google indexing review is scheduled for on/after 2026-10-14.
+
+
+## 2026-10-07 15:35 +07:00 — RUN-056 — Provider-authored adoption thread skipped
+
+- Starting remote main remained `a6e6adc`; shared checkout remained dirty and 52 commits behind, untouched. Re-read campaign STATUS, WORKLOG and both ledgers.
+- Public read-only Reddit view exposed a fresh r/smallbusiness post by a web-service provider about a client receiving an overbuilt digital system and not knowing how to use it. The post asks for customer experiences about the first months and whether help was provided. Two visible replies were provider-oriented and were not verified owner testimonials.
+- Checked current r/smallbusiness About rules: Q&A only; unsolicited advice/product promotion restrictions; rule 5 excludes market research about pain points/needs for offerings. The thread also shows an AutoModerator market-research warning. No comment, vote, follow, link, profile interaction, DM or customer contact occurred. No authorization was inferred.
+- Decision: skip CA-006. The post is a weak practitioner hypothesis about post-delivery adoption, not a customer signal or proof of training demand; no Lumi service or support scope change is justified. Report: [RUN-056 skip note](research/2026-10-07-overbuilt-website-thread-skip.md).
+- Weekly public-contribution cap is already consumed by CA-002/003/005, each a separate one-time approval. No further Reddit public contribution is planned this week. Next Reddit observation is the scheduled read-only check on 2026-10-13. Search Console sitemap submission remains unapproved; its read-only review remains scheduled on/after 2026-10-14.
+
+
+## 2026-10-07 15:38 +07:00 — RUN-057 — Review-friction thread skipped under subreddit research rules
+
+- Read the public r/smallbusiness post “Why can’t I get a review?” and current subreddit About rules. The post asks respondents why customers do not leave reviews after being asked; the thread carries the moderator reminder against market-research questions, and rule 5 prohibits using the subreddit as a focus group for offering development.
+- Skipped candidate CA-007 without drafting, replying, voting, linking, or contacting anyone. No permission was inferred or consumed. The page was not used as a Lumi customer-demand sample; no comment text or personal identity was retained.
+- Report: [RUN-057 rule-fit note](research/2026-10-07-review-friction-thread-skip.md). Reddit contribution cap is already consumed this week. Next allowed review remains read-only on 2026-10-13; the exact-host Search Console review remains scheduled on/after 2026-10-14.
+
+
+## 2026-10-07 15:44 +07:00 — RUN-058 — Confirm sitemap submission scope, no write
+
+- Revalidated remote main at `a6e6adc`, latest serving deployment `08a3ee8d` / run `37587273670`, and current campaign authorization state. The shared SSD checkout remains dirty and was left untouched.
+- Inspected the fresh local static build's `dist/sitemap.xml` for serving source `4dd5920`: 38 `<loc>` URLs, all on `https://local.runlumi.app`, zero `/data` paths. This corroborates the prior production release verifier and historical 38-page crawl; it is not an indexing or Search Console observation.
+- Exact proposed action remains one submission of `https://local.runlumi.app/sitemap.xml` to `sc-domain:local.runlumi.app`. The write requests Google process the public URL set; it does not promise indexing/rank/traffic and does not change billing or site content.
+- No Search Console write, URL-indexing request, export or property change was performed because explicit user authorization is still pending. The on/after 2026-10-14 read-only index check remains separate. See [RUN-058 scope note](research/2026-10-07-sitemap-submission-scope.md).
+### RUN-055 follow-up — PR #81 merge and remote readback recorded — 2026-10-07 15:46 +07:00
+
+- PR #81 head `014b23ef02954dfd1a1bf5b78492de0de8f03244` passed hosted build run `37588680028` and merged as `a6e6adc0a202838993dcdb69a1454c3c460c6a2e`; GitHub API confirms remote `main` equals the merge SHA.
+- The latest `Deploy production` run remains `37587273670` on serving commit `4dd5920`, host `08a3ee8d.lumi-local.pages.dev`; PR #81 changed only Markdown, so no deployment ran.
+- No new external action occurred. The exact Search Console sitemap submission remains unapproved; see [current goal gate](../GOAL_SEO_GEO_90_DAYS.md#5-channelaccount-authorization) and the Next actions list. Next read-only index check remains on/after 2026-10-14.
+
+### RUN-057 checkpoint cleanup — 2026-10-07 15:47 +07:00
+
+- Revalidated campaign STATUS after adding the two skipped Reddit candidates. Removed a numbering gap in the “Next actions” list left by the earlier consolidation of the CA-002/CA-003/CA-005 read-only review into one item. No scheduled date, scope or authorization changed.
+
+## 2026-10-07 15:50 +07:00 — RUN-059 — Defer optional sitemap submission after link-graph check
+
+- Revalidated remote main `a6e6adc`; the shared checkout remains dirty and untouched. Retrieved official current Google Search Console Sitemaps report and Search Central sitemap guidance.
+- Google says a site of about 500 pages or fewer whose pages are all reachable from homepage links probably does not need the Sitemaps report; submitting a sitemap is a hint, not a crawl/index guarantee. The report may still expose fetch/parse errors and only lists sitemaps submitted through the report/API.
+- Built-site audit on the unchanged serving source `4dd5920` confirmed 38 sitemap URLs, all on `local.runlumi.app`, zero `/data` URLs, all 38 reachable from the homepage by internal anchor links, and `public/robots.txt` already references the sitemap.
+- Decision: defer the optional Search Console sitemap write. No sitemap or URL Inspection request, property setting, export, analytics action or billing change occurred. Revisit only after the scheduled read-only index/discovery check on/after 2026-10-14 if a material discovery problem remains; obtain explicit authorization before any write.
+- Report: [RUN-058 sitemap utility assessment](research/2026-10-07-sitemap-submission-scope.md). This changes the recommendation; it does not establish current Google index coverage.
+
+
+## 2026-10-07 16:04 +07:00 — RUN-060 — Bounded community discovery, no candidate
+
+- Starting remote main remains `a6e6adc`; shared SSD checkout is dirty and untouched. Read current campaign state and both community ledgers.
+- Ran one focused public-search pass across local-service website/lead discussions. The surfaced results were either about a month old but provider-authored (`r/webdesign`), several months old with a service-provider tool promotion in the snippet (`r/growmybusiness`), or about three months old (`r/localseo`). Full candidate threads/rules were not reviewed because none met freshness and audience-fit gates. Links and original paraphrases are in [RUN-060 discovery note](research/2026-10-07-community-channel-discovery.md).
+- No candidate action, draft, vote, reply, account interaction, link or private contact was created. Search-result snippets are not treated as owner demand or a permission grant. Reddit one-time scopes and this week's public-contribution cap remain consumed.
+- Next authorized work remains the read-only Reddit moderation/reply check on 2026-10-13 09:00 +07:00 and exact-host Search Console read-only review on/after 2026-10-14; no sitemap/URL submission.
+
+
+## 2026-10-07 16:05 +07:00 — RUN-061 — PSI lab sample and blocked Cloudflare beacon
+
+- Ran one read-only PSI report for the deployed local-business website page. Mobile Lighthouse 13.5.0 / emulated Moto G Power / slow 4G: Performance 95, Accessibility 100, Best Practices 92, SEO 100, Agentic Browsing 3/3; FCP/LCP 2.1s, TBT 0ms, CLS 0, Speed Index 4.1s. PSI field panel said No Data; this is one lab sample, not field CWV.
+- Render-blocking insight estimated 1,030ms savings (unscored); diagnostics listed 4KiB JS minification, 10KiB unused CSS and one long task. No source optimization was justified from one run.
+- Best Practices console audit reported a Cloudflare Insights `beacon.min.js` load blocked by the page CSP (`script-src 'self'`). A live browser DOM readback shows the beacon script tag; repository/build search found none. Cloudflare's official docs say Pages Web Analytics can inject a script and that CSP must allow it for it to execute. This indicates a likely platform-injected tag, but the Cloudflare setting itself was not inspected.
+- No analytics was enabled, no CSP widened, and no Cloudflare dashboard setting, site code, user data or forms were changed. Record the discrepancy for owner review before any future analytics/configuration decision. Report: [RUN-061 PSI snapshot](research/2026-10-07-psi-service-page-snapshot.md).
+
+## 2026-10-07 16:20 +07:00 — RUN-062 — Live bilingual service-page review
+
+- Revalidated the isolated campaign branch `codex/seo-run056-reddit-market-research-skip` at `0b27dea`; shared SSD checkout remains dirty and 52 commits behind, untouched. An origin dry-run failed because `github.com` could not resolve; no remote state was inferred from that failure.
+- Read the current public VI and EN local-business website service pages. Both expose one localized H1, title/description, self-canonical, reciprocal `vi-VN`/`en-VN`/`x-default`, and all inspected fragment links resolve. Live price/credit/renewal and Google, booking, store and CRM exclusions match the current contracts. JSON-LD has Organization, WebSite, Service and BreadcrumbList without fabricated ratings/reviews.
+- Checked the current Google Search documentation updates page. It states that FAQ rich results are no longer shown in Google Search (the feature docs were removed June 12, 2026). The service page has visible FAQs but no FAQPage JSON-LD. Kept that omission; no markup, page or copy change was warranted.
+- Used the installed content-quality auditor only as a checklist, not as a numerical score: its version 9.1 instruction to add FAQPage as an SEO feature is stale against the current Google guidance, and the authority dimension lacks required third-party evidence. A score would not prove search or business outcomes.
+- No production, CMS, Google, analytics, form or external community state changed. Report: [RUN-062 live review](research/2026-10-07-service-page-live-review.md). Search Console indexing, field CWV, rankings, AI citations, referrals, enquiries and sales remain unknown.
+
+## 2026-10-07 16:26 +07:00 — RUN-063 — Google AI Search measurement update
+
+- Re-read the active goal, status, worklog and channel/action ledgers. The three one-time Reddit permissions remain consumed; the next observation is read-only on 2026-10-13. Exact-host Search Console review remains scheduled on/after 2026-10-14.
+- Reviewed current official Google AI Search and Search Console documentation. Search eligibility still depends on indexing and snippet eligibility; no special schema/llms.txt is required. The Search generative AI control rolled out worldwide and can be read in Search Console; it applies to AI Overviews/AI Mode and can inherit from a parent. Did not inspect or change the live setting in this run.
+- Google says its dedicated Search Generative AI performance report rolled out worldwide by 2026-08-31. It reports impressions for AI Overviews/AI Mode by page/country/date/device and supports Web text/multimodal types. The report documentation does not list query or click dimensions; absence may mean too few impressions or exclusion. No report or setting was read for Lumi's property, so those states remain unknown.
+- Updated the scheduled Oct 14 read-only checklist to include the exact-host control and report while preserving the no-write boundary. Added [RUN-063 research note](research/2026-10-07-google-ai-search-measurement-update.md). No production, analytics, Search Console or community action occurred.
+- Current local volume check: system data volume reports 551 MiB available while at 100% capacity; SSD has 778 GiB available. GitHub lookup still fails on hostname resolution. This change remains local and uncommitted; shared dirty checkout was not touched.
