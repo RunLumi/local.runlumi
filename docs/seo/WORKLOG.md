@@ -316,3 +316,19 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - In Search Console, exact property `sc-domain:local.runlumi.app` still showed “Processing data, please check again in a day or so” on both Pages and Links reports. No rows or counts were available. On parent property `sc-domain:runlumi.app`, the Links report listed reddit.com with 2 external links and 1 target; drilling into it showed target `https://runlumi.app/`, not CA-002's `https://local.runlumi.app/en/`. This does not verify the campaign comment as a link to Lumi Local or establish referral visits.
 - Receipt: [RUN-029 Search Console follow-up](research/2026-10-07-search-console-links-follow-up.md). Read-only browser observation only: no export, sitemap submit, URL inspection request, or property change. No indexing, traffic, referral, or business outcome inferred.
 - Next: leave sitemap submission pending the user's explicit authorization; check CA-002 once for replies/removal on 2026-10-13 09:00 +07:00, without replying absent new authorization. Recheck exact-host GSC reports on a later review rather than repeatedly polling processing states.
+
+
+## 2026-10-07 07:05 +07:00 — RUN-030 — Clarify auto-repair booking scope
+
+- Previous goal turn made progress: RUN-029 merged as PR #45 and was read back on remote main as `71293a1`; current base is that exact commit. The shared checkout contains user WIP and remains untouched.
+- Re-read current action/channel ledgers. CA-002 remains the single prior `verified_live` Reddit comment with its scope consumed; no Reddit check, reply, repeat, or new channel action was performed. Its scheduled read-only follow-up remains 2026-10-13 09:00 +07:00.
+- In one signed-in Google Search session (`hl=vi`, desktop screenshot 1265×712 image pixels; CSS viewport/location controls not measured), `website gara ô tô bảng giá dịch vụ` mostly returned consumer-facing garage price lists. A tighter query, `thiết kế website gara ô tô`, returned auto-repair website-design vendors/templates; the displayed AI Overview highlighted online booking. This small, personalized sample establishes neither volume nor willingness to pay. Receipt: [RUN-030 garage intent check](research/2026-10-07-garage-booking-intent.md).
+- Read the live VI garage page and existing service-page copy. The page already describes owner-confirmed repair scope and Call/Zalo contact, and discloses that its illustration is not a real booking; its FAQ did not directly answer whether Starter includes online booking. Added a matching VI/EN FAQ and the same bilingual copy to `COPY.md`. No calendar, reservation or workshop capability was added.
+- Checks and release are pending: run exact-head static/CMS builds, existing tests and seed validation; verify both rendered routes and then PR/merge/deploy under the existing release path. Do not claim this clarification changed search rankings, enquiries or revenue.
+
+
+## 2026-10-07 07:20 +07:00 — RUN-030 local validation
+
+- On the candidate based on `71293a1`, `npm run build` passed (42 routes), `npm test` passed (48), EmDash seed validation passed, and `npm run build:blog` passed on Node 24.19.0 with its private-output guard. No CMS data or production service was changed.
+- Rendered the generated VI/EN garage pages in a same-origin responsive harness. At 320, 375, 768 and 1440 CSS pixels, each frame reported the requested viewport width, exposed the new bilingual FAQ answer, and had no horizontal document overflow (scroll widths 305/320, 360/375, 753/768 and 1425/1440). No enquiry form was submitted.
+- `git diff --check` and exact string alignment between `COPY.md` and `src/services/content.ts` pass. The candidate is not yet merged or deployed; create a focused PR and read back both locales after the authorized release path.

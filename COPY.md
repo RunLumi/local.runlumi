@@ -58,6 +58,15 @@ The VI `/blog/` and EN `/en/blog/` use the same offer and exact CTA, imported fr
 
 ## Service and industry pages
 
+Auto-repair appointment FAQ:
+
+- VI question: **Khách có đặt lịch sửa xe trực tiếp trên website không?**
+
+  Answer: Không. Khách xem hạng mục sửa, giờ và chỉ đường, rồi bấm Gọi/Zalo để hỏi. Garage tự xác nhận khả năng nhận xe, thời gian và báo giá sau khi hiểu công việc. Starter không có lịch đặt chỗ trực tuyến hay chức năng giữ chỗ.
+- EN question: **Can customers book an auto repair appointment on the website?**
+
+  Answer: No. Visitors can review repair categories, hours and directions, then call or open Zalo to ask. The garage confirms whether it can take the vehicle, timing and pricing after understanding the job. Starter does not provide an online booking calendar or reservation feature.
+
 Localized service/industry content is maintained in src/services/content.ts with the route map in src/services/routes.js. Page-intent CTAs follow docs/GOAL_BILINGUAL_SERVICE_PAGES.md: Check my business / Kiểm tra business của tôi for public checks, Show me the Trust Kit for my business / Xem Trust Kit cho business của tôi for QR, and the canonical preview CTA for websites/industries. All use EnquiryForm.astro and /api/enquiries. Only allowlisted source, locale, intent and offer context is forwarded to intake; no third-party analytics is added. These pages preserve the offer and Google/review boundaries above.
 
 ## QR service-page imagery — 2026-10-06

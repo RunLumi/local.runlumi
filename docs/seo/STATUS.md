@@ -35,6 +35,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - [Gift-shop scope signal](research/2026-10-06-giftshop-scope-signal.md): one international thread led to useful exclusions, not Vietnam demand.
 - [Vietnam community scan](research/2026-10-06-vietnam-community-scan.md) and [fresh recheck](research/2026-10-07-community-recheck.md): no suitable recent Vietnamese owner discussion found; vendor/stale retail content not treated as demand.
 - [RUN-029 Search Console follow-up](research/2026-10-07-search-console-links-follow-up.md): exact-host Pages and Links remain processing; parent-property Reddit link data point to the apex domain and cannot validate CA-002.
+- [RUN-030 garage intent check](research/2026-10-07-garage-booking-intent.md): a tighter garage-design query showed online booking among competitor claims; the candidate adds a VI/EN Call/Zalo enquiry and no-calendar FAQ. Static build, 48 tests, seed validation, CMS build and four-width local FAQ checks pass; it is not deployed yet. One personalized SERP sample; no demand or ranking inference.
 
 ## Next actions
 
