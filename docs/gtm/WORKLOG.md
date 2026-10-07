@@ -22,3 +22,11 @@ Append-only, PII-free campaign operations log. Read recent entries before any ne
 - **Run:** `gtm-goal-prompt-2026-10-07`; status remains `complete` for documentation scope.
 - **Proof:** 11 Markdown files checked; 57 relative links resolved; all three CSV templates remain header-only; whitespace/final-newline checks and `git diff --check` passed.
 - **External actions:** none. The repo checkout remains 16 commits behind `origin/main`; unrelated local WIP was preserved and not synchronized.
+
+## 2026-10-07 — Facebook method-permission recheck
+
+- **Scope:** read current platform-method gate after the repository instructions explicitly authorized a bounded pilot on the existing Facebook account. This did not open a fanpage/inbox, create a prospect, or send contact.
+- **Evidence:** Meta’s Facebook Help scraping article retrieved on 2026-10-07 defines automated collection from sites/interfaces built for people as scraping and describes enforcement against unauthorized collection. The official Facebook Terms endpoint returned a temporary-block/slow-down page during the source check, so the current terms text could not be verified through that route.
+- **Decision:** user authorization for an account/scope does not itself prove Meta allows agent-driven browser collection. Leave `policy_gate=policy_unverified` for automated fanpage discovery/contact; do not continue Facebook UI collection or send. No account restriction is inferred from the web retrieval message.
+- **Storage/duplicate gate:** the campaign templates still state no approved private prospect/action ledger is configured. Do not put lead/page identifiers in Git. `docs/seo/GOAL_PROMPT.md` remains a planning prompt, not an activated execution ledger.
+- **Next:** continue owned-site/Search Console read-only work; revisit Facebook only after the exact automated method permission and private storage/basis gates are evidenced. No policy workaround was attempted.
