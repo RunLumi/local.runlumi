@@ -22,7 +22,7 @@ export const copy = {
       title:'Nếu đây là cơ sở của bạn?',
       intro:'Một salon cần giới thiệu dịch vụ khác với một gara. Các mẫu dưới đây cho thấy cách Lumi sắp xếp thông tin để khách dễ xem và liên hệ.',
       items:[
-        ['Salon & Spa','Mộc Beauty','Bảng giá · Đặt lịch · Nhắn Zalo','Cho khách xem liệu trình, mức giá và không gian trước khi nhắn Zalo hỏi lịch.'],
+        ['Salon & Spa','Mộc Beauty','Bảng giá · Hỏi lịch qua Zalo','Cho khách xem liệu trình, mức giá và không gian trước khi nhắn Zalo hỏi lịch.'],
         ['Garage ô tô','Minh Phát Auto','Sửa chữa · Cứu hộ 24/7 · Gọi ngay','Hotline cứu hộ khẩn cấp, chỉ đường vào xưởng và các gói bảo dưỡng hiện ngay đầu trang.'],
         ['Điện lạnh & HVAC','An Tâm Cooling','Lắp đặt · Bảo trì · Báo giá tận nơi','Nêu rõ hạng mục sửa chữa, cách tính phí và khu vực phục vụ để khách biết cần hỏi gì khi gọi.']
       ]
@@ -166,7 +166,7 @@ export const copy = {
       title:'Picture your business here.',
       intro:'A salon and a garage have different things to explain. These concepts show how Lumi organizes the details customers need before getting in touch.',
       items:[
-        ['Salon & Spa','Mộc Beauty','Services · Booking · Direct Zalo','Show treatments, prices and the space before customers message you on Zalo to ask about availability.'],
+        ['Salon & Spa','Mộc Beauty','Services · Ask about availability','Show treatments, prices and the space before customers message you on Zalo to ask about availability.'],
         ['Garage & Auto','Minh Phát Auto','Repairs · Roadside 24/7 · Call now','Emergency hotline, GPS directions, and service packages stay front and center.'],
         ['HVAC & Cooling','An Tâm Cooling','Install · Maintain · On-site quotes','Explain the work, how pricing works and the areas you serve, so customers know what to ask when they call.']
       ]
