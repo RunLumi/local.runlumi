@@ -36,11 +36,14 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - PR #64 was a documentation-only release receipt; its push still triggered a production deployment with unchanged serving files: Pages ID `177da213-b426-45a3-a2d6-51af0ed34cdc`, source `1a99469`. Run #80 passed the live verifier. PR #65 filters future docs/test/workflow-only pushes from production deploys while retaining PR validation and serving-source releases.
 - PR #65 merged at `77e243f` after hosted build run #128 passed (static build, tests, EmDash seed validation and Worker build). The documentation/workflow-only merge did not trigger a new production deployment; serving files remain at PR #63 deployment `3ab6c4b8`.
 - PR #69 refreshed the authenticated `/data/` strategy panel to reflect 20 prepared but unmeasured seeds, RUN-045 snapshots and both consumed Reddit scopes. Hosted build #132 and production deploy/verifier run #81 passed; main is `2a62c7d`, Pages host `16cc6441.lumi-local.pages.dev`. Signed-in browser readback shows the new text; the live verifier passed anonymous `/data/` and CSV protection. No source metrics or customer-facing copy changed.
+- PR #71 / Pages deployment `16798958` (run #82, main `437e7da`): deployed an optional CRM-forwarding path for validated Lumi Local enquiries. The release verifier passed route, feed, sitemap and anonymous `/data/` checks. CRM secret activation and live delivery remain unknown; no test enquiry was sent.
 - RUN-033 / EmDash publication (2026-10-07): the VI/EN business-location guide now explains how to share a Google Maps directions link and verify its destination against the owner-confirmed entrance. Both pages were read back live with the new source link and 2026-10-07 source-check date; canonical/alternates, sitemap and RSS were verified. This was a CMS content publication, not a Pages code deployment.
 - Exact merged heads passed local static/CMS builds, 48 tests, seed validation and release verifier. Hosted workflows failed before steps due Actions budget; no hosted Linux pass. CMS Worker/editorial data were not changed.
 - PR #31 and PR #32 record release/access state; PR #33 records the bounded Vietnam scan.
 
 ## Current evidence
+- [RUN-048 CRM-capable enquiry handler release impact](research/2026-10-07-crm-intake-release-impact.md): PR #71’s deployed handler forwards validated Lumi enquiries only if both optional Pages secrets are configured. The release passed the public route/private-data verifier, but secret presence and live CRM delivery remain unknown. No live enquiry was sent, so leads and paid outcomes remain unknown.
+
 
 - [RUN-047 Keyword Planner access check](research/2026-10-07-keyword-planner-access-check.md): the signed-in Google Ads selector returned zero matches for “Lumi Local”; no account was selected and no billing/campaign action occurred. This does not rule out a differently named account. The RUN-044 seeds remain unmeasured.
 
@@ -81,7 +84,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 
 ## Recovery
 
-Read this checkpoint, goal, worklog and both CSVs before external actions. Inspect uncertain outcomes before retrying. Shared checkout has unrelated `docs/blog/checkpoint.md` WIP; preserve it. Latest Pages code deployment is `3ab6c4b8` from main `33df994`; the VI/EN EmDash guides remain live. RUN-040 and RUN-041 record publication, responsive verification and release evidence. No temporary dev server is active.
+Read this checkpoint, goal, worklog and both CSVs before external actions. Inspect uncertain outcomes before retrying. Shared checkout has unrelated `docs/blog/checkpoint.md` WIP; preserve it. Latest Pages code deployment is `16798958` from main `437e7da` (PR #71); PR #69's protected dashboard text is included. CRM forwarding activation remains unverified and no live form test was sent. The VI/EN EmDash guides remain live; see RUN-040/041 for publication and responsive evidence. No temporary dev server is active.
 
 
 ## RUN-023 — direct Facebook/Zalo answer refinement
