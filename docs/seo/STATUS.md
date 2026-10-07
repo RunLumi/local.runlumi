@@ -6,7 +6,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 
 - Activated by human `/goal` on 2026-10-06. Reviews: day 30 2026-11-04; day 60 2026-12-04; day 90 2027-01-04.
 - CA-001 was skipped as redundant. CA-002 was approved and publicly verified once by u/suoinguon in the designated r/smallbusiness Q4 promotion thread: [permalink](https://www.reddit.com/r/smallbusiness/comments/1wwpjlw/comment/pe8nwi9/). That one-comment authorization is consumed. No follow-up reply/repost scope.
-- CA-003 is a drafted no-link factual reply to a new r/smallbusiness question about Google profile edits. Current thread rules and Google sources were checked, but CA-002’s scope does not cover this thread; nothing was posted. A separate one-time approval is required. See [RUN-035 thread note](research/2026-10-07-reddit-google-profile-edits-thread.md).
+- CA-003 was approved separately and posted once as the exact no-link draft by u/suoinguon in the new r/smallbusiness Google Business Profile edits thread. Reddit confirmed success; the full comment is visible at [permalink](https://www.reddit.com/r/smallbusiness/comments/1wzbnag/comment/pecqfev/). This one-time authorization is consumed; no reply/repost scope. Read-only check on 2026-10-13. See [RUN-035 thread note](research/2026-10-07-reddit-google-profile-edits-thread.md) and RUN-039 in the worklog.
 - Next read-only check: 2026-10-13 09:00 +07:00 for replies/removal.
 - Weekly heartbeat creation was rejected by automatic approval review; explicit scheduling authorization remains unanswered. No automation configured.
 - GSC Wizard remains unconnected. See [RUN-026 Search Console snapshot](research/2026-10-07-search-console-snapshot.md): read-only evidence on `sc-domain:local.runlumi.app`: its sitemap list is empty; homepage and core service URLs are unknown to Google despite passing live fetch tests. The parent property host-filtered 7-day report showed 0 clicks/0 impressions through 2026-10-04, only about two days after custom-domain attachment. No sitemap or URL-indexing write was submitted; broad index coverage, referrals, enquiries and paid outcomes remain unknown.
@@ -53,14 +53,14 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - [RUN-036 classification review](research/2026-10-07-maps-directions-serp-and-content-update.md#follow-up-classification-review--run-036): two embed/how-to terms now score as educational candidates, not offer-adjacent; this changes a heuristic, not measured intent or demand.
 - [RUN-036 classification release](research/2026-10-07-keyword-classification-release.md): PR #55 deployment and production privacy verification.
 - [RUN-038 directions AI Overview](research/2026-10-07-directions-ai-overview.md): one dated Vietnamese AI Overview sample; source list and limits recorded without inferring site-wide visibility.
-- [RUN-035 Reddit thread review](research/2026-10-07-reddit-google-profile-edits-thread.md): a fresh public question is a candidate for a source-backed, no-link reply; CA-003 remains `drafted` pending explicit approval.
+- [RUN-035 / RUN-039 Reddit thread review and outcome](research/2026-10-07-reddit-google-profile-edits-thread.md): the source-backed no-link CA-003 reply was separately approved and verified live at its permalink; one-time scope is consumed.
 
 ## Next actions
 
 1. On 2026-10-13, read-only check CA-002 for replies/removal; do not reply without new authorization.
 2. RUN-026 found no sitemap submitted in the dedicated GSC property. Submit `https://local.runlumi.app/sitemap.xml` only after explicit human authorization; until then, leave Google-side indexing untouched.
 3. On or after 2026-10-14, read the index/discovery state once for the garage page and the updated business-location guide; keep Search Console read-only and scoped to `local.runlumi.app`. Submit `https://local.runlumi.app/sitemap.xml` only after explicit human authorization. GSC Wizard remains unconnected. Add Chrome DevTools MCP before laboratory performance traces; avoid repetitive searches and quota-driven posts.
-4. CA-003 requires one-time human approval for the exact new Reddit thread and draft; do not post if approval is not given.
+4. On 2026-10-13, read-only check CA-003 for replies/removal alongside CA-002; do not reply or repost without separate authorization.
 
 ## Recovery
 
