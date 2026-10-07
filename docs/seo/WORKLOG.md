@@ -352,6 +352,18 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - No sitemap or request-indexing action was taken. The dedicated property has no submitted sitemap and its report identifies no referring sitemap; submitting only `https://local.runlumi.app/sitemap.xml` remains pending explicit user authorization. The separate Search Console review remains read-only.
 
 
+## 2026-10-07 08:12 +07:00 — RUN-033 — Clarify sharing owner-confirmed directions
+
+- Previous goal turn made progress: RUN-032 and its report were merged in PR #50; refreshed the isolated clone to current main `ce3950f`. The shared checkout remains dirty with unrelated work and untouched.
+- Re-read the private authenticated keyword dashboard: source remains a historical Sep 2025–Aug 2026 export, targeting location unknown, with zero organic observations. `tích hợp google map vào website` is estimated at 10 searches/month in that file; these settings and estimates do not establish current or unique demand.
+- Manually inspected three current Google Search queries in Vietnamese with `hl=vi`, `gl=vn`, `pws=0`; UI declared results non-personalized but could not determine exact location. The two embed variants shared six of eight visible first-page organic domains and were mostly how-to/tutorial results. The store-directions query mixed Google’s official route-sharing instructions with profile-setup and review-QR results. This supports one helpful section in the existing guide, not a separate Maps landing page or a commercial-intent claim. Evidence and representative URLs: [RUN-033 SERP/content report](research/2026-10-07-maps-directions-serp-and-content-update.md).
+- Verified Google’s official VI and EN directions-sharing instructions at `support.google.com/maps/answer/7101463`; on desktop they describe Directions → select a route → Share → Send a link → Copy link. The existing published guide only advised readers to test a directions link, so its current revision had a real answer gap.
+- Read both current EmDash article records and public pages before editing; each showed one current revision and no visible earlier draft. Updated only the relevant section heading/paragraph, added the official Maps Help source, and changed source-check date to 2026-10-07. No title, slug, short answer, price, offer or ownership claim changed. Both revisions were saved and published through EmDash; no seed fallback or direct database access was used.
+- Public readback at 08:12 +07:00 confirmed VI and EN article text, source links and source-check date. Both routes returned 200/no-store with self-canonical and reciprocal locale alternates. The sitemap contains both existing article URLs; both locale RSS feeds return 200 and include the article.
+- `RELEASE_ORIGIN=https://local.runlumi.app node scripts/verify-release.mjs` passed after publication: bilingual service/industry pages, journal/feeds/sitemap and anonymous private-data guards. This verifier and browser readback do not prove indexing, ranking, referral traffic, citation, enquiry or paid outcome. No Google-side sitemap or indexing action was made; sitemap submission remains pending explicit authorization.
+- Next: read-only GSC discovery/index check for the garage URL and the refreshed guide once on or after 2026-10-14; no repetitive same-day polling. CA-002 Reddit remains verified at its existing permalink, with one-comment scope consumed; scheduled read-only reply/removal review remains 2026-10-13.
+
+
 ## 2026-10-07 07:43 +07:00 — RUN-031 — Align homepage salon-preview label
 
 - Previous goal turn made progress: PR #47 merged the RUN-030 release receipt to main as `e778bc3`; verified the current remote `STATUS.md` and `WORKLOG.md`. Shared checkout WIP remains untouched.
