@@ -833,3 +833,10 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Hosted build run `37642482428` failed after 1m10s with zero job steps. GitHub's visible annotation says the job was not started because an Actions budget prevents further use; the job log endpoint has no log blob. No hosted pass is claimed.
 - The PR changed only `docs/seo/STATUS.md` and the append-only `docs/seo/WORKLOG.md`; `git diff --check` passed. No application code, production deployment, Search Console, CMS, Reddit, customer contact, or account settings changed.
 - Next eligible campaign observations remain the read-only Reddit check on 2026-10-13 09:00 +07 and exact-property Search Console review on/after 2026-10-14. No new contribution, interview, sitemap submission, or other write is authorized.
+
+## 2026-10-07 22:58 +07:00 — RUN-074 — Temporary public repository state
+
+- The user said they had changed `RunLumi/local.runlumi` to public for a few days and asked that it not be reverted. GitHub API readback confirms `visibility: public`; latest `main` is `c4bafc860f695a95f6fc8a824519456a8ab85151`. No visibility mutation was made by the agent.
+- Anonymous `HEAD` requests returned 200 for `docs/LumiLocalKeywords.csv`, `docs/seo/drafts/RUN-065-owner-bridge-interview-protocol.md`, and `docs/seo/research/2026-10-07-owner-bridge-test-gate.md`. This confirms the private-by-default campaign artifacts are publicly retrievable during this user-selected window.
+- GitHub Secret Scanning API reports that secret scanning is disabled. A local read-only pattern scan over a mirror of 167 refs, 1,543 Git objects, and 714 unique blobs found no matches for selected common credential patterns. This limited scan is not proof that no secrets exist.
+- No files, repository settings, production services, Search Console, Reddit comments, or customer data were changed. Next authorized campaign observations remain Reddit replies/removal on 2026-10-13 09:00 +07 and Search Console on/after 2026-10-14.
