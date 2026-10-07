@@ -16,11 +16,20 @@ groups; those terms remain separate. Among unique terms, 1,286 lack bid ranges,
 There are no organic observations. Source SHA-256:
 `b03aa2d8e53fa856e214fb988b448c6c88f07e6cca9832d06fc43f4b94c51fa4`.
 
-Current wording rules produce 2 offer-adjacent terms, 209 educational candidates,
+Current wording rules produce 0 offer-adjacent terms, 211 educational candidates,
 36 outside-offer terms and 1,823 exclusions. These are analyst hypotheses, not
 validated buyer intent. Generic address setup is low-confidence; personal home
 address setup, purchased/requested-rating reviews and tracking queries are
 excluded. Profile verification and managed Maps SEO are outside Lumi's offer.
+
+The two historical `website` queries concern embedding Maps in a website. A
+bounded Vietnamese SERP sample on 2026-10-07 showed mostly technical/DIY iframe,
+API and how-to results for the embed variants. They are classified as
+low-confidence educational terms rather than offer-adjacent buyers: the offer
+includes owner-confirmed directions links, not a Maps Embed API or profile
+management service. One sampled SERP is not a complete difficulty audit or
+evidence of commercial intent. The historical average remains 10/mo. for each
+term; export targeting and current demand remain unknown.
 
 Only 2 unique terms contain `website`; none contain `QR`. The strategic inference
 is a research coverage gap, not absence of demand. Validate one owner-oriented

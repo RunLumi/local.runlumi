@@ -46,7 +46,18 @@ test('review manipulation and tracking are excluded; Google work is not sold as 
   assert.equal(classify('cách tạo địa chỉ nhà trên google map').fit, 'exclude');
   assert.equal(classify('cách tạo địa điểm nhà hàng trên google map').fit, 'education');
   assert.equal(classify('cách thêm địa chỉ trên google map').confidence, 'Low');
-  assert.equal(classify('tích hợp google map vào website').fit, 'core');
+  for (const keyword of ['tích hợp google map vào website', 'cách chèn google map vào website']) {
+    const row = classify(keyword);
+    assert.equal(row.fit, 'education');
+    assert.equal(row.intent, 'informational');
+    assert.equal(row.confidence, 'Low');
+    assert.match(row.reason, /sampled Maps-embedding results were mostly technical\/DIY how-to pages/);
+  }
+  assert.equal(classify('trang web bản đồ').fit, 'exclude');
+  const websiteRows = data.rows.filter(row => row.cluster === 'website');
+  assert.equal(websiteRows.filter(row => row.fit === 'core').length, 0);
+  assert.equal(websiteRows.filter(row => row.fit === 'education').length, 2);
+  assert.deepEqual(websiteRows.filter(row => row.fit === 'education').map(row => row.score), [54, 54]);
   assert.equal(classify('đánh giá google maps').confidence, 'Low');
 });
 
