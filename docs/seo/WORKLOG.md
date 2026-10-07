@@ -649,3 +649,12 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Revalidated `main` at `0b2acbc559ca20a6d44f76cb75000a80933705e1`, PR #80 merged with hosted build success, and the latest Pages Deploy run `37587273670` still serving PR #79 commit `4dd5920` at `08a3ee8d.lumi-local.pages.dev`.
 - Corrected the STATUS recovery section, which had still named PR #71 as the latest code deployment, and recorded that PR #80 was documentation-only and did not deploy. Current release and RUN-054 research bullets now match the production readback and deployment history.
 - No website, CMS, Search Console, Reddit, enquiry, CRM, or production state changed in this receipt. Sitemap submission remains pending explicit human authorization; read-only Google indexing review is scheduled for on/after 2026-10-14.
+
+
+## 2026-10-07 15:35 +07:00 — RUN-056 — Provider-authored adoption thread skipped
+
+- Starting remote main remained `a6e6adc`; shared checkout remained dirty and 52 commits behind, untouched. Re-read campaign STATUS, WORKLOG and both ledgers.
+- Public read-only Reddit view exposed a fresh r/smallbusiness post by a web-service provider about a client receiving an overbuilt digital system and not knowing how to use it. The post asks for customer experiences about the first months and whether help was provided. Two visible replies were provider-oriented and were not verified owner testimonials.
+- Checked current r/smallbusiness About rules: Q&A only; unsolicited advice/product promotion restrictions; rule 5 excludes market research about pain points/needs for offerings. The thread also shows an AutoModerator market-research warning. No comment, vote, follow, link, profile interaction, DM or customer contact occurred. No authorization was inferred.
+- Decision: skip CA-006. The post is a weak practitioner hypothesis about post-delivery adoption, not a customer signal or proof of training demand; no Lumi service or support scope change is justified. Report: [RUN-056 skip note](research/2026-10-07-overbuilt-website-thread-skip.md).
+- Weekly public-contribution cap is already consumed by CA-002/003/005, each a separate one-time approval. No further Reddit public contribution is planned this week. Next Reddit observation is the scheduled read-only check on 2026-10-13. Search Console sitemap submission remains unapproved; its read-only review remains scheduled on/after 2026-10-14.
