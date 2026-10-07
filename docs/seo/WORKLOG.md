@@ -452,3 +452,26 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 
 - Reddit showed “Comment posted successfully.” The live thread shows the full approved text under u/suoinguon; the timestamp link resolves to https://www.reddit.com/r/smallbusiness/comments/1wzbnag/comment/pecqfev/. Screenshot captured with the post and comment context visible.
 - CA-003 is `verified_live`; authorization consumed. No retry, edit, reply or follow-up was performed. Schedule read-only replies/removal check with CA-002 on 2026-10-13; any reply needs separate authorization.
+
+
+## 2026-10-07 09:56 +07:00 — RUN-040 — Mobile directions guide parity
+
+- Starting state: remote main `24d1ee2` verified in the isolated clone; shared checkout still has user WIP and was not edited. The prior continuation had explicitly published the mobile steps through authenticated EmDash; exact publication time was not captured.
+- Current signed-in editor readback shows the VI article saved and live with the Android/iPhone and desktop procedures, owner-confirmed entrance check, and source-check date 2026-10-07. Current public VI and EN pages both show the updated paragraph and Google Maps Help source. No database write, seed import or new route occurred.
+- Updated only the corresponding VI/EN static snapshot blocks, review dates and source entries to match the current published section. Editorial log and dated evidence report record the old/new claim and source.
+- Prior responsive evidence reports eight locale/width combinations without overflow. Limitation: its 320px screenshot did not show the edited section. In this continuation, explicit viewport override did not apply; fresh `innerWidth` reads were 1982 and 1280 instead of 320. Do not claim a new narrow-width visual pass.
+- Next: run static and CMS builds plus tests at Node 24.19.0; merge the snapshot/log receipt only after local checks. Existing EmDash publication is already live; Pages deployment is tracked separately through the normal workflow. No indexing, rank, referral or business outcome is known.
+
+
+### RUN-040 responsive verification follow-up — 2026-10-07 10:04 +07:00
+
+- The browser viewport override had not resized the in-app tab, so the earlier limitation was kept explicit while finding a supported local browser path. The repository Playwright CLI wrapper could not run because `npx` is blocked unless `--no-install` is used; the global wrapper has a missing Python interpreter. No packages were installed.
+- An isolated headless Chrome run using the already installed browser and bundled Playwright package performed a read-only check of both public URLs at 320/375/768/1440 CSS px. All eight reported `innerWidth === scrollWidth`; mobile instructions, entrance check and official Maps Help link were present. Captured and visually inspected VI/EN 320px screenshots under `/private/tmp`; no files were added to Git.
+- This supersedes the earlier narrow-width verification limitation. No browser session/account data or live content was changed.
+
+### RUN-040 build and release-check follow-up — 2026-10-07 10:05 +07:00
+
+- Node 24.19.0 `npm test`: 48/48 passed. `npm run build`: 42 static pages built; private research assets moved from public output. `npm run build:blog`: passed with the existing dynamic-route and large-chunk warnings; post-build guard confirmed private research/local credential files excluded.
+- JSON parse, VI/EN source/phrase/date parity, static HTML output parity and `git diff --check` passed.
+- `RELEASE_ORIGIN=https://local.runlumi.app node scripts/verify-release.mjs` could not resolve the host in the process environment (`ENOTFOUND`) and stopped before the HTTP checks. The separate in-app browser and isolated headless Chromium did fetch and verify both public article pages. Do not report the release verifier as passed.
+- No CMS/database write, Pages deployment, or live sitemap/indexing action in this follow-up. The next release proof is the repository's normal Pages workflow after the static snapshot PR is merged; the current EmDash publication remains independently live.

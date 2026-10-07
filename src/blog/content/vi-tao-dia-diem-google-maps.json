@@ -8,7 +8,7 @@
   "keyword": "cách tạo địa chỉ trên google map",
   "author": "lumi-local",
   "pub_date": "2026-10-06T09:00:00+07:00",
-  "reviewed_date": "2026-10-06",
+  "reviewed_date": "2026-10-07",
   "featured": false,
   "content": [
     {
@@ -208,7 +208,7 @@
         {
           "_type": "span",
           "_key": "s1",
-          "text": "Sau khi có thông tin đúng: kiểm tra đường đi của khách",
+          "text": "Chia sẻ link chỉ đường, rồi kiểm tra lối vào",
           "marks": []
         }
       ]
@@ -222,7 +222,7 @@
         {
           "_type": "span",
           "_key": "s1",
-          "text": "Mở liên kết chỉ đường từ điện thoại và đối chiếu điểm đến với cửa vào thực tế. Xem khách có đọc được dịch vụ, giờ và cách liên hệ trên website không. Đây là kiểm tra trải nghiệm tiếp cận cơ sở, không phải một thủ thuật để xác minh hay tăng hạng.",
+          "text": "Trên Android hoặc iPhone, mở Google Maps, nhấn Đường đi, nhập điểm đến và chọn tuyến. Nhấn Lựa chọn khác → Chia sẻ đường đi, rồi chọn ứng dụng để gửi. Trên máy tính, mở Google Maps, chọn Đường đi, nhập điểm đến và chọn tuyến. Nhấn Chia sẻ → Gửi đường liên kết → Sao chép đường liên kết. Mở link trên điện thoại, rồi đối chiếu điểm đến với cửa vào do chủ xác nhận.",
           "marks": []
         }
       ]
@@ -282,6 +282,10 @@
     {
       "label": "Google: xác minh doanh nghiệp / Verify your business",
       "url": "https://support.google.com/business/answer/7107242"
+    },
+    {
+      "label": "Google Maps: chia sẻ đường đi / Share directions",
+      "url": "https://support.google.com/maps/answer/7101463?hl=vi"
     }
   ],
   "related": [
