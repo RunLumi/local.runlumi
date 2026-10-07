@@ -17,3 +17,9 @@ The subreddit sidebar says it is for small-business questions and answers. Its c
 > Google's Help distinguishes two cases. The four-day window applies when Google notifies an owner that a suggested edit needs review; if there is no response, Google may publish it when public sources such as the business website support it. Google also says some user edits may be applied without prior review, so four days is not a universal veto window. Its Posts policy says unverified contact details may be removed. I could not verify the claim that all reviews now require sign-in in the official pages I checked, so I would treat that separately.
 
 Purpose: answer the thread’s direct policy question with verified official guidance. The reply does not mention Lumi Local, recommend a service, include a link, claim personal experience or request feedback. It is not posted. A separate explicit approval is required for this new thread; the existing one-comment scope is consumed.
+
+
+## Execution outcome — RUN-039
+
+- Human approved one use of the unchanged draft in this exact thread on 2026-10-07. Submitted once through signed-in Reddit UI as u/suoinguon. Reddit displayed “Comment posted successfully”; live readback shows the full text under that account. Permalink: https://www.reddit.com/r/smallbusiness/comments/1wzbnag/comment/pecqfev/.
+- No link, Lumi mention, product recommendation or moderation warning was visible. The one-time approval is consumed. Next check is read-only on 2026-10-13; no replies or reposts are authorized.

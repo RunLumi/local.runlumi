@@ -439,3 +439,16 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - In Google Search (`hl=vi`, `gl=vn`, `pws=0`), sampled `cách chia sẻ link chỉ đường Google Maps cho khách`. An AI Overview appeared with Google Help plus third-party source cards; Lumi was not cited in the visible answer/source panel or visible web-results portion inspected. The footer said results were non-personalized and location unknown; exact viewport/device dimensions were not measured.
 - Receipt: [RUN-038 directions AI Overview snapshot](research/2026-10-07-directions-ai-overview.md). This is a single query snapshot, not proof of index status, rank, universal citation absence or acquisition.
 - No setting, sitemap or indexing action changed. Next stronger check remains the page-level Search Console discovery/index report on or after 2026-10-14.
+
+
+## 2026-10-07 09:43 +07:00 — RUN-039 — CA-003 one-time approval and submission state
+
+- User message “approve comment” in the exact CA-003 pending context authorizes one reply from u/suoinguon to the listed Google Business Profile edits thread, using the unchanged saved no-link draft only. CA-002 permission remains separately consumed.
+- Rechecked draft SHA-256 `ec6d4b1a8dacca6b285be11855369d62328f0da62b00e4b5b89292681f32aa73`; signed-in Reddit page shows the target thread, no substantive replies, and the comment composer. Current rules prohibit links, product recommendations and unsolicited advice; this reply contains no link, offer, product recommendation or request.
+- Recorded CA-003 as `submitting` before interacting with the composer. Submit the exact saved text once. Verify permalink/state immediately; if outcome is unclear, inspect the thread and do not retry. No reply or repost authorization.
+
+
+### RUN-039 verification — 2026-10-07 09:45 +07:00
+
+- Reddit showed “Comment posted successfully.” The live thread shows the full approved text under u/suoinguon; the timestamp link resolves to https://www.reddit.com/r/smallbusiness/comments/1wzbnag/comment/pecqfev/. Screenshot captured with the post and comment context visible.
+- CA-003 is `verified_live`; authorization consumed. No retry, edit, reply or follow-up was performed. Schedule read-only replies/removal check with CA-002 on 2026-10-13; any reply needs separate authorization.
