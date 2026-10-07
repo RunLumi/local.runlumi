@@ -35,6 +35,8 @@ Updated 2026-10-08 · Asia/Ho_Chi_Minh · active, day 3. Full contract: [goal](.
 
 ## Verified releases
 
+- PR #88 merged as `c4a0ecb`; hosted build `37691240623` and Pages release `37691424952` passed, deployment host `2babca9e.lumi-local.pages.dev`. The new VI/EN Maps-service illustration is live on the custom domain. Blog template visuals still require the separate EmDash Worker release; production journal-policy readback retained its old photo-free template. [RUN-079 sitemap/release follow-up](research/2026-10-08-sitemap-completeness.md) records 38 static indexable URLs and a passing expanded read-only production coverage check for all 10 live articles, topics, services and private-data protection. Grouped sitemap/language alternates and source-date correction are locally verified (65 tests) and awaiting their release.
+
 - PR #25 / Pages deployment `13b45206`: localized free Google QR instructions, VI/EN, verified on custom domain and Pages host.
 - PR #28 / Pages deployment `de3ec339`: VI/EN website FAQ clarifies no inventory, carts, checkout or order management.
 - PR #30 / Pages deployment `25f31f3b`: VI/EN FAQ clarifies no CRM or automated follow-up; agree enquiry destination and response owner.
