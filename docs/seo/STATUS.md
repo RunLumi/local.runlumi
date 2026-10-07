@@ -44,6 +44,8 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 
 ## Current evidence
 
+- [RUN-051 community discovery recheck](research/2026-10-07-community-discovery-recheck.md): one public search returned a roughly three-month-old custom-directory discussion, outside Starter scope. Reddit itself could not be opened in the in-app browser, so no thread-level review, draft, or action was made. Signed-in Google Ads summary content was excluded from the record.
+
 - [RUN-049 Reddit candidate skip](research/2026-10-07-reddit-pricing-thread-skip.md): a stale website-pricing thread was already answered and moderator-warned against market research; skipped with no draft or post. No new posting scope inferred.
 - [RUN-048/RUN-050 CRM-capable enquiry handler release impact](research/2026-10-07-crm-intake-release-impact.md): local.runlumi PR #71 deployed the optional adapter; sibling CRM PR #27 deployed the Worker and its release record confirms the Worker-side secret. Presence of the two Pages secrets and end-to-end activation remain unknown. No live enquiry was sent, so CRM records, leads and paid outcomes remain unknown.
 
@@ -84,6 +86,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 4. On 2026-10-13, read-only check CA-003 for replies/removal alongside CA-002; do not reply or repost without separate authorization.
 5. RUN-047 found no Google Ads account matching “Lumi Local” in the current signed-in identity; do not open another account or create one based on guesswork. Export the 20 RUN-044 seeds only if the user identifies an existing project account and the data are accessible without new billing or spend.
 6. Once exact-host Search Console query/page data are available and the reporting window is useful, compare the RUN-045 website-price, Zalo-widget and review-QR intents against their existing canonical pages. Do not create a new page from the three browser snapshots alone.
+7. Community discovery remains read-only until a fresh relevant thread can be reviewed in the supported browser and a human authorizes its exact target/action. Do not use signed-in Google Ads summaries as search research.
 
 ## Recovery
 
