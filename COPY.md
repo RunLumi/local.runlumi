@@ -95,6 +95,8 @@ Mobile menu controls: “Mở menu” / “Đóng menu” in VI; “Open menu”
 
 Canonical VI/EN company copy, user-supplied company details and official social URLs live in [src/content/company.js](src/content/company.js). [Footer.astro](src/components/Footer.astro) shares these across home, service, industry, company and journal pages. Keep Singapore legal-entity/UEN details distinct from the Vietnam operations office/tax ID; D-U-N-S is an identifier, not an endorsement or quality certification. Preserve the supplied address spelling without implying independent registry verification. No company phone number is displayed.
 
+Public contact email: **local@runlumi.app**, shared in both locales through the company data and footer. The enquiry form continues to use `/api/enquiries`.
+
 Company pages: `/about/` ↔ `/en/about/`, `/vision/` ↔ `/en/vision/`. The journal editorial policy remains separately at `/blog/about/` and `/en/blog/about/`. Reuse the canonical primary CTA and link to the homepage enquiry; do not invent another intake or attach unallowlisted source context.
 
 Reference pages read 2026-10-08: [CJS about](https://cjs.vn/about/) and [CJS vision](https://cjs.vn/vision/). Adapt the practical, clear approach to Lumi Local's actual scope. Do not import CJS's experience count, enterprise/self-hosted offer, one-time software pricing, superlatives, security guarantees or telephone number. Lumi Local's vision expresses intent, not a measured business outcome; operational expansion follows observed recurring needs. Company details and social links were supplied by the owner for this update.
