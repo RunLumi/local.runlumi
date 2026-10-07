@@ -26,6 +26,7 @@ const blog = home + 'blog/';
         <a href={companyRoutes.about[locale]}>{c.aboutLabel}</a>
         <a href={companyRoutes.vision[locale]}>{c.visionLabel}</a>
         <a href={blog}>{locale === 'vi' ? 'Cẩm nang' : 'Journal'}</a>
+        <a href={`mailto:${company.email}`}>{company.email}</a>
         {journal && <><a href={blog + 'about/'}>{locale === 'vi' ? 'Về cẩm nang' : 'Editorial policy'}</a><a href={blog + 'rss.xml'}>RSS</a></>}
       </nav>
     </div>
