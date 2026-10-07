@@ -42,6 +42,8 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 
 ## Current evidence
 
+- [RUN-047 Keyword Planner access check](research/2026-10-07-keyword-planner-access-check.md): the signed-in Google Ads selector returned zero matches for “Lumi Local”; no account was selected and no billing/campaign action occurred. This does not rule out a differently named account. The RUN-044 seeds remain unmeasured.
+
 - [RUN-045 owner-language SERP validation](research/2026-10-07-owner-language-serp-validation.md): three Google snapshots found broad website-pricing pages, Zalo-widget how-tos and a DIY-led review-QR result set. The existing bilingual/VI destinations already state package scope and free options; no content or URL change was warranted. No query demand or ranking claim is inferred.
 
 - [RUN-044 owner-language seed expansion](research/2026-10-07-owner-language-seeds.md): prepared 20 Vietnamese seeds for three underrepresented clusters; none has measured volume or difficulty. One web-search discovery found a vendor-owned spa website offer emphasizing booking/ecommerce, so the existing spa pages need clear scope boundaries; this is not a Google rank or demand result.
@@ -74,7 +76,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 2. RUN-026 found no sitemap submitted in the dedicated GSC property. Submit `https://local.runlumi.app/sitemap.xml` only after explicit human authorization; until then, leave Google-side indexing untouched.
 3. On or after 2026-10-14, read the index/discovery state once for the garage page and the updated business-location guide; keep Search Console read-only and scoped to `local.runlumi.app`. Submit `https://local.runlumi.app/sitemap.xml` only after explicit human authorization. GSC Wizard remains unconnected. Add Chrome DevTools MCP before laboratory performance traces; avoid repetitive searches and quota-driven posts.
 4. On 2026-10-13, read-only check CA-003 for replies/removal alongside CA-002; do not reply or repost without separate authorization.
-5. If an already-configured Google Keyword Planner account is available, export the 20 RUN-044 seeds with Vietnam, Vietnamese, Google Search only, and the latest 12 complete months shown; record the actual dates. Do not set up billing or spend to access the tool.
+5. RUN-047 found no Google Ads account matching “Lumi Local” in the current signed-in identity; do not open another account or create one based on guesswork. Export the 20 RUN-044 seeds only if the user identifies an existing project account and the data are accessible without new billing or spend.
 6. Once exact-host Search Console query/page data are available and the reporting window is useful, compare the RUN-045 website-price, Zalo-widget and review-QR intents against their existing canonical pages. Do not create a new page from the three browser snapshots alone.
 
 ## Recovery
