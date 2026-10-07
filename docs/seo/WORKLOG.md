@@ -522,3 +522,12 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Hosted build run #128 passed on that exact head: static build, all 48 tests, EmDash seed validation and CMS Worker build.
 - The merged diff was limited to the release workflow, deployment documentation and campaign notes. GitHub Actions readback showed no production release run after docs-only PR #64 run #80; serving assets did not change, so no Pages deployment was required.
 - The workflow filter is now authoritative on main. A later serving-path push must still run the production workflow; this has not been separately exercised yet. Campaign remains active; CA-002 and CA-003 one-time Reddit permissions are consumed, with read-only checks scheduled 2026-10-13.
+
+
+## 2026-10-07 11:58 +07:00 — RUN-044 — Owner-language seed expansion
+
+- Read the current authenticated /data/ dashboard. It still reports the September 2025–August 2026 historical export, unknown targeting settings and zero organic observations; current dashboard totals are 2,070 exact unique terms, 670 repeated rows, two terms mentioning websites and zero mentioning QR.
+- Prepared 20 constructed Vietnamese seed queries across service menus/prices, Call/Zalo contact routes, and QR/package/maintenance. The new terms have no measured search volume, trend, organic difficulty or buyer-validation evidence; no scores or additive volume claims were assigned.
+- Official Google Ads Help documents location, language, network and date-range controls, and says Keyword Planner access requires billing information during account setup. Proposed a Vietnam / Vietnamese / Google Search-only export using the latest 12 complete months displayed, but did not open Ads, connect an account, add billing, or run an export. See [RUN-044 seed report](research/2026-10-07-owner-language-seeds.md).
+- A bounded web-search discovery pass surfaced one vendor-owned Uptech spa offer emphasizing booking and ecommerce. This is a scope-mismatch signal only, not a Google SERP rank sample or demand proof. The live Lumi VI/EN presence-check pages state that Lumi does not verify/recover/manage Google profiles and do not promise rankings or leads; no customer-facing copy change was warranted.
+- No CMS, Google account, billing, sitemap, indexing, live form, or community state was changed. Next: use an already-configured Keyword Planner account if available; stop if setup requires new billing. Continue to keep GSC access, organic measures, owner feedback and paid outcomes separate.
