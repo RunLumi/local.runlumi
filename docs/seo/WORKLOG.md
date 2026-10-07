@@ -577,3 +577,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Google public search showed the r/smallbusiness thread “How much should a small business website actually cost?” at about five months old. The public page was read through the web reader because the in-app browser returned connection refused. It contains several substantial existing answers and an Automoderator reminder against market-research/indirect-promotion posts.
 - Skipped the candidate as stale, already answered, and potentially misread as market research or promotion. No draft, signed-in account use, submission, link or permission inference. Added CA-004 as `skipped` with the evidence and reason; no new authorization was consumed.
 - Receipt: [RUN-049 skip note](research/2026-10-07-reddit-pricing-thread-skip.md). Next: Oct 13 read-only response/removal checks for CA-002/CA-003; do not reply or repost without separate authorization.
+
+
+## 2026-10-07 13:23 +07:00 — RUN-050 — Refine CRM release activation evidence
+
+- Re-read local.runlumi main and PR #71 release evidence, then checked sibling repository RunLumi/www.runlumi.app PR #27 and its merged docs/crm/RUNBOOK.md production release record.
+- New evidence: the CRM Worker deployed from PR #27; the runbook says preflight confirmed its CRM_INTAKE_SECRET and production unsigned requests to the intake endpoint returned 401 for bad signature rather than 503. This confirms the Worker-side secret, not the Pages-side adapter secrets.
+- Pages-side CRM_INTAKE_URL/CRM_INTAKE_SECRET presence remains unknown. The local.runlumi release verifier did not submit a form and did not establish end-to-end intake. No live enquiry, CRM write, PII, secret value or account identifier was accessed.
+- Refined [RUN-048 CRM release note](research/2026-10-07-crm-intake-release-impact.md) and STATUS wording so the two secret/configuration boundaries remain distinct. Enquiry and paid metrics remain unknown.
