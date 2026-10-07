@@ -6,6 +6,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 
 - Activated by human `/goal` on 2026-10-06. Reviews: day 30 2026-11-04; day 60 2026-12-04; day 90 2027-01-04.
 - CA-001 was skipped as redundant. CA-002 was approved and publicly verified once by u/suoinguon in the designated r/smallbusiness Q4 promotion thread: [permalink](https://www.reddit.com/r/smallbusiness/comments/1wwpjlw/comment/pe8nwi9/). That one-comment authorization is consumed. No follow-up reply/repost scope.
+- CA-004 candidate in r/smallbusiness about website pricing was skipped: the thread was about five months old, had detailed existing answers, and carried a moderator warning against market research/indirect promotion. The signed-in browser could not open it; no draft or post was made. CA-002/CA-003 remain the only completed actions and both one-time scopes are consumed. See [RUN-049 skip note](research/2026-10-07-reddit-pricing-thread-skip.md).
 - CA-003 was approved separately and posted once as the exact no-link draft by u/suoinguon in the new r/smallbusiness Google Business Profile edits thread. Reddit confirmed success; the full comment is visible at [permalink](https://www.reddit.com/r/smallbusiness/comments/1wzbnag/comment/pecqfev/). This one-time authorization is consumed; no reply/repost scope. Read-only check on 2026-10-13. See [RUN-035 thread note](research/2026-10-07-reddit-google-profile-edits-thread.md) and RUN-039 in the worklog.
 - Next read-only check: 2026-10-13 09:00 +07:00 for replies/removal.
 - Weekly heartbeat creation was rejected by automatic approval review; explicit scheduling authorization remains unanswered. No automation configured.
@@ -42,6 +43,8 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - PR #31 and PR #32 record release/access state; PR #33 records the bounded Vietnam scan.
 
 ## Current evidence
+
+- [RUN-049 Reddit candidate skip](research/2026-10-07-reddit-pricing-thread-skip.md): a stale website-pricing thread was already answered and moderator-warned against market research; skipped with no draft or post. No new posting scope inferred.
 - [RUN-048 CRM-capable enquiry handler release impact](research/2026-10-07-crm-intake-release-impact.md): PR #71’s deployed handler forwards validated Lumi enquiries only if both optional Pages secrets are configured. The release passed the public route/private-data verifier, but secret presence and live CRM delivery remain unknown. No live enquiry was sent, so leads and paid outcomes remain unknown.
 
 
