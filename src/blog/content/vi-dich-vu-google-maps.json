@@ -8,7 +8,7 @@
   "keyword": "dịch vụ google map",
   "author": "lumi-local",
   "pub_date": "2026-10-06T09:00:00+07:00",
-  "reviewed_date": "2026-10-06",
+  "reviewed_date": "2026-10-07",
   "featured": true,
   "content": [
     {
@@ -78,6 +78,34 @@
           "_key": "s1",
           "text": "Tạo hoặc xác nhận quyền sở hữu hồ sơ là công việc với Google Business Profile. Xác minh là quy trình Google dùng để kiểm tra người đại diện doanh nghiệp. SEO địa phương là một phạm vi rộng hơn, gồm thông tin, website và các tín hiệu khác; đó không phải quyền mua thứ hạng. QR đánh giá chỉ mở đường dẫn để khách thật chia sẻ trải nghiệm.",
           "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b18",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "source-review-policy",
+          "href": "https://support.google.com/contributionpolicy/answer/7400114?hl=vi"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "Gói “đánh giá 5 sao” là dấu hiệu cảnh báo, không phải sản phẩm bàn giao. Google không cho phép mua đánh giá, đổi ưu đãi lấy việc đăng, sửa hoặc xoá đánh giá, hay chỉ mời khách dự kiến sẽ đánh giá tích cực. Lời mời nên dành cho mọi khách thật; không yêu cầu số sao hay nội dung cụ thể. Đọc ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "s2",
+          "text": "chính sách chính thức của Google về đánh giá và thao túng xếp hạng.",
+          "marks": [
+            "source-review-policy"
+          ]
         }
       ]
     },
@@ -282,6 +310,10 @@
     {
       "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
       "url": "https://support.google.com/business/answer/2911778"
+    },
+    {
+      "label": "Google Maps: nội dung bị cấm và bị hạn chế / Prohibited and restricted content",
+      "url": "https://support.google.com/contributionpolicy/answer/7400114?hl=vi"
     }
   ],
   "related": [
