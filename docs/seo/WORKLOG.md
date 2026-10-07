@@ -332,3 +332,12 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - On the candidate based on `71293a1`, `npm run build` passed (42 routes), `npm test` passed (48), EmDash seed validation passed, and `npm run build:blog` passed on Node 24.19.0 with its private-output guard. No CMS data or production service was changed.
 - Rendered the generated VI/EN garage pages in a same-origin responsive harness. At 320, 375, 768 and 1440 CSS pixels, each frame reported the requested viewport width, exposed the new bilingual FAQ answer, and had no horizontal document overflow (scroll widths 305/320, 360/375, 753/768 and 1425/1440). No enquiry form was submitted.
 - `git diff --check` and exact string alignment between `COPY.md` and `src/services/content.ts` pass. The candidate is not yet merged or deployed; create a focused PR and read back both locales after the authorized release path.
+
+
+## 2026-10-07 07:33 +07:00 — RUN-030 release receipt — PR #46
+
+- PR #46 merged normally to main as `c890d33d9a065945470857a46875029f4762fbab`; the merged tree hash `d2ac46f96a854ed0472957745b218d4065cd25ec` matches the locally validated candidate tree. No override was used.
+- The hosted pull-request build and main-branch production deployment workflows both failed before starting because the GitHub Actions budget prevented runner use. No hosted Linux pass is claimed. Exact merged main static build passed (42 routes), all 48 tests passed, EmDash seed validation passed, and CMS Worker build/private-output guard passed on Node 24.19.0. The pre-push hook also passed exact-head static build and tests.
+- Deployed exact main source `c890d33` to Cloudflare Pages Production (`lumi-local`, branch `main`) with deployment ID `ebdccc5f-7b1d-478e-9058-cb805c3d91ee`, host [ebdccc5f.lumi-local.pages.dev](https://ebdccc5f.lumi-local.pages.dev). No DNS, billing, CMS data, bindings or secrets changed.
+- `scripts/verify-release.mjs` passed on both `https://local.runlumi.app` and the Pages host: all bilingual service/industry routes, canonical/hreflang/sitemap checks, journal/feed and anonymous private-data guards. Browser readback on the custom domain shows the new answer in VI and EN. No enquiry was submitted and no ranking, traffic or commercial effect is claimed.
+- CA-002 remains the one authorized Reddit action, with its permission consumed; read-only reply/removal check remains due 2026-10-13 09:00 +07:00. Sitemap submission remains pending explicit human authorization.
