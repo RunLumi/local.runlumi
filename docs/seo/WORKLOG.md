@@ -364,6 +364,13 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Next: read-only GSC discovery/index check for the garage URL and the refreshed guide once on or after 2026-10-14; no repetitive same-day polling. CA-002 Reddit remains verified at its existing permalink, with one-comment scope consumed; scheduled read-only reply/removal review remains 2026-10-13.
 
 
+## 2026-10-07 08:19 +07:00 — RUN-034 — Refresh protected dashboard guidance
+
+- Revalidated the current main checkpoint, goal and action ledger after RUN-033; the shared checkout still has unrelated user work and remains untouched. The protected keyword dashboard’s Maps card still requested the SERP audit completed in RUN-033, while its footer said no guides had been published.
+- Updated only the internal recommendation copy in `src/pages/data/index.astro`: identify the honest-review guide as published, keep the source export’s historical period and uncertainty visible, record the overlapping embed/how-to findings and mixed directions/profile intent, and direct the next check to dated Search Console evidence after one week. Owner feedback, enquiries and paid demand remain explicitly unknown.
+- No auth route, binding, cookie, data file, CSV, tracking or public marketing copy changed. Run the repository tests/build and protected-output checks at exact head, then verify the deployed `/data/` view and anonymous denial before closing RUN-034.
+
+
 ## 2026-10-07 07:43 +07:00 — RUN-031 — Align homepage salon-preview label
 
 - Previous goal turn made progress: PR #47 merged the RUN-030 release receipt to main as `e778bc3`; verified the current remote `STATUS.md` and `WORKLOG.md`. Shared checkout WIP remains untouched.
