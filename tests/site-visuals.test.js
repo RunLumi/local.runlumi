@@ -10,11 +10,18 @@ function allFiles(root) {
   return readdirSync(root,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?allFiles(join(root,entry.name)):[join(root,entry.name)]);
 }
 
-test('every public HTML page has a locally served illustrative photo',()=>{
+test('every public HTML page has its required locally served illustrations',()=>{
   const pages=allFiles('dist').filter(path=>path.endsWith('.html'));
   assert.ok(pages.length>=35,`expected the public routes to be built, got ${pages.length}`);
   for(const path of pages){
     const html=readFileSync(path,'utf8');
+    if (/^(?:en\/)?(?:about|vision)\/index\.html$/.test(relative('dist',path))) {
+      for (const name of ['map','review','website']) {
+        assert.ok(html.includes(`src="/illustrations/${name}.svg"`),`${relative('dist',path)} is missing its ${name} illustration`);
+        assert.ok(existsSync(`public/illustrations/${name}.svg`),`${name}.svg is missing from public assets`);
+      }
+      continue;
+    }
     const photos=[...html.matchAll(/src="(\/(?:photos|blog-images)\/[^" ]+\.webp)"/g)].map(m=>m[1]);
     assert.ok(photos.length>0,`${relative('dist',path)} has no page-specific illustrative photo`);
     for(const photo of photos)assert.ok(existsSync(join('public',photo.slice(1))),`${photo} is missing from public assets`);

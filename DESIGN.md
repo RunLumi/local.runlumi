@@ -200,6 +200,8 @@ and generated devices, QR codes, and infrastructure are illustrative only.
 
 ### Public-page image coverage — 2026-10-08
 
+User-confirmed exception, 2026-10-08: the VI/EN About and Vision pages use the original local Maps, honest-review QR and website SVG illustrations. These satisfy their visual coverage; photographs are not required on these four routes. Keep the illustration assets present and rendered.
+
 Every public customer-facing route, including service, industry, editorial,
 search/archive and not-found pages, should have a relevant local visual when
 it helps the reader understand the page. Choose imagery for the real page task;
