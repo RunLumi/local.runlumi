@@ -380,6 +380,16 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - This is a correction to the internal research guidance, not a market or search result. No sitemap submit, URL-indexing request, owner interview, new community post, tracking, or paid outcome occurred. Next: one read-only GSC index/discovery check for the garage page and updated article on or after 2026-10-14; CA-002 read-only reply/removal check remains 2026-10-13.
 
 
+## 2026-10-07 08:42 +07:00 — RUN-036 — Reclassify Maps-embedding keyword hypotheses
+
+- Previous goal turn completed RUN-033’s eight live article responsive checks (VI/EN × 320/375/768/1440) with no horizontal overflow; this receipt exists in the working diff and is being carried into the current evidence update.
+- Re-read the keyword classifier/tests and the live SERP report. The two exact `website` queries (“tích hợp google map vào website” and “cách chèn google map vào website”) had been labeled core solely by wording. The 7 October SERP sample for both variants was dominated by technical/DIY iframe/API how-tos; Lumi’s current promise is an owner-confirmed directions link, not a Maps Embed API or profile management.
+- Changed those two wording hypotheses to low-confidence informational education. Historical volume remains 10/mo each, export targeting stays unknown, and observed buyer intent remains unvalidated. The other ambiguous “trang web bản đồ” term stays excluded. Counts recalculate from the source and now are 0 offer-adjacent, 211 educational, 36 outside and 1,823 excluded.
+- Updated dashboard rationale and review date to 7 October. Added regression assertions for both exact queries, their low confidence/intent/reason, the ambiguous phrase, and website-cluster counts. This does not mean no one who searches could buy; it only removes an unsupported claim that these technical how-to terms are already offer-adjacent.
+- `npm test` passed 48/48 and `npm run build` passed all 42 static routes on Node 24.20.0. The build guard removed research HTML/CSV from public `dist` assets. Regression assertions verify both Maps embed terms are low-confidence educational/informational, and `trang web bản đồ` remains excluded. `git diff --check` passed.
+- Live protected-dashboard readback and production release are pending. No keyword CSV/data source, access control, customer-facing copy, external post or Google Search Console setting changed in this run.
+
+
 ## 2026-10-07 08:24 +07:00 — RUN-035 — Draft a fresh owner-thread reply for approval
 
 - Revalidated remote main `24490f9`, `STATUS.md` and both action/channel ledgers. CA-002 remains `verified_live`; its one-comment permission covers only the Q4 promotion thread and is consumed.
@@ -387,6 +397,12 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Rechecked current sidebar rules: ordinary threads prohibit links/product recommendations and business promotion; the new candidate contains no link, Lumi mention, product recommendation, SEO claim or research question. It directly answers the OP’s question, so it is not an unsolicited sales pitch. The Q4 promotion thread remains the only existing authorized promotion scope.
 - Verified Google’s official “Understand Google updates on your Business Profile” and “Business Profile posts content policy” pages. The first documents the conditional four-day response period and also says some edits may be applied without prior review; the second says unverified contact details in posts may be removed. The official pages checked did not confirm the thread’s broad claim about signing in to read all reviews, so the draft flags that as unverified.
 - Created [CA-003 draft](drafts/CA-003-reddit-google-profile-edits.md) and a dated evidence note; SHA-256 recorded in `community-actions.csv`. State is `drafted`, with no submit attempt, public URL or reply. Do not post until a separate explicit approval covers this exact thread and text.
+
+
+## 2026-10-07 08:36 +07:00 — RUN-033 responsive verification follow-up
+
+- Rechecked the published VI and EN article routes in the live browser at 320, 375, 768 and 1440 CSS pixels after a fresh load at each width. All eight runs reported matching document/viewport widths, no horizontal overflow, and the updated directions section heading.
+- Visually inspected the 320px VI article and EN article; public readback, source links, canonical/alternates, sitemap and RSS outcomes remain as recorded in RUN-033. No further content edit was made and no indexing or ranking outcome is inferred.
 
 
 ## 2026-10-07 07:43 +07:00 — RUN-031 — Align homepage salon-preview label

@@ -61,8 +61,16 @@ export function classify(keyword) {
     return result('reviews', 'exclude', 'transactional', 'High', 'Purchased, managed or requested-rating reviews conflict with the honest-review policy.');
   if (/\b(dinh vi|theo doi|tim vi tri)\b/.test(k) && /\b(so dien thoai|dien thoai|nguoi khac)\b/.test(k))
     return result('tracking', 'exclude', 'informational', 'High', 'Phone/person tracking is unrelated to a local presence package.');
-  if (/\b(website|trang web|qr)\b/.test(k))
-    return result('website', /\b(tich hop|chen|qr)\b/.test(k) ? 'core' : 'exclude', 'informational', 'Medium', 'Website/Maps integration is adjacent to the offer. Searcher may be a developer, not an owner.');
+  if (/\b(website|trang web|qr)\b/.test(k)) {
+    const mapsEmbedHowTo = /\b(tich hop|chen|nhung|embed|iframe|api)\b/.test(k)
+      && /\b(google map|google maps)\b/.test(k)
+      && /\b(website|trang web)\b/.test(k);
+    if (mapsEmbedHowTo)
+      return result('website', 'education', 'informational', 'Low', 'The sampled Maps-embedding results were mostly technical/DIY how-to pages. Lumi supplies owner-confirmed directions links, not an embedding or profile-management service; buyer intent is unproven.');
+    if (/\b(trang web ban do)\b/.test(k))
+      return result('website', 'exclude', 'informational', 'Low', 'Ambiguous map-website phrase; no current offer fit or owner buying intent is established.');
+    return result('website', /\bqr\b/.test(k) ? 'core' : 'exclude', 'informational', 'Medium', 'Website and QR terms need context-specific intent review; matching a deliverable does not establish buyer intent.');
+  }
   if (/\bxac minh\b/.test(k))
     return result('verification', how ? 'education' : 'outside', paid ? 'commercial' : 'informational', 'High', 'Owner self-service guidance only. Lumi does not verify or manage Google profiles.');
   if (/\bseo\b/.test(k))

@@ -72,6 +72,12 @@ Published the paired VI and EN revisions through the existing authenticated EmDa
 
 `RELEASE_ORIGIN=https://local.runlumi.app node scripts/verify-release.mjs` passed after publication: all bilingual service/industry routes, journal, feeds, sitemap and anonymous private-data protection. The separate targeted read-only check confirmed the two article canonicals/alternates and sitemap/feeds. The routine verifier does not establish rankings, indexing or commercial outcomes. No sitemap submission, URL-indexing request or Pages code deployment was part of this CMS publication.
 
+Responsive follow-up at 08:36 +07:00 reloaded both live routes in a real browser at 320, 375, 768 and 1440 CSS pixels. All eight combinations exposed the updated section and reported `documentElement.scrollWidth === innerWidth` with no horizontal overflow. The 320px VI render was visually inspected; the English 320px view and desktop public views were also inspected during the earlier page readback.
+
+## Follow-up classification review — RUN-036
+
+The same SERP evidence was applied to the private dashboard’s phrase rules on 2026-10-07. Both actual `website` terms are explicit Maps-embedding/how-to queries; the observed results emphasized iframe/API tutorials, while Lumi’s deliverable is an owner-confirmed directions link and does not include a Maps Embed API or Google profile operation. Reclassified both terms from offer-adjacent (`core`, score 74) to low-confidence educational (`education`, score 54). Their historical supplied averages remain 10/mo each; targeting and current demand remain unknown. The ambiguous `trang web bản đồ` term remains excluded. Aggregate counts now show 0 offer-adjacent and 211 educational candidates, with the other category counts unchanged. These phrase-rule labels remain hypotheses and are not calibrated buyer intent or organic difficulty. Code change and regression coverage are in PR #55.
+
 ## Handoff
 
 Next: check this article’s indexed state once on or after 2026-10-14 and compare Search Console’s discovery report; leave sitemap submission pending explicit authorization. Do not interpret publication or a passing route check as indexing or search performance.
