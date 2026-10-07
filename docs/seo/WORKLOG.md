@@ -484,3 +484,18 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Existing Wrangler OAuth identified the RunLumi account with Pages write scope; no credential value was displayed or changed. Manual `wrangler pages deploy dist --project-name lumi-local --branch main --commit-hash 09f5e1f851e60baa7663a3cd980fe2549be2651b --commit-dirty=false` completed. Deployment ID `869f296d-f6f3-483c-9fb1-bf3910a4adb4`, host https://869f296d.lumi-local.pages.dev.
 - `RELEASE_ORIGIN=https://869f296d.lumi-local.pages.dev node scripts/verify-release.mjs` and the same verifier on `https://local.runlumi.app` both passed: service/industry pairs, journal/feed/sitemap and anonymous private-data protection. Browser readback on custom and Pages hosts shows the updated VI/EN article and Google Maps source. No CMS write, DNS/secret/binding change, enquiry, sitemap submit or indexing request.
 - PR #61 merged; remote `main` read back at `09f5e1f`. This is release evidence only; Search Console/indexing, rankings, referrals and commercial outcomes remain unknown.
+
+
+## 2026-10-07 10:41 +07:00 — RUN-041 — Review-policy intent gap in the service comparison SERP
+
+- Starting checkpoint: remote main `10d6e50`; shared checkout WIP was preserved. Reddit one-time scopes remain consumed; next read-only check is Oct 13. Search Console recheck is scheduled no earlier than Oct 14, and sitemap submission remains unauthorized.
+- In Google Search, one Vietnamese commercial query showed an AI Overview and service/price pages plus related searches for buying/five-star reviews. The footer said non-personalized/Vietnam with precise location unknown. This is one SERP snapshot, not demand or provider-conduct proof.
+- Checked current Google Maps contribution policy in VI and EN. Added a short source-linked warning to the existing VI/EN comparison guide. The saved EmDash drafts initially left the published versions live; no content was published during the drafting step.
+- Evidence: [RUN-041 SERP and policy note](research/2026-10-07-service-query-review-policy.md). No competitor is accused, no new URL or offer was added. No ranking, citation, referral, enquiry or paid outcome is claimed.
+
+### RUN-041 EmDash publication and responsive verification — 2026-10-07 11:00 +07:00
+
+- Corrected the sentence to match Google’s policy: incentives are prohibited in exchange for posting/editing/removing reviews; the draft does not say every neutral request to edit is prohibited. Both VI/EN drafts were saved with the 2026-10-07 source-check date and inline policy links.
+- Explicitly published both locales through the authenticated EmDash editor; each showed “Content is now live.” Public reload of the VI and EN custom-domain routes shows the new text and locale-specific policy link. Exact publish time was not captured.
+- Headless Chrome checked both routes at 320/375/768/1440 CSS px. All eight had no horizontal overflow and included policy text and link. 320px screenshots were visually inspected under `/private/tmp/seo-review-policy-vi-320.png` and `/private/tmp/seo-review-policy-en-320.png`.
+- Static snapshots are aligned in the candidate. No Pages deployment has yet been performed for this slice. GSC, rankings, referrals, enquiries and paid results remain unknown.

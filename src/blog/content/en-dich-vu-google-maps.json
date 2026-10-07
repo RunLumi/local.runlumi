@@ -8,7 +8,7 @@
   "keyword": "dịch vụ google map",
   "author": "lumi-local",
   "pub_date": "2026-10-06T09:00:00+07:00",
-  "reviewed_date": "2026-10-06",
+  "reviewed_date": "2026-10-07",
   "featured": true,
   "content": [
     {
@@ -78,6 +78,34 @@
           "_key": "s1",
           "text": "Creating or claiming a profile concerns Google Business Profile. Verification is Google’s process for checking the business representative. Local SEO covers a broader set of information and signals. A review QR opens a link where genuine customers can share their experience.",
           "marks": []
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b18",
+      "style": "normal",
+      "markDefs": [
+        {
+          "_type": "link",
+          "_key": "source-review-policy",
+          "href": "https://support.google.com/contributionpolicy/answer/7400114?hl=en"
+        }
+      ],
+      "children": [
+        {
+          "_type": "span",
+          "_key": "s1",
+          "text": "A “five-star review” promise is a warning sign, not a deliverable. Google does not allow paid reviews, incentives in exchange for posting, editing or removing reviews, or selectively inviting customers expected to leave positive feedback. Invite all genuine customers without asking for a rating or specific wording. Read ",
+          "marks": []
+        },
+        {
+          "_type": "span",
+          "_key": "s2",
+          "text": "Google’s policy on review content and rating manipulation.",
+          "marks": [
+            "source-review-policy"
+          ]
         }
       ]
     },
@@ -282,6 +310,10 @@
     {
       "label": "Google: thêm hoặc xác nhận hồ sơ / Add or claim a profile",
       "url": "https://support.google.com/business/answer/2911778"
+    },
+    {
+      "label": "Google Maps: prohibited and restricted content / Nội dung bị cấm và bị hạn chế",
+      "url": "https://support.google.com/contributionpolicy/answer/7400114?hl=en"
     }
   ],
   "related": [
