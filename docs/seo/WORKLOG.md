@@ -643,3 +643,9 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Supported browser readback on the deployed host confirms the new FAQ answer in both VI and EN service pages. A real Chromium browser with exact viewport overrides checked both locales at 320/375/768/1440 CSS px; all eight had document/body width no greater than the viewport, one H1, the new FAQ answer visible after expansion and the canonical primary CTA. Both 320px expanded FAQ layouts were visually inspected.
 - The existing signed-in research dashboard at `https://local.runlumi.app/data/` was reloaded and now says three separately authorized one-time Reddit actions, all consumed. The historical CSV remains unchanged; organic observations stay zero/unknown.
 - No CMS editorial content, Google/Search Console state, third-party Zalo integration, enquiry, CRM record or user tracking changed. No ranking, AI citation, traffic or conversion benefit is claimed. Next Search Console check remains on/after 2026-10-14.
+
+## 2026-10-07 14:34 +07:00 — RUN-055 — Recovery checkpoint aligned with current release
+
+- Revalidated `main` at `0b2acbc559ca20a6d44f76cb75000a80933705e1`, PR #80 merged with hosted build success, and the latest Pages Deploy run `37587273670` still serving PR #79 commit `4dd5920` at `08a3ee8d.lumi-local.pages.dev`.
+- Corrected the STATUS recovery section, which had still named PR #71 as the latest code deployment, and recorded that PR #80 was documentation-only and did not deploy. Current release and RUN-054 research bullets now match the production readback and deployment history.
+- No website, CMS, Search Console, Reddit, enquiry, CRM, or production state changed in this receipt. Sitemap submission remains pending explicit human authorization; read-only Google indexing review is scheduled for on/after 2026-10-14.
