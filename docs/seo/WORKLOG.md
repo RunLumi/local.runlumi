@@ -690,3 +690,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Built-site audit on the unchanged serving source `4dd5920` confirmed 38 sitemap URLs, all on `local.runlumi.app`, zero `/data` URLs, all 38 reachable from the homepage by internal anchor links, and `public/robots.txt` already references the sitemap.
 - Decision: defer the optional Search Console sitemap write. No sitemap or URL Inspection request, property setting, export, analytics action or billing change occurred. Revisit only after the scheduled read-only index/discovery check on/after 2026-10-14 if a material discovery problem remains; obtain explicit authorization before any write.
 - Report: [RUN-058 sitemap utility assessment](research/2026-10-07-sitemap-submission-scope.md). This changes the recommendation; it does not establish current Google index coverage.
+
+
+## 2026-10-07 16:04 +07:00 — RUN-060 — Bounded community discovery, no candidate
+
+- Starting remote main remains `a6e6adc`; shared SSD checkout is dirty and untouched. Read current campaign state and both community ledgers.
+- Ran one focused public-search pass across local-service website/lead discussions. The surfaced results were either about a month old but provider-authored (`r/webdesign`), several months old with a service-provider tool promotion in the snippet (`r/growmybusiness`), or about three months old (`r/localseo`). Full candidate threads/rules were not reviewed because none met freshness and audience-fit gates. Links and original paraphrases are in [RUN-060 discovery note](research/2026-10-07-community-channel-discovery.md).
+- No candidate action, draft, vote, reply, account interaction, link or private contact was created. Search-result snippets are not treated as owner demand or a permission grant. Reddit one-time scopes and this week's public-contribution cap remain consumed.
+- Next authorized work remains the read-only Reddit moderation/reply check on 2026-10-13 09:00 +07:00 and exact-host Search Console read-only review on/after 2026-10-14; no sitemap/URL submission.
