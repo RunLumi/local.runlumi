@@ -371,6 +371,15 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - No auth route, binding, cookie, data file, CSV, tracking or public marketing copy changed. Run the repository tests/build and protected-output checks at exact head, then verify the deployed `/data/` view and anonymous denial before closing RUN-034.
 
 
+## 2026-10-07 08:22 +07:00 — RUN-034 release receipt — PR #52
+
+- PR #52 merged normally to main as `17a03c4464288c58596b13d39a178713dbc5ceb4`; the merged tree hash `493ca16828c404a95f79d057df99e21dcc83419d` matches the exact tree validated by the repository pre-push hook. No merge override was used.
+- The hosted PR build and automatic main deployment workflows failed before runner steps because the Actions budget prevented further use. The exact tree’s local test suite, 42-route static build and private-data output guard passed; no hosted Linux pass is claimed.
+- Manually deployed exact main source `17a03c4` to Cloudflare Pages Production (`lumi-local`, branch `main`), deployment ID `6b79022c-3a18-420b-80c2-51d12b16f9c2`, host [6b79022c.lumi-local.pages.dev](https://6b79022c.lumi-local.pages.dev). No DNS, binding, secret, billing, CMS, CSV or user data changed.
+- `RELEASE_ORIGIN=https://local.runlumi.app node scripts/verify-release.mjs` passed all bilingual service/industry routes, journal/feed/sitemap checks, and anonymous `/data/` protection. Signed-in browser readback confirms the refreshed internal copy; its historic estimate window, unknown targeting and zero organic observations are unchanged.
+- This is a correction to the internal research guidance, not a market or search result. No sitemap submit, URL-indexing request, owner interview, new community post, tracking, or paid outcome occurred. Next: one read-only GSC index/discovery check for the garage page and updated article on or after 2026-10-14; CA-002 read-only reply/removal check remains 2026-10-13.
+
+
 ## 2026-10-07 07:43 +07:00 — RUN-031 — Align homepage salon-preview label
 
 - Previous goal turn made progress: PR #47 merged the RUN-030 release receipt to main as `e778bc3`; verified the current remote `STATUS.md` and `WORKLOG.md`. Shared checkout WIP remains untouched.
