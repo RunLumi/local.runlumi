@@ -1,11 +1,14 @@
 ---
 import Page from '../layouts/Page.astro';
+import ScenePhoto from '../components/ScenePhoto.astro';
+import ServiceIcon from '../components/ServiceIcon.astro';
 ---
 <Page locale="vi" title="Không tìm thấy trang | Lumi Local" description="Trang bạn tìm không tồn tại trên hệ thống Lumi Local." noindex>
-  <main class="section wrap" style="padding-top:120px;padding-bottom:120px">
-    <p class="eyebrow">404 · KHÔNG TÌM THẤY TRANG</p>
-    <h1 style="font-size:clamp(36px,6vw,60px);line-height:1.1;color:var(--color-civic-navy);letter-spacing:-.04em;max-width:680px">Trang bạn tìm không tồn tại hoặc đã đổi địa chỉ.</h1>
-    <p style="color:var(--color-soft-slate);font-size:17px;max-width:520px;margin:20px 0 32px">Vui lòng quay lại trang chủ Lumi Local để xem các gói hiện diện online và gửi thông tin cơ sở kinh doanh.</p>
-    <p style="display:flex;flex-wrap:wrap;gap:12px"><a class="button button-primary" href="/"><span>Về trang chủ Lumi Local</span></a><a class="button button-secondary" href="/en/" lang="en"><span>English homepage</span></a></p>
+  <main class="section wrap not-found-layout">
+    <div class="not-found-copy"><p class="eyebrow"><ServiceIcon name="pin" size={20}/> 404 · KHÔNG TÌM THẤY TRANG</p>
+    <h1>Trang bạn tìm không tồn tại hoặc đã đổi địa chỉ.</h1>
+    <p>Vui lòng quay lại trang chủ Lumi Local để xem các gói hiện diện online và gửi thông tin cơ sở kinh doanh.</p>
+    <p class="not-found-actions"><a class="button button-primary" href="/"><span>Về trang chủ Lumi Local</span></a><a class="button button-secondary" href="/en/" lang="en"><span>English homepage</span></a></p></div>
+    <figure class="not-found-visual"><ScenePhoto name="missing-route" sizes="(max-width: 760px) calc(100vw - 48px), 540px" eager alt="Một con ngõ yên tĩnh rẽ khuất sau dãy nhà thấp trong ánh nắng sau mưa."/><figcaption>Ảnh minh họa bằng AI · không phải địa chỉ doanh nghiệp cụ thể</figcaption></figure>
   </main>
 </Page>

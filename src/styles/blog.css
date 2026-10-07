@@ -9,8 +9,16 @@
 .blog-photograph{margin:0;min-width:0}
 .blog-photograph img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:var(--color-lumi-blue-soft)}
 .blog-photograph figcaption{font-size:12px;line-height:1.65;color:var(--color-soft-slate);padding-top:10px}
+.editorial-eyebrow{display:flex;align-items:center;gap:8px}.editorial-method-figure{margin:32px 0 48px}.editorial-method-photo{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:12px}.editorial-method-figure figcaption{padding-top:10px;font-size:12px;line-height:1.65;color:var(--color-soft-slate)}
 .photograph-article{max-width:940px;margin:0 0 48px}
 .photograph-article img{border-radius:12px}
+@supports (animation-timeline:view()){
+ @media(min-width:1024px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  .photograph-article{view-timeline-name:--editorial-image;view-timeline-axis:block}
+  .photograph-article img{animation:editorial-image-arrive 1 both linear;animation-timeline:view();animation-range:entry 0% entry 35%}
+  @keyframes editorial-image-arrive{from{opacity:.78;transform:translateY(10px) scale(.995)}to{opacity:1;transform:translateY(0) scale(1)}}
+ }
+}
 .post-card:not(.post-featured){flex-direction:column}
 .post-card:not(.post-featured) .photograph-card{order:-1;margin-bottom:24px;flex-shrink:0}
 .post-card:not(.post-featured) .post-card-copy{flex:1}
