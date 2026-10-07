@@ -1,15 +1,28 @@
 ---
 import ScenePhoto from '../ScenePhoto.astro';
+import ServiceIcon from '../ServiceIcon.astro';
 const {page,locale}=Astro.props;
 const en=locale==='en';const c=page[locale];
+const media={
+  maps:{name:'service-maps',icon:'pin',vi:'Lối vào cửa hàng nhỏ nhìn từ vỉa hè sau cơn mưa.',en:'A small neighborhood shop entrance seen from the sidewalk after rain.'},
+  check:{name:'service-check',icon:'scope',vi:'Sổ trơn, giấy trắng, bút chì và chìa khóa trên quầy gỗ.',en:'A blank notebook, paper, pencil and key on a wooden counter.'},
+  website:{name:'service-website',icon:'address',vi:'Laptop và điện thoại với màn hình trống trên quầy gỗ.',en:'A laptop and phone with blank screens on a wood counter.'},
+  spa:{name:'salon',icon:'lotus',vi:'Không gian spa tóc sáng tự nhiên với ghế và gương.',en:'A naturally lit neighborhood hair studio with chairs and mirrors.'},
+  garage:{name:'garage',icon:'wrench',vi:'Xưởng sửa xe độc lập gọn gàng với một xe đang được kiểm tra.',en:'An orderly independent auto workshop with a car being inspected.'},
+  hvac:{name:'hvac',icon:'maintenance',vi:'Máy điều hòa treo tường và bộ dụng cụ dịch vụ trong căn hộ.',en:'A wall-mounted air conditioner and service kit in an apartment.'}
+};
+const visual=media[page.key];
+const qrIcon='honest';
 ---
-<figure class="service-artifact sheet"><figcaption><span class="eyebrow">{page.key==='qr'?(en?'AI-generated mockup · not a customer installation':'Ảnh minh họa bằng AI · không phải quầy khách hàng'):(en?'Illustrative layout · not a customer site':'Bố cục minh họa · không phải website khách hàng')}</span><h2>{c.artifactTitle}</h2></figcaption>
-{page.key==='qr'?<div class="qr-layout">
-  <ScenePhoto name={`qr-counter-${locale}`} class="qr-counter-photo" sizes="(max-width: 680px) calc(100vw - 82px), (max-width: 900px) 40vw, 440px" eager />
+<figure class="service-artifact sheet"><figcaption class="service-artifact-heading"><ServiceIcon name={visual?.icon ?? qrIcon} class="service-icon-mark" size={24}/><div><span class="eyebrow">{page.key==='qr'?(en?'AI-generated mockup · not a customer installation':'Ảnh minh họa bằng AI · không phải quầy khách hàng'):(en?'AI illustration · not a customer site':'Ảnh minh họa bằng AI · không phải cơ sở khách hàng')}</span><h2>{c.artifactTitle}</h2></div></figcaption>
+{page.key==='qr' && <div class="qr-layout">
+  <ScenePhoto name={`qr-counter-${locale}`} class="qr-counter-photo" sizes="(max-width: 680px) calc(100vw - 82px), (max-width: 900px) 40vw, 440px" eager alt={en?'Illustrative counter QR card, not a customer installation.':'Thẻ QR minh họa đặt trên quầy, không phải lắp đặt cho khách hàng.'}/>
   <div class="qr-copy">
     <p>{en?'Have you used our service? Scan the QR to share your experience on Google. All feedback is welcome.':'Bạn đã sử dụng dịch vụ của chúng tôi? Quét QR để chia sẻ trải nghiệm trên Google. Mọi phản hồi đều được trân trọng.'}</p>
     <small>{en?'Illustrative QR, not for scanning. Printing and physical stands are excluded.':'Mã minh họa, không dùng để quét. Không bao gồm in ấn và giá đỡ.'}</small>
   </div>
-</div>:<div class="service-preview"><p class="preview-address">{en?'Your business · owner-approved information':'Business của bạn · nội dung do chủ duyệt'}</p><ol>{c.artifactRows.map((row,i)=><li><span class="index">0{i+1}</span><span>{row}</span></li>)}</ol><nav class="glass-control artifact-dock" aria-label={en?'Preview contact actions':'Tác vụ liên hệ trong bản xem thử'}><a href="#bat-dau">{en?'Call setup':'Nút gọi'}</a><a href="#bat-dau">Zalo</a><a href="#bat-dau">{en?'Directions setup':'Chỉ đường'}</a></nav><p class="meta">{en?'Illustrative actions open the Lumi enquiry; no real shop, appointment or emergency contact is implied.':'Tác vụ minh họa mở form Lumi; không phải liên hệ cửa hàng, lịch hẹn hay cứu hộ thực tế.'}</p></div>}
+</div>}
+{page.key!=='qr' && <div class="service-scene"><ScenePhoto name={visual.name} class="service-scene-photo" sizes="(max-width: 680px) calc(100vw - 80px), (max-width: 900px) 36vw, 420px" eager alt={en?visual.en:visual.vi}/><p>{en?'AI illustration · not a customer premise':'Ảnh minh họa bằng AI · không phải cơ sở khách hàng'}</p></div>}
+{page.key!=='qr' && <div class="service-preview"><p class="preview-address">{en?'Your business · owner-approved information':'Business của bạn · nội dung do chủ duyệt'}</p><ol>{c.artifactRows.map((row,i)=><li><span class="index">0{i+1}</span><span>{row}</span></li>)}</ol><nav class="glass-control artifact-dock" aria-label={en?'Preview contact actions':'Tác vụ liên hệ trong bản xem thử'}><a href="#bat-dau">{en?'Call setup':'Nút gọi'}</a><a href="#bat-dau">Zalo</a><a href="#bat-dau">{en?'Directions setup':'Chỉ đường'}</a></nav><p class="meta">{en?'Illustrative actions open the Lumi enquiry; no real shop, appointment or emergency contact is implied.':'Tác vụ minh họa mở form Lumi; không phải liên hệ cửa hàng, lịch hẹn hay cứu hộ thực tế.'}</p></div>}
 {page.key==='qr' && <ul>{c.artifactRows.map(row=><li>{row}</li>)}</ul>}
 </figure>

@@ -2529,7 +2529,8 @@
   .proof-row,.renewal-grid,.trust-grid{grid-template-columns:1fr}
   .example-rail{grid-template-columns:1fr}
   .offer-side{grid-template-columns:1fr}
-  .starter-content{grid-template-columns:1fr}
+  .starter-content{grid-template-columns:minmax(0,1fr)}
+  .starter-bullets li>span:last-child,.mini-bullets li>span:last-child{min-width:0;overflow-wrap:anywhere}
   .feature-grid{grid-template-columns:1fr}
   .feature-primary,.feature-card:last-child{grid-column:auto;grid-row:auto;min-height:0}
   .faq,.contact{grid-template-columns:1fr;gap:36px}
