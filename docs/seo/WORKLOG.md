@@ -499,3 +499,11 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Explicitly published both locales through the authenticated EmDash editor; each showed “Content is now live.” Public reload of the VI and EN custom-domain routes shows the new text and locale-specific policy link. Exact publish time was not captured.
 - Headless Chrome checked both routes at 320/375/768/1440 CSS px. All eight had no horizontal overflow and included policy text and link. 320px screenshots were visually inspected under `/private/tmp/seo-review-policy-vi-320.png` and `/private/tmp/seo-review-policy-en-320.png`.
 - Static snapshots are aligned in the candidate. No Pages deployment has yet been performed for this slice. GSC, rankings, referrals, enquiries and paid results remain unknown.
+
+
+### RUN-041 release receipt — 2026-10-07 11:20 +07:00
+
+- PR #63 merged to main at `33df9942509172c03e2120ea76a7fb7fad47cbc8`. GitHub Actions run #126 and production release run #79 completed successfully, including build, tests, seed validation, CMS Worker build, Pages deployment and the live verifier.
+- Cloudflare Pages project `lumi-local`, branch `main`: deployment ID `3ab6c4b8-6cef-44a5-9f24-ad3d7ca91df9`, host https://3ab6c4b8.lumi-local.pages.dev, source `33df994`.
+- The read-only release verifier passed on the Pages deployment and `https://local.runlumi.app`; browser readback on the deployment host confirms both VI/EN paragraphs, inline policy links and source-check date 2026-10-07. Headless Chrome had already verified all eight responsive combinations and both 320px layouts.
+- No CMS seed import/direct database write, sitemap submission, URL-indexing request, live enquiry, Google-profile operation or customer contact occurred. No ranking, citation, referral, enquiry or paid outcome is inferred.

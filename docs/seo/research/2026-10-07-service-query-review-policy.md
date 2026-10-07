@@ -23,3 +23,8 @@ The existing bilingual comparison guide already separated profile setup, verific
 Sources checked 2026-10-07. Both EmDash locales were published on 2026-10-07 and public readback confirms the policy paragraph, inline source and source-check date. Publication time was not captured. Static snapshots are aligned in this PR; EmDash remains authoritative and no seed import or direct database write occurred.
 
 A fresh headless Chromium pass at 320, 375, 768 and 1440 CSS px found no horizontal overflow on all eight VI/EN combinations. Both 320px views were visually inspected and are retained outside Git at `/private/tmp/seo-review-policy-vi-320.png` and `/private/tmp/seo-review-policy-en-320.png`. No ranking, citation, referral, enquiry or paid outcome is claimed.
+
+
+## Release receipt — PR #63
+
+PR #63 merged to `main` as `33df9942509172c03e2120ea76a7fb7fad47cbc8`. The exact source was deployed to Cloudflare Pages project `lumi-local`, production branch `main`, as deployment `3ab6c4b8-6cef-44a5-9f24-ad3d7ca91df9` at https://3ab6c4b8.lumi-local.pages.dev. GitHub Actions build and production deployment completed successfully. The read-only release verifier passed on both the Pages host and `https://local.runlumi.app`; public VI/EN readback confirms the policy warning and inline Google citation. No indexing, ranking or acquisition result is implied.
