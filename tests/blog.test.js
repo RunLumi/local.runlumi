@@ -19,7 +19,8 @@ test('release guides have bilingual counterparts, real sources and valid related
   for(const [,id]of html.matchAll(/href="#([^"]+)"/g))assert.ok(html.includes(`id="${id}"`),`${path}: ${id}`);
   assert.match(html,/hreflang="vi"/);assert.match(html,/hreflang="en"/);
   const ld=JSON.parse(html.match(/type="application\/ld\+json">(.*?)<\/script>/s)[1]);
-  assert.ok(ld['@graph'].some(x=>x['@type']==='Article'&&x.headline===p.title));
+  const article=ld['@graph'].find(x=>x['@type']==='Article'&&x.headline===p.title);assert.ok(article);
+  assert.equal(article.dateModified,undefined,'source-check date is not a content-modification date');
  }
 });
 test('discovery endpoints omit private data, admin and search pages',()=>{

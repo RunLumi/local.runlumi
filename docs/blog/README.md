@@ -50,6 +50,11 @@ Preview the text and complete the editorial gate. Save a revision, then choose P
 
 The title/description fields drive public metadata. Built-in SEO-panel overrides are not consumed by this narrowed theme; do not assume changing that panel alters canonicals/noindex. Use drafts to withhold a page. Rich text supports paragraphs, headings, lists and links; images/custom EmDash plugin blocks need a deliberate renderer extension before use. No plugin marketplace or custom sandbox runner is enabled.
 
+`reviewed_date` is the visible source-check date, not proof of a significant
+content modification. Do not reuse it as sitemap `<lastmod>` or Article
+`dateModified`. Until the editorial model records a true content-modified date,
+omit those optional metadata fields; do not invent update timestamps.
+
 ## Production topology — preparation, not deployment
 
 1. Keep the existing Pages site for landing, enquiries and protected research. Build it with npm run build. The added Functions proxy blog/admin/CMS asset/sitemap routes through optional service binding **BLOG**.
@@ -107,3 +112,26 @@ Each of the ten initial VI/EN guides has a distinct generated photographic illus
 To regenerate distribution files from selected built-in outputs, pass a private JSON manifest of `{key,path,prompt}` entries to `node scripts/prepare-blog-photographs.mjs <manifest-path>`. Inspect each selected output before accepting it. The script uses Astro's existing Sharp dependency; it resizes and encodes only, without inventing or altering visual content.
 
 Release order for image/template updates: deploy the reviewed Pages assets first, then deploy the matching CMS Worker build with its explicit generated config. This ensures the new images are available before live templates reference them. After both deployments, run `node scripts/verify-blog-photographs.mjs` and `node scripts/verify-release.mjs`; these checks are read-only. Keep production text and identities intact; no seed import or CMS database write is needed to release these presentation assets.
+
+Before publishing a new guide, generate and visually review its topic-specific
+illustration, add the exact locale/slug assignment to `src/blog/photographs.js`,
+record prompt/source/derivative provenance, and release the image assets and CMS
+template first. Unknown slugs deliberately receive no unrelated photograph;
+that fallback is not permission to skip the visual publishing gate.
+
+## Sitemap structure
+
+`src/blog/sitemap.js` groups canonical pages, journal entrypoints, populated
+topics and published articles. `/sitemap.xml` calls it with the live published
+CMS collections when the blog binding is active. Each published bilingual pair
+has reciprocal `xhtml:link` alternates including itself; absent translations
+and empty topic archives are omitted. The static release snapshot currently has
+38 indexable URLs; this is not a fixed future limit. Search, 404, private research,
+admin, RSS, drafts and future publication dates are excluded. No source-check
+date is advertised as `lastmod`.
+
+`tests/sitemap.test.js` compares all built indexable canonical pages with the
+sitemap and exercises new publication, withdrawal, translation availability,
+duplicates and invalid paths. The read-only production verifier also compares
+live VI/EN RSS articles and their topic links with the live sitemap. This proves
+route coverage, not Google indexing or organic impact.

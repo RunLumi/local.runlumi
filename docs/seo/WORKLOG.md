@@ -851,6 +851,14 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Local validation: Node 24.19.0 `npm ci --offline` completed with 0 reported vulnerabilities; `npm run build` generated 42 pages and extracted private `/data/` assets; `npm test` passed 62/62, including image/hash/route/privacy checks; `git diff --check` passed. The private research dashboard remains photo-free to protect evidence integrity; feeds, sitemap and API endpoints are not visual pages.
 - Outcome: local implementation only. No push, PR, deployment, CMS/Search Console write, community action, owner contact, enquiry or acquisition result occurred. Next: after publication becomes available, verify both production locales, image delivery, motion fallback and anonymous `/data/` protection on the exact deployed source.
 
+## 2026-10-08 — RUN-079 — Complete sitemap and separate blog release
+
+- PR #88 merged as `c4a0ecb` after hosted build `37691240623` passed. Production workflow `37691424952` passed all steps, including CMS build, Pages upload and live verification; deployment host `2babca9e.lumi-local.pages.dev`. Custom-domain VI/EN Maps-service image/alt/disclosure is live. The blog Worker still served its old journal-policy template, so the blog visual increment remains unfinished.
+- Current branch starts at merged `c4a0ecb` and implements readable sitemap grouping, reciprocal published-only locale alternates and defensive exclusion/deduplication. Production gets live CMS articles, without a static seed fallback. Source-check dates are removed from optional modification metadata; visible source-check dates remain.
+- Static snapshot XML parsed as 38 unique indexable URLs with no private/noindex routes. New tests compare the sitemap against all built canonical/indexable pages and exercise new publication, withdrawal, missing translations, duplicates and unsafe records. Node 24.19.0 build passed (42 pages); tests passed 65/65; CMS build and private-output guard passed. Expanded read-only production verifier passed all services, 10 live articles, populated topics, robots and anonymous privacy.
+- Existing Cloudflare OAuth is authenticated and includes Workers write; the default sandbox had hidden that access. No new login, token, permissions, account setting, content/database write or seed import was needed. The sandbox-restricted font server build succeeded with approved execution access.
+- Report: research/2026-10-08-sitemap-completeness.md. Next: normal PR/merge, Pages release, then the explicit CMS Worker deployment and live sitemap/image readback. No search/indexing outcome is claimed.
+
 ## Branch reconciliation — 2026-10-08
 
 The following distinct local records are retained. The local RUN-016 identifier overlapped the upstream gift-shop run; this release gate is historical and the current state remains in STATUS.md.
