@@ -45,7 +45,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 ## Current evidence
 
 - [RUN-049 Reddit candidate skip](research/2026-10-07-reddit-pricing-thread-skip.md): a stale website-pricing thread was already answered and moderator-warned against market research; skipped with no draft or post. No new posting scope inferred.
-- [RUN-048 CRM-capable enquiry handler release impact](research/2026-10-07-crm-intake-release-impact.md): PR #71’s deployed handler forwards validated Lumi enquiries only if both optional Pages secrets are configured. The release passed the public route/private-data verifier, but secret presence and live CRM delivery remain unknown. No live enquiry was sent, so leads and paid outcomes remain unknown.
+- [RUN-048/RUN-050 CRM-capable enquiry handler release impact](research/2026-10-07-crm-intake-release-impact.md): local.runlumi PR #71 deployed the optional adapter; sibling CRM PR #27 deployed the Worker and its release record confirms the Worker-side secret. Presence of the two Pages secrets and end-to-end activation remain unknown. No live enquiry was sent, so CRM records, leads and paid outcomes remain unknown.
 
 
 - [RUN-047 Keyword Planner access check](research/2026-10-07-keyword-planner-access-check.md): the signed-in Google Ads selector returned zero matches for “Lumi Local”; no account was selected and no billing/campaign action occurred. This does not rule out a differently named account. The RUN-044 seeds remain unmeasured.
@@ -87,7 +87,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 
 ## Recovery
 
-Read this checkpoint, goal, worklog and both CSVs before external actions. Inspect uncertain outcomes before retrying. Shared checkout has unrelated `docs/blog/checkpoint.md` WIP; preserve it. Latest Pages code deployment is `16798958` from main `437e7da` (PR #71); PR #69's protected dashboard text is included. CRM forwarding activation remains unverified and no live form test was sent. The VI/EN EmDash guides remain live; see RUN-040/041 for publication and responsive evidence. No temporary dev server is active.
+Read this checkpoint, goal, worklog and both CSVs before external actions. Inspect uncertain outcomes before retrying. Shared checkout has unrelated `docs/blog/checkpoint.md` WIP; preserve it. Latest Pages code deployment is `16798958` from main `437e7da` (PR #71); PR #69's protected dashboard text is included. CRM Worker is deployed and its server-side secret is confirmed by the sibling runbook; Pages adapter secret presence and end-to-end activation remain unverified. No live form test was sent. The VI/EN EmDash guides remain live; see RUN-040/041 for publication and responsive evidence. No temporary dev server is active.
 
 
 ## RUN-023 — direct Facebook/Zalo answer refinement
