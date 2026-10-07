@@ -585,3 +585,12 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - New evidence: the CRM Worker deployed from PR #27; the runbook says preflight confirmed its CRM_INTAKE_SECRET and production unsigned requests to the intake endpoint returned 401 for bad signature rather than 503. This confirms the Worker-side secret, not the Pages-side adapter secrets.
 - Pages-side CRM_INTAKE_URL/CRM_INTAKE_SECRET presence remains unknown. The local.runlumi release verifier did not submit a form and did not establish end-to-end intake. No live enquiry, CRM write, PII, secret value or account identifier was accessed.
 - Refined [RUN-048 CRM release note](research/2026-10-07-crm-intake-release-impact.md) and STATUS wording so the two secret/configuration boundaries remain distinct. Enquiry and paid metrics remain unknown.
+
+
+## 2026-10-07 13:27 +07:00 — RUN-051 — Community discovery recheck
+
+- Revalidated current remote main `3f3bfd3`, STATUS and both community ledgers. CA-002 and CA-003 remain live with one-time scopes consumed; scheduled checks remain Oct 13.
+- One public search for website help in r/smallbusiness surfaced a roughly three-month-old thread about a dynamic map/card directory. Its snippet is outside Lumi Starter’s simple service-menu/contact scope. Other visible results were older or generic price discussions.
+- In-app Browser returned ERR_CONNECTION_REFUSED for Reddit, so the candidate was not opened for thread-level question/comments/rule review. No draft, action-ledger row, account interaction, or post was made. The snippet is discovery-only, not a reviewed prospect.
+- The signed-in Google result page displayed a personal Ads summary. Its details were not recorded or used; future prospect discovery should use a public or signed-out search surface.
+- Report: [RUN-051 community discovery recheck](research/2026-10-07-community-discovery-recheck.md). No new posting scope is inferred. Next community step: review a fresh target via supported Browser when accessible and obtain exact-action approval before posting.
