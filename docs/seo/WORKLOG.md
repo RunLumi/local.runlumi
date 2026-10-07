@@ -649,3 +649,9 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Revalidated `main` at `0b2acbc559ca20a6d44f76cb75000a80933705e1`, PR #80 merged with hosted build success, and the latest Pages Deploy run `37587273670` still serving PR #79 commit `4dd5920` at `08a3ee8d.lumi-local.pages.dev`.
 - Corrected the STATUS recovery section, which had still named PR #71 as the latest code deployment, and recorded that PR #80 was documentation-only and did not deploy. Current release and RUN-054 research bullets now match the production readback and deployment history.
 - No website, CMS, Search Console, Reddit, enquiry, CRM, or production state changed in this receipt. Sitemap submission remains pending explicit human authorization; read-only Google indexing review is scheduled for on/after 2026-10-14.
+
+### RUN-055 follow-up — PR #81 merge and remote readback — 2026-10-07 14:43 +07:00
+
+- PR #81 head `014b23ef02954dfd1a1bf5b78492de0de8f03244` passed hosted build run `37588680028` and merged as `a6e6adc0a202838993dcdb69a1454c3c460c6a2e`; GitHub API confirms remote `main` equals the merge SHA.
+- The latest `Deploy production` run remains `37587273670` on serving commit `4dd5920`, host `08a3ee8d.lumi-local.pages.dev`; PR #81 changed only Markdown, so no deployment ran.
+- No new external action occurred. The exact Search Console sitemap submission remains unapproved; see [current goal gate](../GOAL_SEO_GEO_90_DAYS.md#5-channelaccount-authorization) and the Next actions list. Next read-only index check remains on/after 2026-10-14.
