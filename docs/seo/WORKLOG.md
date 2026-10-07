@@ -380,6 +380,15 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - This is a correction to the internal research guidance, not a market or search result. No sitemap submit, URL-indexing request, owner interview, new community post, tracking, or paid outcome occurred. Next: one read-only GSC index/discovery check for the garage page and updated article on or after 2026-10-14; CA-002 read-only reply/removal check remains 2026-10-13.
 
 
+## 2026-10-07 08:24 +07:00 — RUN-035 — Draft a fresh owner-thread reply for approval
+
+- Revalidated remote main `24490f9`, `STATUS.md` and both action/channel ledgers. CA-002 remains `verified_live`; its one-comment permission covers only the Q4 promotion thread and is consumed.
+- Read the current public r/smallbusiness post [Google Business Profile changes](https://www.reddit.com/r/smallbusiness/comments/1wzbnag/google_business_profile_changes_from_the_last_two/), posted about six hours earlier. The post directly asks whether a suggested profile edit can go live without owner approval. Only AutoModerator was visible; no substantive replies were present. The signed-in Reddit account menu confirmed `u/suoinguon`.
+- Rechecked current sidebar rules: ordinary threads prohibit links/product recommendations and business promotion; the new candidate contains no link, Lumi mention, product recommendation, SEO claim or research question. It directly answers the OP’s question, so it is not an unsolicited sales pitch. The Q4 promotion thread remains the only existing authorized promotion scope.
+- Verified Google’s official “Understand Google updates on your Business Profile” and “Business Profile posts content policy” pages. The first documents the conditional four-day response period and also says some edits may be applied without prior review; the second says unverified contact details in posts may be removed. The official pages checked did not confirm the thread’s broad claim about signing in to read all reviews, so the draft flags that as unverified.
+- Created [CA-003 draft](drafts/CA-003-reddit-google-profile-edits.md) and a dated evidence note; SHA-256 recorded in `community-actions.csv`. State is `drafted`, with no submit attempt, public URL or reply. Do not post until a separate explicit approval covers this exact thread and text.
+
+
 ## 2026-10-07 07:43 +07:00 — RUN-031 — Align homepage salon-preview label
 
 - Previous goal turn made progress: PR #47 merged the RUN-030 release receipt to main as `e778bc3`; verified the current remote `STATUS.md` and `WORKLOG.md`. Shared checkout WIP remains untouched.

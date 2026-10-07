@@ -6,6 +6,7 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 
 - Activated by human `/goal` on 2026-10-06. Reviews: day 30 2026-11-04; day 60 2026-12-04; day 90 2027-01-04.
 - CA-001 was skipped as redundant. CA-002 was approved and publicly verified once by u/suoinguon in the designated r/smallbusiness Q4 promotion thread: [permalink](https://www.reddit.com/r/smallbusiness/comments/1wwpjlw/comment/pe8nwi9/). That one-comment authorization is consumed. No follow-up reply/repost scope.
+- CA-003 is a drafted no-link factual reply to a new r/smallbusiness question about Google profile edits. Current thread rules and Google sources were checked, but CA-002’s scope does not cover this thread; nothing was posted. A separate one-time approval is required. See [RUN-035 thread note](research/2026-10-07-reddit-google-profile-edits-thread.md).
 - Next read-only check: 2026-10-13 09:00 +07:00 for replies/removal.
 - Weekly heartbeat creation was rejected by automatic approval review; explicit scheduling authorization remains unanswered. No automation configured.
 - GSC Wizard remains unconnected. See [RUN-026 Search Console snapshot](research/2026-10-07-search-console-snapshot.md): read-only evidence on `sc-domain:local.runlumi.app`: its sitemap list is empty; homepage and core service URLs are unknown to Google despite passing live fetch tests. The parent property host-filtered 7-day report showed 0 clicks/0 impressions through 2026-10-04, only about two days after custom-domain attachment. No sitemap or URL-indexing write was submitted; broad index coverage, referrals, enquiries and paid outcomes remain unknown.
@@ -47,12 +48,14 @@ Updated 2026-10-07 · Asia/Ho_Chi_Minh · active, day 2. Full contract: [goal](.
 - [RUN-032 garage URL inspection](research/2026-10-07-garage-url-inspection.md): one page is still unknown to Google despite passing the live fetch/indexability test; sitemap discovery remains the next bounded action and is still unauthorized.
 - [RUN-033 Maps and directions SERP check](research/2026-10-07-maps-directions-serp-and-content-update.md): three dated Vietnam/Vietnamese queries showed overlapping how-to intent for embed variants and mixed DIY profile/directions intent. The existing guide gained the verified Google sharing steps; no separate landing page was added.
 - [RUN-034 dashboard guidance release](research/2026-10-07-dashboard-guidance-release.md): private research recommendations now distinguish completed guide/SERP work from unvalidated demand; source CSV remains historical and protected.
+- [RUN-035 Reddit thread review](research/2026-10-07-reddit-google-profile-edits-thread.md): a fresh public question is a candidate for a source-backed, no-link reply; CA-003 remains `drafted` pending explicit approval.
 
 ## Next actions
 
 1. On 2026-10-13, read-only check CA-002 for replies/removal; do not reply without new authorization.
 2. RUN-026 found no sitemap submitted in the dedicated GSC property. Submit `https://local.runlumi.app/sitemap.xml` only after explicit human authorization; until then, leave Google-side indexing untouched.
 3. On or after 2026-10-14, read the index/discovery state once for the garage page and the updated business-location guide; keep Search Console read-only and scoped to `local.runlumi.app`. Submit `https://local.runlumi.app/sitemap.xml` only after explicit human authorization. GSC Wizard remains unconnected. Add Chrome DevTools MCP before laboratory performance traces; avoid repetitive searches and quota-driven posts.
+4. CA-003 requires one-time human approval for the exact new Reddit thread and draft; do not post if approval is not given.
 
 ## Recovery
 
