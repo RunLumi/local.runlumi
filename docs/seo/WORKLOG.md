@@ -607,3 +607,10 @@ Use literal statuses and facts; do not fill fields with hypothetical successes. 
 - Reddit displayed “Comment posted successfully.” The exact approved text is visible under `u/suoinguon`; direct permalink: https://www.reddit.com/r/smallbusiness/comments/1wzilw8/comment/pedpq5b/. The signed-in page screenshot was visually inspected. No retry was needed.
 - Updated CA-005 to `verified_live`; recorded the permalink, visible-text evidence, authorization and one-time scope consumption in both ledgers. No replies, DMs, edits, link or further promotion were made.
 - Next action is read-only reply/removal review on 2026-10-13 09:00 +07:00. Do not reply or repost without fresh authorization and a specific useful reason.
+
+## 2026-10-07 13:58 +07:00 — RUN-053 — PR #77 merge and release readback
+
+- Revalidated current remote `main` at `3de4a9651492d0832f8aa45dd28685f95764c87a`; the shared checkout remains dirty and 52 commits behind, so it was left untouched.
+- PR #77 head `7941c553d4d91c1726fa978155f36d427931f4df` merged at 2026-10-07 06:55 UTC (13:55 +07:00) as `3de4a96`. Hosted build run `37583252215` completed successfully at 06:46 UTC. Local Node 24.19.0 build and all 56 tests passed before push.
+- GitHub API readback confirms remote `main` equals the merge SHA. The latest `Deploy production` run is `37579543784`, completed successfully at 06:04 UTC on prior serving head `437e7da`, before the merge; PR #77 changed only campaign docs/ledgers/draft, so no Pages deployment was triggered. Latest serving release remains PR #71 deployment `16798958`.
+- No additional external action, CMS change, production deployment, Search Console write, or live enquiry occurred. The next independent campaign actions remain Reddit read-only moderation/reply observation on 2026-10-13 and Search Console read-only checks on/after 2026-10-14; sitemap submission remains unauthorized.
