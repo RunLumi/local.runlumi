@@ -13,3 +13,10 @@ Initial source links were also placed inline beside the supported platform claim
 2026-10-06: Added one generated photographic illustration to each of the ten initial VI/EN guides, with responsive files, descriptive alt text, visible AI disclosure and matching social/schema images. Images are illustrative contexts, not customer evidence; blank counter cards are not working QR artwork and pictured stands are excluded from Lumi's offer. Article text, source-check dates and live EmDash records were not rewritten. Prompts and asset hashes: photography.json.
 
 2026-10-06: At the owner’s request, shortened image captions to “Ảnh minh hoạ” (VI) / “Illustration” (EN). Generation provenance and the public editorial-policy explanation remain available. QR printing/stand exclusions remain in the article and offer copy.
+
+
+## 2026-10-07 — Mobile and desktop directions workflow
+
+Updated `tao-dia-diem-google-maps` in VI and EN, then aligned the reviewed static release snapshots to the current EmDash publication. The earlier published answer supplied desktop-only sharing steps. The current copy explains how to share directions from Android/iPhone and desktop and asks the reader to check the route against the owner-confirmed entrance.
+
+Primary source: [Google Maps Help — share directions](https://support.google.com/maps/answer/7101463) (VI `?hl=vi`; EN `?hl=en`), checked 2026-10-07. Reason: the live Vietnamese directions SERP and AI Overview answer contained mobile sharing guidance; the existing guide had only desktop steps. This adds a useful device-specific procedure without implying Maps management, rankings or customer outcomes. EmDash remains the editorial source; no seed import or live CMS overwrite was performed.
