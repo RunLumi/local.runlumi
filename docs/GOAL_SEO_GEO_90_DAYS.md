@@ -136,13 +136,13 @@ Days 1–7: establish baseline, audit @data/site, validate three clusters, ident
 
 Weeks 2–4: improve existing content, create a link-worthy asset, participate selectively and incorporate actual discussion feedback.
 
-Weeks 5–12: run weekly evidence checks, follow up relevant conversations in scope, improve the best-supported cluster and retire poor-fit channels.
+Weeks 5–12: run evidence checks every five days, follow up relevant conversations in scope, improve the best-supported cluster and retire poor-fit channels.
 
 Days 30/60/90: decide keep/change/stop by cluster and channel. Follow current content-guideline.md/STRATEGY.md experiment gates; keep the organic experiment separate from the business pilot. No invented baseline, causal uplift or success rate from tiny samples.
 
 Measure separately: indexed canonical pages, sourced non-brand impressions/clicks, relevant referral traffic when measurable, qualified enquiries/paid outcomes in aggregate, actual referring links and observed AI citations. Log provider/query/time/device/locale and uncertainty for browser samples. Public SERPs may be personalized. Use permitted APIs/tools or bounded browser observation; no mass Google scraping or CAPTCHA bypass. If GSC/analytics access is missing, report unknown and continue independent work; do not install trackers without authorization.
 
-On campaign activation, use an available native scheduler/heartbeat for weekly Monday 09:00 Asia/Saigon checks over this 90-day period if scheduling is authorized/supported. Notify only on meaningful results, regressions, releases or a required human action. If no executor is available, save the next check and resume instructions; do not pretend the campaign is running unattended. Do not create empty PRs or poll indefinitely while waiting.
+On campaign activation, use an available native scheduler/heartbeat for every-five-days 09:00 Asia/Ho_Chi_Minh checks (user-authorized cadence update on 2026-10-08) over this 90-day period if scheduling is authorized/supported. Notify only on meaningful results, regressions, releases or a required human action. If no executor is available, save the next check and resume instructions; do not pretend the campaign is running unattended. Do not create empty PRs or poll indefinitely while waiting.
 
 ## 10. Resume and completion
 
