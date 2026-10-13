@@ -916,3 +916,8 @@ The following distinct local records are retained. The local RUN-016 identifier 
 - Implemented the user's diversification direction with two bounded primary-page reviews across directory/editorial types. Read prior rejected association record to avoid redundant retries.
 - Trang Vàng registration offers a free basic process and website field but requires named contact/phone verification; legal-brand eligibility, terms, duplicate listing and public link inclusion remain unknown. Prepared a factual public-description draft, not a ready submission. Startup.info was deprioritized for reader-fit and sponsorship/link-policy ambiguity.
 - Receipt: research/2026-10-13-nonreddit-opportunities.md. No invented authority/traffic metrics, outreach, form submission, account, contact, spend, CMS or production change. Exact future external action needs reviewed scope and approval.
+
+## 2026-10-13 — RUN-086 — Directory rules and duplicate risk
+
+- Used supported Browser runtime for registration/rules/privacy and site search. Cloudjet query returned one historical company-name listing; identity remains unconfirmed. Lumi query mapped to an unrelated aluminium category, not a valid negative result.
+- Hold new registration pending owner confirmation of historical profile and exact entity/contact scope. Read policies without accepting; no form submission or external communication. Added findings to RUN-085 receipt and current checkpoint.

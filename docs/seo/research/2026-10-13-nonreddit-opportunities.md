@@ -21,3 +21,11 @@ Decision: deprioritize. A new article and pitch are not justified by this audien
 ## Next action and measurement
 
 One conditional directory route, zero ready external actions, zero acquired links. Required human input for the directory is the exact entity/contact scope, after Browser eligibility/terms/deduplication checks; do not ask for a blanket posting permission. Assess published referral utility and qualified enquiries separately from eventual link availability. No estimate of rank uplift or new customers is supported.
+
+## Browser follow-up — RUN-086
+
+Supported Browser runtime successfully opened the registration page, operating rules (https://trangvangvietnam.com/quy-che-hoat-dong) and privacy policy (https://trangvangvietnam.com/chinh-sach-bao-mat). Rules describe verification before publishing, accurate member information and conditional company eligibility for software. Privacy policy describes confirmation/transaction contact use and retention until deletion is requested. Reading is not acceptance; no registration controls were used.
+
+The visible short-description field allows 300 characters, so the earlier description is a conceptual draft, not a field-ready value. A search for “Lumi” mapped to an aluminium category and does not establish absence of a brand listing. A subsequent actual site search for “Cloudjet” returned one company-name result: [Cloudjet Solutions Corp](https://trangvangvietnam.com/listings/1187738259/cloudjet-solutions-corp.html), marked last updated 30/5/2014. The name is a possible duplicate, not proof that it belongs to the user's present legal entity. No personal contact details from that result were copied into campaign records.
+
+Decision: hold new listing. First obtain owner confirmation whether this historical profile is theirs and whether to pursue updating it. Exact entity identity, contact scope, profile control and form/terms acceptance remain unresolved. No submission, contact, account, agreement, payment or acquired backlink occurred.
