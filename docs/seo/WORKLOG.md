@@ -904,3 +904,9 @@ The following distinct local records are retained. The local RUN-016 identifier 
 - Read goal/checkpoint/ledgers and fetched remote main b81722c in an isolated clone; shared checkout unchanged. No uncertain submissions exist.
 - Opened exactly CA-002/003/005 public permalinks through web retrieval because supported signed-in Browser UI is unavailable. CA-003/005 representations marked crawled today contain approved advice. CA-002 contains approved promotion but is marked crawled six days ago; current status unknown. Extracted pages show no direct reply beneath our comments, which is not proof of zero replies.
 - Detailed receipt: research/2026-10-13-community-readback.md. Preserved original verified_live ledger timestamps rather than conflating retrieval with live Browser proof. No posting, reply, contact, login, CMS, Search Console or production mutation. Next: supported-browser follow-up and October 14 exact-property read-only review.
+
+## 2026-10-13 — RUN-084 — Diversified earned-link direction
+
+- User explicitly requested diversification beyond Reddit. Updated the existing active five-day heartbeat, preserving its schedule, thread and notification behavior; read its prior configuration before update.
+- Added concrete channel categories and a bounded review/eligibility workflow to the campaign goal/checkpoint. Prioritize Vietnam owner relevance and useful referrals, not backlink volume. Preserve cross-platform contribution cap, specific external-action approvals and Facebook permission gate.
+- Documentation/configuration change only. No target is falsely recorded as approved; no submission, outreach, new account, spending, CMS or production change occurred. Next review should inspect a small non-Reddit batch and present only eligible exact actions for approval.

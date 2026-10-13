@@ -49,6 +49,19 @@ Seeding means transparent distribution of useful expertise/resources and partici
 
 Prioritize communities with actual local-business owners and relevant industry practitioners. Platform names are candidate categories, not blanket approval: public forums, industry communities, relevant public groups and professional discussions must each be inspected. Respect membership, account-age, promotion and link rules. If promotion is prohibited, do not disguise a promotion as an independent recommendation.
 
+### Diversified earned-link workstream — user update 2026-10-13
+
+Reddit is one channel, not the campaign's default distribution strategy. Each five-day link-building review should investigate a bounded batch of 2–3 non-Reddit opportunities across at least two channel types when credible opportunities exist:
+
+- Vietnam-relevant SME/industry association resource pages with an actual editorial or submission process.
+- Legitimate local-business directories only where Lumi is eligible and listing terms are clear; reject spam directories and ranking-credit sales.
+- Complementary providers' editorial/resource pages where an existing Lumi DIY guide or checklist fills a specific information gap; no reciprocal-link obligation.
+- Relevant non-Reddit owner communities and publications with explicit contribution/link rules.
+
+For each candidate record exact URL, audience/owner relevance, rules and source date, eligibility, useful existing resource, cost, uncertainty and next concrete action in the channel/research records. Channel categories are hypotheses until inspected, not promised placements. Do not add an unverified channel as authorized. Prior rejected candidates need new evidence before another review.
+
+Prefer referral usefulness and qualified enquiries over raw backlink counts. Keep the three-contributions-per-week total cap across all platforms. Prepare a small exact-target/draft/account/rules approval batch for eligible submissions or outreach; execute and verify after specific human authorization. This update authorizes diversified research/planning, not unspecified external communications, accounts, spending, agreements or expanded platform access. The Facebook written-Meta-permission gate remains intact.
+
 Contribution types:
 
 - Answer a concrete question with enough useful detail even without a link.
