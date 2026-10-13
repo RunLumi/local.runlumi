@@ -910,3 +910,9 @@ The following distinct local records are retained. The local RUN-016 identifier 
 - User explicitly requested diversification beyond Reddit. Updated the existing active five-day heartbeat, preserving its schedule, thread and notification behavior; read its prior configuration before update.
 - Added concrete channel categories and a bounded review/eligibility workflow to the campaign goal/checkpoint. Prioritize Vietnam owner relevance and useful referrals, not backlink volume. Preserve cross-platform contribution cap, specific external-action approvals and Facebook permission gate.
 - Documentation/configuration change only. No target is falsely recorded as approved; no submission, outreach, new account, spending, CMS or production change occurred. Next review should inspect a small non-Reddit batch and present only eligible exact actions for approval.
+
+## 2026-10-13 — RUN-085 — First non-Reddit opportunity batch
+
+- Implemented the user's diversification direction with two bounded primary-page reviews across directory/editorial types. Read prior rejected association record to avoid redundant retries.
+- Trang Vàng registration offers a free basic process and website field but requires named contact/phone verification; legal-brand eligibility, terms, duplicate listing and public link inclusion remain unknown. Prepared a factual public-description draft, not a ready submission. Startup.info was deprioritized for reader-fit and sponsorship/link-policy ambiguity.
+- Receipt: research/2026-10-13-nonreddit-opportunities.md. No invented authority/traffic metrics, outreach, form submission, account, contact, spend, CMS or production change. Exact future external action needs reviewed scope and approval.
